@@ -18,7 +18,6 @@ public static partial class SelectableTextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionStart<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -32,7 +31,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionStart<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionStart<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class SelectableTextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionEnd<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -229,7 +225,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionEnd<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionEnd<T>(
         this ElementBuilder<T> builder,
@@ -502,7 +496,6 @@ public static partial class SelectableTextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -516,7 +509,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(
         this ElementBuilder<T> builder,
@@ -534,7 +526,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(
         this ElementBuilder<T> builder,
@@ -699,7 +690,6 @@ public static partial class SelectableTextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -713,7 +703,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(
         this ElementBuilder<T> builder,
@@ -731,7 +720,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(
         this ElementBuilder<T> builder,
@@ -1035,7 +1023,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCopyingToClipboardHandler<T>(
         this ElementBuilder<T> builder,
@@ -1055,7 +1042,6 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCopyingToClipboard<T>(
         this ElementBuilder<T> builder,
@@ -1112,7 +1098,6 @@ public static partial class SelectableTextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCopyingToClipboardEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SelectableTextBlock
     {

@@ -18,7 +18,6 @@ public static partial class TimePickerPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinuteIncrement<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.TimePickerPresenter
     {
@@ -32,7 +31,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinuteIncrement<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinuteIncrement<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TimePickerPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SecondIncrement<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.TimePickerPresenter
     {
@@ -229,7 +225,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SecondIncrement<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SecondIncrement<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class TimePickerPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClockIdentifier<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.TimePickerPresenter
     {
@@ -426,7 +419,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClockIdentifier<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClockIdentifier<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class TimePickerPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseSeconds<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TimePickerPresenter
     {
@@ -623,7 +613,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseSeconds<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseSeconds<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class TimePickerPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Time<T>(this ElementBuilder<T> builder, System.TimeSpan value) where T : Avalonia.Controls.TimePickerPresenter
     {
@@ -820,7 +807,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Time<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class TimePickerPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Time<T>(
         this ElementBuilder<T> builder,

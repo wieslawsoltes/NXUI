@@ -18,7 +18,6 @@ public static partial class DropShadowDirectionEffectExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> ShadowDepth(this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder, System.Double value)
     {
@@ -32,7 +31,6 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> ShadowDepth(
         this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,
@@ -50,7 +48,6 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> ShadowDepth(
         this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,
@@ -208,7 +205,6 @@ public static partial class DropShadowDirectionEffectExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> Direction(this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder, System.Double value)
     {
@@ -222,7 +218,6 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> Direction(
         this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,
@@ -240,7 +235,6 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> Direction(
         this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,

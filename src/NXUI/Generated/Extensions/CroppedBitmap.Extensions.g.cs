@@ -18,7 +18,6 @@ public static partial class CroppedBitmapExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Media.IImage value) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -32,7 +31,6 @@ public static partial class CroppedBitmapExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class CroppedBitmapExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class CroppedBitmapExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(this ElementBuilder<T> builder, Avalonia.PixelRect value) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -229,7 +225,6 @@ public static partial class CroppedBitmapExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class CroppedBitmapExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(
         this ElementBuilder<T> builder,

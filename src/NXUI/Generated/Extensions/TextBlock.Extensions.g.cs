@@ -18,7 +18,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBlock
     {
@@ -32,7 +31,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, Avalonia.Thickness value) where T : Avalonia.Controls.TextBlock
     {
@@ -229,7 +225,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(
         this ElementBuilder<T> builder,
@@ -466,7 +460,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(this ElementBuilder<T> builder, Avalonia.Media.FontFamily value) where T : Avalonia.Controls.TextBlock
     {
@@ -480,7 +473,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
@@ -498,7 +490,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
@@ -663,7 +654,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.TextBlock
     {
@@ -677,7 +667,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
@@ -695,7 +684,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
@@ -860,7 +848,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(this ElementBuilder<T> builder, Avalonia.Media.FontStyle value) where T : Avalonia.Controls.TextBlock
     {
@@ -874,7 +861,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
@@ -892,7 +878,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
@@ -1055,7 +1040,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyleNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1081,7 +1065,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyleItalic<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1107,7 +1090,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyleOblique<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1135,7 +1117,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(this ElementBuilder<T> builder, Avalonia.Media.FontWeight value) where T : Avalonia.Controls.TextBlock
     {
@@ -1149,7 +1130,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
@@ -1167,7 +1147,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
@@ -1330,7 +1309,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightThin<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1356,7 +1334,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightExtraLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1382,7 +1359,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightUltraLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1408,7 +1384,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1434,7 +1409,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightSemiLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1460,7 +1434,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1486,7 +1459,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightRegular<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1512,7 +1484,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightMedium<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1538,7 +1509,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightDemiBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1564,7 +1534,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightSemiBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1590,7 +1559,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1616,7 +1584,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightExtraBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1642,7 +1609,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightUltraBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1668,7 +1634,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightBlack<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1694,7 +1659,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightHeavy<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1720,7 +1684,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightSolid<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1746,7 +1709,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightExtraBlack<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1772,7 +1734,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightUltraBlack<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -1800,7 +1761,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(this ElementBuilder<T> builder, Avalonia.Media.FontStretch value) where T : Avalonia.Controls.TextBlock
     {
@@ -1814,7 +1774,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
@@ -1832,7 +1791,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
@@ -1995,7 +1953,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchUltraCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2021,7 +1978,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchExtraCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2047,7 +2003,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2073,7 +2028,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchSemiCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2099,7 +2053,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2125,7 +2078,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchSemiExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2151,7 +2103,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2177,7 +2128,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchExtraExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2203,7 +2153,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchUltraExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TextBlock
     {
@@ -2231,7 +2180,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBlock
     {
@@ -2245,7 +2193,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
@@ -2263,7 +2210,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
@@ -2428,7 +2374,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
     {
@@ -2442,7 +2387,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineOffset<T>(
         this ElementBuilder<T> builder,
@@ -2460,7 +2404,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineOffset<T>(
         this ElementBuilder<T> builder,
@@ -2625,7 +2568,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
     {
@@ -2639,7 +2581,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineHeight<T>(
         this ElementBuilder<T> builder,
@@ -2657,7 +2598,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineHeight<T>(
         this ElementBuilder<T> builder,
@@ -2822,7 +2762,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
     {
@@ -2836,7 +2775,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(
         this ElementBuilder<T> builder,
@@ -2854,7 +2792,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(
         this ElementBuilder<T> builder,
@@ -3019,7 +2956,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
     {
@@ -3033,7 +2969,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LetterSpacing<T>(
         this ElementBuilder<T> builder,
@@ -3051,7 +2986,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LetterSpacing<T>(
         this ElementBuilder<T> builder,
@@ -3216,7 +3150,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLines<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Control
     {
@@ -3230,7 +3163,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLines<T>(
         this ElementBuilder<T> builder,
@@ -3248,7 +3180,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLines<T>(
         this ElementBuilder<T> builder,
@@ -3413,7 +3344,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.TextBlock
     {
@@ -3427,7 +3357,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -3445,7 +3374,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -3610,7 +3538,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(this ElementBuilder<T> builder, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.Control
     {
@@ -3624,7 +3551,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
@@ -3642,7 +3568,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
@@ -3805,7 +3730,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -3831,7 +3755,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -3857,7 +3780,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -3883,7 +3805,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentStart<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -3909,7 +3830,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentEnd<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -3935,7 +3855,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentDetectFromContent<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -3961,7 +3880,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentJustify<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -3989,7 +3907,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrapping<T>(this ElementBuilder<T> builder, Avalonia.Media.TextWrapping value) where T : Avalonia.Controls.Control
     {
@@ -4003,7 +3920,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrapping<T>(
         this ElementBuilder<T> builder,
@@ -4021,7 +3937,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrapping<T>(
         this ElementBuilder<T> builder,
@@ -4184,7 +4099,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrappingNoWrap<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -4210,7 +4124,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrappingWrap<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -4236,7 +4149,6 @@ public static partial class TextBlockExtensions
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextWrappingWrapWithOverflow<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -4264,7 +4176,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextTrimming<T>(this ElementBuilder<T> builder, Avalonia.Media.TextTrimming value) where T : Avalonia.Controls.Control
     {
@@ -4278,7 +4189,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextTrimming<T>(
         this ElementBuilder<T> builder,
@@ -4296,7 +4206,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextTrimming<T>(
         this ElementBuilder<T> builder,
@@ -4461,7 +4370,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(this ElementBuilder<T> builder, Avalonia.Media.TextDecorationCollection value) where T : Avalonia.Controls.TextBlock
     {
@@ -4475,7 +4383,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(
         this ElementBuilder<T> builder,
@@ -4493,7 +4400,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(
         this ElementBuilder<T> builder,
@@ -4658,7 +4564,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(this ElementBuilder<T> builder, Avalonia.Media.FontFeatureCollection value) where T : Avalonia.Controls.TextBlock
     {
@@ -4672,7 +4577,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(
         this ElementBuilder<T> builder,
@@ -4690,7 +4594,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(
         this ElementBuilder<T> builder,
@@ -4855,7 +4758,6 @@ public static partial class TextBlockExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Inlines<T>(this ElementBuilder<T> builder, Avalonia.Controls.Documents.InlineCollection value) where T : Avalonia.Controls.TextBlock
     {
@@ -4869,7 +4771,6 @@ public static partial class TextBlockExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Inlines<T>(
         this ElementBuilder<T> builder,
@@ -4887,7 +4788,6 @@ public static partial class TextBlockExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Inlines<T>(
         this ElementBuilder<T> builder,

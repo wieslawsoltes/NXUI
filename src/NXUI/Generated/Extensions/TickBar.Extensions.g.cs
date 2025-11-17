@@ -18,7 +18,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TickBar
     {
@@ -32,7 +31,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.TickBar
     {
@@ -229,7 +225,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.TickBar
     {
@@ -426,7 +419,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.TickBar
     {
@@ -623,7 +613,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Layout.Orientation value) where T : Avalonia.Controls.TickBar
     {
@@ -820,7 +807,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -1001,7 +986,6 @@ public static partial class TickBarExtensions
     /// Records a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TickBar
     {
@@ -1027,7 +1011,6 @@ public static partial class TickBarExtensions
     /// Records a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TickBar
     {
@@ -1055,7 +1038,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.TickBar
     {
@@ -1069,7 +1051,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,
@@ -1087,7 +1068,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,
@@ -1252,7 +1232,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TickBar
     {
@@ -1266,7 +1245,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
@@ -1284,7 +1262,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
@@ -1449,7 +1426,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(this ElementBuilder<T> builder, Avalonia.Controls.TickBarPlacement value) where T : Avalonia.Controls.TickBar
     {
@@ -1463,7 +1439,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
@@ -1481,7 +1456,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
@@ -1644,7 +1618,6 @@ public static partial class TickBarExtensions
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TickBar
     {
@@ -1670,7 +1643,6 @@ public static partial class TickBarExtensions
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TickBar
     {
@@ -1696,7 +1668,6 @@ public static partial class TickBarExtensions
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TickBar
     {
@@ -1722,7 +1693,6 @@ public static partial class TickBarExtensions
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TickBar
     {
@@ -1750,7 +1720,6 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ReservedSpace<T>(this ElementBuilder<T> builder, Avalonia.Rect value) where T : Avalonia.Controls.TickBar
     {
@@ -1764,7 +1733,6 @@ public static partial class TickBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ReservedSpace<T>(
         this ElementBuilder<T> builder,
@@ -1782,7 +1750,6 @@ public static partial class TickBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ReservedSpace<T>(
         this ElementBuilder<T> builder,

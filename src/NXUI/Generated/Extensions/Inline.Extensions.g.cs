@@ -18,7 +18,6 @@ public static partial class InlineExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(this ElementBuilder<T> builder, Avalonia.Media.TextDecorationCollection value) where T : Avalonia.Controls.Documents.Inline
     {
@@ -32,7 +31,6 @@ public static partial class InlineExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class InlineExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class InlineExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignment<T>(this ElementBuilder<T> builder, Avalonia.Media.BaselineAlignment value) where T : Avalonia.Controls.Documents.Inline
     {
@@ -229,7 +225,6 @@ public static partial class InlineExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignment<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class InlineExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignment<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {
@@ -436,7 +429,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {
@@ -462,7 +454,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {
@@ -488,7 +479,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentBaseline<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {
@@ -514,7 +504,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentTextTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {
@@ -540,7 +529,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentTextBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {
@@ -566,7 +554,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentSubscript<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {
@@ -592,7 +579,6 @@ public static partial class InlineExtensions
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BaselineAlignmentSuperscript<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Documents.Inline
     {

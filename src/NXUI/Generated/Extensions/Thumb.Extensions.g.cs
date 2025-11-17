@@ -67,7 +67,6 @@ public static partial class ThumbExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragStartedHandler<T>(
         this ElementBuilder<T> builder,
@@ -87,7 +86,6 @@ public static partial class ThumbExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragStarted<T>(
         this ElementBuilder<T> builder,
@@ -160,7 +158,6 @@ public static partial class ThumbExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragDeltaHandler<T>(
         this ElementBuilder<T> builder,
@@ -180,7 +177,6 @@ public static partial class ThumbExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragDelta<T>(
         this ElementBuilder<T> builder,
@@ -253,7 +249,6 @@ public static partial class ThumbExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragCompletedHandler<T>(
         this ElementBuilder<T> builder,
@@ -273,7 +268,6 @@ public static partial class ThumbExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragCompleted<T>(
         this ElementBuilder<T> builder,
@@ -330,7 +324,6 @@ public static partial class ThumbExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragStartedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
     {
@@ -388,7 +381,6 @@ public static partial class ThumbExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragDeltaEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
     {
@@ -446,7 +438,6 @@ public static partial class ThumbExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDragCompletedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.VectorEventArgs>> handler) where T : Avalonia.Controls.Primitives.Thumb
     {

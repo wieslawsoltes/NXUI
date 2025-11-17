@@ -18,7 +18,6 @@ public static partial class GridSplitterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeDirection<T>(this ElementBuilder<T> builder, Avalonia.Controls.GridResizeDirection value) where T : Avalonia.Controls.GridSplitter
     {
@@ -32,7 +31,6 @@ public static partial class GridSplitterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeDirection<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class GridSplitterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeDirection<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class GridSplitterExtensions
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeDirectionAuto<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.GridSplitter
     {
@@ -239,7 +235,6 @@ public static partial class GridSplitterExtensions
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeDirectionColumns<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.GridSplitter
     {
@@ -265,7 +260,6 @@ public static partial class GridSplitterExtensions
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeDirectionRows<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.GridSplitter
     {
@@ -293,7 +287,6 @@ public static partial class GridSplitterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehavior<T>(this ElementBuilder<T> builder, Avalonia.Controls.GridResizeBehavior value) where T : Avalonia.Controls.GridSplitter
     {
@@ -307,7 +300,6 @@ public static partial class GridSplitterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehavior<T>(
         this ElementBuilder<T> builder,
@@ -325,7 +317,6 @@ public static partial class GridSplitterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehavior<T>(
         this ElementBuilder<T> builder,
@@ -488,7 +479,6 @@ public static partial class GridSplitterExtensions
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehaviorBasedOnAlignment<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.GridSplitter
     {
@@ -514,7 +504,6 @@ public static partial class GridSplitterExtensions
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehaviorCurrentAndNext<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.GridSplitter
     {
@@ -540,7 +529,6 @@ public static partial class GridSplitterExtensions
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehaviorPreviousAndCurrent<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.GridSplitter
     {
@@ -566,7 +554,6 @@ public static partial class GridSplitterExtensions
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResizeBehaviorPreviousAndNext<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.GridSplitter
     {
@@ -594,7 +581,6 @@ public static partial class GridSplitterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowsPreview<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.GridSplitter
     {
@@ -608,7 +594,6 @@ public static partial class GridSplitterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowsPreview<T>(
         this ElementBuilder<T> builder,
@@ -626,7 +611,6 @@ public static partial class GridSplitterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowsPreview<T>(
         this ElementBuilder<T> builder,
@@ -791,7 +775,6 @@ public static partial class GridSplitterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KeyboardIncrement<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.GridSplitter
     {
@@ -805,7 +788,6 @@ public static partial class GridSplitterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KeyboardIncrement<T>(
         this ElementBuilder<T> builder,
@@ -823,7 +805,6 @@ public static partial class GridSplitterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KeyboardIncrement<T>(
         this ElementBuilder<T> builder,
@@ -988,7 +969,6 @@ public static partial class GridSplitterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DragIncrement<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.GridSplitter
     {
@@ -1002,7 +982,6 @@ public static partial class GridSplitterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DragIncrement<T>(
         this ElementBuilder<T> builder,
@@ -1020,7 +999,6 @@ public static partial class GridSplitterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DragIncrement<T>(
         this ElementBuilder<T> builder,
@@ -1185,7 +1163,6 @@ public static partial class GridSplitterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PreviewContent<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.GridSplitter
     {
@@ -1199,7 +1176,6 @@ public static partial class GridSplitterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PreviewContent<T>(
         this ElementBuilder<T> builder,
@@ -1217,7 +1193,6 @@ public static partial class GridSplitterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PreviewContent<T>(
         this ElementBuilder<T> builder,

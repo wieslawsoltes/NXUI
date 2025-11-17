@@ -18,7 +18,6 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTransition<T>(this ElementBuilder<T> builder, Avalonia.Animation.IPageTransition value) where T : Avalonia.Controls.Expander
     {
@@ -32,7 +31,6 @@ public static partial class ExpanderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTransition<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ExpanderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTransition<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExpandDirection<T>(this ElementBuilder<T> builder, Avalonia.Controls.ExpandDirection value) where T : Avalonia.Controls.Expander
     {
@@ -229,7 +225,6 @@ public static partial class ExpanderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExpandDirection<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ExpanderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExpandDirection<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ExpanderExtensions
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExpandDirectionDown<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Expander
     {
@@ -436,7 +429,6 @@ public static partial class ExpanderExtensions
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExpandDirectionUp<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Expander
     {
@@ -462,7 +454,6 @@ public static partial class ExpanderExtensions
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExpandDirectionLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Expander
     {
@@ -488,7 +479,6 @@ public static partial class ExpanderExtensions
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExpandDirectionRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Expander
     {
@@ -516,7 +506,6 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsExpanded<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Expander
     {
@@ -530,7 +519,6 @@ public static partial class ExpanderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsExpanded<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class ExpanderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsExpanded<T>(
         this ElementBuilder<T> builder,
@@ -762,7 +749,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCollapsedHandler<T>(
         this ElementBuilder<T> builder,
@@ -782,7 +768,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCollapsed<T>(
         this ElementBuilder<T> builder,
@@ -855,7 +840,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCollapsingHandler<T>(
         this ElementBuilder<T> builder,
@@ -875,7 +859,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCollapsing<T>(
         this ElementBuilder<T> builder,
@@ -948,7 +931,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnExpandedHandler<T>(
         this ElementBuilder<T> builder,
@@ -968,7 +950,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnExpanded<T>(
         this ElementBuilder<T> builder,
@@ -1041,7 +1022,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnExpandingHandler<T>(
         this ElementBuilder<T> builder,
@@ -1061,7 +1041,6 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnExpanding<T>(
         this ElementBuilder<T> builder,
@@ -1118,7 +1097,6 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCollapsedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
     {
@@ -1176,7 +1154,6 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCollapsingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
     {
@@ -1234,7 +1211,6 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnExpandedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
     {
@@ -1292,7 +1268,6 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnExpandingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.Expander
     {

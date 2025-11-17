@@ -18,7 +18,6 @@ public static partial class ArcSegmentExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> IsLargeArc(this ElementBuilder<Avalonia.Media.ArcSegment> builder, System.Boolean value)
     {
@@ -32,7 +31,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> IsLargeArc(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -50,7 +48,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> IsLargeArc(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -208,7 +205,6 @@ public static partial class ArcSegmentExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> Point(this ElementBuilder<Avalonia.Media.ArcSegment> builder, Avalonia.Point value)
     {
@@ -222,7 +218,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> Point(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -240,7 +235,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> Point(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -398,7 +392,6 @@ public static partial class ArcSegmentExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> RotationAngle(this ElementBuilder<Avalonia.Media.ArcSegment> builder, System.Double value)
     {
@@ -412,7 +405,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> RotationAngle(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -430,7 +422,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> RotationAngle(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -588,7 +579,6 @@ public static partial class ArcSegmentExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> Size(this ElementBuilder<Avalonia.Media.ArcSegment> builder, Avalonia.Size value)
     {
@@ -602,7 +592,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> Size(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -620,7 +609,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> Size(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -778,7 +766,6 @@ public static partial class ArcSegmentExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirection(this ElementBuilder<Avalonia.Media.ArcSegment> builder, Avalonia.Media.SweepDirection value)
     {
@@ -792,7 +779,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirection(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -810,7 +796,6 @@ public static partial class ArcSegmentExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirection(
         this ElementBuilder<Avalonia.Media.ArcSegment> builder,
@@ -966,7 +951,6 @@ public static partial class ArcSegmentExtensions
     /// Records a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirectionCounterClockwise(this ElementBuilder<Avalonia.Media.ArcSegment> builder)
     {
@@ -991,7 +975,6 @@ public static partial class ArcSegmentExtensions
     /// Records a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirectionClockwise(this ElementBuilder<Avalonia.Media.ArcSegment> builder)
     {

@@ -6,7 +6,7 @@ using NXUI.HotReload.Nodes;
 using AnimationIterationCount = Avalonia.Animation.IterationCount;
 
 /// <summary>
-/// Hot reload helpers for <see cref="Animation"/>.
+/// Hot reload helpers for <see cref="Avalonia.Animation.Animation"/>.
 /// </summary>
 public static partial class AnimationExtensions
 {
@@ -49,7 +49,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Records an existing <see cref="KeyFrame"/> instance on the animation.
+    /// Records an existing <see cref="Avalonia.Animation.KeyFrame"/> instance on the animation.
     /// </summary>
     public static ElementBuilder<Animation> KeyFrames(this ElementBuilder<Animation> builder, KeyFrame keyFrame)
     {
@@ -62,7 +62,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Records an array of <see cref="KeyFrame"/> instances on the animation.
+    /// Records an array of <see cref="Avalonia.Animation.KeyFrame"/> instances on the animation.
     /// </summary>
     public static ElementBuilder<Animation> KeyFrames(this ElementBuilder<Animation> builder, params KeyFrame[] keyFrames)
     {
@@ -75,7 +75,7 @@ public static partial class AnimationExtensions
     }
 
     /// <summary>
-    /// Records a builder-based <see cref="KeyFrame"/>.
+    /// Records a builder-based <see cref="Avalonia.Animation.KeyFrame"/>.
     /// </summary>
     public static ElementBuilder<Animation> KeyFrames(
         this ElementBuilder<Animation> builder,

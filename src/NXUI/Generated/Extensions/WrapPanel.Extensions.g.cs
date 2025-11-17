@@ -18,7 +18,6 @@ public static partial class WrapPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.WrapPanel
     {
@@ -32,7 +31,6 @@ public static partial class WrapPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSpacing<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class WrapPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSpacing<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class WrapPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.WrapPanel
     {
@@ -229,7 +225,6 @@ public static partial class WrapPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class WrapPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LineSpacing<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class WrapPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Layout.Orientation value) where T : Avalonia.Controls.WrapPanel
     {
@@ -426,7 +419,6 @@ public static partial class WrapPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class WrapPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -607,7 +598,6 @@ public static partial class WrapPanelExtensions
     /// Records a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.WrapPanel
     {
@@ -633,7 +623,6 @@ public static partial class WrapPanelExtensions
     /// Records a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.WrapPanel
     {
@@ -661,7 +650,6 @@ public static partial class WrapPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsAlignment<T>(this ElementBuilder<T> builder, Avalonia.Controls.WrapPanelItemsAlignment value) where T : Avalonia.Controls.WrapPanel
     {
@@ -675,7 +663,6 @@ public static partial class WrapPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsAlignment<T>(
         this ElementBuilder<T> builder,
@@ -693,7 +680,6 @@ public static partial class WrapPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsAlignment<T>(
         this ElementBuilder<T> builder,
@@ -856,7 +842,6 @@ public static partial class WrapPanelExtensions
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsAlignmentStart<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.WrapPanel
     {
@@ -882,7 +867,6 @@ public static partial class WrapPanelExtensions
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.WrapPanel
     {
@@ -908,7 +892,6 @@ public static partial class WrapPanelExtensions
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsAlignmentEnd<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.WrapPanel
     {
@@ -936,7 +919,6 @@ public static partial class WrapPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemWidth<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.WrapPanel
     {
@@ -950,7 +932,6 @@ public static partial class WrapPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemWidth<T>(
         this ElementBuilder<T> builder,
@@ -968,7 +949,6 @@ public static partial class WrapPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemWidth<T>(
         this ElementBuilder<T> builder,
@@ -1133,7 +1113,6 @@ public static partial class WrapPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.WrapPanel
     {
@@ -1147,7 +1126,6 @@ public static partial class WrapPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(
         this ElementBuilder<T> builder,
@@ -1165,7 +1143,6 @@ public static partial class WrapPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(
         this ElementBuilder<T> builder,

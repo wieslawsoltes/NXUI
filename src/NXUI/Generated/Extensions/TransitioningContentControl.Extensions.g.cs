@@ -18,7 +18,6 @@ public static partial class TransitioningContentControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PageTransition<T>(this ElementBuilder<T> builder, Avalonia.Animation.IPageTransition value) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -32,7 +31,6 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PageTransition<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PageTransition<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TransitioningContentControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTransitionReversed<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TransitioningContentControl
     {
@@ -229,7 +225,6 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTransitionReversed<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTransitionReversed<T>(
         this ElementBuilder<T> builder,
@@ -461,7 +455,6 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTransitionCompletedHandler<T>(
         this ElementBuilder<T> builder,
@@ -481,7 +474,6 @@ public static partial class TransitioningContentControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTransitionCompleted<T>(
         this ElementBuilder<T> builder,
@@ -538,7 +530,6 @@ public static partial class TransitioningContentControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTransitionCompletedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TransitionCompletedEventArgs>> handler) where T : Avalonia.Controls.TransitioningContentControl
     {

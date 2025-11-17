@@ -18,7 +18,6 @@ public static partial class PopupRootExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> Transform(this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder, Avalonia.Media.Transform value)
     {
@@ -32,7 +31,6 @@ public static partial class PopupRootExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> Transform(
         this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder,
@@ -50,7 +48,6 @@ public static partial class PopupRootExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> Transform(
         this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder,
@@ -208,7 +205,6 @@ public static partial class PopupRootExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder, System.Boolean value)
     {
@@ -222,7 +218,6 @@ public static partial class PopupRootExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(
         this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder,
@@ -240,7 +235,6 @@ public static partial class PopupRootExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(
         this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder,

@@ -18,7 +18,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -32,7 +31,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(this ElementBuilder<T> builder, Avalonia.Media.Stretch value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -229,7 +225,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -436,7 +429,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -462,7 +454,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniform<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -488,7 +479,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniformToFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -516,7 +506,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -530,7 +519,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
@@ -713,7 +700,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -727,7 +713,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
@@ -745,7 +730,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
@@ -910,7 +894,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -924,7 +907,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(
         this ElementBuilder<T> builder,
@@ -942,7 +924,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(
         this ElementBuilder<T> builder,
@@ -1107,7 +1088,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1121,7 +1101,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(
         this ElementBuilder<T> builder,
@@ -1139,7 +1118,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(
         this ElementBuilder<T> builder,
@@ -1304,7 +1282,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(this ElementBuilder<T> builder, Avalonia.Media.PenLineCap value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1318,7 +1295,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(
         this ElementBuilder<T> builder,
@@ -1336,7 +1312,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(
         this ElementBuilder<T> builder,
@@ -1499,7 +1474,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCapFlat<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1525,7 +1499,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCapRound<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1551,7 +1524,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCapSquare<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1579,7 +1551,6 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeJoin<T>(this ElementBuilder<T> builder, Avalonia.Media.PenLineJoin value) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1593,7 +1564,6 @@ public static partial class ShapeExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeJoin<T>(
         this ElementBuilder<T> builder,
@@ -1611,7 +1581,6 @@ public static partial class ShapeExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeJoin<T>(
         this ElementBuilder<T> builder,
@@ -1774,7 +1743,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeJoinBevel<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1800,7 +1768,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeJoinMiter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -1826,7 +1793,6 @@ public static partial class ShapeExtensions
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeJoinRound<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Shapes.Shape
     {

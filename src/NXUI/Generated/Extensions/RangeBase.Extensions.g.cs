@@ -18,7 +18,6 @@ public static partial class RangeBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -32,7 +31,6 @@ public static partial class RangeBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class RangeBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class RangeBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -229,7 +225,6 @@ public static partial class RangeBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class RangeBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class RangeBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -426,7 +419,6 @@ public static partial class RangeBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class RangeBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class RangeBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SmallChange<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -623,7 +613,6 @@ public static partial class RangeBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SmallChange<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class RangeBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SmallChange<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class RangeBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LargeChange<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.RangeBase
     {
@@ -820,7 +807,6 @@ public static partial class RangeBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LargeChange<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class RangeBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LargeChange<T>(
         this ElementBuilder<T> builder,
@@ -1052,7 +1037,6 @@ public static partial class RangeBaseExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnValueChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1072,7 +1056,6 @@ public static partial class RangeBaseExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnValueChanged<T>(
         this ElementBuilder<T> builder,
@@ -1129,7 +1112,6 @@ public static partial class RangeBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnValueChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.RangeBase
     {

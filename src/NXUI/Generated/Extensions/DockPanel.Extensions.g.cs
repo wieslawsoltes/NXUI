@@ -18,7 +18,6 @@ public static partial class DockPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Dock<T>(this ElementBuilder<T> builder, Avalonia.Controls.Dock value) where T : Avalonia.Controls.Control
     {
@@ -32,7 +31,6 @@ public static partial class DockPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Dock<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class DockPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Dock<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class DockPanelExtensions
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DockLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -239,7 +235,6 @@ public static partial class DockPanelExtensions
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DockBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -265,7 +260,6 @@ public static partial class DockPanelExtensions
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DockRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -291,7 +285,6 @@ public static partial class DockPanelExtensions
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DockTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -319,7 +312,6 @@ public static partial class DockPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LastChildFill<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DockPanel
     {
@@ -333,7 +325,6 @@ public static partial class DockPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LastChildFill<T>(
         this ElementBuilder<T> builder,
@@ -351,7 +342,6 @@ public static partial class DockPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LastChildFill<T>(
         this ElementBuilder<T> builder,
@@ -516,7 +506,6 @@ public static partial class DockPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.DockPanel
     {
@@ -530,7 +519,6 @@ public static partial class DockPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalSpacing<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class DockPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalSpacing<T>(
         this ElementBuilder<T> builder,
@@ -713,7 +700,6 @@ public static partial class DockPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.DockPanel
     {
@@ -727,7 +713,6 @@ public static partial class DockPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalSpacing<T>(
         this ElementBuilder<T> builder,
@@ -745,7 +730,6 @@ public static partial class DockPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalSpacing<T>(
         this ElementBuilder<T> builder,

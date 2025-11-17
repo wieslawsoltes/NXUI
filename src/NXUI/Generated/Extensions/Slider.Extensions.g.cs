@@ -18,7 +18,6 @@ public static partial class SliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Layout.Orientation value) where T : Avalonia.Controls.Slider
     {
@@ -32,7 +31,6 @@ public static partial class SliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class SliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class SliderExtensions
     /// Records a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Slider
     {
@@ -239,7 +235,6 @@ public static partial class SliderExtensions
     /// Records a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Slider
     {
@@ -267,7 +262,6 @@ public static partial class SliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Slider
     {
@@ -281,7 +275,6 @@ public static partial class SliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
@@ -299,7 +292,6 @@ public static partial class SliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
@@ -464,7 +456,6 @@ public static partial class SliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSnapToTickEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Slider
     {
@@ -478,7 +469,6 @@ public static partial class SliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSnapToTickEnabled<T>(
         this ElementBuilder<T> builder,
@@ -496,7 +486,6 @@ public static partial class SliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSnapToTickEnabled<T>(
         this ElementBuilder<T> builder,
@@ -661,7 +650,6 @@ public static partial class SliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Slider
     {
@@ -675,7 +663,6 @@ public static partial class SliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(
         this ElementBuilder<T> builder,
@@ -693,7 +680,6 @@ public static partial class SliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickFrequency<T>(
         this ElementBuilder<T> builder,
@@ -858,7 +844,6 @@ public static partial class SliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacement<T>(this ElementBuilder<T> builder, Avalonia.Controls.TickPlacement value) where T : Avalonia.Controls.Slider
     {
@@ -872,7 +857,6 @@ public static partial class SliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacement<T>(
         this ElementBuilder<T> builder,
@@ -890,7 +874,6 @@ public static partial class SliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacement<T>(
         this ElementBuilder<T> builder,
@@ -1053,7 +1036,6 @@ public static partial class SliderExtensions
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacementNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Slider
     {
@@ -1079,7 +1061,6 @@ public static partial class SliderExtensions
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacementTopLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Slider
     {
@@ -1105,7 +1086,6 @@ public static partial class SliderExtensions
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacementBottomRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Slider
     {
@@ -1131,7 +1111,6 @@ public static partial class SliderExtensions
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TickPlacementOutside<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Slider
     {
@@ -1159,7 +1138,6 @@ public static partial class SliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.Slider
     {
@@ -1173,7 +1151,6 @@ public static partial class SliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,
@@ -1191,7 +1168,6 @@ public static partial class SliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,

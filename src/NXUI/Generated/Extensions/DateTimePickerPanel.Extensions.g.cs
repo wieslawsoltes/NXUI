@@ -18,7 +18,6 @@ public static partial class DateTimePickerPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -32,7 +31,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemHeight<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class DateTimePickerPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelType<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.DateTimePickerPanelType value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -229,7 +225,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelType<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelType<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class DateTimePickerPanelExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelTypeYear<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -436,7 +429,6 @@ public static partial class DateTimePickerPanelExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelTypeMonth<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -462,7 +454,6 @@ public static partial class DateTimePickerPanelExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelTypeDay<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -488,7 +479,6 @@ public static partial class DateTimePickerPanelExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelTypeHour<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -514,7 +504,6 @@ public static partial class DateTimePickerPanelExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelTypeMinute<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -540,7 +529,6 @@ public static partial class DateTimePickerPanelExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelTypeTimePeriod<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -566,7 +554,6 @@ public static partial class DateTimePickerPanelExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanelTypeSecond<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -594,7 +581,6 @@ public static partial class DateTimePickerPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFormat<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -608,7 +594,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFormat<T>(
         this ElementBuilder<T> builder,
@@ -626,7 +611,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFormat<T>(
         this ElementBuilder<T> builder,
@@ -791,7 +775,6 @@ public static partial class DateTimePickerPanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShouldLoop<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
@@ -805,7 +788,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShouldLoop<T>(
         this ElementBuilder<T> builder,
@@ -823,7 +805,6 @@ public static partial class DateTimePickerPanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShouldLoop<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class ColorSliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(this ElementBuilder<T> builder, Avalonia.Media.Color value) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -32,7 +31,6 @@ public static partial class ColorSliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ColorSliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ColorSliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponent<T>(this ElementBuilder<T> builder, Avalonia.Controls.ColorComponent value) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -229,7 +225,6 @@ public static partial class ColorSliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponent<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ColorSliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponent<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ColorSliderExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponentAlpha<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -436,7 +429,6 @@ public static partial class ColorSliderExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponentComponent1<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -462,7 +454,6 @@ public static partial class ColorSliderExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponentComponent2<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -488,7 +479,6 @@ public static partial class ColorSliderExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorComponentComponent3<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -516,7 +506,6 @@ public static partial class ColorSliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModel<T>(this ElementBuilder<T> builder, Avalonia.Controls.ColorModel value) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -530,7 +519,6 @@ public static partial class ColorSliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModel<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class ColorSliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModel<T>(
         this ElementBuilder<T> builder,
@@ -711,7 +698,6 @@ public static partial class ColorSliderExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModelHsva<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -737,7 +723,6 @@ public static partial class ColorSliderExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModelRgba<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -765,7 +750,6 @@ public static partial class ColorSliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(this ElementBuilder<T> builder, Avalonia.Media.HsvColor value) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -779,7 +763,6 @@ public static partial class ColorSliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
@@ -797,7 +780,6 @@ public static partial class ColorSliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
@@ -962,7 +944,6 @@ public static partial class ColorSliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -976,7 +957,6 @@ public static partial class ColorSliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaVisible<T>(
         this ElementBuilder<T> builder,
@@ -994,7 +974,6 @@ public static partial class ColorSliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaVisible<T>(
         this ElementBuilder<T> builder,
@@ -1159,7 +1138,6 @@ public static partial class ColorSliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPerceptive<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1173,7 +1151,6 @@ public static partial class ColorSliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPerceptive<T>(
         this ElementBuilder<T> builder,
@@ -1191,7 +1168,6 @@ public static partial class ColorSliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPerceptive<T>(
         this ElementBuilder<T> builder,
@@ -1356,7 +1332,6 @@ public static partial class ColorSliderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsRoundingEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.ColorSlider
     {
@@ -1370,7 +1345,6 @@ public static partial class ColorSliderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsRoundingEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1388,7 +1362,6 @@ public static partial class ColorSliderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsRoundingEnabled<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class DashStyleExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(this ElementBuilder<Avalonia.Media.DashStyle> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
@@ -32,7 +31,6 @@ public static partial class DashStyleExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(
         this ElementBuilder<Avalonia.Media.DashStyle> builder,
@@ -50,7 +48,6 @@ public static partial class DashStyleExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(
         this ElementBuilder<Avalonia.Media.DashStyle> builder,
@@ -208,7 +205,6 @@ public static partial class DashStyleExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DashStyle> Offset(this ElementBuilder<Avalonia.Media.DashStyle> builder, System.Double value)
     {
@@ -222,7 +218,6 @@ public static partial class DashStyleExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DashStyle> Offset(
         this ElementBuilder<Avalonia.Media.DashStyle> builder,
@@ -240,7 +235,6 @@ public static partial class DashStyleExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DashStyle> Offset(
         this ElementBuilder<Avalonia.Media.DashStyle> builder,

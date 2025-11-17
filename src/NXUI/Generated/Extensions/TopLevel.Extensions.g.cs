@@ -198,7 +198,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PointerOverElement<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement value) where T : Avalonia.Controls.TopLevel
     {
@@ -212,7 +211,6 @@ public static partial class TopLevelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PointerOverElement<T>(
         this ElementBuilder<T> builder,
@@ -230,7 +228,6 @@ public static partial class TopLevelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PointerOverElement<T>(
         this ElementBuilder<T> builder,
@@ -395,7 +392,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyLevelHint<T>(this ElementBuilder<T> builder, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value) where T : Avalonia.Controls.TopLevel
     {
@@ -409,7 +405,6 @@ public static partial class TopLevelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyLevelHint<T>(
         this ElementBuilder<T> builder,
@@ -427,7 +422,6 @@ public static partial class TopLevelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyLevelHint<T>(
         this ElementBuilder<T> builder,
@@ -682,7 +676,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyBackgroundFallback<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TopLevel
     {
@@ -696,7 +689,6 @@ public static partial class TopLevelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyBackgroundFallback<T>(
         this ElementBuilder<T> builder,
@@ -714,7 +706,6 @@ public static partial class TopLevelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TransparencyBackgroundFallback<T>(
         this ElementBuilder<T> builder,
@@ -879,7 +870,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemBarColor<T>(this ElementBuilder<T> builder, Avalonia.Media.SolidColorBrush value) where T : Avalonia.Controls.Control
     {
@@ -893,7 +883,6 @@ public static partial class TopLevelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemBarColor<T>(
         this ElementBuilder<T> builder,
@@ -911,7 +900,6 @@ public static partial class TopLevelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemBarColor<T>(
         this ElementBuilder<T> builder,
@@ -1076,7 +1064,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoSafeAreaPadding<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Control
     {
@@ -1090,7 +1077,6 @@ public static partial class TopLevelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoSafeAreaPadding<T>(
         this ElementBuilder<T> builder,
@@ -1108,7 +1094,6 @@ public static partial class TopLevelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoSafeAreaPadding<T>(
         this ElementBuilder<T> builder,
@@ -1322,7 +1307,6 @@ public static partial class TopLevelExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnBackRequestedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1342,7 +1326,6 @@ public static partial class TopLevelExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnBackRequested<T>(
         this ElementBuilder<T> builder,
@@ -1399,7 +1382,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnOpenedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {
@@ -1457,7 +1439,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnClosedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {
@@ -1515,7 +1496,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnScalingChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {
@@ -1573,7 +1553,6 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnBackRequestedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.TopLevel
     {

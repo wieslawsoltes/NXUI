@@ -18,7 +18,6 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Border
     {
@@ -32,7 +31,6 @@ public static partial class BorderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class BorderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(this ElementBuilder<T> builder, Avalonia.Media.BackgroundSizing value) where T : Avalonia.Controls.Border
     {
@@ -229,7 +225,6 @@ public static partial class BorderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class BorderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class BorderExtensions
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizingInnerBorderEdge<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Border
     {
@@ -436,7 +429,6 @@ public static partial class BorderExtensions
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizingOuterBorderEdge<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Border
     {
@@ -462,7 +454,6 @@ public static partial class BorderExtensions
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizingCenterBorder<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Border
     {
@@ -490,7 +481,6 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Border
     {
@@ -504,7 +494,6 @@ public static partial class BorderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
@@ -522,7 +511,6 @@ public static partial class BorderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
@@ -687,7 +675,6 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(this ElementBuilder<T> builder, Avalonia.Thickness value) where T : Avalonia.Controls.Border
     {
@@ -701,7 +688,6 @@ public static partial class BorderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(
         this ElementBuilder<T> builder,
@@ -719,7 +705,6 @@ public static partial class BorderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(
         this ElementBuilder<T> builder,
@@ -938,7 +923,6 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, Avalonia.CornerRadius value) where T : Avalonia.Controls.Border
     {
@@ -952,7 +936,6 @@ public static partial class BorderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
@@ -970,7 +953,6 @@ public static partial class BorderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
@@ -1189,7 +1171,6 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(this ElementBuilder<T> builder, Avalonia.Media.BoxShadows value) where T : Avalonia.Controls.Border
     {
@@ -1203,7 +1184,6 @@ public static partial class BorderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(
         this ElementBuilder<T> builder,
@@ -1221,7 +1201,6 @@ public static partial class BorderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(
         this ElementBuilder<T> builder,

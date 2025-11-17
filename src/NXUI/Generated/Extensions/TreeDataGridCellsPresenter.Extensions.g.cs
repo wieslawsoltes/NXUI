@@ -18,7 +18,6 @@ public static partial class TreeDataGridCellsPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(this ElementBuilder<T> builder, Avalonia.Controls.Models.TreeDataGrid.IRows value) where T : Avalonia.Controls.Primitives.TreeDataGridCellsPresenter
     {
@@ -32,7 +31,6 @@ public static partial class TreeDataGridCellsPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TreeDataGridCellsPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,

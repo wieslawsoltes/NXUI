@@ -18,7 +18,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDate<T>(this ElementBuilder<T> builder, System.DateTime value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -32,7 +31,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDate<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDate<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateStart<T>(this ElementBuilder<T> builder, System.Nullable<System.DateTime> value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -229,7 +225,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateStart<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateStart<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateEnd<T>(this ElementBuilder<T> builder, System.Nullable<System.DateTime> value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -426,7 +419,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateEnd<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayDateEnd<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeek<T>(this ElementBuilder<T> builder, System.DayOfWeek value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -623,7 +613,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeek<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeek<T>(
         this ElementBuilder<T> builder,
@@ -804,7 +792,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeekSunday<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -830,7 +817,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeekMonday<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -856,7 +842,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeekTuesday<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -882,7 +867,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeekWednesday<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -908,7 +892,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeekThursday<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -934,7 +917,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeekFriday<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -960,7 +942,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstDayOfWeekSaturday<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -988,7 +969,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1002,7 +982,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
@@ -1020,7 +999,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
@@ -1185,7 +1163,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTodayHighlighted<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1199,7 +1176,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTodayHighlighted<T>(
         this ElementBuilder<T> builder,
@@ -1217,7 +1193,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTodayHighlighted<T>(
         this ElementBuilder<T> builder,
@@ -1382,7 +1357,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(this ElementBuilder<T> builder, System.Nullable<System.DateTime> value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1396,7 +1370,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(
         this ElementBuilder<T> builder,
@@ -1414,7 +1387,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(
         this ElementBuilder<T> builder,
@@ -1579,7 +1551,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDateFormat<T>(this ElementBuilder<T> builder, Avalonia.Controls.CalendarDatePickerFormat value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1593,7 +1564,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDateFormat<T>(
         this ElementBuilder<T> builder,
@@ -1611,7 +1581,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDateFormat<T>(
         this ElementBuilder<T> builder,
@@ -1774,7 +1743,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDateFormatLong<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1800,7 +1768,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDateFormatShort<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1826,7 +1793,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDateFormatCustom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1854,7 +1820,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomDateFormatString<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -1868,7 +1833,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomDateFormatString<T>(
         this ElementBuilder<T> builder,
@@ -1886,7 +1850,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomDateFormatString<T>(
         this ElementBuilder<T> builder,
@@ -2051,7 +2014,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2065,7 +2027,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -2083,7 +2044,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -2248,7 +2208,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2262,7 +2221,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
@@ -2280,7 +2238,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
@@ -2445,7 +2402,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseFloatingWatermark<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2459,7 +2415,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseFloatingWatermark<T>(
         this ElementBuilder<T> builder,
@@ -2477,7 +2432,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseFloatingWatermark<T>(
         this ElementBuilder<T> builder,
@@ -2642,7 +2596,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2656,7 +2609,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -2674,7 +2626,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -2837,7 +2788,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2863,7 +2813,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2889,7 +2838,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2915,7 +2863,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2943,7 +2890,6 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2957,7 +2903,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -2975,7 +2920,6 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -3138,7 +3082,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3164,7 +3107,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3190,7 +3132,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -3216,7 +3157,6 @@ public static partial class CalendarDatePickerExtensions
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.CalendarDatePicker
     {

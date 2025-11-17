@@ -18,7 +18,6 @@ public static partial class ImageDrawingExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(this ElementBuilder<Avalonia.Media.ImageDrawing> builder, Avalonia.Media.IImage value)
     {
@@ -32,7 +31,6 @@ public static partial class ImageDrawingExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(
         this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
@@ -50,7 +48,6 @@ public static partial class ImageDrawingExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(
         this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
@@ -208,7 +205,6 @@ public static partial class ImageDrawingExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageDrawing> Rect(this ElementBuilder<Avalonia.Media.ImageDrawing> builder, Avalonia.Rect value)
     {
@@ -222,7 +218,6 @@ public static partial class ImageDrawingExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageDrawing> Rect(
         this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
@@ -240,7 +235,6 @@ public static partial class ImageDrawingExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageDrawing> Rect(
         this ElementBuilder<Avalonia.Media.ImageDrawing> builder,

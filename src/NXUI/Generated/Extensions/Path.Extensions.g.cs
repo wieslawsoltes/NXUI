@@ -18,7 +18,6 @@ public static partial class PathExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Data<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry value) where T : Avalonia.Controls.Shapes.Path
     {
@@ -32,7 +31,6 @@ public static partial class PathExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Data<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class PathExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Data<T>(
         this ElementBuilder<T> builder,

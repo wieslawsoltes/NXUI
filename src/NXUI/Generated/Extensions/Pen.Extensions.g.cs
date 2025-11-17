@@ -18,7 +18,6 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> Brush(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IBrush value)
     {
@@ -32,7 +31,6 @@ public static partial class PenExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> Brush(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -50,7 +48,6 @@ public static partial class PenExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> Brush(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -208,7 +205,6 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> Thickness(this ElementBuilder<Avalonia.Media.Pen> builder, System.Double value)
     {
@@ -222,7 +218,6 @@ public static partial class PenExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> Thickness(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -240,7 +235,6 @@ public static partial class PenExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> Thickness(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -398,7 +392,6 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> DashStyle(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IDashStyle value)
     {
@@ -412,7 +405,6 @@ public static partial class PenExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> DashStyle(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -430,7 +422,6 @@ public static partial class PenExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> DashStyle(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -588,7 +579,6 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineCap(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.PenLineCap value)
     {
@@ -602,7 +592,6 @@ public static partial class PenExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineCap(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -620,7 +609,6 @@ public static partial class PenExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineCap(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -776,7 +764,6 @@ public static partial class PenExtensions
     /// Records a <see cref="Avalonia.Media.Pen.LineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineCapFlat(this ElementBuilder<Avalonia.Media.Pen> builder)
     {
@@ -801,7 +788,6 @@ public static partial class PenExtensions
     /// Records a <see cref="Avalonia.Media.Pen.LineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineCapRound(this ElementBuilder<Avalonia.Media.Pen> builder)
     {
@@ -826,7 +812,6 @@ public static partial class PenExtensions
     /// Records a <see cref="Avalonia.Media.Pen.LineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineCapSquare(this ElementBuilder<Avalonia.Media.Pen> builder)
     {
@@ -853,7 +838,6 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineJoin(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.PenLineJoin value)
     {
@@ -867,7 +851,6 @@ public static partial class PenExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineJoin(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -885,7 +868,6 @@ public static partial class PenExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineJoin(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -1041,7 +1023,6 @@ public static partial class PenExtensions
     /// Records a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineJoinBevel(this ElementBuilder<Avalonia.Media.Pen> builder)
     {
@@ -1066,7 +1047,6 @@ public static partial class PenExtensions
     /// Records a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineJoinMiter(this ElementBuilder<Avalonia.Media.Pen> builder)
     {
@@ -1091,7 +1071,6 @@ public static partial class PenExtensions
     /// Records a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> LineJoinRound(this ElementBuilder<Avalonia.Media.Pen> builder)
     {
@@ -1118,7 +1097,6 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> MiterLimit(this ElementBuilder<Avalonia.Media.Pen> builder, System.Double value)
     {
@@ -1132,7 +1110,6 @@ public static partial class PenExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> MiterLimit(
         this ElementBuilder<Avalonia.Media.Pen> builder,
@@ -1150,7 +1127,6 @@ public static partial class PenExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> MiterLimit(
         this ElementBuilder<Avalonia.Media.Pen> builder,

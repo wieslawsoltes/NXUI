@@ -18,7 +18,6 @@ public static partial class RefreshContainerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visualizer<T>(this ElementBuilder<T> builder, Avalonia.Controls.RefreshVisualizer value) where T : Avalonia.Controls.RefreshContainer
     {
@@ -32,7 +31,6 @@ public static partial class RefreshContainerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visualizer<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class RefreshContainerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visualizer<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class RefreshContainerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirection<T>(this ElementBuilder<T> builder, Avalonia.Input.PullDirection value) where T : Avalonia.Controls.RefreshContainer
     {
@@ -229,7 +225,6 @@ public static partial class RefreshContainerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirection<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class RefreshContainerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirection<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class RefreshContainerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionTopToBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshContainer
     {
@@ -436,7 +429,6 @@ public static partial class RefreshContainerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionBottomToTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshContainer
     {
@@ -462,7 +454,6 @@ public static partial class RefreshContainerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionLeftToRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshContainer
     {
@@ -488,7 +479,6 @@ public static partial class RefreshContainerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionRightToLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshContainer
     {
@@ -565,7 +555,6 @@ public static partial class RefreshContainerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRefreshRequestedHandler<T>(
         this ElementBuilder<T> builder,
@@ -585,7 +574,6 @@ public static partial class RefreshContainerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRefreshRequested<T>(
         this ElementBuilder<T> builder,
@@ -642,7 +630,6 @@ public static partial class RefreshContainerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRefreshRequestedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.RefreshRequestedEventArgs>> handler) where T : Avalonia.Controls.RefreshContainer
     {

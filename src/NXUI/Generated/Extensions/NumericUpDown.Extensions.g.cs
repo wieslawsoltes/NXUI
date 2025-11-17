@@ -18,7 +18,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowSpin<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -32,7 +31,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowSpin<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowSpin<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ButtonSpinnerLocation<T>(this ElementBuilder<T> builder, Avalonia.Controls.Location value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -229,7 +225,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ButtonSpinnerLocation<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ButtonSpinnerLocation<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ButtonSpinnerLocationLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -436,7 +429,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ButtonSpinnerLocationRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -464,7 +456,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowButtonSpinner<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -478,7 +469,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowButtonSpinner<T>(
         this ElementBuilder<T> builder,
@@ -496,7 +486,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowButtonSpinner<T>(
         this ElementBuilder<T> builder,
@@ -661,7 +650,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipValueToMinMax<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -675,7 +663,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipValueToMinMax<T>(
         this ElementBuilder<T> builder,
@@ -693,7 +680,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipValueToMinMax<T>(
         this ElementBuilder<T> builder,
@@ -858,7 +844,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NumberFormat<T>(this ElementBuilder<T> builder, System.Globalization.NumberFormatInfo value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -872,7 +857,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NumberFormat<T>(
         this ElementBuilder<T> builder,
@@ -890,7 +874,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NumberFormat<T>(
         this ElementBuilder<T> builder,
@@ -1055,7 +1038,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FormatString<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1069,7 +1051,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FormatString<T>(
         this ElementBuilder<T> builder,
@@ -1087,7 +1068,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FormatString<T>(
         this ElementBuilder<T> builder,
@@ -1252,7 +1232,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Increment<T>(this ElementBuilder<T> builder, System.Decimal value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1266,7 +1245,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Increment<T>(
         this ElementBuilder<T> builder,
@@ -1284,7 +1262,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Increment<T>(
         this ElementBuilder<T> builder,
@@ -1449,7 +1426,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1463,7 +1439,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(
         this ElementBuilder<T> builder,
@@ -1481,7 +1456,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(
         this ElementBuilder<T> builder,
@@ -1646,7 +1620,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(this ElementBuilder<T> builder, System.Decimal value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1660,7 +1633,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -1678,7 +1650,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -1843,7 +1814,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(this ElementBuilder<T> builder, System.Decimal value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -1857,7 +1827,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -1875,7 +1844,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -2040,7 +2008,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyle<T>(this ElementBuilder<T> builder, System.Globalization.NumberStyles value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2054,7 +2021,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyle<T>(
         this ElementBuilder<T> builder,
@@ -2072,7 +2038,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyle<T>(
         this ElementBuilder<T> builder,
@@ -2235,7 +2200,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2261,7 +2225,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowLeadingWhite<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2287,7 +2250,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowTrailingWhite<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2313,7 +2275,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowLeadingSign<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2339,7 +2300,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleInteger<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2365,7 +2325,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowTrailingSign<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2391,7 +2350,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowParentheses<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2417,7 +2375,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowDecimalPoint<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2443,7 +2400,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowThousands<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2469,7 +2425,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleNumber<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2495,7 +2450,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowExponent<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2521,7 +2475,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleFloat<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2547,7 +2500,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowCurrencySymbol<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2573,7 +2525,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleCurrency<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2599,7 +2550,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAny<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2625,7 +2575,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowHexSpecifier<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2651,7 +2600,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleHexNumber<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2677,7 +2625,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleAllowBinarySpecifier<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2703,7 +2650,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ParsingNumberStyleBinaryNumber<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2731,7 +2677,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2745,7 +2690,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -2763,7 +2707,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -2928,7 +2871,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextConverter<T>(this ElementBuilder<T> builder, Avalonia.Data.Converters.IValueConverter value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2942,7 +2884,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextConverter<T>(
         this ElementBuilder<T> builder,
@@ -2960,7 +2901,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextConverter<T>(
         this ElementBuilder<T> builder,
@@ -3125,7 +3065,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(this ElementBuilder<T> builder, System.Nullable<System.Decimal> value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3139,7 +3078,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -3157,7 +3095,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -3322,7 +3259,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3336,7 +3272,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
@@ -3354,7 +3289,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
@@ -3519,7 +3453,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3533,7 +3466,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -3551,7 +3483,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -3714,7 +3645,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3740,7 +3670,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3766,7 +3695,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3792,7 +3720,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3820,7 +3747,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3834,7 +3760,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -3852,7 +3777,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -4015,7 +3939,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4041,7 +3964,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4067,7 +3989,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4093,7 +4014,6 @@ public static partial class NumericUpDownExtensions
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4121,7 +4041,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4135,7 +4054,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
@@ -4153,7 +4071,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
@@ -4318,7 +4235,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4332,7 +4248,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
@@ -4350,7 +4265,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
@@ -4564,7 +4478,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnValueChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -4584,7 +4497,6 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnValueChanged<T>(
         this ElementBuilder<T> builder,
@@ -4641,7 +4553,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSpinnedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.SpinEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4699,7 +4610,6 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnValueChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.NumericUpDownValueChangedEventArgs>> handler) where T : Avalonia.Controls.NumericUpDown
     {

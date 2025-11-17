@@ -108,7 +108,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Width<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.Layoutable
     {
@@ -122,7 +121,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Width<T>(
         this ElementBuilder<T> builder,
@@ -140,7 +138,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Width<T>(
         this ElementBuilder<T> builder,
@@ -305,7 +302,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Height<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.Layoutable
     {
@@ -319,7 +315,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Height<T>(
         this ElementBuilder<T> builder,
@@ -337,7 +332,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Height<T>(
         this ElementBuilder<T> builder,
@@ -502,7 +496,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinWidth<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.Layoutable
     {
@@ -516,7 +509,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinWidth<T>(
         this ElementBuilder<T> builder,
@@ -534,7 +526,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinWidth<T>(
         this ElementBuilder<T> builder,
@@ -699,7 +690,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxWidth<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.Layoutable
     {
@@ -713,7 +703,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxWidth<T>(
         this ElementBuilder<T> builder,
@@ -731,7 +720,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxWidth<T>(
         this ElementBuilder<T> builder,
@@ -896,7 +884,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.Layoutable
     {
@@ -910,7 +897,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHeight<T>(
         this ElementBuilder<T> builder,
@@ -928,7 +914,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHeight<T>(
         this ElementBuilder<T> builder,
@@ -1093,7 +1078,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.Layoutable
     {
@@ -1107,7 +1091,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHeight<T>(
         this ElementBuilder<T> builder,
@@ -1125,7 +1108,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHeight<T>(
         this ElementBuilder<T> builder,
@@ -1290,7 +1272,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Margin<T>(this ElementBuilder<T> builder, Avalonia.Thickness value) where T : Avalonia.Layout.Layoutable
     {
@@ -1304,7 +1285,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Margin<T>(
         this ElementBuilder<T> builder,
@@ -1322,7 +1302,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Margin<T>(
         this ElementBuilder<T> builder,
@@ -1541,7 +1520,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Layout.Layoutable
     {
@@ -1555,7 +1533,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignment<T>(
         this ElementBuilder<T> builder,
@@ -1573,7 +1550,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignment<T>(
         this ElementBuilder<T> builder,
@@ -1736,7 +1712,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -1762,7 +1737,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -1788,7 +1762,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -1814,7 +1787,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -1842,7 +1814,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Layout.Layoutable
     {
@@ -1856,7 +1827,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignment<T>(
         this ElementBuilder<T> builder,
@@ -1874,7 +1844,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignment<T>(
         this ElementBuilder<T> builder,
@@ -2037,7 +2006,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -2063,7 +2031,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignmentTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -2089,7 +2056,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -2115,7 +2081,6 @@ public static partial class LayoutableExtensions
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalAlignmentBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.Layoutable
     {
@@ -2143,7 +2108,6 @@ public static partial class LayoutableExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLayoutRounding<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Layout.Layoutable
     {
@@ -2157,7 +2121,6 @@ public static partial class LayoutableExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLayoutRounding<T>(
         this ElementBuilder<T> builder,
@@ -2175,7 +2138,6 @@ public static partial class LayoutableExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLayoutRounding<T>(
         this ElementBuilder<T> builder,

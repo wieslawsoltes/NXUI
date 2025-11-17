@@ -18,7 +18,6 @@ public static partial class MatrixTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.MatrixTransform> Matrix(this ElementBuilder<Avalonia.Media.MatrixTransform> builder, Avalonia.Matrix value)
     {
@@ -32,7 +31,6 @@ public static partial class MatrixTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.MatrixTransform> Matrix(
         this ElementBuilder<Avalonia.Media.MatrixTransform> builder,
@@ -50,7 +48,6 @@ public static partial class MatrixTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.MatrixTransform> Matrix(
         this ElementBuilder<Avalonia.Media.MatrixTransform> builder,

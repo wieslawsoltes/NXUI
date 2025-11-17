@@ -18,7 +18,6 @@ public static partial class ToggleButtonExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(this ElementBuilder<T> builder, System.Nullable<System.Boolean> value) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -32,7 +31,6 @@ public static partial class ToggleButtonExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ToggleButtonExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ToggleButtonExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsThreeState<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.ToggleButton
     {
@@ -229,7 +225,6 @@ public static partial class ToggleButtonExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsThreeState<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ToggleButtonExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsThreeState<T>(
         this ElementBuilder<T> builder,
@@ -461,7 +455,6 @@ public static partial class ToggleButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsCheckedChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -481,7 +474,6 @@ public static partial class ToggleButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsCheckedChanged<T>(
         this ElementBuilder<T> builder,
@@ -538,7 +530,6 @@ public static partial class ToggleButtonExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsCheckedChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Primitives.ToggleButton
     {

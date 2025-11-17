@@ -18,7 +18,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Focusable<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Input.InputElement
     {
@@ -32,7 +31,6 @@ public static partial class InputElementExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Focusable<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class InputElementExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Focusable<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Input.InputElement
     {
@@ -229,7 +225,6 @@ public static partial class InputElementExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class InputElementExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(
         this ElementBuilder<T> builder,
@@ -502,7 +496,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Cursor<T>(this ElementBuilder<T> builder, Avalonia.Input.Cursor value) where T : Avalonia.Input.InputElement
     {
@@ -516,7 +509,6 @@ public static partial class InputElementExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Cursor<T>(
         this ElementBuilder<T> builder,
@@ -534,7 +526,6 @@ public static partial class InputElementExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Cursor<T>(
         this ElementBuilder<T> builder,
@@ -879,7 +870,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsHitTestVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Input.InputElement
     {
@@ -893,7 +883,6 @@ public static partial class InputElementExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsHitTestVisible<T>(
         this ElementBuilder<T> builder,
@@ -911,7 +900,6 @@ public static partial class InputElementExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsHitTestVisible<T>(
         this ElementBuilder<T> builder,
@@ -1215,7 +1203,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnGotFocusHandler<T>(
         this ElementBuilder<T> builder,
@@ -1235,7 +1222,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnGotFocus<T>(
         this ElementBuilder<T> builder,
@@ -1308,7 +1294,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLostFocusHandler<T>(
         this ElementBuilder<T> builder,
@@ -1328,7 +1313,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLostFocus<T>(
         this ElementBuilder<T> builder,
@@ -1401,7 +1385,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnKeyDownHandler<T>(
         this ElementBuilder<T> builder,
@@ -1421,7 +1404,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnKeyDown<T>(
         this ElementBuilder<T> builder,
@@ -1494,7 +1476,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnKeyUpHandler<T>(
         this ElementBuilder<T> builder,
@@ -1514,7 +1495,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnKeyUp<T>(
         this ElementBuilder<T> builder,
@@ -1587,7 +1567,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextInputHandler<T>(
         this ElementBuilder<T> builder,
@@ -1607,7 +1586,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextInput<T>(
         this ElementBuilder<T> builder,
@@ -1680,7 +1658,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextInputMethodClientRequestedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1700,7 +1677,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextInputMethodClientRequested<T>(
         this ElementBuilder<T> builder,
@@ -1773,7 +1749,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerEnteredHandler<T>(
         this ElementBuilder<T> builder,
@@ -1793,7 +1768,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerEntered<T>(
         this ElementBuilder<T> builder,
@@ -1866,7 +1840,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerExitedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1886,7 +1859,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerExited<T>(
         this ElementBuilder<T> builder,
@@ -1959,7 +1931,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerMovedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1979,7 +1950,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerMoved<T>(
         this ElementBuilder<T> builder,
@@ -2052,7 +2022,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerPressedHandler<T>(
         this ElementBuilder<T> builder,
@@ -2072,7 +2041,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerPressed<T>(
         this ElementBuilder<T> builder,
@@ -2145,7 +2113,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerReleasedHandler<T>(
         this ElementBuilder<T> builder,
@@ -2165,7 +2132,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerReleased<T>(
         this ElementBuilder<T> builder,
@@ -2238,7 +2204,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerCaptureLostHandler<T>(
         this ElementBuilder<T> builder,
@@ -2258,7 +2223,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerCaptureLost<T>(
         this ElementBuilder<T> builder,
@@ -2331,7 +2295,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerWheelChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -2351,7 +2314,6 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerWheelChanged<T>(
         this ElementBuilder<T> builder,
@@ -2408,7 +2370,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnGotFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.GotFocusEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2466,7 +2427,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLostFocusEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2524,7 +2484,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnKeyDownEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2582,7 +2541,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnKeyUpEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.KeyEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2640,7 +2598,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextInputEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.TextInputEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2698,7 +2655,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextInputMethodClientRequestedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2756,7 +2712,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerEnteredEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2814,7 +2769,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerExitedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2872,7 +2826,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerMovedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2930,7 +2883,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerPressedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerPressedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -2988,7 +2940,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerReleasedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerReleasedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -3046,7 +2997,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerCaptureLostEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerCaptureLostEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -3104,7 +3054,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPointerWheelChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.PointerWheelEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -3162,7 +3111,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTappedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -3220,7 +3168,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnHoldingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.HoldingRoutedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {
@@ -3278,7 +3225,6 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDoubleTappedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Input.TappedEventArgs>> handler) where T : Avalonia.Input.InputElement
     {

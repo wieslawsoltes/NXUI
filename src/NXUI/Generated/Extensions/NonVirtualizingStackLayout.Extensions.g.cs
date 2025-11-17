@@ -18,7 +18,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Layout.Orientation value) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
@@ -32,7 +31,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
@@ -239,7 +235,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
@@ -267,7 +262,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Spacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.NonVirtualizingStackLayout
     {
@@ -281,7 +275,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Spacing<T>(
         this ElementBuilder<T> builder,
@@ -299,7 +292,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Spacing<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class TileBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentX<T>(this ElementBuilder<T> builder, Avalonia.Media.AlignmentX value) where T : Avalonia.Media.TileBrush
     {
@@ -32,7 +31,6 @@ public static partial class TileBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentX<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TileBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentX<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentXLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -239,7 +235,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentXCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -265,7 +260,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentXRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -293,7 +287,6 @@ public static partial class TileBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentY<T>(this ElementBuilder<T> builder, Avalonia.Media.AlignmentY value) where T : Avalonia.Media.TileBrush
     {
@@ -307,7 +300,6 @@ public static partial class TileBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentY<T>(
         this ElementBuilder<T> builder,
@@ -325,7 +317,6 @@ public static partial class TileBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentY<T>(
         this ElementBuilder<T> builder,
@@ -488,7 +479,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentYTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -514,7 +504,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentYCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -540,7 +529,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignmentYBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -568,7 +556,6 @@ public static partial class TileBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DestinationRect<T>(this ElementBuilder<T> builder, Avalonia.RelativeRect value) where T : Avalonia.Media.TileBrush
     {
@@ -582,7 +569,6 @@ public static partial class TileBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DestinationRect<T>(
         this ElementBuilder<T> builder,
@@ -600,7 +586,6 @@ public static partial class TileBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DestinationRect<T>(
         this ElementBuilder<T> builder,
@@ -765,7 +750,6 @@ public static partial class TileBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(this ElementBuilder<T> builder, Avalonia.RelativeRect value) where T : Avalonia.Media.TileBrush
     {
@@ -779,7 +763,6 @@ public static partial class TileBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(
         this ElementBuilder<T> builder,
@@ -797,7 +780,6 @@ public static partial class TileBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SourceRect<T>(
         this ElementBuilder<T> builder,
@@ -962,7 +944,6 @@ public static partial class TileBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(this ElementBuilder<T> builder, Avalonia.Media.Stretch value) where T : Avalonia.Media.TileBrush
     {
@@ -976,7 +957,6 @@ public static partial class TileBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -994,7 +974,6 @@ public static partial class TileBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -1157,7 +1136,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1183,7 +1161,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1209,7 +1186,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniform<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1235,7 +1211,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniformToFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1263,7 +1238,6 @@ public static partial class TileBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileMode<T>(this ElementBuilder<T> builder, Avalonia.Media.TileMode value) where T : Avalonia.Media.TileBrush
     {
@@ -1277,7 +1251,6 @@ public static partial class TileBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileMode<T>(
         this ElementBuilder<T> builder,
@@ -1295,7 +1268,6 @@ public static partial class TileBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileMode<T>(
         this ElementBuilder<T> builder,
@@ -1458,7 +1430,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileModeNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1484,7 +1455,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileModeFlipX<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1510,7 +1480,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileModeFlipY<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1536,7 +1505,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileModeFlipXY<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {
@@ -1562,7 +1530,6 @@ public static partial class TileBrushExtensions
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TileModeTile<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TileBrush
     {

@@ -18,7 +18,6 @@ public static partial class RadialGradientBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> Center(this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder, Avalonia.RelativePoint value)
     {
@@ -32,7 +31,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> Center(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,
@@ -50,7 +48,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> Center(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,
@@ -208,7 +205,6 @@ public static partial class RadialGradientBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> GradientOrigin(this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder, Avalonia.RelativePoint value)
     {
@@ -222,7 +218,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> GradientOrigin(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,
@@ -240,7 +235,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> GradientOrigin(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,
@@ -398,7 +392,6 @@ public static partial class RadialGradientBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> RadiusX(this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder, Avalonia.RelativeScalar value)
     {
@@ -412,7 +405,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> RadiusX(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,
@@ -430,7 +422,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> RadiusX(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,
@@ -588,7 +579,6 @@ public static partial class RadialGradientBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> RadiusY(this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder, Avalonia.RelativeScalar value)
     {
@@ -602,7 +592,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> RadiusY(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,
@@ -620,7 +609,6 @@ public static partial class RadialGradientBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.RadialGradientBrush> RadiusY(
         this ElementBuilder<Avalonia.Media.RadialGradientBrush> builder,

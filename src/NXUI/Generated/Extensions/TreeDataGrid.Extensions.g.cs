@@ -18,7 +18,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoDragDropRows<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -32,7 +31,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoDragDropRows<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoDragDropRows<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserResizeColumns<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -229,7 +225,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserResizeColumns<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserResizeColumns<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserSortColumns<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -426,7 +419,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserSortColumns<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserSortColumns<T>(
         this ElementBuilder<T> builder,
@@ -699,7 +690,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ElementFactory<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.TreeDataGridElementFactory value) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -713,7 +703,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ElementFactory<T>(
         this ElementBuilder<T> builder,
@@ -731,7 +720,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ElementFactory<T>(
         this ElementBuilder<T> builder,
@@ -896,7 +884,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(this ElementBuilder<T> builder, Avalonia.Controls.Models.TreeDataGrid.IRows value) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -910,7 +897,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,
@@ -928,7 +914,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,
@@ -1183,7 +1168,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowColumnHeaders<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -1197,7 +1181,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowColumnHeaders<T>(
         this ElementBuilder<T> builder,
@@ -1215,7 +1198,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowColumnHeaders<T>(
         this ElementBuilder<T> builder,
@@ -1380,7 +1362,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITreeDataGridSource value) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -1394,7 +1375,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
@@ -1412,7 +1392,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
@@ -1626,7 +1605,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDragStartedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1646,7 +1624,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDragStarted<T>(
         this ElementBuilder<T> builder,
@@ -1719,7 +1696,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDragOverHandler<T>(
         this ElementBuilder<T> builder,
@@ -1739,7 +1715,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDragOver<T>(
         this ElementBuilder<T> builder,
@@ -1812,7 +1787,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDropHandler<T>(
         this ElementBuilder<T> builder,
@@ -1832,7 +1806,6 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDrop<T>(
         this ElementBuilder<T> builder,
@@ -1889,7 +1862,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCellClearingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridCellEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -1947,7 +1919,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCellPreparedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridCellEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -2005,7 +1976,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCellValueChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridCellEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -2063,7 +2033,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowClearingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridRowEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -2121,7 +2090,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowPreparedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridRowEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -2179,7 +2147,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDragStartedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridRowDragStartedEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -2237,7 +2204,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDragOverEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridRowDragEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -2295,7 +2261,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDropEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TreeDataGridRowDragEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -2353,7 +2318,6 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChangingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.TreeDataGrid
     {

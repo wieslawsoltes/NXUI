@@ -18,7 +18,6 @@ public static partial class AdornerLayerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AdornedElement<T>(this ElementBuilder<T> builder, Avalonia.Visual value) where T : Avalonia.Visual
     {
@@ -32,7 +31,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AdornedElement<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AdornedElement<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class AdornerLayerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClipEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Visual
     {
@@ -229,7 +225,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClipEnabled<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClipEnabled<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class AdornerLayerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Adorner<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Visual
     {
@@ -426,7 +419,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Adorner<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Adorner<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class AdornerLayerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DefaultFocusAdorner<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.Primitives.AdornerLayer
     {
@@ -623,7 +613,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DefaultFocusAdorner<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class AdornerLayerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DefaultFocusAdorner<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintColor<T>(this ElementBuilder<T> builder, Avalonia.Media.Color value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -32,7 +31,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintColor<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintColor<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSource<T>(this ElementBuilder<T> builder, Avalonia.Media.AcrylicBackgroundSource value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -229,7 +225,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSource<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSource<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSourceNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -436,7 +429,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSourceDigger<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -464,7 +456,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintOpacity<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -478,7 +469,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintOpacity<T>(
         this ElementBuilder<T> builder,
@@ -496,7 +486,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TintOpacity<T>(
         this ElementBuilder<T> builder,
@@ -661,7 +650,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaterialOpacity<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -675,7 +663,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaterialOpacity<T>(
         this ElementBuilder<T> builder,
@@ -693,7 +680,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaterialOpacity<T>(
         this ElementBuilder<T> builder,
@@ -858,7 +844,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlatformTransparencyCompensationLevel<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -872,7 +857,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlatformTransparencyCompensationLevel<T>(
         this ElementBuilder<T> builder,
@@ -890,7 +874,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlatformTransparencyCompensationLevel<T>(
         this ElementBuilder<T> builder,
@@ -1055,7 +1038,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FallbackColor<T>(this ElementBuilder<T> builder, Avalonia.Media.Color value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
@@ -1069,7 +1051,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FallbackColor<T>(
         this ElementBuilder<T> builder,
@@ -1087,7 +1068,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FallbackColor<T>(
         this ElementBuilder<T> builder,

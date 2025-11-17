@@ -18,7 +18,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(this ElementBuilder<T> builder, Avalonia.Media.Color value) where T : Avalonia.Controls.ColorView
     {
@@ -32,7 +31,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Color<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModel<T>(this ElementBuilder<T> builder, Avalonia.Controls.ColorModel value) where T : Avalonia.Controls.ColorView
     {
@@ -229,7 +225,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModel<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModel<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModelHsva<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -436,7 +429,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorModelRgba<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -464,7 +456,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponents<T>(this ElementBuilder<T> builder, Avalonia.Controls.ColorSpectrumComponents value) where T : Avalonia.Controls.ColorView
     {
@@ -478,7 +469,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponents<T>(
         this ElementBuilder<T> builder,
@@ -496,7 +486,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponents<T>(
         this ElementBuilder<T> builder,
@@ -659,7 +648,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponentsHueValue<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -685,7 +673,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponentsValueHue<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -711,7 +698,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponentsHueSaturation<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -737,7 +723,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponentsSaturationHue<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -763,7 +748,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponentsSaturationValue<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -789,7 +773,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumComponentsValueSaturation<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -817,7 +800,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumShape<T>(this ElementBuilder<T> builder, Avalonia.Controls.ColorSpectrumShape value) where T : Avalonia.Controls.ColorView
     {
@@ -831,7 +813,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumShape<T>(
         this ElementBuilder<T> builder,
@@ -849,7 +830,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumShape<T>(
         this ElementBuilder<T> builder,
@@ -1012,7 +992,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumShapeBox<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -1038,7 +1017,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColorSpectrumShapeRing<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -1066,7 +1044,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HexInputAlphaPosition<T>(this ElementBuilder<T> builder, Avalonia.Controls.AlphaComponentPosition value) where T : Avalonia.Controls.ColorView
     {
@@ -1080,7 +1057,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HexInputAlphaPosition<T>(
         this ElementBuilder<T> builder,
@@ -1098,7 +1074,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HexInputAlphaPosition<T>(
         this ElementBuilder<T> builder,
@@ -1261,7 +1236,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HexInputAlphaPositionLeading<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -1287,7 +1261,6 @@ public static partial class ColorViewExtensions
     /// Records a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HexInputAlphaPositionTrailing<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ColorView
     {
@@ -1315,7 +1288,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(this ElementBuilder<T> builder, Avalonia.Media.HsvColor value) where T : Avalonia.Controls.ColorView
     {
@@ -1329,7 +1301,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
@@ -1347,7 +1318,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
@@ -1512,7 +1482,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAccentColorsVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -1526,7 +1495,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAccentColorsVisible<T>(
         this ElementBuilder<T> builder,
@@ -1544,7 +1512,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAccentColorsVisible<T>(
         this ElementBuilder<T> builder,
@@ -1709,7 +1676,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -1723,7 +1689,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1741,7 +1706,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1906,7 +1870,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -1920,7 +1883,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaVisible<T>(
         this ElementBuilder<T> builder,
@@ -1938,7 +1900,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAlphaVisible<T>(
         this ElementBuilder<T> builder,
@@ -2103,7 +2064,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorComponentsVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -2117,7 +2077,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorComponentsVisible<T>(
         this ElementBuilder<T> builder,
@@ -2135,7 +2094,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorComponentsVisible<T>(
         this ElementBuilder<T> builder,
@@ -2300,7 +2258,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorModelVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -2314,7 +2271,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorModelVisible<T>(
         this ElementBuilder<T> builder,
@@ -2332,7 +2288,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorModelVisible<T>(
         this ElementBuilder<T> builder,
@@ -2497,7 +2452,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorPaletteVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -2511,7 +2465,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorPaletteVisible<T>(
         this ElementBuilder<T> builder,
@@ -2529,7 +2482,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorPaletteVisible<T>(
         this ElementBuilder<T> builder,
@@ -2694,7 +2646,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorPreviewVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -2708,7 +2659,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorPreviewVisible<T>(
         this ElementBuilder<T> builder,
@@ -2726,7 +2676,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorPreviewVisible<T>(
         this ElementBuilder<T> builder,
@@ -2891,7 +2840,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorSpectrumVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -2905,7 +2853,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorSpectrumVisible<T>(
         this ElementBuilder<T> builder,
@@ -2923,7 +2870,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorSpectrumVisible<T>(
         this ElementBuilder<T> builder,
@@ -3088,7 +3034,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorSpectrumSliderVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -3102,7 +3047,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorSpectrumSliderVisible<T>(
         this ElementBuilder<T> builder,
@@ -3120,7 +3064,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsColorSpectrumSliderVisible<T>(
         this ElementBuilder<T> builder,
@@ -3285,7 +3228,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsComponentSliderVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -3299,7 +3241,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsComponentSliderVisible<T>(
         this ElementBuilder<T> builder,
@@ -3317,7 +3258,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsComponentSliderVisible<T>(
         this ElementBuilder<T> builder,
@@ -3482,7 +3422,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsComponentTextInputVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -3496,7 +3435,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsComponentTextInputVisible<T>(
         this ElementBuilder<T> builder,
@@ -3514,7 +3452,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsComponentTextInputVisible<T>(
         this ElementBuilder<T> builder,
@@ -3679,7 +3616,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsHexInputVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ColorView
     {
@@ -3693,7 +3629,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsHexInputVisible<T>(
         this ElementBuilder<T> builder,
@@ -3711,7 +3646,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsHexInputVisible<T>(
         this ElementBuilder<T> builder,
@@ -3876,7 +3810,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHue<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -3890,7 +3823,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHue<T>(
         this ElementBuilder<T> builder,
@@ -3908,7 +3840,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxHue<T>(
         this ElementBuilder<T> builder,
@@ -4073,7 +4004,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxSaturation<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -4087,7 +4017,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxSaturation<T>(
         this ElementBuilder<T> builder,
@@ -4105,7 +4034,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxSaturation<T>(
         this ElementBuilder<T> builder,
@@ -4270,7 +4198,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxValue<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -4284,7 +4211,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxValue<T>(
         this ElementBuilder<T> builder,
@@ -4302,7 +4228,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxValue<T>(
         this ElementBuilder<T> builder,
@@ -4467,7 +4392,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHue<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -4481,7 +4405,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHue<T>(
         this ElementBuilder<T> builder,
@@ -4499,7 +4422,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinHue<T>(
         this ElementBuilder<T> builder,
@@ -4664,7 +4586,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinSaturation<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -4678,7 +4599,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinSaturation<T>(
         this ElementBuilder<T> builder,
@@ -4696,7 +4616,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinSaturation<T>(
         this ElementBuilder<T> builder,
@@ -4861,7 +4780,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinValue<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -4875,7 +4793,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinValue<T>(
         this ElementBuilder<T> builder,
@@ -4893,7 +4810,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinValue<T>(
         this ElementBuilder<T> builder,
@@ -5058,7 +4974,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaletteColors<T>(this ElementBuilder<T> builder, System.Collections.Generic.IEnumerable<Avalonia.Media.Color> value) where T : Avalonia.Controls.ColorView
     {
@@ -5072,7 +4987,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaletteColors<T>(
         this ElementBuilder<T> builder,
@@ -5090,7 +5004,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaletteColors<T>(
         this ElementBuilder<T> builder,
@@ -5255,7 +5168,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaletteColumnCount<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -5269,7 +5181,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaletteColumnCount<T>(
         this ElementBuilder<T> builder,
@@ -5287,7 +5198,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaletteColumnCount<T>(
         this ElementBuilder<T> builder,
@@ -5452,7 +5362,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Palette<T>(this ElementBuilder<T> builder, Avalonia.Controls.IColorPalette value) where T : Avalonia.Controls.ColorView
     {
@@ -5466,7 +5375,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Palette<T>(
         this ElementBuilder<T> builder,
@@ -5484,7 +5392,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Palette<T>(
         this ElementBuilder<T> builder,
@@ -5649,7 +5556,6 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.ColorView
     {
@@ -5663,7 +5569,6 @@ public static partial class ColorViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(
         this ElementBuilder<T> builder,
@@ -5681,7 +5586,6 @@ public static partial class ColorViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class ToggleSplitButtonExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ToggleSplitButton
     {
@@ -32,7 +31,6 @@ public static partial class ToggleSplitButtonExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ToggleSplitButtonExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
@@ -264,7 +261,6 @@ public static partial class ToggleSplitButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsCheckedChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -284,7 +280,6 @@ public static partial class ToggleSplitButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsCheckedChanged<T>(
         this ElementBuilder<T> builder,
@@ -341,7 +336,6 @@ public static partial class ToggleSplitButtonExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsCheckedChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.ToggleSplitButton
     {

@@ -18,7 +18,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustification<T>(this ElementBuilder<T> builder, Avalonia.Layout.UniformGridLayoutItemsJustification value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -32,7 +31,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustification<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustification<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustificationStart<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -239,7 +235,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustificationCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -265,7 +260,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustificationEnd<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -291,7 +285,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustificationSpaceAround<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -317,7 +310,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustificationSpaceBetween<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -343,7 +335,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsJustificationSpaceEvenly<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -371,7 +362,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsStretch<T>(this ElementBuilder<T> builder, Avalonia.Layout.UniformGridLayoutItemsStretch value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -385,7 +375,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsStretch<T>(
         this ElementBuilder<T> builder,
@@ -403,7 +392,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsStretch<T>(
         this ElementBuilder<T> builder,
@@ -566,7 +554,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsStretchNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -592,7 +579,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsStretchFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -618,7 +604,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsStretchUniform<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -646,7 +631,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinColumnSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -660,7 +644,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinColumnSpacing<T>(
         this ElementBuilder<T> builder,
@@ -678,7 +661,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinColumnSpacing<T>(
         this ElementBuilder<T> builder,
@@ -843,7 +825,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -857,7 +838,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemHeight<T>(
         this ElementBuilder<T> builder,
@@ -875,7 +855,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemHeight<T>(
         this ElementBuilder<T> builder,
@@ -1040,7 +1019,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemWidth<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1054,7 +1032,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemWidth<T>(
         this ElementBuilder<T> builder,
@@ -1072,7 +1049,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinItemWidth<T>(
         this ElementBuilder<T> builder,
@@ -1237,7 +1213,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinRowSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1251,7 +1226,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinRowSpacing<T>(
         this ElementBuilder<T> builder,
@@ -1269,7 +1243,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinRowSpacing<T>(
         this ElementBuilder<T> builder,
@@ -1434,7 +1407,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaximumRowsOrColumns<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1448,7 +1420,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaximumRowsOrColumns<T>(
         this ElementBuilder<T> builder,
@@ -1466,7 +1437,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaximumRowsOrColumns<T>(
         this ElementBuilder<T> builder,
@@ -1631,7 +1601,6 @@ public static partial class UniformGridLayoutExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Layout.Orientation value) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1645,7 +1614,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -1663,7 +1631,6 @@ public static partial class UniformGridLayoutExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -1826,7 +1793,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {
@@ -1852,7 +1818,6 @@ public static partial class UniformGridLayoutExtensions
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Layout.UniformGridLayout
     {

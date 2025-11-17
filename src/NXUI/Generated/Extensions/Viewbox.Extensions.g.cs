@@ -18,7 +18,6 @@ public static partial class ViewboxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(this ElementBuilder<T> builder, Avalonia.Media.Stretch value) where T : Avalonia.Controls.Viewbox
     {
@@ -32,7 +31,6 @@ public static partial class ViewboxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ViewboxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class ViewboxExtensions
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Viewbox
     {
@@ -239,7 +235,6 @@ public static partial class ViewboxExtensions
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Viewbox
     {
@@ -265,7 +260,6 @@ public static partial class ViewboxExtensions
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniform<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Viewbox
     {
@@ -291,7 +285,6 @@ public static partial class ViewboxExtensions
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniformToFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Viewbox
     {
@@ -319,7 +312,6 @@ public static partial class ViewboxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirection<T>(this ElementBuilder<T> builder, Avalonia.Media.StretchDirection value) where T : Avalonia.Controls.Viewbox
     {
@@ -333,7 +325,6 @@ public static partial class ViewboxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirection<T>(
         this ElementBuilder<T> builder,
@@ -351,7 +342,6 @@ public static partial class ViewboxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirection<T>(
         this ElementBuilder<T> builder,
@@ -514,7 +504,6 @@ public static partial class ViewboxExtensions
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirectionUpOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Viewbox
     {
@@ -540,7 +529,6 @@ public static partial class ViewboxExtensions
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirectionDownOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Viewbox
     {
@@ -566,7 +554,6 @@ public static partial class ViewboxExtensions
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirectionBoth<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Viewbox
     {
@@ -594,7 +581,6 @@ public static partial class ViewboxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.Viewbox
     {
@@ -608,7 +594,6 @@ public static partial class ViewboxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(
         this ElementBuilder<T> builder,
@@ -626,7 +611,6 @@ public static partial class ViewboxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(
         this ElementBuilder<T> builder,

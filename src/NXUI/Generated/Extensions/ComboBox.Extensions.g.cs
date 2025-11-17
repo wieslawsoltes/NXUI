@@ -18,7 +18,6 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ComboBox
     {
@@ -32,7 +31,6 @@ public static partial class ComboBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ComboBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxDropDownHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.ComboBox
     {
@@ -229,7 +225,6 @@ public static partial class ComboBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxDropDownHeight<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ComboBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxDropDownHeight<T>(
         this ElementBuilder<T> builder,
@@ -502,7 +496,6 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderText<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.ComboBox
     {
@@ -516,7 +509,6 @@ public static partial class ComboBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
@@ -534,7 +526,6 @@ public static partial class ComboBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
@@ -699,7 +690,6 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderForeground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.ComboBox
     {
@@ -713,7 +703,6 @@ public static partial class ComboBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderForeground<T>(
         this ElementBuilder<T> builder,
@@ -731,7 +720,6 @@ public static partial class ComboBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderForeground<T>(
         this ElementBuilder<T> builder,
@@ -896,7 +884,6 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.ComboBox
     {
@@ -910,7 +897,6 @@ public static partial class ComboBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -928,7 +914,6 @@ public static partial class ComboBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -1091,7 +1076,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1117,7 +1101,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1143,7 +1126,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1169,7 +1151,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1197,7 +1178,6 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.ComboBox
     {
@@ -1211,7 +1191,6 @@ public static partial class ComboBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -1229,7 +1208,6 @@ public static partial class ComboBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -1392,7 +1370,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1418,7 +1395,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1444,7 +1420,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1470,7 +1445,6 @@ public static partial class ComboBoxExtensions
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ComboBox
     {
@@ -1498,7 +1472,6 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBoxItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ComboBox
     {
@@ -1512,7 +1485,6 @@ public static partial class ComboBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBoxItemTemplate<T>(
         this ElementBuilder<T> builder,
@@ -1530,7 +1502,6 @@ public static partial class ComboBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBoxItemTemplate<T>(
         this ElementBuilder<T> builder,

@@ -198,7 +198,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -212,7 +211,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -230,7 +228,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -395,7 +392,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(this ElementBuilder<T> builder, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -409,7 +405,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
@@ -427,7 +422,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignment<T>(
         this ElementBuilder<T> builder,
@@ -590,7 +584,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -616,7 +609,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -642,7 +634,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -668,7 +659,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentStart<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -694,7 +684,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentEnd<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -720,7 +709,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentDetectFromContent<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -746,7 +734,6 @@ public static partial class TreeDataGridTextCellExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextAlignmentJustify<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {

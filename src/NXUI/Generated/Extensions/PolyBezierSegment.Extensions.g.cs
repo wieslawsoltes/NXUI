@@ -18,7 +18,6 @@ public static partial class PolyBezierSegmentExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PolyBezierSegment> Points(this ElementBuilder<Avalonia.Media.PolyBezierSegment> builder, Avalonia.Points value)
     {
@@ -32,7 +31,6 @@ public static partial class PolyBezierSegmentExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PolyBezierSegment> Points(
         this ElementBuilder<Avalonia.Media.PolyBezierSegment> builder,
@@ -50,7 +48,6 @@ public static partial class PolyBezierSegmentExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PolyBezierSegment> Points(
         this ElementBuilder<Avalonia.Media.PolyBezierSegment> builder,

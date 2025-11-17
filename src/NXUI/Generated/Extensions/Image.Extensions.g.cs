@@ -18,7 +18,6 @@ public static partial class ImageExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Media.IImage value) where T : Avalonia.Controls.Image
     {
@@ -32,7 +31,6 @@ public static partial class ImageExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ImageExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ImageExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendMode<T>(this ElementBuilder<T> builder, Avalonia.Media.Imaging.BitmapBlendingMode value) where T : Avalonia.Controls.Image
     {
@@ -229,7 +225,6 @@ public static partial class ImageExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendMode<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ImageExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendMode<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeUnspecified<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -436,7 +429,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeSourceOver<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -462,7 +454,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeSource<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -488,7 +479,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeDestination<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -514,7 +504,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeDestinationOver<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -540,7 +529,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeSourceIn<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -566,7 +554,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeDestinationIn<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -592,7 +579,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeSourceOut<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -618,7 +604,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeDestinationOut<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -644,7 +629,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeSourceAtop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -670,7 +654,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeDestinationAtop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -696,7 +679,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeXor<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -722,7 +704,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModePlus<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -748,7 +729,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeScreen<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -774,7 +754,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeOverlay<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -800,7 +779,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeDarken<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -826,7 +804,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeLighten<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -852,7 +829,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeColorDodge<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -878,7 +854,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeColorBurn<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -904,7 +879,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeHardLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -930,7 +904,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeSoftLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -956,7 +929,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeDifference<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -982,7 +954,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeExclusion<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1008,7 +979,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeMultiply<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1034,7 +1004,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeHue<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1060,7 +1029,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeSaturation<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1086,7 +1054,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeColor<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1112,7 +1079,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BlendModeLuminosity<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1140,7 +1106,6 @@ public static partial class ImageExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(this ElementBuilder<T> builder, Avalonia.Media.Stretch value) where T : Avalonia.Controls.Image
     {
@@ -1154,7 +1119,6 @@ public static partial class ImageExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -1172,7 +1136,6 @@ public static partial class ImageExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stretch<T>(
         this ElementBuilder<T> builder,
@@ -1335,7 +1298,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1361,7 +1323,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1387,7 +1348,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniform<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1413,7 +1373,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchUniformToFill<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1441,7 +1400,6 @@ public static partial class ImageExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirection<T>(this ElementBuilder<T> builder, Avalonia.Media.StretchDirection value) where T : Avalonia.Controls.Image
     {
@@ -1455,7 +1413,6 @@ public static partial class ImageExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirection<T>(
         this ElementBuilder<T> builder,
@@ -1473,7 +1430,6 @@ public static partial class ImageExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirection<T>(
         this ElementBuilder<T> builder,
@@ -1636,7 +1592,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirectionUpOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1662,7 +1617,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirectionDownOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {
@@ -1688,7 +1642,6 @@ public static partial class ImageExtensions
     /// Records a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StretchDirectionBoth<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Image
     {

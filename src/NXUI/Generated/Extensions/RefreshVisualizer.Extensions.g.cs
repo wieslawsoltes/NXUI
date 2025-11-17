@@ -108,7 +108,6 @@ public static partial class RefreshVisualizerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Controls.RefreshVisualizerOrientation value) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -122,7 +121,6 @@ public static partial class RefreshVisualizerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -140,7 +138,6 @@ public static partial class RefreshVisualizerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -303,7 +300,6 @@ public static partial class RefreshVisualizerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationAuto<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -329,7 +325,6 @@ public static partial class RefreshVisualizerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -355,7 +350,6 @@ public static partial class RefreshVisualizerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationRotate90DegreesCounterclockwise<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -381,7 +375,6 @@ public static partial class RefreshVisualizerExtensions
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationRotate270DegreesCounterclockwise<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.RefreshVisualizer
     {
@@ -458,7 +451,6 @@ public static partial class RefreshVisualizerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRefreshRequestedHandler<T>(
         this ElementBuilder<T> builder,
@@ -478,7 +470,6 @@ public static partial class RefreshVisualizerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRefreshRequested<T>(
         this ElementBuilder<T> builder,
@@ -535,7 +526,6 @@ public static partial class RefreshVisualizerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRefreshRequestedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.RefreshRequestedEventArgs>> handler) where T : Avalonia.Controls.RefreshVisualizer
     {

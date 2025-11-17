@@ -108,7 +108,6 @@ public static partial class NotificationCardExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClosed<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -122,7 +121,6 @@ public static partial class NotificationCardExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClosed<T>(
         this ElementBuilder<T> builder,
@@ -140,7 +138,6 @@ public static partial class NotificationCardExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsClosed<T>(
         this ElementBuilder<T> builder,
@@ -305,7 +302,6 @@ public static partial class NotificationCardExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationType<T>(this ElementBuilder<T> builder, Avalonia.Controls.Notifications.NotificationType value) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -319,7 +315,6 @@ public static partial class NotificationCardExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationType<T>(
         this ElementBuilder<T> builder,
@@ -337,7 +332,6 @@ public static partial class NotificationCardExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationType<T>(
         this ElementBuilder<T> builder,
@@ -500,7 +494,6 @@ public static partial class NotificationCardExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationTypeInformation<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -526,7 +519,6 @@ public static partial class NotificationCardExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationTypeSuccess<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -552,7 +544,6 @@ public static partial class NotificationCardExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationTypeWarning<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -578,7 +569,6 @@ public static partial class NotificationCardExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NotificationTypeError<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.NotificationCard
     {
@@ -606,7 +596,6 @@ public static partial class NotificationCardExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CloseOnClick<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Button
     {
@@ -620,7 +609,6 @@ public static partial class NotificationCardExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CloseOnClick<T>(
         this ElementBuilder<T> builder,
@@ -638,7 +626,6 @@ public static partial class NotificationCardExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CloseOnClick<T>(
         this ElementBuilder<T> builder,
@@ -852,7 +839,6 @@ public static partial class NotificationCardExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnNotificationClosedHandler<T>(
         this ElementBuilder<T> builder,
@@ -872,7 +858,6 @@ public static partial class NotificationCardExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnNotificationClosed<T>(
         this ElementBuilder<T> builder,
@@ -929,7 +914,6 @@ public static partial class NotificationCardExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnNotificationClosedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.Notifications.NotificationCard
     {

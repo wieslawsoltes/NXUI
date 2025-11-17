@@ -18,7 +18,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretIndex<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -32,7 +31,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretIndex<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretIndex<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -229,7 +225,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinimumPrefixLength<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -426,7 +419,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinimumPrefixLength<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinimumPrefixLength<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinimumPopulateDelay<T>(this ElementBuilder<T> builder, System.TimeSpan value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -623,7 +613,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinimumPopulateDelay<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinimumPopulateDelay<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxDropDownHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -820,7 +807,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxDropDownHeight<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxDropDownHeight<T>(
         this ElementBuilder<T> builder,
@@ -1003,7 +988,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTextCompletionEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1017,7 +1001,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTextCompletionEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1035,7 +1018,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTextCompletionEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1200,7 +1182,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1214,7 +1195,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
@@ -1232,7 +1212,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
@@ -1397,7 +1376,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1411,7 +1389,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
@@ -1429,7 +1406,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDropDownOpen<T>(
         this ElementBuilder<T> builder,
@@ -1594,7 +1570,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1608,7 +1583,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -1626,7 +1600,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -1791,7 +1764,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1805,7 +1777,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -1823,7 +1794,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
@@ -2078,7 +2048,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterMode<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteFilterMode value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2092,7 +2061,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterMode<T>(
         this ElementBuilder<T> builder,
@@ -2110,7 +2078,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterMode<T>(
         this ElementBuilder<T> builder,
@@ -2273,7 +2240,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2299,7 +2265,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeStartsWith<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2325,7 +2290,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeStartsWithCaseSensitive<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2351,7 +2315,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeStartsWithOrdinal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2377,7 +2340,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeStartsWithOrdinalCaseSensitive<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2403,7 +2365,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeContains<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2429,7 +2390,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeContainsCaseSensitive<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2455,7 +2415,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeContainsOrdinal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2481,7 +2440,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeContainsOrdinalCaseSensitive<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2507,7 +2465,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeEquals<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2533,7 +2490,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeEqualsCaseSensitive<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2559,7 +2515,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeEqualsOrdinal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2585,7 +2540,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeEqualsOrdinalCaseSensitive<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2611,7 +2565,6 @@ public static partial class AutoCompleteBoxExtensions
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FilterModeCustom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2639,7 +2592,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFilter<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteFilterPredicate<System.Object> value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2653,7 +2605,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFilter<T>(
         this ElementBuilder<T> builder,
@@ -2671,7 +2622,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFilter<T>(
         this ElementBuilder<T> builder,
@@ -2836,7 +2786,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextFilter<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteFilterPredicate<System.String> value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2850,7 +2799,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextFilter<T>(
         this ElementBuilder<T> builder,
@@ -2868,7 +2816,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextFilter<T>(
         this ElementBuilder<T> builder,
@@ -3033,7 +2980,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSelector<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteSelector<System.Object> value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3047,7 +2993,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSelector<T>(
         this ElementBuilder<T> builder,
@@ -3065,7 +3010,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSelector<T>(
         this ElementBuilder<T> builder,
@@ -3230,7 +3174,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextSelector<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteSelector<System.String> value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3244,7 +3187,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextSelector<T>(
         this ElementBuilder<T> builder,
@@ -3262,7 +3204,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextSelector<T>(
         this ElementBuilder<T> builder,
@@ -3427,7 +3368,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3441,7 +3381,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
@@ -3459,7 +3398,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
@@ -3624,7 +3562,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsyncPopulator<T>(this ElementBuilder<T> builder, System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>> value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3638,7 +3575,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsyncPopulator<T>(
         this ElementBuilder<T> builder,
@@ -3656,7 +3592,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsyncPopulator<T>(
         this ElementBuilder<T> builder,
@@ -3821,7 +3756,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLength<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3835,7 +3769,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLength<T>(
         this ElementBuilder<T> builder,
@@ -3853,7 +3786,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxLength<T>(
         this ElementBuilder<T> builder,
@@ -4018,7 +3950,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4032,7 +3963,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
@@ -4050,7 +3980,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
@@ -4215,7 +4144,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4229,7 +4157,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
@@ -4247,7 +4174,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
@@ -4461,7 +4387,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -4481,7 +4406,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChanged<T>(
         this ElementBuilder<T> builder,
@@ -4554,7 +4478,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -4574,7 +4497,6 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextChanged<T>(
         this ElementBuilder<T> builder,
@@ -4631,7 +4553,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnTextChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.TextChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4689,7 +4610,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPopulatingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.PopulatingEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4747,7 +4667,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPopulatedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.PopulatedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4805,7 +4724,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDropDownOpeningEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4863,7 +4781,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDropDownOpenedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4921,7 +4838,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDropDownClosingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.ComponentModel.CancelEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4979,7 +4895,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnDropDownClosedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -5037,7 +4952,6 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {

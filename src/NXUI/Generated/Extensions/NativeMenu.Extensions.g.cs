@@ -108,7 +108,6 @@ public static partial class NativeMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsNativeMenuExported<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TopLevel
     {
@@ -122,7 +121,6 @@ public static partial class NativeMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsNativeMenuExported<T>(
         this ElementBuilder<T> builder,
@@ -140,7 +138,6 @@ public static partial class NativeMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsNativeMenuExported<T>(
         this ElementBuilder<T> builder,
@@ -305,7 +302,6 @@ public static partial class NativeMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenu value) where T : Avalonia.AvaloniaObject
     {
@@ -319,7 +315,6 @@ public static partial class NativeMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,
@@ -337,7 +332,6 @@ public static partial class NativeMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,

@@ -108,7 +108,6 @@ public static partial class TreeDataGridRowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ElementFactory<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.TreeDataGridElementFactory value) where T : Avalonia.Controls.Primitives.TreeDataGridRow
     {
@@ -122,7 +121,6 @@ public static partial class TreeDataGridRowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ElementFactory<T>(
         this ElementBuilder<T> builder,
@@ -140,7 +138,6 @@ public static partial class TreeDataGridRowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ElementFactory<T>(
         this ElementBuilder<T> builder,

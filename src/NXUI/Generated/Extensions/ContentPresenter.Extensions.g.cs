@@ -18,7 +18,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -32,7 +31,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(this ElementBuilder<T> builder, Avalonia.Media.BackgroundSizing value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -229,7 +225,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizing<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizingInnerBorderEdge<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -436,7 +429,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizingOuterBorderEdge<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -462,7 +454,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BackgroundSizingCenterBorder<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -490,7 +481,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -504,7 +494,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
@@ -522,7 +511,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
@@ -687,7 +675,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(this ElementBuilder<T> builder, Avalonia.Thickness value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -701,7 +688,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(
         this ElementBuilder<T> builder,
@@ -719,7 +705,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderThickness<T>(
         this ElementBuilder<T> builder,
@@ -938,7 +923,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(this ElementBuilder<T> builder, Avalonia.CornerRadius value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -952,7 +936,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
@@ -970,7 +953,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CornerRadius<T>(
         this ElementBuilder<T> builder,
@@ -1189,7 +1171,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(this ElementBuilder<T> builder, Avalonia.Media.BoxShadows value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1203,7 +1184,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(
         this ElementBuilder<T> builder,
@@ -1221,7 +1201,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BoxShadow<T>(
         this ElementBuilder<T> builder,
@@ -1386,7 +1365,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1400,7 +1378,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
@@ -1418,7 +1395,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
@@ -1583,7 +1559,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(this ElementBuilder<T> builder, Avalonia.Media.FontFamily value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1597,7 +1572,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
@@ -1615,7 +1589,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFamily<T>(
         this ElementBuilder<T> builder,
@@ -1780,7 +1753,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1794,7 +1766,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
@@ -1812,7 +1783,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontSize<T>(
         this ElementBuilder<T> builder,
@@ -1977,7 +1947,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(this ElementBuilder<T> builder, Avalonia.Media.FontStyle value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1991,7 +1960,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
@@ -2009,7 +1977,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyle<T>(
         this ElementBuilder<T> builder,
@@ -2172,7 +2139,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyleNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2198,7 +2164,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyleItalic<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2224,7 +2189,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStyleOblique<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2252,7 +2216,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(this ElementBuilder<T> builder, Avalonia.Media.FontWeight value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2266,7 +2229,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
@@ -2284,7 +2246,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeight<T>(
         this ElementBuilder<T> builder,
@@ -2447,7 +2408,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightThin<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2473,7 +2433,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightExtraLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2499,7 +2458,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightUltraLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2525,7 +2483,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2551,7 +2508,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightSemiLight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2577,7 +2533,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2603,7 +2558,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightRegular<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2629,7 +2583,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightMedium<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2655,7 +2608,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightDemiBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2681,7 +2633,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightSemiBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2707,7 +2658,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2733,7 +2683,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightExtraBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2759,7 +2708,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightUltraBold<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2785,7 +2733,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightBlack<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2811,7 +2758,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightHeavy<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2837,7 +2783,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightSolid<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2863,7 +2808,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightExtraBlack<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2889,7 +2833,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontWeightUltraBlack<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2917,7 +2860,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(this ElementBuilder<T> builder, Avalonia.Media.FontStretch value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -2931,7 +2873,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
@@ -2949,7 +2890,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretch<T>(
         this ElementBuilder<T> builder,
@@ -3112,7 +3052,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchUltraCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3138,7 +3077,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchExtraCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3164,7 +3102,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3190,7 +3127,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchSemiCondensed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3216,7 +3152,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3242,7 +3177,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchSemiExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3268,7 +3202,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3294,7 +3227,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchExtraExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3320,7 +3252,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontStretchUltraExpanded<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3438,7 +3369,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3452,7 +3382,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
@@ -3470,7 +3399,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
@@ -3635,7 +3563,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3649,7 +3576,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -3667,7 +3593,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -3832,7 +3757,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3846,7 +3770,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -3864,7 +3787,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -4027,7 +3949,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4053,7 +3974,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4079,7 +3999,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4105,7 +4024,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4133,7 +4051,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4147,7 +4064,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -4165,7 +4081,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -4328,7 +4243,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4354,7 +4268,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4380,7 +4293,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4406,7 +4318,6 @@ public static partial class ContentPresenterExtensions
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4434,7 +4345,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(this ElementBuilder<T> builder, Avalonia.Thickness value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4448,7 +4358,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(
         this ElementBuilder<T> builder,
@@ -4466,7 +4375,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Padding<T>(
         this ElementBuilder<T> builder,
@@ -4685,7 +4593,6 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RecognizesAccessKey<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -4699,7 +4606,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RecognizesAccessKey<T>(
         this ElementBuilder<T> builder,
@@ -4717,7 +4623,6 @@ public static partial class ContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RecognizesAccessKey<T>(
         this ElementBuilder<T> builder,

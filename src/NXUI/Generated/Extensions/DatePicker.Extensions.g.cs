@@ -18,7 +18,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayFormat<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.DatePicker
     {
@@ -32,7 +31,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayFormat<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayFormat<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DatePicker
     {
@@ -229,7 +225,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayVisible<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DayVisible<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxYear<T>(this ElementBuilder<T> builder, System.DateTimeOffset value) where T : Avalonia.Controls.DatePicker
     {
@@ -426,7 +419,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxYear<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxYear<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinYear<T>(this ElementBuilder<T> builder, System.DateTimeOffset value) where T : Avalonia.Controls.DatePicker
     {
@@ -623,7 +613,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinYear<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinYear<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthFormat<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.DatePicker
     {
@@ -820,7 +807,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthFormat<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthFormat<T>(
         this ElementBuilder<T> builder,
@@ -1003,7 +988,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DatePicker
     {
@@ -1017,7 +1001,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthVisible<T>(
         this ElementBuilder<T> builder,
@@ -1035,7 +1018,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MonthVisible<T>(
         this ElementBuilder<T> builder,
@@ -1200,7 +1182,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearFormat<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.DatePicker
     {
@@ -1214,7 +1195,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearFormat<T>(
         this ElementBuilder<T> builder,
@@ -1232,7 +1212,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearFormat<T>(
         this ElementBuilder<T> builder,
@@ -1397,7 +1376,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DatePicker
     {
@@ -1411,7 +1389,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearVisible<T>(
         this ElementBuilder<T> builder,
@@ -1429,7 +1406,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> YearVisible<T>(
         this ElementBuilder<T> builder,
@@ -1594,7 +1570,6 @@ public static partial class DatePickerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(this ElementBuilder<T> builder, System.Nullable<System.DateTimeOffset> value) where T : Avalonia.Controls.DatePicker
     {
@@ -1608,7 +1583,6 @@ public static partial class DatePickerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(
         this ElementBuilder<T> builder,
@@ -1626,7 +1600,6 @@ public static partial class DatePickerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedDate<T>(
         this ElementBuilder<T> builder,

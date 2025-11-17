@@ -18,7 +18,6 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -32,7 +31,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContent<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContent<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -229,7 +225,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -426,7 +419,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContent<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContent<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -623,7 +613,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KnobTransitions<T>(this ElementBuilder<T> builder, Avalonia.Animation.Transitions value) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -820,7 +807,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KnobTransitions<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class ToggleSwitchExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> KnobTransitions<T>(
         this ElementBuilder<T> builder,

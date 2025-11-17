@@ -18,7 +18,6 @@ public static partial class GeometryDrawingExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.Geometry value)
     {
@@ -32,7 +31,6 @@ public static partial class GeometryDrawingExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
@@ -50,7 +48,6 @@ public static partial class GeometryDrawingExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
@@ -208,7 +205,6 @@ public static partial class GeometryDrawingExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IBrush value)
     {
@@ -222,7 +218,6 @@ public static partial class GeometryDrawingExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
@@ -240,7 +235,6 @@ public static partial class GeometryDrawingExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
@@ -398,7 +392,6 @@ public static partial class GeometryDrawingExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IPen value)
     {
@@ -412,7 +405,6 @@ public static partial class GeometryDrawingExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
@@ -430,7 +422,6 @@ public static partial class GeometryDrawingExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,

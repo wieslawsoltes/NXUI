@@ -18,7 +18,6 @@ public static partial class TransitionBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Duration<T>(this ElementBuilder<T> builder, System.TimeSpan value) where T : Avalonia.Animation.TransitionBase
     {
@@ -32,7 +31,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Duration<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Duration<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TransitionBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(this ElementBuilder<T> builder, System.TimeSpan value) where T : Avalonia.Animation.TransitionBase
     {
@@ -229,7 +225,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class TransitionBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Easing<T>(this ElementBuilder<T> builder, Avalonia.Animation.Easings.Easing value) where T : Avalonia.Animation.TransitionBase
     {
@@ -426,7 +419,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Easing<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Easing<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class TransitionBaseExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Property<T>(this ElementBuilder<T> builder, Avalonia.AvaloniaProperty value) where T : Avalonia.Animation.TransitionBase
     {
@@ -623,7 +613,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Property<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class TransitionBaseExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Property<T>(
         this ElementBuilder<T> builder,

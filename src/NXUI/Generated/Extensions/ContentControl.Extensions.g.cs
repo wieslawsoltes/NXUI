@@ -18,7 +18,6 @@ public static partial class ContentControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.ContentControl
     {
@@ -32,7 +31,6 @@ public static partial class ContentControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ContentControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ContentControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ContentControl
     {
@@ -229,7 +225,6 @@ public static partial class ContentControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ContentControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class ContentControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.ContentControl
     {
@@ -426,7 +419,6 @@ public static partial class ContentControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class ContentControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -607,7 +598,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {
@@ -633,7 +623,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {
@@ -659,7 +648,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {
@@ -685,7 +673,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalContentAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {
@@ -713,7 +700,6 @@ public static partial class ContentControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(this ElementBuilder<T> builder, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.ContentControl
     {
@@ -727,7 +713,6 @@ public static partial class ContentControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -745,7 +730,6 @@ public static partial class ContentControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignment<T>(
         this ElementBuilder<T> builder,
@@ -908,7 +892,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentStretch<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {
@@ -934,7 +917,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {
@@ -960,7 +942,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {
@@ -986,7 +967,6 @@ public static partial class ContentControlExtensions
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalContentAlignmentBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContentControl
     {

@@ -18,7 +18,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserReorderColumns<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGrid
     {
@@ -32,7 +31,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserReorderColumns<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserReorderColumns<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserResizeColumns<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGrid
     {
@@ -229,7 +225,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserResizeColumns<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserResizeColumns<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserSortColumns<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGrid
     {
@@ -426,7 +419,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserSortColumns<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanUserSortColumns<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnHeaderHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.DataGrid
     {
@@ -623,7 +613,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnHeaderHeight<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnHeaderHeight<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnWidth<T>(this ElementBuilder<T> builder, Avalonia.Controls.DataGridLength value) where T : Avalonia.Controls.DataGrid
     {
@@ -820,7 +807,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnWidth<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnWidth<T>(
         this ElementBuilder<T> builder,
@@ -1003,7 +988,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.DataGrid
     {
@@ -1017,7 +1001,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowTheme<T>(
         this ElementBuilder<T> builder,
@@ -1035,7 +1018,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowTheme<T>(
         this ElementBuilder<T> builder,
@@ -1200,7 +1182,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CellTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.DataGrid
     {
@@ -1214,7 +1195,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CellTheme<T>(
         this ElementBuilder<T> builder,
@@ -1232,7 +1212,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CellTheme<T>(
         this ElementBuilder<T> builder,
@@ -1397,7 +1376,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnHeaderTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.DataGrid
     {
@@ -1411,7 +1389,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnHeaderTheme<T>(
         this ElementBuilder<T> builder,
@@ -1429,7 +1406,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnHeaderTheme<T>(
         this ElementBuilder<T> builder,
@@ -1594,7 +1570,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowGroupTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.DataGrid
     {
@@ -1608,7 +1583,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowGroupTheme<T>(
         this ElementBuilder<T> builder,
@@ -1626,7 +1600,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowGroupTheme<T>(
         this ElementBuilder<T> builder,
@@ -1791,7 +1764,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FrozenColumnCount<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.DataGrid
     {
@@ -1805,7 +1777,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FrozenColumnCount<T>(
         this ElementBuilder<T> builder,
@@ -1823,7 +1794,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FrozenColumnCount<T>(
         this ElementBuilder<T> builder,
@@ -1988,7 +1958,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GridLinesVisibility<T>(this ElementBuilder<T> builder, Avalonia.Controls.DataGridGridLinesVisibility value) where T : Avalonia.Controls.DataGrid
     {
@@ -2002,7 +1971,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GridLinesVisibility<T>(
         this ElementBuilder<T> builder,
@@ -2020,7 +1988,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GridLinesVisibility<T>(
         this ElementBuilder<T> builder,
@@ -2183,7 +2150,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GridLinesVisibilityNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2209,7 +2175,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GridLinesVisibilityHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2235,7 +2200,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GridLinesVisibilityVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2261,7 +2225,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GridLinesVisibilityAll<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2289,7 +2252,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeadersVisibility<T>(this ElementBuilder<T> builder, Avalonia.Controls.DataGridHeadersVisibility value) where T : Avalonia.Controls.DataGrid
     {
@@ -2303,7 +2265,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeadersVisibility<T>(
         this ElementBuilder<T> builder,
@@ -2321,7 +2282,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeadersVisibility<T>(
         this ElementBuilder<T> builder,
@@ -2484,7 +2444,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeadersVisibilityNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2510,7 +2469,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeadersVisibilityColumn<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2536,7 +2494,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeadersVisibilityRow<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2562,7 +2519,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeadersVisibilityAll<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -2590,7 +2546,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalGridLinesBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.DataGrid
     {
@@ -2604,7 +2559,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalGridLinesBrush<T>(
         this ElementBuilder<T> builder,
@@ -2622,7 +2576,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalGridLinesBrush<T>(
         this ElementBuilder<T> builder,
@@ -2787,7 +2740,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibility<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.ScrollBarVisibility value) where T : Avalonia.Controls.DataGrid
     {
@@ -2801,7 +2753,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibility<T>(
         this ElementBuilder<T> builder,
@@ -2819,7 +2770,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibility<T>(
         this ElementBuilder<T> builder,
@@ -2982,7 +2932,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibilityDisabled<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -3008,7 +2957,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibilityAuto<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -3034,7 +2982,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibilityHidden<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -3060,7 +3007,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalScrollBarVisibilityVisible<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -3088,7 +3034,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGrid
     {
@@ -3102,7 +3047,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(
         this ElementBuilder<T> builder,
@@ -3120,7 +3064,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsReadOnly<T>(
         this ElementBuilder<T> builder,
@@ -3285,7 +3228,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreRowGroupHeadersFrozen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGrid
     {
@@ -3299,7 +3241,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreRowGroupHeadersFrozen<T>(
         this ElementBuilder<T> builder,
@@ -3317,7 +3258,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreRowGroupHeadersFrozen<T>(
         this ElementBuilder<T> builder,
@@ -3572,7 +3512,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxColumnWidth<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.DataGrid
     {
@@ -3586,7 +3525,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxColumnWidth<T>(
         this ElementBuilder<T> builder,
@@ -3604,7 +3542,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxColumnWidth<T>(
         this ElementBuilder<T> builder,
@@ -3769,7 +3706,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinColumnWidth<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.DataGrid
     {
@@ -3783,7 +3719,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinColumnWidth<T>(
         this ElementBuilder<T> builder,
@@ -3801,7 +3736,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MinColumnWidth<T>(
         this ElementBuilder<T> builder,
@@ -3966,7 +3900,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowBackground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.DataGrid
     {
@@ -3980,7 +3913,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowBackground<T>(
         this ElementBuilder<T> builder,
@@ -3998,7 +3930,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowBackground<T>(
         this ElementBuilder<T> builder,
@@ -4163,7 +4094,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.DataGrid
     {
@@ -4177,7 +4107,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowHeight<T>(
         this ElementBuilder<T> builder,
@@ -4195,7 +4124,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowHeight<T>(
         this ElementBuilder<T> builder,
@@ -4360,7 +4288,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowHeaderWidth<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.DataGrid
     {
@@ -4374,7 +4301,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowHeaderWidth<T>(
         this ElementBuilder<T> builder,
@@ -4392,7 +4318,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowHeaderWidth<T>(
         this ElementBuilder<T> builder,
@@ -4557,7 +4482,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(this ElementBuilder<T> builder, Avalonia.Controls.DataGridSelectionMode value) where T : Avalonia.Controls.DataGrid
     {
@@ -4571,7 +4495,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(
         this ElementBuilder<T> builder,
@@ -4589,7 +4512,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(
         this ElementBuilder<T> builder,
@@ -4752,7 +4674,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionModeExtended<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -4778,7 +4699,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionModeSingle<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -4806,7 +4726,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalGridLinesBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.DataGrid
     {
@@ -4820,7 +4739,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalGridLinesBrush<T>(
         this ElementBuilder<T> builder,
@@ -4838,7 +4756,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalGridLinesBrush<T>(
         this ElementBuilder<T> builder,
@@ -5003,7 +4920,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibility<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.ScrollBarVisibility value) where T : Avalonia.Controls.DataGrid
     {
@@ -5017,7 +4933,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibility<T>(
         this ElementBuilder<T> builder,
@@ -5035,7 +4950,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibility<T>(
         this ElementBuilder<T> builder,
@@ -5198,7 +5112,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibilityDisabled<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -5224,7 +5137,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibilityAuto<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -5250,7 +5162,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibilityHidden<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -5276,7 +5187,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalScrollBarVisibilityVisible<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -5304,7 +5214,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DropLocationIndicatorTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.DataGrid
     {
@@ -5318,7 +5227,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DropLocationIndicatorTemplate<T>(
         this ElementBuilder<T> builder,
@@ -5336,7 +5244,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DropLocationIndicatorTemplate<T>(
         this ElementBuilder<T> builder,
@@ -5501,7 +5408,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.DataGrid
     {
@@ -5515,7 +5421,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(
         this ElementBuilder<T> builder,
@@ -5533,7 +5438,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(
         this ElementBuilder<T> builder,
@@ -5698,7 +5602,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.DataGrid
     {
@@ -5712,7 +5615,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -5730,7 +5632,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -5895,7 +5796,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipboardCopyMode<T>(this ElementBuilder<T> builder, Avalonia.Controls.DataGridClipboardCopyMode value) where T : Avalonia.Controls.DataGrid
     {
@@ -5909,7 +5809,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipboardCopyMode<T>(
         this ElementBuilder<T> builder,
@@ -5927,7 +5826,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipboardCopyMode<T>(
         this ElementBuilder<T> builder,
@@ -6090,7 +5988,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipboardCopyModeNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -6116,7 +6013,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipboardCopyModeExcludeHeader<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -6142,7 +6038,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipboardCopyModeIncludeHeader<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -6170,7 +6065,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoGenerateColumns<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGrid
     {
@@ -6184,7 +6078,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoGenerateColumns<T>(
         this ElementBuilder<T> builder,
@@ -6202,7 +6095,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoGenerateColumns<T>(
         this ElementBuilder<T> builder,
@@ -6367,7 +6259,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable value) where T : Avalonia.Controls.DataGrid
     {
@@ -6381,7 +6272,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
@@ -6399,7 +6289,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
@@ -6564,7 +6453,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreRowDetailsFrozen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGrid
     {
@@ -6578,7 +6466,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreRowDetailsFrozen<T>(
         this ElementBuilder<T> builder,
@@ -6596,7 +6483,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreRowDetailsFrozen<T>(
         this ElementBuilder<T> builder,
@@ -6761,7 +6647,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.DataGrid
     {
@@ -6775,7 +6660,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsTemplate<T>(
         this ElementBuilder<T> builder,
@@ -6793,7 +6677,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsTemplate<T>(
         this ElementBuilder<T> builder,
@@ -6958,7 +6841,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsVisibilityMode<T>(this ElementBuilder<T> builder, Avalonia.Controls.DataGridRowDetailsVisibilityMode value) where T : Avalonia.Controls.DataGrid
     {
@@ -6972,7 +6854,6 @@ public static partial class DataGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsVisibilityMode<T>(
         this ElementBuilder<T> builder,
@@ -6990,7 +6871,6 @@ public static partial class DataGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsVisibilityMode<T>(
         this ElementBuilder<T> builder,
@@ -7153,7 +7033,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsVisibilityModeVisibleWhenSelected<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -7179,7 +7058,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsVisibilityModeVisible<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -7205,7 +7083,6 @@ public static partial class DataGridExtensions
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowDetailsVisibilityModeCollapsed<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.DataGrid
     {
@@ -7372,7 +7249,6 @@ public static partial class DataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -7392,7 +7268,6 @@ public static partial class DataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChanged<T>(
         this ElementBuilder<T> builder,
@@ -7449,7 +7324,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnHorizontalScrollEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.Primitives.ScrollEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7507,7 +7381,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnVerticalScrollEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.Primitives.ScrollEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7565,7 +7438,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnAutoGeneratingColumnEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridAutoGeneratingColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7623,7 +7495,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnBeginningEditEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridBeginningEditEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7681,7 +7552,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCellEditEndedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridCellEditEndedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7739,7 +7609,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCellEditEndingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridCellEditEndingEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7797,7 +7666,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCellPointerPressedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridCellPointerPressedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7855,7 +7723,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnColumnDisplayIndexChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7913,7 +7780,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnColumnReorderedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -7971,7 +7837,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnColumnReorderingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridColumnReorderingEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8029,7 +7894,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCurrentCellChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<System.EventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8087,7 +7951,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLoadingRowEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8145,7 +8008,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPreparingCellForEditEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridPreparingCellForEditEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8203,7 +8065,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowEditEndedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowEditEndedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8261,7 +8122,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowEditEndingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowEditEndingEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8319,7 +8179,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8377,7 +8236,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSortingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridColumnEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8435,7 +8293,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnUnloadingRowEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8493,7 +8350,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLoadingRowDetailsEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8551,7 +8407,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnRowDetailsVisibilityChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8609,7 +8464,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnUnloadingRowDetailsEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowDetailsEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8667,7 +8521,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnLoadingRowGroupEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8725,7 +8578,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnUnloadingRowGroupEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowGroupHeaderEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {
@@ -8783,7 +8635,6 @@ public static partial class DataGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnCopyingRowClipboardContentEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.DataGridRowClipboardEventArgs>> handler) where T : Avalonia.Controls.DataGrid
     {

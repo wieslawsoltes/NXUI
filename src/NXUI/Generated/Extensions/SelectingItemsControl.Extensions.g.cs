@@ -18,7 +18,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -32,7 +31,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -229,7 +225,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedIndex<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -426,7 +419,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValue<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -623,7 +613,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValue<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValue<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValueBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.IBinding value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -820,7 +807,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValueBinding<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValueBinding<T>(
         this ElementBuilder<T> builder,
@@ -1003,7 +988,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSelected<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Control
     {
@@ -1017,7 +1001,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSelected<T>(
         this ElementBuilder<T> builder,
@@ -1035,7 +1018,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsSelected<T>(
         this ElementBuilder<T> builder,
@@ -1200,7 +1182,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTextSearchEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1214,7 +1195,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTextSearchEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1232,7 +1212,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsTextSearchEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1397,7 +1376,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WrapSelection<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -1411,7 +1389,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WrapSelection<T>(
         this ElementBuilder<T> builder,
@@ -1429,7 +1406,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WrapSelection<T>(
         this ElementBuilder<T> builder,
@@ -1643,7 +1619,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsSelectedChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1663,7 +1638,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnIsSelectedChanged<T>(
         this ElementBuilder<T> builder,
@@ -1736,7 +1710,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChangedHandler<T>(
         this ElementBuilder<T> builder,
@@ -1756,7 +1729,6 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChanged<T>(
         this ElementBuilder<T> builder,
@@ -1813,7 +1785,6 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnSelectionChangedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.SelectionChangedEventArgs>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {

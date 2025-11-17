@@ -14,7 +14,6 @@ public static partial class Templates
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% %MethodName%%BuilderGeneric%(this %BuilderType% builder, %ValueType% value)%BuilderConstraint%
     {
@@ -28,7 +27,6 @@ public static partial class Templates
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% %MethodName%%BuilderGeneric%(
         this %BuilderType% builder,
@@ -46,7 +44,6 @@ public static partial class Templates
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% %MethodName%%BuilderGeneric%(
         this %BuilderType% builder,
@@ -67,7 +64,6 @@ public static partial class Templates
     /// Records a <see cref="%ClassType%.%Name%Property"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% %Name%%EnumValue%%BuilderGeneric%(this %BuilderType% builder)%BuilderConstraint%
     {
@@ -496,7 +492,6 @@ public static partial class Templates
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% On%Name%Handler%BuilderGeneric%(
         this %BuilderType% builder,
@@ -516,7 +511,6 @@ public static partial class Templates
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% On%Name%%BuilderGeneric%(
         this %BuilderType% builder,
@@ -594,7 +588,6 @@ public static partial class Templates
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action executed when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% On%Name%Handler%BuilderGeneric%(
         this %BuilderType% builder,
@@ -614,7 +607,6 @@ public static partial class Templates
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% On%Name%%BuilderGeneric%(
         this %BuilderType% builder,
@@ -787,7 +779,6 @@ public static partial class Templates
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static %BuilderType% On%Name%Event%BuilderGeneric%(this %BuilderType% builder, Action<%HandlerType%, IObservable<%ArgsType%>> handler)%BuilderConstraint%
     {

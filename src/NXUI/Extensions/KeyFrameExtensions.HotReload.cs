@@ -9,12 +9,12 @@ using AnimationKeySpline = Avalonia.Animation.KeySpline;
 using StylingSetter = Avalonia.Styling.Setter;
 
 /// <summary>
-/// Hot reload helpers for <see cref="KeyFrame"/>.
+/// Hot reload helpers for <see cref="Avalonia.Animation.KeyFrame"/>.
 /// </summary>
 public static partial class KeyFrameExtensions
 {
     /// <summary>
-    /// Records the <see cref="KeyFrame.KeyTime"/> value.
+    /// Records the <see cref="Avalonia.Animation.KeyFrame.KeyTime"/> value.
     /// </summary>
     public static ElementBuilder<KeyFrame> KeyTime(this ElementBuilder<KeyFrame> builder, TimeSpan keyTime)
     {

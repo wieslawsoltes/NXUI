@@ -18,7 +18,6 @@ public static partial class UniformGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -32,7 +31,6 @@ public static partial class UniformGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class UniformGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class UniformGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Columns<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -229,7 +225,6 @@ public static partial class UniformGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Columns<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class UniformGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Columns<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class UniformGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstColumn<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -426,7 +419,6 @@ public static partial class UniformGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstColumn<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class UniformGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FirstColumn<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class UniformGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -623,7 +613,6 @@ public static partial class UniformGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowSpacing<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class UniformGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RowSpacing<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class UniformGridExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.UniformGrid
     {
@@ -820,7 +807,6 @@ public static partial class UniformGridExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnSpacing<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class UniformGridExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ColumnSpacing<T>(
         this ElementBuilder<T> builder,

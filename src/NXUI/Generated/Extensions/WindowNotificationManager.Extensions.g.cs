@@ -18,7 +18,6 @@ public static partial class WindowNotificationManagerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Position<T>(this ElementBuilder<T> builder, Avalonia.Controls.Notifications.NotificationPosition value) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -32,7 +31,6 @@ public static partial class WindowNotificationManagerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Position<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class WindowNotificationManagerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Position<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class WindowNotificationManagerExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PositionTopLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -239,7 +235,6 @@ public static partial class WindowNotificationManagerExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PositionTopRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -265,7 +260,6 @@ public static partial class WindowNotificationManagerExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PositionBottomLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -291,7 +285,6 @@ public static partial class WindowNotificationManagerExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PositionBottomRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -317,7 +310,6 @@ public static partial class WindowNotificationManagerExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PositionTopCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -343,7 +335,6 @@ public static partial class WindowNotificationManagerExtensions
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PositionBottomCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -371,7 +362,6 @@ public static partial class WindowNotificationManagerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxItems<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Notifications.WindowNotificationManager
     {
@@ -385,7 +375,6 @@ public static partial class WindowNotificationManagerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxItems<T>(
         this ElementBuilder<T> builder,
@@ -403,7 +392,6 @@ public static partial class WindowNotificationManagerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> MaxItems<T>(
         this ElementBuilder<T> builder,

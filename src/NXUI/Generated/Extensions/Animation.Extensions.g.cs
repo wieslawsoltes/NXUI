@@ -18,7 +18,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Duration(this ElementBuilder<Avalonia.Animation.Animation> builder, System.TimeSpan value)
     {
@@ -32,7 +31,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Duration(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -50,7 +48,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Duration(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -208,7 +205,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> IterationCount(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.IterationCount value)
     {
@@ -222,7 +218,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> IterationCount(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -240,7 +235,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> IterationCount(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -398,7 +392,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirection(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.PlaybackDirection value)
     {
@@ -412,7 +405,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirection(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -430,7 +422,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirection(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -586,7 +577,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionNormal(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -611,7 +601,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionReverse(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -636,7 +625,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionAlternate(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -661,7 +649,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionAlternateReverse(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -688,7 +675,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> FillMode(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.FillMode value)
     {
@@ -702,7 +688,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> FillMode(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -720,7 +705,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> FillMode(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -876,7 +860,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> FillModeNone(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -901,7 +884,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> FillModeForward(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -926,7 +908,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> FillModeBackward(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -951,7 +932,6 @@ public static partial class AnimationExtensions
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> FillModeBoth(this ElementBuilder<Avalonia.Animation.Animation> builder)
     {
@@ -978,7 +958,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Easing(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.Easings.Easing value)
     {
@@ -992,7 +971,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Easing(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -1010,7 +988,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Easing(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -1168,7 +1145,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Delay(this ElementBuilder<Avalonia.Animation.Animation> builder, System.TimeSpan value)
     {
@@ -1182,7 +1158,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Delay(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -1200,7 +1175,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> Delay(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -1358,7 +1332,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> DelayBetweenIterations(this ElementBuilder<Avalonia.Animation.Animation> builder, System.TimeSpan value)
     {
@@ -1372,7 +1345,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> DelayBetweenIterations(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -1390,7 +1362,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> DelayBetweenIterations(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -1548,7 +1519,6 @@ public static partial class AnimationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> SpeedRatio(this ElementBuilder<Avalonia.Animation.Animation> builder, System.Double value)
     {
@@ -1562,7 +1532,6 @@ public static partial class AnimationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> SpeedRatio(
         this ElementBuilder<Avalonia.Animation.Animation> builder,
@@ -1580,7 +1549,6 @@ public static partial class AnimationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Animation.Animation> SpeedRatio(
         this ElementBuilder<Avalonia.Animation.Animation> builder,

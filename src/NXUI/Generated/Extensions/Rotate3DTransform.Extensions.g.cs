@@ -18,7 +18,6 @@ public static partial class Rotate3DTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleX(this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder, System.Double value)
     {
@@ -32,7 +31,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleX(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -50,7 +48,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleX(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -208,7 +205,6 @@ public static partial class Rotate3DTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleY(this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder, System.Double value)
     {
@@ -222,7 +218,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleY(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -240,7 +235,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleY(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -398,7 +392,6 @@ public static partial class Rotate3DTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleZ(this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder, System.Double value)
     {
@@ -412,7 +405,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleZ(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -430,7 +422,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> AngleZ(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -588,7 +579,6 @@ public static partial class Rotate3DTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterX(this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder, System.Double value)
     {
@@ -602,7 +592,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterX(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -620,7 +609,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterX(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -778,7 +766,6 @@ public static partial class Rotate3DTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterY(this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder, System.Double value)
     {
@@ -792,7 +779,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterY(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -810,7 +796,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterY(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -968,7 +953,6 @@ public static partial class Rotate3DTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterZ(this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder, System.Double value)
     {
@@ -982,7 +966,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterZ(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -1000,7 +983,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> CenterZ(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -1158,7 +1140,6 @@ public static partial class Rotate3DTransformExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> Depth(this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder, System.Double value)
     {
@@ -1172,7 +1153,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> Depth(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,
@@ -1190,7 +1170,6 @@ public static partial class Rotate3DTransformExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Rotate3DTransform> Depth(
         this ElementBuilder<Avalonia.Media.Rotate3DTransform> builder,

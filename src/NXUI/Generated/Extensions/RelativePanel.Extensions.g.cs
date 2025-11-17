@@ -18,7 +18,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Above<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -32,7 +31,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Above<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Above<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWithPanel<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Layout.Layoutable
     {
@@ -229,7 +225,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWith<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -426,7 +419,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWith<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignBottomWith<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignHorizontalCenterWithPanel<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Layout.Layoutable
     {
@@ -623,7 +613,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignHorizontalCenterWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignHorizontalCenterWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWithPanel<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Layout.Layoutable
     {
@@ -820,7 +807,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -1003,7 +988,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWith<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -1017,7 +1001,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWith<T>(
         this ElementBuilder<T> builder,
@@ -1035,7 +1018,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignLeftWith<T>(
         this ElementBuilder<T> builder,
@@ -1200,7 +1182,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWithPanel<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Layout.Layoutable
     {
@@ -1214,7 +1195,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -1232,7 +1212,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -1397,7 +1376,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWith<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -1411,7 +1389,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWith<T>(
         this ElementBuilder<T> builder,
@@ -1429,7 +1406,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignRightWith<T>(
         this ElementBuilder<T> builder,
@@ -1594,7 +1570,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWithPanel<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Layout.Layoutable
     {
@@ -1608,7 +1583,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -1626,7 +1600,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -1791,7 +1764,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWith<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -1805,7 +1777,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWith<T>(
         this ElementBuilder<T> builder,
@@ -1823,7 +1794,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignTopWith<T>(
         this ElementBuilder<T> builder,
@@ -1988,7 +1958,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWithPanel<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Layout.Layoutable
     {
@@ -2002,7 +1971,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -2020,7 +1988,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWithPanel<T>(
         this ElementBuilder<T> builder,
@@ -2185,7 +2152,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWith<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -2199,7 +2165,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWith<T>(
         this ElementBuilder<T> builder,
@@ -2217,7 +2182,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AlignVerticalCenterWith<T>(
         this ElementBuilder<T> builder,
@@ -2382,7 +2346,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Below<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -2396,7 +2359,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Below<T>(
         this ElementBuilder<T> builder,
@@ -2414,7 +2376,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Below<T>(
         this ElementBuilder<T> builder,
@@ -2579,7 +2540,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LeftOf<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -2593,7 +2553,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LeftOf<T>(
         this ElementBuilder<T> builder,
@@ -2611,7 +2570,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LeftOf<T>(
         this ElementBuilder<T> builder,
@@ -2776,7 +2734,6 @@ public static partial class RelativePanelExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RightOf<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Layout.Layoutable
     {
@@ -2790,7 +2747,6 @@ public static partial class RelativePanelExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RightOf<T>(
         this ElementBuilder<T> builder,
@@ -2808,7 +2764,6 @@ public static partial class RelativePanelExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RightOf<T>(
         this ElementBuilder<T> builder,

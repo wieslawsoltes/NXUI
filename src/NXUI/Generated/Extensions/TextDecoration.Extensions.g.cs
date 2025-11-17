@@ -18,7 +18,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Location<T>(this ElementBuilder<T> builder, Avalonia.Media.TextDecorationLocation value) where T : Avalonia.Media.TextDecoration
     {
@@ -32,7 +31,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Location<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Location<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LocationUnderline<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -239,7 +235,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LocationOverline<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -265,7 +260,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LocationStrikethrough<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -291,7 +285,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LocationBaseline<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -319,7 +312,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Media.TextDecoration
     {
@@ -333,7 +325,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
@@ -351,7 +342,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
@@ -516,7 +506,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThicknessUnit<T>(this ElementBuilder<T> builder, Avalonia.Media.TextDecorationUnit value) where T : Avalonia.Media.TextDecoration
     {
@@ -530,7 +519,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThicknessUnit<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThicknessUnit<T>(
         this ElementBuilder<T> builder,
@@ -711,7 +698,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThicknessUnitFontRecommended<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -737,7 +723,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThicknessUnitFontRenderingEmSize<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -763,7 +748,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThicknessUnitPixel<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -791,7 +775,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Media.TextDecoration
     {
@@ -805,7 +788,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
@@ -823,7 +805,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
@@ -988,7 +969,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Media.TextDecoration
     {
@@ -1002,7 +982,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(
         this ElementBuilder<T> builder,
@@ -1020,7 +999,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashOffset<T>(
         this ElementBuilder<T> builder,
@@ -1185,7 +1163,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Media.TextDecoration
     {
@@ -1199,7 +1176,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(
         this ElementBuilder<T> builder,
@@ -1217,7 +1193,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeThickness<T>(
         this ElementBuilder<T> builder,
@@ -1382,7 +1357,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(this ElementBuilder<T> builder, Avalonia.Media.PenLineCap value) where T : Avalonia.Media.TextDecoration
     {
@@ -1396,7 +1370,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(
         this ElementBuilder<T> builder,
@@ -1414,7 +1387,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCap<T>(
         this ElementBuilder<T> builder,
@@ -1577,7 +1549,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCapFlat<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -1603,7 +1574,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCapRound<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -1629,7 +1599,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeLineCapSquare<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -1657,7 +1626,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Media.TextDecoration
     {
@@ -1671,7 +1639,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffset<T>(
         this ElementBuilder<T> builder,
@@ -1689,7 +1656,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffset<T>(
         this ElementBuilder<T> builder,
@@ -1854,7 +1820,6 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffsetUnit<T>(this ElementBuilder<T> builder, Avalonia.Media.TextDecorationUnit value) where T : Avalonia.Media.TextDecoration
     {
@@ -1868,7 +1833,6 @@ public static partial class TextDecorationExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffsetUnit<T>(
         this ElementBuilder<T> builder,
@@ -1886,7 +1850,6 @@ public static partial class TextDecorationExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffsetUnit<T>(
         this ElementBuilder<T> builder,
@@ -2049,7 +2012,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffsetUnitFontRecommended<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -2075,7 +2037,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffsetUnitFontRenderingEmSize<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {
@@ -2101,7 +2062,6 @@ public static partial class TextDecorationExtensions
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeOffsetUnitPixel<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.TextDecoration
     {

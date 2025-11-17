@@ -18,7 +18,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -32,7 +31,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Minimum<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -229,7 +225,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Maximum<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -426,7 +419,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ViewportSize<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -623,7 +613,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ViewportSize<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ViewportSize<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Layout.Orientation value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -820,7 +807,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -1001,7 +986,6 @@ public static partial class TrackExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1027,7 +1011,6 @@ public static partial class TrackExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1055,7 +1038,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Thumb<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.Thumb value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1069,7 +1051,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Thumb<T>(
         this ElementBuilder<T> builder,
@@ -1087,7 +1068,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Thumb<T>(
         this ElementBuilder<T> builder,
@@ -1252,7 +1232,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IncreaseButton<T>(this ElementBuilder<T> builder, Avalonia.Controls.Button value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1266,7 +1245,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IncreaseButton<T>(
         this ElementBuilder<T> builder,
@@ -1284,7 +1262,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IncreaseButton<T>(
         this ElementBuilder<T> builder,
@@ -1449,7 +1426,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DecreaseButton<T>(this ElementBuilder<T> builder, Avalonia.Controls.Button value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1463,7 +1439,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DecreaseButton<T>(
         this ElementBuilder<T> builder,
@@ -1481,7 +1456,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DecreaseButton<T>(
         this ElementBuilder<T> builder,
@@ -1646,7 +1620,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1660,7 +1633,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
@@ -1678,7 +1650,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsDirectionReversed<T>(
         this ElementBuilder<T> builder,
@@ -1843,7 +1814,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IgnoreThumbDrag<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1857,7 +1827,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IgnoreThumbDrag<T>(
         this ElementBuilder<T> builder,
@@ -1875,7 +1844,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IgnoreThumbDrag<T>(
         this ElementBuilder<T> builder,
@@ -2040,7 +2008,6 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DeferThumbDrag<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.Track
     {
@@ -2054,7 +2021,6 @@ public static partial class TrackExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DeferThumbDrag<T>(
         this ElementBuilder<T> builder,
@@ -2072,7 +2038,6 @@ public static partial class TrackExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DeferThumbDrag<T>(
         this ElementBuilder<T> builder,

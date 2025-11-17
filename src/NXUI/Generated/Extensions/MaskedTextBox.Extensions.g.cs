@@ -18,7 +18,6 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsciiOnly<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -32,7 +31,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsciiOnly<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsciiOnly<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Culture<T>(this ElementBuilder<T> builder, System.Globalization.CultureInfo value) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -229,7 +225,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Culture<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Culture<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HidePromptOnLeave<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -426,7 +419,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HidePromptOnLeave<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HidePromptOnLeave<T>(
         this ElementBuilder<T> builder,
@@ -789,7 +780,6 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Mask<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -803,7 +793,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Mask<T>(
         this ElementBuilder<T> builder,
@@ -821,7 +810,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Mask<T>(
         this ElementBuilder<T> builder,
@@ -986,7 +974,6 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PromptChar<T>(this ElementBuilder<T> builder, System.Char value) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1000,7 +987,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PromptChar<T>(
         this ElementBuilder<T> builder,
@@ -1018,7 +1004,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PromptChar<T>(
         this ElementBuilder<T> builder,
@@ -1183,7 +1168,6 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnPrompt<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1197,7 +1181,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnPrompt<T>(
         this ElementBuilder<T> builder,
@@ -1215,7 +1198,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnPrompt<T>(
         this ElementBuilder<T> builder,
@@ -1380,7 +1362,6 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnSpace<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -1394,7 +1375,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnSpace<T>(
         this ElementBuilder<T> builder,
@@ -1412,7 +1392,6 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ResetOnSpace<T>(
         this ElementBuilder<T> builder,

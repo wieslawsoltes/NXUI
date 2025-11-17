@@ -18,7 +18,6 @@ public static partial class PathFigureExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> IsClosed(this ElementBuilder<Avalonia.Media.PathFigure> builder, System.Boolean value)
     {
@@ -32,7 +31,6 @@ public static partial class PathFigureExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> IsClosed(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,
@@ -50,7 +48,6 @@ public static partial class PathFigureExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> IsClosed(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,
@@ -208,7 +205,6 @@ public static partial class PathFigureExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> IsFilled(this ElementBuilder<Avalonia.Media.PathFigure> builder, System.Boolean value)
     {
@@ -222,7 +218,6 @@ public static partial class PathFigureExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> IsFilled(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,
@@ -240,7 +235,6 @@ public static partial class PathFigureExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> IsFilled(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,
@@ -398,7 +392,6 @@ public static partial class PathFigureExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> Segments(this ElementBuilder<Avalonia.Media.PathFigure> builder, Avalonia.Media.PathSegments value)
     {
@@ -412,7 +405,6 @@ public static partial class PathFigureExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> Segments(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,
@@ -430,7 +422,6 @@ public static partial class PathFigureExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> Segments(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,
@@ -588,7 +579,6 @@ public static partial class PathFigureExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> StartPoint(this ElementBuilder<Avalonia.Media.PathFigure> builder, Avalonia.Point value)
     {
@@ -602,7 +592,6 @@ public static partial class PathFigureExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> StartPoint(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,
@@ -620,7 +609,6 @@ public static partial class PathFigureExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PathFigure> StartPoint(
         this ElementBuilder<Avalonia.Media.PathFigure> builder,

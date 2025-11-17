@@ -18,7 +18,6 @@ public static partial class RepeatButtonExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Interval<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.RepeatButton
     {
@@ -32,7 +31,6 @@ public static partial class RepeatButtonExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Interval<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class RepeatButtonExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Interval<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class RepeatButtonExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.RepeatButton
     {
@@ -229,7 +225,6 @@ public static partial class RepeatButtonExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class RepeatButtonExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Delay<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class TreeViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.TreeView
     {
@@ -32,7 +31,6 @@ public static partial class TreeViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class TreeViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AutoScrollToSelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class TreeViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.TreeView
     {
@@ -229,7 +225,6 @@ public static partial class TreeViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class TreeViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class TreeViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItems<T>(this ElementBuilder<T> builder, System.Collections.IList value) where T : Avalonia.Controls.TreeView
     {
@@ -426,7 +419,6 @@ public static partial class TreeViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItems<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class TreeViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItems<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class TreeViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(this ElementBuilder<T> builder, Avalonia.Controls.SelectionMode value) where T : Avalonia.Controls.TreeView
     {
@@ -623,7 +613,6 @@ public static partial class TreeViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class TreeViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionMode<T>(
         this ElementBuilder<T> builder,
@@ -804,7 +792,6 @@ public static partial class TreeViewExtensions
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionModeSingle<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TreeView
     {
@@ -830,7 +817,6 @@ public static partial class TreeViewExtensions
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionModeMultiple<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TreeView
     {
@@ -856,7 +842,6 @@ public static partial class TreeViewExtensions
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionModeToggle<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TreeView
     {
@@ -882,7 +867,6 @@ public static partial class TreeViewExtensions
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionModeAlwaysSelected<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.TreeView
     {

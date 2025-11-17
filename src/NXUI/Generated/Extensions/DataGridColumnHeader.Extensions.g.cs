@@ -18,7 +18,6 @@ public static partial class DataGridColumnHeaderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SeparatorBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -32,7 +31,6 @@ public static partial class DataGridColumnHeaderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SeparatorBrush<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class DataGridColumnHeaderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SeparatorBrush<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class DataGridColumnHeaderExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreSeparatorsVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.DataGridColumnHeader
     {
@@ -229,7 +225,6 @@ public static partial class DataGridColumnHeaderExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreSeparatorsVisible<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class DataGridColumnHeaderExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AreSeparatorsVisible<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class GradientStopExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GradientStop> Offset(this ElementBuilder<Avalonia.Media.GradientStop> builder, System.Double value)
     {
@@ -32,7 +31,6 @@ public static partial class GradientStopExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GradientStop> Offset(
         this ElementBuilder<Avalonia.Media.GradientStop> builder,
@@ -50,7 +48,6 @@ public static partial class GradientStopExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GradientStop> Offset(
         this ElementBuilder<Avalonia.Media.GradientStop> builder,
@@ -208,7 +205,6 @@ public static partial class GradientStopExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GradientStop> Color(this ElementBuilder<Avalonia.Media.GradientStop> builder, Avalonia.Media.Color value)
     {
@@ -222,7 +218,6 @@ public static partial class GradientStopExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GradientStop> Color(
         this ElementBuilder<Avalonia.Media.GradientStop> builder,
@@ -240,7 +235,6 @@ public static partial class GradientStopExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GradientStop> Color(
         this ElementBuilder<Avalonia.Media.GradientStop> builder,

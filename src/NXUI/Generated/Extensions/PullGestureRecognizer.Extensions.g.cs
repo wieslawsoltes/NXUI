@@ -18,7 +18,6 @@ public static partial class PullGestureRecognizerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirection<T>(this ElementBuilder<T> builder, Avalonia.Input.PullDirection value) where T : Avalonia.Input.PullGestureRecognizer
     {
@@ -32,7 +31,6 @@ public static partial class PullGestureRecognizerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirection<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class PullGestureRecognizerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirection<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class PullGestureRecognizerExtensions
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionTopToBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Input.PullGestureRecognizer
     {
@@ -239,7 +235,6 @@ public static partial class PullGestureRecognizerExtensions
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionBottomToTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Input.PullGestureRecognizer
     {
@@ -265,7 +260,6 @@ public static partial class PullGestureRecognizerExtensions
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionLeftToRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Input.PullGestureRecognizer
     {
@@ -291,7 +285,6 @@ public static partial class PullGestureRecognizerExtensions
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PullDirectionRightToLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Input.PullGestureRecognizer
     {

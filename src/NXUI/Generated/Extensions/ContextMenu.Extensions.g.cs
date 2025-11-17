@@ -18,7 +18,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.ContextMenu
     {
@@ -32,7 +31,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.ContextMenu
     {
@@ -229,7 +225,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchor<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value) where T : Avalonia.Controls.ContextMenu
     {
@@ -426,7 +419,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchor<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchor<T>(
         this ElementBuilder<T> builder,
@@ -607,7 +598,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -633,7 +623,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -659,7 +648,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -685,7 +673,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorVerticalMask<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -711,7 +698,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -737,7 +723,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorTopLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -763,7 +748,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorBottomLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -789,7 +773,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -815,7 +798,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorTopRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -841,7 +823,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorBottomRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -867,7 +848,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorHorizontalMask<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -893,7 +873,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorAllMask<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -921,7 +900,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustment<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value) where T : Avalonia.Controls.ContextMenu
     {
@@ -935,7 +913,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustment<T>(
         this ElementBuilder<T> builder,
@@ -953,7 +930,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustment<T>(
         this ElementBuilder<T> builder,
@@ -1116,7 +1092,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1142,7 +1117,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentSlideX<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1168,7 +1142,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentSlideY<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1194,7 +1167,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentFlipX<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1220,7 +1192,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentFlipY<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1246,7 +1217,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentResizeX<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1272,7 +1242,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentResizeY<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1298,7 +1267,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementConstraintAdjustmentAll<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1326,7 +1294,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravity<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value) where T : Avalonia.Controls.ContextMenu
     {
@@ -1340,7 +1307,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravity<T>(
         this ElementBuilder<T> builder,
@@ -1358,7 +1324,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravity<T>(
         this ElementBuilder<T> builder,
@@ -1521,7 +1486,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1547,7 +1511,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1573,7 +1536,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1599,7 +1561,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1625,7 +1586,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityTopLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1651,7 +1611,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityBottomLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1677,7 +1636,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1703,7 +1661,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityTopRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1729,7 +1686,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementGravityBottomRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1757,7 +1713,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(this ElementBuilder<T> builder, Avalonia.Controls.PlacementMode value) where T : Avalonia.Controls.ContextMenu
     {
@@ -1771,7 +1726,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
@@ -1789,7 +1743,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
@@ -1952,7 +1905,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementPointer<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -1978,7 +1930,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2004,7 +1955,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2030,7 +1980,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2056,7 +2005,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2082,7 +2030,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2108,7 +2055,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorAndGravity<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2134,7 +2080,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTopEdgeAlignedLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2160,7 +2105,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTopEdgeAlignedRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2186,7 +2130,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementBottomEdgeAlignedLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2212,7 +2155,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementBottomEdgeAlignedRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2238,7 +2180,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementLeftEdgeAlignedTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2264,7 +2205,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementLeftEdgeAlignedBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2290,7 +2230,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRightEdgeAlignedTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2316,7 +2255,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRightEdgeAlignedBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2342,7 +2280,6 @@ public static partial class ContextMenuExtensions
     /// Records a <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementCustom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ContextMenu
     {
@@ -2370,7 +2307,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRect<T>(this ElementBuilder<T> builder, System.Nullable<Avalonia.Rect> value) where T : Avalonia.Controls.ContextMenu
     {
@@ -2384,7 +2320,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRect<T>(
         this ElementBuilder<T> builder,
@@ -2402,7 +2337,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRect<T>(
         this ElementBuilder<T> builder,
@@ -2567,7 +2501,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowManagerAddShadowHint<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.ContextMenu
     {
@@ -2581,7 +2514,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowManagerAddShadowHint<T>(
         this ElementBuilder<T> builder,
@@ -2599,7 +2531,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowManagerAddShadowHint<T>(
         this ElementBuilder<T> builder,
@@ -2764,7 +2695,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTarget<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.ContextMenu
     {
@@ -2778,7 +2708,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTarget<T>(
         this ElementBuilder<T> builder,
@@ -2796,7 +2725,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTarget<T>(
         this ElementBuilder<T> builder,
@@ -2961,7 +2889,6 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.ContextMenu
     {
@@ -2975,7 +2902,6 @@ public static partial class ContextMenuExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
@@ -2993,7 +2919,6 @@ public static partial class ContextMenuExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,

@@ -18,7 +18,6 @@ public static partial class GradientBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SpreadMethod<T>(this ElementBuilder<T> builder, Avalonia.Media.GradientSpreadMethod value) where T : Avalonia.Media.GradientBrush
     {
@@ -32,7 +31,6 @@ public static partial class GradientBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SpreadMethod<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class GradientBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SpreadMethod<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class GradientBrushExtensions
     /// Records a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SpreadMethodPad<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.GradientBrush
     {
@@ -239,7 +235,6 @@ public static partial class GradientBrushExtensions
     /// Records a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SpreadMethodReflect<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.GradientBrush
     {
@@ -265,7 +260,6 @@ public static partial class GradientBrushExtensions
     /// Records a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SpreadMethodRepeat<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.GradientBrush
     {
@@ -293,7 +287,6 @@ public static partial class GradientBrushExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GradientStops<T>(this ElementBuilder<T> builder, Avalonia.Media.GradientStops value) where T : Avalonia.Media.GradientBrush
     {
@@ -307,7 +300,6 @@ public static partial class GradientBrushExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GradientStops<T>(
         this ElementBuilder<T> builder,
@@ -325,7 +317,6 @@ public static partial class GradientBrushExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GradientStops<T>(
         this ElementBuilder<T> builder,

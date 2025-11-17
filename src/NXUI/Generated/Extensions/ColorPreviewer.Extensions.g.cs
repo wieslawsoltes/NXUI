@@ -18,7 +18,6 @@ public static partial class ColorPreviewerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(this ElementBuilder<T> builder, Avalonia.Media.HsvColor value) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -32,7 +31,6 @@ public static partial class ColorPreviewerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ColorPreviewerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HsvColor<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ColorPreviewerExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAccentColorsVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.ColorPreviewer
     {
@@ -229,7 +225,6 @@ public static partial class ColorPreviewerExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAccentColorsVisible<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ColorPreviewerExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsAccentColorsVisible<T>(
         this ElementBuilder<T> builder,

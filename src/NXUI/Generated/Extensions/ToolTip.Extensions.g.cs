@@ -18,7 +18,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Tip<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Control
     {
@@ -32,7 +31,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Tip<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Tip<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsOpen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Control
     {
@@ -229,7 +225,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsOpen<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsOpen<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(this ElementBuilder<T> builder, Avalonia.Controls.PlacementMode value) where T : Avalonia.Controls.Control
     {
@@ -426,7 +419,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Placement<T>(
         this ElementBuilder<T> builder,
@@ -607,7 +598,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementPointer<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -633,7 +623,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -659,7 +648,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -685,7 +673,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -711,7 +698,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -737,7 +723,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -763,7 +748,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementAnchorAndGravity<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -789,7 +773,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTopEdgeAlignedLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -815,7 +798,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTopEdgeAlignedRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -841,7 +823,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementBottomEdgeAlignedLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -867,7 +848,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementBottomEdgeAlignedRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -893,7 +873,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementLeftEdgeAlignedTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -919,7 +898,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementLeftEdgeAlignedBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -945,7 +923,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRightEdgeAlignedTop<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -971,7 +948,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementRightEdgeAlignedBottom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -997,7 +973,6 @@ public static partial class ToolTipExtensions
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementCustom<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Control
     {
@@ -1025,7 +1000,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
     {
@@ -1039,7 +1013,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(
         this ElementBuilder<T> builder,
@@ -1057,7 +1030,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HorizontalOffset<T>(
         this ElementBuilder<T> builder,
@@ -1222,7 +1194,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Control
     {
@@ -1236,7 +1207,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(
         this ElementBuilder<T> builder,
@@ -1254,7 +1224,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VerticalOffset<T>(
         this ElementBuilder<T> builder,
@@ -1419,7 +1388,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.Control
     {
@@ -1433,7 +1401,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
@@ -1451,7 +1418,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
@@ -1616,7 +1582,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowDelay<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Control
     {
@@ -1630,7 +1595,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowDelay<T>(
         this ElementBuilder<T> builder,
@@ -1648,7 +1612,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowDelay<T>(
         this ElementBuilder<T> builder,
@@ -1813,7 +1776,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BetweenShowDelay<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Controls.Control
     {
@@ -1827,7 +1789,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BetweenShowDelay<T>(
         this ElementBuilder<T> builder,
@@ -1845,7 +1806,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BetweenShowDelay<T>(
         this ElementBuilder<T> builder,
@@ -2010,7 +1970,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowOnDisabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Control
     {
@@ -2024,7 +1983,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowOnDisabled<T>(
         this ElementBuilder<T> builder,
@@ -2042,7 +2000,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowOnDisabled<T>(
         this ElementBuilder<T> builder,
@@ -2207,7 +2164,6 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ServiceEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Control
     {
@@ -2221,7 +2177,6 @@ public static partial class ToolTipExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ServiceEnabled<T>(
         this ElementBuilder<T> builder,
@@ -2239,7 +2194,6 @@ public static partial class ToolTipExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ServiceEnabled<T>(
         this ElementBuilder<T> builder,
@@ -2453,7 +2407,6 @@ public static partial class ToolTipExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnToolTipOpeningHandler<T>(
         this ElementBuilder<T> builder,
@@ -2473,7 +2426,6 @@ public static partial class ToolTipExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnToolTipOpening<T>(
         this ElementBuilder<T> builder,
@@ -2546,7 +2498,6 @@ public static partial class ToolTipExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action executed when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnToolTipClosingHandler<T>(
         this ElementBuilder<T> builder,
@@ -2566,7 +2517,6 @@ public static partial class ToolTipExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnToolTipClosing<T>(
         this ElementBuilder<T> builder,

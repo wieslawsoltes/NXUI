@@ -18,7 +18,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CompactPaneLength<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.SplitView
     {
@@ -32,7 +31,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CompactPaneLength<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CompactPaneLength<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMode<T>(this ElementBuilder<T> builder, Avalonia.Controls.SplitViewDisplayMode value) where T : Avalonia.Controls.SplitView
     {
@@ -229,7 +225,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMode<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMode<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class SplitViewExtensions
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayModeInline<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
     {
@@ -436,7 +429,6 @@ public static partial class SplitViewExtensions
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayModeCompactInline<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
     {
@@ -462,7 +454,6 @@ public static partial class SplitViewExtensions
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayModeOverlay<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
     {
@@ -488,7 +479,6 @@ public static partial class SplitViewExtensions
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayModeCompactOverlay<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
     {
@@ -516,7 +506,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPaneOpen<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.SplitView
     {
@@ -530,7 +519,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPaneOpen<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsPaneOpen<T>(
         this ElementBuilder<T> builder,
@@ -713,7 +700,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpenPaneLength<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.SplitView
     {
@@ -727,7 +713,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpenPaneLength<T>(
         this ElementBuilder<T> builder,
@@ -745,7 +730,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpenPaneLength<T>(
         this ElementBuilder<T> builder,
@@ -910,7 +894,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneBackground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SplitView
     {
@@ -924,7 +907,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneBackground<T>(
         this ElementBuilder<T> builder,
@@ -942,7 +924,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneBackground<T>(
         this ElementBuilder<T> builder,
@@ -1107,7 +1088,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanePlacement<T>(this ElementBuilder<T> builder, Avalonia.Controls.SplitViewPanePlacement value) where T : Avalonia.Controls.SplitView
     {
@@ -1121,7 +1101,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanePlacement<T>(
         this ElementBuilder<T> builder,
@@ -1139,7 +1118,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanePlacement<T>(
         this ElementBuilder<T> builder,
@@ -1302,7 +1280,6 @@ public static partial class SplitViewExtensions
     /// Records a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanePlacementLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
     {
@@ -1328,7 +1305,6 @@ public static partial class SplitViewExtensions
     /// Records a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PanePlacementRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.SplitView
     {
@@ -1356,7 +1332,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Pane<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.SplitView
     {
@@ -1370,7 +1345,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Pane<T>(
         this ElementBuilder<T> builder,
@@ -1388,7 +1362,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Pane<T>(
         this ElementBuilder<T> builder,
@@ -1553,7 +1526,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.SplitView
     {
@@ -1567,7 +1539,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneTemplate<T>(
         this ElementBuilder<T> builder,
@@ -1585,7 +1556,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneTemplate<T>(
         this ElementBuilder<T> builder,
@@ -1750,7 +1720,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLightDismissOverlayMode<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.SplitView
     {
@@ -1764,7 +1733,6 @@ public static partial class SplitViewExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLightDismissOverlayMode<T>(
         this ElementBuilder<T> builder,
@@ -1782,7 +1750,6 @@ public static partial class SplitViewExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> UseLightDismissOverlayMode<T>(
         this ElementBuilder<T> builder,
@@ -2086,7 +2053,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneClosedHandler<T>(
         this ElementBuilder<T> builder,
@@ -2106,7 +2072,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneClosed<T>(
         this ElementBuilder<T> builder,
@@ -2179,7 +2144,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneClosingHandler<T>(
         this ElementBuilder<T> builder,
@@ -2199,7 +2163,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneClosing<T>(
         this ElementBuilder<T> builder,
@@ -2272,7 +2235,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneOpenedHandler<T>(
         this ElementBuilder<T> builder,
@@ -2292,7 +2254,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneOpened<T>(
         this ElementBuilder<T> builder,
@@ -2365,7 +2326,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneOpeningHandler<T>(
         this ElementBuilder<T> builder,
@@ -2385,7 +2345,6 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneOpening<T>(
         this ElementBuilder<T> builder,
@@ -2442,7 +2401,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneClosedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {
@@ -2500,7 +2458,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneClosingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {
@@ -2558,7 +2515,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneOpenedEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.RoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {
@@ -2616,7 +2572,6 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnPaneOpeningEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Interactivity.CancelRoutedEventArgs>> handler) where T : Avalonia.Controls.SplitView
     {

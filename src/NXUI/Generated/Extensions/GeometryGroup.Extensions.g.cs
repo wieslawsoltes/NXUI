@@ -18,7 +18,6 @@ public static partial class GeometryGroupExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Children<T>(this ElementBuilder<T> builder, Avalonia.Media.GeometryCollection value) where T : Avalonia.Media.GeometryGroup
     {
@@ -32,7 +31,6 @@ public static partial class GeometryGroupExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Children<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class GeometryGroupExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Children<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class GeometryGroupExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FillRule<T>(this ElementBuilder<T> builder, Avalonia.Media.FillRule value) where T : Avalonia.Media.GeometryGroup
     {
@@ -229,7 +225,6 @@ public static partial class GeometryGroupExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FillRule<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class GeometryGroupExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FillRule<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class GeometryGroupExtensions
     /// Records a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FillRuleEvenOdd<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.GeometryGroup
     {
@@ -436,7 +429,6 @@ public static partial class GeometryGroupExtensions
     /// Records a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FillRuleNonZero<T>(this ElementBuilder<T> builder) where T : Avalonia.Media.GeometryGroup
     {

@@ -108,7 +108,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipToBounds<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Visual
     {
@@ -122,7 +121,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipToBounds<T>(
         this ElementBuilder<T> builder,
@@ -140,7 +138,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClipToBounds<T>(
         this ElementBuilder<T> builder,
@@ -305,7 +302,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Clip<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry value) where T : Avalonia.Visual
     {
@@ -319,7 +315,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Clip<T>(
         this ElementBuilder<T> builder,
@@ -337,7 +332,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Clip<T>(
         this ElementBuilder<T> builder,
@@ -502,7 +496,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Visual
     {
@@ -516,7 +509,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(
         this ElementBuilder<T> builder,
@@ -534,7 +526,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(
         this ElementBuilder<T> builder,
@@ -699,7 +690,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Opacity<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Visual
     {
@@ -713,7 +703,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Opacity<T>(
         this ElementBuilder<T> builder,
@@ -731,7 +720,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Opacity<T>(
         this ElementBuilder<T> builder,
@@ -896,7 +884,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpacityMask<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Visual
     {
@@ -910,7 +897,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpacityMask<T>(
         this ElementBuilder<T> builder,
@@ -928,7 +914,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpacityMask<T>(
         this ElementBuilder<T> builder,
@@ -1093,7 +1078,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Effect<T>(this ElementBuilder<T> builder, Avalonia.Media.IEffect value) where T : Avalonia.Visual
     {
@@ -1107,7 +1091,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Effect<T>(
         this ElementBuilder<T> builder,
@@ -1125,7 +1108,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Effect<T>(
         this ElementBuilder<T> builder,
@@ -1380,7 +1362,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransform<T>(this ElementBuilder<T> builder, Avalonia.Media.ITransform value) where T : Avalonia.Visual
     {
@@ -1394,7 +1375,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransform<T>(
         this ElementBuilder<T> builder,
@@ -1412,7 +1392,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransform<T>(
         this ElementBuilder<T> builder,
@@ -1577,7 +1556,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransformOrigin<T>(this ElementBuilder<T> builder, Avalonia.RelativePoint value) where T : Avalonia.Visual
     {
@@ -1591,7 +1569,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransformOrigin<T>(
         this ElementBuilder<T> builder,
@@ -1609,7 +1586,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransformOrigin<T>(
         this ElementBuilder<T> builder,
@@ -1774,7 +1750,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlowDirection<T>(this ElementBuilder<T> builder, Avalonia.Media.FlowDirection value) where T : Avalonia.Visual
     {
@@ -1788,7 +1763,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlowDirection<T>(
         this ElementBuilder<T> builder,
@@ -1806,7 +1780,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlowDirection<T>(
         this ElementBuilder<T> builder,
@@ -1969,7 +1942,6 @@ public static partial class VisualExtensions
     /// Records a <see cref="Avalonia.Visual.FlowDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlowDirectionLeftToRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Visual
     {
@@ -1995,7 +1967,6 @@ public static partial class VisualExtensions
     /// Records a <see cref="Avalonia.Visual.FlowDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlowDirectionRightToLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Visual
     {
@@ -2113,7 +2084,6 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ZIndex<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Visual
     {
@@ -2127,7 +2097,6 @@ public static partial class VisualExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ZIndex<T>(
         this ElementBuilder<T> builder,
@@ -2145,7 +2114,6 @@ public static partial class VisualExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ZIndex<T>(
         this ElementBuilder<T> builder,

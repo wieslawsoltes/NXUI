@@ -18,7 +18,6 @@ public static partial class GlyphRunDrawingExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.IBrush value)
     {
@@ -32,7 +31,6 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(
         this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
@@ -50,7 +48,6 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(
         this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
@@ -208,7 +205,6 @@ public static partial class GlyphRunDrawingExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.GlyphRun value)
     {
@@ -222,7 +218,6 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(
         this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
@@ -240,7 +235,6 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(
         this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,

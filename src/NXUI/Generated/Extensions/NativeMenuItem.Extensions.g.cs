@@ -18,7 +18,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenu value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -32,7 +31,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Media.Imaging.Bitmap value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -229,7 +225,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
@@ -412,7 +406,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Header<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -426,7 +419,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Header<T>(
         this ElementBuilder<T> builder,
@@ -444,7 +436,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Header<T>(
         this ElementBuilder<T> builder,
@@ -609,7 +600,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToolTip<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -623,7 +613,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToolTip<T>(
         this ElementBuilder<T> builder,
@@ -641,7 +630,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToolTip<T>(
         this ElementBuilder<T> builder,
@@ -806,7 +794,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Gesture<T>(this ElementBuilder<T> builder, Avalonia.Input.KeyGesture value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -820,7 +807,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Gesture<T>(
         this ElementBuilder<T> builder,
@@ -838,7 +824,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Gesture<T>(
         this ElementBuilder<T> builder,
@@ -1003,7 +988,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1017,7 +1001,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
@@ -1035,7 +1018,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsChecked<T>(
         this ElementBuilder<T> builder,
@@ -1200,7 +1182,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleType<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenuItemToggleType value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1214,7 +1195,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleType<T>(
         this ElementBuilder<T> builder,
@@ -1232,7 +1212,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleType<T>(
         this ElementBuilder<T> builder,
@@ -1395,7 +1374,6 @@ public static partial class NativeMenuItemExtensions
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleTypeNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1421,7 +1399,6 @@ public static partial class NativeMenuItemExtensions
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleTypeCheckBox<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1447,7 +1424,6 @@ public static partial class NativeMenuItemExtensions
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToggleTypeRadio<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1475,7 +1451,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1489,7 +1464,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
@@ -1507,7 +1481,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
@@ -1672,7 +1645,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1686,7 +1658,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
@@ -1704,7 +1675,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
@@ -1869,7 +1839,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1883,7 +1852,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(
         this ElementBuilder<T> builder,
@@ -1901,7 +1869,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsEnabled<T>(
         this ElementBuilder<T> builder,
@@ -2066,7 +2033,6 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -2080,7 +2046,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(
         this ElementBuilder<T> builder,
@@ -2098,7 +2063,6 @@ public static partial class NativeMenuItemExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IsVisible<T>(
         this ElementBuilder<T> builder,

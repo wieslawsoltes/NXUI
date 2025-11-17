@@ -18,7 +18,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContent<T>(this ElementBuilder<T> builder, Avalonia.Controls.SizeToContent value) where T : Avalonia.Controls.Window
     {
@@ -32,7 +31,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContent<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContent<T>(
         this ElementBuilder<T> builder,
@@ -213,7 +210,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContentManual<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -239,7 +235,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContentWidth<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -265,7 +260,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContentHeight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -291,7 +285,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SizeToContentWidthAndHeight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -319,7 +312,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaToDecorationsHint<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Window
     {
@@ -333,7 +325,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaToDecorationsHint<T>(
         this ElementBuilder<T> builder,
@@ -351,7 +342,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaToDecorationsHint<T>(
         this ElementBuilder<T> builder,
@@ -516,7 +506,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHints<T>(this ElementBuilder<T> builder, Avalonia.Platform.ExtendClientAreaChromeHints value) where T : Avalonia.Controls.Window
     {
@@ -530,7 +519,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHints<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHints<T>(
         this ElementBuilder<T> builder,
@@ -711,7 +698,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHintsNoChrome<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -737,7 +723,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHintsSystemChrome<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -763,7 +748,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHintsDefault<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -789,7 +773,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHintsPreferSystemChrome<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -815,7 +798,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaChromeHintsOSXThickTitleBar<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -843,7 +825,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaTitleBarHeightHint<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Window
     {
@@ -857,7 +838,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaTitleBarHeightHint<T>(
         this ElementBuilder<T> builder,
@@ -875,7 +855,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ExtendClientAreaTitleBarHeightHint<T>(
         this ElementBuilder<T> builder,
@@ -1310,7 +1289,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemDecorations<T>(this ElementBuilder<T> builder, Avalonia.Controls.SystemDecorations value) where T : Avalonia.Controls.Window
     {
@@ -1324,7 +1302,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemDecorations<T>(
         this ElementBuilder<T> builder,
@@ -1342,7 +1319,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemDecorations<T>(
         this ElementBuilder<T> builder,
@@ -1505,7 +1481,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemDecorationsNone<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -1531,7 +1506,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemDecorationsBorderOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -1557,7 +1531,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemDecorationsFull<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -1585,7 +1558,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowActivated<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Window
     {
@@ -1599,7 +1571,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowActivated<T>(
         this ElementBuilder<T> builder,
@@ -1617,7 +1588,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowActivated<T>(
         this ElementBuilder<T> builder,
@@ -1782,7 +1752,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowInTaskbar<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Window
     {
@@ -1796,7 +1765,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowInTaskbar<T>(
         this ElementBuilder<T> builder,
@@ -1814,7 +1782,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowInTaskbar<T>(
         this ElementBuilder<T> builder,
@@ -1979,7 +1946,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClosingBehavior<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowClosingBehavior value) where T : Avalonia.Controls.Window
     {
@@ -1993,7 +1959,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClosingBehavior<T>(
         this ElementBuilder<T> builder,
@@ -2011,7 +1976,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClosingBehavior<T>(
         this ElementBuilder<T> builder,
@@ -2174,7 +2138,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClosingBehaviorOwnerAndChildWindows<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -2200,7 +2163,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ClosingBehaviorOwnerWindowOnly<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -2228,7 +2190,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowState<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowState value) where T : Avalonia.Controls.Window
     {
@@ -2242,7 +2203,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowState<T>(
         this ElementBuilder<T> builder,
@@ -2260,7 +2220,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowState<T>(
         this ElementBuilder<T> builder,
@@ -2423,7 +2382,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStateNormal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -2449,7 +2407,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStateMinimized<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -2475,7 +2432,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStateMaximized<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -2501,7 +2457,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStateFullScreen<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -2529,7 +2484,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Title<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Window
     {
@@ -2543,7 +2497,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Title<T>(
         this ElementBuilder<T> builder,
@@ -2561,7 +2514,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Title<T>(
         this ElementBuilder<T> builder,
@@ -2726,7 +2678,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowIcon value) where T : Avalonia.Controls.Window
     {
@@ -2740,7 +2691,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
@@ -2758,7 +2708,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
@@ -2923,7 +2872,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStartupLocation<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowStartupLocation value) where T : Avalonia.Controls.Window
     {
@@ -2937,7 +2885,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStartupLocation<T>(
         this ElementBuilder<T> builder,
@@ -2955,7 +2902,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStartupLocation<T>(
         this ElementBuilder<T> builder,
@@ -3118,7 +3064,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStartupLocationManual<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -3144,7 +3089,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStartupLocationCenterScreen<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -3170,7 +3114,6 @@ public static partial class WindowExtensions
     /// Records a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> WindowStartupLocationCenterOwner<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Window
     {
@@ -3198,7 +3141,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanResize<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Window
     {
@@ -3212,7 +3154,6 @@ public static partial class WindowExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanResize<T>(
         this ElementBuilder<T> builder,
@@ -3230,7 +3171,6 @@ public static partial class WindowExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanResize<T>(
         this ElementBuilder<T> builder,
@@ -3444,7 +3384,6 @@ public static partial class WindowExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnWindowClosedHandler<T>(
         this ElementBuilder<T> builder,
@@ -3464,7 +3403,6 @@ public static partial class WindowExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnWindowClosed<T>(
         this ElementBuilder<T> builder,
@@ -3537,7 +3475,6 @@ public static partial class WindowExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="action">The action to run when the event fires.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnWindowOpenedHandler<T>(
         this ElementBuilder<T> builder,
@@ -3557,7 +3494,6 @@ public static partial class WindowExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving the observable.</param>
     /// <param name="routes">The routing strategies for the event.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnWindowOpened<T>(
         this ElementBuilder<T> builder,
@@ -3614,7 +3550,6 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="handler">The handler receiving an observable.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnClosingEvent<T>(this ElementBuilder<T> builder, Action<T, IObservable<Avalonia.Controls.WindowClosingEventArgs>> handler) where T : Avalonia.Controls.Window
     {

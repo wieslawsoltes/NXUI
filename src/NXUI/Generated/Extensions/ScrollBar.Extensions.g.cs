@@ -18,7 +18,6 @@ public static partial class ScrollBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ViewportSize<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -32,7 +31,6 @@ public static partial class ScrollBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ViewportSize<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ScrollBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ViewportSize<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ScrollBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visibility<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.ScrollBarVisibility value) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -229,7 +225,6 @@ public static partial class ScrollBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visibility<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ScrollBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visibility<T>(
         this ElementBuilder<T> builder,
@@ -410,7 +404,6 @@ public static partial class ScrollBarExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VisibilityDisabled<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -436,7 +429,6 @@ public static partial class ScrollBarExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VisibilityAuto<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -462,7 +454,6 @@ public static partial class ScrollBarExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VisibilityHidden<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -488,7 +479,6 @@ public static partial class ScrollBarExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> VisibilityVisible<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -516,7 +506,6 @@ public static partial class ScrollBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(this ElementBuilder<T> builder, Avalonia.Layout.Orientation value) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -530,7 +519,6 @@ public static partial class ScrollBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -548,7 +536,6 @@ public static partial class ScrollBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Orientation<T>(
         this ElementBuilder<T> builder,
@@ -711,7 +698,6 @@ public static partial class ScrollBarExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationHorizontal<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -737,7 +723,6 @@ public static partial class ScrollBarExtensions
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OrientationVertical<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -855,7 +840,6 @@ public static partial class ScrollBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowAutoHide<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -869,7 +853,6 @@ public static partial class ScrollBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowAutoHide<T>(
         this ElementBuilder<T> builder,
@@ -887,7 +870,6 @@ public static partial class ScrollBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AllowAutoHide<T>(
         this ElementBuilder<T> builder,
@@ -1052,7 +1034,6 @@ public static partial class ScrollBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HideDelay<T>(this ElementBuilder<T> builder, System.TimeSpan value) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -1066,7 +1047,6 @@ public static partial class ScrollBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HideDelay<T>(
         this ElementBuilder<T> builder,
@@ -1084,7 +1064,6 @@ public static partial class ScrollBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HideDelay<T>(
         this ElementBuilder<T> builder,
@@ -1249,7 +1228,6 @@ public static partial class ScrollBarExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowDelay<T>(this ElementBuilder<T> builder, System.TimeSpan value) where T : Avalonia.Controls.Primitives.ScrollBar
     {
@@ -1263,7 +1241,6 @@ public static partial class ScrollBarExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowDelay<T>(
         this ElementBuilder<T> builder,
@@ -1281,7 +1258,6 @@ public static partial class ScrollBarExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ShowDelay<T>(
         this ElementBuilder<T> builder,

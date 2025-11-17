@@ -18,7 +18,6 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Opacity(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, System.Double value)
     {
@@ -32,7 +31,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Opacity(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -50,7 +48,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Opacity(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -208,7 +205,6 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Transform value)
     {
@@ -222,7 +218,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -240,7 +235,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -398,7 +392,6 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Geometry value)
     {
@@ -412,7 +405,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -430,7 +422,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -588,7 +579,6 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.IBrush value)
     {
@@ -602,7 +592,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -620,7 +609,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -778,7 +766,6 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Children(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.DrawingCollection value)
     {
@@ -792,7 +779,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Children(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
@@ -810,7 +796,6 @@ public static partial class DrawingGroupExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Children(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,

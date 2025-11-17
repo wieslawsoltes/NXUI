@@ -18,7 +18,6 @@ public static partial class ScrollContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanHorizontallyScroll<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -32,7 +31,6 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanHorizontallyScroll<T>(
         this ElementBuilder<T> builder,
@@ -50,7 +48,6 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanHorizontallyScroll<T>(
         this ElementBuilder<T> builder,
@@ -215,7 +212,6 @@ public static partial class ScrollContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanVerticallyScroll<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -229,7 +225,6 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanVerticallyScroll<T>(
         this ElementBuilder<T> builder,
@@ -247,7 +242,6 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CanVerticallyScroll<T>(
         this ElementBuilder<T> builder,
@@ -502,7 +496,6 @@ public static partial class ScrollContentPresenterExtensions
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Offset<T>(this ElementBuilder<T> builder, Avalonia.Vector value) where T : Avalonia.Controls.Presenters.ScrollContentPresenter
     {
@@ -516,7 +509,6 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="binding">The source binding.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Offset<T>(
         this ElementBuilder<T> builder,
@@ -534,7 +526,6 @@ public static partial class ScrollContentPresenterExtensions
     /// <param name="observable">The source observable.</param>
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
-    /// <typeparam name="T">The owner type for the builder.</typeparam>
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Offset<T>(
         this ElementBuilder<T> builder,
