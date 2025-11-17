@@ -4,6 +4,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
     <AssemblyName>NXUI.Analyzers</AssemblyName>
     <PackageId>NXUI.Analyzers</PackageId>
     <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
