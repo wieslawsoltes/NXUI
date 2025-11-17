@@ -15,6 +15,11 @@
   <PropertyGroup Condition="'$(EnableNXUIHotReload)' == 'true'">
     <DefineConstants>$(DefineConstants);NXUI_HOTRELOAD</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- Avoid reference assembly and deps.json file locks when multiple targets build concurrently on CI. -->
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>
