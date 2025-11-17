@@ -16,6 +16,15 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static class HotReloadHost
 {
+    /// <summary>
+    /// Starts an NXUI application with optional hot reload support on classic desktop lifetimes.
+    /// </summary>
+    /// <param name="build">Delegate that produces the main window or window builder.</param>
+    /// <param name="applicationName">The application name passed to Avalonia.</param>
+    /// <param name="args">Command-line arguments.</param>
+    /// <param name="themeVariant">Optional theme variant injected into the fluent theme.</param>
+    /// <param name="shutdownMode">Determines how the desktop lifetime shuts down.</param>
+    /// <returns>The process exit code.</returns>
     public static int Run(
         Func<object> build,
         string applicationName,
