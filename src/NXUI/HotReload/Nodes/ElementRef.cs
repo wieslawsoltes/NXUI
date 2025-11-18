@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Reactive.Subjects;
 using Avalonia;
+using Avalonia.Interactivity;
 
 /// <summary>
 /// Represents a lazily materialized control reference that survives hot reload rebuilds.
@@ -37,12 +38,29 @@ public readonly struct ElementRef<TControl>
 
         return _host.ObserveProperty(property);
     }
+
+    /// <summary>
+    /// Observes a routed event for the referenced control.
+    /// </summary>
+    public IObservable<TArgs> ObserveEvent<TArgs>(
+        RoutedEvent<TArgs> routedEvent,
+        RoutingStrategies routes = RoutingStrategies.Bubble)
+        where TArgs : RoutedEventArgs
+    {
+        if (_host is null)
+        {
+            throw new InvalidOperationException("ElementRef is not initialized.");
+        }
+
+        return _host.ObserveEvent(routedEvent, routes);
+    }
 }
 
 internal sealed class ElementRefHost<TControl> : IElementAttachment
     where TControl : AvaloniaObject
 {
     private readonly Dictionary<AvaloniaProperty, IPropertyRelay> _relays = new();
+    private readonly Dictionary<RoutedEvent, IEventRelay> _eventRelays = new();
     private AvaloniaObject? _currentInstance;
 
     public void OnAttached(ElementNode node)
@@ -58,6 +76,11 @@ internal sealed class ElementRefHost<TControl> : IElementAttachment
         foreach (var relay in _relays.Values)
         {
             relay.Connect(instance);
+        }
+
+        foreach (var eventRelay in _eventRelays.Values)
+        {
+            eventRelay.Connect(instance);
         }
     }
 
@@ -80,7 +103,34 @@ internal sealed class ElementRefHost<TControl> : IElementAttachment
         return ((ElementPropertyRelay<TValue>)relay).Observable;
     }
 
+    public IObservable<TArgs> ObserveEvent<TArgs>(
+        RoutedEvent<TArgs> routedEvent,
+        RoutingStrategies routes)
+        where TArgs : RoutedEventArgs
+    {
+        ArgumentNullException.ThrowIfNull(routedEvent);
+
+        if (!_eventRelays.TryGetValue(routedEvent, out var relay))
+        {
+            var typedRelay = new RoutedEventRelay<TArgs>(routedEvent, routes);
+            _eventRelays[routedEvent] = typedRelay;
+            relay = typedRelay;
+
+            if (_currentInstance is { })
+            {
+                typedRelay.Connect(_currentInstance);
+            }
+        }
+
+        return ((RoutedEventRelay<TArgs>)relay).Observable;
+    }
+
     private interface IPropertyRelay
+    {
+        void Connect(AvaloniaObject instance);
+    }
+
+    private interface IEventRelay
     {
         void Connect(AvaloniaObject instance);
     }
@@ -110,6 +160,49 @@ internal sealed class ElementRefHost<TControl> : IElementAttachment
             _instance = instance;
             _subject.OnNext(instance.GetValue<TValue>(_property));
             _subscription = instance.GetObservable(_property).Subscribe(value => _subject.OnNext(value));
+        }
+    }
+
+    private sealed class RoutedEventRelay<TArgs> : IEventRelay
+        where TArgs : RoutedEventArgs
+    {
+        private readonly RoutedEvent<TArgs> _event;
+        private readonly RoutingStrategies _routes;
+        private readonly ReplaySubject<TArgs> _subject = new(1);
+        private AvaloniaObject? _instance;
+        private IDisposable? _subscription;
+
+        public RoutedEventRelay(RoutedEvent<TArgs> routedEvent, RoutingStrategies routes)
+        {
+            _event = routedEvent ?? throw new ArgumentNullException(nameof(routedEvent));
+            _routes = routes;
+        }
+
+        public IObservable<TArgs> Observable => _subject;
+
+        public void Connect(AvaloniaObject instance)
+        {
+            if (ReferenceEquals(_instance, instance))
+            {
+                return;
+            }
+
+            Detach();
+
+            _instance = instance;
+            if (instance is Interactive interactive)
+            {
+                _subscription = interactive
+                    .GetObservable(_event, _routes)
+                    .Subscribe(args => _subject.OnNext(args));
+            }
+        }
+
+        private void Detach()
+        {
+            _subscription?.Dispose();
+            _subscription = null;
+            _instance = null;
         }
     }
 }

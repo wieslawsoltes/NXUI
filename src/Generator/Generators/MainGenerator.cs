@@ -15,6 +15,7 @@ public class MainGenerator
         PropertiesGenerator = new PropertiesGenerator(reflectoniaFactory, log);
         EventsGenerator = new EventsGenerator(reflectoniaFactory, log);
         ExtensionsGenerator = new ExtensionsGenerator(reflectoniaFactory, log);
+        ElementRefExtensionsGenerator = new ElementRefExtensionsGenerator(reflectoniaFactory, log);
         SettersGenerator = new SettersGenerator(reflectoniaFactory, log);
         MetadataGenerator = new MetadataGenerator(reflectoniaFactory, log);
     }
@@ -29,6 +30,8 @@ public class MainGenerator
 
     public ExtensionsGenerator ExtensionsGenerator { get; }
 
+    public ElementRefExtensionsGenerator ElementRefExtensionsGenerator { get; }
+
     public SettersGenerator SettersGenerator { get; }
 
     public MetadataGenerator MetadataGenerator { get; }
@@ -39,6 +42,7 @@ public class MainGenerator
         var propertiesPath = Path.Combine(outputPath, "Properties");
         var eventsPath = Path.Combine(outputPath, "Events");
         var extensionsPath = Path.Combine(outputPath, "Extensions");
+        var elementRefExtensionsPath = Path.Combine(outputPath, "ElementRef");
         var settersPath = Path.Combine(outputPath, "Setters");
         var hotReloadPath = Path.Combine(outputPath, "HotReload");
 
@@ -72,6 +76,12 @@ public class MainGenerator
             Directory.CreateDirectory(extensionsPath);
         }
         ExtensionsGenerator.Generate(extensionsPath, classes);
+
+        if (!Directory.Exists(elementRefExtensionsPath))
+        {
+            Directory.CreateDirectory(elementRefExtensionsPath);
+        }
+        ElementRefExtensionsGenerator.Generate(elementRefExtensionsPath, classes);
 
         if (!Directory.Exists(settersPath))
         {

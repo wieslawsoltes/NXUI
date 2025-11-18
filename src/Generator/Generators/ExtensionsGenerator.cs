@@ -83,7 +83,7 @@ public partial class ExtensionsGenerator
                 var propertyBuilder = new StringBuilder(template);
 
                 var valueTypeName = ReflectoniaFactory.ToString(p.ValueType);
-                var valueTypeSignature = FormatTypeWithNullability(p.ValueType, p.ValueNullability);
+                var valueTypeSignature = TypeFormatter.Format(p.ValueType, p.ValueNullability);
 
                 if (!p.IsReadOnly)
                 {

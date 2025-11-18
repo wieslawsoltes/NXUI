@@ -2,7 +2,7 @@ var clickCount = new BehaviorSubject<int>(0);
 
 object Build() =>
   Window()
-    .Title("NXUI Hot Reload").Width(400).Height(300).Content(
+    .Title("NXUI Hot Reload").Width(400).Height(340).Content(
       Border().Padding(24)
         .Child(
           StackPanel().Spacing(12)
@@ -17,7 +17,13 @@ object Build() =>
                 .Maximum(100)
                 .Value(50),
               TextBox()
-                .Text(slider.ObserveValue().Select(value => $"Current value: {value:F0}")),
+                .Text(slider.ObserveEvent(RangeBase.ValueChangedEvent).Select(args => $"Current value (event): {args.NewValue:F0}")),
+              TextBox()
+                .Text(slider.ObserveValue().Select(value => $"Current value (property): {value:F0}")),
+              ProgressBar()
+                .Minimum(0)
+                .Maximum(100)
+                .Value(slider.Bind(RangeBase.ValueProperty), BindingMode.OneWay),
               Button()
                 .Content("Click Me")
                 .OnClickHandler((_, _) => clickCount.OnNext(clickCount.Value + 1)),
