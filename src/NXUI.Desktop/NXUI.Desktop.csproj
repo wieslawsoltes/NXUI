@@ -38,7 +38,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NXUI\NXUI.csproj">
-      <AdditionalProperties>EnableNXUIHotReload=$(EnableNXUIHotReload)</AdditionalProperties>
     </ProjectReference>
   </ItemGroup>
   <Import Project="NXUI.props" />

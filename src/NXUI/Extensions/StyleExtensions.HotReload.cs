@@ -80,7 +80,6 @@ public static partial class StyleExtensions
         this ElementBuilder<Style> builder,
         ElementBuilder<ResourceDictionary> resources)
     {
-        ArgumentNullException.ThrowIfNull(resources);
         return builder.WithChild(
             resources,
             static (parentObj, builtResources) =>

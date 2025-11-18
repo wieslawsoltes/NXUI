@@ -19,7 +19,6 @@ public static partial class ContentPresenterExtensions
         where TPresenter : ContentPresenter
         where TChild : AvaloniaObject
     {
-        ArgumentNullException.ThrowIfNull(child);
         return builder.WithChild(
             child,
             static (parent, builtChild) => ((ContentPresenter)parent).Content = builtChild,
