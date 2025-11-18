@@ -1,18 +1,10 @@
 ﻿open System.Reactive.Subjects
 open Avalonia
 open Avalonia.Controls
-open Avalonia.Data
 open Avalonia.Media
 open Avalonia.Styling
 open NXUI.Extensions
 open NXUI.HotReload
-
-// Hot reload quickstart:
-// 1. Run `dotnet watch --project samples/NXUI.Sample.FSharp.Desktop`.
-// 2. Keep the window open while editing the fluent builder – NXUI diffs the ElementNode tree and patches the live controls.
-// Troubleshooting:
-// - Ensure the Debug configuration sets <EnableNXUIHotReload>true</EnableNXUIHotReload>.
-// - Export NXUI_HOTRELOAD_DIAGNOSTICS=1 to log patch summaries (property sets, child add/remove/move, replacements).
 
 let buttons(counter: BehaviorSubject<int>) =
     

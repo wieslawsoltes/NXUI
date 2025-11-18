@@ -1,11 +1,5 @@
-﻿using Avalonia.Controls;
-using NXUI.Extensions;
-using NXUI.HotReload;
-#if NXUI_HOTRELOAD
-using NXUI.HotReload.Nodes;
+﻿#if NXUI_HOTRELOAD
 using StyleBuilder = NXUI.HotReload.Nodes.ElementBuilder<Avalonia.Styling.Style>;
-#else
-using StyleBuilder = Avalonia.Styling.Style;
 #endif
 
 object Build()
@@ -18,7 +12,7 @@ object Build()
 
   var button = Button()
     .OnClick((_, o) => o.Subscribe(_ => Debug.WriteLine("Click")))
-    .Content("Button1");
+    .Content("Button");
 
   var canvas = Canvas()
     .Background(Brushes.WhiteSmoke)
@@ -167,7 +161,7 @@ StyleBuilder TabControlStyle()
 
 #if NXUI_HOTRELOAD
   style = style.WithAction(s =>
-      s.SetTemplatedControlTemplate<TabControl>((x, ns) => BuildTabControlTemplate(x, ns).Mount()));
+    s.SetTemplatedControlTemplate<TabControl>((x, ns) => BuildTabControlTemplate(x, ns).Mount()));
 #else
   style = style.SetTemplatedControlTemplate<TabControl>(BuildTabControlTemplate);
 #endif

@@ -1,10 +1,4 @@
-﻿using System.Reactive.Linq;
-using NXUI.HotReload;
-#if NXUI_HOTRELOAD
-using NXUI.HotReload.Nodes;
-#endif
-
-object Build()
+﻿object Build()
   => Window()
     .Title("DrawLine").Width(500).Height(400)
     .Content(MainView());
@@ -20,29 +14,25 @@ Canvas MainView()
     .OnPointerPressed((canvas, o)
       => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
       {
-        if (line is null)
-        {
-          line = Line(out var createdLine)
-            .Styles(LineStyle())
-            .StartPoint(x)
-            .EndPoint(x);
-          canvas.Children(line);
-        }
+        if (line is not null) return;
+        line = Line(out _)
+          .Styles(LineStyle())
+          .StartPoint(x)
+          .EndPoint(x);
+        canvas.Children(line);
       }))
     .OnPointerReleased((canvas, o)
       => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
       {
-        if (line is not null)
-        {
-          line.EndPoint(x);
-          var origin = new RelativePoint(
-            (line.StartPoint.X + line.EndPoint.X) / 2,
-            (line.StartPoint.Y + line.EndPoint.Y) / 2,
-            RelativeUnit.Absolute);
-          line.RenderTransform(RotateTransform(out _));
-          line.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d, origin));
-          line = null;
-        }
+        if (line is null) return;
+        line.EndPoint(x);
+        var origin = new RelativePoint(
+          (line.StartPoint.X + line.EndPoint.X) / 2,
+          (line.StartPoint.Y + line.EndPoint.Y) / 2,
+          RelativeUnit.Absolute);
+        line.RenderTransform(RotateTransform(out _));
+        line.Styles(RotateAnimation(TimeSpan.FromSeconds(5), 0d, 360d, origin));
+        line = null;
       }))
     .OnPointerMoved((canvas, o)
       => o.Select(x => x.GetPosition(canvas)).Subscribe(x =>
