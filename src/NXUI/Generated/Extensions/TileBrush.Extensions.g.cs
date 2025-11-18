@@ -60,6 +60,54 @@ public static partial class TileBrushExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignmentX<T>(this ElementRef<T> elementRef, Avalonia.Media.AlignmentX value) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.TileBrush.AlignmentXProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignmentX<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.AlignmentXProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignmentX<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.AlignmentX> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.AlignmentXProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TileBrush.AlignmentXProperty
 
     /// <summary>
@@ -326,6 +374,54 @@ public static partial class TileBrushExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
         return builder.WithBinding(PropertyMetadata.TileBrush_AlignmentY, Avalonia.Media.TileBrush.AlignmentYProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignmentY<T>(this ElementRef<T> elementRef, Avalonia.Media.AlignmentY value) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.TileBrush.AlignmentYProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignmentY<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.AlignmentYProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignmentY<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.AlignmentY> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.AlignmentYProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -598,6 +694,54 @@ public static partial class TileBrushExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DestinationRect<T>(this ElementRef<T> elementRef, Avalonia.RelativeRect value) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.TileBrush.DestinationRectProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DestinationRect<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.DestinationRectProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DestinationRect<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.RelativeRect> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.DestinationRectProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TileBrush.DestinationRectProperty
 
     /// <summary>
@@ -792,6 +936,54 @@ public static partial class TileBrushExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SourceRect<T>(this ElementRef<T> elementRef, Avalonia.RelativeRect value) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.TileBrush.SourceRectProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SourceRect<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.SourceRectProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SourceRect<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.RelativeRect> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.SourceRectProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TileBrush.SourceRectProperty
 
     /// <summary>
@@ -983,6 +1175,54 @@ public static partial class TileBrushExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
         return builder.WithBinding(PropertyMetadata.TileBrush_Stretch, Avalonia.Media.TileBrush.StretchProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stretch<T>(this ElementRef<T> elementRef, Avalonia.Media.Stretch value) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.TileBrush.StretchProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TileBrush.StretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stretch<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.StretchProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TileBrush.StretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stretch<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Stretch> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1277,6 +1517,54 @@ public static partial class TileBrushExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
     {
         return builder.WithBinding(PropertyMetadata.TileBrush_TileMode, Avalonia.Media.TileBrush.TileModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TileMode<T>(this ElementRef<T> elementRef, Avalonia.Media.TileMode value) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.TileBrush.TileModeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TileMode<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.TileModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TileMode<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.TileMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TileBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.TileBrush.TileModeProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

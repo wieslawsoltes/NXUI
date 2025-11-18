@@ -60,6 +60,54 @@ public static partial class ViewboxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stretch<T>(this ElementRef<T> elementRef, Avalonia.Media.Stretch value) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetValue(Avalonia.Controls.Viewbox.StretchProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stretch<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Viewbox.StretchProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stretch<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Stretch> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Viewbox.StretchProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Viewbox.StretchProperty
 
     /// <summary>
@@ -354,6 +402,54 @@ public static partial class ViewboxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StretchDirection<T>(this ElementRef<T> elementRef, Avalonia.Media.StretchDirection value) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetValue(Avalonia.Controls.Viewbox.StretchDirectionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StretchDirection<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Viewbox.StretchDirectionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StretchDirection<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.StretchDirection> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Viewbox.StretchDirectionProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Viewbox.StretchDirectionProperty
 
     /// <summary>
@@ -620,6 +716,54 @@ public static partial class ViewboxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
         return builder.WithBinding(PropertyMetadata.Viewbox_Child, Avalonia.Controls.Viewbox.ChildProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Child<T>(this ElementRef<T> elementRef, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetValue(Avalonia.Controls.Viewbox.ChildProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Child<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Viewbox.ChildProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Child<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Control?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Viewbox.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

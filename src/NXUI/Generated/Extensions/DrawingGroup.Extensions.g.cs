@@ -60,6 +60,54 @@ public static partial class DrawingGroupExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Opacity(this ElementRef<Avalonia.Media.DrawingGroup> elementRef, System.Double value)
+    {
+        return elementRef.SetValue(Avalonia.Media.DrawingGroup.OpacityProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Opacity(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.OpacityProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Opacity(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.OpacityProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.DrawingGroup.OpacityProperty
 
     /// <summary>
@@ -244,6 +292,54 @@ public static partial class DrawingGroupExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         return builder.WithBinding(PropertyMetadata.DrawingGroup_Transform, Avalonia.Media.DrawingGroup.TransformProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Transform(this ElementRef<Avalonia.Media.DrawingGroup> elementRef, Avalonia.Media.Transform? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.DrawingGroup.TransformProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Transform(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.TransformProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Transform(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        IObservable<Avalonia.Media.Transform?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -434,6 +530,54 @@ public static partial class DrawingGroupExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> ClipGeometry(this ElementRef<Avalonia.Media.DrawingGroup> elementRef, Avalonia.Media.Geometry? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.DrawingGroup.ClipGeometryProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> ClipGeometry(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.ClipGeometryProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> ClipGeometry(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        IObservable<Avalonia.Media.Geometry?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.ClipGeometryProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.DrawingGroup.ClipGeometryProperty
 
     /// <summary>
@@ -621,6 +765,54 @@ public static partial class DrawingGroupExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> OpacityMask(this ElementRef<Avalonia.Media.DrawingGroup> elementRef, Avalonia.Media.IBrush? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.DrawingGroup.OpacityMaskProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> OpacityMask(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.OpacityMaskProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> OpacityMask(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.OpacityMaskProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.DrawingGroup.OpacityMaskProperty
 
     /// <summary>
@@ -805,6 +997,54 @@ public static partial class DrawingGroupExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         return builder.WithBinding(PropertyMetadata.DrawingGroup_Children, Avalonia.Media.DrawingGroup.ChildrenProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Children(this ElementRef<Avalonia.Media.DrawingGroup> elementRef, Avalonia.Media.DrawingCollection value)
+    {
+        return elementRef.SetValue(Avalonia.Media.DrawingGroup.ChildrenProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Children(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.ChildrenProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.DrawingGroup> Children(
+        this ElementRef<Avalonia.Media.DrawingGroup> elementRef,
+        IObservable<Avalonia.Media.DrawingCollection> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingGroup.ChildrenProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

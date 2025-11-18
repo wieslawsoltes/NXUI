@@ -60,6 +60,54 @@ public static partial class TransformGroupExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TransformGroup.ChildrenProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.TransformGroup> Children(this ElementRef<Avalonia.Media.TransformGroup> elementRef, Avalonia.Media.Transforms value)
+    {
+        return elementRef.SetValue(Avalonia.Media.TransformGroup.ChildrenProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TransformGroup.ChildrenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.TransformGroup> Children(
+        this ElementRef<Avalonia.Media.TransformGroup> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.TransformGroup.ChildrenProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TransformGroup.ChildrenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.TransformGroup> Children(
+        this ElementRef<Avalonia.Media.TransformGroup> elementRef,
+        IObservable<Avalonia.Media.Transforms> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.TransformGroup.ChildrenProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TransformGroup.ChildrenProperty
 
     /// <summary>

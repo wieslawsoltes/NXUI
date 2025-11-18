@@ -60,6 +60,54 @@ public static partial class SelectableTextBlockExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionStart<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetValue(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionStart<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionStart<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionStartProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class SelectableTextBlockExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
         return builder.WithBinding(PropertyMetadata.SelectableTextBlock_SelectionEnd, Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionEnd<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetValue(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionEnd<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionEnd<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -538,6 +634,54 @@ public static partial class SelectableTextBlockExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionBrush<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetValue(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionBrush<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionBrush<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty
 
     /// <summary>
@@ -729,6 +873,54 @@ public static partial class SelectableTextBlockExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
         return builder.WithBinding(PropertyMetadata.SelectableTextBlock_SelectionForegroundBrush, Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionForegroundBrush<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetValue(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionForegroundBrush<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionForegroundBrush<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

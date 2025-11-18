@@ -60,6 +60,54 @@ public static partial class StackLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DisableVirtualization<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DisableVirtualization<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DisableVirtualization<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.StackLayout.DisableVirtualizationProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class StackLayoutExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
         return builder.WithBinding(PropertyMetadata.StackLayout_Orientation, Avalonia.Layout.StackLayout.OrientationProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(this ElementRef<T> elementRef, Avalonia.Layout.Orientation value) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.StackLayout.OrientationProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.StackLayout.OrientationProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Layout.Orientation> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.StackLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -495,6 +591,54 @@ public static partial class StackLayoutExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
     {
         return builder.WithBinding(PropertyMetadata.StackLayout_Spacing, Avalonia.Layout.StackLayout.SpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Spacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.StackLayout.SpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Spacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.StackLayout.SpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Spacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.StackLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.StackLayout.SpacingProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

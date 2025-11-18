@@ -60,6 +60,54 @@ public static partial class DateTimePickerPanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemHeight<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemHeight<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemHeight<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class DateTimePickerPanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         return builder.WithBinding(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PanelType<T>(this ElementRef<T> elementRef, Avalonia.Controls.Primitives.DateTimePickerPanelType value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PanelType<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PanelType<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Primitives.DateTimePickerPanelType> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -623,6 +719,54 @@ public static partial class DateTimePickerPanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemFormat<T>(this ElementRef<T> elementRef, System.String value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemFormat<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemFormat<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty
 
     /// <summary>
@@ -814,6 +958,54 @@ public static partial class DateTimePickerPanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
     {
         return builder.WithBinding(PropertyMetadata.DateTimePickerPanel_ShouldLoop, Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShouldLoop<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShouldLoop<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShouldLoop<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.DateTimePickerPanel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

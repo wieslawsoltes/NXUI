@@ -60,6 +60,54 @@ public static partial class SplitViewExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CompactPaneLength<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.CompactPaneLengthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CompactPaneLength<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.CompactPaneLengthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CompactPaneLength<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.CompactPaneLengthProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.SplitView.CompactPaneLengthProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class SplitViewExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
         return builder.WithBinding(PropertyMetadata.SplitView_DisplayMode, Avalonia.Controls.SplitView.DisplayModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DisplayMode<T>(this ElementRef<T> elementRef, Avalonia.Controls.SplitViewDisplayMode value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.DisplayModeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DisplayMode<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.DisplayModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DisplayMode<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.SplitViewDisplayMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.DisplayModeProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -548,6 +644,54 @@ public static partial class SplitViewExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsPaneOpen<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.IsPaneOpenProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsPaneOpen<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.IsPaneOpenProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsPaneOpen<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.IsPaneOpenProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.SplitView.IsPaneOpenProperty
 
     /// <summary>
@@ -739,6 +883,54 @@ public static partial class SplitViewExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
         return builder.WithBinding(PropertyMetadata.SplitView_OpenPaneLength, Avalonia.Controls.SplitView.OpenPaneLengthProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> OpenPaneLength<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.OpenPaneLengthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> OpenPaneLength<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.OpenPaneLengthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> OpenPaneLength<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.OpenPaneLengthProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -936,6 +1128,54 @@ public static partial class SplitViewExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneBackground<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.PaneBackgroundProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneBackground<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneBackgroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneBackground<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneBackgroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.SplitView.PaneBackgroundProperty
 
     /// <summary>
@@ -1127,6 +1367,54 @@ public static partial class SplitViewExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
         return builder.WithBinding(PropertyMetadata.SplitView_PanePlacement, Avalonia.Controls.SplitView.PanePlacementProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PanePlacement<T>(this ElementRef<T> elementRef, Avalonia.Controls.SplitViewPanePlacement value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.PanePlacementProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PanePlacement<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PanePlacementProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PanePlacement<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.SplitViewPanePlacement> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PanePlacementProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1374,6 +1662,54 @@ public static partial class SplitViewExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PaneProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Pane<T>(this ElementRef<T> elementRef, System.Object? value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.PaneProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.PaneProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Pane<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.PaneProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Pane<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.SplitView.PaneProperty
 
     /// <summary>
@@ -1568,6 +1904,54 @@ public static partial class SplitViewExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneTemplate<T>(this ElementRef<T> elementRef, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.PaneTemplateProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneTemplate<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneTemplateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneTemplate<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneTemplateProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.SplitView.PaneTemplateProperty
 
     /// <summary>
@@ -1759,6 +2143,54 @@ public static partial class SplitViewExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
         return builder.WithBinding(PropertyMetadata.SplitView_UseLightDismissOverlayMode, Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> UseLightDismissOverlayMode<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetValue(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> UseLightDismissOverlayMode<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> UseLightDismissOverlayMode<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
+    {
+        return elementRef.SetBinding(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

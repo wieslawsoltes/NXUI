@@ -60,6 +60,54 @@ public static partial class RotateTransformExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> Angle(this ElementRef<Avalonia.Media.RotateTransform> elementRef, System.Double value)
+    {
+        return elementRef.SetValue(Avalonia.Media.RotateTransform.AngleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> Angle(
+        this ElementRef<Avalonia.Media.RotateTransform> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.RotateTransform.AngleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> Angle(
+        this ElementRef<Avalonia.Media.RotateTransform> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.RotateTransform.AngleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.RotateTransform.AngleProperty
 
     /// <summary>
@@ -247,6 +295,54 @@ public static partial class RotateTransformExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> CenterX(this ElementRef<Avalonia.Media.RotateTransform> elementRef, System.Double value)
+    {
+        return elementRef.SetValue(Avalonia.Media.RotateTransform.CenterXProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> CenterX(
+        this ElementRef<Avalonia.Media.RotateTransform> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.RotateTransform.CenterXProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> CenterX(
+        this ElementRef<Avalonia.Media.RotateTransform> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.RotateTransform.CenterXProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.RotateTransform.CenterXProperty
 
     /// <summary>
@@ -431,6 +527,54 @@ public static partial class RotateTransformExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         return builder.WithBinding(PropertyMetadata.RotateTransform_CenterY, Avalonia.Media.RotateTransform.CenterYProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> CenterY(this ElementRef<Avalonia.Media.RotateTransform> elementRef, System.Double value)
+    {
+        return elementRef.SetValue(Avalonia.Media.RotateTransform.CenterYProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> CenterY(
+        this ElementRef<Avalonia.Media.RotateTransform> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.RotateTransform.CenterYProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.RotateTransform> CenterY(
+        this ElementRef<Avalonia.Media.RotateTransform> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.RotateTransform.CenterYProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

@@ -60,6 +60,54 @@ public static partial class FlyoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Flyout.ContentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Content<T>(this ElementRef<T> elementRef, System.Object? value) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetValue(Avalonia.Controls.Flyout.ContentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Flyout.ContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Content<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Flyout.ContentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Flyout.ContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Content<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Flyout.ContentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Flyout.ContentProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class FlyoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ContentTemplate<T>(this ElementRef<T> elementRef, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetValue(Avalonia.Controls.Flyout.ContentTemplateProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ContentTemplate<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Flyout.ContentTemplateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ContentTemplate<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Flyout.ContentTemplateProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Flyout.ContentTemplateProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class FlyoutExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
         return builder.WithBinding(PropertyMetadata.Flyout_FlyoutPresenterTheme, Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FlyoutPresenterTheme<T>(this ElementRef<T> elementRef, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetValue(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FlyoutPresenterTheme<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FlyoutPresenterTheme<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

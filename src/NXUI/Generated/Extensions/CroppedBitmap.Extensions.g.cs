@@ -60,6 +60,54 @@ public static partial class CroppedBitmapExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Source<T>(this ElementRef<T> elementRef, Avalonia.Media.IImage? value) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        return elementRef.SetValue(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Source<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        return elementRef.SetBinding(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Source<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IImage?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        return elementRef.SetBinding(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.Imaging.CroppedBitmap.SourceProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class CroppedBitmapExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
         return builder.WithBinding(PropertyMetadata.CroppedBitmap_SourceRect, Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SourceRect<T>(this ElementRef<T> elementRef, Avalonia.PixelRect value) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        return elementRef.SetValue(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SourceRect<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        return elementRef.SetBinding(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SourceRect<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.PixelRect> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
+    {
+        return elementRef.SetBinding(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

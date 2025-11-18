@@ -60,6 +60,54 @@ public static partial class RectangleGeometryExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RadiusX<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.RectangleGeometry.RadiusXProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RadiusX<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RadiusXProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RadiusX<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RadiusXProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.RectangleGeometry.RadiusXProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class RectangleGeometryExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RadiusY<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.RectangleGeometry.RadiusYProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RadiusY<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RadiusYProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RadiusY<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RadiusYProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.RectangleGeometry.RadiusYProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class RectangleGeometryExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
     {
         return builder.WithBinding(PropertyMetadata.RectangleGeometry_Rect, Avalonia.Media.RectangleGeometry.RectProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Rect<T>(this ElementRef<T> elementRef, Avalonia.Rect value) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.RectangleGeometry.RectProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Rect<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RectProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Rect<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Rect> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.RectangleGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RectProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

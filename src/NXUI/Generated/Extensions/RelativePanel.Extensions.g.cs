@@ -60,6 +60,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Above<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AboveProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Above<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AboveProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Above<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AboveProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.AboveProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class RelativePanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignBottomWithPanel, Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignBottomWithPanel<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignBottomWithPanel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignBottomWithPanel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -448,6 +544,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignBottomWith<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignBottomWith<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignBottomWith<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.AlignBottomWithProperty
 
     /// <summary>
@@ -639,6 +783,54 @@ public static partial class RelativePanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignHorizontalCenterWithPanel, Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignHorizontalCenterWithPanel<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignHorizontalCenterWithPanel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignHorizontalCenterWithPanel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -836,6 +1028,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignLeftWithPanel<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignLeftWithPanel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignLeftWithPanel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty
 
     /// <summary>
@@ -1027,6 +1267,54 @@ public static partial class RelativePanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignLeftWith, Avalonia.Controls.RelativePanel.AlignLeftWithProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignLeftWith<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignLeftWith<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignLeftWith<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1224,6 +1512,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignRightWithPanel<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignRightWithPanel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignRightWithPanel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty
 
     /// <summary>
@@ -1415,6 +1751,54 @@ public static partial class RelativePanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignRightWith, Avalonia.Controls.RelativePanel.AlignRightWithProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignRightWith<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignRightWithProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignRightWith<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignRightWithProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignRightWith<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignRightWithProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1612,6 +1996,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignTopWithPanel<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignTopWithPanel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignTopWithPanel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty
 
     /// <summary>
@@ -1803,6 +2235,54 @@ public static partial class RelativePanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignTopWith, Avalonia.Controls.RelativePanel.AlignTopWithProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignTopWith<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignTopWithProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignTopWith<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignTopWithProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignTopWith<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignTopWithProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -2000,6 +2480,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignVerticalCenterWithPanel<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignVerticalCenterWithPanel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignVerticalCenterWithPanel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty
 
     /// <summary>
@@ -2191,6 +2719,54 @@ public static partial class RelativePanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignVerticalCenterWith, Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignVerticalCenterWith<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignVerticalCenterWith<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AlignVerticalCenterWith<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -2388,6 +2964,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Below<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.BelowProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Below<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.BelowProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Below<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.BelowProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.BelowProperty
 
     /// <summary>
@@ -2582,6 +3206,54 @@ public static partial class RelativePanelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LeftOf<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.LeftOfProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LeftOf<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.LeftOfProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LeftOf<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.LeftOfProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.RelativePanel.LeftOfProperty
 
     /// <summary>
@@ -2773,6 +3445,54 @@ public static partial class RelativePanelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
     {
         return builder.WithBinding(PropertyMetadata.RelativePanel_RightOf, Avalonia.Controls.RelativePanel.RightOfProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RightOf<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetValue(Avalonia.Controls.RelativePanel.RightOfProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RightOf<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.RightOfProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RightOf<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.Layoutable
+    {
+        return elementRef.SetBinding(Avalonia.Controls.RelativePanel.RightOfProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

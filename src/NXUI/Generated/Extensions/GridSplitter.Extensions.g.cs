@@ -60,6 +60,54 @@ public static partial class GridSplitterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResizeDirection<T>(this ElementRef<T> elementRef, Avalonia.Controls.GridResizeDirection value) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetValue(Avalonia.Controls.GridSplitter.ResizeDirectionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResizeDirection<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ResizeDirectionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResizeDirection<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.GridResizeDirection> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ResizeDirectionProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.GridSplitter.ResizeDirectionProperty
 
     /// <summary>
@@ -326,6 +374,54 @@ public static partial class GridSplitterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
         return builder.WithBinding(PropertyMetadata.GridSplitter_ResizeBehavior, Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResizeBehavior<T>(this ElementRef<T> elementRef, Avalonia.Controls.GridResizeBehavior value) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetValue(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResizeBehavior<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResizeBehavior<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.GridResizeBehavior> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -623,6 +719,54 @@ public static partial class GridSplitterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowsPreview<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetValue(Avalonia.Controls.GridSplitter.ShowsPreviewProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowsPreview<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ShowsPreviewProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowsPreview<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ShowsPreviewProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.GridSplitter.ShowsPreviewProperty
 
     /// <summary>
@@ -814,6 +958,54 @@ public static partial class GridSplitterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
         return builder.WithBinding(PropertyMetadata.GridSplitter_KeyboardIncrement, Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> KeyboardIncrement<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetValue(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> KeyboardIncrement<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> KeyboardIncrement<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1011,6 +1203,54 @@ public static partial class GridSplitterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DragIncrement<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetValue(Avalonia.Controls.GridSplitter.DragIncrementProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DragIncrement<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.DragIncrementProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DragIncrement<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.DragIncrementProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.GridSplitter.DragIncrementProperty
 
     /// <summary>
@@ -1202,6 +1442,54 @@ public static partial class GridSplitterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
     {
         return builder.WithBinding(PropertyMetadata.GridSplitter_PreviewContent, Avalonia.Controls.GridSplitter.PreviewContentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreviewContent<T>(this ElementRef<T> elementRef, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetValue(Avalonia.Controls.GridSplitter.PreviewContentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreviewContent<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.PreviewContentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreviewContent<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.GridSplitter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.GridSplitter.PreviewContentProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

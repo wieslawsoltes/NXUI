@@ -60,6 +60,54 @@ public static partial class DatePickerPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Date<T>(this ElementRef<T> elementRef, System.DateTimeOffset value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.DateProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Date<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Date<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.DateTimeOffset> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DateProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DatePickerPresenter.DateProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class DatePickerPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
     {
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_DayFormat, Avalonia.Controls.DatePickerPresenter.DayFormatProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DayFormat<T>(this ElementRef<T> elementRef, System.String value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DayFormat<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DayFormat<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -448,6 +544,54 @@ public static partial class DatePickerPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DayVisible<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DayVisible<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> DayVisible<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DatePickerPresenter.DayVisibleProperty
 
     /// <summary>
@@ -639,6 +783,54 @@ public static partial class DatePickerPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
     {
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_MaxYear, Avalonia.Controls.DatePickerPresenter.MaxYearProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxYear<T>(this ElementRef<T> elementRef, System.DateTimeOffset value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxYear<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxYear<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.DateTimeOffset> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -836,6 +1028,54 @@ public static partial class DatePickerPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinYear<T>(this ElementRef<T> elementRef, System.DateTimeOffset value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.MinYearProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinYear<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MinYearProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinYear<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.DateTimeOffset> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MinYearProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DatePickerPresenter.MinYearProperty
 
     /// <summary>
@@ -1027,6 +1267,54 @@ public static partial class DatePickerPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
     {
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_MonthFormat, Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MonthFormat<T>(this ElementRef<T> elementRef, System.String value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MonthFormat<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MonthFormat<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1224,6 +1512,54 @@ public static partial class DatePickerPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MonthVisible<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MonthVisible<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MonthVisible<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty
 
     /// <summary>
@@ -1418,6 +1754,54 @@ public static partial class DatePickerPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> YearFormat<T>(this ElementRef<T> elementRef, System.String value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> YearFormat<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> YearFormat<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DatePickerPresenter.YearFormatProperty
 
     /// <summary>
@@ -1609,6 +1993,54 @@ public static partial class DatePickerPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
     {
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_YearVisible, Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> YearVisible<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> YearVisible<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> YearVisible<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DatePickerPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

@@ -60,6 +60,54 @@ public static partial class WrapLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HorizontalSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HorizontalSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HorizontalSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.WrapLayout.HorizontalSpacingProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class WrapLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> VerticalSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> VerticalSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> VerticalSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.WrapLayout.VerticalSpacingProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class WrapLayoutExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.WrapLayout
     {
         return builder.WithBinding(PropertyMetadata.WrapLayout_Orientation, Avalonia.Layout.WrapLayout.OrientationProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(this ElementRef<T> elementRef, Avalonia.Layout.Orientation value) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.WrapLayout.OrientationProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.WrapLayout.OrientationProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Layout.Orientation> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.WrapLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.WrapLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

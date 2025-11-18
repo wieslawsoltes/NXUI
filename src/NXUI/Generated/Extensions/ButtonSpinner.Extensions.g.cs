@@ -60,6 +60,54 @@ public static partial class ButtonSpinnerExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AllowSpin<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetValue(Avalonia.Controls.ButtonSpinner.AllowSpinProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AllowSpin<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.AllowSpinProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AllowSpin<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.AllowSpinProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.ButtonSpinner.AllowSpinProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class ButtonSpinnerExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowButtonSpinner<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetValue(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowButtonSpinner<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowButtonSpinner<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class ButtonSpinnerExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
     {
         return builder.WithBinding(PropertyMetadata.ButtonSpinner_ButtonSpinnerLocation, Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ButtonSpinnerLocation<T>(this ElementRef<T> elementRef, Avalonia.Controls.Location value) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetValue(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ButtonSpinnerLocation<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ButtonSpinnerLocation<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Location> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ButtonSpinner
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

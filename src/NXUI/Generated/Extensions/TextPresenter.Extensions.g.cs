@@ -60,6 +60,54 @@ public static partial class TextPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowSelectionHighlight<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowSelectionHighlight<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowSelectionHighlight<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class TextPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithBinding(PropertyMetadata.TextPresenter_CaretIndex, Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretIndex<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretIndex<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretIndex<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -448,6 +544,54 @@ public static partial class TextPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RevealPassword<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RevealPassword<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> RevealPassword<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty
 
     /// <summary>
@@ -639,6 +783,54 @@ public static partial class TextPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithBinding(PropertyMetadata.TextPresenter_PasswordChar, Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PasswordChar<T>(this ElementRef<T> elementRef, System.Char value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PasswordChar<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PasswordChar<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Char> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -836,6 +1028,54 @@ public static partial class TextPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionBrush<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionBrush<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionBrush<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty
 
     /// <summary>
@@ -1027,6 +1267,54 @@ public static partial class TextPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithBinding(PropertyMetadata.TextPresenter_SelectionForegroundBrush, Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionForegroundBrush<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionForegroundBrush<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionForegroundBrush<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1224,6 +1512,54 @@ public static partial class TextPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretBrush<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretBrush<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretBrush<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty
 
     /// <summary>
@@ -1415,6 +1751,54 @@ public static partial class TextPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithBinding(PropertyMetadata.TextPresenter_CaretBlinkInterval, Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretBlinkInterval<T>(this ElementRef<T> elementRef, System.TimeSpan value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretBlinkInterval<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretBlinkInterval<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.TimeSpan> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1612,6 +1996,54 @@ public static partial class TextPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionStart<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionStart<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionStart<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty
 
     /// <summary>
@@ -1803,6 +2235,54 @@ public static partial class TextPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithBinding(PropertyMetadata.TextPresenter_SelectionEnd, Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionEnd<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionEnd<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionEnd<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -2000,6 +2480,54 @@ public static partial class TextPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.TextProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.TextPresenter.TextProperty
 
     /// <summary>
@@ -2191,6 +2719,54 @@ public static partial class TextPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithBinding(PropertyMetadata.TextPresenter_PreeditText, Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreeditText<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreeditText<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreeditText<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -2388,6 +2964,54 @@ public static partial class TextPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreeditTextCursorPosition<T>(this ElementRef<T> elementRef, System.Nullable<System.Int32> value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreeditTextCursorPosition<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PreeditTextCursorPosition<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Nullable<System.Int32>> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty
 
     /// <summary>
@@ -2579,6 +3203,54 @@ public static partial class TextPresenterExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithBinding(PropertyMetadata.TextPresenter_Background, Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Background<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Background<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Background<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

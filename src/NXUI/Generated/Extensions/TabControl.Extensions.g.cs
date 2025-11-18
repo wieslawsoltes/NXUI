@@ -60,6 +60,54 @@ public static partial class TabControlExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TabStripPlacement<T>(this ElementRef<T> elementRef, Avalonia.Controls.Dock value) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.TabControl.TabStripPlacementProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TabStripPlacement<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.TabStripPlacementProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TabStripPlacement<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Dock> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.TabStripPlacementProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TabControl.TabStripPlacementProperty
 
     /// <summary>
@@ -351,6 +399,54 @@ public static partial class TabControlExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
         return builder.WithBinding(PropertyMetadata.TabControl_HorizontalContentAlignment, Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HorizontalContentAlignment<T>(this ElementRef<T> elementRef, Avalonia.Layout.HorizontalAlignment value) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HorizontalContentAlignment<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HorizontalContentAlignment<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Layout.HorizontalAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -648,6 +744,54 @@ public static partial class TabControlExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> VerticalContentAlignment<T>(this ElementRef<T> elementRef, Avalonia.Layout.VerticalAlignment value) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> VerticalContentAlignment<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> VerticalContentAlignment<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Layout.VerticalAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TabControl.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -939,6 +1083,54 @@ public static partial class TabControlExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
         return builder.WithBinding(PropertyMetadata.TabControl_ContentTemplate, Avalonia.Controls.TabControl.ContentTemplateProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ContentTemplate<T>(this ElementRef<T> elementRef, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.TabControl.ContentTemplateProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ContentTemplate<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.ContentTemplateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ContentTemplate<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TabControl.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

@@ -240,6 +240,54 @@ public static partial class TopLevelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PointerOverElement<T>(this ElementRef<T> elementRef, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetValue(Avalonia.Controls.TopLevel.PointerOverElementProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PointerOverElement<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.PointerOverElementProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PointerOverElement<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Input.IInputElement?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TopLevel.PointerOverElementProperty
 
     /// <summary>
@@ -431,6 +479,54 @@ public static partial class TopLevelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
         return builder.WithBinding(PropertyMetadata.TopLevel_TransparencyLevelHint, Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TransparencyLevelHint<T>(this ElementRef<T> elementRef, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetValue(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TransparencyLevelHint<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TransparencyLevelHint<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -718,6 +814,54 @@ public static partial class TopLevelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TransparencyBackgroundFallback<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetValue(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TransparencyBackgroundFallback<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TransparencyBackgroundFallback<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty
 
     /// <summary>
@@ -912,6 +1056,54 @@ public static partial class TopLevelExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SystemBarColor<T>(this ElementRef<T> elementRef, Avalonia.Media.SolidColorBrush? value) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetValue(Avalonia.Controls.TopLevel.SystemBarColorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SystemBarColor<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.SystemBarColorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SystemBarColor<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.SolidColorBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.SystemBarColorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TopLevel.SystemBarColorProperty
 
     /// <summary>
@@ -1103,6 +1295,54 @@ public static partial class TopLevelExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
         return builder.WithBinding(PropertyMetadata.TopLevel_AutoSafeAreaPadding, Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AutoSafeAreaPadding<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetValue(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AutoSafeAreaPadding<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AutoSafeAreaPadding<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

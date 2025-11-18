@@ -60,6 +60,54 @@ public static partial class GlyphRunDrawingExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GlyphRunDrawing> Foreground(this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef, Avalonia.Media.IBrush? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GlyphRunDrawing> Foreground(
+        this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GlyphRunDrawing> Foreground(
+        this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.GlyphRunDrawing.ForegroundProperty
 
     /// <summary>
@@ -244,6 +292,54 @@ public static partial class GlyphRunDrawingExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         return builder.WithBinding(PropertyMetadata.GlyphRunDrawing_GlyphRun, Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GlyphRunDrawing> GlyphRun(this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef, Avalonia.Media.GlyphRun? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GlyphRunDrawing> GlyphRun(
+        this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GlyphRunDrawing> GlyphRun(
+        this ElementRef<Avalonia.Media.GlyphRunDrawing> elementRef,
+        IObservable<Avalonia.Media.GlyphRun?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

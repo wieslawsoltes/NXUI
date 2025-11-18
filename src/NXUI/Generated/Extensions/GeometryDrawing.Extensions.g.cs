@@ -60,6 +60,54 @@ public static partial class GeometryDrawingExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Geometry(this ElementRef<Avalonia.Media.GeometryDrawing> elementRef, Avalonia.Media.Geometry? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.GeometryDrawing.GeometryProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Geometry(
+        this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.GeometryProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Geometry(
+        this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
+        IObservable<Avalonia.Media.Geometry?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.GeometryProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.GeometryDrawing.GeometryProperty
 
     /// <summary>
@@ -247,6 +295,54 @@ public static partial class GeometryDrawingExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Brush(this ElementRef<Avalonia.Media.GeometryDrawing> elementRef, Avalonia.Media.IBrush? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.GeometryDrawing.BrushProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Brush(
+        this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.BrushProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Brush(
+        this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.BrushProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.GeometryDrawing.BrushProperty
 
     /// <summary>
@@ -431,6 +527,54 @@ public static partial class GeometryDrawingExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         return builder.WithBinding(PropertyMetadata.GeometryDrawing_Pen, Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Pen(this ElementRef<Avalonia.Media.GeometryDrawing> elementRef, Avalonia.Media.IPen? value)
+    {
+        return elementRef.SetValue(Avalonia.Media.GeometryDrawing.PenProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Pen(
+        this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.PenProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.GeometryDrawing> Pen(
+        this ElementRef<Avalonia.Media.GeometryDrawing> elementRef,
+        IObservable<Avalonia.Media.IPen?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

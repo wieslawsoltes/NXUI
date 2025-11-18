@@ -60,6 +60,54 @@ public static partial class KeyBindingExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Command<T>(this ElementRef<T> elementRef, System.Windows.Input.ICommand value) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetValue(Avalonia.Input.KeyBinding.CommandProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Command<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetBinding(Avalonia.Input.KeyBinding.CommandProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Command<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Windows.Input.ICommand> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetBinding(Avalonia.Input.KeyBinding.CommandProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Input.KeyBinding.CommandProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class KeyBindingExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CommandParameter<T>(this ElementRef<T> elementRef, System.Object value) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetValue(Avalonia.Input.KeyBinding.CommandParameterProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CommandParameter<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetBinding(Avalonia.Input.KeyBinding.CommandParameterProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CommandParameter<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetBinding(Avalonia.Input.KeyBinding.CommandParameterProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Input.KeyBinding.CommandParameterProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class KeyBindingExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
     {
         return builder.WithBinding(PropertyMetadata.KeyBinding_Gesture, Avalonia.Input.KeyBinding.GestureProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Gesture<T>(this ElementRef<T> elementRef, Avalonia.Input.KeyGesture value) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetValue(Avalonia.Input.KeyBinding.GestureProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Gesture<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetBinding(Avalonia.Input.KeyBinding.GestureProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Gesture<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Input.KeyGesture> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.KeyBinding
+    {
+        return elementRef.SetBinding(Avalonia.Input.KeyBinding.GestureProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

@@ -60,6 +60,54 @@ public static partial class SolidColorBrushExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.SolidColorBrush> Color(this ElementRef<Avalonia.Media.SolidColorBrush> elementRef, Avalonia.Media.Color value)
+    {
+        return elementRef.SetValue(Avalonia.Media.SolidColorBrush.ColorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.SolidColorBrush> Color(
+        this ElementRef<Avalonia.Media.SolidColorBrush> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.SolidColorBrush.ColorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.SolidColorBrush.ColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.SolidColorBrush> Color(
+        this ElementRef<Avalonia.Media.SolidColorBrush> elementRef,
+        IObservable<Avalonia.Media.Color> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.SolidColorBrush.ColorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.SolidColorBrush.ColorProperty
 
     /// <summary>

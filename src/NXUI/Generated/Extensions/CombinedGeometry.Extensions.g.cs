@@ -60,6 +60,54 @@ public static partial class CombinedGeometryExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Geometry1<T>(this ElementRef<T> elementRef, Avalonia.Media.Geometry? value) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.CombinedGeometry.Geometry1Property, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Geometry1<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.Geometry1Property, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Geometry1<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Geometry?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.Geometry1Property, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.CombinedGeometry.Geometry1Property
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class CombinedGeometryExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Geometry2<T>(this ElementRef<T> elementRef, Avalonia.Media.Geometry? value) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.CombinedGeometry.Geometry2Property, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Geometry2<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.Geometry2Property, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Geometry2<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Geometry?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.Geometry2Property, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.CombinedGeometry.Geometry2Property
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class CombinedGeometryExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
         return builder.WithBinding(PropertyMetadata.CombinedGeometry_GeometryCombineMode, Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> GeometryCombineMode<T>(this ElementRef<T> elementRef, Avalonia.Media.GeometryCombineMode value) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> GeometryCombineMode<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> GeometryCombineMode<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.GeometryCombineMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

@@ -150,6 +150,54 @@ public static partial class NativeMenuExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsNativeMenuExported<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetValue(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsNativeMenuExported<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsNativeMenuExported<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
+    {
+        return elementRef.SetBinding(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty
 
     /// <summary>
@@ -341,6 +389,54 @@ public static partial class NativeMenuExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.AvaloniaObject
     {
         return builder.WithBinding(PropertyMetadata.NativeMenu_Menu, Avalonia.Controls.NativeMenu.MenuProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Menu<T>(this ElementRef<T> elementRef, Avalonia.Controls.NativeMenu? value) where T : Avalonia.AvaloniaObject
+    {
+        return elementRef.SetValue(Avalonia.Controls.NativeMenu.MenuProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Menu<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.AvaloniaObject
+    {
+        return elementRef.SetBinding(Avalonia.Controls.NativeMenu.MenuProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Menu<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.NativeMenu?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.AvaloniaObject
+    {
+        return elementRef.SetBinding(Avalonia.Controls.NativeMenu.MenuProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

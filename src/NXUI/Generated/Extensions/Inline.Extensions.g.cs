@@ -60,6 +60,54 @@ public static partial class InlineExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextDecorations<T>(this ElementRef<T> elementRef, Avalonia.Media.TextDecorationCollection? value) where T : Avalonia.Controls.Documents.Inline
+    {
+        return elementRef.SetValue(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextDecorations<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextDecorations<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.TextDecorationCollection?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Documents.Inline.TextDecorationsProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class InlineExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
         return builder.WithBinding(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BaselineAlignment<T>(this ElementRef<T> elementRef, Avalonia.Media.BaselineAlignment value) where T : Avalonia.Controls.Documents.Inline
+    {
+        return elementRef.SetValue(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BaselineAlignment<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BaselineAlignment<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.BaselineAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

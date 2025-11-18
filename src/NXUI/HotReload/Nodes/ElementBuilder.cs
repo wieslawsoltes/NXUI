@@ -92,12 +92,23 @@ public readonly struct ElementBuilder<TControl>
     }
 
     /// <summary>
+    /// Adds a mutation that attaches a child node using a custom attachment delegate.
+    /// </summary>
+    public ElementBuilder<TControl> WithChild<TChild>(
+        ElementBuilder<TChild> child,
+        Action<TControl, TChild> attach)
+        where TChild : AvaloniaObject
+    {
+        return WithChild(child, attach, ChildSlot.Unknown);
+    }
+
+    /// <summary>
     /// Adds a mutation that attaches a child node.
     /// </summary>
     internal ElementBuilder<TControl> WithChild<TChild>(
         ElementBuilder<TChild> child,
         Action<TControl, TChild> attach,
-        ChildSlot slot = ChildSlot.Unknown)
+        ChildSlot slot)
         where TChild : AvaloniaObject
     {
         ArgumentNullException.ThrowIfNull(attach);
@@ -112,12 +123,33 @@ public readonly struct ElementBuilder<TControl>
     }
 
     /// <summary>
+    /// Adds a mutation that attaches a previously materialized child builder.
+    /// </summary>
+    public ElementBuilder<TControl> WithChild(
+        ElementChildBuilder child,
+        Action<TControl, AvaloniaObject> attach)
+    {
+        return WithChild(child.Node, attach, ChildSlot.Unknown);
+    }
+
+    /// <summary>
+    /// Adds a mutation that attaches multiple child nodes.
+    /// </summary>
+    public ElementBuilder<TControl> WithChildren<TChild>(
+        IReadOnlyList<ElementBuilder<TChild>> children,
+        Action<TControl, IReadOnlyList<TChild>> attach)
+        where TChild : AvaloniaObject
+    {
+        return WithChildren(children, attach, ChildSlot.Unknown);
+    }
+
+    /// <summary>
     /// Adds a mutation that attaches multiple child nodes.
     /// </summary>
     internal ElementBuilder<TControl> WithChildren<TChild>(
         IReadOnlyList<ElementBuilder<TChild>> children,
         Action<TControl, IReadOnlyList<TChild>> attach,
-        ChildSlot slot = ChildSlot.Unknown)
+        ChildSlot slot)
         where TChild : AvaloniaObject
     {
         ArgumentNullException.ThrowIfNull(children);
@@ -151,7 +183,7 @@ public readonly struct ElementBuilder<TControl>
     /// <summary>
     /// Adds a mutation that attaches an untyped child node.
     /// </summary>
-    internal ElementBuilder<TControl> WithChild(ElementNode childNode, Action<TControl, AvaloniaObject> attach, ChildSlot slot = ChildSlot.Unknown)
+    internal ElementBuilder<TControl> WithChild(ElementNode childNode, Action<TControl, AvaloniaObject> attach, ChildSlot slot)
     {
         ArgumentNullException.ThrowIfNull(childNode);
         ArgumentNullException.ThrowIfNull(attach);

@@ -60,6 +60,54 @@ public static partial class AnimatableExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Transitions<T>(this ElementRef<T> elementRef, Avalonia.Animation.Transitions? value) where T : Avalonia.Animation.Animatable
+    {
+        return elementRef.SetValue(Avalonia.Animation.Animatable.TransitionsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Transitions<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animatable
+    {
+        return elementRef.SetBinding(Avalonia.Animation.Animatable.TransitionsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Transitions<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Animation.Transitions?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animatable
+    {
+        return elementRef.SetBinding(Avalonia.Animation.Animatable.TransitionsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Animation.Animatable.TransitionsProperty
 
     /// <summary>

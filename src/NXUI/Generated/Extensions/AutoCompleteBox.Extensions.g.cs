@@ -60,6 +60,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretIndex<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretIndex<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CaretIndex<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.CaretIndexProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_Watermark, Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Watermark<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Watermark<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Watermark<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -448,6 +544,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinimumPrefixLength<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinimumPrefixLength<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinimumPrefixLength<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty
 
     /// <summary>
@@ -639,6 +783,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_MinimumPopulateDelay, Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinimumPopulateDelay<T>(this ElementRef<T> elementRef, System.TimeSpan value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinimumPopulateDelay<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinimumPopulateDelay<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.TimeSpan> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -836,6 +1028,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxDropDownHeight<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxDropDownHeight<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxDropDownHeight<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty
 
     /// <summary>
@@ -1027,6 +1267,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_IsTextCompletionEnabled, Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsTextCompletionEnabled<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsTextCompletionEnabled<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsTextCompletionEnabled<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1224,6 +1512,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemTemplate<T>(this ElementRef<T> elementRef, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemTemplate<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemTemplate<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty
 
     /// <summary>
@@ -1415,6 +1751,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_IsDropDownOpen, Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsDropDownOpen<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsDropDownOpen<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsDropDownOpen<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1612,6 +1996,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectedItem<T>(this ElementRef<T> elementRef, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectedItem<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectedItem<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.SelectedItemProperty
 
     /// <summary>
@@ -1803,6 +2235,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_Text, Avalonia.Controls.AutoCompleteBox.TextProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.TextProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Text<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -2087,6 +2567,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FilterMode<T>(this ElementRef<T> elementRef, Avalonia.Controls.AutoCompleteFilterMode value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.FilterModeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FilterMode<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.FilterModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FilterMode<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.AutoCompleteFilterMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.FilterModeProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -2634,6 +3162,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemFilter<T>(this ElementRef<T> elementRef, Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemFilter<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemFilter<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.ItemFilterProperty
 
     /// <summary>
@@ -2825,6 +3401,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_TextFilter, Avalonia.Controls.AutoCompleteBox.TextFilterProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextFilter<T>(this ElementRef<T> elementRef, Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.TextFilterProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextFilter<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextFilterProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextFilter<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextFilterProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -3022,6 +3646,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemSelector<T>(this ElementRef<T> elementRef, Avalonia.Controls.AutoCompleteSelector<System.Object>? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemSelector<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemSelector<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty
 
     /// <summary>
@@ -3213,6 +3885,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_TextSelector, Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextSelector<T>(this ElementRef<T> elementRef, Avalonia.Controls.AutoCompleteSelector<System.String?>? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextSelector<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextSelector<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.AutoCompleteSelector<System.String?>?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -3410,6 +4130,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsSource<T>(this ElementRef<T> elementRef, System.Collections.IEnumerable? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsSource<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsSource<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Collections.IEnumerable?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty
 
     /// <summary>
@@ -3601,6 +4369,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_AsyncPopulator, Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AsyncPopulator<T>(this ElementRef<T> elementRef, System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AsyncPopulator<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AsyncPopulator<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -3798,6 +4614,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxLength<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxLength<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaxLength<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.MaxLengthProperty
 
     /// <summary>
@@ -3992,6 +4856,54 @@ public static partial class AutoCompleteBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> InnerLeftContent<T>(this ElementRef<T> elementRef, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> InnerLeftContent<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> InnerLeftContent<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty
 
     /// <summary>
@@ -4183,6 +5095,54 @@ public static partial class AutoCompleteBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_InnerRightContent, Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> InnerRightContent<T>(this ElementRef<T> elementRef, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> InnerRightContent<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> InnerRightContent<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Object?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

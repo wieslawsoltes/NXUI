@@ -60,6 +60,54 @@ public static partial class DataGridTextColumnExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontFamily<T>(this ElementRef<T> elementRef, Avalonia.Media.FontFamily value) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontFamily<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontFamily<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.FontFamily> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DataGridTextColumn.FontFamilyProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class DataGridTextColumnExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontSize<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridTextColumn.FontSizeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontSize<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontSizeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontSize<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontSizeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DataGridTextColumn.FontSizeProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class DataGridTextColumnExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
     {
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_FontStyle, Avalonia.Controls.DataGridTextColumn.FontStyleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontStyle<T>(this ElementRef<T> elementRef, Avalonia.Media.FontStyle value) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridTextColumn.FontStyleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontStyle<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontStyleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontStyle<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.FontStyle> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -714,6 +858,54 @@ public static partial class DataGridTextColumnExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
     {
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontWeight<T>(this ElementRef<T> elementRef, Avalonia.Media.FontWeight value) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridTextColumn.FontWeightProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontWeight<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontWeightProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontWeight<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.FontWeight> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1361,6 +1553,54 @@ public static partial class DataGridTextColumnExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontStretch<T>(this ElementRef<T> elementRef, Avalonia.Media.FontStretch value) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridTextColumn.FontStretchProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontStretch<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontStretchProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FontStretch<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.FontStretch> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontStretchProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DataGridTextColumn.FontStretchProperty
 
     /// <summary>
@@ -1777,6 +2017,54 @@ public static partial class DataGridTextColumnExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
     {
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_Foreground, Avalonia.Controls.DataGridTextColumn.ForegroundProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Foreground<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush value) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridTextColumn.ForegroundProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Foreground<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.ForegroundProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Foreground<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridTextColumn
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

@@ -60,6 +60,54 @@ public static partial class OverlayPopupHostExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Transform<T>(this ElementRef<T> elementRef, Avalonia.Media.Transform? value) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Transform<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Transform<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Transform?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty
 
     /// <summary>

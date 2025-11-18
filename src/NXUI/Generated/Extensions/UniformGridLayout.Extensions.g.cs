@@ -60,6 +60,54 @@ public static partial class UniformGridLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsJustification<T>(this ElementRef<T> elementRef, Avalonia.Layout.UniformGridLayoutItemsJustification value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsJustification<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsJustification<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Layout.UniformGridLayoutItemsJustification> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty
 
     /// <summary>
@@ -404,6 +452,54 @@ public static partial class UniformGridLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsStretch<T>(this ElementRef<T> elementRef, Avalonia.Layout.UniformGridLayoutItemsStretch value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsStretch<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsStretch<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Layout.UniformGridLayoutItemsStretch> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.ItemsStretchProperty
 
     /// <summary>
@@ -673,6 +769,54 @@ public static partial class UniformGridLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinColumnSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinColumnSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinColumnSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty
 
     /// <summary>
@@ -864,6 +1008,54 @@ public static partial class UniformGridLayoutExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_MinItemHeight, Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinItemHeight<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinItemHeight<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinItemHeight<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1061,6 +1253,54 @@ public static partial class UniformGridLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinItemWidth<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinItemWidth<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinItemWidth<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MinItemWidthProperty
 
     /// <summary>
@@ -1252,6 +1492,54 @@ public static partial class UniformGridLayoutExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_MinRowSpacing, Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinRowSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinRowSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MinRowSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1449,6 +1737,54 @@ public static partial class UniformGridLayoutExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaximumRowsOrColumns<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaximumRowsOrColumns<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaximumRowsOrColumns<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty
 
     /// <summary>
@@ -1640,6 +1976,54 @@ public static partial class UniformGridLayoutExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
     {
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_Orientation, Avalonia.Layout.UniformGridLayout.OrientationProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(this ElementRef<T> elementRef, Avalonia.Layout.Orientation value) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetValue(Avalonia.Layout.UniformGridLayout.OrientationProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.OrientationProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Orientation<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Layout.Orientation> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Layout.UniformGridLayout
+    {
+        return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

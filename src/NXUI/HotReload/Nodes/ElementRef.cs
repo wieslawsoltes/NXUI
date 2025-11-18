@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Reactive.Subjects;
 using Avalonia;
+using Avalonia.Data;
 using Avalonia.Interactivity;
 
 /// <summary>
@@ -54,6 +55,54 @@ public readonly struct ElementRef<TControl>
 
         return _host.ObserveEvent(routedEvent, routes);
     }
+
+    /// <summary>
+    /// Sets a property value on the referenced control.
+    /// </summary>
+    public ElementRef<TControl> SetValue<TValue>(AvaloniaProperty<TValue> property, TValue value)
+    {
+        if (_host is null)
+        {
+            throw new InvalidOperationException("ElementRef is not initialized.");
+        }
+
+        _host.SetValue(property, value);
+        return this;
+    }
+
+    /// <summary>
+    /// Assigns a binding to the referenced control.
+    /// </summary>
+    public ElementRef<TControl> SetBinding<TValue>(
+        AvaloniaProperty<TValue> property,
+        IBinding binding,
+        BindingMode mode = BindingMode.TwoWay,
+        BindingPriority priority = BindingPriority.LocalValue)
+    {
+        if (_host is null)
+        {
+            throw new InvalidOperationException("ElementRef is not initialized.");
+        }
+
+        _host.SetBinding(property, binding, mode, priority);
+        return this;
+    }
+
+    /// <summary>
+    /// Executes an action against the referenced control instance.
+    /// </summary>
+    public ElementRef<TControl> With(Action<TControl> action)
+    {
+        ArgumentNullException.ThrowIfNull(action);
+
+        if (_host is null)
+        {
+            throw new InvalidOperationException("ElementRef is not initialized.");
+        }
+
+        _host.Invoke(action);
+        return this;
+    }
 }
 
 internal sealed class ElementRefHost<TControl> : IElementAttachment
@@ -82,6 +131,48 @@ internal sealed class ElementRefHost<TControl> : IElementAttachment
         {
             eventRelay.Connect(instance);
         }
+    }
+
+    public void SetValue<TValue>(AvaloniaProperty<TValue> property, TValue value)
+    {
+        ArgumentNullException.ThrowIfNull(property);
+
+        if (_currentInstance is not AvaloniaObject instance)
+        {
+            throw new InvalidOperationException("ElementRef target is not materialized.");
+        }
+
+        instance.SetValue(property, value);
+    }
+
+    public void SetBinding<TValue>(
+        AvaloniaProperty<TValue> property,
+        IBinding binding,
+        BindingMode mode,
+        BindingPriority priority)
+    {
+        ArgumentNullException.ThrowIfNull(property);
+        ArgumentNullException.ThrowIfNull(binding);
+
+        if (_currentInstance is not AvaloniaObject instance)
+        {
+            throw new InvalidOperationException("ElementRef target is not materialized.");
+        }
+
+        var descriptor = property.Bind().WithMode(mode).WithPriority(priority);
+        instance[descriptor] = binding;
+    }
+
+    public void Invoke(Action<TControl> action)
+    {
+        ArgumentNullException.ThrowIfNull(action);
+
+        if (_currentInstance is not TControl instance)
+        {
+            throw new InvalidOperationException("ElementRef target is not materialized.");
+        }
+
+        action(instance);
     }
 
     public IObservable<TValue> ObserveProperty<TValue>(AvaloniaProperty<TValue> property)

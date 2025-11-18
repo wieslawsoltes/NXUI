@@ -60,6 +60,54 @@ public static partial class ExperimentalAcrylicBorderExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CornerRadius<T>(this ElementRef<T> elementRef, Avalonia.CornerRadius value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return elementRef.SetValue(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CornerRadius<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CornerRadius<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.CornerRadius> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty
 
     /// <summary>
@@ -305,6 +353,54 @@ public static partial class ExperimentalAcrylicBorderExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
     {
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicBorder_Material, Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Material<T>(this ElementRef<T> elementRef, Avalonia.Media.ExperimentalAcrylicMaterial value) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return elementRef.SetValue(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Material<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Material<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ExperimentalAcrylicBorder
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

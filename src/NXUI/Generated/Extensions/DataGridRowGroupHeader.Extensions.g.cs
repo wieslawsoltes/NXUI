@@ -60,6 +60,54 @@ public static partial class DataGridRowGroupHeaderExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsItemCountVisible<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsItemCountVisible<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsItemCountVisible<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class DataGridRowGroupHeaderExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
         return builder.WithBinding(PropertyMetadata.DataGridRowGroupHeader_ItemCountFormat, Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemCountFormat<T>(this ElementRef<T> elementRef, System.String value) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemCountFormat<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemCountFormat<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -448,6 +544,54 @@ public static partial class DataGridRowGroupHeaderExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PropertyName<T>(this ElementRef<T> elementRef, System.String value) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PropertyName<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PropertyName<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty
 
     /// <summary>
@@ -642,6 +786,54 @@ public static partial class DataGridRowGroupHeaderExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsPropertyNameVisible<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsPropertyNameVisible<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsPropertyNameVisible<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty
 
     /// <summary>
@@ -833,6 +1025,54 @@ public static partial class DataGridRowGroupHeaderExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
     {
         return builder.WithBinding(PropertyMetadata.DataGridRowGroupHeader_SublevelIndent, Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SublevelIndent<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SublevelIndent<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SublevelIndent<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridRowGroupHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

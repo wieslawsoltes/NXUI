@@ -60,6 +60,54 @@ public static partial class LineGeometryExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StartPoint<T>(this ElementRef<T> elementRef, Avalonia.Point value) where T : Avalonia.Media.LineGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.LineGeometry.StartPointProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StartPoint<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.LineGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.LineGeometry.StartPointProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StartPoint<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Point> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.LineGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.LineGeometry.StartPointProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.LineGeometry.StartPointProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class LineGeometryExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.LineGeometry
     {
         return builder.WithBinding(PropertyMetadata.LineGeometry_EndPoint, Avalonia.Media.LineGeometry.EndPointProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> EndPoint<T>(this ElementRef<T> elementRef, Avalonia.Point value) where T : Avalonia.Media.LineGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.LineGeometry.EndPointProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> EndPoint<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.LineGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.LineGeometry.EndPointProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> EndPoint<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Point> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.LineGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.LineGeometry.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

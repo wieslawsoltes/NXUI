@@ -57,6 +57,57 @@ public static partial class Templates
 #endif
 """;
 
+    public static string PropertyMethodsElementRefTemplate = """
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="%ClassType%.%Name%Property"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static %ElementRefType% %MethodName%%ElementRefGeneric%(this %ElementRefType% elementRef, %ValueTypeSignature% value)%ElementRefConstraint%
+    {
+        return elementRef.SetValue(%ClassType%.%Name%Property, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="%ClassType%.%Name%Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static %ElementRefType% %MethodName%%ElementRefGeneric%(
+        this %ElementRefType% elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%ElementRefConstraint%
+    {
+        return elementRef.SetBinding(%ClassType%.%Name%Property, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="%ClassType%.%Name%Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static %ElementRefType% %MethodName%%ElementRefGeneric%(
+        this %ElementRefType% elementRef,
+        IObservable<%ValueTypeSignature%> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%ElementRefConstraint%
+    {
+        return elementRef.SetBinding(%ClassType%.%Name%Property, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+""";
+
     public static string PropertyMethodEnumHotReloadTemplate = """
 #if NXUI_HOTRELOAD
 

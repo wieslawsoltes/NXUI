@@ -60,6 +60,54 @@ public static partial class GradientBrushExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SpreadMethod<T>(this ElementRef<T> elementRef, Avalonia.Media.GradientSpreadMethod value) where T : Avalonia.Media.GradientBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.GradientBrush.SpreadMethodProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SpreadMethod<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.GradientBrush.SpreadMethodProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SpreadMethod<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.GradientSpreadMethod> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.GradientBrush.SpreadMethodProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.GradientBrush.SpreadMethodProperty
 
     /// <summary>
@@ -326,6 +374,54 @@ public static partial class GradientBrushExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
     {
         return builder.WithBinding(PropertyMetadata.GradientBrush_GradientStops, Avalonia.Media.GradientBrush.GradientStopsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> GradientStops<T>(this ElementRef<T> elementRef, Avalonia.Media.GradientStops value) where T : Avalonia.Media.GradientBrush
+    {
+        return elementRef.SetValue(Avalonia.Media.GradientBrush.GradientStopsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> GradientStops<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.GradientBrush.GradientStopsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> GradientStops<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.GradientStops> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.GradientBrush
+    {
+        return elementRef.SetBinding(Avalonia.Media.GradientBrush.GradientStopsProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

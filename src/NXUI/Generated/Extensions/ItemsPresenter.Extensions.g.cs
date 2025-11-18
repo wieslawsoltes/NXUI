@@ -60,6 +60,54 @@ public static partial class ItemsPresenterExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsPanel<T>(this ElementRef<T> elementRef, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?> value) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsPanel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ItemsPanel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?>> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ItemsPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty
 
     /// <summary>

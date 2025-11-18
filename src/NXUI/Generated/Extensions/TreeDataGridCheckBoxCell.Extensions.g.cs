@@ -60,6 +60,54 @@ public static partial class TreeDataGridCheckBoxCellExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsReadOnly<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsReadOnly<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsReadOnly<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class TreeDataGridCheckBoxCellExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsThreeState<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsThreeState<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsThreeState<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
     {
         return builder.WithBinding(PropertyMetadata.TreeDataGridCheckBoxCell_Value, Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Value<T>(this ElementRef<T> elementRef, System.Nullable<System.Boolean> value) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Value<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Value<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Nullable<System.Boolean>> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

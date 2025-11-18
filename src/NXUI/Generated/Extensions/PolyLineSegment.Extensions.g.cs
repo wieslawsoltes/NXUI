@@ -60,6 +60,54 @@ public static partial class PolyLineSegmentExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.PolyLineSegment> Points(this ElementRef<Avalonia.Media.PolyLineSegment> elementRef, System.Collections.Generic.IList<Avalonia.Point> value)
+    {
+        return elementRef.SetValue(Avalonia.Media.PolyLineSegment.PointsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.PolyLineSegment> Points(
+        this ElementRef<Avalonia.Media.PolyLineSegment> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.PolyLineSegment.PointsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.PolyLineSegment> Points(
+        this ElementRef<Avalonia.Media.PolyLineSegment> elementRef,
+        IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.PolyLineSegment.PointsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.PolyLineSegment.PointsProperty
 
     /// <summary>

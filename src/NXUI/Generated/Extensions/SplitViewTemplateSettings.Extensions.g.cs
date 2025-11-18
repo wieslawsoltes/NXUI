@@ -60,6 +60,54 @@ public static partial class SplitViewTemplateSettingsExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ClosedPaneWidth<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ClosedPaneWidth<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ClosedPaneWidth<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class SplitViewTemplateSettingsExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
     {
         return builder.WithBinding(PropertyMetadata.SplitViewTemplateSettings_PaneColumnGridLength, Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneColumnGridLength<T>(this ElementRef<T> elementRef, Avalonia.Controls.GridLength value) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneColumnGridLength<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PaneColumnGridLength<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.GridLength> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SplitViewTemplateSettings
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

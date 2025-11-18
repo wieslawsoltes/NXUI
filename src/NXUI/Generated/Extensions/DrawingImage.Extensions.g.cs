@@ -60,6 +60,54 @@ public static partial class DrawingImageExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Drawing<T>(this ElementRef<T> elementRef, Avalonia.Media.Drawing? value) where T : Avalonia.Media.DrawingImage
+    {
+        return elementRef.SetValue(Avalonia.Media.DrawingImage.DrawingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Drawing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingImage
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingImage.DrawingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Drawing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Drawing?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DrawingImage
+    {
+        return elementRef.SetBinding(Avalonia.Media.DrawingImage.DrawingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.DrawingImage.DrawingProperty
 
     /// <summary>

@@ -60,6 +60,54 @@ public static partial class PopupRootExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> Transform(this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef, Avalonia.Media.Transform? value)
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.PopupRoot.TransformProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> Transform(
+        this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupRoot.TransformProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.PopupRoot.TransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> Transform(
+        this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef,
+        IObservable<Avalonia.Media.Transform?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupRoot.TransformProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.Primitives.PopupRoot.TransformProperty
 
     /// <summary>
@@ -244,6 +292,54 @@ public static partial class PopupRootExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         return builder.WithBinding(PropertyMetadata.PopupRoot_WindowManagerAddShadowHint, Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef, System.Boolean value)
+    {
+        return elementRef.SetValue(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(
+        this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Controls.Primitives.PopupRoot> WindowManagerAddShadowHint(
+        this ElementRef<Avalonia.Controls.Primitives.PopupRoot> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupRoot.WindowManagerAddShadowHintProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

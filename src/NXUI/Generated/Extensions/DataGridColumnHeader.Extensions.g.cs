@@ -60,6 +60,54 @@ public static partial class DataGridColumnHeaderExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SeparatorBrush<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush value) where T : Avalonia.Controls.DataGridColumnHeader
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SeparatorBrush<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SeparatorBrush<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class DataGridColumnHeaderExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
     {
         return builder.WithBinding(PropertyMetadata.DataGridColumnHeader_AreSeparatorsVisible, Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AreSeparatorsVisible<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.DataGridColumnHeader
+    {
+        return elementRef.SetValue(Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AreSeparatorsVisible<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AreSeparatorsVisible<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataGridColumnHeader
+    {
+        return elementRef.SetBinding(Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

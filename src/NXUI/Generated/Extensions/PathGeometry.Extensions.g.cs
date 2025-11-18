@@ -60,6 +60,54 @@ public static partial class PathGeometryExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Figures<T>(this ElementRef<T> elementRef, Avalonia.Media.PathFigures? value) where T : Avalonia.Media.PathGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.PathGeometry.FiguresProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Figures<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PathGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.PathGeometry.FiguresProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Figures<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.PathFigures?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PathGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.PathGeometry.FiguresProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.PathGeometry.FiguresProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class PathGeometryExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PathGeometry
     {
         return builder.WithBinding(PropertyMetadata.PathGeometry_FillRule, Avalonia.Media.PathGeometry.FillRuleProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FillRule<T>(this ElementRef<T> elementRef, Avalonia.Media.FillRule value) where T : Avalonia.Media.PathGeometry
+    {
+        return elementRef.SetValue(Avalonia.Media.PathGeometry.FillRuleProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FillRule<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PathGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.PathGeometry.FillRuleProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FillRule<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.FillRule> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PathGeometry
+    {
+        return elementRef.SetBinding(Avalonia.Media.PathGeometry.FillRuleProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

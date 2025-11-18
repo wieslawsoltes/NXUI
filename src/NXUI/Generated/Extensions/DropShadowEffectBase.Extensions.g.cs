@@ -60,6 +60,54 @@ public static partial class DropShadowEffectBaseExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BlurRadius<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetValue(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BlurRadius<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BlurRadius<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class DropShadowEffectBaseExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Color<T>(this ElementRef<T> elementRef, Avalonia.Media.Color value) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetValue(Avalonia.Media.DropShadowEffectBase.ColorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Color<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.ColorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Color<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Color> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.ColorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.DropShadowEffectBase.ColorProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class DropShadowEffectBaseExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffectBase
     {
         return builder.WithBinding(PropertyMetadata.DropShadowEffectBase_Opacity, Avalonia.Media.DropShadowEffectBase.OpacityProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Opacity<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetValue(Avalonia.Media.DropShadowEffectBase.OpacityProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Opacity<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.OpacityProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Opacity<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.DropShadowEffectBase
+    {
+        return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

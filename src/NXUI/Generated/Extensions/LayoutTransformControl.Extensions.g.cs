@@ -60,6 +60,54 @@ public static partial class LayoutTransformControlExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LayoutTransform<T>(this ElementRef<T> elementRef, Avalonia.Media.ITransform? value) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LayoutTransform<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LayoutTransform<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.ITransform?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class LayoutTransformControlExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
         return builder.WithBinding(PropertyMetadata.LayoutTransformControl_UseRenderTransform, Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> UseRenderTransform<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        return elementRef.SetValue(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> UseRenderTransform<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> UseRenderTransform<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
+    {
+        return elementRef.SetBinding(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

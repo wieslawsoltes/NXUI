@@ -60,6 +60,54 @@ public static partial class MaskedTextBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AsciiOnly<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AsciiOnly<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AsciiOnly<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class MaskedTextBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Culture<T>(this ElementRef<T> elementRef, System.Globalization.CultureInfo? value) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.MaskedTextBox.CultureProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Culture<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.CultureProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Culture<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Globalization.CultureInfo?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.CultureProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.MaskedTextBox.CultureProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class MaskedTextBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_HidePromptOnLeave, Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HidePromptOnLeave<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HidePromptOnLeave<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> HidePromptOnLeave<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -822,6 +966,54 @@ public static partial class MaskedTextBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Mask<T>(this ElementRef<T> elementRef, System.String? value) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.MaskedTextBox.MaskProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Mask<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.MaskProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Mask<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.String?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.MaskProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.MaskedTextBox.MaskProperty
 
     /// <summary>
@@ -1013,6 +1205,54 @@ public static partial class MaskedTextBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_PromptChar, Avalonia.Controls.MaskedTextBox.PromptCharProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PromptChar<T>(this ElementRef<T> elementRef, System.Char value) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.MaskedTextBox.PromptCharProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PromptChar<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.PromptCharProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PromptChar<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Char> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.PromptCharProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1210,6 +1450,54 @@ public static partial class MaskedTextBoxExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResetOnPrompt<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResetOnPrompt<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResetOnPrompt<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty
 
     /// <summary>
@@ -1401,6 +1689,54 @@ public static partial class MaskedTextBoxExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_ResetOnSpace, Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResetOnSpace<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResetOnSpace<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ResetOnSpace<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

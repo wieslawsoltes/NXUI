@@ -60,6 +60,54 @@ public static partial class PullGestureRecognizerExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PullDirection<T>(this ElementRef<T> elementRef, Avalonia.Input.PullDirection value) where T : Avalonia.Input.PullGestureRecognizer
+    {
+        return elementRef.SetValue(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PullDirection<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.PullGestureRecognizer
+    {
+        return elementRef.SetBinding(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PullDirection<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Input.PullDirection> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.PullGestureRecognizer
+    {
+        return elementRef.SetBinding(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Input.PullGestureRecognizer.PullDirectionProperty
 
     /// <summary>

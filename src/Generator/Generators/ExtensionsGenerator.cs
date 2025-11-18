@@ -57,6 +57,18 @@ public partial class ExtensionsGenerator
                 return ($"ElementBuilder<T>", "<T>", $" where T : {ownerTypeName}", "T", "(T)typed");
             }
 
+            (string ElementRefType, string ElementRefGeneric, string ElementRefConstraint) GetElementRefMetadata(Type ownerType)
+            {
+                var ownerTypeName = ReflectoniaFactory.ToString(ownerType);
+
+                if (ownerType.IsSealed)
+                {
+                    return ($"ElementRef<{ownerTypeName}>", string.Empty, string.Empty);
+                }
+
+                return ($"ElementRef<T>", "<T>", $" where T : {ownerTypeName}");
+            }
+
             for (var i = 0; i < c.Properties.Length; i++)
             {
                 var p = c.Properties[i];
@@ -100,6 +112,18 @@ public partial class ExtensionsGenerator
                     hotReloadBuilder.Replace("%ValueTypeSignature%", valueTypeSignature);
                     hotReloadBuilder.Replace("%PropertyId%", propertyConstName);
                     WriteLine(hotReloadBuilder.ToString());
+
+                    var elementRefMeta = GetElementRefMetadata(p.OwnerType);
+                    var elementRefBuilder = new StringBuilder(Templates.PropertyMethodsElementRefTemplate);
+                    elementRefBuilder.Replace("%ElementRefType%", elementRefMeta.ElementRefType);
+                    elementRefBuilder.Replace("%ElementRefGeneric%", elementRefMeta.ElementRefGeneric);
+                    elementRefBuilder.Replace("%ElementRefConstraint%", elementRefMeta.ElementRefConstraint);
+                    elementRefBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));
+                    elementRefBuilder.Replace("%MethodName%", p.Name);
+                    elementRefBuilder.Replace("%Name%", p.Name);
+                    elementRefBuilder.Replace("%ValueType%", valueTypeName);
+                    elementRefBuilder.Replace("%ValueTypeSignature%", valueTypeSignature);
+                    WriteLine(elementRefBuilder.ToString());
                 }
 
                 propertyBuilder.Replace("%ClassType%", ReflectoniaFactory.ToString(c.Type));

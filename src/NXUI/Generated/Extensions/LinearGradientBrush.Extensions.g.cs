@@ -60,6 +60,54 @@ public static partial class LinearGradientBrushExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.LinearGradientBrush> StartPoint(this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef, Avalonia.RelativePoint value)
+    {
+        return elementRef.SetValue(Avalonia.Media.LinearGradientBrush.StartPointProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.LinearGradientBrush> StartPoint(
+        this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.LinearGradientBrush.StartPointProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.LinearGradientBrush> StartPoint(
+        this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef,
+        IObservable<Avalonia.RelativePoint> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.LinearGradientBrush.StartPointProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.LinearGradientBrush.StartPointProperty
 
     /// <summary>
@@ -244,6 +292,54 @@ public static partial class LinearGradientBrushExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
         return builder.WithBinding(PropertyMetadata.LinearGradientBrush_EndPoint, Avalonia.Media.LinearGradientBrush.EndPointProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.LinearGradientBrush> EndPoint(this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef, Avalonia.RelativePoint value)
+    {
+        return elementRef.SetValue(Avalonia.Media.LinearGradientBrush.EndPointProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.LinearGradientBrush> EndPoint(
+        this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.LinearGradientBrush.EndPointProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.LinearGradientBrush> EndPoint(
+        this ElementRef<Avalonia.Media.LinearGradientBrush> elementRef,
+        IObservable<Avalonia.RelativePoint> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.LinearGradientBrush.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

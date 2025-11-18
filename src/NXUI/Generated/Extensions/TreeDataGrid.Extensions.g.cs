@@ -60,6 +60,54 @@ public static partial class TreeDataGridExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AutoDragDropRows<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetValue(Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AutoDragDropRows<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> AutoDragDropRows<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty
 
     /// <summary>
@@ -254,6 +302,54 @@ public static partial class TreeDataGridExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanUserResizeColumns<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetValue(Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanUserResizeColumns<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanUserResizeColumns<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty
 
     /// <summary>
@@ -445,6 +541,54 @@ public static partial class TreeDataGridExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
     {
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_CanUserSortColumns, Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanUserSortColumns<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetValue(Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanUserSortColumns<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> CanUserSortColumns<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -732,6 +876,54 @@ public static partial class TreeDataGridExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ElementFactory<T>(this ElementRef<T> elementRef, Avalonia.Controls.Primitives.TreeDataGridElementFactory value) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetValue(Avalonia.Controls.TreeDataGrid.ElementFactoryProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ElementFactory<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.ElementFactoryProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ElementFactory<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Primitives.TreeDataGridElementFactory> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.ElementFactoryProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TreeDataGrid.ElementFactoryProperty
 
     /// <summary>
@@ -923,6 +1115,54 @@ public static partial class TreeDataGridExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
     {
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_Rows, Avalonia.Controls.TreeDataGrid.RowsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Rows<T>(this ElementRef<T> elementRef, Avalonia.Controls.Models.TreeDataGrid.IRows? value) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetValue(Avalonia.Controls.TreeDataGrid.RowsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Rows<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.RowsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Rows<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.RowsProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1210,6 +1450,54 @@ public static partial class TreeDataGridExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowColumnHeaders<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetValue(Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowColumnHeaders<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> ShowColumnHeaders<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty
 
     /// <summary>
@@ -1401,6 +1689,54 @@ public static partial class TreeDataGridExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
     {
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_Source, Avalonia.Controls.TreeDataGrid.SourceProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Source<T>(this ElementRef<T> elementRef, Avalonia.Controls.ITreeDataGridSource? value) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetValue(Avalonia.Controls.TreeDataGrid.SourceProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Source<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.SourceProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Source<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.ITreeDataGridSource?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
+    {
+        return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

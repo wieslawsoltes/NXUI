@@ -60,6 +60,54 @@ public static partial class TextDecorationExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Location<T>(this ElementRef<T> elementRef, Avalonia.Media.TextDecorationLocation value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.LocationProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Location<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.LocationProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Location<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.TextDecorationLocation> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.LocationProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TextDecoration.LocationProperty
 
     /// <summary>
@@ -354,6 +402,54 @@ public static partial class TextDecorationExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stroke<T>(this ElementRef<T> elementRef, Avalonia.Media.IBrush? value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stroke<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Stroke<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.IBrush?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TextDecoration.StrokeProperty
 
     /// <summary>
@@ -545,6 +641,54 @@ public static partial class TextDecorationExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeThicknessUnit, Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeThicknessUnit<T>(this ElementRef<T> elementRef, Avalonia.Media.TextDecorationUnit value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeThicknessUnit<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeThicknessUnit<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.TextDecorationUnit> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -817,6 +961,54 @@ public static partial class TextDecorationExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeDashArray<T>(this ElementRef<T> elementRef, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeDashArray<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeDashArray<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TextDecoration.StrokeDashArrayProperty
 
     /// <summary>
@@ -1008,6 +1200,54 @@ public static partial class TextDecorationExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeDashOffset, Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeDashOffset<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeDashOffset<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeDashOffset<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1205,6 +1445,54 @@ public static partial class TextDecorationExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeThickness<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeThicknessProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeThickness<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeThicknessProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeThickness<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeThicknessProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TextDecoration.StrokeThicknessProperty
 
     /// <summary>
@@ -1396,6 +1684,54 @@ public static partial class TextDecorationExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeLineCap, Avalonia.Media.TextDecoration.StrokeLineCapProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeLineCap<T>(this ElementRef<T> elementRef, Avalonia.Media.PenLineCap value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeLineCapProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeLineCap<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeLineCapProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeLineCap<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.PenLineCap> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeLineCapProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -1668,6 +2004,54 @@ public static partial class TextDecorationExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeOffset<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeOffsetProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeOffset<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeOffsetProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeOffset<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeOffsetProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.TextDecoration.StrokeOffsetProperty
 
     /// <summary>
@@ -1859,6 +2243,54 @@ public static partial class TextDecorationExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeOffsetUnit, Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeOffsetUnit<T>(this ElementRef<T> elementRef, Avalonia.Media.TextDecorationUnit value) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetValue(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeOffsetUnit<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> StrokeOffsetUnit<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.TextDecorationUnit> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
+    {
+        return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif

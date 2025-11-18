@@ -60,6 +60,54 @@ public static partial class MatrixTransformExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.MatrixTransform> Matrix(this ElementRef<Avalonia.Media.MatrixTransform> elementRef, Avalonia.Matrix value)
+    {
+        return elementRef.SetValue(Avalonia.Media.MatrixTransform.MatrixProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.MatrixTransform> Matrix(
+        this ElementRef<Avalonia.Media.MatrixTransform> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.MatrixTransform.MatrixProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.MatrixTransform.MatrixProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<Avalonia.Media.MatrixTransform> Matrix(
+        this ElementRef<Avalonia.Media.MatrixTransform> elementRef,
+        IObservable<Avalonia.Matrix> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        return elementRef.SetBinding(Avalonia.Media.MatrixTransform.MatrixProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.MatrixTransform.MatrixProperty
 
     /// <summary>

@@ -60,6 +60,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TintColor<T>(this ElementRef<T> elementRef, Avalonia.Media.Color value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetValue(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TintColor<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TintColor<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Color> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty
 
     /// <summary>
@@ -251,6 +299,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_BackgroundSource, Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BackgroundSource<T>(this ElementRef<T> elementRef, Avalonia.Media.AcrylicBackgroundSource value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetValue(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BackgroundSource<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> BackgroundSource<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.AcrylicBackgroundSource> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -498,6 +594,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TintOpacity<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetValue(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TintOpacity<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TintOpacity<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty
 
     /// <summary>
@@ -689,6 +833,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_MaterialOpacity, Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaterialOpacity<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetValue(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaterialOpacity<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> MaterialOpacity<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
@@ -886,6 +1078,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlatformTransparencyCompensationLevel<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetValue(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlatformTransparencyCompensationLevel<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> PlatformTransparencyCompensationLevel<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty
 
     /// <summary>
@@ -1077,6 +1317,54 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
     {
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_FallbackColor, Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FallbackColor<T>(this ElementRef<T> elementRef, Avalonia.Media.Color value) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetValue(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FallbackColor<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> FallbackColor<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.Color> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.ExperimentalAcrylicMaterial
+    {
+        return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, observable.ToBinding(), mode, priority);
     }
 
 #endif
