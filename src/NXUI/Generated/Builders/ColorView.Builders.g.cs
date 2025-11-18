@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ColorView"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ColorView"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ColorView"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ColorView> ColorView(out ElementRef<Avalonia.Controls.ColorView> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ColorView>(TypeMetadata.Avalonia_Controls_ColorView, () => new Avalonia.Controls.ColorView())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ColorView"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ColorView"/> class.</returns>
     public static Avalonia.Controls.ColorView ColorView(out Avalonia.Controls.ColorView @ref)
         => @ref = new Avalonia.Controls.ColorView();
+#endif
 
 }

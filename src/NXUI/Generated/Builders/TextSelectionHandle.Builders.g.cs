@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectionHandle"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TextSelectionHandle"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectionHandle"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TextSelectionHandle> TextSelectionHandle(out ElementRef<Avalonia.Controls.Primitives.TextSelectionHandle> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TextSelectionHandle>(TypeMetadata.Avalonia_Controls_Primitives_TextSelectionHandle, () => new Avalonia.Controls.Primitives.TextSelectionHandle())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectionHandle"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectionHandle"/> class.</returns>
     public static Avalonia.Controls.Primitives.TextSelectionHandle TextSelectionHandle(out Avalonia.Controls.Primitives.TextSelectionHandle @ref)
         => @ref = new Avalonia.Controls.Primitives.TextSelectionHandle();
+#endif
 
 }

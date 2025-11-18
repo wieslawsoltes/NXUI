@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ColorPicker"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ColorPicker"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ColorPicker"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ColorPicker> ColorPicker(out ElementRef<Avalonia.Controls.ColorPicker> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ColorPicker>(TypeMetadata.Avalonia_Controls_ColorPicker, () => new Avalonia.Controls.ColorPicker())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ColorPicker"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ColorPicker"/> class.</returns>
     public static Avalonia.Controls.ColorPicker ColorPicker(out Avalonia.Controls.ColorPicker @ref)
         => @ref = new Avalonia.Controls.ColorPicker();
+#endif
 
 }

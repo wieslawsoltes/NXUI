@@ -20,7 +20,7 @@ public static partial class PanelExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Panel
+    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Panel
     {
         return builder.WithValue(PropertyMetadata.Panel_Background, Avalonia.Controls.Panel.BackgroundProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class PanelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Panel
     {
@@ -69,7 +69,7 @@ public static partial class PanelExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Panel
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Panel
     {
         obj[Avalonia.Controls.Panel.BackgroundProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class PanelExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Panel
     {
@@ -139,7 +139,7 @@ public static partial class PanelExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Panel obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBackground(this Avalonia.Controls.Panel obj)
     {
         return obj.GetObservable(Avalonia.Controls.Panel.BackgroundProperty);
     }
@@ -151,7 +151,7 @@ public static partial class PanelExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Panel, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Panel
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Panel, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Panel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Panel.BackgroundProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class PanelExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Panel obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBackground(this Avalonia.Controls.Panel obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Panel.BackgroundProperty);
     }
@@ -175,7 +175,7 @@ public static partial class PanelExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Panel, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Panel
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Panel, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Panel
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Panel.BackgroundProperty);
         handler(obj, observable);

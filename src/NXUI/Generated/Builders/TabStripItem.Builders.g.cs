@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TabStripItem> TabStripItem(out ElementRef<Avalonia.Controls.Primitives.TabStripItem> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TabStripItem>(TypeMetadata.Avalonia_Controls_Primitives_TabStripItem, () => new Avalonia.Controls.Primitives.TabStripItem())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TabStripItem"/> class.</returns>
     public static Avalonia.Controls.Primitives.TabStripItem TabStripItem(out Avalonia.Controls.Primitives.TabStripItem @ref)
         => @ref = new Avalonia.Controls.Primitives.TabStripItem();
+#endif
 
 }

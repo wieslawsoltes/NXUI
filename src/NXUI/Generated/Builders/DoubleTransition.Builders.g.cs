@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.DoubleTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.DoubleTransition> DoubleTransition(out ElementRef<Avalonia.Animation.DoubleTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.DoubleTransition>(TypeMetadata.Avalonia_Animation_DoubleTransition, () => new Avalonia.Animation.DoubleTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.DoubleTransition"/> class.</returns>
     public static Avalonia.Animation.DoubleTransition DoubleTransition(out Avalonia.Animation.DoubleTransition @ref)
         => @ref = new Avalonia.Animation.DoubleTransition();
+#endif
 
 }

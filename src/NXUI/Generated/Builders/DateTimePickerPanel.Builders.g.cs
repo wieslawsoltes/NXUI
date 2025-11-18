@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.DateTimePickerPanel> DateTimePickerPanel(out ElementRef<Avalonia.Controls.Primitives.DateTimePickerPanel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.DateTimePickerPanel>(TypeMetadata.Avalonia_Controls_Primitives_DateTimePickerPanel, () => new Avalonia.Controls.Primitives.DateTimePickerPanel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class.</returns>
     public static Avalonia.Controls.Primitives.DateTimePickerPanel DateTimePickerPanel(out Avalonia.Controls.Primitives.DateTimePickerPanel @ref)
         => @ref = new Avalonia.Controls.Primitives.DateTimePickerPanel();
+#endif
 
 }

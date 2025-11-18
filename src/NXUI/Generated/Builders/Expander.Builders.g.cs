@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Expander"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Expander"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Expander"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Expander> Expander(out ElementRef<Avalonia.Controls.Expander> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Expander>(TypeMetadata.Avalonia_Controls_Expander, () => new Avalonia.Controls.Expander())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Expander"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Expander"/> class.</returns>
     public static Avalonia.Controls.Expander Expander(out Avalonia.Controls.Expander @ref)
         => @ref = new Avalonia.Controls.Expander();
+#endif
 
 }

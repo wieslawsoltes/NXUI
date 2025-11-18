@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.ControlTheme"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.ControlTheme> ControlTheme(out ElementRef<Avalonia.Styling.ControlTheme> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.ControlTheme>(TypeMetadata.Avalonia_Styling_ControlTheme, () => new Avalonia.Styling.ControlTheme())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
     public static Avalonia.Styling.ControlTheme ControlTheme(out Avalonia.Styling.ControlTheme @ref)
         => @ref = new Avalonia.Styling.ControlTheme();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.ControlTheme"/> instantiated class.</param>
+    /// <param name="targetType">The targetType value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.ControlTheme> ControlTheme(out ElementRef<Avalonia.Styling.ControlTheme> @ref, System.Type targetType)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.ControlTheme>(TypeMetadata.Avalonia_Styling_ControlTheme, () => new Avalonia.Styling.ControlTheme(targetType))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.ControlTheme"/> class.</returns>
     public static Avalonia.Styling.ControlTheme ControlTheme(out Avalonia.Styling.ControlTheme @ref, System.Type targetType)
         => @ref = new Avalonia.Styling.ControlTheme(targetType);
+#endif
 
 }

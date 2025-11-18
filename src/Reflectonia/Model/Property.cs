@@ -1,5 +1,7 @@
 ﻿namespace Reflectonia.Model;
 
+using System.Reflection;
+
 public record Property(
     string Name, 
     Type OwnerType, 
@@ -8,4 +10,5 @@ public record Property(
     bool AlreadyExists, 
     bool IsReadOnly = false, 
     bool IsEnum = false, 
-    string[]? EnumNames = null);
+    string[]? EnumNames = null,
+    NullabilityInfo? ValueNullability = null);

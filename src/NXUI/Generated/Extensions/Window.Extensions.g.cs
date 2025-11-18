@@ -2486,7 +2486,7 @@ public static partial class WindowExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Title<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Window
+    public static ElementBuilder<T> Title<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.Window
     {
         return builder.WithValue(PropertyMetadata.Window_Title, Avalonia.Controls.Window.TitleProperty, value);
     }
@@ -2518,7 +2518,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Title<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2535,7 +2535,7 @@ public static partial class WindowExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Title<T>(this T obj, System.String value) where T : Avalonia.Controls.Window
+    public static T Title<T>(this T obj, System.String? value) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.TitleProperty] = value;
         return obj;
@@ -2572,7 +2572,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T Title<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2605,7 +2605,7 @@ public static partial class WindowExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveTitle(this Avalonia.Controls.Window obj)
+    public static IObservable<System.String?> ObserveTitle(this Avalonia.Controls.Window obj)
     {
         return obj.GetObservable(Avalonia.Controls.Window.TitleProperty);
     }
@@ -2617,7 +2617,7 @@ public static partial class WindowExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTitle<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.String>> handler) where T : Avalonia.Controls.Window
+    public static T OnTitle<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<System.String?>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.TitleProperty);
         handler(obj, observable);
@@ -2629,7 +2629,7 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingTitle(this Avalonia.Controls.Window obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingTitle(this Avalonia.Controls.Window obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Window.TitleProperty);
     }
@@ -2641,7 +2641,7 @@ public static partial class WindowExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTitle<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Window
+    public static T OnBindingTitle<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Window.TitleProperty);
         handler(obj, observable);
@@ -2680,7 +2680,7 @@ public static partial class WindowExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowIcon value) where T : Avalonia.Controls.Window
+    public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowIcon? value) where T : Avalonia.Controls.Window
     {
         return builder.WithValue(PropertyMetadata.Window_Icon, Avalonia.Controls.Window.IconProperty, value);
     }
@@ -2712,7 +2712,7 @@ public static partial class WindowExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.WindowIcon> observable,
+        IObservable<Avalonia.Controls.WindowIcon?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2729,7 +2729,7 @@ public static partial class WindowExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Icon<T>(this T obj, Avalonia.Controls.WindowIcon value) where T : Avalonia.Controls.Window
+    public static T Icon<T>(this T obj, Avalonia.Controls.WindowIcon? value) where T : Avalonia.Controls.Window
     {
         obj[Avalonia.Controls.Window.IconProperty] = value;
         return obj;
@@ -2766,7 +2766,7 @@ public static partial class WindowExtensions
     /// <returns>The target object reference.</returns>
     public static T Icon<T>(
         this T obj,
-        IObservable<Avalonia.Controls.WindowIcon> observable,
+        IObservable<Avalonia.Controls.WindowIcon?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Window
     {
@@ -2799,7 +2799,7 @@ public static partial class WindowExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.WindowIcon> ObserveIcon(this Avalonia.Controls.Window obj)
+    public static IObservable<Avalonia.Controls.WindowIcon?> ObserveIcon(this Avalonia.Controls.Window obj)
     {
         return obj.GetObservable(Avalonia.Controls.Window.IconProperty);
     }
@@ -2811,7 +2811,7 @@ public static partial class WindowExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowIcon>> handler) where T : Avalonia.Controls.Window
+    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<Avalonia.Controls.WindowIcon?>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetObservable(Avalonia.Controls.Window.IconProperty);
         handler(obj, observable);
@@ -2823,7 +2823,7 @@ public static partial class WindowExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.WindowIcon>> ObserveBindingIcon(this Avalonia.Controls.Window obj)
+    public static IObservable<BindingValue<Avalonia.Controls.WindowIcon?>> ObserveBindingIcon(this Avalonia.Controls.Window obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Window.IconProperty);
     }
@@ -2835,7 +2835,7 @@ public static partial class WindowExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.WindowIcon>>> handler) where T : Avalonia.Controls.Window
+    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.Window, IObservable<BindingValue<Avalonia.Controls.WindowIcon?>>> handler) where T : Avalonia.Controls.Window
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Window.IconProperty);
         handler(obj, observable);

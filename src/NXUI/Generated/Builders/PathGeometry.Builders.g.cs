@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PathGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PathGeometry> PathGeometry(out ElementRef<Avalonia.Media.PathGeometry> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PathGeometry>(TypeMetadata.Avalonia_Media_PathGeometry, () => new Avalonia.Media.PathGeometry())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PathGeometry"/> class.</returns>
     public static Avalonia.Media.PathGeometry PathGeometry(out Avalonia.Media.PathGeometry @ref)
         => @ref = new Avalonia.Media.PathGeometry();
+#endif
 
 }

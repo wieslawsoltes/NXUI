@@ -20,7 +20,7 @@ public static partial class DecoratorExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Child<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.Decorator
+    public static ElementBuilder<T> Child<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Decorator
     {
         return builder.WithValue(PropertyMetadata.Decorator_Child, Avalonia.Controls.Decorator.ChildProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class DecoratorExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Decorator
     {
@@ -69,7 +69,7 @@ public static partial class DecoratorExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Child<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.Decorator
+    public static T Child<T>(this T obj, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Decorator
     {
         obj[Avalonia.Controls.Decorator.ChildProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class DecoratorExtensions
     /// <returns>The target object reference.</returns>
     public static T Child<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Decorator
     {
@@ -139,7 +139,7 @@ public static partial class DecoratorExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObserveChild(this Avalonia.Controls.Decorator obj)
+    public static IObservable<Avalonia.Controls.Control?> ObserveChild(this Avalonia.Controls.Decorator obj)
     {
         return obj.GetObservable(Avalonia.Controls.Decorator.ChildProperty);
     }
@@ -151,7 +151,7 @@ public static partial class DecoratorExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Decorator
+    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<Avalonia.Controls.Control?>> handler) where T : Avalonia.Controls.Decorator
     {
         var observable = obj.GetObservable(Avalonia.Controls.Decorator.ChildProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class DecoratorExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Decorator obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingChild(this Avalonia.Controls.Decorator obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Decorator.ChildProperty);
     }
@@ -175,7 +175,7 @@ public static partial class DecoratorExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Decorator
+    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Decorator, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler) where T : Avalonia.Controls.Decorator
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Decorator.ChildProperty);
         handler(obj, observable);

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.Imaging.CroppedBitmap> CroppedBitmap(out ElementRef<Avalonia.Media.Imaging.CroppedBitmap> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.Imaging.CroppedBitmap>(TypeMetadata.Avalonia_Media_Imaging_CroppedBitmap, () => new Avalonia.Media.Imaging.CroppedBitmap())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.</returns>
     public static Avalonia.Media.Imaging.CroppedBitmap CroppedBitmap(out Avalonia.Media.Imaging.CroppedBitmap @ref)
         => @ref = new Avalonia.Media.Imaging.CroppedBitmap();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> instantiated class.</param>
+    /// <param name="source">The source value.</param>
+    /// <param name="sourceRect">The sourceRect value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.Imaging.CroppedBitmap> CroppedBitmap(out ElementRef<Avalonia.Media.Imaging.CroppedBitmap> @ref, Avalonia.Media.IImage source, Avalonia.PixelRect sourceRect)
+    {
+        return ElementBuilder.Create<Avalonia.Media.Imaging.CroppedBitmap>(TypeMetadata.Avalonia_Media_Imaging_CroppedBitmap, () => new Avalonia.Media.Imaging.CroppedBitmap(source, sourceRect))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class.</returns>
     public static Avalonia.Media.Imaging.CroppedBitmap CroppedBitmap(out Avalonia.Media.Imaging.CroppedBitmap @ref, Avalonia.Media.IImage source, Avalonia.PixelRect sourceRect)
         => @ref = new Avalonia.Media.Imaging.CroppedBitmap(source, sourceRect);
+#endif
 
 }

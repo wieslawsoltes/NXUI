@@ -1378,7 +1378,7 @@ public static partial class TextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectionBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> SelectionBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
         return builder.WithValue(PropertyMetadata.TextBox_SelectionBrush, Avalonia.Controls.TextBox.SelectionBrushProperty, value);
     }
@@ -1410,7 +1410,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1427,7 +1427,7 @@ public static partial class TextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
+    public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.SelectionBrushProperty] = value;
         return obj;
@@ -1464,7 +1464,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1497,7 +1497,7 @@ public static partial class TextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionBrush(this Avalonia.Controls.TextBox obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveSelectionBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
     }
@@ -1509,7 +1509,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectionBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnSelectionBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
         handler(obj, observable);
@@ -1521,7 +1521,7 @@ public static partial class TextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionBrush(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingSelectionBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
     }
@@ -1533,7 +1533,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.SelectionBrushProperty);
         handler(obj, observable);
@@ -1572,7 +1572,7 @@ public static partial class TextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectionForegroundBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> SelectionForegroundBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
         return builder.WithValue(PropertyMetadata.TextBox_SelectionForegroundBrush, Avalonia.Controls.TextBox.SelectionForegroundBrushProperty, value);
     }
@@ -1604,7 +1604,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1621,7 +1621,7 @@ public static partial class TextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
+    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.SelectionForegroundBrushProperty] = value;
         return obj;
@@ -1658,7 +1658,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionForegroundBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1691,7 +1691,7 @@ public static partial class TextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionForegroundBrush(this Avalonia.Controls.TextBox obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveSelectionForegroundBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
     }
@@ -1703,7 +1703,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
         handler(obj, observable);
@@ -1715,7 +1715,7 @@ public static partial class TextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
     }
@@ -1727,7 +1727,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
         handler(obj, observable);
@@ -1766,7 +1766,7 @@ public static partial class TextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CaretBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> CaretBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
         return builder.WithValue(PropertyMetadata.TextBox_CaretBrush, Avalonia.Controls.TextBox.CaretBrushProperty, value);
     }
@@ -1798,7 +1798,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1815,7 +1815,7 @@ public static partial class TextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CaretBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TextBox
+    public static T CaretBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.CaretBrushProperty] = value;
         return obj;
@@ -1852,7 +1852,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T CaretBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -1885,7 +1885,7 @@ public static partial class TextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveCaretBrush(this Avalonia.Controls.TextBox obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveCaretBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
     }
@@ -1897,7 +1897,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCaretBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnCaretBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
         handler(obj, observable);
@@ -1909,7 +1909,7 @@ public static partial class TextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingCaretBrush(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingCaretBrush(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
     }
@@ -1921,7 +1921,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCaretBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingCaretBrush<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.CaretBrushProperty);
         handler(obj, observable);
@@ -3124,7 +3124,7 @@ public static partial class TextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.TextBox
     {
         return builder.WithValue(PropertyMetadata.TextBox_Text, Avalonia.Controls.TextBox.TextProperty, value);
     }
@@ -3156,7 +3156,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3173,7 +3173,7 @@ public static partial class TextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.TextBox
+    public static T Text<T>(this T obj, System.String? value) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.TextProperty] = value;
         return obj;
@@ -3210,7 +3210,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3243,7 +3243,7 @@ public static partial class TextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveText(this Avalonia.Controls.TextBox obj)
+    public static IObservable<System.String?> ObserveText(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.TextProperty);
     }
@@ -3255,7 +3255,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnText<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.String>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.TextProperty);
         handler(obj, observable);
@@ -3267,7 +3267,7 @@ public static partial class TextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingText(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBox.TextProperty);
     }
@@ -3279,7 +3279,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.TextProperty);
         handler(obj, observable);
@@ -3906,7 +3906,7 @@ public static partial class TextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.TextBox
     {
         return builder.WithValue(PropertyMetadata.TextBox_Watermark, Avalonia.Controls.TextBox.WatermarkProperty, value);
     }
@@ -3938,7 +3938,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -3955,7 +3955,7 @@ public static partial class TextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.TextBox
+    public static T Watermark<T>(this T obj, System.String? value) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.WatermarkProperty] = value;
         return obj;
@@ -3992,7 +3992,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Watermark<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4025,7 +4025,7 @@ public static partial class TextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.TextBox obj)
+    public static IObservable<System.String?> ObserveWatermark(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.WatermarkProperty);
     }
@@ -4037,7 +4037,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.String>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.WatermarkProperty);
         handler(obj, observable);
@@ -4049,7 +4049,7 @@ public static partial class TextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingWatermark(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingWatermark(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBox.WatermarkProperty);
     }
@@ -4061,7 +4061,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.WatermarkProperty);
         handler(obj, observable);
@@ -4488,7 +4488,7 @@ public static partial class TextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.TextBox
     {
         return builder.WithValue(PropertyMetadata.TextBox_InnerLeftContent, Avalonia.Controls.TextBox.InnerLeftContentProperty, value);
     }
@@ -4520,7 +4520,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4537,7 +4537,7 @@ public static partial class TextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T InnerLeftContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.TextBox
+    public static T InnerLeftContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.InnerLeftContentProperty] = value;
         return obj;
@@ -4574,7 +4574,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerLeftContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4607,7 +4607,7 @@ public static partial class TextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveInnerLeftContent(this Avalonia.Controls.TextBox obj)
+    public static IObservable<System.Object?> ObserveInnerLeftContent(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.InnerLeftContentProperty);
     }
@@ -4619,7 +4619,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Object?>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.InnerLeftContentProperty);
         handler(obj, observable);
@@ -4631,7 +4631,7 @@ public static partial class TextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerLeftContent(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingInnerLeftContent(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBox.InnerLeftContentProperty);
     }
@@ -4643,7 +4643,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.InnerLeftContentProperty);
         handler(obj, observable);
@@ -4682,7 +4682,7 @@ public static partial class TextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.TextBox
+    public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.TextBox
     {
         return builder.WithValue(PropertyMetadata.TextBox_InnerRightContent, Avalonia.Controls.TextBox.InnerRightContentProperty, value);
     }
@@ -4714,7 +4714,7 @@ public static partial class TextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4731,7 +4731,7 @@ public static partial class TextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T InnerRightContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.TextBox
+    public static T InnerRightContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.TextBox
     {
         obj[Avalonia.Controls.TextBox.InnerRightContentProperty] = value;
         return obj;
@@ -4768,7 +4768,7 @@ public static partial class TextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerRightContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TextBox
     {
@@ -4801,7 +4801,7 @@ public static partial class TextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveInnerRightContent(this Avalonia.Controls.TextBox obj)
+    public static IObservable<System.Object?> ObserveInnerRightContent(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.InnerRightContentProperty);
     }
@@ -4813,7 +4813,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<System.Object?>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.TextBox.InnerRightContentProperty);
         handler(obj, observable);
@@ -4825,7 +4825,7 @@ public static partial class TextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerRightContent(this Avalonia.Controls.TextBox obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingInnerRightContent(this Avalonia.Controls.TextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TextBox.InnerRightContentProperty);
     }
@@ -4837,7 +4837,7 @@ public static partial class TextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.TextBox
+    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.TextBox, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.TextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TextBox.InnerRightContentProperty);
         handler(obj, observable);

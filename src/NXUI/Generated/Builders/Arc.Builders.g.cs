@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Arc"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Arc"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Arc"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Shapes.Arc> Arc(out ElementRef<Avalonia.Controls.Shapes.Arc> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Shapes.Arc>(TypeMetadata.Avalonia_Controls_Shapes_Arc, () => new Avalonia.Controls.Shapes.Arc())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Arc"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Arc"/> class.</returns>
     public static Avalonia.Controls.Shapes.Arc Arc(out Avalonia.Controls.Shapes.Arc @ref)
         => @ref = new Avalonia.Controls.Shapes.Arc();
+#endif
 
 }

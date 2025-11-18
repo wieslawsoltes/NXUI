@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.LineGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.LineGeometry> LineGeometry(out ElementRef<Avalonia.Media.LineGeometry> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.LineGeometry>(TypeMetadata.Avalonia_Media_LineGeometry, () => new Avalonia.Media.LineGeometry())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
     public static Avalonia.Media.LineGeometry LineGeometry(out Avalonia.Media.LineGeometry @ref)
         => @ref = new Avalonia.Media.LineGeometry();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.LineGeometry"/> instantiated class.</param>
+    /// <param name="startPoint">The startPoint value.</param>
+    /// <param name="endPoint">The endPoint value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.LineGeometry> LineGeometry(out ElementRef<Avalonia.Media.LineGeometry> @ref, Avalonia.Point startPoint, Avalonia.Point endPoint)
+    {
+        return ElementBuilder.Create<Avalonia.Media.LineGeometry>(TypeMetadata.Avalonia_Media_LineGeometry, () => new Avalonia.Media.LineGeometry(startPoint, endPoint))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.LineGeometry"/> class.</returns>
     public static Avalonia.Media.LineGeometry LineGeometry(out Avalonia.Media.LineGeometry @ref, Avalonia.Point startPoint, Avalonia.Point endPoint)
         => @ref = new Avalonia.Media.LineGeometry(startPoint, endPoint);
+#endif
 
 }

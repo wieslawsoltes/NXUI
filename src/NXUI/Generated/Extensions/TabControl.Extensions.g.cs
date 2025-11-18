@@ -902,7 +902,7 @@ public static partial class TabControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.TabControl
+    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.TabControl
     {
         return builder.WithValue(PropertyMetadata.TabControl_ContentTemplate, Avalonia.Controls.TabControl.ContentTemplateProperty, value);
     }
@@ -934,7 +934,7 @@ public static partial class TabControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -951,7 +951,7 @@ public static partial class TabControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.TabControl
+    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.TabControl
     {
         obj[Avalonia.Controls.TabControl.ContentTemplateProperty] = value;
         return obj;
@@ -988,7 +988,7 @@ public static partial class TabControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TabControl
     {
@@ -1021,7 +1021,7 @@ public static partial class TabControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveContentTemplate(this Avalonia.Controls.TabControl obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveContentTemplate(this Avalonia.Controls.TabControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
     }
@@ -1033,7 +1033,7 @@ public static partial class TabControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
         handler(obj, observable);
@@ -1045,7 +1045,7 @@ public static partial class TabControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.TabControl obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingContentTemplate(this Avalonia.Controls.TabControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
     }
@@ -1057,7 +1057,7 @@ public static partial class TabControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.TabControl
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.TabControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.ContentTemplateProperty);
         handler(obj, observable);
@@ -1114,7 +1114,7 @@ public static partial class TabControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveSelectedContent(this Avalonia.Controls.TabControl obj)
+    public static IObservable<System.Object?> ObserveSelectedContent(this Avalonia.Controls.TabControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
     }
@@ -1125,7 +1125,7 @@ public static partial class TabControlExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TabControl OnSelectedContent(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<System.Object>> handler)
+    public static Avalonia.Controls.TabControl OnSelectedContent(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<System.Object?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
         handler(obj, observable);
@@ -1137,7 +1137,7 @@ public static partial class TabControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedContent(this Avalonia.Controls.TabControl obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingSelectedContent(this Avalonia.Controls.TabControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
     }
@@ -1148,7 +1148,7 @@ public static partial class TabControlExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TabControl OnBindingSelectedContent(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<System.Object>>> handler)
+    public static Avalonia.Controls.TabControl OnBindingSelectedContent(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<System.Object?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentProperty);
         handler(obj, observable);
@@ -1204,7 +1204,7 @@ public static partial class TabControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveSelectedContentTemplate(this Avalonia.Controls.TabControl obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveSelectedContentTemplate(this Avalonia.Controls.TabControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
     }
@@ -1215,7 +1215,7 @@ public static partial class TabControlExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TabControl OnSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler)
+    public static Avalonia.Controls.TabControl OnSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
         handler(obj, observable);
@@ -1227,7 +1227,7 @@ public static partial class TabControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingSelectedContentTemplate(this Avalonia.Controls.TabControl obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingSelectedContentTemplate(this Avalonia.Controls.TabControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
     }
@@ -1238,7 +1238,7 @@ public static partial class TabControlExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TabControl OnBindingSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler)
+    public static Avalonia.Controls.TabControl OnBindingSelectedContentTemplate(this Avalonia.Controls.TabControl obj, Action<Avalonia.Controls.TabControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
         handler(obj, observable);

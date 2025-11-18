@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.BrushTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.BrushTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.BrushTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.BrushTransition> BrushTransition(out ElementRef<Avalonia.Animation.BrushTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.BrushTransition>(TypeMetadata.Avalonia_Animation_BrushTransition, () => new Avalonia.Animation.BrushTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.BrushTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.BrushTransition"/> class.</returns>
     public static Avalonia.Animation.BrushTransition BrushTransition(out Avalonia.Animation.BrushTransition @ref)
         => @ref = new Avalonia.Animation.BrushTransition();
+#endif
 
 }

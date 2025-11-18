@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Chrome.TitleBar"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Chrome.TitleBar"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Chrome.TitleBar"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Chrome.TitleBar> TitleBar(out ElementRef<Avalonia.Controls.Chrome.TitleBar> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Chrome.TitleBar>(TypeMetadata.Avalonia_Controls_Chrome_TitleBar, () => new Avalonia.Controls.Chrome.TitleBar())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Chrome.TitleBar"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Chrome.TitleBar"/> class.</returns>
     public static Avalonia.Controls.Chrome.TitleBar TitleBar(out Avalonia.Controls.Chrome.TitleBar @ref)
         => @ref = new Avalonia.Controls.Chrome.TitleBar();
+#endif
 
 }

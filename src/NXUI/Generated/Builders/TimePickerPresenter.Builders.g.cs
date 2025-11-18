@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TimePickerPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TimePickerPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TimePickerPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TimePickerPresenter> TimePickerPresenter(out ElementRef<Avalonia.Controls.TimePickerPresenter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TimePickerPresenter>(TypeMetadata.Avalonia_Controls_TimePickerPresenter, () => new Avalonia.Controls.TimePickerPresenter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TimePickerPresenter"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TimePickerPresenter"/> class.</returns>
     public static Avalonia.Controls.TimePickerPresenter TimePickerPresenter(out Avalonia.Controls.TimePickerPresenter @ref)
         => @ref = new Avalonia.Controls.TimePickerPresenter();
+#endif
 
 }

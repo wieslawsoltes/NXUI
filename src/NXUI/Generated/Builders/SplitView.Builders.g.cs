@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.SplitView"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.SplitView"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.SplitView"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.SplitView> SplitView(out ElementRef<Avalonia.Controls.SplitView> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.SplitView>(TypeMetadata.Avalonia_Controls_SplitView, () => new Avalonia.Controls.SplitView())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.SplitView"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.SplitView"/> class.</returns>
     public static Avalonia.Controls.SplitView SplitView(out Avalonia.Controls.SplitView @ref)
         => @ref = new Avalonia.Controls.SplitView();
+#endif
 
 }

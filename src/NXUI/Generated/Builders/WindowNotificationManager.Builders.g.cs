@@ -30,6 +30,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> instantiated class.</param>
+    /// <param name="host">The host value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Notifications.WindowNotificationManager> WindowNotificationManager(out ElementRef<Avalonia.Controls.Notifications.WindowNotificationManager> @ref, Avalonia.Controls.TopLevel host)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Notifications.WindowNotificationManager>(TypeMetadata.Avalonia_Controls_Notifications_WindowNotificationManager, () => new Avalonia.Controls.Notifications.WindowNotificationManager(host))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.
     /// </summary>
@@ -38,6 +51,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.</returns>
     public static Avalonia.Controls.Notifications.WindowNotificationManager WindowNotificationManager(out Avalonia.Controls.Notifications.WindowNotificationManager @ref, Avalonia.Controls.TopLevel host)
         => @ref = new Avalonia.Controls.Notifications.WindowNotificationManager(host);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -57,6 +71,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Notifications.WindowNotificationManager> WindowNotificationManager(out ElementRef<Avalonia.Controls.Notifications.WindowNotificationManager> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Notifications.WindowNotificationManager>(TypeMetadata.Avalonia_Controls_Notifications_WindowNotificationManager, () => new Avalonia.Controls.Notifications.WindowNotificationManager())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class.</returns>
     public static Avalonia.Controls.Notifications.WindowNotificationManager WindowNotificationManager(out Avalonia.Controls.Notifications.WindowNotificationManager @ref)
         => @ref = new Avalonia.Controls.Notifications.WindowNotificationManager();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.VisualBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.VisualBrush> VisualBrush(out ElementRef<Avalonia.Media.VisualBrush> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.VisualBrush>(TypeMetadata.Avalonia_Media_VisualBrush, () => new Avalonia.Media.VisualBrush())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
     public static Avalonia.Media.VisualBrush VisualBrush(out Avalonia.Media.VisualBrush @ref)
         => @ref = new Avalonia.Media.VisualBrush();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.VisualBrush"/> instantiated class.</param>
+    /// <param name="visual">The visual value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.VisualBrush> VisualBrush(out ElementRef<Avalonia.Media.VisualBrush> @ref, Avalonia.Visual visual)
+    {
+        return ElementBuilder.Create<Avalonia.Media.VisualBrush>(TypeMetadata.Avalonia_Media_VisualBrush, () => new Avalonia.Media.VisualBrush(visual))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.VisualBrush"/> class.</returns>
     public static Avalonia.Media.VisualBrush VisualBrush(out Avalonia.Media.VisualBrush @ref, Avalonia.Visual visual)
         => @ref = new Avalonia.Media.VisualBrush(visual);
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Italic"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.Italic> Italic(out ElementRef<Avalonia.Controls.Documents.Italic> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.Italic>(TypeMetadata.Avalonia_Controls_Documents_Italic, () => new Avalonia.Controls.Documents.Italic())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Italic"/> class.</returns>
     public static Avalonia.Controls.Documents.Italic Italic(out Avalonia.Controls.Documents.Italic @ref)
         => @ref = new Avalonia.Controls.Documents.Italic();
+#endif
 
 }

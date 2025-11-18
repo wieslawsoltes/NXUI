@@ -796,7 +796,7 @@ public static partial class TextPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectionBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static ElementBuilder<T> SelectionBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithValue(PropertyMetadata.TextPresenter_SelectionBrush, Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty, value);
     }
@@ -828,7 +828,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -845,7 +845,7 @@ public static partial class TextPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         obj[Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty] = value;
         return obj;
@@ -882,7 +882,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -915,7 +915,7 @@ public static partial class TextPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveSelectionBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
     }
@@ -927,7 +927,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectionBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnSelectionBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
         handler(obj, observable);
@@ -939,7 +939,7 @@ public static partial class TextPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingSelectionBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
     }
@@ -951,7 +951,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty);
         handler(obj, observable);
@@ -990,7 +990,7 @@ public static partial class TextPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectionForegroundBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static ElementBuilder<T> SelectionForegroundBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithValue(PropertyMetadata.TextPresenter_SelectionForegroundBrush, Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty, value);
     }
@@ -1022,7 +1022,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -1039,7 +1039,7 @@ public static partial class TextPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         obj[Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty] = value;
         return obj;
@@ -1076,7 +1076,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionForegroundBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -1109,7 +1109,7 @@ public static partial class TextPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionForegroundBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveSelectionForegroundBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
     }
@@ -1121,7 +1121,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
         handler(obj, observable);
@@ -1133,7 +1133,7 @@ public static partial class TextPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
     }
@@ -1145,7 +1145,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty);
         handler(obj, observable);
@@ -1184,7 +1184,7 @@ public static partial class TextPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CaretBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static ElementBuilder<T> CaretBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithValue(PropertyMetadata.TextPresenter_CaretBrush, Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty, value);
     }
@@ -1216,7 +1216,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CaretBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -1233,7 +1233,7 @@ public static partial class TextPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CaretBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T CaretBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         obj[Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty] = value;
         return obj;
@@ -1270,7 +1270,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T CaretBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -1303,7 +1303,7 @@ public static partial class TextPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveCaretBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveCaretBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
     }
@@ -1315,7 +1315,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCaretBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnCaretBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
         handler(obj, observable);
@@ -1327,7 +1327,7 @@ public static partial class TextPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingCaretBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingCaretBrush(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
     }
@@ -1339,7 +1339,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCaretBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnBindingCaretBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty);
         handler(obj, observable);
@@ -1960,7 +1960,7 @@ public static partial class TextPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithValue(PropertyMetadata.TextPresenter_Text, Avalonia.Controls.Presenters.TextPresenter.TextProperty, value);
     }
@@ -1992,7 +1992,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -2009,7 +2009,7 @@ public static partial class TextPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T Text<T>(this T obj, System.String? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         obj[Avalonia.Controls.Presenters.TextPresenter.TextProperty] = value;
         return obj;
@@ -2046,7 +2046,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -2079,7 +2079,7 @@ public static partial class TextPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveText(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<System.String?> ObserveText(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
     }
@@ -2091,7 +2091,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.String>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.String?>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
         handler(obj, observable);
@@ -2103,7 +2103,7 @@ public static partial class TextPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingText(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
     }
@@ -2115,7 +2115,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextProperty);
         handler(obj, observable);
@@ -2154,7 +2154,7 @@ public static partial class TextPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PreeditText<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static ElementBuilder<T> PreeditText<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithValue(PropertyMetadata.TextPresenter_PreeditText, Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, value);
     }
@@ -2186,7 +2186,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PreeditText<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -2203,7 +2203,7 @@ public static partial class TextPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PreeditText<T>(this T obj, System.String value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T PreeditText<T>(this T obj, System.String? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         obj[Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty] = value;
         return obj;
@@ -2240,7 +2240,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T PreeditText<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -2273,7 +2273,7 @@ public static partial class TextPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObservePreeditText(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<System.String?> ObservePreeditText(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
     }
@@ -2285,7 +2285,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPreeditText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.String>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnPreeditText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.String?>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
         handler(obj, observable);
@@ -2297,7 +2297,7 @@ public static partial class TextPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingPreeditText(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingPreeditText(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
     }
@@ -2309,7 +2309,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPreeditText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnBindingPreeditText<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty);
         handler(obj, observable);
@@ -2542,7 +2542,7 @@ public static partial class TextPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         return builder.WithValue(PropertyMetadata.TextPresenter_Background, Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty, value);
     }
@@ -2574,7 +2574,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -2591,7 +2591,7 @@ public static partial class TextPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         obj[Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty] = value;
         return obj;
@@ -2628,7 +2628,7 @@ public static partial class TextPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
     {
@@ -2661,7 +2661,7 @@ public static partial class TextPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBackground(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
     }
@@ -2673,7 +2673,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
         handler(obj, observable);
@@ -2685,7 +2685,7 @@ public static partial class TextPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Presenters.TextPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBackground(this Avalonia.Controls.Presenters.TextPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
     }
@@ -2697,7 +2697,7 @@ public static partial class TextPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty);
         handler(obj, observable);

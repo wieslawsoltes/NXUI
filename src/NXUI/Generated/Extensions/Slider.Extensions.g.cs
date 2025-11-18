@@ -1140,7 +1140,7 @@ public static partial class SliderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Ticks<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.Slider
+    public static ElementBuilder<T> Ticks<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Controls.Slider
     {
         return builder.WithValue(PropertyMetadata.Slider_Ticks, Avalonia.Controls.Slider.TicksProperty, value);
     }
@@ -1172,7 +1172,7 @@ public static partial class SliderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1189,7 +1189,7 @@ public static partial class SliderExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Ticks<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.Slider
+    public static T Ticks<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Controls.Slider
     {
         obj[Avalonia.Controls.Slider.TicksProperty] = value;
         return obj;
@@ -1226,7 +1226,7 @@ public static partial class SliderExtensions
     /// <returns>The target object reference.</returns>
     public static T Ticks<T>(
         this T obj,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Slider
     {
@@ -1259,7 +1259,7 @@ public static partial class SliderExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveTicks(this Avalonia.Controls.Slider obj)
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> ObserveTicks(this Avalonia.Controls.Slider obj)
     {
         return obj.GetObservable(Avalonia.Controls.Slider.TicksProperty);
     }
@@ -1271,7 +1271,7 @@ public static partial class SliderExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTicks<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Slider
+    public static T OnTicks<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<Avalonia.Collections.AvaloniaList<System.Double>?>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetObservable(Avalonia.Controls.Slider.TicksProperty);
         handler(obj, observable);
@@ -1283,7 +1283,7 @@ public static partial class SliderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingTicks(this Avalonia.Controls.Slider obj)
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>> ObserveBindingTicks(this Avalonia.Controls.Slider obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Slider.TicksProperty);
     }
@@ -1295,7 +1295,7 @@ public static partial class SliderExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTicks<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Controls.Slider
+    public static T OnBindingTicks<T>(this T obj, Action<Avalonia.Controls.Slider, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>>> handler) where T : Avalonia.Controls.Slider
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Slider.TicksProperty);
         handler(obj, observable);

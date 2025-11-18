@@ -20,7 +20,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OffContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.ToggleSwitch
+    public static ElementBuilder<T> OffContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.ToggleSwitch
     {
         return builder.WithValue(PropertyMetadata.ToggleSwitch_OffContent, Avalonia.Controls.ToggleSwitch.OffContentProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -69,7 +69,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OffContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.ToggleSwitch
+    public static T OffContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.ToggleSwitch
     {
         obj[Avalonia.Controls.ToggleSwitch.OffContentProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OffContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -139,7 +139,7 @@ public static partial class ToggleSwitchExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveOffContent(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<System.Object?> ObserveOffContent(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOffContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<System.Object>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnOffContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<System.Object?>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingOffContent(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingOffContent(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingOffContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnBindingOffContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OffContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
+    public static ElementBuilder<T> OffContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ToggleSwitch
     {
         return builder.WithValue(PropertyMetadata.ToggleSwitch_OffContentTemplate, Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OffContentTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -263,7 +263,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OffContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
+    public static T OffContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ToggleSwitch
     {
         obj[Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OffContentTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -333,7 +333,7 @@ public static partial class ToggleSwitchExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
     }
@@ -345,7 +345,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOffContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnOffContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingOffContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
     }
@@ -369,7 +369,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingOffContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnBindingOffContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OnContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.ToggleSwitch
+    public static ElementBuilder<T> OnContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.ToggleSwitch
     {
         return builder.WithValue(PropertyMetadata.ToggleSwitch_OnContent, Avalonia.Controls.ToggleSwitch.OnContentProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -457,7 +457,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.ToggleSwitch
     {
         obj[Avalonia.Controls.ToggleSwitch.OnContentProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OnContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -527,7 +527,7 @@ public static partial class ToggleSwitchExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveOnContent(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<System.Object?> ObserveOnContent(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
     }
@@ -539,7 +539,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOnContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<System.Object>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnOnContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<System.Object?>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingOnContent(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingOnContent(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
     }
@@ -563,7 +563,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingOnContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnBindingOnContent<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OnContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
+    public static ElementBuilder<T> OnContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ToggleSwitch
     {
         return builder.WithValue(PropertyMetadata.ToggleSwitch_OnContentTemplate, Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OnContentTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -651,7 +651,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ToggleSwitch
     {
         obj[Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class ToggleSwitchExtensions
     /// <returns>The target object reference.</returns>
     public static T OnContentTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ToggleSwitch
     {
@@ -721,7 +721,7 @@ public static partial class ToggleSwitchExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
     }
@@ -733,7 +733,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnOnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class ToggleSwitchExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingOnContentTemplate(this Avalonia.Controls.ToggleSwitch obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
     }
@@ -757,7 +757,7 @@ public static partial class ToggleSwitchExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingOnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ToggleSwitch
+    public static T OnBindingOnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ToggleSwitch, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.ToggleSwitch
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
         handler(obj, observable);

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Panel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Panel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Panel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Panel> Panel(out ElementRef<Avalonia.Controls.Panel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Panel>(TypeMetadata.Avalonia_Controls_Panel, () => new Avalonia.Controls.Panel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Panel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Panel"/> class.</returns>
     public static Avalonia.Controls.Panel Panel(out Avalonia.Controls.Panel @ref)
         => @ref = new Avalonia.Controls.Panel();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RotateTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.RotateTransform> RotateTransform(out ElementRef<Avalonia.Media.RotateTransform> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.RotateTransform>(TypeMetadata.Avalonia_Media_RotateTransform, () => new Avalonia.Media.RotateTransform())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
     public static Avalonia.Media.RotateTransform RotateTransform(out Avalonia.Media.RotateTransform @ref)
         => @ref = new Avalonia.Media.RotateTransform();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RotateTransform"/> instantiated class.</param>
+    /// <param name="angle">The angle value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.RotateTransform> RotateTransform(out ElementRef<Avalonia.Media.RotateTransform> @ref, System.Double angle)
+    {
+        return ElementBuilder.Create<Avalonia.Media.RotateTransform>(TypeMetadata.Avalonia_Media_RotateTransform, () => new Avalonia.Media.RotateTransform(angle))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
     /// </summary>
@@ -64,6 +90,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
     public static Avalonia.Media.RotateTransform RotateTransform(out Avalonia.Media.RotateTransform @ref, System.Double angle)
         => @ref = new Avalonia.Media.RotateTransform(angle);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -89,6 +116,21 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RotateTransform"/> instantiated class.</param>
+    /// <param name="angle">The angle value.</param>
+    /// <param name="centerX">The centerX value.</param>
+    /// <param name="centerY">The centerY value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.RotateTransform> RotateTransform(out ElementRef<Avalonia.Media.RotateTransform> @ref, System.Double angle, System.Double centerX, System.Double centerY)
+    {
+        return ElementBuilder.Create<Avalonia.Media.RotateTransform>(TypeMetadata.Avalonia_Media_RotateTransform, () => new Avalonia.Media.RotateTransform(angle, centerX, centerY))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.
     /// </summary>
@@ -99,5 +141,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RotateTransform"/> class.</returns>
     public static Avalonia.Media.RotateTransform RotateTransform(out Avalonia.Media.RotateTransform @ref, System.Double angle, System.Double centerX, System.Double centerY)
         => @ref = new Avalonia.Media.RotateTransform(angle, centerX, centerY);
+#endif
 
 }

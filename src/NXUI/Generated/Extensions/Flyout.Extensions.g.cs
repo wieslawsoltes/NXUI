@@ -20,7 +20,7 @@ public static partial class FlyoutExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Flyout
+    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.Flyout
     {
         return builder.WithValue(PropertyMetadata.Flyout_Content, Avalonia.Controls.Flyout.ContentProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class FlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -69,7 +69,7 @@ public static partial class FlyoutExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Content<T>(this T obj, System.Object value) where T : Avalonia.Controls.Flyout
+    public static T Content<T>(this T obj, System.Object? value) where T : Avalonia.Controls.Flyout
     {
         obj[Avalonia.Controls.Flyout.ContentProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class FlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T Content<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -139,7 +139,7 @@ public static partial class FlyoutExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveContent(this Avalonia.Controls.Flyout obj)
+    public static IObservable<System.Object?> ObserveContent(this Avalonia.Controls.Flyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.Flyout.ContentProperty);
     }
@@ -151,7 +151,7 @@ public static partial class FlyoutExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<System.Object>> handler) where T : Avalonia.Controls.Flyout
+    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<System.Object?>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.Flyout.ContentProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class FlyoutExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.Flyout obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingContent(this Avalonia.Controls.Flyout obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentProperty);
     }
@@ -175,7 +175,7 @@ public static partial class FlyoutExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Flyout
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class FlyoutExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.Flyout
+    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.Flyout
     {
         return builder.WithValue(PropertyMetadata.Flyout_ContentTemplate, Avalonia.Controls.Flyout.ContentTemplateProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class FlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -263,7 +263,7 @@ public static partial class FlyoutExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.Flyout
+    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.Flyout
     {
         obj[Avalonia.Controls.Flyout.ContentTemplateProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class FlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -333,7 +333,7 @@ public static partial class FlyoutExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveContentTemplate(this Avalonia.Controls.Flyout obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveContentTemplate(this Avalonia.Controls.Flyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
     }
@@ -345,7 +345,7 @@ public static partial class FlyoutExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Flyout
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class FlyoutExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.Flyout obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingContentTemplate(this Avalonia.Controls.Flyout obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
     }
@@ -369,7 +369,7 @@ public static partial class FlyoutExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.Flyout
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Flyout.ContentTemplateProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class FlyoutExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> FlyoutPresenterTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.Flyout
+    public static ElementBuilder<T> FlyoutPresenterTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.Flyout
     {
         return builder.WithValue(PropertyMetadata.Flyout_FlyoutPresenterTheme, Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class FlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlyoutPresenterTheme<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -457,7 +457,7 @@ public static partial class FlyoutExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FlyoutPresenterTheme<T>(this T obj, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.Flyout
+    public static T FlyoutPresenterTheme<T>(this T obj, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.Flyout
     {
         obj[Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class FlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T FlyoutPresenterTheme<T>(
         this T obj,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Flyout
     {
@@ -527,7 +527,7 @@ public static partial class FlyoutExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Styling.ControlTheme> ObserveFlyoutPresenterTheme(this Avalonia.Controls.Flyout obj)
+    public static IObservable<Avalonia.Styling.ControlTheme?> ObserveFlyoutPresenterTheme(this Avalonia.Controls.Flyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
     }
@@ -539,7 +539,7 @@ public static partial class FlyoutExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.Flyout
+    public static T OnFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<Avalonia.Styling.ControlTheme?>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class FlyoutExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingFlyoutPresenterTheme(this Avalonia.Controls.Flyout obj)
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme?>> ObserveBindingFlyoutPresenterTheme(this Avalonia.Controls.Flyout obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
     }
@@ -563,7 +563,7 @@ public static partial class FlyoutExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.Flyout
+    public static T OnBindingFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.Flyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme?>>> handler) where T : Avalonia.Controls.Flyout
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty);
         handler(obj, observable);

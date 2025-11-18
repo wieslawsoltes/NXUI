@@ -20,7 +20,7 @@ public static partial class PathIconExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Data<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry value) where T : Avalonia.Controls.PathIcon
+    public static ElementBuilder<T> Data<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry? value) where T : Avalonia.Controls.PathIcon
     {
         return builder.WithValue(PropertyMetadata.PathIcon_Data, Avalonia.Controls.PathIcon.DataProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class PathIconExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Data<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.PathIcon
     {
@@ -69,7 +69,7 @@ public static partial class PathIconExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Data<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Controls.PathIcon
+    public static T Data<T>(this T obj, Avalonia.Media.Geometry? value) where T : Avalonia.Controls.PathIcon
     {
         obj[Avalonia.Controls.PathIcon.DataProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class PathIconExtensions
     /// <returns>The target object reference.</returns>
     public static T Data<T>(
         this T obj,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.PathIcon
     {
@@ -139,7 +139,7 @@ public static partial class PathIconExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Geometry> ObserveData(this Avalonia.Controls.PathIcon obj)
+    public static IObservable<Avalonia.Media.Geometry?> ObserveData(this Avalonia.Controls.PathIcon obj)
     {
         return obj.GetObservable(Avalonia.Controls.PathIcon.DataProperty);
     }
@@ -151,7 +151,7 @@ public static partial class PathIconExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnData<T>(this T obj, Action<Avalonia.Controls.PathIcon, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Controls.PathIcon
+    public static T OnData<T>(this T obj, Action<Avalonia.Controls.PathIcon, IObservable<Avalonia.Media.Geometry?>> handler) where T : Avalonia.Controls.PathIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.PathIcon.DataProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class PathIconExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingData(this Avalonia.Controls.PathIcon obj)
+    public static IObservable<BindingValue<Avalonia.Media.Geometry?>> ObserveBindingData(this Avalonia.Controls.PathIcon obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.PathIcon.DataProperty);
     }
@@ -175,7 +175,7 @@ public static partial class PathIconExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingData<T>(this T obj, Action<Avalonia.Controls.PathIcon, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Controls.PathIcon
+    public static T OnBindingData<T>(this T obj, Action<Avalonia.Controls.PathIcon, IObservable<BindingValue<Avalonia.Media.Geometry?>>> handler) where T : Avalonia.Controls.PathIcon
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.PathIcon.DataProperty);
         handler(obj, observable);

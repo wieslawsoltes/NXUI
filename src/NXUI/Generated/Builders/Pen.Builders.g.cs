@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Pen"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.Pen> Pen(out ElementRef<Avalonia.Media.Pen> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.Pen>(TypeMetadata.Avalonia_Media_Pen, () => new Avalonia.Media.Pen())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
     public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref)
         => @ref = new Avalonia.Media.Pen();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -66,6 +79,24 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Pen"/> instantiated class.</param>
+    /// <param name="color">The color value.</param>
+    /// <param name="thickness">The thickness value.</param>
+    /// <param name="dashStyle">The dashStyle value.</param>
+    /// <param name="lineCap">The lineCap value.</param>
+    /// <param name="lineJoin">The lineJoin value.</param>
+    /// <param name="miterLimit">The miterLimit value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.Pen> Pen(out ElementRef<Avalonia.Media.Pen> @ref, System.UInt32 color, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
+    {
+        return ElementBuilder.Create<Avalonia.Media.Pen>(TypeMetadata.Avalonia_Media_Pen, () => new Avalonia.Media.Pen(color, thickness, dashStyle, lineCap, lineJoin, miterLimit))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
@@ -79,6 +110,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
     public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref, System.UInt32 color, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
         => @ref = new Avalonia.Media.Pen(color, thickness, dashStyle, lineCap, lineJoin, miterLimit);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -110,6 +142,24 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.Pen"/> instantiated class.</param>
+    /// <param name="brush">The brush value.</param>
+    /// <param name="thickness">The thickness value.</param>
+    /// <param name="dashStyle">The dashStyle value.</param>
+    /// <param name="lineCap">The lineCap value.</param>
+    /// <param name="lineJoin">The lineJoin value.</param>
+    /// <param name="miterLimit">The miterLimit value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.Pen> Pen(out ElementRef<Avalonia.Media.Pen> @ref, Avalonia.Media.IBrush brush, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
+    {
+        return ElementBuilder.Create<Avalonia.Media.Pen>(TypeMetadata.Avalonia_Media_Pen, () => new Avalonia.Media.Pen(brush, thickness, dashStyle, lineCap, lineJoin, miterLimit))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.Pen"/> class.
     /// </summary>
@@ -123,5 +173,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.Pen"/> class.</returns>
     public static Avalonia.Media.Pen Pen(out Avalonia.Media.Pen @ref, Avalonia.Media.IBrush brush, System.Double thickness = 1, Avalonia.Media.IDashStyle dashStyle = default, Avalonia.Media.PenLineCap lineCap = Avalonia.Media.PenLineCap.Flat, Avalonia.Media.PenLineJoin lineJoin = Avalonia.Media.PenLineJoin.Miter, System.Double miterLimit = 10)
         => @ref = new Avalonia.Media.Pen(brush, thickness, dashStyle, lineCap, lineJoin, miterLimit);
+#endif
 
 }

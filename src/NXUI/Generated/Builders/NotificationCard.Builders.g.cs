@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Notifications.NotificationCard> NotificationCard(out ElementRef<Avalonia.Controls.Notifications.NotificationCard> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Notifications.NotificationCard>(TypeMetadata.Avalonia_Controls_Notifications_NotificationCard, () => new Avalonia.Controls.Notifications.NotificationCard())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class.</returns>
     public static Avalonia.Controls.Notifications.NotificationCard NotificationCard(out Avalonia.Controls.Notifications.NotificationCard @ref)
         => @ref = new Avalonia.Controls.Notifications.NotificationCard();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.StyledElement"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.StyledElement"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.StyledElement"/> class.</returns>
+    public static ElementBuilder<Avalonia.StyledElement> StyledElement(out ElementRef<Avalonia.StyledElement> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.StyledElement>(TypeMetadata.Avalonia_StyledElement, () => new Avalonia.StyledElement())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.StyledElement"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.StyledElement"/> class.</returns>
     public static Avalonia.StyledElement StyledElement(out Avalonia.StyledElement @ref)
         => @ref = new Avalonia.StyledElement();
+#endif
 
 }

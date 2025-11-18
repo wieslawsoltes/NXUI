@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.UniformGrid"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.UniformGrid> UniformGrid(out ElementRef<Avalonia.Controls.Primitives.UniformGrid> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.UniformGrid>(TypeMetadata.Avalonia_Controls_Primitives_UniformGrid, () => new Avalonia.Controls.Primitives.UniformGrid())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class.</returns>
     public static Avalonia.Controls.Primitives.UniformGrid UniformGrid(out Avalonia.Controls.Primitives.UniformGrid @ref)
         => @ref = new Avalonia.Controls.Primitives.UniformGrid();
+#endif
 
 }

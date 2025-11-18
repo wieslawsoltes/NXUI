@@ -20,7 +20,7 @@ public static partial class AnimatableExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Transitions<T>(this ElementBuilder<T> builder, Avalonia.Animation.Transitions value) where T : Avalonia.Animation.Animatable
+    public static ElementBuilder<T> Transitions<T>(this ElementBuilder<T> builder, Avalonia.Animation.Transitions? value) where T : Avalonia.Animation.Animatable
     {
         return builder.WithValue(PropertyMetadata.Animatable_Transitions, Avalonia.Animation.Animatable.TransitionsProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class AnimatableExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Transitions<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Animation.Transitions> observable,
+        IObservable<Avalonia.Animation.Transitions?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animatable
     {
@@ -69,7 +69,7 @@ public static partial class AnimatableExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Transitions<T>(this T obj, Avalonia.Animation.Transitions value) where T : Avalonia.Animation.Animatable
+    public static T Transitions<T>(this T obj, Avalonia.Animation.Transitions? value) where T : Avalonia.Animation.Animatable
     {
         obj[Avalonia.Animation.Animatable.TransitionsProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class AnimatableExtensions
     /// <returns>The target object reference.</returns>
     public static T Transitions<T>(
         this T obj,
-        IObservable<Avalonia.Animation.Transitions> observable,
+        IObservable<Avalonia.Animation.Transitions?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Animation.Animatable
     {
@@ -139,7 +139,7 @@ public static partial class AnimatableExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Animation.Transitions> ObserveTransitions(this Avalonia.Animation.Animatable obj)
+    public static IObservable<Avalonia.Animation.Transitions?> ObserveTransitions(this Avalonia.Animation.Animatable obj)
     {
         return obj.GetObservable(Avalonia.Animation.Animatable.TransitionsProperty);
     }
@@ -151,7 +151,7 @@ public static partial class AnimatableExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTransitions<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<Avalonia.Animation.Transitions>> handler) where T : Avalonia.Animation.Animatable
+    public static T OnTransitions<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<Avalonia.Animation.Transitions?>> handler) where T : Avalonia.Animation.Animatable
     {
         var observable = obj.GetObservable(Avalonia.Animation.Animatable.TransitionsProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class AnimatableExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Animation.Transitions>> ObserveBindingTransitions(this Avalonia.Animation.Animatable obj)
+    public static IObservable<BindingValue<Avalonia.Animation.Transitions?>> ObserveBindingTransitions(this Avalonia.Animation.Animatable obj)
     {
         return obj.GetBindingObservable(Avalonia.Animation.Animatable.TransitionsProperty);
     }
@@ -175,7 +175,7 @@ public static partial class AnimatableExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTransitions<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<BindingValue<Avalonia.Animation.Transitions>>> handler) where T : Avalonia.Animation.Animatable
+    public static T OnBindingTransitions<T>(this T obj, Action<Avalonia.Animation.Animatable, IObservable<BindingValue<Avalonia.Animation.Transitions?>>> handler) where T : Avalonia.Animation.Animatable
     {
         var observable = obj.GetBindingObservable(Avalonia.Animation.Animatable.TransitionsProperty);
         handler(obj, observable);

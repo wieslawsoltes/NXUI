@@ -128,7 +128,7 @@ public static partial class FlyoutBaseExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObserveTarget(this Avalonia.Controls.Primitives.FlyoutBase obj)
+    public static IObservable<Avalonia.Controls.Control?> ObserveTarget(this Avalonia.Controls.Primitives.FlyoutBase obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
     }
@@ -139,7 +139,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.FlyoutBase OnTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<Avalonia.Controls.Control>> handler)
+    public static Avalonia.Controls.Primitives.FlyoutBase OnTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<Avalonia.Controls.Control?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
         handler(obj, observable);
@@ -151,7 +151,7 @@ public static partial class FlyoutBaseExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingTarget(this Avalonia.Controls.Primitives.FlyoutBase obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingTarget(this Avalonia.Controls.Primitives.FlyoutBase obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
     }
@@ -162,7 +162,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.FlyoutBase OnBindingTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<BindingValue<Avalonia.Controls.Control>>> handler)
+    public static Avalonia.Controls.Primitives.FlyoutBase OnBindingTarget(this Avalonia.Controls.Primitives.FlyoutBase obj, Action<Avalonia.Controls.Primitives.FlyoutBase, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
         handler(obj, observable);
@@ -200,7 +200,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> AttachedFlyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> AttachedFlyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.FlyoutBase_AttachedFlyout, Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, value);
     }
@@ -232,7 +232,7 @@ public static partial class FlyoutBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AttachedFlyout<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -249,7 +249,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T AttachedFlyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.Control
+    public static T AttachedFlyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty] = value;
         return obj;
@@ -286,7 +286,7 @@ public static partial class FlyoutBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T AttachedFlyout<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -319,7 +319,7 @@ public static partial class FlyoutBaseExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveAttachedFlyout(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase?> ObserveAttachedFlyout(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
     }
@@ -331,7 +331,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnAttachedFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
+    public static T OnAttachedFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
         handler(obj, observable);
@@ -343,7 +343,7 @@ public static partial class FlyoutBaseExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingAttachedFlyout(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>> ObserveBindingAttachedFlyout(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
     }
@@ -355,7 +355,7 @@ public static partial class FlyoutBaseExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingAttachedFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingAttachedFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
         handler(obj, observable);

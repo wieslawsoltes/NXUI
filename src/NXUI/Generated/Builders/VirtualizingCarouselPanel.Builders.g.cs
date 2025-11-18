@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.VirtualizingCarouselPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.VirtualizingCarouselPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.VirtualizingCarouselPanel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.VirtualizingCarouselPanel> VirtualizingCarouselPanel(out ElementRef<Avalonia.Controls.VirtualizingCarouselPanel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.VirtualizingCarouselPanel>(TypeMetadata.Avalonia_Controls_VirtualizingCarouselPanel, () => new Avalonia.Controls.VirtualizingCarouselPanel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.VirtualizingCarouselPanel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.VirtualizingCarouselPanel"/> class.</returns>
     public static Avalonia.Controls.VirtualizingCarouselPanel VirtualizingCarouselPanel(out Avalonia.Controls.VirtualizingCarouselPanel @ref)
         => @ref = new Avalonia.Controls.VirtualizingCarouselPanel();
+#endif
 
 }

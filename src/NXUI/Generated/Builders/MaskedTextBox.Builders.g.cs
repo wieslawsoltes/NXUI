@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MaskedTextBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.MaskedTextBox> MaskedTextBox(out ElementRef<Avalonia.Controls.MaskedTextBox> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.MaskedTextBox>(TypeMetadata.Avalonia_Controls_MaskedTextBox, () => new Avalonia.Controls.MaskedTextBox())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
     public static Avalonia.Controls.MaskedTextBox MaskedTextBox(out Avalonia.Controls.MaskedTextBox @ref)
         => @ref = new Avalonia.Controls.MaskedTextBox();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MaskedTextBox"/> instantiated class.</param>
+    /// <param name="maskedTextProvider">The maskedTextProvider value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.MaskedTextBox> MaskedTextBox(out ElementRef<Avalonia.Controls.MaskedTextBox> @ref, System.ComponentModel.MaskedTextProvider maskedTextProvider)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.MaskedTextBox>(TypeMetadata.Avalonia_Controls_MaskedTextBox, () => new Avalonia.Controls.MaskedTextBox(maskedTextProvider))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MaskedTextBox"/> class.</returns>
     public static Avalonia.Controls.MaskedTextBox MaskedTextBox(out Avalonia.Controls.MaskedTextBox @ref, System.ComponentModel.MaskedTextProvider maskedTextProvider)
         => @ref = new Avalonia.Controls.MaskedTextBox(maskedTextProvider);
+#endif
 
 }

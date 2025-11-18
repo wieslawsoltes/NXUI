@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RowDefinition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RowDefinition> RowDefinition(out ElementRef<Avalonia.Controls.RowDefinition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RowDefinition>(TypeMetadata.Avalonia_Controls_RowDefinition, () => new Avalonia.Controls.RowDefinition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
     public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref)
         => @ref = new Avalonia.Controls.RowDefinition();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RowDefinition"/> instantiated class.</param>
+    /// <param name="value">The value value.</param>
+    /// <param name="type">The type value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RowDefinition> RowDefinition(out ElementRef<Avalonia.Controls.RowDefinition> @ref, System.Double value, Avalonia.Controls.GridUnitType type)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RowDefinition>(TypeMetadata.Avalonia_Controls_RowDefinition, () => new Avalonia.Controls.RowDefinition(value, type))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
@@ -67,6 +94,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
     public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref, System.Double value, Avalonia.Controls.GridUnitType type)
         => @ref = new Avalonia.Controls.RowDefinition(value, type);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -88,6 +116,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RowDefinition"/> instantiated class.</param>
+    /// <param name="height">The height value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RowDefinition> RowDefinition(out ElementRef<Avalonia.Controls.RowDefinition> @ref, Avalonia.Controls.GridLength height)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RowDefinition>(TypeMetadata.Avalonia_Controls_RowDefinition, () => new Avalonia.Controls.RowDefinition(height))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.
     /// </summary>
@@ -96,5 +137,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RowDefinition"/> class.</returns>
     public static Avalonia.Controls.RowDefinition RowDefinition(out Avalonia.Controls.RowDefinition @ref, Avalonia.Controls.GridLength height)
         => @ref = new Avalonia.Controls.RowDefinition(height);
+#endif
 
 }

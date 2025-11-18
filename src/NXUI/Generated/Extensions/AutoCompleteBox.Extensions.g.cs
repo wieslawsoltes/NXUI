@@ -214,7 +214,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_Watermark, Avalonia.Controls.AutoCompleteBox.WatermarkProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -263,7 +263,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T Watermark<T>(this T obj, System.String? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.WatermarkProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Watermark<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -333,7 +333,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.String?> ObserveWatermark(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
     }
@@ -345,7 +345,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingWatermark(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingWatermark(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
     }
@@ -369,7 +369,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
         handler(obj, observable);
@@ -1572,7 +1572,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_SelectedItem, Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, value);
     }
@@ -1604,7 +1604,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1621,7 +1621,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectedItem<T>(this T obj, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T SelectedItem<T>(this T obj, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.SelectedItemProperty] = value;
         return obj;
@@ -1658,7 +1658,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedItem<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1691,7 +1691,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveSelectedItem(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.Object?> ObserveSelectedItem(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
     }
@@ -1703,7 +1703,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
         handler(obj, observable);
@@ -1715,7 +1715,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedItem(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingSelectedItem(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
     }
@@ -1727,7 +1727,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
         handler(obj, observable);
@@ -1766,7 +1766,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_Text, Avalonia.Controls.AutoCompleteBox.TextProperty, value);
     }
@@ -1798,7 +1798,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1815,7 +1815,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T Text<T>(this T obj, System.String? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.TextProperty] = value;
         return obj;
@@ -1852,7 +1852,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -1885,7 +1885,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveText(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.String?> ObserveText(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
     }
@@ -1897,7 +1897,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnText<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
         handler(obj, observable);
@@ -1909,7 +1909,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingText(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
     }
@@ -1921,7 +1921,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextProperty);
         handler(obj, observable);
@@ -1978,7 +1978,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveSearchText(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.String?> ObserveSearchText(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
     }
@@ -1989,7 +1989,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.AutoCompleteBox OnSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String>> handler)
+    public static Avalonia.Controls.AutoCompleteBox OnSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.String?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
         handler(obj, observable);
@@ -2001,7 +2001,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingSearchText(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingSearchText(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
     }
@@ -2012,7 +2012,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.AutoCompleteBox OnBindingSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String>>> handler)
+    public static Avalonia.Controls.AutoCompleteBox OnBindingSearchText(this Avalonia.Controls.AutoCompleteBox obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.String?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
         handler(obj, observable);
@@ -2594,7 +2594,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemFilter<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteFilterPredicate<System.Object> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> ItemFilter<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_ItemFilter, Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, value);
     }
@@ -2626,7 +2626,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemFilter<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2643,7 +2643,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemFilter<T>(this T obj, Avalonia.Controls.AutoCompleteFilterPredicate<System.Object> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T ItemFilter<T>(this T obj, Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.ItemFilterProperty] = value;
         return obj;
@@ -2680,7 +2680,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemFilter<T>(
         this T obj,
-        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2713,7 +2713,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>> ObserveItemFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>?> ObserveItemFilter(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
     }
@@ -2725,7 +2725,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItemFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
         handler(obj, observable);
@@ -2737,7 +2737,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>>> ObserveBindingItemFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>?>> ObserveBindingItemFilter(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
     }
@@ -2749,7 +2749,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingItemFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.Object?>?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
         handler(obj, observable);
@@ -2788,7 +2788,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> TextFilter<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteFilterPredicate<System.String> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> TextFilter<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_TextFilter, Avalonia.Controls.AutoCompleteBox.TextFilterProperty, value);
     }
@@ -2820,7 +2820,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextFilter<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2837,7 +2837,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T TextFilter<T>(this T obj, Avalonia.Controls.AutoCompleteFilterPredicate<System.String> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T TextFilter<T>(this T obj, Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.TextFilterProperty] = value;
         return obj;
@@ -2874,7 +2874,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T TextFilter<T>(
         this T obj,
-        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -2907,7 +2907,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>> ObserveTextFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>?> ObserveTextFilter(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
     }
@@ -2919,7 +2919,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTextFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnTextFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
         handler(obj, observable);
@@ -2931,7 +2931,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>> ObserveBindingTextFilter(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>?>> ObserveBindingTextFilter(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
     }
@@ -2943,7 +2943,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTextFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.String>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingTextFilter<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteFilterPredicate<System.String?>?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
         handler(obj, observable);
@@ -2982,7 +2982,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemSelector<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteSelector<System.Object> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> ItemSelector<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteSelector<System.Object>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_ItemSelector, Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, value);
     }
@@ -3014,7 +3014,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemSelector<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3031,7 +3031,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemSelector<T>(this T obj, Avalonia.Controls.AutoCompleteSelector<System.Object> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T ItemSelector<T>(this T obj, Avalonia.Controls.AutoCompleteSelector<System.Object>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty] = value;
         return obj;
@@ -3068,7 +3068,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemSelector<T>(
         this T obj,
-        IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3101,7 +3101,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>> ObserveItemSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>?> ObserveItemSelector(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
     }
@@ -3113,7 +3113,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItemSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteSelector<System.Object>?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
         handler(obj, observable);
@@ -3125,7 +3125,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.Object>>> ObserveBindingItemSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.Object>?>> ObserveBindingItemSelector(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
     }
@@ -3137,7 +3137,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.Object>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingItemSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.Object>?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
         handler(obj, observable);
@@ -3176,7 +3176,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> TextSelector<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteSelector<System.String> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> TextSelector<T>(this ElementBuilder<T> builder, Avalonia.Controls.AutoCompleteSelector<System.String?>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_TextSelector, Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, value);
     }
@@ -3208,7 +3208,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextSelector<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteSelector<System.String?>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3225,7 +3225,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T TextSelector<T>(this T obj, Avalonia.Controls.AutoCompleteSelector<System.String> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T TextSelector<T>(this T obj, Avalonia.Controls.AutoCompleteSelector<System.String?>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.TextSelectorProperty] = value;
         return obj;
@@ -3262,7 +3262,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T TextSelector<T>(
         this T obj,
-        IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>> observable,
+        IObservable<Avalonia.Controls.AutoCompleteSelector<System.String?>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3295,7 +3295,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>> ObserveTextSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<Avalonia.Controls.AutoCompleteSelector<System.String?>?> ObserveTextSelector(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
     }
@@ -3307,7 +3307,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTextSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteSelector<System.String>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnTextSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<Avalonia.Controls.AutoCompleteSelector<System.String?>?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
         handler(obj, observable);
@@ -3319,7 +3319,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.String>>> ObserveBindingTextSelector(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.String?>?>> ObserveBindingTextSelector(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
     }
@@ -3331,7 +3331,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTextSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.String>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingTextSelector<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<Avalonia.Controls.AutoCompleteSelector<System.String?>?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
         handler(obj, observable);
@@ -3370,7 +3370,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_ItemsSource, Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, value);
     }
@@ -3402,7 +3402,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3419,7 +3419,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty] = value;
         return obj;
@@ -3456,7 +3456,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsSource<T>(
         this T obj,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3489,7 +3489,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.IEnumerable> ObserveItemsSource(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.Collections.IEnumerable?> ObserveItemsSource(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
     }
@@ -3501,7 +3501,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Collections.IEnumerable?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
         handler(obj, observable);
@@ -3513,7 +3513,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.Collections.IEnumerable?>> ObserveBindingItemsSource(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
     }
@@ -3525,7 +3525,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Collections.IEnumerable?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
         handler(obj, observable);
@@ -3564,7 +3564,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> AsyncPopulator<T>(this ElementBuilder<T> builder, System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> AsyncPopulator<T>(this ElementBuilder<T> builder, System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_AsyncPopulator, Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, value);
     }
@@ -3596,7 +3596,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> AsyncPopulator<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> observable,
+        IObservable<System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3613,7 +3613,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T AsyncPopulator<T>(this T obj, System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>> value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T AsyncPopulator<T>(this T obj, System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty] = value;
         return obj;
@@ -3650,7 +3650,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T AsyncPopulator<T>(
         this T obj,
-        IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> observable,
+        IObservable<System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -3683,7 +3683,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>> ObserveAsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>?> ObserveAsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
     }
@@ -3695,7 +3695,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
         handler(obj, observable);
@@ -3707,7 +3707,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>> ObserveBindingAsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>?>> ObserveBindingAsyncPopulator(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
     }
@@ -3719,7 +3719,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Func<System.String,System.Threading.CancellationToken,System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingAsyncPopulator<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Func<System.String?, System.Threading.CancellationToken, System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.Object>>>?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
         handler(obj, observable);
@@ -3952,7 +3952,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_InnerLeftContent, Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, value);
     }
@@ -3984,7 +3984,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4001,7 +4001,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T InnerLeftContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T InnerLeftContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty] = value;
         return obj;
@@ -4038,7 +4038,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerLeftContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4071,7 +4071,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveInnerLeftContent(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.Object?> ObserveInnerLeftContent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
     }
@@ -4083,7 +4083,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
         handler(obj, observable);
@@ -4095,7 +4095,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerLeftContent(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingInnerLeftContent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
     }
@@ -4107,7 +4107,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
         handler(obj, observable);
@@ -4146,7 +4146,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_InnerRightContent, Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, value);
     }
@@ -4178,7 +4178,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4195,7 +4195,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T InnerRightContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.AutoCompleteBox
+    public static T InnerRightContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.AutoCompleteBox
     {
         obj[Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty] = value;
         return obj;
@@ -4232,7 +4232,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerRightContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.AutoCompleteBox
     {
@@ -4265,7 +4265,7 @@ public static partial class AutoCompleteBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveInnerRightContent(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<System.Object?> ObserveInnerRightContent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
     }
@@ -4277,7 +4277,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<System.Object?>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
         handler(obj, observable);
@@ -4289,7 +4289,7 @@ public static partial class AutoCompleteBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerRightContent(this Avalonia.Controls.AutoCompleteBox obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingInnerRightContent(this Avalonia.Controls.AutoCompleteBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
     }
@@ -4301,7 +4301,7 @@ public static partial class AutoCompleteBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.AutoCompleteBox
+    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.AutoCompleteBox, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.AutoCompleteBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
         handler(obj, observable);

@@ -1040,7 +1040,7 @@ public static partial class TrackExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Thumb<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.Thumb value) where T : Avalonia.Controls.Primitives.Track
+    public static ElementBuilder<T> Thumb<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.Thumb? value) where T : Avalonia.Controls.Primitives.Track
     {
         return builder.WithValue(PropertyMetadata.Track_Thumb, Avalonia.Controls.Primitives.Track.ThumbProperty, value);
     }
@@ -1072,7 +1072,7 @@ public static partial class TrackExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Thumb<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.Thumb> observable,
+        IObservable<Avalonia.Controls.Primitives.Thumb?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1089,7 +1089,7 @@ public static partial class TrackExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Thumb<T>(this T obj, Avalonia.Controls.Primitives.Thumb value) where T : Avalonia.Controls.Primitives.Track
+    public static T Thumb<T>(this T obj, Avalonia.Controls.Primitives.Thumb? value) where T : Avalonia.Controls.Primitives.Track
     {
         obj[Avalonia.Controls.Primitives.Track.ThumbProperty] = value;
         return obj;
@@ -1126,7 +1126,7 @@ public static partial class TrackExtensions
     /// <returns>The target object reference.</returns>
     public static T Thumb<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.Thumb> observable,
+        IObservable<Avalonia.Controls.Primitives.Thumb?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1159,7 +1159,7 @@ public static partial class TrackExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.Thumb> ObserveThumb(this Avalonia.Controls.Primitives.Track obj)
+    public static IObservable<Avalonia.Controls.Primitives.Thumb?> ObserveThumb(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
     }
@@ -1171,7 +1171,7 @@ public static partial class TrackExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnThumb<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Primitives.Thumb>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnThumb<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Primitives.Thumb?>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
         handler(obj, observable);
@@ -1183,7 +1183,7 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.Thumb>> ObserveBindingThumb(this Avalonia.Controls.Primitives.Track obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.Thumb?>> ObserveBindingThumb(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
     }
@@ -1195,7 +1195,7 @@ public static partial class TrackExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingThumb<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Primitives.Thumb>>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnBindingThumb<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Primitives.Thumb?>>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.ThumbProperty);
         handler(obj, observable);
@@ -1234,7 +1234,7 @@ public static partial class TrackExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> IncreaseButton<T>(this ElementBuilder<T> builder, Avalonia.Controls.Button value) where T : Avalonia.Controls.Primitives.Track
+    public static ElementBuilder<T> IncreaseButton<T>(this ElementBuilder<T> builder, Avalonia.Controls.Button? value) where T : Avalonia.Controls.Primitives.Track
     {
         return builder.WithValue(PropertyMetadata.Track_IncreaseButton, Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, value);
     }
@@ -1266,7 +1266,7 @@ public static partial class TrackExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> IncreaseButton<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Button> observable,
+        IObservable<Avalonia.Controls.Button?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1283,7 +1283,7 @@ public static partial class TrackExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T IncreaseButton<T>(this T obj, Avalonia.Controls.Button value) where T : Avalonia.Controls.Primitives.Track
+    public static T IncreaseButton<T>(this T obj, Avalonia.Controls.Button? value) where T : Avalonia.Controls.Primitives.Track
     {
         obj[Avalonia.Controls.Primitives.Track.IncreaseButtonProperty] = value;
         return obj;
@@ -1320,7 +1320,7 @@ public static partial class TrackExtensions
     /// <returns>The target object reference.</returns>
     public static T IncreaseButton<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Button> observable,
+        IObservable<Avalonia.Controls.Button?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1353,7 +1353,7 @@ public static partial class TrackExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Button> ObserveIncreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    public static IObservable<Avalonia.Controls.Button?> ObserveIncreaseButton(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
     }
@@ -1365,7 +1365,7 @@ public static partial class TrackExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIncreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnIncreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Button?>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
         handler(obj, observable);
@@ -1377,7 +1377,7 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Button>> ObserveBindingIncreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Button?>> ObserveBindingIncreaseButton(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
     }
@@ -1389,7 +1389,7 @@ public static partial class TrackExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingIncreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Button>>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnBindingIncreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Button?>>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
         handler(obj, observable);
@@ -1428,7 +1428,7 @@ public static partial class TrackExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> DecreaseButton<T>(this ElementBuilder<T> builder, Avalonia.Controls.Button value) where T : Avalonia.Controls.Primitives.Track
+    public static ElementBuilder<T> DecreaseButton<T>(this ElementBuilder<T> builder, Avalonia.Controls.Button? value) where T : Avalonia.Controls.Primitives.Track
     {
         return builder.WithValue(PropertyMetadata.Track_DecreaseButton, Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, value);
     }
@@ -1460,7 +1460,7 @@ public static partial class TrackExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DecreaseButton<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Button> observable,
+        IObservable<Avalonia.Controls.Button?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1477,7 +1477,7 @@ public static partial class TrackExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T DecreaseButton<T>(this T obj, Avalonia.Controls.Button value) where T : Avalonia.Controls.Primitives.Track
+    public static T DecreaseButton<T>(this T obj, Avalonia.Controls.Button? value) where T : Avalonia.Controls.Primitives.Track
     {
         obj[Avalonia.Controls.Primitives.Track.DecreaseButtonProperty] = value;
         return obj;
@@ -1514,7 +1514,7 @@ public static partial class TrackExtensions
     /// <returns>The target object reference.</returns>
     public static T DecreaseButton<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Button> observable,
+        IObservable<Avalonia.Controls.Button?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Track
     {
@@ -1547,7 +1547,7 @@ public static partial class TrackExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Button> ObserveDecreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    public static IObservable<Avalonia.Controls.Button?> ObserveDecreaseButton(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
     }
@@ -1559,7 +1559,7 @@ public static partial class TrackExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnDecreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Button>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnDecreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<Avalonia.Controls.Button?>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
         handler(obj, observable);
@@ -1571,7 +1571,7 @@ public static partial class TrackExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Button>> ObserveBindingDecreaseButton(this Avalonia.Controls.Primitives.Track obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Button?>> ObserveBindingDecreaseButton(this Avalonia.Controls.Primitives.Track obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
     }
@@ -1583,7 +1583,7 @@ public static partial class TrackExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingDecreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Button>>> handler) where T : Avalonia.Controls.Primitives.Track
+    public static T OnBindingDecreaseButton<T>(this T obj, Action<Avalonia.Controls.Primitives.Track, IObservable<BindingValue<Avalonia.Controls.Button?>>> handler) where T : Avalonia.Controls.Primitives.Track
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
         handler(obj, observable);

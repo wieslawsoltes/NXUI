@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ToggleSplitButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ToggleSplitButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ToggleSplitButton"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ToggleSplitButton> ToggleSplitButton(out ElementRef<Avalonia.Controls.ToggleSplitButton> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ToggleSplitButton>(TypeMetadata.Avalonia_Controls_ToggleSplitButton, () => new Avalonia.Controls.ToggleSplitButton())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ToggleSplitButton"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ToggleSplitButton"/> class.</returns>
     public static Avalonia.Controls.ToggleSplitButton ToggleSplitButton(out Avalonia.Controls.ToggleSplitButton @ref)
         => @ref = new Avalonia.Controls.ToggleSplitButton();
+#endif
 
 }

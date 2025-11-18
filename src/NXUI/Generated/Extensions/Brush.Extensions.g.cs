@@ -214,7 +214,7 @@ public static partial class BrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Transform<T>(this ElementBuilder<T> builder, Avalonia.Media.ITransform value) where T : Avalonia.Media.Brush
+    public static ElementBuilder<T> Transform<T>(this ElementBuilder<T> builder, Avalonia.Media.ITransform? value) where T : Avalonia.Media.Brush
     {
         return builder.WithValue(PropertyMetadata.Brush_Transform, Avalonia.Media.Brush.TransformProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class BrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Transform<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.ITransform> observable,
+        IObservable<Avalonia.Media.ITransform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -263,7 +263,7 @@ public static partial class BrushExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Transform<T>(this T obj, Avalonia.Media.ITransform value) where T : Avalonia.Media.Brush
+    public static T Transform<T>(this T obj, Avalonia.Media.ITransform? value) where T : Avalonia.Media.Brush
     {
         obj[Avalonia.Media.Brush.TransformProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class BrushExtensions
     /// <returns>The target object reference.</returns>
     public static T Transform<T>(
         this T obj,
-        IObservable<Avalonia.Media.ITransform> observable,
+        IObservable<Avalonia.Media.ITransform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Brush
     {
@@ -333,7 +333,7 @@ public static partial class BrushExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.ITransform> ObserveTransform(this Avalonia.Media.Brush obj)
+    public static IObservable<Avalonia.Media.ITransform?> ObserveTransform(this Avalonia.Media.Brush obj)
     {
         return obj.GetObservable(Avalonia.Media.Brush.TransformProperty);
     }
@@ -345,7 +345,7 @@ public static partial class BrushExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Media.Brush
+    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<Avalonia.Media.ITransform?>> handler) where T : Avalonia.Media.Brush
     {
         var observable = obj.GetObservable(Avalonia.Media.Brush.TransformProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class BrushExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.ITransform>> ObserveBindingTransform(this Avalonia.Media.Brush obj)
+    public static IObservable<BindingValue<Avalonia.Media.ITransform?>> ObserveBindingTransform(this Avalonia.Media.Brush obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.Brush.TransformProperty);
     }
@@ -369,7 +369,7 @@ public static partial class BrushExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<BindingValue<Avalonia.Media.ITransform>>> handler) where T : Avalonia.Media.Brush
+    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Media.Brush, IObservable<BindingValue<Avalonia.Media.ITransform?>>> handler) where T : Avalonia.Media.Brush
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.Brush.TransformProperty);
         handler(obj, observable);

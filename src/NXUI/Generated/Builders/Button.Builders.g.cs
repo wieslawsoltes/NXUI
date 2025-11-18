@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Button"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Button"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Button"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Button> Button(out ElementRef<Avalonia.Controls.Button> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Button>(TypeMetadata.Avalonia_Controls_Button, () => new Avalonia.Controls.Button())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Button"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Button"/> class.</returns>
     public static Avalonia.Controls.Button Button(out Avalonia.Controls.Button @ref)
         => @ref = new Avalonia.Controls.Button();
+#endif
 
 }

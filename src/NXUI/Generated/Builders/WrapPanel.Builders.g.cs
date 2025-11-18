@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.WrapPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.WrapPanel> WrapPanel(out ElementRef<Avalonia.Controls.WrapPanel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.WrapPanel>(TypeMetadata.Avalonia_Controls_WrapPanel, () => new Avalonia.Controls.WrapPanel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.WrapPanel"/> class.</returns>
     public static Avalonia.Controls.WrapPanel WrapPanel(out Avalonia.Controls.WrapPanel @ref)
         => @ref = new Avalonia.Controls.WrapPanel();
+#endif
 
 }

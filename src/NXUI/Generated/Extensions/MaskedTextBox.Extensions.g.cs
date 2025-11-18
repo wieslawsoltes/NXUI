@@ -214,7 +214,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Culture<T>(this ElementBuilder<T> builder, System.Globalization.CultureInfo value) where T : Avalonia.Controls.MaskedTextBox
+    public static ElementBuilder<T> Culture<T>(this ElementBuilder<T> builder, System.Globalization.CultureInfo? value) where T : Avalonia.Controls.MaskedTextBox
     {
         return builder.WithValue(PropertyMetadata.MaskedTextBox_Culture, Avalonia.Controls.MaskedTextBox.CultureProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Culture<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Globalization.CultureInfo> observable,
+        IObservable<System.Globalization.CultureInfo?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -263,7 +263,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Culture<T>(this T obj, System.Globalization.CultureInfo value) where T : Avalonia.Controls.MaskedTextBox
+    public static T Culture<T>(this T obj, System.Globalization.CultureInfo? value) where T : Avalonia.Controls.MaskedTextBox
     {
         obj[Avalonia.Controls.MaskedTextBox.CultureProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Culture<T>(
         this T obj,
-        IObservable<System.Globalization.CultureInfo> observable,
+        IObservable<System.Globalization.CultureInfo?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -333,7 +333,7 @@ public static partial class MaskedTextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Globalization.CultureInfo> ObserveCulture(this Avalonia.Controls.MaskedTextBox obj)
+    public static IObservable<System.Globalization.CultureInfo?> ObserveCulture(this Avalonia.Controls.MaskedTextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
     }
@@ -345,7 +345,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCulture<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Globalization.CultureInfo>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnCulture<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.Globalization.CultureInfo?>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Globalization.CultureInfo>> ObserveBindingCulture(this Avalonia.Controls.MaskedTextBox obj)
+    public static IObservable<BindingValue<System.Globalization.CultureInfo?>> ObserveBindingCulture(this Avalonia.Controls.MaskedTextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
     }
@@ -369,7 +369,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCulture<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Globalization.CultureInfo>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnBindingCulture<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.Globalization.CultureInfo?>>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.CultureProperty);
         handler(obj, observable);
@@ -782,7 +782,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Mask<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.MaskedTextBox
+    public static ElementBuilder<T> Mask<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.MaskedTextBox
     {
         return builder.WithValue(PropertyMetadata.MaskedTextBox_Mask, Avalonia.Controls.MaskedTextBox.MaskProperty, value);
     }
@@ -814,7 +814,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Mask<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -831,7 +831,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Mask<T>(this T obj, System.String value) where T : Avalonia.Controls.MaskedTextBox
+    public static T Mask<T>(this T obj, System.String? value) where T : Avalonia.Controls.MaskedTextBox
     {
         obj[Avalonia.Controls.MaskedTextBox.MaskProperty] = value;
         return obj;
@@ -868,7 +868,7 @@ public static partial class MaskedTextBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T Mask<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MaskedTextBox
     {
@@ -901,7 +901,7 @@ public static partial class MaskedTextBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveMask(this Avalonia.Controls.MaskedTextBox obj)
+    public static IObservable<System.String?> ObserveMask(this Avalonia.Controls.MaskedTextBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
     }
@@ -913,7 +913,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnMask<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.String>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnMask<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
         handler(obj, observable);
@@ -925,7 +925,7 @@ public static partial class MaskedTextBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingMask(this Avalonia.Controls.MaskedTextBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingMask(this Avalonia.Controls.MaskedTextBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
     }
@@ -937,7 +937,7 @@ public static partial class MaskedTextBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingMask<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.MaskedTextBox
+    public static T OnBindingMask<T>(this T obj, Action<Avalonia.Controls.MaskedTextBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.MaskedTextBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.MaskedTextBox.MaskProperty);
         handler(obj, observable);

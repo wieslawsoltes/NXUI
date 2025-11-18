@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.UserControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.UserControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.UserControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.UserControl> UserControl(out ElementRef<Avalonia.Controls.UserControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.UserControl>(TypeMetadata.Avalonia_Controls_UserControl, () => new Avalonia.Controls.UserControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.UserControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.UserControl"/> class.</returns>
     public static Avalonia.Controls.UserControl UserControl(out Avalonia.Controls.UserControl @ref)
         => @ref = new Avalonia.Controls.UserControl();
+#endif
 
 }

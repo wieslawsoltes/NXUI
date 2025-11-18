@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.Popup"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.Popup> Popup(out ElementRef<Avalonia.Controls.Primitives.Popup> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.Popup>(TypeMetadata.Avalonia_Controls_Primitives_Popup, () => new Avalonia.Controls.Primitives.Popup())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Popup"/> class.</returns>
     public static Avalonia.Controls.Primitives.Popup Popup(out Avalonia.Controls.Primitives.Popup @ref)
         => @ref = new Avalonia.Controls.Primitives.Popup();
+#endif
 
 }

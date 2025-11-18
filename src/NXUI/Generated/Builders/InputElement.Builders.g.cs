@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.InputElement"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.InputElement"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.InputElement"/> class.</returns>
+    public static ElementBuilder<Avalonia.Input.InputElement> InputElement(out ElementRef<Avalonia.Input.InputElement> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Input.InputElement>(TypeMetadata.Avalonia_Input_InputElement, () => new Avalonia.Input.InputElement())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.InputElement"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.InputElement"/> class.</returns>
     public static Avalonia.Input.InputElement InputElement(out Avalonia.Input.InputElement @ref)
         => @ref = new Avalonia.Input.InputElement();
+#endif
 
 }

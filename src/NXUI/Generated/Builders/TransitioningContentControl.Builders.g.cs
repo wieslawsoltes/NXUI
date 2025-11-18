@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TransitioningContentControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TransitioningContentControl> TransitioningContentControl(out ElementRef<Avalonia.Controls.TransitioningContentControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TransitioningContentControl>(TypeMetadata.Avalonia_Controls_TransitioningContentControl, () => new Avalonia.Controls.TransitioningContentControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TransitioningContentControl"/> class.</returns>
     public static Avalonia.Controls.TransitioningContentControl TransitioningContentControl(out Avalonia.Controls.TransitioningContentControl @ref)
         => @ref = new Avalonia.Controls.TransitioningContentControl();
+#endif
 
 }

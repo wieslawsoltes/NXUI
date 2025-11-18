@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.Animatable"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.Animatable"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.Animatable"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.Animatable> Animatable(out ElementRef<Avalonia.Animation.Animatable> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.Animatable>(TypeMetadata.Avalonia_Animation_Animatable, () => new Avalonia.Animation.Animatable())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.Animatable"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.Animatable"/> class.</returns>
     public static Avalonia.Animation.Animatable Animatable(out Avalonia.Animation.Animatable @ref)
         => @ref = new Avalonia.Animation.Animatable();
+#endif
 
 }

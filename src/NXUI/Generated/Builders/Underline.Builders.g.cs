@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Underline"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.Underline> Underline(out ElementRef<Avalonia.Controls.Documents.Underline> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.Underline>(TypeMetadata.Avalonia_Controls_Documents_Underline, () => new Avalonia.Controls.Documents.Underline())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Underline"/> class.</returns>
     public static Avalonia.Controls.Documents.Underline Underline(out Avalonia.Controls.Documents.Underline @ref)
         => @ref = new Avalonia.Controls.Documents.Underline();
+#endif
 
 }

@@ -214,7 +214,7 @@ public static partial class PopupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Child<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.Primitives.Popup
+    public static ElementBuilder<T> Child<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Primitives.Popup
     {
         return builder.WithValue(PropertyMetadata.Popup_Child, Avalonia.Controls.Primitives.Popup.ChildProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -263,7 +263,7 @@ public static partial class PopupExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Child<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.Primitives.Popup
+    public static T Child<T>(this T obj, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.ChildProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T Child<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -333,7 +333,7 @@ public static partial class PopupExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObserveChild(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<Avalonia.Controls.Control?> ObserveChild(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
     }
@@ -345,7 +345,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Control?>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class PopupExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingChild(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
     }
@@ -369,7 +369,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.ChildProperty);
         handler(obj, observable);
@@ -2891,7 +2891,7 @@ public static partial class PopupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PlacementTarget<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.Primitives.Popup
+    public static ElementBuilder<T> PlacementTarget<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Primitives.Popup
     {
         return builder.WithValue(PropertyMetadata.Popup_PlacementTarget, Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, value);
     }
@@ -2923,7 +2923,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTarget<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -2940,7 +2940,7 @@ public static partial class PopupExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementTarget<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.Primitives.Popup
+    public static T PlacementTarget<T>(this T obj, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.PlacementTargetProperty] = value;
         return obj;
@@ -2977,7 +2977,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T PlacementTarget<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3010,7 +3010,7 @@ public static partial class PopupExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObservePlacementTarget(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<Avalonia.Controls.Control?> ObservePlacementTarget(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
     }
@@ -3022,7 +3022,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPlacementTarget<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnPlacementTarget<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Control?>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
         handler(obj, observable);
@@ -3034,7 +3034,7 @@ public static partial class PopupExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingPlacementTarget(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingPlacementTarget(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
     }
@@ -3046,7 +3046,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPlacementTarget<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnBindingPlacementTarget<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
         handler(obj, observable);
@@ -3085,7 +3085,7 @@ public static partial class PopupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.Primitives.Popup
+    public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback? value) where T : Avalonia.Controls.Primitives.Popup
     {
         return builder.WithValue(PropertyMetadata.Popup_CustomPopupPlacementCallback, Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, value);
     }
@@ -3117,7 +3117,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3134,7 +3134,7 @@ public static partial class PopupExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.Primitives.Popup
+    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback? value) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty] = value;
         return obj;
@@ -3171,7 +3171,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T CustomPopupPlacementCallback<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3204,7 +3204,7 @@ public static partial class PopupExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty);
     }
@@ -3216,7 +3216,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);
@@ -3228,7 +3228,7 @@ public static partial class PopupExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty);
     }
@@ -3240,7 +3240,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);
@@ -3473,7 +3473,7 @@ public static partial class PopupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OverlayInputPassThroughElement<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement value) where T : Avalonia.Controls.Primitives.Popup
+    public static ElementBuilder<T> OverlayInputPassThroughElement<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.Primitives.Popup
     {
         return builder.WithValue(PropertyMetadata.Popup_OverlayInputPassThroughElement, Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, value);
     }
@@ -3505,7 +3505,7 @@ public static partial class PopupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OverlayInputPassThroughElement<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Input.IInputElement> observable,
+        IObservable<Avalonia.Input.IInputElement?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3522,7 +3522,7 @@ public static partial class PopupExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OverlayInputPassThroughElement<T>(this T obj, Avalonia.Input.IInputElement value) where T : Avalonia.Controls.Primitives.Popup
+    public static T OverlayInputPassThroughElement<T>(this T obj, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.Primitives.Popup
     {
         obj[Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty] = value;
         return obj;
@@ -3559,7 +3559,7 @@ public static partial class PopupExtensions
     /// <returns>The target object reference.</returns>
     public static T OverlayInputPassThroughElement<T>(
         this T obj,
-        IObservable<Avalonia.Input.IInputElement> observable,
+        IObservable<Avalonia.Input.IInputElement?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.Popup
     {
@@ -3592,7 +3592,7 @@ public static partial class PopupExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Input.IInputElement> ObserveOverlayInputPassThroughElement(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<Avalonia.Input.IInputElement?> ObserveOverlayInputPassThroughElement(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
     }
@@ -3604,7 +3604,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOverlayInputPassThroughElement<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnOverlayInputPassThroughElement<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<Avalonia.Input.IInputElement?>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
         handler(obj, observable);
@@ -3616,7 +3616,7 @@ public static partial class PopupExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Input.IInputElement>> ObserveBindingOverlayInputPassThroughElement(this Avalonia.Controls.Primitives.Popup obj)
+    public static IObservable<BindingValue<Avalonia.Input.IInputElement?>> ObserveBindingOverlayInputPassThroughElement(this Avalonia.Controls.Primitives.Popup obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
     }
@@ -3628,7 +3628,7 @@ public static partial class PopupExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingOverlayInputPassThroughElement<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Input.IInputElement>>> handler) where T : Avalonia.Controls.Primitives.Popup
+    public static T OnBindingOverlayInputPassThroughElement<T>(this T obj, Action<Avalonia.Controls.Primitives.Popup, IObservable<BindingValue<Avalonia.Input.IInputElement?>>> handler) where T : Avalonia.Controls.Primitives.Popup
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
         handler(obj, observable);

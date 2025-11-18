@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.MatrixTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.MatrixTransform> MatrixTransform(out ElementRef<Avalonia.Media.MatrixTransform> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.MatrixTransform>(TypeMetadata.Avalonia_Media_MatrixTransform, () => new Avalonia.Media.MatrixTransform())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
     public static Avalonia.Media.MatrixTransform MatrixTransform(out Avalonia.Media.MatrixTransform @ref)
         => @ref = new Avalonia.Media.MatrixTransform();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.MatrixTransform"/> instantiated class.</param>
+    /// <param name="matrix">The matrix value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.MatrixTransform> MatrixTransform(out ElementRef<Avalonia.Media.MatrixTransform> @ref, Avalonia.Matrix matrix)
+    {
+        return ElementBuilder.Create<Avalonia.Media.MatrixTransform>(TypeMetadata.Avalonia_Media_MatrixTransform, () => new Avalonia.Media.MatrixTransform(matrix))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.MatrixTransform"/> class.</returns>
     public static Avalonia.Media.MatrixTransform MatrixTransform(out Avalonia.Media.MatrixTransform @ref, Avalonia.Matrix matrix)
         => @ref = new Avalonia.Media.MatrixTransform(matrix);
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Track"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.Track"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Track"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.Track> Track(out ElementRef<Avalonia.Controls.Primitives.Track> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.Track>(TypeMetadata.Avalonia_Controls_Primitives_Track, () => new Avalonia.Controls.Primitives.Track())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Track"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Track"/> class.</returns>
     public static Avalonia.Controls.Primitives.Track Track(out Avalonia.Controls.Primitives.Track @ref)
         => @ref = new Avalonia.Controls.Primitives.Track();
+#endif
 
 }

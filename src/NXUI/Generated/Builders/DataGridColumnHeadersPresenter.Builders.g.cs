@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter> DataGridColumnHeadersPresenter(out ElementRef<Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter>(TypeMetadata.Avalonia_Controls_Primitives_DataGridColumnHeadersPresenter, () => new Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter"/> class.</returns>
     public static Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter DataGridColumnHeadersPresenter(out Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter @ref)
         => @ref = new Avalonia.Controls.Primitives.DataGridColumnHeadersPresenter();
+#endif
 
 }

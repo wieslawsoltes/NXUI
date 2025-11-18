@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TickBar"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TickBar"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TickBar"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TickBar> TickBar(out ElementRef<Avalonia.Controls.TickBar> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TickBar>(TypeMetadata.Avalonia_Controls_TickBar, () => new Avalonia.Controls.TickBar())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TickBar"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TickBar"/> class.</returns>
     public static Avalonia.Controls.TickBar TickBar(out Avalonia.Controls.TickBar @ref)
         => @ref = new Avalonia.Controls.TickBar();
+#endif
 
 }

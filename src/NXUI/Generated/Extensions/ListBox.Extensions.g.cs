@@ -38,7 +38,7 @@ public static partial class ListBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.IScrollable> ObserveScroll(this Avalonia.Controls.ListBox obj)
+    public static IObservable<Avalonia.Controls.Primitives.IScrollable?> ObserveScroll(this Avalonia.Controls.ListBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);
     }
@@ -49,7 +49,7 @@ public static partial class ListBoxExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ListBox OnScroll(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<Avalonia.Controls.Primitives.IScrollable>> handler)
+    public static Avalonia.Controls.ListBox OnScroll(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<Avalonia.Controls.Primitives.IScrollable?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ListBox.ScrollProperty);
         handler(obj, observable);
@@ -61,7 +61,7 @@ public static partial class ListBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable>> ObserveBindingScroll(this Avalonia.Controls.ListBox obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable?>> ObserveBindingScroll(this Avalonia.Controls.ListBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ListBox.ScrollProperty);
     }
@@ -72,7 +72,7 @@ public static partial class ListBoxExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ListBox OnBindingScroll(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable>>> handler)
+    public static Avalonia.Controls.ListBox OnBindingScroll(this Avalonia.Controls.ListBox obj, Action<Avalonia.Controls.ListBox, IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ListBox.ScrollProperty);
         handler(obj, observable);

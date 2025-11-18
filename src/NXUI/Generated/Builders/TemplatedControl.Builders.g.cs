@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TemplatedControl> TemplatedControl(out ElementRef<Avalonia.Controls.Primitives.TemplatedControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TemplatedControl>(TypeMetadata.Avalonia_Controls_Primitives_TemplatedControl, () => new Avalonia.Controls.Primitives.TemplatedControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class.</returns>
     public static Avalonia.Controls.Primitives.TemplatedControl TemplatedControl(out Avalonia.Controls.Primitives.TemplatedControl @ref)
         => @ref = new Avalonia.Controls.Primitives.TemplatedControl();
+#endif
 
 }

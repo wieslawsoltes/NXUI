@@ -20,7 +20,7 @@ public static partial class CalendarItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> HeaderBackground(this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder, Avalonia.Media.IBrush value)
+    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> HeaderBackground(this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.CalendarItem_HeaderBackground, Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> HeaderBackground(
         this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class CalendarItemExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.CalendarItem HeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Media.IBrush value)
+    public static Avalonia.Controls.Primitives.CalendarItem HeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Media.IBrush? value)
     {
         obj[Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.CalendarItem HeaderBackground(
         this Avalonia.Controls.Primitives.CalendarItem obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class CalendarItemExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
     }
@@ -146,7 +146,7 @@ public static partial class CalendarItemExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Controls.Primitives.CalendarItem OnHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<Avalonia.Media.IBrush>> handler)
+    public static Avalonia.Controls.Primitives.CalendarItem OnHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<Avalonia.Media.IBrush?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class CalendarItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
     }
@@ -169,7 +169,7 @@ public static partial class CalendarItemExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Controls.Primitives.CalendarItem OnBindingHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    public static Avalonia.Controls.Primitives.CalendarItem OnBindingHeaderBackground(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty);
         handler(obj, observable);
@@ -207,7 +207,7 @@ public static partial class CalendarItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> DayTitleTemplate(this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> DayTitleTemplate(this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control>? value)
     {
         return builder.WithValue(PropertyMetadata.CalendarItem_DayTitleTemplate, Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, value);
     }
@@ -239,7 +239,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> DayTitleTemplate(
         this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -255,7 +255,7 @@ public static partial class CalendarItemExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.CalendarItem DayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static Avalonia.Controls.Primitives.CalendarItem DayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Control>? value)
     {
         obj[Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty] = value;
         return obj;
@@ -290,7 +290,7 @@ public static partial class CalendarItemExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.CalendarItem DayTitleTemplate(
         this Avalonia.Controls.Primitives.CalendarItem obj,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -322,7 +322,7 @@ public static partial class CalendarItemExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> ObserveDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj)
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?> ObserveDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
     }
@@ -333,7 +333,7 @@ public static partial class CalendarItemExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Controls.Primitives.CalendarItem OnDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> handler)
+    public static Avalonia.Controls.Primitives.CalendarItem OnDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
         handler(obj, observable);
@@ -345,7 +345,7 @@ public static partial class CalendarItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> ObserveBindingDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj)
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?>> ObserveBindingDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
     }
@@ -356,7 +356,7 @@ public static partial class CalendarItemExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Controls.Primitives.CalendarItem OnBindingDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>>> handler)
+    public static Avalonia.Controls.Primitives.CalendarItem OnBindingDayTitleTemplate(this Avalonia.Controls.Primitives.CalendarItem obj, Action<Avalonia.Controls.Primitives.CalendarItem, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty);
         handler(obj, observable);

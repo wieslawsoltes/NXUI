@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.LineSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.LineSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.LineSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.LineSegment> LineSegment(out ElementRef<Avalonia.Media.LineSegment> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.LineSegment>(TypeMetadata.Avalonia_Media_LineSegment, () => new Avalonia.Media.LineSegment())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.LineSegment"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.LineSegment"/> class.</returns>
     public static Avalonia.Media.LineSegment LineSegment(out Avalonia.Media.LineSegment @ref)
         => @ref = new Avalonia.Media.LineSegment();
+#endif
 
 }

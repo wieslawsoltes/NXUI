@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.BlurEffect"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.BlurEffect"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.BlurEffect"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.BlurEffect> BlurEffect(out ElementRef<Avalonia.Media.BlurEffect> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.BlurEffect>(TypeMetadata.Avalonia_Media_BlurEffect, () => new Avalonia.Media.BlurEffect())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.BlurEffect"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.BlurEffect"/> class.</returns>
     public static Avalonia.Media.BlurEffect BlurEffect(out Avalonia.Media.BlurEffect @ref)
         => @ref = new Avalonia.Media.BlurEffect();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.StackPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.StackPanel> StackPanel(out ElementRef<Avalonia.Controls.StackPanel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.StackPanel>(TypeMetadata.Avalonia_Controls_StackPanel, () => new Avalonia.Controls.StackPanel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.StackPanel"/> class.</returns>
     public static Avalonia.Controls.StackPanel StackPanel(out Avalonia.Controls.StackPanel @ref)
         => @ref = new Avalonia.Controls.StackPanel();
+#endif
 
 }

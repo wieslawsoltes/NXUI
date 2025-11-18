@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DataGridCheckBoxColumn> DataGridCheckBoxColumn(out ElementRef<Avalonia.Controls.DataGridCheckBoxColumn> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DataGridCheckBoxColumn>(TypeMetadata.Avalonia_Controls_DataGridCheckBoxColumn, () => new Avalonia.Controls.DataGridCheckBoxColumn())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/> class.</returns>
     public static Avalonia.Controls.DataGridCheckBoxColumn DataGridCheckBoxColumn(out Avalonia.Controls.DataGridCheckBoxColumn @ref)
         => @ref = new Avalonia.Controls.DataGridCheckBoxColumn();
+#endif
 
 }

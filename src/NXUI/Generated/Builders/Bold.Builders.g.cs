@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Bold"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.Bold> Bold(out ElementRef<Avalonia.Controls.Documents.Bold> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.Bold>(TypeMetadata.Avalonia_Controls_Documents_Bold, () => new Avalonia.Controls.Documents.Bold())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Bold"/> class.</returns>
     public static Avalonia.Controls.Documents.Bold Bold(out Avalonia.Controls.Documents.Bold @ref)
         => @ref = new Avalonia.Controls.Documents.Bold();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer> ScrollGestureRecognizer(out ElementRef<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer>(TypeMetadata.Avalonia_Input_GestureRecognizers_ScrollGestureRecognizer, () => new Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class.</returns>
     public static Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer ScrollGestureRecognizer(out Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer @ref)
         => @ref = new Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer();
+#endif
 
 }

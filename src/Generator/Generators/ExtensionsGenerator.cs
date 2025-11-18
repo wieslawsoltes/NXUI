@@ -82,6 +82,9 @@ public partial class ExtensionsGenerator
 
                 var propertyBuilder = new StringBuilder(template);
 
+                var valueTypeName = ReflectoniaFactory.ToString(p.ValueType);
+                var valueTypeSignature = FormatTypeWithNullability(p.ValueType, p.ValueNullability);
+
                 if (!p.IsReadOnly)
                 {
                     var hotReloadBuilder = new StringBuilder(Templates.PropertyMethodsHotReloadTemplate);
@@ -93,7 +96,8 @@ public partial class ExtensionsGenerator
                     hotReloadBuilder.Replace("%MethodName%", p.Name);
                     hotReloadBuilder.Replace("%Name%", p.Name);
                     hotReloadBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(p.OwnerType));
-                    hotReloadBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
+                    hotReloadBuilder.Replace("%ValueType%", valueTypeName);
+                    hotReloadBuilder.Replace("%ValueTypeSignature%", valueTypeSignature);
                     hotReloadBuilder.Replace("%PropertyId%", propertyConstName);
                     WriteLine(hotReloadBuilder.ToString());
                 }
@@ -102,7 +106,8 @@ public partial class ExtensionsGenerator
                 propertyBuilder.Replace("%MethodName%", p.Name);
                 propertyBuilder.Replace("%Name%", p.Name);
                 propertyBuilder.Replace("%OwnerType%", ReflectoniaFactory.ToString(p.OwnerType));
-                propertyBuilder.Replace("%ValueType%", ReflectoniaFactory.ToString(p.ValueType));
+                propertyBuilder.Replace("%ValueType%", valueTypeName);
+                propertyBuilder.Replace("%ValueTypeSignature%", valueTypeSignature);
 
                 WriteLine(propertyBuilder.ToString());
 

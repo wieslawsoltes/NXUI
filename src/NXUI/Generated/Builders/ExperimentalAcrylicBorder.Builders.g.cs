@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ExperimentalAcrylicBorder> ExperimentalAcrylicBorder(out ElementRef<Avalonia.Controls.ExperimentalAcrylicBorder> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ExperimentalAcrylicBorder>(TypeMetadata.Avalonia_Controls_ExperimentalAcrylicBorder, () => new Avalonia.Controls.ExperimentalAcrylicBorder())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class.</returns>
     public static Avalonia.Controls.ExperimentalAcrylicBorder ExperimentalAcrylicBorder(out Avalonia.Controls.ExperimentalAcrylicBorder @ref)
         => @ref = new Avalonia.Controls.ExperimentalAcrylicBorder();
+#endif
 
 }

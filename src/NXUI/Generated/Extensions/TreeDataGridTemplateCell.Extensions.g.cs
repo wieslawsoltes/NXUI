@@ -38,7 +38,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
+    public static IObservable<System.Object?> ObserveContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentProperty);
     }
@@ -49,7 +49,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<System.Object>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<System.Object?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentProperty);
         handler(obj, observable);
@@ -61,7 +61,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentProperty);
     }
@@ -72,7 +72,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnBindingContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<BindingValue<System.Object>>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnBindingContent(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<BindingValue<System.Object?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentProperty);
         handler(obj, observable);
@@ -128,7 +128,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentTemplateProperty);
     }
@@ -139,7 +139,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentTemplateProperty);
         handler(obj, observable);
@@ -151,7 +151,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentTemplateProperty);
     }
@@ -162,7 +162,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnBindingContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnBindingContentTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentTemplateProperty);
         handler(obj, observable);
@@ -218,7 +218,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.EditingTemplateProperty);
     }
@@ -229,7 +229,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.EditingTemplateProperty);
         handler(obj, observable);
@@ -241,7 +241,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.EditingTemplateProperty);
     }
@@ -252,7 +252,7 @@ public static partial class TreeDataGridTemplateCellExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnBindingEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridTemplateCell OnBindingEditingTemplate(this Avalonia.Controls.Primitives.TreeDataGridTemplateCell obj, Action<Avalonia.Controls.Primitives.TreeDataGridTemplateCell, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.EditingTemplateProperty);
         handler(obj, observable);

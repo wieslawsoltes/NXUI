@@ -20,7 +20,7 @@ public static partial class LabelExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Target<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement value) where T : Avalonia.Controls.Label
+    public static ElementBuilder<T> Target<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.Label
     {
         return builder.WithValue(PropertyMetadata.Label_Target, Avalonia.Controls.Label.TargetProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class LabelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Target<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Input.IInputElement> observable,
+        IObservable<Avalonia.Input.IInputElement?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Label
     {
@@ -69,7 +69,7 @@ public static partial class LabelExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Target<T>(this T obj, Avalonia.Input.IInputElement value) where T : Avalonia.Controls.Label
+    public static T Target<T>(this T obj, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.Label
     {
         obj[Avalonia.Controls.Label.TargetProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class LabelExtensions
     /// <returns>The target object reference.</returns>
     public static T Target<T>(
         this T obj,
-        IObservable<Avalonia.Input.IInputElement> observable,
+        IObservable<Avalonia.Input.IInputElement?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Label
     {
@@ -139,7 +139,7 @@ public static partial class LabelExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Input.IInputElement> ObserveTarget(this Avalonia.Controls.Label obj)
+    public static IObservable<Avalonia.Input.IInputElement?> ObserveTarget(this Avalonia.Controls.Label obj)
     {
         return obj.GetObservable(Avalonia.Controls.Label.TargetProperty);
     }
@@ -151,7 +151,7 @@ public static partial class LabelExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTarget<T>(this T obj, Action<Avalonia.Controls.Label, IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.Label
+    public static T OnTarget<T>(this T obj, Action<Avalonia.Controls.Label, IObservable<Avalonia.Input.IInputElement?>> handler) where T : Avalonia.Controls.Label
     {
         var observable = obj.GetObservable(Avalonia.Controls.Label.TargetProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class LabelExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Input.IInputElement>> ObserveBindingTarget(this Avalonia.Controls.Label obj)
+    public static IObservable<BindingValue<Avalonia.Input.IInputElement?>> ObserveBindingTarget(this Avalonia.Controls.Label obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Label.TargetProperty);
     }
@@ -175,7 +175,7 @@ public static partial class LabelExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTarget<T>(this T obj, Action<Avalonia.Controls.Label, IObservable<BindingValue<Avalonia.Input.IInputElement>>> handler) where T : Avalonia.Controls.Label
+    public static T OnBindingTarget<T>(this T obj, Action<Avalonia.Controls.Label, IObservable<BindingValue<Avalonia.Input.IInputElement?>>> handler) where T : Avalonia.Controls.Label
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Label.TargetProperty);
         handler(obj, observable);

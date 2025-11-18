@@ -20,7 +20,7 @@ public static partial class SplitButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand value) where T : Avalonia.Controls.SplitButton
+    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.SplitButton
     {
         return builder.WithValue(PropertyMetadata.SplitButton_Command, Avalonia.Controls.SplitButton.CommandProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -69,7 +69,7 @@ public static partial class SplitButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Command<T>(this T obj, System.Windows.Input.ICommand value) where T : Avalonia.Controls.SplitButton
+    public static T Command<T>(this T obj, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.SplitButton
     {
         obj[Avalonia.Controls.SplitButton.CommandProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -139,7 +139,7 @@ public static partial class SplitButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.SplitButton obj)
+    public static IObservable<System.Windows.Input.ICommand?> ObserveCommand(this Avalonia.Controls.SplitButton obj)
     {
         return obj.GetObservable(Avalonia.Controls.SplitButton.CommandProperty);
     }
@@ -151,7 +151,7 @@ public static partial class SplitButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<System.Windows.Input.ICommand?>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.CommandProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class SplitButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.SplitButton obj)
+    public static IObservable<BindingValue<System.Windows.Input.ICommand?>> ObserveBindingCommand(this Avalonia.Controls.SplitButton obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandProperty);
     }
@@ -175,7 +175,7 @@ public static partial class SplitButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<System.Windows.Input.ICommand?>>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class SplitButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.SplitButton
+    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.SplitButton
     {
         return builder.WithValue(PropertyMetadata.SplitButton_CommandParameter, Avalonia.Controls.SplitButton.CommandParameterProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -263,7 +263,7 @@ public static partial class SplitButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Controls.SplitButton
+    public static T CommandParameter<T>(this T obj, System.Object? value) where T : Avalonia.Controls.SplitButton
     {
         obj[Avalonia.Controls.SplitButton.CommandParameterProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -333,7 +333,7 @@ public static partial class SplitButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.SplitButton obj)
+    public static IObservable<System.Object?> ObserveCommandParameter(this Avalonia.Controls.SplitButton obj)
     {
         return obj.GetObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
     }
@@ -345,7 +345,7 @@ public static partial class SplitButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<System.Object>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<System.Object?>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class SplitButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.SplitButton obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingCommandParameter(this Avalonia.Controls.SplitButton obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
     }
@@ -369,7 +369,7 @@ public static partial class SplitButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.SplitButton.CommandParameterProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class SplitButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Flyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.SplitButton
+    public static ElementBuilder<T> Flyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.SplitButton
     {
         return builder.WithValue(PropertyMetadata.SplitButton_Flyout, Avalonia.Controls.SplitButton.FlyoutProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Flyout<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -457,7 +457,7 @@ public static partial class SplitButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Flyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.SplitButton
+    public static T Flyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.SplitButton
     {
         obj[Avalonia.Controls.SplitButton.FlyoutProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class SplitButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Flyout<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitButton
     {
@@ -527,7 +527,7 @@ public static partial class SplitButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveFlyout(this Avalonia.Controls.SplitButton obj)
+    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase?> ObserveFlyout(this Avalonia.Controls.SplitButton obj)
     {
         return obj.GetObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
     }
@@ -539,7 +539,7 @@ public static partial class SplitButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<Avalonia.Controls.Primitives.FlyoutBase?>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class SplitButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingFlyout(this Avalonia.Controls.SplitButton obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>> ObserveBindingFlyout(this Avalonia.Controls.SplitButton obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
     }
@@ -563,7 +563,7 @@ public static partial class SplitButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFlyout<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.SplitButton
+    public static T OnBindingFlyout<T>(this T obj, Action<Avalonia.Controls.SplitButton, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>>> handler) where T : Avalonia.Controls.SplitButton
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.SplitButton.FlyoutProperty);
         handler(obj, observable);

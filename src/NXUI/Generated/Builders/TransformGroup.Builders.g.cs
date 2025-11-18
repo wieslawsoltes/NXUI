@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.TransformGroup"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.TransformGroup> TransformGroup(out ElementRef<Avalonia.Media.TransformGroup> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.TransformGroup>(TypeMetadata.Avalonia_Media_TransformGroup, () => new Avalonia.Media.TransformGroup())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.TransformGroup"/> class.</returns>
     public static Avalonia.Media.TransformGroup TransformGroup(out Avalonia.Media.TransformGroup @ref)
         => @ref = new Avalonia.Media.TransformGroup();
+#endif
 
 }

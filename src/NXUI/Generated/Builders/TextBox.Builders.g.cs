@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TextBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TextBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TextBox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TextBox> TextBox(out ElementRef<Avalonia.Controls.TextBox> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TextBox>(TypeMetadata.Avalonia_Controls_TextBox, () => new Avalonia.Controls.TextBox())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TextBox"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TextBox"/> class.</returns>
     public static Avalonia.Controls.TextBox TextBox(out Avalonia.Controls.TextBox @ref)
         => @ref = new Avalonia.Controls.TextBox();
+#endif
 
 }

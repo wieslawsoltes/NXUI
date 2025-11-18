@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.SizeTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.SizeTransition> SizeTransition(out ElementRef<Avalonia.Animation.SizeTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.SizeTransition>(TypeMetadata.Avalonia_Animation_SizeTransition, () => new Avalonia.Animation.SizeTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.SizeTransition"/> class.</returns>
     public static Avalonia.Animation.SizeTransition SizeTransition(out Avalonia.Animation.SizeTransition @ref)
         => @ref = new Avalonia.Animation.SizeTransition();
+#endif
 
 }

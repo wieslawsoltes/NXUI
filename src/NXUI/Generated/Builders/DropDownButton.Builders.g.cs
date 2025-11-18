@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DropDownButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DropDownButton> DropDownButton(out ElementRef<Avalonia.Controls.DropDownButton> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DropDownButton>(TypeMetadata.Avalonia_Controls_DropDownButton, () => new Avalonia.Controls.DropDownButton())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DropDownButton"/> class.</returns>
     public static Avalonia.Controls.DropDownButton DropDownButton(out Avalonia.Controls.DropDownButton @ref)
         => @ref = new Avalonia.Controls.DropDownButton();
+#endif
 
 }

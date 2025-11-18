@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Application"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Application"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Application"/> class.</returns>
+    public static ElementBuilder<Avalonia.Application> Application(out ElementRef<Avalonia.Application> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Application>(TypeMetadata.Avalonia_Application, () => new Avalonia.Application())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Application"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Application"/> class.</returns>
     public static Avalonia.Application Application(out Avalonia.Application @ref)
         => @ref = new Avalonia.Application();
+#endif
 
 }

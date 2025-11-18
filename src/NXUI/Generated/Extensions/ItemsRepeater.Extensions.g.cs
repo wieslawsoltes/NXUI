@@ -214,7 +214,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ItemsRepeater
+    public static ElementBuilder<T> ItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ItemsRepeater
     {
         return builder.WithValue(PropertyMetadata.ItemsRepeater_ItemTemplate, Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -263,7 +263,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ItemsRepeater
+    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ItemsRepeater
     {
         obj[Avalonia.Controls.ItemsRepeater.ItemTemplateProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -333,7 +333,7 @@ public static partial class ItemsRepeaterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.ItemsRepeater obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveItemTemplate(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
     }
@@ -345,7 +345,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class ItemsRepeaterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingItemTemplate(this Avalonia.Controls.ItemsRepeater obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingItemTemplate(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
     }
@@ -369,7 +369,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable value) where T : Avalonia.Controls.ItemsRepeater
+    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable? value) where T : Avalonia.Controls.ItemsRepeater
     {
         return builder.WithValue(PropertyMetadata.ItemsRepeater_ItemsSource, Avalonia.Controls.ItemsRepeater.ItemsSourceProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -457,7 +457,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.ItemsRepeater
+    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable? value) where T : Avalonia.Controls.ItemsRepeater
     {
         obj[Avalonia.Controls.ItemsRepeater.ItemsSourceProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsSource<T>(
         this T obj,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -527,7 +527,7 @@ public static partial class ItemsRepeaterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.IEnumerable> ObserveItemsSource(this Avalonia.Controls.ItemsRepeater obj)
+    public static IObservable<System.Collections.IEnumerable?> ObserveItemsSource(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
     }
@@ -539,7 +539,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<System.Collections.IEnumerable?>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class ItemsRepeaterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.ItemsRepeater obj)
+    public static IObservable<BindingValue<System.Collections.IEnumerable?>> ObserveBindingItemsSource(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
     }
@@ -563,7 +563,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<System.Collections.IEnumerable?>>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Layout<T>(this ElementBuilder<T> builder, Avalonia.Layout.AttachedLayout value) where T : Avalonia.Controls.ItemsRepeater
+    public static ElementBuilder<T> Layout<T>(this ElementBuilder<T> builder, Avalonia.Layout.AttachedLayout? value) where T : Avalonia.Controls.ItemsRepeater
     {
         return builder.WithValue(PropertyMetadata.ItemsRepeater_Layout, Avalonia.Controls.ItemsRepeater.LayoutProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Layout<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Layout.AttachedLayout> observable,
+        IObservable<Avalonia.Layout.AttachedLayout?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -651,7 +651,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Layout<T>(this T obj, Avalonia.Layout.AttachedLayout value) where T : Avalonia.Controls.ItemsRepeater
+    public static T Layout<T>(this T obj, Avalonia.Layout.AttachedLayout? value) where T : Avalonia.Controls.ItemsRepeater
     {
         obj[Avalonia.Controls.ItemsRepeater.LayoutProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class ItemsRepeaterExtensions
     /// <returns>The target object reference.</returns>
     public static T Layout<T>(
         this T obj,
-        IObservable<Avalonia.Layout.AttachedLayout> observable,
+        IObservable<Avalonia.Layout.AttachedLayout?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsRepeater
     {
@@ -721,7 +721,7 @@ public static partial class ItemsRepeaterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Layout.AttachedLayout> ObserveLayout(this Avalonia.Controls.ItemsRepeater obj)
+    public static IObservable<Avalonia.Layout.AttachedLayout?> ObserveLayout(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
     }
@@ -733,7 +733,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnLayout<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<Avalonia.Layout.AttachedLayout>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnLayout<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<Avalonia.Layout.AttachedLayout?>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class ItemsRepeaterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Layout.AttachedLayout>> ObserveBindingLayout(this Avalonia.Controls.ItemsRepeater obj)
+    public static IObservable<BindingValue<Avalonia.Layout.AttachedLayout?>> ObserveBindingLayout(this Avalonia.Controls.ItemsRepeater obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
     }
@@ -757,7 +757,7 @@ public static partial class ItemsRepeaterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingLayout<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<Avalonia.Layout.AttachedLayout>>> handler) where T : Avalonia.Controls.ItemsRepeater
+    public static T OnBindingLayout<T>(this T obj, Action<Avalonia.Controls.ItemsRepeater, IObservable<BindingValue<Avalonia.Layout.AttachedLayout?>>> handler) where T : Avalonia.Controls.ItemsRepeater
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsRepeater.LayoutProperty);
         handler(obj, observable);

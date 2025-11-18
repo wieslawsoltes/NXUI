@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ContentControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ContentControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ContentControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ContentControl> ContentControl(out ElementRef<Avalonia.Controls.ContentControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ContentControl>(TypeMetadata.Avalonia_Controls_ContentControl, () => new Avalonia.Controls.ContentControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ContentControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ContentControl"/> class.</returns>
     public static Avalonia.Controls.ContentControl ContentControl(out Avalonia.Controls.ContentControl @ref)
         => @ref = new Avalonia.Controls.ContentControl();
+#endif
 
 }

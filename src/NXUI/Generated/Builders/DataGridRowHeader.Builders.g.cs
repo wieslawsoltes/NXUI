@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowHeader"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.DataGridRowHeader"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowHeader"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.DataGridRowHeader> DataGridRowHeader(out ElementRef<Avalonia.Controls.Primitives.DataGridRowHeader> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.DataGridRowHeader>(TypeMetadata.Avalonia_Controls_Primitives_DataGridRowHeader, () => new Avalonia.Controls.Primitives.DataGridRowHeader())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowHeader"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowHeader"/> class.</returns>
     public static Avalonia.Controls.Primitives.DataGridRowHeader DataGridRowHeader(out Avalonia.Controls.Primitives.DataGridRowHeader @ref)
         => @ref = new Avalonia.Controls.Primitives.DataGridRowHeader();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class ToolTipExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Tip<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> Tip<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.ToolTip_Tip, Avalonia.Controls.ToolTip.TipProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Tip<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -69,7 +69,7 @@ public static partial class ToolTipExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Tip<T>(this T obj, System.Object value) where T : Avalonia.Controls.Control
+    public static T Tip<T>(this T obj, System.Object? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.ToolTip.TipProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T Tip<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -139,7 +139,7 @@ public static partial class ToolTipExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveTip(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Object?> ObserveTip(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToolTip.TipProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ToolTipExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTip<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Object>> handler) where T : Avalonia.Controls.Control
+    public static T OnTip<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Object?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.TipProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingTip(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingTip(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ToolTip.TipProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ToolTipExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTip<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingTip<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.TipProperty);
         handler(obj, observable);
@@ -1390,7 +1390,7 @@ public static partial class ToolTipExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.ToolTip_CustomPopupPlacementCallback, Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, value);
     }
@@ -1422,7 +1422,7 @@ public static partial class ToolTipExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1439,7 +1439,7 @@ public static partial class ToolTipExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.Control
+    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty] = value;
         return obj;
@@ -1476,7 +1476,7 @@ public static partial class ToolTipExtensions
     /// <returns>The target object reference.</returns>
     public static T CustomPopupPlacementCallback<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -1509,7 +1509,7 @@ public static partial class ToolTipExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
     }
@@ -1521,7 +1521,7 @@ public static partial class ToolTipExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> handler) where T : Avalonia.Controls.Control
+    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);
@@ -1533,7 +1533,7 @@ public static partial class ToolTipExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
     }
@@ -1545,7 +1545,7 @@ public static partial class ToolTipExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);

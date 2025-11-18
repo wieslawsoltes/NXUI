@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.KeyFrame"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.KeyFrame> KeyFrame(out ElementRef<Avalonia.Animation.KeyFrame> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.KeyFrame>(TypeMetadata.Avalonia_Animation_KeyFrame, () => new Avalonia.Animation.KeyFrame())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.KeyFrame"/> class.</returns>
     public static Avalonia.Animation.KeyFrame KeyFrame(out Avalonia.Animation.KeyFrame @ref)
         => @ref = new Avalonia.Animation.KeyFrame();
+#endif
 
 }

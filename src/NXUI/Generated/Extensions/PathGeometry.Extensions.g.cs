@@ -20,7 +20,7 @@ public static partial class PathGeometryExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Figures<T>(this ElementBuilder<T> builder, Avalonia.Media.PathFigures value) where T : Avalonia.Media.PathGeometry
+    public static ElementBuilder<T> Figures<T>(this ElementBuilder<T> builder, Avalonia.Media.PathFigures? value) where T : Avalonia.Media.PathGeometry
     {
         return builder.WithValue(PropertyMetadata.PathGeometry_Figures, Avalonia.Media.PathGeometry.FiguresProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class PathGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Figures<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.PathFigures> observable,
+        IObservable<Avalonia.Media.PathFigures?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PathGeometry
     {
@@ -69,7 +69,7 @@ public static partial class PathGeometryExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Figures<T>(this T obj, Avalonia.Media.PathFigures value) where T : Avalonia.Media.PathGeometry
+    public static T Figures<T>(this T obj, Avalonia.Media.PathFigures? value) where T : Avalonia.Media.PathGeometry
     {
         obj[Avalonia.Media.PathGeometry.FiguresProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class PathGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Figures<T>(
         this T obj,
-        IObservable<Avalonia.Media.PathFigures> observable,
+        IObservable<Avalonia.Media.PathFigures?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.PathGeometry
     {
@@ -139,7 +139,7 @@ public static partial class PathGeometryExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.PathFigures> ObserveFigures(this Avalonia.Media.PathGeometry obj)
+    public static IObservable<Avalonia.Media.PathFigures?> ObserveFigures(this Avalonia.Media.PathGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.PathGeometry.FiguresProperty);
     }
@@ -151,7 +151,7 @@ public static partial class PathGeometryExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFigures<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<Avalonia.Media.PathFigures>> handler) where T : Avalonia.Media.PathGeometry
+    public static T OnFigures<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<Avalonia.Media.PathFigures?>> handler) where T : Avalonia.Media.PathGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.PathGeometry.FiguresProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class PathGeometryExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.PathFigures>> ObserveBindingFigures(this Avalonia.Media.PathGeometry obj)
+    public static IObservable<BindingValue<Avalonia.Media.PathFigures?>> ObserveBindingFigures(this Avalonia.Media.PathGeometry obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.PathGeometry.FiguresProperty);
     }
@@ -175,7 +175,7 @@ public static partial class PathGeometryExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFigures<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<BindingValue<Avalonia.Media.PathFigures>>> handler) where T : Avalonia.Media.PathGeometry
+    public static T OnBindingFigures<T>(this T obj, Action<Avalonia.Media.PathGeometry, IObservable<BindingValue<Avalonia.Media.PathFigures?>>> handler) where T : Avalonia.Media.PathGeometry
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.PathGeometry.FiguresProperty);
         handler(obj, observable);

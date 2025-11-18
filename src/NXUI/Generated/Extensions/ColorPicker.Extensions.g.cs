@@ -20,7 +20,7 @@ public static partial class ColorPickerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.ColorPicker
+    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.ColorPicker
     {
         return builder.WithValue(PropertyMetadata.ColorPicker_Content, Avalonia.Controls.ColorPicker.ContentProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ColorPickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorPicker
     {
@@ -69,7 +69,7 @@ public static partial class ColorPickerExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Content<T>(this T obj, System.Object value) where T : Avalonia.Controls.ColorPicker
+    public static T Content<T>(this T obj, System.Object? value) where T : Avalonia.Controls.ColorPicker
     {
         obj[Avalonia.Controls.ColorPicker.ContentProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ColorPickerExtensions
     /// <returns>The target object reference.</returns>
     public static T Content<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorPicker
     {
@@ -139,7 +139,7 @@ public static partial class ColorPickerExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveContent(this Avalonia.Controls.ColorPicker obj)
+    public static IObservable<System.Object?> ObserveContent(this Avalonia.Controls.ColorPicker obj)
     {
         return obj.GetObservable(Avalonia.Controls.ColorPicker.ContentProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ColorPickerExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<System.Object>> handler) where T : Avalonia.Controls.ColorPicker
+    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<System.Object?>> handler) where T : Avalonia.Controls.ColorPicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorPicker.ContentProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ColorPickerExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.ColorPicker obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingContent(this Avalonia.Controls.ColorPicker obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ColorPickerExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ColorPicker
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.ColorPicker
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class ColorPickerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ColorPicker
+    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ColorPicker
     {
         return builder.WithValue(PropertyMetadata.ColorPicker_ContentTemplate, Avalonia.Controls.ColorPicker.ContentTemplateProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class ColorPickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorPicker
     {
@@ -263,7 +263,7 @@ public static partial class ColorPickerExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ColorPicker
+    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ColorPicker
     {
         obj[Avalonia.Controls.ColorPicker.ContentTemplateProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class ColorPickerExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorPicker
     {
@@ -333,7 +333,7 @@ public static partial class ColorPickerExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveContentTemplate(this Avalonia.Controls.ColorPicker obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveContentTemplate(this Avalonia.Controls.ColorPicker obj)
     {
         return obj.GetObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
     }
@@ -345,7 +345,7 @@ public static partial class ColorPickerExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ColorPicker
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.ColorPicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class ColorPickerExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.ColorPicker obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingContentTemplate(this Avalonia.Controls.ColorPicker obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
     }
@@ -369,7 +369,7 @@ public static partial class ColorPickerExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ColorPicker
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.ColorPicker, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.ColorPicker
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
         handler(obj, observable);

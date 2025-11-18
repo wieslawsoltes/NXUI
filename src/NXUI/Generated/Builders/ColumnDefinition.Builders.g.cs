@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ColumnDefinition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ColumnDefinition> ColumnDefinition(out ElementRef<Avalonia.Controls.ColumnDefinition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ColumnDefinition>(TypeMetadata.Avalonia_Controls_ColumnDefinition, () => new Avalonia.Controls.ColumnDefinition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.</returns>
     public static Avalonia.Controls.ColumnDefinition ColumnDefinition(out Avalonia.Controls.ColumnDefinition @ref)
         => @ref = new Avalonia.Controls.ColumnDefinition();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ColumnDefinition"/> instantiated class.</param>
+    /// <param name="value">The value value.</param>
+    /// <param name="type">The type value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ColumnDefinition> ColumnDefinition(out ElementRef<Avalonia.Controls.ColumnDefinition> @ref, System.Double value, Avalonia.Controls.GridUnitType type)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ColumnDefinition>(TypeMetadata.Avalonia_Controls_ColumnDefinition, () => new Avalonia.Controls.ColumnDefinition(value, type))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.
     /// </summary>
@@ -67,6 +94,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.</returns>
     public static Avalonia.Controls.ColumnDefinition ColumnDefinition(out Avalonia.Controls.ColumnDefinition @ref, System.Double value, Avalonia.Controls.GridUnitType type)
         => @ref = new Avalonia.Controls.ColumnDefinition(value, type);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -88,6 +116,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ColumnDefinition"/> instantiated class.</param>
+    /// <param name="width">The width value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ColumnDefinition> ColumnDefinition(out ElementRef<Avalonia.Controls.ColumnDefinition> @ref, Avalonia.Controls.GridLength width)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ColumnDefinition>(TypeMetadata.Avalonia_Controls_ColumnDefinition, () => new Avalonia.Controls.ColumnDefinition(width))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.
     /// </summary>
@@ -96,5 +137,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ColumnDefinition"/> class.</returns>
     public static Avalonia.Controls.ColumnDefinition ColumnDefinition(out Avalonia.Controls.ColumnDefinition @ref, Avalonia.Controls.GridLength width)
         => @ref = new Avalonia.Controls.ColumnDefinition(width);
+#endif
 
 }

@@ -30,6 +30,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> instantiated class.</param>
+    /// <param name="impl">The impl value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Embedding.EmbeddableControlRoot> EmbeddableControlRoot(out ElementRef<Avalonia.Controls.Embedding.EmbeddableControlRoot> @ref, Avalonia.Platform.ITopLevelImpl impl)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Embedding.EmbeddableControlRoot>(TypeMetadata.Avalonia_Controls_Embedding_EmbeddableControlRoot, () => new Avalonia.Controls.Embedding.EmbeddableControlRoot(impl))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
     /// </summary>
@@ -38,6 +51,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
     public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot(out Avalonia.Controls.Embedding.EmbeddableControlRoot @ref, Avalonia.Platform.ITopLevelImpl impl)
         => @ref = new Avalonia.Controls.Embedding.EmbeddableControlRoot(impl);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -57,6 +71,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Embedding.EmbeddableControlRoot> EmbeddableControlRoot(out ElementRef<Avalonia.Controls.Embedding.EmbeddableControlRoot> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Embedding.EmbeddableControlRoot>(TypeMetadata.Avalonia_Controls_Embedding_EmbeddableControlRoot, () => new Avalonia.Controls.Embedding.EmbeddableControlRoot())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Embedding.EmbeddableControlRoot"/> class.</returns>
     public static Avalonia.Controls.Embedding.EmbeddableControlRoot EmbeddableControlRoot(out Avalonia.Controls.Embedding.EmbeddableControlRoot @ref)
         => @ref = new Avalonia.Controls.Embedding.EmbeddableControlRoot();
+#endif
 
 }

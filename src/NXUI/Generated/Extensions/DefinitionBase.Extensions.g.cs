@@ -20,7 +20,7 @@ public static partial class DefinitionBaseExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SharedSizeGroup<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> SharedSizeGroup<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.DefinitionBase_SharedSizeGroup, Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class DefinitionBaseExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SharedSizeGroup<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -69,7 +69,7 @@ public static partial class DefinitionBaseExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SharedSizeGroup<T>(this T obj, System.String value) where T : Avalonia.Controls.Control
+    public static T SharedSizeGroup<T>(this T obj, System.String? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class DefinitionBaseExtensions
     /// <returns>The target object reference.</returns>
     public static T SharedSizeGroup<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -139,7 +139,7 @@ public static partial class DefinitionBaseExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveSharedSizeGroup(this Avalonia.Controls.Control obj)
+    public static IObservable<System.String?> ObserveSharedSizeGroup(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty);
     }
@@ -151,7 +151,7 @@ public static partial class DefinitionBaseExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSharedSizeGroup<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.String>> handler) where T : Avalonia.Controls.Control
+    public static T OnSharedSizeGroup<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.String?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class DefinitionBaseExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingSharedSizeGroup(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingSharedSizeGroup(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty);
     }
@@ -175,7 +175,7 @@ public static partial class DefinitionBaseExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSharedSizeGroup<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingSharedSizeGroup<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.DefinitionBase.SharedSizeGroupProperty);
         handler(obj, observable);

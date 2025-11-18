@@ -20,7 +20,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable value) where T : Avalonia.Controls.MenuFlyout
+    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable? value) where T : Avalonia.Controls.MenuFlyout
     {
         return builder.WithValue(PropertyMetadata.MenuFlyout_ItemsSource, Avalonia.Controls.MenuFlyout.ItemsSourceProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -69,7 +69,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.MenuFlyout
+    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable? value) where T : Avalonia.Controls.MenuFlyout
     {
         obj[Avalonia.Controls.MenuFlyout.ItemsSourceProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsSource<T>(
         this T obj,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -139,7 +139,7 @@ public static partial class MenuFlyoutExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.IEnumerable> ObserveItemsSource(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<System.Collections.IEnumerable?> ObserveItemsSource(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
     }
@@ -151,7 +151,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<System.Collections.IEnumerable?>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class MenuFlyoutExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<BindingValue<System.Collections.IEnumerable?>> ObserveBindingItemsSource(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
     }
@@ -175,7 +175,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<System.Collections.IEnumerable?>>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.MenuFlyout
+    public static ElementBuilder<T> ItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.MenuFlyout
     {
         return builder.WithValue(PropertyMetadata.MenuFlyout_ItemTemplate, Avalonia.Controls.MenuFlyout.ItemTemplateProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -263,7 +263,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.MenuFlyout
+    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.MenuFlyout
     {
         obj[Avalonia.Controls.MenuFlyout.ItemTemplateProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -333,7 +333,7 @@ public static partial class MenuFlyoutExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveItemTemplate(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
     }
@@ -345,7 +345,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class MenuFlyoutExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingItemTemplate(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingItemTemplate(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
     }
@@ -369,7 +369,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemContainerTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.MenuFlyout
+    public static ElementBuilder<T> ItemContainerTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.MenuFlyout
     {
         return builder.WithValue(PropertyMetadata.MenuFlyout_ItemContainerTheme, Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemContainerTheme<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -457,7 +457,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemContainerTheme<T>(this T obj, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.MenuFlyout
+    public static T ItemContainerTheme<T>(this T obj, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.MenuFlyout
     {
         obj[Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemContainerTheme<T>(
         this T obj,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -527,7 +527,7 @@ public static partial class MenuFlyoutExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Styling.ControlTheme> ObserveItemContainerTheme(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<Avalonia.Styling.ControlTheme?> ObserveItemContainerTheme(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
     }
@@ -539,7 +539,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Styling.ControlTheme?>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class MenuFlyoutExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingItemContainerTheme(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme?>> ObserveBindingItemContainerTheme(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
     }
@@ -563,7 +563,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnBindingItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme?>>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> FlyoutPresenterTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.MenuFlyout
+    public static ElementBuilder<T> FlyoutPresenterTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.MenuFlyout
     {
         return builder.WithValue(PropertyMetadata.MenuFlyout_FlyoutPresenterTheme, Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FlyoutPresenterTheme<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -651,7 +651,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FlyoutPresenterTheme<T>(this T obj, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.MenuFlyout
+    public static T FlyoutPresenterTheme<T>(this T obj, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.MenuFlyout
     {
         obj[Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class MenuFlyoutExtensions
     /// <returns>The target object reference.</returns>
     public static T FlyoutPresenterTheme<T>(
         this T obj,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.MenuFlyout
     {
@@ -721,7 +721,7 @@ public static partial class MenuFlyoutExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Styling.ControlTheme> ObserveFlyoutPresenterTheme(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<Avalonia.Styling.ControlTheme?> ObserveFlyoutPresenterTheme(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
     }
@@ -733,7 +733,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<Avalonia.Styling.ControlTheme?>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class MenuFlyoutExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingFlyoutPresenterTheme(this Avalonia.Controls.MenuFlyout obj)
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme?>> ObserveBindingFlyoutPresenterTheme(this Avalonia.Controls.MenuFlyout obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
     }
@@ -757,7 +757,7 @@ public static partial class MenuFlyoutExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.MenuFlyout
+    public static T OnBindingFlyoutPresenterTheme<T>(this T obj, Action<Avalonia.Controls.MenuFlyout, IObservable<BindingValue<Avalonia.Styling.ControlTheme?>>> handler) where T : Avalonia.Controls.MenuFlyout
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
         handler(obj, observable);

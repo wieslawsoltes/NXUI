@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowsPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.DataGridRowsPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowsPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.DataGridRowsPresenter> DataGridRowsPresenter(out ElementRef<Avalonia.Controls.Primitives.DataGridRowsPresenter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.DataGridRowsPresenter>(TypeMetadata.Avalonia_Controls_Primitives_DataGridRowsPresenter, () => new Avalonia.Controls.Primitives.DataGridRowsPresenter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowsPresenter"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridRowsPresenter"/> class.</returns>
     public static Avalonia.Controls.Primitives.DataGridRowsPresenter DataGridRowsPresenter(out Avalonia.Controls.Primitives.DataGridRowsPresenter @ref)
         => @ref = new Avalonia.Controls.Primitives.DataGridRowsPresenter();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DrawingBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.DrawingBrush> DrawingBrush(out ElementRef<Avalonia.Media.DrawingBrush> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.DrawingBrush>(TypeMetadata.Avalonia_Media_DrawingBrush, () => new Avalonia.Media.DrawingBrush())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.</returns>
     public static Avalonia.Media.DrawingBrush DrawingBrush(out Avalonia.Media.DrawingBrush @ref)
         => @ref = new Avalonia.Media.DrawingBrush();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DrawingBrush"/> instantiated class.</param>
+    /// <param name="visual">The visual value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.DrawingBrush> DrawingBrush(out ElementRef<Avalonia.Media.DrawingBrush> @ref, Avalonia.Media.Drawing visual)
+    {
+        return ElementBuilder.Create<Avalonia.Media.DrawingBrush>(TypeMetadata.Avalonia_Media_DrawingBrush, () => new Avalonia.Media.DrawingBrush(visual))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingBrush"/> class.</returns>
     public static Avalonia.Media.DrawingBrush DrawingBrush(out Avalonia.Media.DrawingBrush @ref, Avalonia.Media.Drawing visual)
         => @ref = new Avalonia.Media.DrawingBrush(visual);
+#endif
 
 }

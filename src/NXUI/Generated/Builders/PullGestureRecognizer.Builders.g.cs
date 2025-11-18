@@ -30,6 +30,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.PullGestureRecognizer"/> instantiated class.</param>
+    /// <param name="pullDirection">The pullDirection value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Input.PullGestureRecognizer> PullGestureRecognizer(out ElementRef<Avalonia.Input.PullGestureRecognizer> @ref, Avalonia.Input.PullDirection pullDirection)
+    {
+        return ElementBuilder.Create<Avalonia.Input.PullGestureRecognizer>(TypeMetadata.Avalonia_Input_PullGestureRecognizer, () => new Avalonia.Input.PullGestureRecognizer(pullDirection))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.
     /// </summary>
@@ -38,6 +51,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.</returns>
     public static Avalonia.Input.PullGestureRecognizer PullGestureRecognizer(out Avalonia.Input.PullGestureRecognizer @ref, Avalonia.Input.PullDirection pullDirection)
         => @ref = new Avalonia.Input.PullGestureRecognizer(pullDirection);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -57,6 +71,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.PullGestureRecognizer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Input.PullGestureRecognizer> PullGestureRecognizer(out ElementRef<Avalonia.Input.PullGestureRecognizer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Input.PullGestureRecognizer>(TypeMetadata.Avalonia_Input_PullGestureRecognizer, () => new Avalonia.Input.PullGestureRecognizer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.PullGestureRecognizer"/> class.</returns>
     public static Avalonia.Input.PullGestureRecognizer PullGestureRecognizer(out Avalonia.Input.PullGestureRecognizer @ref)
         => @ref = new Avalonia.Input.PullGestureRecognizer();
+#endif
 
 }

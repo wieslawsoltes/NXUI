@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TreeDataGridExpanderCell> TreeDataGridExpanderCell(out ElementRef<Avalonia.Controls.Primitives.TreeDataGridExpanderCell> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TreeDataGridExpanderCell>(TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridExpanderCell, () => new Avalonia.Controls.Primitives.TreeDataGridExpanderCell())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell"/> class.</returns>
     public static Avalonia.Controls.Primitives.TreeDataGridExpanderCell TreeDataGridExpanderCell(out Avalonia.Controls.Primitives.TreeDataGridExpanderCell @ref)
         => @ref = new Avalonia.Controls.Primitives.TreeDataGridExpanderCell();
+#endif
 
 }

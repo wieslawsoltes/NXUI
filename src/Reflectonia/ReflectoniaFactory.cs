@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using Avalonia;
 using Reflectonia.Model;
 
@@ -6,6 +7,8 @@ namespace Reflectonia;
 
 public class ReflectoniaFactory
 {
+    private static readonly NullabilityInfoContext NullabilityContext = new();
+
     public ReflectoniaFactory(IReflectoniaLog log)
     {
         Log = log;
@@ -190,6 +193,8 @@ public class ReflectoniaFactory
                 isEnum = true;
             }
 
+            var valueNullability = GetValueNullability(fieldInfo);
+
             var p = new Property(
                 propertyName,
                 ownerType,
@@ -198,12 +203,39 @@ public class ReflectoniaFactory
                 alreadyExists,
                 property.IsReadOnly,
                 isEnum,
-                isEnum ? enumNames.ToArray() : null);
+                isEnum ? enumNames.ToArray() : null,
+                valueNullability);
             properties.Add(p);
             Log.Info($"Added `{classType.Name}.{propertyName}Property` property.");
         }
 
         return properties;
+    }
+
+    private static NullabilityInfo? GetValueNullability(FieldInfo fieldInfo)
+    {
+        if (!fieldInfo.FieldType.IsGenericType)
+        {
+            return null;
+        }
+
+        NullabilityInfo info;
+        try
+        {
+            info = NullabilityContext.Create(fieldInfo);
+        }
+        catch (NotSupportedException)
+        {
+            return null;
+        }
+
+        var arguments = info.GenericTypeArguments;
+        if (arguments.Length == 0)
+        {
+            return null;
+        }
+
+        return arguments[^1];
     }
 
     private List<Event> GetEvents(Type classType, ReflectoniaRegistry registry)

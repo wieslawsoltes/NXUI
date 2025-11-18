@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ListBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ListBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ListBox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ListBox> ListBox(out ElementRef<Avalonia.Controls.ListBox> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ListBox>(TypeMetadata.Avalonia_Controls_ListBox, () => new Avalonia.Controls.ListBox())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ListBox"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ListBox"/> class.</returns>
     public static Avalonia.Controls.ListBox ListBox(out Avalonia.Controls.ListBox @ref)
         => @ref = new Avalonia.Controls.ListBox();
+#endif
 
 }

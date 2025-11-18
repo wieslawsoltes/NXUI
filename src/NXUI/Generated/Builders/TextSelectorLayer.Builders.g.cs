@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectorLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TextSelectorLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectorLayer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TextSelectorLayer> TextSelectorLayer(out ElementRef<Avalonia.Controls.Primitives.TextSelectorLayer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TextSelectorLayer>(TypeMetadata.Avalonia_Controls_Primitives_TextSelectorLayer, () => new Avalonia.Controls.Primitives.TextSelectorLayer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectorLayer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TextSelectorLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.TextSelectorLayer TextSelectorLayer(out Avalonia.Controls.Primitives.TextSelectorLayer @ref)
         => @ref = new Avalonia.Controls.Primitives.TextSelectorLayer();
+#endif
 
 }

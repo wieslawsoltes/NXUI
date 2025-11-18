@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageDrawing"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageDrawing(out ElementRef<Avalonia.Media.ImageDrawing> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.ImageDrawing>(TypeMetadata.Avalonia_Media_ImageDrawing, () => new Avalonia.Media.ImageDrawing())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageDrawing"/> class.</returns>
     public static Avalonia.Media.ImageDrawing ImageDrawing(out Avalonia.Media.ImageDrawing @ref)
         => @ref = new Avalonia.Media.ImageDrawing();
+#endif
 
 }

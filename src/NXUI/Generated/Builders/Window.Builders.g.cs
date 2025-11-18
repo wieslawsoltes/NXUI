@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Window"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Window"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Window"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Window> Window(out ElementRef<Avalonia.Controls.Window> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Window>(TypeMetadata.Avalonia_Controls_Window, () => new Avalonia.Controls.Window())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Window"/> class.</returns>
     public static Avalonia.Controls.Window Window(out Avalonia.Controls.Window @ref)
         => @ref = new Avalonia.Controls.Window();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Window"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Window"/> instantiated class.</param>
+    /// <param name="impl">The impl value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Window"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Window> Window(out ElementRef<Avalonia.Controls.Window> @ref, Avalonia.Platform.IWindowImpl impl)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Window>(TypeMetadata.Avalonia_Controls_Window, () => new Avalonia.Controls.Window(impl))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Window"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Window"/> class.</returns>
     public static Avalonia.Controls.Window Window(out Avalonia.Controls.Window @ref, Avalonia.Platform.IWindowImpl impl)
         => @ref = new Avalonia.Controls.Window(impl);
+#endif
 
 }

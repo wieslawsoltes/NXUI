@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.BoxShadowsTransition> BoxShadowsTransition(out ElementRef<Avalonia.Animation.BoxShadowsTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.BoxShadowsTransition>(TypeMetadata.Avalonia_Animation_BoxShadowsTransition, () => new Avalonia.Animation.BoxShadowsTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.BoxShadowsTransition"/> class.</returns>
     public static Avalonia.Animation.BoxShadowsTransition BoxShadowsTransition(out Avalonia.Animation.BoxShadowsTransition @ref)
         => @ref = new Avalonia.Animation.BoxShadowsTransition();
+#endif
 
 }

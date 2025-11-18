@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.EffectTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.EffectTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.EffectTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.EffectTransition> EffectTransition(out ElementRef<Avalonia.Animation.EffectTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.EffectTransition>(TypeMetadata.Avalonia_Animation_EffectTransition, () => new Avalonia.Animation.EffectTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.EffectTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.EffectTransition"/> class.</returns>
     public static Avalonia.Animation.EffectTransition EffectTransition(out Avalonia.Animation.EffectTransition @ref)
         => @ref = new Avalonia.Animation.EffectTransition();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.VisualLayerManager> VisualLayerManager(out ElementRef<Avalonia.Controls.Primitives.VisualLayerManager> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.VisualLayerManager>(TypeMetadata.Avalonia_Controls_Primitives_VisualLayerManager, () => new Avalonia.Controls.Primitives.VisualLayerManager())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class.</returns>
     public static Avalonia.Controls.Primitives.VisualLayerManager VisualLayerManager(out Avalonia.Controls.Primitives.VisualLayerManager @ref)
         => @ref = new Avalonia.Controls.Primitives.VisualLayerManager();
+#endif
 
 }

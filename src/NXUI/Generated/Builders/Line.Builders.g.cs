@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Line"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Shapes.Line> Line(out ElementRef<Avalonia.Controls.Shapes.Line> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Shapes.Line>(TypeMetadata.Avalonia_Controls_Shapes_Line, () => new Avalonia.Controls.Shapes.Line())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Line"/> class.</returns>
     public static Avalonia.Controls.Shapes.Line Line(out Avalonia.Controls.Shapes.Line @ref)
         => @ref = new Avalonia.Controls.Shapes.Line();
+#endif
 
 }

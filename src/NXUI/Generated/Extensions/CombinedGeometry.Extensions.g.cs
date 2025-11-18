@@ -20,7 +20,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Geometry1<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry value) where T : Avalonia.Media.CombinedGeometry
+    public static ElementBuilder<T> Geometry1<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry? value) where T : Avalonia.Media.CombinedGeometry
     {
         return builder.WithValue(PropertyMetadata.CombinedGeometry_Geometry1, Avalonia.Media.CombinedGeometry.Geometry1Property, value);
     }
@@ -52,7 +52,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Geometry1<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -69,7 +69,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Geometry1<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Media.CombinedGeometry
+    public static T Geometry1<T>(this T obj, Avalonia.Media.Geometry? value) where T : Avalonia.Media.CombinedGeometry
     {
         obj[Avalonia.Media.CombinedGeometry.Geometry1Property] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Geometry1<T>(
         this T obj,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -139,7 +139,7 @@ public static partial class CombinedGeometryExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Geometry> ObserveGeometry1(this Avalonia.Media.CombinedGeometry obj)
+    public static IObservable<Avalonia.Media.Geometry?> ObserveGeometry1(this Avalonia.Media.CombinedGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
     }
@@ -151,7 +151,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnGeometry1<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
+    public static T OnGeometry1<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.Geometry?>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class CombinedGeometryExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingGeometry1(this Avalonia.Media.CombinedGeometry obj)
+    public static IObservable<BindingValue<Avalonia.Media.Geometry?>> ObserveBindingGeometry1(this Avalonia.Media.CombinedGeometry obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
     }
@@ -175,7 +175,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingGeometry1<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Media.CombinedGeometry
+    public static T OnBindingGeometry1<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<BindingValue<Avalonia.Media.Geometry?>>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry1Property);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Geometry2<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry value) where T : Avalonia.Media.CombinedGeometry
+    public static ElementBuilder<T> Geometry2<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry? value) where T : Avalonia.Media.CombinedGeometry
     {
         return builder.WithValue(PropertyMetadata.CombinedGeometry_Geometry2, Avalonia.Media.CombinedGeometry.Geometry2Property, value);
     }
@@ -246,7 +246,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Geometry2<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -263,7 +263,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Geometry2<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Media.CombinedGeometry
+    public static T Geometry2<T>(this T obj, Avalonia.Media.Geometry? value) where T : Avalonia.Media.CombinedGeometry
     {
         obj[Avalonia.Media.CombinedGeometry.Geometry2Property] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class CombinedGeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Geometry2<T>(
         this T obj,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.CombinedGeometry
     {
@@ -333,7 +333,7 @@ public static partial class CombinedGeometryExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Geometry> ObserveGeometry2(this Avalonia.Media.CombinedGeometry obj)
+    public static IObservable<Avalonia.Media.Geometry?> ObserveGeometry2(this Avalonia.Media.CombinedGeometry obj)
     {
         return obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
     }
@@ -345,7 +345,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnGeometry2<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Media.CombinedGeometry
+    public static T OnGeometry2<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<Avalonia.Media.Geometry?>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class CombinedGeometryExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingGeometry2(this Avalonia.Media.CombinedGeometry obj)
+    public static IObservable<BindingValue<Avalonia.Media.Geometry?>> ObserveBindingGeometry2(this Avalonia.Media.CombinedGeometry obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
     }
@@ -369,7 +369,7 @@ public static partial class CombinedGeometryExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingGeometry2<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Media.CombinedGeometry
+    public static T OnBindingGeometry2<T>(this T obj, Action<Avalonia.Media.CombinedGeometry, IObservable<BindingValue<Avalonia.Media.Geometry?>>> handler) where T : Avalonia.Media.CombinedGeometry
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.CombinedGeometry.Geometry2Property);
         handler(obj, observable);

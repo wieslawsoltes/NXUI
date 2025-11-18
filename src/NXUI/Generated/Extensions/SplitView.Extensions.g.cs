@@ -896,7 +896,7 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PaneBackground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SplitView
+    public static ElementBuilder<T> PaneBackground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SplitView
     {
         return builder.WithValue(PropertyMetadata.SplitView_PaneBackground, Avalonia.Controls.SplitView.PaneBackgroundProperty, value);
     }
@@ -928,7 +928,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaneBackground<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -945,7 +945,7 @@ public static partial class SplitViewExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PaneBackground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SplitView
+    public static T PaneBackground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.PaneBackgroundProperty] = value;
         return obj;
@@ -982,7 +982,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T PaneBackground<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1015,7 +1015,7 @@ public static partial class SplitViewExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObservePaneBackground(this Avalonia.Controls.SplitView obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObservePaneBackground(this Avalonia.Controls.SplitView obj)
     {
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
     }
@@ -1027,7 +1027,7 @@ public static partial class SplitViewExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPaneBackground<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnPaneBackground<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
         handler(obj, observable);
@@ -1039,7 +1039,7 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingPaneBackground(this Avalonia.Controls.SplitView obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingPaneBackground(this Avalonia.Controls.SplitView obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
     }
@@ -1051,7 +1051,7 @@ public static partial class SplitViewExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPaneBackground<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnBindingPaneBackground<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneBackgroundProperty);
         handler(obj, observable);
@@ -1334,7 +1334,7 @@ public static partial class SplitViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Pane<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.SplitView
+    public static ElementBuilder<T> Pane<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.SplitView
     {
         return builder.WithValue(PropertyMetadata.SplitView_Pane, Avalonia.Controls.SplitView.PaneProperty, value);
     }
@@ -1366,7 +1366,7 @@ public static partial class SplitViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Pane<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1383,7 +1383,7 @@ public static partial class SplitViewExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Pane<T>(this T obj, System.Object value) where T : Avalonia.Controls.SplitView
+    public static T Pane<T>(this T obj, System.Object? value) where T : Avalonia.Controls.SplitView
     {
         obj[Avalonia.Controls.SplitView.PaneProperty] = value;
         return obj;
@@ -1420,7 +1420,7 @@ public static partial class SplitViewExtensions
     /// <returns>The target object reference.</returns>
     public static T Pane<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SplitView
     {
@@ -1453,7 +1453,7 @@ public static partial class SplitViewExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObservePane(this Avalonia.Controls.SplitView obj)
+    public static IObservable<System.Object?> ObservePane(this Avalonia.Controls.SplitView obj)
     {
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneProperty);
     }
@@ -1465,7 +1465,7 @@ public static partial class SplitViewExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPane<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Object>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnPane<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<System.Object?>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetObservable(Avalonia.Controls.SplitView.PaneProperty);
         handler(obj, observable);
@@ -1477,7 +1477,7 @@ public static partial class SplitViewExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingPane(this Avalonia.Controls.SplitView obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingPane(this Avalonia.Controls.SplitView obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneProperty);
     }
@@ -1489,7 +1489,7 @@ public static partial class SplitViewExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPane<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.SplitView
+    public static T OnBindingPane<T>(this T obj, Action<Avalonia.Controls.SplitView, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.SplitView
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.SplitView.PaneProperty);
         handler(obj, observable);

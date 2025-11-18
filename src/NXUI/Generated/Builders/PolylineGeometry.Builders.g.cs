@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolylineGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PolylineGeometry> PolylineGeometry(out ElementRef<Avalonia.Media.PolylineGeometry> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PolylineGeometry>(TypeMetadata.Avalonia_Media_PolylineGeometry, () => new Avalonia.Media.PolylineGeometry())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.</returns>
     public static Avalonia.Media.PolylineGeometry PolylineGeometry(out Avalonia.Media.PolylineGeometry @ref)
         => @ref = new Avalonia.Media.PolylineGeometry();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolylineGeometry"/> instantiated class.</param>
+    /// <param name="points">The points value.</param>
+    /// <param name="isFilled">The isFilled value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PolylineGeometry> PolylineGeometry(out ElementRef<Avalonia.Media.PolylineGeometry> @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points, System.Boolean isFilled)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PolylineGeometry>(TypeMetadata.Avalonia_Media_PolylineGeometry, () => new Avalonia.Media.PolylineGeometry(points, isFilled))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolylineGeometry"/> class.</returns>
     public static Avalonia.Media.PolylineGeometry PolylineGeometry(out Avalonia.Media.PolylineGeometry @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points, System.Boolean isFilled)
         => @ref = new Avalonia.Media.PolylineGeometry(points, isFilled);
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Style"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.Style> Style(out ElementRef<Avalonia.Styling.Style> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.Style>(TypeMetadata.Avalonia_Styling_Style, () => new Avalonia.Styling.Style())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
     public static Avalonia.Styling.Style Style(out Avalonia.Styling.Style @ref)
         => @ref = new Avalonia.Styling.Style();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Style"/> instantiated class.</param>
+    /// <param name="selector">The selector value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.Style> Style(out ElementRef<Avalonia.Styling.Style> @ref, System.Func<Avalonia.Styling.Selector,Avalonia.Styling.Selector> selector)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.Style>(TypeMetadata.Avalonia_Styling_Style, () => new Avalonia.Styling.Style(selector))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.Style"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Style"/> class.</returns>
     public static Avalonia.Styling.Style Style(out Avalonia.Styling.Style @ref, System.Func<Avalonia.Styling.Selector,Avalonia.Styling.Selector> selector)
         => @ref = new Avalonia.Styling.Style(selector);
+#endif
 
 }

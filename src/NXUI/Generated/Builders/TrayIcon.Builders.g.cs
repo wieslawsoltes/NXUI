@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TrayIcon"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TrayIcon"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TrayIcon"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TrayIcon> TrayIcon(out ElementRef<Avalonia.Controls.TrayIcon> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TrayIcon>(TypeMetadata.Avalonia_Controls_TrayIcon, () => new Avalonia.Controls.TrayIcon())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TrayIcon"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TrayIcon"/> class.</returns>
     public static Avalonia.Controls.TrayIcon TrayIcon(out Avalonia.Controls.TrayIcon @ref)
         => @ref = new Avalonia.Controls.TrayIcon();
+#endif
 
 }

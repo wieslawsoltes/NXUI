@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RectangleGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.RectangleGeometry> RectangleGeometry(out ElementRef<Avalonia.Media.RectangleGeometry> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.RectangleGeometry>(TypeMetadata.Avalonia_Media_RectangleGeometry, () => new Avalonia.Media.RectangleGeometry())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
     public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref)
         => @ref = new Avalonia.Media.RectangleGeometry();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RectangleGeometry"/> instantiated class.</param>
+    /// <param name="rect">The rect value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.RectangleGeometry> RectangleGeometry(out ElementRef<Avalonia.Media.RectangleGeometry> @ref, Avalonia.Rect rect)
+    {
+        return ElementBuilder.Create<Avalonia.Media.RectangleGeometry>(TypeMetadata.Avalonia_Media_RectangleGeometry, () => new Avalonia.Media.RectangleGeometry(rect))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
     /// </summary>
@@ -64,6 +90,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
     public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref, Avalonia.Rect rect)
         => @ref = new Avalonia.Media.RectangleGeometry(rect);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -89,6 +116,21 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RectangleGeometry"/> instantiated class.</param>
+    /// <param name="rect">The rect value.</param>
+    /// <param name="radiusX">The radiusX value.</param>
+    /// <param name="radiusY">The radiusY value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.RectangleGeometry> RectangleGeometry(out ElementRef<Avalonia.Media.RectangleGeometry> @ref, Avalonia.Rect rect, System.Double radiusX, System.Double radiusY)
+    {
+        return ElementBuilder.Create<Avalonia.Media.RectangleGeometry>(TypeMetadata.Avalonia_Media_RectangleGeometry, () => new Avalonia.Media.RectangleGeometry(rect, radiusX, radiusY))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.
     /// </summary>
@@ -99,5 +141,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RectangleGeometry"/> class.</returns>
     public static Avalonia.Media.RectangleGeometry RectangleGeometry(out Avalonia.Media.RectangleGeometry @ref, Avalonia.Rect rect, System.Double radiusX, System.Double radiusY)
         => @ref = new Avalonia.Media.RectangleGeometry(rect, radiusX, radiusY);
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Canvas"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Canvas"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Canvas"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Canvas> Canvas(out ElementRef<Avalonia.Controls.Canvas> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Canvas>(TypeMetadata.Avalonia_Controls_Canvas, () => new Avalonia.Controls.Canvas())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Canvas"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Canvas"/> class.</returns>
     public static Avalonia.Controls.Canvas Canvas(out Avalonia.Controls.Canvas @ref)
         => @ref = new Avalonia.Controls.Canvas();
+#endif
 
 }

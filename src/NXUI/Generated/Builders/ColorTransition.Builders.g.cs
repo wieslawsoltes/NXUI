@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.ColorTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.ColorTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.ColorTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.ColorTransition> ColorTransition(out ElementRef<Avalonia.Animation.ColorTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.ColorTransition>(TypeMetadata.Avalonia_Animation_ColorTransition, () => new Avalonia.Animation.ColorTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.ColorTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.ColorTransition"/> class.</returns>
     public static Avalonia.Animation.ColorTransition ColorTransition(out Avalonia.Animation.ColorTransition @ref)
         => @ref = new Avalonia.Animation.ColorTransition();
+#endif
 
 }

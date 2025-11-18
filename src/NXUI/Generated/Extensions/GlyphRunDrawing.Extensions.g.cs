@@ -20,7 +20,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.IBrush value)
+    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.GlyphRunDrawing_Foreground, Avalonia.Media.GlyphRunDrawing.ForegroundProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(
         this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.GlyphRunDrawing Foreground(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Media.IBrush value)
+    public static Avalonia.Media.GlyphRunDrawing Foreground(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Media.IBrush? value)
     {
         obj[Avalonia.Media.GlyphRunDrawing.ForegroundProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GlyphRunDrawing Foreground(
         this Avalonia.Media.GlyphRunDrawing obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Media.GlyphRunDrawing obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveForeground(this Avalonia.Media.GlyphRunDrawing obj)
     {
         return obj.GetObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
     }
@@ -146,7 +146,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GlyphRunDrawing OnForeground(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<Avalonia.Media.IBrush>> handler)
+    public static Avalonia.Media.GlyphRunDrawing OnForeground(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<Avalonia.Media.IBrush?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class GlyphRunDrawingExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Media.GlyphRunDrawing obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingForeground(this Avalonia.Media.GlyphRunDrawing obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
     }
@@ -169,7 +169,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GlyphRunDrawing OnBindingForeground(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    public static Avalonia.Media.GlyphRunDrawing OnBindingForeground(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
         handler(obj, observable);
@@ -207,7 +207,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.GlyphRun value)
+    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.GlyphRun? value)
     {
         return builder.WithValue(PropertyMetadata.GlyphRunDrawing_GlyphRun, Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, value);
     }
@@ -239,7 +239,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(
         this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
-        IObservable<Avalonia.Media.GlyphRun> observable,
+        IObservable<Avalonia.Media.GlyphRun?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -255,7 +255,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.GlyphRunDrawing GlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Media.GlyphRun value)
+    public static Avalonia.Media.GlyphRunDrawing GlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Avalonia.Media.GlyphRun? value)
     {
         obj[Avalonia.Media.GlyphRunDrawing.GlyphRunProperty] = value;
         return obj;
@@ -290,7 +290,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GlyphRunDrawing GlyphRun(
         this Avalonia.Media.GlyphRunDrawing obj,
-        IObservable<Avalonia.Media.GlyphRun> observable,
+        IObservable<Avalonia.Media.GlyphRun?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -322,7 +322,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.GlyphRun> ObserveGlyphRun(this Avalonia.Media.GlyphRunDrawing obj)
+    public static IObservable<Avalonia.Media.GlyphRun?> ObserveGlyphRun(this Avalonia.Media.GlyphRunDrawing obj)
     {
         return obj.GetObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
     }
@@ -333,7 +333,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GlyphRunDrawing OnGlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<Avalonia.Media.GlyphRun>> handler)
+    public static Avalonia.Media.GlyphRunDrawing OnGlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<Avalonia.Media.GlyphRun?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
         handler(obj, observable);
@@ -345,7 +345,7 @@ public static partial class GlyphRunDrawingExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.GlyphRun>> ObserveBindingGlyphRun(this Avalonia.Media.GlyphRunDrawing obj)
+    public static IObservable<BindingValue<Avalonia.Media.GlyphRun?>> ObserveBindingGlyphRun(this Avalonia.Media.GlyphRunDrawing obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
     }
@@ -356,7 +356,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GlyphRunDrawing OnBindingGlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<BindingValue<Avalonia.Media.GlyphRun>>> handler)
+    public static Avalonia.Media.GlyphRunDrawing OnBindingGlyphRun(this Avalonia.Media.GlyphRunDrawing obj, Action<Avalonia.Media.GlyphRunDrawing, IObservable<BindingValue<Avalonia.Media.GlyphRun?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
         handler(obj, observable);

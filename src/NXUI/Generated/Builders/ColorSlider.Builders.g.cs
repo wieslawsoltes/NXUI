@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ColorSlider"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ColorSlider"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ColorSlider"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.ColorSlider> ColorSlider(out ElementRef<Avalonia.Controls.Primitives.ColorSlider> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.ColorSlider>(TypeMetadata.Avalonia_Controls_Primitives_ColorSlider, () => new Avalonia.Controls.Primitives.ColorSlider())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ColorSlider"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ColorSlider"/> class.</returns>
     public static Avalonia.Controls.Primitives.ColorSlider ColorSlider(out Avalonia.Controls.Primitives.ColorSlider @ref)
         => @ref = new Avalonia.Controls.Primitives.ColorSlider();
+#endif
 
 }

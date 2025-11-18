@@ -20,7 +20,7 @@ public static partial class ApplicationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> DataContext<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Application
+    public static ElementBuilder<T> DataContext<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Application
     {
         return builder.WithValue(PropertyMetadata.Application_DataContext, Avalonia.Application.DataContextProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ApplicationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DataContext<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -69,7 +69,7 @@ public static partial class ApplicationExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T DataContext<T>(this T obj, System.Object value) where T : Avalonia.Application
+    public static T DataContext<T>(this T obj, System.Object? value) where T : Avalonia.Application
     {
         obj[Avalonia.Application.DataContextProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ApplicationExtensions
     /// <returns>The target object reference.</returns>
     public static T DataContext<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -139,7 +139,7 @@ public static partial class ApplicationExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveDataContext(this Avalonia.Application obj)
+    public static IObservable<System.Object?> ObserveDataContext(this Avalonia.Application obj)
     {
         return obj.GetObservable(Avalonia.Application.DataContextProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ApplicationExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnDataContext<T>(this T obj, Action<Avalonia.Application, IObservable<System.Object>> handler) where T : Avalonia.Application
+    public static T OnDataContext<T>(this T obj, Action<Avalonia.Application, IObservable<System.Object?>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Application.DataContextProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ApplicationExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingDataContext(this Avalonia.Application obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingDataContext(this Avalonia.Application obj)
     {
         return obj.GetBindingObservable(Avalonia.Application.DataContextProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ApplicationExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingDataContext<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Application
+    public static T OnBindingDataContext<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetBindingObservable(Avalonia.Application.DataContextProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class ApplicationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> RequestedThemeVariant<T>(this ElementBuilder<T> builder, Avalonia.Styling.ThemeVariant value) where T : Avalonia.Application
+    public static ElementBuilder<T> RequestedThemeVariant<T>(this ElementBuilder<T> builder, Avalonia.Styling.ThemeVariant? value) where T : Avalonia.Application
     {
         return builder.WithValue(PropertyMetadata.Application_RequestedThemeVariant, Avalonia.Application.RequestedThemeVariantProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class ApplicationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RequestedThemeVariant<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Styling.ThemeVariant> observable,
+        IObservable<Avalonia.Styling.ThemeVariant?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -457,7 +457,7 @@ public static partial class ApplicationExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T RequestedThemeVariant<T>(this T obj, Avalonia.Styling.ThemeVariant value) where T : Avalonia.Application
+    public static T RequestedThemeVariant<T>(this T obj, Avalonia.Styling.ThemeVariant? value) where T : Avalonia.Application
     {
         obj[Avalonia.Application.RequestedThemeVariantProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class ApplicationExtensions
     /// <returns>The target object reference.</returns>
     public static T RequestedThemeVariant<T>(
         this T obj,
-        IObservable<Avalonia.Styling.ThemeVariant> observable,
+        IObservable<Avalonia.Styling.ThemeVariant?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -527,7 +527,7 @@ public static partial class ApplicationExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Styling.ThemeVariant> ObserveRequestedThemeVariant(this Avalonia.Application obj)
+    public static IObservable<Avalonia.Styling.ThemeVariant?> ObserveRequestedThemeVariant(this Avalonia.Application obj)
     {
         return obj.GetObservable(Avalonia.Application.RequestedThemeVariantProperty);
     }
@@ -539,7 +539,7 @@ public static partial class ApplicationExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnRequestedThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Styling.ThemeVariant>> handler) where T : Avalonia.Application
+    public static T OnRequestedThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Styling.ThemeVariant?>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Application.RequestedThemeVariantProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class ApplicationExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Styling.ThemeVariant>> ObserveBindingRequestedThemeVariant(this Avalonia.Application obj)
+    public static IObservable<BindingValue<Avalonia.Styling.ThemeVariant?>> ObserveBindingRequestedThemeVariant(this Avalonia.Application obj)
     {
         return obj.GetBindingObservable(Avalonia.Application.RequestedThemeVariantProperty);
     }
@@ -563,7 +563,7 @@ public static partial class ApplicationExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingRequestedThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<Avalonia.Styling.ThemeVariant>>> handler) where T : Avalonia.Application
+    public static T OnBindingRequestedThemeVariant<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<Avalonia.Styling.ThemeVariant?>>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetBindingObservable(Avalonia.Application.RequestedThemeVariantProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class ApplicationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Name<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Application
+    public static ElementBuilder<T> Name<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Application
     {
         return builder.WithValue(PropertyMetadata.Application_Name, Avalonia.Application.NameProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class ApplicationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Name<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -651,7 +651,7 @@ public static partial class ApplicationExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Name<T>(this T obj, System.String value) where T : Avalonia.Application
+    public static T Name<T>(this T obj, System.String? value) where T : Avalonia.Application
     {
         obj[Avalonia.Application.NameProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class ApplicationExtensions
     /// <returns>The target object reference.</returns>
     public static T Name<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -721,7 +721,7 @@ public static partial class ApplicationExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveName(this Avalonia.Application obj)
+    public static IObservable<System.String?> ObserveName(this Avalonia.Application obj)
     {
         return obj.GetObservable(Avalonia.Application.NameProperty);
     }
@@ -733,7 +733,7 @@ public static partial class ApplicationExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnName<T>(this T obj, Action<Avalonia.Application, IObservable<System.String>> handler) where T : Avalonia.Application
+    public static T OnName<T>(this T obj, Action<Avalonia.Application, IObservable<System.String?>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Application.NameProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class ApplicationExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingName(this Avalonia.Application obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingName(this Avalonia.Application obj)
     {
         return obj.GetBindingObservable(Avalonia.Application.NameProperty);
     }
@@ -757,7 +757,7 @@ public static partial class ApplicationExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingName<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Application
+    public static T OnBindingName<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetBindingObservable(Avalonia.Application.NameProperty);
         handler(obj, observable);

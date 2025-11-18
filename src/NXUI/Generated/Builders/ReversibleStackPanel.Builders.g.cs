@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ReversibleStackPanel> ReversibleStackPanel(out ElementRef<Avalonia.Controls.ReversibleStackPanel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ReversibleStackPanel>(TypeMetadata.Avalonia_Controls_ReversibleStackPanel, () => new Avalonia.Controls.ReversibleStackPanel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ReversibleStackPanel"/> class.</returns>
     public static Avalonia.Controls.ReversibleStackPanel ReversibleStackPanel(out Avalonia.Controls.ReversibleStackPanel @ref)
         => @ref = new Avalonia.Controls.ReversibleStackPanel();
+#endif
 
 }

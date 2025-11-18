@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Run"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.Run> Run(out ElementRef<Avalonia.Controls.Documents.Run> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.Run>(TypeMetadata.Avalonia_Controls_Documents_Run, () => new Avalonia.Controls.Documents.Run())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.</returns>
     public static Avalonia.Controls.Documents.Run Run(out Avalonia.Controls.Documents.Run @ref)
         => @ref = new Avalonia.Controls.Documents.Run();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Run"/> instantiated class.</param>
+    /// <param name="text">The text value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.Run> Run(out ElementRef<Avalonia.Controls.Documents.Run> @ref, System.String text)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.Run>(TypeMetadata.Avalonia_Controls_Documents_Run, () => new Avalonia.Controls.Documents.Run(text))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Run"/> class.</returns>
     public static Avalonia.Controls.Documents.Run Run(out Avalonia.Controls.Documents.Run @ref, System.String text)
         => @ref = new Avalonia.Controls.Documents.Run(text);
+#endif
 
 }

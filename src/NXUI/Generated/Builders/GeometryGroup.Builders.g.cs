@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GeometryGroup"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.GeometryGroup> GeometryGroup(out ElementRef<Avalonia.Media.GeometryGroup> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.GeometryGroup>(TypeMetadata.Avalonia_Media_GeometryGroup, () => new Avalonia.Media.GeometryGroup())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryGroup"/> class.</returns>
     public static Avalonia.Media.GeometryGroup GeometryGroup(out Avalonia.Media.GeometryGroup @ref)
         => @ref = new Avalonia.Media.GeometryGroup();
+#endif
 
 }

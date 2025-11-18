@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RepeatButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RepeatButton> RepeatButton(out ElementRef<Avalonia.Controls.RepeatButton> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RepeatButton>(TypeMetadata.Avalonia_Controls_RepeatButton, () => new Avalonia.Controls.RepeatButton())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RepeatButton"/> class.</returns>
     public static Avalonia.Controls.RepeatButton RepeatButton(out Avalonia.Controls.RepeatButton @ref)
         => @ref = new Avalonia.Controls.RepeatButton();
+#endif
 
 }

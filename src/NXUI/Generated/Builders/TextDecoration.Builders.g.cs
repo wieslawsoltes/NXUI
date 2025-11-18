@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.TextDecoration"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.TextDecoration> TextDecoration(out ElementRef<Avalonia.Media.TextDecoration> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.TextDecoration>(TypeMetadata.Avalonia_Media_TextDecoration, () => new Avalonia.Media.TextDecoration())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.TextDecoration"/> class.</returns>
     public static Avalonia.Media.TextDecoration TextDecoration(out Avalonia.Media.TextDecoration @ref)
         => @ref = new Avalonia.Media.TextDecoration();
+#endif
 
 }

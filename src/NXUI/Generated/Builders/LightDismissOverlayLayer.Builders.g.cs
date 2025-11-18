@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.LightDismissOverlayLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.LightDismissOverlayLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.LightDismissOverlayLayer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.LightDismissOverlayLayer> LightDismissOverlayLayer(out ElementRef<Avalonia.Controls.Primitives.LightDismissOverlayLayer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.LightDismissOverlayLayer>(TypeMetadata.Avalonia_Controls_Primitives_LightDismissOverlayLayer, () => new Avalonia.Controls.Primitives.LightDismissOverlayLayer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.LightDismissOverlayLayer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.LightDismissOverlayLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.LightDismissOverlayLayer LightDismissOverlayLayer(out Avalonia.Controls.Primitives.LightDismissOverlayLayer @ref)
         => @ref = new Avalonia.Controls.Primitives.LightDismissOverlayLayer();
+#endif
 
 }

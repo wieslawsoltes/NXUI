@@ -20,7 +20,7 @@ public static partial class ExpanderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContentTransition<T>(this ElementBuilder<T> builder, Avalonia.Animation.IPageTransition value) where T : Avalonia.Controls.Expander
+    public static ElementBuilder<T> ContentTransition<T>(this ElementBuilder<T> builder, Avalonia.Animation.IPageTransition? value) where T : Avalonia.Controls.Expander
     {
         return builder.WithValue(PropertyMetadata.Expander_ContentTransition, Avalonia.Controls.Expander.ContentTransitionProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ExpanderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTransition<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Animation.IPageTransition> observable,
+        IObservable<Avalonia.Animation.IPageTransition?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Expander
     {
@@ -69,7 +69,7 @@ public static partial class ExpanderExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContentTransition<T>(this T obj, Avalonia.Animation.IPageTransition value) where T : Avalonia.Controls.Expander
+    public static T ContentTransition<T>(this T obj, Avalonia.Animation.IPageTransition? value) where T : Avalonia.Controls.Expander
     {
         obj[Avalonia.Controls.Expander.ContentTransitionProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ExpanderExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTransition<T>(
         this T obj,
-        IObservable<Avalonia.Animation.IPageTransition> observable,
+        IObservable<Avalonia.Animation.IPageTransition?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Expander
     {
@@ -139,7 +139,7 @@ public static partial class ExpanderExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Animation.IPageTransition> ObserveContentTransition(this Avalonia.Controls.Expander obj)
+    public static IObservable<Avalonia.Animation.IPageTransition?> ObserveContentTransition(this Avalonia.Controls.Expander obj)
     {
         return obj.GetObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ExpanderExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContentTransition<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Expander
+    public static T OnContentTransition<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<Avalonia.Animation.IPageTransition?>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ExpanderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Animation.IPageTransition>> ObserveBindingContentTransition(this Avalonia.Controls.Expander obj)
+    public static IObservable<BindingValue<Avalonia.Animation.IPageTransition?>> ObserveBindingContentTransition(this Avalonia.Controls.Expander obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ExpanderExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContentTransition<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<BindingValue<Avalonia.Animation.IPageTransition>>> handler) where T : Avalonia.Controls.Expander
+    public static T OnBindingContentTransition<T>(this T obj, Action<Avalonia.Controls.Expander, IObservable<BindingValue<Avalonia.Animation.IPageTransition?>>> handler) where T : Avalonia.Controls.Expander
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Expander.ContentTransitionProperty);
         handler(obj, observable);

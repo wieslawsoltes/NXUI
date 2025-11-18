@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.LayoutTransformControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.LayoutTransformControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.LayoutTransformControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.LayoutTransformControl> LayoutTransformControl(out ElementRef<Avalonia.Controls.LayoutTransformControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.LayoutTransformControl>(TypeMetadata.Avalonia_Controls_LayoutTransformControl, () => new Avalonia.Controls.LayoutTransformControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.LayoutTransformControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.LayoutTransformControl"/> class.</returns>
     public static Avalonia.Controls.LayoutTransformControl LayoutTransformControl(out Avalonia.Controls.LayoutTransformControl @ref)
         => @ref = new Avalonia.Controls.LayoutTransformControl();
+#endif
 
 }

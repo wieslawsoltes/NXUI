@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.CalendarItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> CalendarItem(out ElementRef<Avalonia.Controls.Primitives.CalendarItem> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.CalendarItem>(TypeMetadata.Avalonia_Controls_Primitives_CalendarItem, () => new Avalonia.Controls.Primitives.CalendarItem())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class.</returns>
     public static Avalonia.Controls.Primitives.CalendarItem CalendarItem(out Avalonia.Controls.Primitives.CalendarItem @ref)
         => @ref = new Avalonia.Controls.Primitives.CalendarItem();
+#endif
 
 }

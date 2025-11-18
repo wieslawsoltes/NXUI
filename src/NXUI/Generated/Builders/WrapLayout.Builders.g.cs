@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.WrapLayout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.</returns>
+    public static ElementBuilder<Avalonia.Layout.WrapLayout> WrapLayout(out ElementRef<Avalonia.Layout.WrapLayout> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Layout.WrapLayout>(TypeMetadata.Avalonia_Layout_WrapLayout, () => new Avalonia.Layout.WrapLayout())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.WrapLayout"/> class.</returns>
     public static Avalonia.Layout.WrapLayout WrapLayout(out Avalonia.Layout.WrapLayout @ref)
         => @ref = new Avalonia.Layout.WrapLayout();
+#endif
 
 }

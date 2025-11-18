@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DockPanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DockPanel> DockPanel(out ElementRef<Avalonia.Controls.DockPanel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DockPanel>(TypeMetadata.Avalonia_Controls_DockPanel, () => new Avalonia.Controls.DockPanel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DockPanel"/> class.</returns>
     public static Avalonia.Controls.DockPanel DockPanel(out Avalonia.Controls.DockPanel @ref)
         => @ref = new Avalonia.Controls.DockPanel();
+#endif
 
 }

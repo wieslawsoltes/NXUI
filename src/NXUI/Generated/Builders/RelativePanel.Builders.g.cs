@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RelativePanel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RelativePanel> RelativePanel(out ElementRef<Avalonia.Controls.RelativePanel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RelativePanel>(TypeMetadata.Avalonia_Controls_RelativePanel, () => new Avalonia.Controls.RelativePanel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RelativePanel"/> class.</returns>
     public static Avalonia.Controls.RelativePanel RelativePanel(out Avalonia.Controls.RelativePanel @ref)
         => @ref = new Avalonia.Controls.RelativePanel();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class ImageDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(this ElementBuilder<Avalonia.Media.ImageDrawing> builder, Avalonia.Media.IImage value)
+    public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(this ElementBuilder<Avalonia.Media.ImageDrawing> builder, Avalonia.Media.IImage? value)
     {
         return builder.WithValue(PropertyMetadata.ImageDrawing_ImageSource, Avalonia.Media.ImageDrawing.ImageSourceProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ImageDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(
         this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
-        IObservable<Avalonia.Media.IImage> observable,
+        IObservable<Avalonia.Media.IImage?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class ImageDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.ImageDrawing ImageSource(this Avalonia.Media.ImageDrawing obj, Avalonia.Media.IImage value)
+    public static Avalonia.Media.ImageDrawing ImageSource(this Avalonia.Media.ImageDrawing obj, Avalonia.Media.IImage? value)
     {
         obj[Avalonia.Media.ImageDrawing.ImageSourceProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class ImageDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ImageDrawing ImageSource(
         this Avalonia.Media.ImageDrawing obj,
-        IObservable<Avalonia.Media.IImage> observable,
+        IObservable<Avalonia.Media.IImage?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class ImageDrawingExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IImage> ObserveImageSource(this Avalonia.Media.ImageDrawing obj)
+    public static IObservable<Avalonia.Media.IImage?> ObserveImageSource(this Avalonia.Media.ImageDrawing obj)
     {
         return obj.GetObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
     }
@@ -146,7 +146,7 @@ public static partial class ImageDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.ImageDrawing OnImageSource(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Media.IImage>> handler)
+    public static Avalonia.Media.ImageDrawing OnImageSource(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<Avalonia.Media.IImage?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class ImageDrawingExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IImage>> ObserveBindingImageSource(this Avalonia.Media.ImageDrawing obj)
+    public static IObservable<BindingValue<Avalonia.Media.IImage?>> ObserveBindingImageSource(this Avalonia.Media.ImageDrawing obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
     }
@@ -169,7 +169,7 @@ public static partial class ImageDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.ImageDrawing OnBindingImageSource(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<BindingValue<Avalonia.Media.IImage>>> handler)
+    public static Avalonia.Media.ImageDrawing OnBindingImageSource(this Avalonia.Media.ImageDrawing obj, Action<Avalonia.Media.ImageDrawing, IObservable<BindingValue<Avalonia.Media.IImage?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.ImageDrawing.ImageSourceProperty);
         handler(obj, observable);

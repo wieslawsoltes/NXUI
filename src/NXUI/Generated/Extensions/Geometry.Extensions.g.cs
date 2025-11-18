@@ -20,7 +20,7 @@ public static partial class GeometryExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Transform<T>(this ElementBuilder<T> builder, Avalonia.Media.Transform value) where T : Avalonia.Media.Geometry
+    public static ElementBuilder<T> Transform<T>(this ElementBuilder<T> builder, Avalonia.Media.Transform? value) where T : Avalonia.Media.Geometry
     {
         return builder.WithValue(PropertyMetadata.Geometry_Transform, Avalonia.Media.Geometry.TransformProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class GeometryExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Transform<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Geometry
     {
@@ -69,7 +69,7 @@ public static partial class GeometryExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Transform<T>(this T obj, Avalonia.Media.Transform value) where T : Avalonia.Media.Geometry
+    public static T Transform<T>(this T obj, Avalonia.Media.Transform? value) where T : Avalonia.Media.Geometry
     {
         obj[Avalonia.Media.Geometry.TransformProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class GeometryExtensions
     /// <returns>The target object reference.</returns>
     public static T Transform<T>(
         this T obj,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Geometry
     {
@@ -139,7 +139,7 @@ public static partial class GeometryExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Media.Geometry obj)
+    public static IObservable<Avalonia.Media.Transform?> ObserveTransform(this Avalonia.Media.Geometry obj)
     {
         return obj.GetObservable(Avalonia.Media.Geometry.TransformProperty);
     }
@@ -151,7 +151,7 @@ public static partial class GeometryExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.Geometry, IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Media.Geometry
+    public static T OnTransform<T>(this T obj, Action<Avalonia.Media.Geometry, IObservable<Avalonia.Media.Transform?>> handler) where T : Avalonia.Media.Geometry
     {
         var observable = obj.GetObservable(Avalonia.Media.Geometry.TransformProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class GeometryExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Media.Geometry obj)
+    public static IObservable<BindingValue<Avalonia.Media.Transform?>> ObserveBindingTransform(this Avalonia.Media.Geometry obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.Geometry.TransformProperty);
     }
@@ -175,7 +175,7 @@ public static partial class GeometryExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Media.Geometry, IObservable<BindingValue<Avalonia.Media.Transform>>> handler) where T : Avalonia.Media.Geometry
+    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Media.Geometry, IObservable<BindingValue<Avalonia.Media.Transform?>>> handler) where T : Avalonia.Media.Geometry
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.Geometry.TransformProperty);
         handler(obj, observable);

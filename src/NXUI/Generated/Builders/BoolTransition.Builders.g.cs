@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.BoolTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.BoolTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.BoolTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.BoolTransition> BoolTransition(out ElementRef<Avalonia.Animation.BoolTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.BoolTransition>(TypeMetadata.Avalonia_Animation_BoolTransition, () => new Avalonia.Animation.BoolTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.BoolTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.BoolTransition"/> class.</returns>
     public static Avalonia.Animation.BoolTransition BoolTransition(out Avalonia.Animation.BoolTransition @ref)
         => @ref = new Avalonia.Animation.BoolTransition();
+#endif
 
 }

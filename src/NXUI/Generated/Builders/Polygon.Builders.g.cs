@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Polygon"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Polygon"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Polygon"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Shapes.Polygon> Polygon(out ElementRef<Avalonia.Controls.Shapes.Polygon> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Shapes.Polygon>(TypeMetadata.Avalonia_Controls_Shapes_Polygon, () => new Avalonia.Controls.Shapes.Polygon())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Polygon"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Polygon"/> class.</returns>
     public static Avalonia.Controls.Shapes.Polygon Polygon(out Avalonia.Controls.Shapes.Polygon @ref)
         => @ref = new Avalonia.Controls.Shapes.Polygon();
+#endif
 
 }

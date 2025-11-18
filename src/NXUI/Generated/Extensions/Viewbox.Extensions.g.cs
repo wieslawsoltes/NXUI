@@ -583,7 +583,7 @@ public static partial class ViewboxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Child<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.Viewbox
+    public static ElementBuilder<T> Child<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Viewbox
     {
         return builder.WithValue(PropertyMetadata.Viewbox_Child, Avalonia.Controls.Viewbox.ChildProperty, value);
     }
@@ -615,7 +615,7 @@ public static partial class ViewboxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Child<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -632,7 +632,7 @@ public static partial class ViewboxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Child<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.Viewbox
+    public static T Child<T>(this T obj, Avalonia.Controls.Control? value) where T : Avalonia.Controls.Viewbox
     {
         obj[Avalonia.Controls.Viewbox.ChildProperty] = value;
         return obj;
@@ -669,7 +669,7 @@ public static partial class ViewboxExtensions
     /// <returns>The target object reference.</returns>
     public static T Child<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Viewbox
     {
@@ -702,7 +702,7 @@ public static partial class ViewboxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObserveChild(this Avalonia.Controls.Viewbox obj)
+    public static IObservable<Avalonia.Controls.Control?> ObserveChild(this Avalonia.Controls.Viewbox obj)
     {
         return obj.GetObservable(Avalonia.Controls.Viewbox.ChildProperty);
     }
@@ -714,7 +714,7 @@ public static partial class ViewboxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.Viewbox
+    public static T OnChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<Avalonia.Controls.Control?>> handler) where T : Avalonia.Controls.Viewbox
     {
         var observable = obj.GetObservable(Avalonia.Controls.Viewbox.ChildProperty);
         handler(obj, observable);
@@ -726,7 +726,7 @@ public static partial class ViewboxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Viewbox obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingChild(this Avalonia.Controls.Viewbox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Viewbox.ChildProperty);
     }
@@ -738,7 +738,7 @@ public static partial class ViewboxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Viewbox
+    public static T OnBindingChild<T>(this T obj, Action<Avalonia.Controls.Viewbox, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler) where T : Avalonia.Controls.Viewbox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Viewbox.ChildProperty);
         handler(obj, observable);

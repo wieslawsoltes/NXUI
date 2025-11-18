@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Decorator"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Decorator"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Decorator"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Decorator> Decorator(out ElementRef<Avalonia.Controls.Decorator> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Decorator>(TypeMetadata.Avalonia_Controls_Decorator, () => new Avalonia.Controls.Decorator())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Decorator"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Decorator"/> class.</returns>
     public static Avalonia.Controls.Decorator Decorator(out Avalonia.Controls.Decorator @ref)
         => @ref = new Avalonia.Controls.Decorator();
+#endif
 
 }

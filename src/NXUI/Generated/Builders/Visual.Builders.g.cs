@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Visual"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Visual"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Visual"/> class.</returns>
+    public static ElementBuilder<Avalonia.Visual> Visual(out ElementRef<Avalonia.Visual> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Visual>(TypeMetadata.Avalonia_Visual, () => new Avalonia.Visual())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Visual"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Visual"/> class.</returns>
     public static Avalonia.Visual Visual(out Avalonia.Visual @ref)
         => @ref = new Avalonia.Visual();
+#endif
 
 }

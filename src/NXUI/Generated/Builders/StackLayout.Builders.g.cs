@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.StackLayout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.StackLayout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.StackLayout"/> class.</returns>
+    public static ElementBuilder<Avalonia.Layout.StackLayout> StackLayout(out ElementRef<Avalonia.Layout.StackLayout> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Layout.StackLayout>(TypeMetadata.Avalonia_Layout_StackLayout, () => new Avalonia.Layout.StackLayout())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Layout.StackLayout"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.StackLayout"/> class.</returns>
     public static Avalonia.Layout.StackLayout StackLayout(out Avalonia.Layout.StackLayout @ref)
         => @ref = new Avalonia.Layout.StackLayout();
+#endif
 
 }

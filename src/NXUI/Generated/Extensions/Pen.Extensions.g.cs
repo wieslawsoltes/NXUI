@@ -20,7 +20,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> Brush(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IBrush value)
+    public static ElementBuilder<Avalonia.Media.Pen> Brush(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.Pen_Brush, Avalonia.Media.Pen.BrushProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> Brush(
         this ElementBuilder<Avalonia.Media.Pen> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class PenExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.Pen Brush(this Avalonia.Media.Pen obj, Avalonia.Media.IBrush value)
+    public static Avalonia.Media.Pen Brush(this Avalonia.Media.Pen obj, Avalonia.Media.IBrush? value)
     {
         obj[Avalonia.Media.Pen.BrushProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen Brush(
         this Avalonia.Media.Pen obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class PenExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBrush(this Avalonia.Media.Pen obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBrush(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
     }
@@ -146,7 +146,7 @@ public static partial class PenExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.Pen OnBrush(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IBrush>> handler)
+    public static Avalonia.Media.Pen OnBrush(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IBrush?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.BrushProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBrush(this Avalonia.Media.Pen obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBrush(this Avalonia.Media.Pen obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.Pen.BrushProperty);
     }
@@ -169,7 +169,7 @@ public static partial class PenExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.Pen OnBindingBrush(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    public static Avalonia.Media.Pen OnBindingBrush(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.Pen.BrushProperty);
         handler(obj, observable);
@@ -394,7 +394,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> DashStyle(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IDashStyle value)
+    public static ElementBuilder<Avalonia.Media.Pen> DashStyle(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IDashStyle? value)
     {
         return builder.WithValue(PropertyMetadata.Pen_DashStyle, Avalonia.Media.Pen.DashStyleProperty, value);
     }
@@ -426,7 +426,7 @@ public static partial class PenExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.Pen> DashStyle(
         this ElementBuilder<Avalonia.Media.Pen> builder,
-        IObservable<Avalonia.Media.IDashStyle> observable,
+        IObservable<Avalonia.Media.IDashStyle?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -442,7 +442,7 @@ public static partial class PenExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.Pen DashStyle(this Avalonia.Media.Pen obj, Avalonia.Media.IDashStyle value)
+    public static Avalonia.Media.Pen DashStyle(this Avalonia.Media.Pen obj, Avalonia.Media.IDashStyle? value)
     {
         obj[Avalonia.Media.Pen.DashStyleProperty] = value;
         return obj;
@@ -477,7 +477,7 @@ public static partial class PenExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.Pen DashStyle(
         this Avalonia.Media.Pen obj,
-        IObservable<Avalonia.Media.IDashStyle> observable,
+        IObservable<Avalonia.Media.IDashStyle?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -509,7 +509,7 @@ public static partial class PenExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IDashStyle> ObserveDashStyle(this Avalonia.Media.Pen obj)
+    public static IObservable<Avalonia.Media.IDashStyle?> ObserveDashStyle(this Avalonia.Media.Pen obj)
     {
         return obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
     }
@@ -520,7 +520,7 @@ public static partial class PenExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.Pen OnDashStyle(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IDashStyle>> handler)
+    public static Avalonia.Media.Pen OnDashStyle(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<Avalonia.Media.IDashStyle?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.Pen.DashStyleProperty);
         handler(obj, observable);
@@ -532,7 +532,7 @@ public static partial class PenExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IDashStyle>> ObserveBindingDashStyle(this Avalonia.Media.Pen obj)
+    public static IObservable<BindingValue<Avalonia.Media.IDashStyle?>> ObserveBindingDashStyle(this Avalonia.Media.Pen obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.Pen.DashStyleProperty);
     }
@@ -543,7 +543,7 @@ public static partial class PenExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.Pen OnBindingDashStyle(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.IDashStyle>>> handler)
+    public static Avalonia.Media.Pen OnBindingDashStyle(this Avalonia.Media.Pen obj, Action<Avalonia.Media.Pen, IObservable<BindingValue<Avalonia.Media.IDashStyle?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.Pen.DashStyleProperty);
         handler(obj, observable);

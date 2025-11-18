@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.EllipseGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.EllipseGeometry> EllipseGeometry(out ElementRef<Avalonia.Media.EllipseGeometry> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.EllipseGeometry>(TypeMetadata.Avalonia_Media_EllipseGeometry, () => new Avalonia.Media.EllipseGeometry())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
     public static Avalonia.Media.EllipseGeometry EllipseGeometry(out Avalonia.Media.EllipseGeometry @ref)
         => @ref = new Avalonia.Media.EllipseGeometry();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.EllipseGeometry"/> instantiated class.</param>
+    /// <param name="rect">The rect value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.EllipseGeometry> EllipseGeometry(out ElementRef<Avalonia.Media.EllipseGeometry> @ref, Avalonia.Rect rect)
+    {
+        return ElementBuilder.Create<Avalonia.Media.EllipseGeometry>(TypeMetadata.Avalonia_Media_EllipseGeometry, () => new Avalonia.Media.EllipseGeometry(rect))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.EllipseGeometry"/> class.</returns>
     public static Avalonia.Media.EllipseGeometry EllipseGeometry(out Avalonia.Media.EllipseGeometry @ref, Avalonia.Rect rect)
         => @ref = new Avalonia.Media.EllipseGeometry(rect);
+#endif
 
 }

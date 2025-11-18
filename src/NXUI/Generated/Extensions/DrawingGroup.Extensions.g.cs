@@ -207,7 +207,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Transform value)
+    public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Transform? value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_Transform, Avalonia.Media.DrawingGroup.TransformProperty, value);
     }
@@ -239,7 +239,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -255,7 +255,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.DrawingGroup Transform(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.Transform value)
+    public static Avalonia.Media.DrawingGroup Transform(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.Transform? value)
     {
         obj[Avalonia.Media.DrawingGroup.TransformProperty] = value;
         return obj;
@@ -290,7 +290,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup Transform(
         this Avalonia.Media.DrawingGroup obj,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -322,7 +322,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Media.DrawingGroup obj)
+    public static IObservable<Avalonia.Media.Transform?> ObserveTransform(this Avalonia.Media.DrawingGroup obj)
     {
         return obj.GetObservable(Avalonia.Media.DrawingGroup.TransformProperty);
     }
@@ -333,7 +333,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingGroup OnTransform(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Transform>> handler)
+    public static Avalonia.Media.DrawingGroup OnTransform(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Transform?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.TransformProperty);
         handler(obj, observable);
@@ -345,7 +345,7 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Media.DrawingGroup obj)
+    public static IObservable<BindingValue<Avalonia.Media.Transform?>> ObserveBindingTransform(this Avalonia.Media.DrawingGroup obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.TransformProperty);
     }
@@ -356,7 +356,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingGroup OnBindingTransform(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.Transform>>> handler)
+    public static Avalonia.Media.DrawingGroup OnBindingTransform(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.Transform?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.TransformProperty);
         handler(obj, observable);
@@ -394,7 +394,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Geometry value)
+    public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Geometry? value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_ClipGeometry, Avalonia.Media.DrawingGroup.ClipGeometryProperty, value);
     }
@@ -426,7 +426,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -442,7 +442,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.DrawingGroup ClipGeometry(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.Geometry value)
+    public static Avalonia.Media.DrawingGroup ClipGeometry(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.Geometry? value)
     {
         obj[Avalonia.Media.DrawingGroup.ClipGeometryProperty] = value;
         return obj;
@@ -477,7 +477,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup ClipGeometry(
         this Avalonia.Media.DrawingGroup obj,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -509,7 +509,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Geometry> ObserveClipGeometry(this Avalonia.Media.DrawingGroup obj)
+    public static IObservable<Avalonia.Media.Geometry?> ObserveClipGeometry(this Avalonia.Media.DrawingGroup obj)
     {
         return obj.GetObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
     }
@@ -520,7 +520,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingGroup OnClipGeometry(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Geometry>> handler)
+    public static Avalonia.Media.DrawingGroup OnClipGeometry(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.Geometry?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
         handler(obj, observable);
@@ -532,7 +532,7 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingClipGeometry(this Avalonia.Media.DrawingGroup obj)
+    public static IObservable<BindingValue<Avalonia.Media.Geometry?>> ObserveBindingClipGeometry(this Avalonia.Media.DrawingGroup obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
     }
@@ -543,7 +543,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingGroup OnBindingClipGeometry(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler)
+    public static Avalonia.Media.DrawingGroup OnBindingClipGeometry(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.Geometry?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
         handler(obj, observable);
@@ -581,7 +581,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.IBrush value)
+    public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_OpacityMask, Avalonia.Media.DrawingGroup.OpacityMaskProperty, value);
     }
@@ -613,7 +613,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(
         this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -629,7 +629,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.DrawingGroup OpacityMask(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.IBrush value)
+    public static Avalonia.Media.DrawingGroup OpacityMask(this Avalonia.Media.DrawingGroup obj, Avalonia.Media.IBrush? value)
     {
         obj[Avalonia.Media.DrawingGroup.OpacityMaskProperty] = value;
         return obj;
@@ -664,7 +664,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingGroup OpacityMask(
         this Avalonia.Media.DrawingGroup obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -696,7 +696,7 @@ public static partial class DrawingGroupExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveOpacityMask(this Avalonia.Media.DrawingGroup obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveOpacityMask(this Avalonia.Media.DrawingGroup obj)
     {
         return obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
     }
@@ -707,7 +707,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingGroup OnOpacityMask(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.IBrush>> handler)
+    public static Avalonia.Media.DrawingGroup OnOpacityMask(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<Avalonia.Media.IBrush?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
         handler(obj, observable);
@@ -719,7 +719,7 @@ public static partial class DrawingGroupExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingOpacityMask(this Avalonia.Media.DrawingGroup obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingOpacityMask(this Avalonia.Media.DrawingGroup obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
     }
@@ -730,7 +730,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingGroup OnBindingOpacityMask(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    public static Avalonia.Media.DrawingGroup OnBindingOpacityMask(this Avalonia.Media.DrawingGroup obj, Action<Avalonia.Media.DrawingGroup, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
         handler(obj, observable);

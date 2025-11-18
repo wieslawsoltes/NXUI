@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DropShadowEffect"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DropShadowEffect"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DropShadowEffect"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.DropShadowEffect> DropShadowEffect(out ElementRef<Avalonia.Media.DropShadowEffect> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.DropShadowEffect>(TypeMetadata.Avalonia_Media_DropShadowEffect, () => new Avalonia.Media.DropShadowEffect())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DropShadowEffect"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.DropShadowEffect"/> class.</returns>
     public static Avalonia.Media.DropShadowEffect DropShadowEffect(out Avalonia.Media.DropShadowEffect @ref)
         => @ref = new Avalonia.Media.DropShadowEffect();
+#endif
 
 }

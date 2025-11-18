@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.ToggleButton> ToggleButton(out ElementRef<Avalonia.Controls.Primitives.ToggleButton> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.ToggleButton>(TypeMetadata.Avalonia_Controls_Primitives_ToggleButton, () => new Avalonia.Controls.Primitives.ToggleButton())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class.</returns>
     public static Avalonia.Controls.Primitives.ToggleButton ToggleButton(out Avalonia.Controls.Primitives.ToggleButton @ref)
         => @ref = new Avalonia.Controls.Primitives.ToggleButton();
+#endif
 
 }

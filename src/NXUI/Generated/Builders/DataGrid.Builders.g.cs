@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DataGrid"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DataGrid"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGrid"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DataGrid> DataGrid(out ElementRef<Avalonia.Controls.DataGrid> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DataGrid>(TypeMetadata.Avalonia_Controls_DataGrid, () => new Avalonia.Controls.DataGrid())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DataGrid"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGrid"/> class.</returns>
     public static Avalonia.Controls.DataGrid DataGrid(out Avalonia.Controls.DataGrid @ref)
         => @ref = new Avalonia.Controls.DataGrid();
+#endif
 
 }

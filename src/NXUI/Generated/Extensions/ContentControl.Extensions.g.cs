@@ -20,7 +20,7 @@ public static partial class ContentControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.ContentControl
+    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.ContentControl
     {
         return builder.WithValue(PropertyMetadata.ContentControl_Content, Avalonia.Controls.ContentControl.ContentProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ContentControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContentControl
     {
@@ -69,7 +69,7 @@ public static partial class ContentControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Content<T>(this T obj, System.Object value) where T : Avalonia.Controls.ContentControl
+    public static T Content<T>(this T obj, System.Object? value) where T : Avalonia.Controls.ContentControl
     {
         obj[Avalonia.Controls.ContentControl.ContentProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ContentControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Content<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContentControl
     {
@@ -139,7 +139,7 @@ public static partial class ContentControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveContent(this Avalonia.Controls.ContentControl obj)
+    public static IObservable<System.Object?> ObserveContent(this Avalonia.Controls.ContentControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ContentControl.ContentProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ContentControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<System.Object?>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.ContentProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ContentControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.ContentControl obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingContent(this Avalonia.Controls.ContentControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ContentControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class ContentControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ContentControl
+    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ContentControl
     {
         return builder.WithValue(PropertyMetadata.ContentControl_ContentTemplate, Avalonia.Controls.ContentControl.ContentTemplateProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class ContentControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContentControl
     {
@@ -263,7 +263,7 @@ public static partial class ContentControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ContentControl
+    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ContentControl
     {
         obj[Avalonia.Controls.ContentControl.ContentTemplateProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class ContentControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContentControl
     {
@@ -333,7 +333,7 @@ public static partial class ContentControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveContentTemplate(this Avalonia.Controls.ContentControl obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveContentTemplate(this Avalonia.Controls.ContentControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
     }
@@ -345,7 +345,7 @@ public static partial class ContentControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class ContentControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.ContentControl obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingContentTemplate(this Avalonia.Controls.ContentControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
     }
@@ -369,7 +369,7 @@ public static partial class ContentControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ContentControl
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.ContentControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.ContentControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ContentControl.ContentTemplateProperty);
         handler(obj, observable);

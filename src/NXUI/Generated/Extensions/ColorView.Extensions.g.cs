@@ -4976,7 +4976,7 @@ public static partial class ColorViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PaletteColors<T>(this ElementBuilder<T> builder, System.Collections.Generic.IEnumerable<Avalonia.Media.Color> value) where T : Avalonia.Controls.ColorView
+    public static ElementBuilder<T> PaletteColors<T>(this ElementBuilder<T> builder, System.Collections.Generic.IEnumerable<Avalonia.Media.Color>? value) where T : Avalonia.Controls.ColorView
     {
         return builder.WithValue(PropertyMetadata.ColorView_PaletteColors, Avalonia.Controls.ColorView.PaletteColorsProperty, value);
     }
@@ -5008,7 +5008,7 @@ public static partial class ColorViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PaletteColors<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>> observable,
+        IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorView
     {
@@ -5025,7 +5025,7 @@ public static partial class ColorViewExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PaletteColors<T>(this T obj, System.Collections.Generic.IEnumerable<Avalonia.Media.Color> value) where T : Avalonia.Controls.ColorView
+    public static T PaletteColors<T>(this T obj, System.Collections.Generic.IEnumerable<Avalonia.Media.Color>? value) where T : Avalonia.Controls.ColorView
     {
         obj[Avalonia.Controls.ColorView.PaletteColorsProperty] = value;
         return obj;
@@ -5062,7 +5062,7 @@ public static partial class ColorViewExtensions
     /// <returns>The target object reference.</returns>
     public static T PaletteColors<T>(
         this T obj,
-        IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>> observable,
+        IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorView
     {
@@ -5095,7 +5095,7 @@ public static partial class ColorViewExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>> ObservePaletteColors(this Avalonia.Controls.ColorView obj)
+    public static IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>?> ObservePaletteColors(this Avalonia.Controls.ColorView obj)
     {
         return obj.GetObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
     }
@@ -5107,7 +5107,7 @@ public static partial class ColorViewExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPaletteColors<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>>> handler) where T : Avalonia.Controls.ColorView
+    public static T OnPaletteColors<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>?>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
         handler(obj, observable);
@@ -5119,7 +5119,7 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>>> ObserveBindingPaletteColors(this Avalonia.Controls.ColorView obj)
+    public static IObservable<BindingValue<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>?>> ObserveBindingPaletteColors(this Avalonia.Controls.ColorView obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
     }
@@ -5131,7 +5131,7 @@ public static partial class ColorViewExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPaletteColors<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>>>> handler) where T : Avalonia.Controls.ColorView
+    public static T OnBindingPaletteColors<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>?>>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteColorsProperty);
         handler(obj, observable);
@@ -5364,7 +5364,7 @@ public static partial class ColorViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Palette<T>(this ElementBuilder<T> builder, Avalonia.Controls.IColorPalette value) where T : Avalonia.Controls.ColorView
+    public static ElementBuilder<T> Palette<T>(this ElementBuilder<T> builder, Avalonia.Controls.IColorPalette? value) where T : Avalonia.Controls.ColorView
     {
         return builder.WithValue(PropertyMetadata.ColorView_Palette, Avalonia.Controls.ColorView.PaletteProperty, value);
     }
@@ -5396,7 +5396,7 @@ public static partial class ColorViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Palette<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.IColorPalette> observable,
+        IObservable<Avalonia.Controls.IColorPalette?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorView
     {
@@ -5413,7 +5413,7 @@ public static partial class ColorViewExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Palette<T>(this T obj, Avalonia.Controls.IColorPalette value) where T : Avalonia.Controls.ColorView
+    public static T Palette<T>(this T obj, Avalonia.Controls.IColorPalette? value) where T : Avalonia.Controls.ColorView
     {
         obj[Avalonia.Controls.ColorView.PaletteProperty] = value;
         return obj;
@@ -5450,7 +5450,7 @@ public static partial class ColorViewExtensions
     /// <returns>The target object reference.</returns>
     public static T Palette<T>(
         this T obj,
-        IObservable<Avalonia.Controls.IColorPalette> observable,
+        IObservable<Avalonia.Controls.IColorPalette?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ColorView
     {
@@ -5483,7 +5483,7 @@ public static partial class ColorViewExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.IColorPalette> ObservePalette(this Avalonia.Controls.ColorView obj)
+    public static IObservable<Avalonia.Controls.IColorPalette?> ObservePalette(this Avalonia.Controls.ColorView obj)
     {
         return obj.GetObservable(Avalonia.Controls.ColorView.PaletteProperty);
     }
@@ -5495,7 +5495,7 @@ public static partial class ColorViewExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPalette<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<Avalonia.Controls.IColorPalette>> handler) where T : Avalonia.Controls.ColorView
+    public static T OnPalette<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<Avalonia.Controls.IColorPalette?>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetObservable(Avalonia.Controls.ColorView.PaletteProperty);
         handler(obj, observable);
@@ -5507,7 +5507,7 @@ public static partial class ColorViewExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.IColorPalette>> ObserveBindingPalette(this Avalonia.Controls.ColorView obj)
+    public static IObservable<BindingValue<Avalonia.Controls.IColorPalette?>> ObserveBindingPalette(this Avalonia.Controls.ColorView obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteProperty);
     }
@@ -5519,7 +5519,7 @@ public static partial class ColorViewExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPalette<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Controls.IColorPalette>>> handler) where T : Avalonia.Controls.ColorView
+    public static T OnBindingPalette<T>(this T obj, Action<Avalonia.Controls.ColorView, IObservable<BindingValue<Avalonia.Controls.IColorPalette?>>> handler) where T : Avalonia.Controls.ColorView
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ColorView.PaletteProperty);
         handler(obj, observable);

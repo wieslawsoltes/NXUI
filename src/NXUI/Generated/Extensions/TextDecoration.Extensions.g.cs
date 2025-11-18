@@ -314,7 +314,7 @@ public static partial class TextDecorationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Stroke<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Media.TextDecoration
+    public static ElementBuilder<T> Stroke<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Media.TextDecoration
     {
         return builder.WithValue(PropertyMetadata.TextDecoration_Stroke, Avalonia.Media.TextDecoration.StrokeProperty, value);
     }
@@ -346,7 +346,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -363,7 +363,7 @@ public static partial class TextDecorationExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Stroke<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Media.TextDecoration
+    public static T Stroke<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeProperty] = value;
         return obj;
@@ -400,7 +400,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T Stroke<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -433,7 +433,7 @@ public static partial class TextDecorationExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveStroke(this Avalonia.Media.TextDecoration obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveStroke(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeProperty);
     }
@@ -445,7 +445,7 @@ public static partial class TextDecorationExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnStroke<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Media.TextDecoration
+    public static T OnStroke<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeProperty);
         handler(obj, observable);
@@ -457,7 +457,7 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingStroke(this Avalonia.Media.TextDecoration obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingStroke(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeProperty);
     }
@@ -469,7 +469,7 @@ public static partial class TextDecorationExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingStroke<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Media.TextDecoration
+    public static T OnBindingStroke<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeProperty);
         handler(obj, observable);
@@ -777,7 +777,7 @@ public static partial class TextDecorationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> StrokeDashArray<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Media.TextDecoration
+    public static ElementBuilder<T> StrokeDashArray<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Media.TextDecoration
     {
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeDashArray, Avalonia.Media.TextDecoration.StrokeDashArrayProperty, value);
     }
@@ -809,7 +809,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -826,7 +826,7 @@ public static partial class TextDecorationExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T StrokeDashArray<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Media.TextDecoration
+    public static T StrokeDashArray<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Media.TextDecoration
     {
         obj[Avalonia.Media.TextDecoration.StrokeDashArrayProperty] = value;
         return obj;
@@ -863,7 +863,7 @@ public static partial class TextDecorationExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeDashArray<T>(
         this T obj,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.TextDecoration
     {
@@ -896,7 +896,7 @@ public static partial class TextDecorationExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveStrokeDashArray(this Avalonia.Media.TextDecoration obj)
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> ObserveStrokeDashArray(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
     }
@@ -908,7 +908,7 @@ public static partial class TextDecorationExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnStrokeDashArray<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Media.TextDecoration
+    public static T OnStrokeDashArray<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<Avalonia.Collections.AvaloniaList<System.Double>?>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
         handler(obj, observable);
@@ -920,7 +920,7 @@ public static partial class TextDecorationExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingStrokeDashArray(this Avalonia.Media.TextDecoration obj)
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>> ObserveBindingStrokeDashArray(this Avalonia.Media.TextDecoration obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
     }
@@ -932,7 +932,7 @@ public static partial class TextDecorationExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingStrokeDashArray<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Media.TextDecoration
+    public static T OnBindingStrokeDashArray<T>(this T obj, Action<Avalonia.Media.TextDecoration, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>>> handler) where T : Avalonia.Media.TextDecoration
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
         handler(obj, observable);

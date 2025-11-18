@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TreeDataGrid"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TreeDataGrid"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TreeDataGrid"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TreeDataGrid> TreeDataGrid(out ElementRef<Avalonia.Controls.TreeDataGrid> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TreeDataGrid>(TypeMetadata.Avalonia_Controls_TreeDataGrid, () => new Avalonia.Controls.TreeDataGrid())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TreeDataGrid"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TreeDataGrid"/> class.</returns>
     public static Avalonia.Controls.TreeDataGrid TreeDataGrid(out Avalonia.Controls.TreeDataGrid @ref)
         => @ref = new Avalonia.Controls.TreeDataGrid();
+#endif
 
 }

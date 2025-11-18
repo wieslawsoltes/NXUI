@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GlyphRunDrawing"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRunDrawing(out ElementRef<Avalonia.Media.GlyphRunDrawing> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.GlyphRunDrawing>(TypeMetadata.Avalonia_Media_GlyphRunDrawing, () => new Avalonia.Media.GlyphRunDrawing())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.GlyphRunDrawing"/> class.</returns>
     public static Avalonia.Media.GlyphRunDrawing GlyphRunDrawing(out Avalonia.Media.GlyphRunDrawing @ref)
         => @ref = new Avalonia.Media.GlyphRunDrawing();
+#endif
 
 }

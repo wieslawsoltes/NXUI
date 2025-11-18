@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.ContainerQuery"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.ContainerQuery> ContainerQuery(out ElementRef<Avalonia.Styling.ContainerQuery> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.ContainerQuery>(TypeMetadata.Avalonia_Styling_ContainerQuery, () => new Avalonia.Styling.ContainerQuery())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.</returns>
     public static Avalonia.Styling.ContainerQuery ContainerQuery(out Avalonia.Styling.ContainerQuery @ref)
         => @ref = new Avalonia.Styling.ContainerQuery();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.ContainerQuery"/> instantiated class.</param>
+    /// <param name="query">The query value.</param>
+    /// <param name="containerName">The containerName value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.ContainerQuery> ContainerQuery(out ElementRef<Avalonia.Styling.ContainerQuery> @ref, System.Func<Avalonia.Styling.StyleQuery,Avalonia.Styling.StyleQuery> query, System.String containerName = default)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.ContainerQuery>(TypeMetadata.Avalonia_Styling_ContainerQuery, () => new Avalonia.Styling.ContainerQuery(query, containerName))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.ContainerQuery"/> class.</returns>
     public static Avalonia.Styling.ContainerQuery ContainerQuery(out Avalonia.Styling.ContainerQuery @ref, System.Func<Avalonia.Styling.StyleQuery,Avalonia.Styling.StyleQuery> query, System.String containerName = default)
         => @ref = new Avalonia.Styling.ContainerQuery(query, containerName);
+#endif
 
 }

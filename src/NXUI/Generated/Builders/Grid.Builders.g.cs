@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Grid"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Grid"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Grid"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Grid> Grid(out ElementRef<Avalonia.Controls.Grid> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Grid>(TypeMetadata.Avalonia_Controls_Grid, () => new Avalonia.Controls.Grid())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Grid"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Grid"/> class.</returns>
     public static Avalonia.Controls.Grid Grid(out Avalonia.Controls.Grid @ref)
         => @ref = new Avalonia.Controls.Grid();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class DrawingBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingBrush> Drawing(this ElementBuilder<Avalonia.Media.DrawingBrush> builder, Avalonia.Media.Drawing value)
+    public static ElementBuilder<Avalonia.Media.DrawingBrush> Drawing(this ElementBuilder<Avalonia.Media.DrawingBrush> builder, Avalonia.Media.Drawing? value)
     {
         return builder.WithValue(PropertyMetadata.DrawingBrush_Drawing, Avalonia.Media.DrawingBrush.DrawingProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class DrawingBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DrawingBrush> Drawing(
         this ElementBuilder<Avalonia.Media.DrawingBrush> builder,
-        IObservable<Avalonia.Media.Drawing> observable,
+        IObservable<Avalonia.Media.Drawing?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class DrawingBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.DrawingBrush Drawing(this Avalonia.Media.DrawingBrush obj, Avalonia.Media.Drawing value)
+    public static Avalonia.Media.DrawingBrush Drawing(this Avalonia.Media.DrawingBrush obj, Avalonia.Media.Drawing? value)
     {
         obj[Avalonia.Media.DrawingBrush.DrawingProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class DrawingBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DrawingBrush Drawing(
         this Avalonia.Media.DrawingBrush obj,
-        IObservable<Avalonia.Media.Drawing> observable,
+        IObservable<Avalonia.Media.Drawing?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class DrawingBrushExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Drawing> ObserveDrawing(this Avalonia.Media.DrawingBrush obj)
+    public static IObservable<Avalonia.Media.Drawing?> ObserveDrawing(this Avalonia.Media.DrawingBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
     }
@@ -146,7 +146,7 @@ public static partial class DrawingBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingBrush OnDrawing(this Avalonia.Media.DrawingBrush obj, Action<Avalonia.Media.DrawingBrush, IObservable<Avalonia.Media.Drawing>> handler)
+    public static Avalonia.Media.DrawingBrush OnDrawing(this Avalonia.Media.DrawingBrush obj, Action<Avalonia.Media.DrawingBrush, IObservable<Avalonia.Media.Drawing?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class DrawingBrushExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Drawing>> ObserveBindingDrawing(this Avalonia.Media.DrawingBrush obj)
+    public static IObservable<BindingValue<Avalonia.Media.Drawing?>> ObserveBindingDrawing(this Avalonia.Media.DrawingBrush obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
     }
@@ -169,7 +169,7 @@ public static partial class DrawingBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DrawingBrush OnBindingDrawing(this Avalonia.Media.DrawingBrush obj, Action<Avalonia.Media.DrawingBrush, IObservable<BindingValue<Avalonia.Media.Drawing>>> handler)
+    public static Avalonia.Media.DrawingBrush OnBindingDrawing(this Avalonia.Media.DrawingBrush obj, Action<Avalonia.Media.DrawingBrush, IObservable<BindingValue<Avalonia.Media.Drawing?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.DrawingBrush.DrawingProperty);
         handler(obj, observable);

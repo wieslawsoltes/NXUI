@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.KeyBinding"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.KeyBinding"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.KeyBinding"/> class.</returns>
+    public static ElementBuilder<Avalonia.Input.KeyBinding> KeyBinding(out ElementRef<Avalonia.Input.KeyBinding> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Input.KeyBinding>(TypeMetadata.Avalonia_Input_KeyBinding, () => new Avalonia.Input.KeyBinding())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.KeyBinding"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.KeyBinding"/> class.</returns>
     public static Avalonia.Input.KeyBinding KeyBinding(out Avalonia.Input.KeyBinding @ref)
         => @ref = new Avalonia.Input.KeyBinding();
+#endif
 
 }

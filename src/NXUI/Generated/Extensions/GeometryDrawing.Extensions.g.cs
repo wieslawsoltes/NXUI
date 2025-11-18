@@ -20,7 +20,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.Geometry value)
+    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.Geometry? value)
     {
         return builder.WithValue(PropertyMetadata.GeometryDrawing_Geometry, Avalonia.Media.GeometryDrawing.GeometryProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.GeometryDrawing Geometry(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.Geometry value)
+    public static Avalonia.Media.GeometryDrawing Geometry(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.Geometry? value)
     {
         obj[Avalonia.Media.GeometryDrawing.GeometryProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GeometryDrawing Geometry(
         this Avalonia.Media.GeometryDrawing obj,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Geometry> ObserveGeometry(this Avalonia.Media.GeometryDrawing obj)
+    public static IObservable<Avalonia.Media.Geometry?> ObserveGeometry(this Avalonia.Media.GeometryDrawing obj)
     {
         return obj.GetObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
     }
@@ -146,7 +146,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GeometryDrawing OnGeometry(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.Geometry>> handler)
+    public static Avalonia.Media.GeometryDrawing OnGeometry(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.Geometry?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class GeometryDrawingExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingGeometry(this Avalonia.Media.GeometryDrawing obj)
+    public static IObservable<BindingValue<Avalonia.Media.Geometry?>> ObserveBindingGeometry(this Avalonia.Media.GeometryDrawing obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
     }
@@ -169,7 +169,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GeometryDrawing OnBindingGeometry(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler)
+    public static Avalonia.Media.GeometryDrawing OnBindingGeometry(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.Geometry?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.GeometryProperty);
         handler(obj, observable);
@@ -207,7 +207,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IBrush value)
+    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.GeometryDrawing_Brush, Avalonia.Media.GeometryDrawing.BrushProperty, value);
     }
@@ -239,7 +239,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -255,7 +255,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.GeometryDrawing Brush(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.IBrush value)
+    public static Avalonia.Media.GeometryDrawing Brush(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.IBrush? value)
     {
         obj[Avalonia.Media.GeometryDrawing.BrushProperty] = value;
         return obj;
@@ -290,7 +290,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GeometryDrawing Brush(
         this Avalonia.Media.GeometryDrawing obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -322,7 +322,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBrush(this Avalonia.Media.GeometryDrawing obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBrush(this Avalonia.Media.GeometryDrawing obj)
     {
         return obj.GetObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
     }
@@ -333,7 +333,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GeometryDrawing OnBrush(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IBrush>> handler)
+    public static Avalonia.Media.GeometryDrawing OnBrush(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IBrush?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
         handler(obj, observable);
@@ -345,7 +345,7 @@ public static partial class GeometryDrawingExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBrush(this Avalonia.Media.GeometryDrawing obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBrush(this Avalonia.Media.GeometryDrawing obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
     }
@@ -356,7 +356,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GeometryDrawing OnBindingBrush(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler)
+    public static Avalonia.Media.GeometryDrawing OnBindingBrush(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.BrushProperty);
         handler(obj, observable);
@@ -394,7 +394,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IPen value)
+    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IPen? value)
     {
         return builder.WithValue(PropertyMetadata.GeometryDrawing_Pen, Avalonia.Media.GeometryDrawing.PenProperty, value);
     }
@@ -426,7 +426,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(
         this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
-        IObservable<Avalonia.Media.IPen> observable,
+        IObservable<Avalonia.Media.IPen?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -442,7 +442,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.GeometryDrawing Pen(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.IPen value)
+    public static Avalonia.Media.GeometryDrawing Pen(this Avalonia.Media.GeometryDrawing obj, Avalonia.Media.IPen? value)
     {
         obj[Avalonia.Media.GeometryDrawing.PenProperty] = value;
         return obj;
@@ -477,7 +477,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.GeometryDrawing Pen(
         this Avalonia.Media.GeometryDrawing obj,
-        IObservable<Avalonia.Media.IPen> observable,
+        IObservable<Avalonia.Media.IPen?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -509,7 +509,7 @@ public static partial class GeometryDrawingExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IPen> ObservePen(this Avalonia.Media.GeometryDrawing obj)
+    public static IObservable<Avalonia.Media.IPen?> ObservePen(this Avalonia.Media.GeometryDrawing obj)
     {
         return obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
     }
@@ -520,7 +520,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GeometryDrawing OnPen(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IPen>> handler)
+    public static Avalonia.Media.GeometryDrawing OnPen(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<Avalonia.Media.IPen?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.GeometryDrawing.PenProperty);
         handler(obj, observable);
@@ -532,7 +532,7 @@ public static partial class GeometryDrawingExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IPen>> ObserveBindingPen(this Avalonia.Media.GeometryDrawing obj)
+    public static IObservable<BindingValue<Avalonia.Media.IPen?>> ObserveBindingPen(this Avalonia.Media.GeometryDrawing obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.PenProperty);
     }
@@ -543,7 +543,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.GeometryDrawing OnBindingPen(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.IPen>>> handler)
+    public static Avalonia.Media.GeometryDrawing OnBindingPen(this Avalonia.Media.GeometryDrawing obj, Action<Avalonia.Media.GeometryDrawing, IObservable<BindingValue<Avalonia.Media.IPen?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.GeometryDrawing.PenProperty);
         handler(obj, observable);

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.Animation"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.Animation"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.Animation"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.Animation> Animation(out ElementRef<Avalonia.Animation.Animation> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.Animation>(TypeMetadata.Avalonia_Animation_Animation, () => new Avalonia.Animation.Animation())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.Animation"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.Animation"/> class.</returns>
     public static Avalonia.Animation.Animation Animation(out Avalonia.Animation.Animation @ref)
         => @ref = new Avalonia.Animation.Animation();
+#endif
 
 }

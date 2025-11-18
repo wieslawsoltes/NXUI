@@ -20,7 +20,7 @@ public static partial class RunExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Documents.Run
+    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.Documents.Run
     {
         return builder.WithValue(PropertyMetadata.Run_Text, Avalonia.Controls.Documents.Run.TextProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class RunExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Run
     {
@@ -69,7 +69,7 @@ public static partial class RunExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.Documents.Run
+    public static T Text<T>(this T obj, System.String? value) where T : Avalonia.Controls.Documents.Run
     {
         obj[Avalonia.Controls.Documents.Run.TextProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class RunExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Run
     {
@@ -139,7 +139,7 @@ public static partial class RunExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveText(this Avalonia.Controls.Documents.Run obj)
+    public static IObservable<System.String?> ObserveText(this Avalonia.Controls.Documents.Run obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.Run.TextProperty);
     }
@@ -151,7 +151,7 @@ public static partial class RunExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnText<T>(this T obj, Action<Avalonia.Controls.Documents.Run, IObservable<System.String>> handler) where T : Avalonia.Controls.Documents.Run
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.Documents.Run, IObservable<System.String?>> handler) where T : Avalonia.Controls.Documents.Run
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.Run.TextProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class RunExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.Documents.Run obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingText(this Avalonia.Controls.Documents.Run obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Documents.Run.TextProperty);
     }
@@ -175,7 +175,7 @@ public static partial class RunExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.Documents.Run, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Documents.Run
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.Documents.Run, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.Documents.Run
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.Run.TextProperty);
         handler(obj, observable);

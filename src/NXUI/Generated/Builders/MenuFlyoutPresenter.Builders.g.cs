@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.MenuFlyoutPresenter> MenuFlyoutPresenter(out ElementRef<Avalonia.Controls.MenuFlyoutPresenter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.MenuFlyoutPresenter>(TypeMetadata.Avalonia_Controls_MenuFlyoutPresenter, () => new Avalonia.Controls.MenuFlyoutPresenter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
     public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter(out Avalonia.Controls.MenuFlyoutPresenter @ref)
         => @ref = new Avalonia.Controls.MenuFlyoutPresenter();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> instantiated class.</param>
+    /// <param name="menuInteractionHandler">The menuInteractionHandler value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.MenuFlyoutPresenter> MenuFlyoutPresenter(out ElementRef<Avalonia.Controls.MenuFlyoutPresenter> @ref, Avalonia.Controls.Platform.IMenuInteractionHandler menuInteractionHandler)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.MenuFlyoutPresenter>(TypeMetadata.Avalonia_Controls_MenuFlyoutPresenter, () => new Avalonia.Controls.MenuFlyoutPresenter(menuInteractionHandler))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyoutPresenter"/> class.</returns>
     public static Avalonia.Controls.MenuFlyoutPresenter MenuFlyoutPresenter(out Avalonia.Controls.MenuFlyoutPresenter @ref, Avalonia.Controls.Platform.IMenuInteractionHandler menuInteractionHandler)
         => @ref = new Avalonia.Controls.MenuFlyoutPresenter(menuInteractionHandler);
+#endif
 
 }

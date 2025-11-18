@@ -846,7 +846,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> NumberFormat<T>(this ElementBuilder<T> builder, System.Globalization.NumberFormatInfo value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementBuilder<T> NumberFormat<T>(this ElementBuilder<T> builder, System.Globalization.NumberFormatInfo? value) where T : Avalonia.Controls.NumericUpDown
     {
         return builder.WithValue(PropertyMetadata.NumericUpDown_NumberFormat, Avalonia.Controls.NumericUpDown.NumberFormatProperty, value);
     }
@@ -878,7 +878,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NumberFormat<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Globalization.NumberFormatInfo> observable,
+        IObservable<System.Globalization.NumberFormatInfo?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -895,7 +895,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T NumberFormat<T>(this T obj, System.Globalization.NumberFormatInfo value) where T : Avalonia.Controls.NumericUpDown
+    public static T NumberFormat<T>(this T obj, System.Globalization.NumberFormatInfo? value) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.NumberFormatProperty] = value;
         return obj;
@@ -932,7 +932,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T NumberFormat<T>(
         this T obj,
-        IObservable<System.Globalization.NumberFormatInfo> observable,
+        IObservable<System.Globalization.NumberFormatInfo?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -965,7 +965,7 @@ public static partial class NumericUpDownExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Globalization.NumberFormatInfo> ObserveNumberFormat(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<System.Globalization.NumberFormatInfo?> ObserveNumberFormat(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
     }
@@ -977,7 +977,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnNumberFormat<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Globalization.NumberFormatInfo>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnNumberFormat<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Globalization.NumberFormatInfo?>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
         handler(obj, observable);
@@ -989,7 +989,7 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Globalization.NumberFormatInfo>> ObserveBindingNumberFormat(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<BindingValue<System.Globalization.NumberFormatInfo?>> ObserveBindingNumberFormat(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
     }
@@ -1001,7 +1001,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingNumberFormat<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Globalization.NumberFormatInfo>>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnBindingNumberFormat<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Globalization.NumberFormatInfo?>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
         handler(obj, observable);
@@ -2679,7 +2679,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.NumericUpDown
     {
         return builder.WithValue(PropertyMetadata.NumericUpDown_Text, Avalonia.Controls.NumericUpDown.TextProperty, value);
     }
@@ -2711,7 +2711,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2728,7 +2728,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.NumericUpDown
+    public static T Text<T>(this T obj, System.String? value) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.TextProperty] = value;
         return obj;
@@ -2765,7 +2765,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2798,7 +2798,7 @@ public static partial class NumericUpDownExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveText(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<System.String?> ObserveText(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.TextProperty);
     }
@@ -2810,7 +2810,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnText<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.String>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.String?>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.TextProperty);
         handler(obj, observable);
@@ -2822,7 +2822,7 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingText(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextProperty);
     }
@@ -2834,7 +2834,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextProperty);
         handler(obj, observable);
@@ -2873,7 +2873,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> TextConverter<T>(this ElementBuilder<T> builder, Avalonia.Data.Converters.IValueConverter value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementBuilder<T> TextConverter<T>(this ElementBuilder<T> builder, Avalonia.Data.Converters.IValueConverter? value) where T : Avalonia.Controls.NumericUpDown
     {
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextConverter, Avalonia.Controls.NumericUpDown.TextConverterProperty, value);
     }
@@ -2905,7 +2905,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextConverter<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Data.Converters.IValueConverter> observable,
+        IObservable<Avalonia.Data.Converters.IValueConverter?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2922,7 +2922,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T TextConverter<T>(this T obj, Avalonia.Data.Converters.IValueConverter value) where T : Avalonia.Controls.NumericUpDown
+    public static T TextConverter<T>(this T obj, Avalonia.Data.Converters.IValueConverter? value) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.TextConverterProperty] = value;
         return obj;
@@ -2959,7 +2959,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T TextConverter<T>(
         this T obj,
-        IObservable<Avalonia.Data.Converters.IValueConverter> observable,
+        IObservable<Avalonia.Data.Converters.IValueConverter?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -2992,7 +2992,7 @@ public static partial class NumericUpDownExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Data.Converters.IValueConverter> ObserveTextConverter(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<Avalonia.Data.Converters.IValueConverter?> ObserveTextConverter(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
     }
@@ -3004,7 +3004,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTextConverter<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Data.Converters.IValueConverter>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnTextConverter<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<Avalonia.Data.Converters.IValueConverter?>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
         handler(obj, observable);
@@ -3016,7 +3016,7 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Data.Converters.IValueConverter>> ObserveBindingTextConverter(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<BindingValue<Avalonia.Data.Converters.IValueConverter?>> ObserveBindingTextConverter(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
     }
@@ -3028,7 +3028,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTextConverter<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<Avalonia.Data.Converters.IValueConverter>>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnBindingTextConverter<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<Avalonia.Data.Converters.IValueConverter?>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.TextConverterProperty);
         handler(obj, observable);
@@ -3261,7 +3261,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.NumericUpDown
     {
         return builder.WithValue(PropertyMetadata.NumericUpDown_Watermark, Avalonia.Controls.NumericUpDown.WatermarkProperty, value);
     }
@@ -3293,7 +3293,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3310,7 +3310,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.NumericUpDown
+    public static T Watermark<T>(this T obj, System.String? value) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.WatermarkProperty] = value;
         return obj;
@@ -3347,7 +3347,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T Watermark<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -3380,7 +3380,7 @@ public static partial class NumericUpDownExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<System.String?> ObserveWatermark(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
     }
@@ -3392,7 +3392,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.String>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.String?>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
         handler(obj, observable);
@@ -3404,7 +3404,7 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingWatermark(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingWatermark(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
     }
@@ -3416,7 +3416,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.WatermarkProperty);
         handler(obj, observable);
@@ -4043,7 +4043,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementBuilder<T> InnerLeftContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.NumericUpDown
     {
         return builder.WithValue(PropertyMetadata.NumericUpDown_InnerLeftContent, Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, value);
     }
@@ -4075,7 +4075,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerLeftContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4092,7 +4092,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T InnerLeftContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.NumericUpDown
+    public static T InnerLeftContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.InnerLeftContentProperty] = value;
         return obj;
@@ -4129,7 +4129,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerLeftContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4162,7 +4162,7 @@ public static partial class NumericUpDownExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveInnerLeftContent(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<System.Object?> ObserveInnerLeftContent(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
     }
@@ -4174,7 +4174,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Object>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Object?>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
         handler(obj, observable);
@@ -4186,7 +4186,7 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerLeftContent(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingInnerLeftContent(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
     }
@@ -4198,7 +4198,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnBindingInnerLeftContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
         handler(obj, observable);
@@ -4237,7 +4237,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.NumericUpDown
+    public static ElementBuilder<T> InnerRightContent<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.NumericUpDown
     {
         return builder.WithValue(PropertyMetadata.NumericUpDown_InnerRightContent, Avalonia.Controls.NumericUpDown.InnerRightContentProperty, value);
     }
@@ -4269,7 +4269,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> InnerRightContent<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4286,7 +4286,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T InnerRightContent<T>(this T obj, System.Object value) where T : Avalonia.Controls.NumericUpDown
+    public static T InnerRightContent<T>(this T obj, System.Object? value) where T : Avalonia.Controls.NumericUpDown
     {
         obj[Avalonia.Controls.NumericUpDown.InnerRightContentProperty] = value;
         return obj;
@@ -4323,7 +4323,7 @@ public static partial class NumericUpDownExtensions
     /// <returns>The target object reference.</returns>
     public static T InnerRightContent<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NumericUpDown
     {
@@ -4356,7 +4356,7 @@ public static partial class NumericUpDownExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveInnerRightContent(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<System.Object?> ObserveInnerRightContent(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
     }
@@ -4368,7 +4368,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Object>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnInnerRightContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<System.Object?>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
         handler(obj, observable);
@@ -4380,7 +4380,7 @@ public static partial class NumericUpDownExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingInnerRightContent(this Avalonia.Controls.NumericUpDown obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingInnerRightContent(this Avalonia.Controls.NumericUpDown obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
     }
@@ -4392,7 +4392,7 @@ public static partial class NumericUpDownExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.NumericUpDown
+    public static T OnBindingInnerRightContent<T>(this T obj, Action<Avalonia.Controls.NumericUpDown, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.NumericUpDown
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
         handler(obj, observable);

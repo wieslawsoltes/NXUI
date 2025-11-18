@@ -20,7 +20,7 @@ public static partial class ImageBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageBrush> Source(this ElementBuilder<Avalonia.Media.ImageBrush> builder, Avalonia.Media.IImageBrushSource value)
+    public static ElementBuilder<Avalonia.Media.ImageBrush> Source(this ElementBuilder<Avalonia.Media.ImageBrush> builder, Avalonia.Media.IImageBrushSource? value)
     {
         return builder.WithValue(PropertyMetadata.ImageBrush_Source, Avalonia.Media.ImageBrush.SourceProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ImageBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.ImageBrush> Source(
         this ElementBuilder<Avalonia.Media.ImageBrush> builder,
-        IObservable<Avalonia.Media.IImageBrushSource> observable,
+        IObservable<Avalonia.Media.IImageBrushSource?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class ImageBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.ImageBrush Source(this Avalonia.Media.ImageBrush obj, Avalonia.Media.IImageBrushSource value)
+    public static Avalonia.Media.ImageBrush Source(this Avalonia.Media.ImageBrush obj, Avalonia.Media.IImageBrushSource? value)
     {
         obj[Avalonia.Media.ImageBrush.SourceProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class ImageBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.ImageBrush Source(
         this Avalonia.Media.ImageBrush obj,
-        IObservable<Avalonia.Media.IImageBrushSource> observable,
+        IObservable<Avalonia.Media.IImageBrushSource?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class ImageBrushExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IImageBrushSource> ObserveSource(this Avalonia.Media.ImageBrush obj)
+    public static IObservable<Avalonia.Media.IImageBrushSource?> ObserveSource(this Avalonia.Media.ImageBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.ImageBrush.SourceProperty);
     }
@@ -146,7 +146,7 @@ public static partial class ImageBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.ImageBrush OnSource(this Avalonia.Media.ImageBrush obj, Action<Avalonia.Media.ImageBrush, IObservable<Avalonia.Media.IImageBrushSource>> handler)
+    public static Avalonia.Media.ImageBrush OnSource(this Avalonia.Media.ImageBrush obj, Action<Avalonia.Media.ImageBrush, IObservable<Avalonia.Media.IImageBrushSource?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.ImageBrush.SourceProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class ImageBrushExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IImageBrushSource>> ObserveBindingSource(this Avalonia.Media.ImageBrush obj)
+    public static IObservable<BindingValue<Avalonia.Media.IImageBrushSource?>> ObserveBindingSource(this Avalonia.Media.ImageBrush obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.ImageBrush.SourceProperty);
     }
@@ -169,7 +169,7 @@ public static partial class ImageBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.ImageBrush OnBindingSource(this Avalonia.Media.ImageBrush obj, Action<Avalonia.Media.ImageBrush, IObservable<BindingValue<Avalonia.Media.IImageBrushSource>>> handler)
+    public static Avalonia.Media.ImageBrush OnBindingSource(this Avalonia.Media.ImageBrush obj, Action<Avalonia.Media.ImageBrush, IObservable<BindingValue<Avalonia.Media.IImageBrushSource?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.ImageBrush.SourceProperty);
         handler(obj, observable);

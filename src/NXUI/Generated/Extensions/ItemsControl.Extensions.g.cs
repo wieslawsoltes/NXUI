@@ -20,7 +20,7 @@ public static partial class ItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemContainerTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.ItemsControl
+    public static ElementBuilder<T> ItemContainerTheme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.ItemsControl
     {
         return builder.WithValue(PropertyMetadata.ItemsControl_ItemContainerTheme, Avalonia.Controls.ItemsControl.ItemContainerThemeProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemContainerTheme<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -69,7 +69,7 @@ public static partial class ItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemContainerTheme<T>(this T obj, Avalonia.Styling.ControlTheme value) where T : Avalonia.Controls.ItemsControl
+    public static T ItemContainerTheme<T>(this T obj, Avalonia.Styling.ControlTheme? value) where T : Avalonia.Controls.ItemsControl
     {
         obj[Avalonia.Controls.ItemsControl.ItemContainerThemeProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemContainerTheme<T>(
         this T obj,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -139,7 +139,7 @@ public static partial class ItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Styling.ControlTheme> ObserveItemContainerTheme(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<Avalonia.Styling.ControlTheme?> ObserveItemContainerTheme(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Styling.ControlTheme?>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingItemContainerTheme(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme?>> ObserveBindingItemContainerTheme(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnBindingItemContainerTheme<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Styling.ControlTheme?>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty);
         handler(obj, observable);
@@ -304,7 +304,7 @@ public static partial class ItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemsPanel<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel> value) where T : Avalonia.Controls.ItemsControl
+    public static ElementBuilder<T> ItemsPanel<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?> value) where T : Avalonia.Controls.ItemsControl
     {
         return builder.WithValue(PropertyMetadata.ItemsControl_ItemsPanel, Avalonia.Controls.ItemsControl.ItemsPanelProperty, value);
     }
@@ -336,7 +336,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsPanel<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -353,7 +353,7 @@ public static partial class ItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemsPanel<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel> value) where T : Avalonia.Controls.ItemsControl
+    public static T ItemsPanel<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?> value) where T : Avalonia.Controls.ItemsControl
     {
         obj[Avalonia.Controls.ItemsControl.ItemsPanelProperty] = value;
         return obj;
@@ -390,7 +390,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsPanel<T>(
         this T obj,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?>> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -423,7 +423,7 @@ public static partial class ItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>> ObserveItemsPanel(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?>> ObserveItemsPanel(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
     }
@@ -435,7 +435,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemsPanel<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnItemsPanel<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
         handler(obj, observable);
@@ -447,7 +447,7 @@ public static partial class ItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>>> ObserveBindingItemsPanel(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?>>> ObserveBindingItemsPanel(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
     }
@@ -459,7 +459,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemsPanel<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel>>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnBindingItemsPanel<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Panel?>>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
         handler(obj, observable);
@@ -498,7 +498,7 @@ public static partial class ItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable value) where T : Avalonia.Controls.ItemsControl
+    public static ElementBuilder<T> ItemsSource<T>(this ElementBuilder<T> builder, System.Collections.IEnumerable? value) where T : Avalonia.Controls.ItemsControl
     {
         return builder.WithValue(PropertyMetadata.ItemsControl_ItemsSource, Avalonia.Controls.ItemsControl.ItemsSourceProperty, value);
     }
@@ -530,7 +530,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemsSource<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -547,7 +547,7 @@ public static partial class ItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable value) where T : Avalonia.Controls.ItemsControl
+    public static T ItemsSource<T>(this T obj, System.Collections.IEnumerable? value) where T : Avalonia.Controls.ItemsControl
     {
         obj[Avalonia.Controls.ItemsControl.ItemsSourceProperty] = value;
         return obj;
@@ -584,7 +584,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemsSource<T>(
         this T obj,
-        IObservable<System.Collections.IEnumerable> observable,
+        IObservable<System.Collections.IEnumerable?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -617,7 +617,7 @@ public static partial class ItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.IEnumerable> ObserveItemsSource(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<System.Collections.IEnumerable?> ObserveItemsSource(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsSourceProperty);
     }
@@ -629,7 +629,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<System.Collections.IEnumerable>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<System.Collections.IEnumerable?>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemsSourceProperty);
         handler(obj, observable);
@@ -641,7 +641,7 @@ public static partial class ItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Collections.IEnumerable>> ObserveBindingItemsSource(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<BindingValue<System.Collections.IEnumerable?>> ObserveBindingItemsSource(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemsSourceProperty);
     }
@@ -653,7 +653,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<System.Collections.IEnumerable>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnBindingItemsSource<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<System.Collections.IEnumerable?>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemsSourceProperty);
         handler(obj, observable);
@@ -692,7 +692,7 @@ public static partial class ItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ItemsControl
+    public static ElementBuilder<T> ItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ItemsControl
     {
         return builder.WithValue(PropertyMetadata.ItemsControl_ItemTemplate, Avalonia.Controls.ItemsControl.ItemTemplateProperty, value);
     }
@@ -724,7 +724,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ItemTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -741,7 +741,7 @@ public static partial class ItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ItemsControl
+    public static T ItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ItemsControl
     {
         obj[Avalonia.Controls.ItemsControl.ItemTemplateProperty] = value;
         return obj;
@@ -778,7 +778,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ItemTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -811,7 +811,7 @@ public static partial class ItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveItemTemplate(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveItemTemplate(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
     }
@@ -823,7 +823,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
         handler(obj, observable);
@@ -835,7 +835,7 @@ public static partial class ItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingItemTemplate(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingItemTemplate(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
     }
@@ -847,7 +847,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnBindingItemTemplate<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
         handler(obj, observable);
@@ -886,7 +886,7 @@ public static partial class ItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> DisplayMemberBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.IBinding value) where T : Avalonia.Controls.ItemsControl
+    public static ElementBuilder<T> DisplayMemberBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.ItemsControl
     {
         return builder.WithValue(PropertyMetadata.ItemsControl_DisplayMemberBinding, Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, value);
     }
@@ -918,7 +918,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DisplayMemberBinding<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Data.IBinding> observable,
+        IObservable<Avalonia.Data.IBinding?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -935,7 +935,7 @@ public static partial class ItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T DisplayMemberBinding<T>(this T obj, Avalonia.Data.IBinding value) where T : Avalonia.Controls.ItemsControl
+    public static T DisplayMemberBinding<T>(this T obj, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.ItemsControl
     {
         obj[Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty] = value;
         return obj;
@@ -972,7 +972,7 @@ public static partial class ItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T DisplayMemberBinding<T>(
         this T obj,
-        IObservable<Avalonia.Data.IBinding> observable,
+        IObservable<Avalonia.Data.IBinding?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ItemsControl
     {
@@ -1005,7 +1005,7 @@ public static partial class ItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Data.IBinding> ObserveDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<Avalonia.Data.IBinding?> ObserveDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
     }
@@ -1017,7 +1017,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Data.IBinding>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<Avalonia.Data.IBinding?>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
         handler(obj, observable);
@@ -1029,7 +1029,7 @@ public static partial class ItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Data.IBinding>> ObserveBindingDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
+    public static IObservable<BindingValue<Avalonia.Data.IBinding?>> ObserveBindingDisplayMemberBinding(this Avalonia.Controls.ItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
     }
@@ -1041,7 +1041,7 @@ public static partial class ItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Data.IBinding>>> handler) where T : Avalonia.Controls.ItemsControl
+    public static T OnBindingDisplayMemberBinding<T>(this T obj, Action<Avalonia.Controls.ItemsControl, IObservable<BindingValue<Avalonia.Data.IBinding?>>> handler) where T : Avalonia.Controls.ItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
         handler(obj, observable);

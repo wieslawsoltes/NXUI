@@ -304,7 +304,7 @@ public static partial class VisualExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Clip<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry value) where T : Avalonia.Visual
+    public static ElementBuilder<T> Clip<T>(this ElementBuilder<T> builder, Avalonia.Media.Geometry? value) where T : Avalonia.Visual
     {
         return builder.WithValue(PropertyMetadata.Visual_Clip, Avalonia.Visual.ClipProperty, value);
     }
@@ -336,7 +336,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Clip<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -353,7 +353,7 @@ public static partial class VisualExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Clip<T>(this T obj, Avalonia.Media.Geometry value) where T : Avalonia.Visual
+    public static T Clip<T>(this T obj, Avalonia.Media.Geometry? value) where T : Avalonia.Visual
     {
         obj[Avalonia.Visual.ClipProperty] = value;
         return obj;
@@ -390,7 +390,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T Clip<T>(
         this T obj,
-        IObservable<Avalonia.Media.Geometry> observable,
+        IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -423,7 +423,7 @@ public static partial class VisualExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Geometry> ObserveClip(this Avalonia.Visual obj)
+    public static IObservable<Avalonia.Media.Geometry?> ObserveClip(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.ClipProperty);
     }
@@ -435,7 +435,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnClip<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.Geometry>> handler) where T : Avalonia.Visual
+    public static T OnClip<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.Geometry?>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.ClipProperty);
         handler(obj, observable);
@@ -447,7 +447,7 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Geometry>> ObserveBindingClip(this Avalonia.Visual obj)
+    public static IObservable<BindingValue<Avalonia.Media.Geometry?>> ObserveBindingClip(this Avalonia.Visual obj)
     {
         return obj.GetBindingObservable(Avalonia.Visual.ClipProperty);
     }
@@ -459,7 +459,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingClip<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.Geometry>>> handler) where T : Avalonia.Visual
+    public static T OnBindingClip<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.Geometry?>>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetBindingObservable(Avalonia.Visual.ClipProperty);
         handler(obj, observable);
@@ -886,7 +886,7 @@ public static partial class VisualExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> OpacityMask<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Visual
+    public static ElementBuilder<T> OpacityMask<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Visual
     {
         return builder.WithValue(PropertyMetadata.Visual_OpacityMask, Avalonia.Visual.OpacityMaskProperty, value);
     }
@@ -918,7 +918,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> OpacityMask<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -935,7 +935,7 @@ public static partial class VisualExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OpacityMask<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Visual
+    public static T OpacityMask<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Visual
     {
         obj[Avalonia.Visual.OpacityMaskProperty] = value;
         return obj;
@@ -972,7 +972,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T OpacityMask<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1005,7 +1005,7 @@ public static partial class VisualExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveOpacityMask(this Avalonia.Visual obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveOpacityMask(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.OpacityMaskProperty);
     }
@@ -1017,7 +1017,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Visual
+    public static T OnOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.OpacityMaskProperty);
         handler(obj, observable);
@@ -1029,7 +1029,7 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingOpacityMask(this Avalonia.Visual obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingOpacityMask(this Avalonia.Visual obj)
     {
         return obj.GetBindingObservable(Avalonia.Visual.OpacityMaskProperty);
     }
@@ -1041,7 +1041,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Visual
+    public static T OnBindingOpacityMask<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetBindingObservable(Avalonia.Visual.OpacityMaskProperty);
         handler(obj, observable);
@@ -1080,7 +1080,7 @@ public static partial class VisualExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Effect<T>(this ElementBuilder<T> builder, Avalonia.Media.IEffect value) where T : Avalonia.Visual
+    public static ElementBuilder<T> Effect<T>(this ElementBuilder<T> builder, Avalonia.Media.IEffect? value) where T : Avalonia.Visual
     {
         return builder.WithValue(PropertyMetadata.Visual_Effect, Avalonia.Visual.EffectProperty, value);
     }
@@ -1112,7 +1112,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Effect<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IEffect> observable,
+        IObservable<Avalonia.Media.IEffect?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1129,7 +1129,7 @@ public static partial class VisualExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Effect<T>(this T obj, Avalonia.Media.IEffect value) where T : Avalonia.Visual
+    public static T Effect<T>(this T obj, Avalonia.Media.IEffect? value) where T : Avalonia.Visual
     {
         obj[Avalonia.Visual.EffectProperty] = value;
         return obj;
@@ -1166,7 +1166,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T Effect<T>(
         this T obj,
-        IObservable<Avalonia.Media.IEffect> observable,
+        IObservable<Avalonia.Media.IEffect?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1199,7 +1199,7 @@ public static partial class VisualExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IEffect> ObserveEffect(this Avalonia.Visual obj)
+    public static IObservable<Avalonia.Media.IEffect?> ObserveEffect(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.EffectProperty);
     }
@@ -1211,7 +1211,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnEffect<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.IEffect>> handler) where T : Avalonia.Visual
+    public static T OnEffect<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.IEffect?>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.EffectProperty);
         handler(obj, observable);
@@ -1223,7 +1223,7 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IEffect>> ObserveBindingEffect(this Avalonia.Visual obj)
+    public static IObservable<BindingValue<Avalonia.Media.IEffect?>> ObserveBindingEffect(this Avalonia.Visual obj)
     {
         return obj.GetBindingObservable(Avalonia.Visual.EffectProperty);
     }
@@ -1235,7 +1235,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingEffect<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.IEffect>>> handler) where T : Avalonia.Visual
+    public static T OnBindingEffect<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.IEffect?>>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetBindingObservable(Avalonia.Visual.EffectProperty);
         handler(obj, observable);
@@ -1364,7 +1364,7 @@ public static partial class VisualExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> RenderTransform<T>(this ElementBuilder<T> builder, Avalonia.Media.ITransform value) where T : Avalonia.Visual
+    public static ElementBuilder<T> RenderTransform<T>(this ElementBuilder<T> builder, Avalonia.Media.ITransform? value) where T : Avalonia.Visual
     {
         return builder.WithValue(PropertyMetadata.Visual_RenderTransform, Avalonia.Visual.RenderTransformProperty, value);
     }
@@ -1396,7 +1396,7 @@ public static partial class VisualExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> RenderTransform<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.ITransform> observable,
+        IObservable<Avalonia.Media.ITransform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1413,7 +1413,7 @@ public static partial class VisualExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T RenderTransform<T>(this T obj, Avalonia.Media.ITransform value) where T : Avalonia.Visual
+    public static T RenderTransform<T>(this T obj, Avalonia.Media.ITransform? value) where T : Avalonia.Visual
     {
         obj[Avalonia.Visual.RenderTransformProperty] = value;
         return obj;
@@ -1450,7 +1450,7 @@ public static partial class VisualExtensions
     /// <returns>The target object reference.</returns>
     public static T RenderTransform<T>(
         this T obj,
-        IObservable<Avalonia.Media.ITransform> observable,
+        IObservable<Avalonia.Media.ITransform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Visual
     {
@@ -1483,7 +1483,7 @@ public static partial class VisualExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.ITransform> ObserveRenderTransform(this Avalonia.Visual obj)
+    public static IObservable<Avalonia.Media.ITransform?> ObserveRenderTransform(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.RenderTransformProperty);
     }
@@ -1495,7 +1495,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnRenderTransform<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Visual
+    public static T OnRenderTransform<T>(this T obj, Action<Avalonia.Visual, IObservable<Avalonia.Media.ITransform?>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetObservable(Avalonia.Visual.RenderTransformProperty);
         handler(obj, observable);
@@ -1507,7 +1507,7 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.ITransform>> ObserveBindingRenderTransform(this Avalonia.Visual obj)
+    public static IObservable<BindingValue<Avalonia.Media.ITransform?>> ObserveBindingRenderTransform(this Avalonia.Visual obj)
     {
         return obj.GetBindingObservable(Avalonia.Visual.RenderTransformProperty);
     }
@@ -1519,7 +1519,7 @@ public static partial class VisualExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingRenderTransform<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.ITransform>>> handler) where T : Avalonia.Visual
+    public static T OnBindingRenderTransform<T>(this T obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Media.ITransform?>>> handler) where T : Avalonia.Visual
     {
         var observable = obj.GetBindingObservable(Avalonia.Visual.RenderTransformProperty);
         handler(obj, observable);
@@ -2014,7 +2014,7 @@ public static partial class VisualExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Visual> ObserveVisualParent(this Avalonia.Visual obj)
+    public static IObservable<Avalonia.Visual?> ObserveVisualParent(this Avalonia.Visual obj)
     {
         return obj.GetObservable(Avalonia.Visual.VisualParentProperty);
     }
@@ -2025,7 +2025,7 @@ public static partial class VisualExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.Visual>> handler)
+    public static Avalonia.Visual OnVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<Avalonia.Visual?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Visual.VisualParentProperty);
         handler(obj, observable);
@@ -2037,7 +2037,7 @@ public static partial class VisualExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Visual>> ObserveBindingVisualParent(this Avalonia.Visual obj)
+    public static IObservable<BindingValue<Avalonia.Visual?>> ObserveBindingVisualParent(this Avalonia.Visual obj)
     {
         return obj.GetBindingObservable(Avalonia.Visual.VisualParentProperty);
     }
@@ -2048,7 +2048,7 @@ public static partial class VisualExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Visual OnBindingVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Visual>>> handler)
+    public static Avalonia.Visual OnBindingVisualParent(this Avalonia.Visual obj, Action<Avalonia.Visual, IObservable<BindingValue<Avalonia.Visual?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Visual.VisualParentProperty);
         handler(obj, observable);

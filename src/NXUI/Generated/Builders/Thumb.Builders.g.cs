@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Thumb"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.Thumb"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Thumb"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.Thumb> Thumb(out ElementRef<Avalonia.Controls.Primitives.Thumb> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.Thumb>(TypeMetadata.Avalonia_Controls_Primitives_Thumb, () => new Avalonia.Controls.Primitives.Thumb())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.Thumb"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.Thumb"/> class.</returns>
     public static Avalonia.Controls.Primitives.Thumb Thumb(out Avalonia.Controls.Primitives.Thumb @ref)
         => @ref = new Avalonia.Controls.Primitives.Thumb();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Styles"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.Styles> Styles(out ElementRef<Avalonia.Styling.Styles> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.Styles>(TypeMetadata.Avalonia_Styling_Styles, () => new Avalonia.Styling.Styles())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
     public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref)
         => @ref = new Avalonia.Styling.Styles();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Styling.Styles"/> instantiated class.</param>
+    /// <param name="owner">The owner value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
+    public static ElementBuilder<Avalonia.Styling.Styles> Styles(out ElementRef<Avalonia.Styling.Styles> @ref, Avalonia.Controls.IResourceHost owner)
+    {
+        return ElementBuilder.Create<Avalonia.Styling.Styles>(TypeMetadata.Avalonia_Styling_Styles, () => new Avalonia.Styling.Styles(owner))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Styling.Styles"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Styling.Styles"/> class.</returns>
     public static Avalonia.Styling.Styles Styles(out Avalonia.Styling.Styles @ref, Avalonia.Controls.IResourceHost owner)
         => @ref = new Avalonia.Styling.Styles(owner);
+#endif
 
 }

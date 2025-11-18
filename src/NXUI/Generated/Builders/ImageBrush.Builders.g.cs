@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.ImageBrush> ImageBrush(out ElementRef<Avalonia.Media.ImageBrush> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.ImageBrush>(TypeMetadata.Avalonia_Media_ImageBrush, () => new Avalonia.Media.ImageBrush())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
     public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref)
         => @ref = new Avalonia.Media.ImageBrush();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ImageBrush"/> instantiated class.</param>
+    /// <param name="source">The source value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.ImageBrush> ImageBrush(out ElementRef<Avalonia.Media.ImageBrush> @ref, Avalonia.Media.IImageBrushSource source)
+    {
+        return ElementBuilder.Create<Avalonia.Media.ImageBrush>(TypeMetadata.Avalonia_Media_ImageBrush, () => new Avalonia.Media.ImageBrush(source))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ImageBrush"/> class.</returns>
     public static Avalonia.Media.ImageBrush ImageBrush(out Avalonia.Media.ImageBrush @ref, Avalonia.Media.IImageBrushSource source)
         => @ref = new Avalonia.Media.ImageBrush(source);
+#endif
 
 }

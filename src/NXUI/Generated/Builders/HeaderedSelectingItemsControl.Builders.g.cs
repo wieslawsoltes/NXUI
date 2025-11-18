@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl> HeaderedSelectingItemsControl(out ElementRef<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.HeaderedSelectingItemsControl>(TypeMetadata.Avalonia_Controls_Primitives_HeaderedSelectingItemsControl, () => new Avalonia.Controls.Primitives.HeaderedSelectingItemsControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl"/> class.</returns>
     public static Avalonia.Controls.Primitives.HeaderedSelectingItemsControl HeaderedSelectingItemsControl(out Avalonia.Controls.Primitives.HeaderedSelectingItemsControl @ref)
         => @ref = new Avalonia.Controls.Primitives.HeaderedSelectingItemsControl();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DrawingGroup"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DrawingGroup"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingGroup"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.DrawingGroup> DrawingGroup(out ElementRef<Avalonia.Media.DrawingGroup> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.DrawingGroup>(TypeMetadata.Avalonia_Media_DrawingGroup, () => new Avalonia.Media.DrawingGroup())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DrawingGroup"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.DrawingGroup"/> class.</returns>
     public static Avalonia.Media.DrawingGroup DrawingGroup(out Avalonia.Media.DrawingGroup @ref)
         => @ref = new Avalonia.Media.DrawingGroup();
+#endif
 
 }

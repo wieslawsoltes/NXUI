@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.GridSplitter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.GridSplitter> GridSplitter(out ElementRef<Avalonia.Controls.GridSplitter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.GridSplitter>(TypeMetadata.Avalonia_Controls_GridSplitter, () => new Avalonia.Controls.GridSplitter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.GridSplitter"/> class.</returns>
     public static Avalonia.Controls.GridSplitter GridSplitter(out Avalonia.Controls.GridSplitter @ref)
         => @ref = new Avalonia.Controls.GridSplitter();
+#endif
 
 }

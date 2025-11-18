@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Path"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Path"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Path"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Shapes.Path> Path(out ElementRef<Avalonia.Controls.Shapes.Path> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Shapes.Path>(TypeMetadata.Avalonia_Controls_Shapes_Path, () => new Avalonia.Controls.Shapes.Path())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Path"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Path"/> class.</returns>
     public static Avalonia.Controls.Shapes.Path Path(out Avalonia.Controls.Shapes.Path @ref)
         => @ref = new Avalonia.Controls.Shapes.Path();
+#endif
 
 }

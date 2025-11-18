@@ -214,7 +214,7 @@ public static partial class HyperlinkButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> NavigateUri<T>(this ElementBuilder<T> builder, System.Uri value) where T : Avalonia.Controls.HyperlinkButton
+    public static ElementBuilder<T> NavigateUri<T>(this ElementBuilder<T> builder, System.Uri? value) where T : Avalonia.Controls.HyperlinkButton
     {
         return builder.WithValue(PropertyMetadata.HyperlinkButton_NavigateUri, Avalonia.Controls.HyperlinkButton.NavigateUriProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> NavigateUri<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Uri> observable,
+        IObservable<System.Uri?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -263,7 +263,7 @@ public static partial class HyperlinkButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T NavigateUri<T>(this T obj, System.Uri value) where T : Avalonia.Controls.HyperlinkButton
+    public static T NavigateUri<T>(this T obj, System.Uri? value) where T : Avalonia.Controls.HyperlinkButton
     {
         obj[Avalonia.Controls.HyperlinkButton.NavigateUriProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class HyperlinkButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T NavigateUri<T>(
         this T obj,
-        IObservable<System.Uri> observable,
+        IObservable<System.Uri?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.HyperlinkButton
     {
@@ -333,7 +333,7 @@ public static partial class HyperlinkButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Uri> ObserveNavigateUri(this Avalonia.Controls.HyperlinkButton obj)
+    public static IObservable<System.Uri?> ObserveNavigateUri(this Avalonia.Controls.HyperlinkButton obj)
     {
         return obj.GetObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
     }
@@ -345,7 +345,7 @@ public static partial class HyperlinkButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnNavigateUri<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<System.Uri>> handler) where T : Avalonia.Controls.HyperlinkButton
+    public static T OnNavigateUri<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<System.Uri?>> handler) where T : Avalonia.Controls.HyperlinkButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class HyperlinkButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Uri>> ObserveBindingNavigateUri(this Avalonia.Controls.HyperlinkButton obj)
+    public static IObservable<BindingValue<System.Uri?>> ObserveBindingNavigateUri(this Avalonia.Controls.HyperlinkButton obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
     }
@@ -369,7 +369,7 @@ public static partial class HyperlinkButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingNavigateUri<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<BindingValue<System.Uri>>> handler) where T : Avalonia.Controls.HyperlinkButton
+    public static T OnBindingNavigateUri<T>(this T obj, Action<Avalonia.Controls.HyperlinkButton, IObservable<BindingValue<System.Uri?>>> handler) where T : Avalonia.Controls.HyperlinkButton
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.HyperlinkButton.NavigateUriProperty);
         handler(obj, observable);

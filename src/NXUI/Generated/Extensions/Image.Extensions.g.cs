@@ -20,7 +20,7 @@ public static partial class ImageExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Media.IImage value) where T : Avalonia.Controls.Image
+    public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Media.IImage? value) where T : Avalonia.Controls.Image
     {
         return builder.WithValue(PropertyMetadata.Image_Source, Avalonia.Controls.Image.SourceProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ImageExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IImage> observable,
+        IObservable<Avalonia.Media.IImage?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Image
     {
@@ -69,7 +69,7 @@ public static partial class ImageExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Source<T>(this T obj, Avalonia.Media.IImage value) where T : Avalonia.Controls.Image
+    public static T Source<T>(this T obj, Avalonia.Media.IImage? value) where T : Avalonia.Controls.Image
     {
         obj[Avalonia.Controls.Image.SourceProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ImageExtensions
     /// <returns>The target object reference.</returns>
     public static T Source<T>(
         this T obj,
-        IObservable<Avalonia.Media.IImage> observable,
+        IObservable<Avalonia.Media.IImage?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Image
     {
@@ -139,7 +139,7 @@ public static partial class ImageExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IImage> ObserveSource(this Avalonia.Controls.Image obj)
+    public static IObservable<Avalonia.Media.IImage?> ObserveSource(this Avalonia.Controls.Image obj)
     {
         return obj.GetObservable(Avalonia.Controls.Image.SourceProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ImageExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSource<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Controls.Image
+    public static T OnSource<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<Avalonia.Media.IImage?>> handler) where T : Avalonia.Controls.Image
     {
         var observable = obj.GetObservable(Avalonia.Controls.Image.SourceProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ImageExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IImage>> ObserveBindingSource(this Avalonia.Controls.Image obj)
+    public static IObservable<BindingValue<Avalonia.Media.IImage?>> ObserveBindingSource(this Avalonia.Controls.Image obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Image.SourceProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ImageExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSource<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<BindingValue<Avalonia.Media.IImage>>> handler) where T : Avalonia.Controls.Image
+    public static T OnBindingSource<T>(this T obj, Action<Avalonia.Controls.Image, IObservable<BindingValue<Avalonia.Media.IImage?>>> handler) where T : Avalonia.Controls.Image
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Image.SourceProperty);
         handler(obj, observable);

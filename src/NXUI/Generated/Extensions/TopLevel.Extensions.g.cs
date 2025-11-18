@@ -200,7 +200,7 @@ public static partial class TopLevelExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PointerOverElement<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement value) where T : Avalonia.Controls.TopLevel
+    public static ElementBuilder<T> PointerOverElement<T>(this ElementBuilder<T> builder, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.TopLevel
     {
         return builder.WithValue(PropertyMetadata.TopLevel_PointerOverElement, Avalonia.Controls.TopLevel.PointerOverElementProperty, value);
     }
@@ -232,7 +232,7 @@ public static partial class TopLevelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PointerOverElement<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Input.IInputElement> observable,
+        IObservable<Avalonia.Input.IInputElement?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -249,7 +249,7 @@ public static partial class TopLevelExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PointerOverElement<T>(this T obj, Avalonia.Input.IInputElement value) where T : Avalonia.Controls.TopLevel
+    public static T PointerOverElement<T>(this T obj, Avalonia.Input.IInputElement? value) where T : Avalonia.Controls.TopLevel
     {
         obj[Avalonia.Controls.TopLevel.PointerOverElementProperty] = value;
         return obj;
@@ -286,7 +286,7 @@ public static partial class TopLevelExtensions
     /// <returns>The target object reference.</returns>
     public static T PointerOverElement<T>(
         this T obj,
-        IObservable<Avalonia.Input.IInputElement> observable,
+        IObservable<Avalonia.Input.IInputElement?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TopLevel
     {
@@ -319,7 +319,7 @@ public static partial class TopLevelExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Input.IInputElement> ObservePointerOverElement(this Avalonia.Controls.TopLevel obj)
+    public static IObservable<Avalonia.Input.IInputElement?> ObservePointerOverElement(this Avalonia.Controls.TopLevel obj)
     {
         return obj.GetObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
     }
@@ -331,7 +331,7 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Input.IInputElement>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<Avalonia.Input.IInputElement?>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
         handler(obj, observable);
@@ -343,7 +343,7 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Input.IInputElement>> ObserveBindingPointerOverElement(this Avalonia.Controls.TopLevel obj)
+    public static IObservable<BindingValue<Avalonia.Input.IInputElement?>> ObserveBindingPointerOverElement(this Avalonia.Controls.TopLevel obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
     }
@@ -355,7 +355,7 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<Avalonia.Input.IInputElement>>> handler) where T : Avalonia.Controls.TopLevel
+    public static T OnBindingPointerOverElement<T>(this T obj, Action<Avalonia.Controls.TopLevel, IObservable<BindingValue<Avalonia.Input.IInputElement?>>> handler) where T : Avalonia.Controls.TopLevel
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.PointerOverElementProperty);
         handler(obj, observable);
@@ -872,7 +872,7 @@ public static partial class TopLevelExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SystemBarColor<T>(this ElementBuilder<T> builder, Avalonia.Media.SolidColorBrush value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> SystemBarColor<T>(this ElementBuilder<T> builder, Avalonia.Media.SolidColorBrush? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.TopLevel_SystemBarColor, Avalonia.Controls.TopLevel.SystemBarColorProperty, value);
     }
@@ -904,7 +904,7 @@ public static partial class TopLevelExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SystemBarColor<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.SolidColorBrush> observable,
+        IObservable<Avalonia.Media.SolidColorBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -921,7 +921,7 @@ public static partial class TopLevelExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SystemBarColor<T>(this T obj, Avalonia.Media.SolidColorBrush value) where T : Avalonia.Controls.Control
+    public static T SystemBarColor<T>(this T obj, Avalonia.Media.SolidColorBrush? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.TopLevel.SystemBarColorProperty] = value;
         return obj;
@@ -958,7 +958,7 @@ public static partial class TopLevelExtensions
     /// <returns>The target object reference.</returns>
     public static T SystemBarColor<T>(
         this T obj,
-        IObservable<Avalonia.Media.SolidColorBrush> observable,
+        IObservable<Avalonia.Media.SolidColorBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -991,7 +991,7 @@ public static partial class TopLevelExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.SolidColorBrush> ObserveSystemBarColor(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Media.SolidColorBrush?> ObserveSystemBarColor(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
     }
@@ -1003,7 +1003,7 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSystemBarColor<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.SolidColorBrush>> handler) where T : Avalonia.Controls.Control
+    public static T OnSystemBarColor<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Media.SolidColorBrush?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
         handler(obj, observable);
@@ -1015,7 +1015,7 @@ public static partial class TopLevelExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.SolidColorBrush>> ObserveBindingSystemBarColor(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<Avalonia.Media.SolidColorBrush?>> ObserveBindingSystemBarColor(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
     }
@@ -1027,7 +1027,7 @@ public static partial class TopLevelExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSystemBarColor<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Media.SolidColorBrush>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingSystemBarColor<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Media.SolidColorBrush?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TopLevel.SystemBarColorProperty);
         handler(obj, observable);

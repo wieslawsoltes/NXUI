@@ -20,7 +20,7 @@ public static partial class RefreshContainerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Visualizer<T>(this ElementBuilder<T> builder, Avalonia.Controls.RefreshVisualizer value) where T : Avalonia.Controls.RefreshContainer
+    public static ElementBuilder<T> Visualizer<T>(this ElementBuilder<T> builder, Avalonia.Controls.RefreshVisualizer? value) where T : Avalonia.Controls.RefreshContainer
     {
         return builder.WithValue(PropertyMetadata.RefreshContainer_Visualizer, Avalonia.Controls.RefreshContainer.VisualizerProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Visualizer<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.RefreshVisualizer> observable,
+        IObservable<Avalonia.Controls.RefreshVisualizer?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -69,7 +69,7 @@ public static partial class RefreshContainerExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Visualizer<T>(this T obj, Avalonia.Controls.RefreshVisualizer value) where T : Avalonia.Controls.RefreshContainer
+    public static T Visualizer<T>(this T obj, Avalonia.Controls.RefreshVisualizer? value) where T : Avalonia.Controls.RefreshContainer
     {
         obj[Avalonia.Controls.RefreshContainer.VisualizerProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class RefreshContainerExtensions
     /// <returns>The target object reference.</returns>
     public static T Visualizer<T>(
         this T obj,
-        IObservable<Avalonia.Controls.RefreshVisualizer> observable,
+        IObservable<Avalonia.Controls.RefreshVisualizer?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RefreshContainer
     {
@@ -139,7 +139,7 @@ public static partial class RefreshContainerExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.RefreshVisualizer> ObserveVisualizer(this Avalonia.Controls.RefreshContainer obj)
+    public static IObservable<Avalonia.Controls.RefreshVisualizer?> ObserveVisualizer(this Avalonia.Controls.RefreshContainer obj)
     {
         return obj.GetObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
     }
@@ -151,7 +151,7 @@ public static partial class RefreshContainerExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnVisualizer<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<Avalonia.Controls.RefreshVisualizer>> handler) where T : Avalonia.Controls.RefreshContainer
+    public static T OnVisualizer<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<Avalonia.Controls.RefreshVisualizer?>> handler) where T : Avalonia.Controls.RefreshContainer
     {
         var observable = obj.GetObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class RefreshContainerExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.RefreshVisualizer>> ObserveBindingVisualizer(this Avalonia.Controls.RefreshContainer obj)
+    public static IObservable<BindingValue<Avalonia.Controls.RefreshVisualizer?>> ObserveBindingVisualizer(this Avalonia.Controls.RefreshContainer obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
     }
@@ -175,7 +175,7 @@ public static partial class RefreshContainerExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingVisualizer<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<BindingValue<Avalonia.Controls.RefreshVisualizer>>> handler) where T : Avalonia.Controls.RefreshContainer
+    public static T OnBindingVisualizer<T>(this T obj, Action<Avalonia.Controls.RefreshContainer, IObservable<BindingValue<Avalonia.Controls.RefreshVisualizer?>>> handler) where T : Avalonia.Controls.RefreshContainer
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.RefreshContainer.VisualizerProperty);
         handler(obj, observable);

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.PointTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.PointTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.PointTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.PointTransition> PointTransition(out ElementRef<Avalonia.Animation.PointTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.PointTransition>(TypeMetadata.Avalonia_Animation_PointTransition, () => new Avalonia.Animation.PointTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.PointTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.PointTransition"/> class.</returns>
     public static Avalonia.Animation.PointTransition PointTransition(out Avalonia.Animation.PointTransition @ref)
         => @ref = new Avalonia.Animation.PointTransition();
+#endif
 
 }

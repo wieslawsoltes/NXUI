@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.CornerRadiusTransition> CornerRadiusTransition(out ElementRef<Avalonia.Animation.CornerRadiusTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.CornerRadiusTransition>(TypeMetadata.Avalonia_Animation_CornerRadiusTransition, () => new Avalonia.Animation.CornerRadiusTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.CornerRadiusTransition"/> class.</returns>
     public static Avalonia.Animation.CornerRadiusTransition CornerRadiusTransition(out Avalonia.Animation.CornerRadiusTransition @ref)
         => @ref = new Avalonia.Animation.CornerRadiusTransition();
+#endif
 
 }

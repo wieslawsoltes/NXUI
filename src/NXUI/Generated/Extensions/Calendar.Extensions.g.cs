@@ -583,7 +583,7 @@ public static partial class CalendarExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> HeaderBackground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Calendar
+    public static ElementBuilder<T> HeaderBackground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Calendar
     {
         return builder.WithValue(PropertyMetadata.Calendar_HeaderBackground, Avalonia.Controls.Calendar.HeaderBackgroundProperty, value);
     }
@@ -615,7 +615,7 @@ public static partial class CalendarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> HeaderBackground<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -632,7 +632,7 @@ public static partial class CalendarExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T HeaderBackground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Calendar
+    public static T HeaderBackground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Calendar
     {
         obj[Avalonia.Controls.Calendar.HeaderBackgroundProperty] = value;
         return obj;
@@ -669,7 +669,7 @@ public static partial class CalendarExtensions
     /// <returns>The target object reference.</returns>
     public static T HeaderBackground<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Calendar
     {
@@ -702,7 +702,7 @@ public static partial class CalendarExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveHeaderBackground(this Avalonia.Controls.Calendar obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveHeaderBackground(this Avalonia.Controls.Calendar obj)
     {
         return obj.GetObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
     }
@@ -714,7 +714,7 @@ public static partial class CalendarExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnHeaderBackground<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnHeaderBackground<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
         handler(obj, observable);
@@ -726,7 +726,7 @@ public static partial class CalendarExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingHeaderBackground(this Avalonia.Controls.Calendar obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingHeaderBackground(this Avalonia.Controls.Calendar obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
     }
@@ -738,7 +738,7 @@ public static partial class CalendarExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingHeaderBackground<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Calendar
+    public static T OnBindingHeaderBackground<T>(this T obj, Action<Avalonia.Controls.Calendar, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Calendar
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
         handler(obj, observable);

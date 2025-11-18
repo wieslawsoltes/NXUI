@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MenuFlyout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyout"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.MenuFlyout> MenuFlyout(out ElementRef<Avalonia.Controls.MenuFlyout> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.MenuFlyout>(TypeMetadata.Avalonia_Controls_MenuFlyout, () => new Avalonia.Controls.MenuFlyout())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuFlyout"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuFlyout"/> class.</returns>
     public static Avalonia.Controls.MenuFlyout MenuFlyout(out Avalonia.Controls.MenuFlyout @ref)
         => @ref = new Avalonia.Controls.MenuFlyout();
+#endif
 
 }

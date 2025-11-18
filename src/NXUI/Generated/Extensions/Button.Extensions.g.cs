@@ -264,7 +264,7 @@ public static partial class ButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand value) where T : Avalonia.Controls.Button
+    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.Button
     {
         return builder.WithValue(PropertyMetadata.Button_Command, Avalonia.Controls.Button.CommandProperty, value);
     }
@@ -296,7 +296,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -313,7 +313,7 @@ public static partial class ButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Command<T>(this T obj, System.Windows.Input.ICommand value) where T : Avalonia.Controls.Button
+    public static T Command<T>(this T obj, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.Button
     {
         obj[Avalonia.Controls.Button.CommandProperty] = value;
         return obj;
@@ -350,7 +350,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -383,7 +383,7 @@ public static partial class ButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.Button obj)
+    public static IObservable<System.Windows.Input.ICommand?> ObserveCommand(this Avalonia.Controls.Button obj)
     {
         return obj.GetObservable(Avalonia.Controls.Button.CommandProperty);
     }
@@ -395,7 +395,7 @@ public static partial class ButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.Button
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Windows.Input.ICommand?>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.CommandProperty);
         handler(obj, observable);
@@ -407,7 +407,7 @@ public static partial class ButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.Button obj)
+    public static IObservable<BindingValue<System.Windows.Input.ICommand?>> ObserveBindingCommand(this Avalonia.Controls.Button obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Button.CommandProperty);
     }
@@ -419,7 +419,7 @@ public static partial class ButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.Button
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Windows.Input.ICommand?>>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Button.CommandProperty);
         handler(obj, observable);
@@ -458,7 +458,7 @@ public static partial class ButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Button
+    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.Button
     {
         return builder.WithValue(PropertyMetadata.Button_CommandParameter, Avalonia.Controls.Button.CommandParameterProperty, value);
     }
@@ -490,7 +490,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -507,7 +507,7 @@ public static partial class ButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Controls.Button
+    public static T CommandParameter<T>(this T obj, System.Object? value) where T : Avalonia.Controls.Button
     {
         obj[Avalonia.Controls.Button.CommandParameterProperty] = value;
         return obj;
@@ -544,7 +544,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -577,7 +577,7 @@ public static partial class ButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.Button obj)
+    public static IObservable<System.Object?> ObserveCommandParameter(this Avalonia.Controls.Button obj)
     {
         return obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
     }
@@ -589,7 +589,7 @@ public static partial class ButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Object>> handler) where T : Avalonia.Controls.Button
+    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<System.Object?>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.CommandParameterProperty);
         handler(obj, observable);
@@ -601,7 +601,7 @@ public static partial class ButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.Button obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingCommandParameter(this Avalonia.Controls.Button obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Button.CommandParameterProperty);
     }
@@ -613,7 +613,7 @@ public static partial class ButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Button
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Button.CommandParameterProperty);
         handler(obj, observable);
@@ -1130,7 +1130,7 @@ public static partial class ButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Flyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.Button
+    public static ElementBuilder<T> Flyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.Button
     {
         return builder.WithValue(PropertyMetadata.Button_Flyout, Avalonia.Controls.Button.FlyoutProperty, value);
     }
@@ -1162,7 +1162,7 @@ public static partial class ButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Flyout<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1179,7 +1179,7 @@ public static partial class ButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Flyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.Button
+    public static T Flyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.Button
     {
         obj[Avalonia.Controls.Button.FlyoutProperty] = value;
         return obj;
@@ -1216,7 +1216,7 @@ public static partial class ButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T Flyout<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Button
     {
@@ -1249,7 +1249,7 @@ public static partial class ButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveFlyout(this Avalonia.Controls.Button obj)
+    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase?> ObserveFlyout(this Avalonia.Controls.Button obj)
     {
         return obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
     }
@@ -1261,7 +1261,7 @@ public static partial class ButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Button
+    public static T OnFlyout<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<Avalonia.Controls.Primitives.FlyoutBase?>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetObservable(Avalonia.Controls.Button.FlyoutProperty);
         handler(obj, observable);
@@ -1273,7 +1273,7 @@ public static partial class ButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingFlyout(this Avalonia.Controls.Button obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>> ObserveBindingFlyout(this Avalonia.Controls.Button obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Button.FlyoutProperty);
     }
@@ -1285,7 +1285,7 @@ public static partial class ButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFlyout<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.Button
+    public static T OnBindingFlyout<T>(this T obj, Action<Avalonia.Controls.Button, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>>> handler) where T : Avalonia.Controls.Button
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Button.FlyoutProperty);
         handler(obj, observable);

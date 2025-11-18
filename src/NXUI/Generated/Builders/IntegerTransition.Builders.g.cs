@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.IntegerTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.IntegerTransition> IntegerTransition(out ElementRef<Avalonia.Animation.IntegerTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.IntegerTransition>(TypeMetadata.Avalonia_Animation_IntegerTransition, () => new Avalonia.Animation.IntegerTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.IntegerTransition"/> class.</returns>
     public static Avalonia.Animation.IntegerTransition IntegerTransition(out Avalonia.Animation.IntegerTransition @ref)
         => @ref = new Avalonia.Animation.IntegerTransition();
+#endif
 
 }

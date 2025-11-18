@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.HyperlinkButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.HyperlinkButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.HyperlinkButton"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.HyperlinkButton> HyperlinkButton(out ElementRef<Avalonia.Controls.HyperlinkButton> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.HyperlinkButton>(TypeMetadata.Avalonia_Controls_HyperlinkButton, () => new Avalonia.Controls.HyperlinkButton())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.HyperlinkButton"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.HyperlinkButton"/> class.</returns>
     public static Avalonia.Controls.HyperlinkButton HyperlinkButton(out Avalonia.Controls.HyperlinkButton @ref)
         => @ref = new Avalonia.Controls.HyperlinkButton();
+#endif
 
 }

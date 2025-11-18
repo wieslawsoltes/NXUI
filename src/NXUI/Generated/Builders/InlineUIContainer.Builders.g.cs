@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.InlineUIContainer> InlineUIContainer(out ElementRef<Avalonia.Controls.Documents.InlineUIContainer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.InlineUIContainer>(TypeMetadata.Avalonia_Controls_Documents_InlineUIContainer, () => new Avalonia.Controls.Documents.InlineUIContainer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
     public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref)
         => @ref = new Avalonia.Controls.Documents.InlineUIContainer();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> instantiated class.</param>
+    /// <param name="child">The child value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.InlineUIContainer> InlineUIContainer(out ElementRef<Avalonia.Controls.Documents.InlineUIContainer> @ref, Avalonia.Controls.Control child)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.InlineUIContainer>(TypeMetadata.Avalonia_Controls_Documents_InlineUIContainer, () => new Avalonia.Controls.Documents.InlineUIContainer(child))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class.</returns>
     public static Avalonia.Controls.Documents.InlineUIContainer InlineUIContainer(out Avalonia.Controls.Documents.InlineUIContainer @ref, Avalonia.Controls.Control child)
         => @ref = new Avalonia.Controls.Documents.InlineUIContainer(child);
+#endif
 
 }

@@ -16,6 +16,7 @@ public sealed class ElementNode
     private readonly List<EventMutation> _events = new();
     private readonly List<ElementNode> _children = new();
     private AvaloniaObject? _materializedInstance;
+    private List<IElementAttachment>? _attachments;
     private ChildSlot _parentSlot = ChildSlot.Unknown;
     private bool _isBoundary;
 
@@ -144,15 +145,71 @@ public sealed class ElementNode
     {
         ArgumentNullException.ThrowIfNull(previous);
         _materializedInstance = previous._materializedInstance;
+        previous.TransferAttachmentsTo(this);
+        if (_materializedInstance is { } instance)
+        {
+            NotifyAttachments(instance);
+        }
     }
 
     internal void SetMaterializedInstance(AvaloniaObject instance)
     {
         ArgumentNullException.ThrowIfNull(instance);
         _materializedInstance = instance;
+        NotifyAttachments(instance);
     }
 
     internal AvaloniaObject Instantiate()
         => _factory();
+
+    internal void RegisterAttachment(IElementAttachment attachment)
+    {
+        ArgumentNullException.ThrowIfNull(attachment);
+        _attachments ??= new List<IElementAttachment>();
+        _attachments.Add(attachment);
+        attachment.OnAttached(this);
+
+        if (_materializedInstance is { } instance)
+        {
+            attachment.OnMaterialized(instance);
+        }
+    }
+
+    private void TransferAttachmentsTo(ElementNode target)
+    {
+        if (_attachments is null || _attachments.Count == 0)
+        {
+            return;
+        }
+
+        target._attachments ??= new List<IElementAttachment>();
+        foreach (var attachment in _attachments)
+        {
+            target._attachments.Add(attachment);
+            attachment.OnAttached(target);
+        }
+
+        _attachments.Clear();
+    }
+
+    private void NotifyAttachments(AvaloniaObject instance)
+    {
+        if (_attachments is null)
+        {
+            return;
+        }
+
+        for (var i = 0; i < _attachments.Count; i++)
+        {
+            _attachments[i].OnMaterialized(instance);
+        }
+    }
+}
+
+internal interface IElementAttachment
+{
+    void OnAttached(ElementNode node);
+
+    void OnMaterialized(AvaloniaObject instance);
 }
 #endif

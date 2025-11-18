@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.LineBreak"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.LineBreak> LineBreak(out ElementRef<Avalonia.Controls.Documents.LineBreak> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.LineBreak>(TypeMetadata.Avalonia_Controls_Documents_LineBreak, () => new Avalonia.Controls.Documents.LineBreak())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.LineBreak"/> class.</returns>
     public static Avalonia.Controls.Documents.LineBreak LineBreak(out Avalonia.Controls.Documents.LineBreak @ref)
         => @ref = new Avalonia.Controls.Documents.LineBreak();
+#endif
 
 }

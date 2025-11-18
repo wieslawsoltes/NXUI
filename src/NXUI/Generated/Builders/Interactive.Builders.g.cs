@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Interactivity.Interactive"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Interactivity.Interactive"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Interactivity.Interactive"/> class.</returns>
+    public static ElementBuilder<Avalonia.Interactivity.Interactive> Interactive(out ElementRef<Avalonia.Interactivity.Interactive> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Interactivity.Interactive>(TypeMetadata.Avalonia_Interactivity_Interactive, () => new Avalonia.Interactivity.Interactive())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Interactivity.Interactive"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Interactivity.Interactive"/> class.</returns>
     public static Avalonia.Interactivity.Interactive Interactive(out Avalonia.Interactivity.Interactive @ref)
         => @ref = new Avalonia.Interactivity.Interactive();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         return builder.WithValue(PropertyMetadata.TemplatedControl_Background, Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -69,7 +69,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         obj[Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -139,7 +139,7 @@ public static partial class TemplatedControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBackground(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
     }
@@ -151,7 +151,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class TemplatedControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBackground(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
     }
@@ -175,7 +175,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
         handler(obj, observable);
@@ -483,7 +483,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         return builder.WithValue(PropertyMetadata.TemplatedControl_BorderBrush, Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, value);
     }
@@ -515,7 +515,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -532,7 +532,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T BorderBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T BorderBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         obj[Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty] = value;
         return obj;
@@ -569,7 +569,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -602,7 +602,7 @@ public static partial class TemplatedControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBorderBrush(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBorderBrush(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
     }
@@ -614,7 +614,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
         handler(obj, observable);
@@ -626,7 +626,7 @@ public static partial class TemplatedControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBorderBrush(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBorderBrush(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
     }
@@ -638,7 +638,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
         handler(obj, observable);
@@ -1367,7 +1367,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> FontFeatures<T>(this ElementBuilder<T> builder, Avalonia.Media.FontFeatureCollection value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static ElementBuilder<T> FontFeatures<T>(this ElementBuilder<T> builder, Avalonia.Media.FontFeatureCollection? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontFeatures, Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty, value);
     }
@@ -1399,7 +1399,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.FontFeatureCollection> observable,
+        IObservable<Avalonia.Media.FontFeatureCollection?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1416,7 +1416,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FontFeatures<T>(this T obj, Avalonia.Media.FontFeatureCollection value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T FontFeatures<T>(this T obj, Avalonia.Media.FontFeatureCollection? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty] = value;
         return obj;
@@ -1453,7 +1453,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFeatures<T>(
         this T obj,
-        IObservable<Avalonia.Media.FontFeatureCollection> observable,
+        IObservable<Avalonia.Media.FontFeatureCollection?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -1486,7 +1486,7 @@ public static partial class TemplatedControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.FontFeatureCollection> ObserveFontFeatures(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<Avalonia.Media.FontFeatureCollection?> ObserveFontFeatures(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
     }
@@ -1498,7 +1498,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFontFeatures<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontFeatureCollection>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnFontFeatures<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.FontFeatureCollection?>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
         handler(obj, observable);
@@ -1510,7 +1510,7 @@ public static partial class TemplatedControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>> ObserveBindingFontFeatures(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<BindingValue<Avalonia.Media.FontFeatureCollection?>> ObserveBindingFontFeatures(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
     }
@@ -1522,7 +1522,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFontFeatures<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBindingFontFeatures<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.FontFeatureCollection?>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
         handler(obj, observable);
@@ -3087,7 +3087,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         return builder.WithValue(PropertyMetadata.TemplatedControl_Foreground, Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, value);
     }
@@ -3119,7 +3119,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3136,7 +3136,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         obj[Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty] = value;
         return obj;
@@ -3173,7 +3173,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Foreground<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3206,7 +3206,7 @@ public static partial class TemplatedControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveForeground(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
     }
@@ -3218,7 +3218,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
         handler(obj, observable);
@@ -3230,7 +3230,7 @@ public static partial class TemplatedControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingForeground(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
     }
@@ -3242,7 +3242,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
         handler(obj, observable);
@@ -3529,7 +3529,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Template<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IControlTemplate value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static ElementBuilder<T> Template<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IControlTemplate? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         return builder.WithValue(PropertyMetadata.TemplatedControl_Template, Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value);
     }
@@ -3561,7 +3561,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Template<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IControlTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IControlTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3578,7 +3578,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Template<T>(this T obj, Avalonia.Controls.Templates.IControlTemplate value) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T Template<T>(this T obj, Avalonia.Controls.Templates.IControlTemplate? value) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         obj[Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty] = value;
         return obj;
@@ -3615,7 +3615,7 @@ public static partial class TemplatedControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Template<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IControlTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IControlTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
@@ -3648,7 +3648,7 @@ public static partial class TemplatedControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IControlTemplate> ObserveTemplate(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<Avalonia.Controls.Templates.IControlTemplate?> ObserveTemplate(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
     }
@@ -3660,7 +3660,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Controls.Templates.IControlTemplate>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<Avalonia.Controls.Templates.IControlTemplate?>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
         handler(obj, observable);
@@ -3672,7 +3672,7 @@ public static partial class TemplatedControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IControlTemplate>> ObserveBindingTemplate(this Avalonia.Controls.Primitives.TemplatedControl obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IControlTemplate?>> ObserveBindingTemplate(this Avalonia.Controls.Primitives.TemplatedControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
     }
@@ -3684,7 +3684,7 @@ public static partial class TemplatedControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Controls.Templates.IControlTemplate>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
+    public static T OnBindingTemplate<T>(this T obj, Action<Avalonia.Controls.Primitives.TemplatedControl, IObservable<BindingValue<Avalonia.Controls.Templates.IControlTemplate?>>> handler) where T : Avalonia.Controls.Primitives.TemplatedControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
         handler(obj, observable);

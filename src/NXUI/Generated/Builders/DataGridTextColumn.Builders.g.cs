@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DataGridTextColumn"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DataGridTextColumn"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGridTextColumn"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DataGridTextColumn> DataGridTextColumn(out ElementRef<Avalonia.Controls.DataGridTextColumn> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DataGridTextColumn>(TypeMetadata.Avalonia_Controls_DataGridTextColumn, () => new Avalonia.Controls.DataGridTextColumn())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DataGridTextColumn"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGridTextColumn"/> class.</returns>
     public static Avalonia.Controls.DataGridTextColumn DataGridTextColumn(out Avalonia.Controls.DataGridTextColumn @ref)
         => @ref = new Avalonia.Controls.DataGridTextColumn();
+#endif
 
 }

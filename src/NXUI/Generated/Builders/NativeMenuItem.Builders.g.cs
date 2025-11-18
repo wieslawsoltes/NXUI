@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenuItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.NativeMenuItem> NativeMenuItem(out ElementRef<Avalonia.Controls.NativeMenuItem> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.NativeMenuItem>(TypeMetadata.Avalonia_Controls_NativeMenuItem, () => new Avalonia.Controls.NativeMenuItem())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
     public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref)
         => @ref = new Avalonia.Controls.NativeMenuItem();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenuItem"/> instantiated class.</param>
+    /// <param name="header">The header value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.NativeMenuItem> NativeMenuItem(out ElementRef<Avalonia.Controls.NativeMenuItem> @ref, System.String header)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.NativeMenuItem>(TypeMetadata.Avalonia_Controls_NativeMenuItem, () => new Avalonia.Controls.NativeMenuItem(header))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItem"/> class.</returns>
     public static Avalonia.Controls.NativeMenuItem NativeMenuItem(out Avalonia.Controls.NativeMenuItem @ref, System.String header)
         => @ref = new Avalonia.Controls.NativeMenuItem(header);
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ScrollViewer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ScrollViewer> ScrollViewer(out ElementRef<Avalonia.Controls.ScrollViewer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ScrollViewer>(TypeMetadata.Avalonia_Controls_ScrollViewer, () => new Avalonia.Controls.ScrollViewer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ScrollViewer"/> class.</returns>
     public static Avalonia.Controls.ScrollViewer ScrollViewer(out Avalonia.Controls.ScrollViewer @ref)
         => @ref = new Avalonia.Controls.ScrollViewer();
+#endif
 
 }

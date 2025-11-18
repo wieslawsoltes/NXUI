@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SkewTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.SkewTransform> SkewTransform(out ElementRef<Avalonia.Media.SkewTransform> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.SkewTransform>(TypeMetadata.Avalonia_Media_SkewTransform, () => new Avalonia.Media.SkewTransform())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
     public static Avalonia.Media.SkewTransform SkewTransform(out Avalonia.Media.SkewTransform @ref)
         => @ref = new Avalonia.Media.SkewTransform();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SkewTransform"/> instantiated class.</param>
+    /// <param name="angleX">The angleX value.</param>
+    /// <param name="angleY">The angleY value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.SkewTransform> SkewTransform(out ElementRef<Avalonia.Media.SkewTransform> @ref, System.Double angleX, System.Double angleY)
+    {
+        return ElementBuilder.Create<Avalonia.Media.SkewTransform>(TypeMetadata.Avalonia_Media_SkewTransform, () => new Avalonia.Media.SkewTransform(angleX, angleY))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.SkewTransform"/> class.</returns>
     public static Avalonia.Media.SkewTransform SkewTransform(out Avalonia.Media.SkewTransform @ref, System.Double angleX, System.Double angleY)
         => @ref = new Avalonia.Media.SkewTransform(angleX, angleY);
+#endif
 
 }

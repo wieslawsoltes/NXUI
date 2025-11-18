@@ -20,7 +20,7 @@ public static partial class OverlayPopupHostExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Transform<T>(this ElementBuilder<T> builder, Avalonia.Media.Transform value) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    public static ElementBuilder<T> Transform<T>(this ElementBuilder<T> builder, Avalonia.Media.Transform? value) where T : Avalonia.Controls.Primitives.OverlayPopupHost
     {
         return builder.WithValue(PropertyMetadata.OverlayPopupHost_Transform, Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class OverlayPopupHostExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Transform<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.OverlayPopupHost
     {
@@ -69,7 +69,7 @@ public static partial class OverlayPopupHostExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Transform<T>(this T obj, Avalonia.Media.Transform value) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    public static T Transform<T>(this T obj, Avalonia.Media.Transform? value) where T : Avalonia.Controls.Primitives.OverlayPopupHost
     {
         obj[Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class OverlayPopupHostExtensions
     /// <returns>The target object reference.</returns>
     public static T Transform<T>(
         this T obj,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.OverlayPopupHost
     {
@@ -139,7 +139,7 @@ public static partial class OverlayPopupHostExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Controls.Primitives.OverlayPopupHost obj)
+    public static IObservable<Avalonia.Media.Transform?> ObserveTransform(this Avalonia.Controls.Primitives.OverlayPopupHost obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
     }
@@ -151,7 +151,7 @@ public static partial class OverlayPopupHostExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.OverlayPopupHost, IObservable<Avalonia.Media.Transform>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    public static T OnTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.OverlayPopupHost, IObservable<Avalonia.Media.Transform?>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class OverlayPopupHostExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Controls.Primitives.OverlayPopupHost obj)
+    public static IObservable<BindingValue<Avalonia.Media.Transform?>> ObserveBindingTransform(this Avalonia.Controls.Primitives.OverlayPopupHost obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
     }
@@ -175,7 +175,7 @@ public static partial class OverlayPopupHostExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.OverlayPopupHost, IObservable<BindingValue<Avalonia.Media.Transform>>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
+    public static T OnBindingTransform<T>(this T obj, Action<Avalonia.Controls.Primitives.OverlayPopupHost, IObservable<BindingValue<Avalonia.Media.Transform?>>> handler) where T : Avalonia.Controls.Primitives.OverlayPopupHost
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty);
         handler(obj, observable);

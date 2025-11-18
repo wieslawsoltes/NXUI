@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/> class.</returns>
+    public static ElementBuilder<Avalonia.Layout.NonVirtualizingStackLayout> NonVirtualizingStackLayout(out ElementRef<Avalonia.Layout.NonVirtualizingStackLayout> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Layout.NonVirtualizingStackLayout>(TypeMetadata.Avalonia_Layout_NonVirtualizingStackLayout, () => new Avalonia.Layout.NonVirtualizingStackLayout())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/> class.</returns>
     public static Avalonia.Layout.NonVirtualizingStackLayout NonVirtualizingStackLayout(out Avalonia.Layout.NonVirtualizingStackLayout @ref)
         => @ref = new Avalonia.Layout.NonVirtualizingStackLayout();
+#endif
 
 }

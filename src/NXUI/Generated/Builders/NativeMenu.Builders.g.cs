@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenu"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenu"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenu"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.NativeMenu> NativeMenu(out ElementRef<Avalonia.Controls.NativeMenu> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.NativeMenu>(TypeMetadata.Avalonia_Controls_NativeMenu, () => new Avalonia.Controls.NativeMenu())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenu"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenu"/> class.</returns>
     public static Avalonia.Controls.NativeMenu NativeMenu(out Avalonia.Controls.NativeMenu @ref)
         => @ref = new Avalonia.Controls.NativeMenu();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.AdornerLayer> AdornerLayer(out ElementRef<Avalonia.Controls.Primitives.AdornerLayer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.AdornerLayer>(TypeMetadata.Avalonia_Controls_Primitives_AdornerLayer, () => new Avalonia.Controls.Primitives.AdornerLayer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.AdornerLayer AdornerLayer(out Avalonia.Controls.Primitives.AdornerLayer @ref)
         => @ref = new Avalonia.Controls.Primitives.AdornerLayer();
+#endif
 
 }

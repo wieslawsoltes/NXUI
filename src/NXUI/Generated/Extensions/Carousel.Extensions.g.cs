@@ -20,7 +20,7 @@ public static partial class CarouselExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PageTransition<T>(this ElementBuilder<T> builder, Avalonia.Animation.IPageTransition value) where T : Avalonia.Controls.Carousel
+    public static ElementBuilder<T> PageTransition<T>(this ElementBuilder<T> builder, Avalonia.Animation.IPageTransition? value) where T : Avalonia.Controls.Carousel
     {
         return builder.WithValue(PropertyMetadata.Carousel_PageTransition, Avalonia.Controls.Carousel.PageTransitionProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class CarouselExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PageTransition<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Animation.IPageTransition> observable,
+        IObservable<Avalonia.Animation.IPageTransition?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
     {
@@ -69,7 +69,7 @@ public static partial class CarouselExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PageTransition<T>(this T obj, Avalonia.Animation.IPageTransition value) where T : Avalonia.Controls.Carousel
+    public static T PageTransition<T>(this T obj, Avalonia.Animation.IPageTransition? value) where T : Avalonia.Controls.Carousel
     {
         obj[Avalonia.Controls.Carousel.PageTransitionProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class CarouselExtensions
     /// <returns>The target object reference.</returns>
     public static T PageTransition<T>(
         this T obj,
-        IObservable<Avalonia.Animation.IPageTransition> observable,
+        IObservable<Avalonia.Animation.IPageTransition?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Carousel
     {
@@ -139,7 +139,7 @@ public static partial class CarouselExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Animation.IPageTransition> ObservePageTransition(this Avalonia.Controls.Carousel obj)
+    public static IObservable<Avalonia.Animation.IPageTransition?> ObservePageTransition(this Avalonia.Controls.Carousel obj)
     {
         return obj.GetObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
     }
@@ -151,7 +151,7 @@ public static partial class CarouselExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPageTransition<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<Avalonia.Animation.IPageTransition>> handler) where T : Avalonia.Controls.Carousel
+    public static T OnPageTransition<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<Avalonia.Animation.IPageTransition?>> handler) where T : Avalonia.Controls.Carousel
     {
         var observable = obj.GetObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class CarouselExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Animation.IPageTransition>> ObserveBindingPageTransition(this Avalonia.Controls.Carousel obj)
+    public static IObservable<BindingValue<Avalonia.Animation.IPageTransition?>> ObserveBindingPageTransition(this Avalonia.Controls.Carousel obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
     }
@@ -175,7 +175,7 @@ public static partial class CarouselExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPageTransition<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<BindingValue<Avalonia.Animation.IPageTransition>>> handler) where T : Avalonia.Controls.Carousel
+    public static T OnBindingPageTransition<T>(this T obj, Action<Avalonia.Controls.Carousel, IObservable<BindingValue<Avalonia.Animation.IPageTransition?>>> handler) where T : Avalonia.Controls.Carousel
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Carousel.PageTransitionProperty);
         handler(obj, observable);

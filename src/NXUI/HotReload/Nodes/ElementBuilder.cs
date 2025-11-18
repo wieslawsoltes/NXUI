@@ -194,6 +194,17 @@ public readonly struct ElementBuilder<TControl>
     }
 
     /// <summary>
+    /// Stores a reference that can observe the control once it is materialized.
+    /// </summary>
+    public ElementBuilder<TControl> WithRef(out ElementRef<TControl> elementRef)
+    {
+        var host = new ElementRefHost<TControl>();
+        Node.RegisterAttachment(host);
+        elementRef = new ElementRef<TControl>(host);
+        return this;
+    }
+
+    /// <summary>
     /// Assigns a stable key to the builder node.
     /// </summary>
     public ElementBuilder<TControl> Key(string key)

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ContextMenu"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ContextMenu> ContextMenu(out ElementRef<Avalonia.Controls.ContextMenu> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ContextMenu>(TypeMetadata.Avalonia_Controls_ContextMenu, () => new Avalonia.Controls.ContextMenu())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
     public static Avalonia.Controls.ContextMenu ContextMenu(out Avalonia.Controls.ContextMenu @ref)
         => @ref = new Avalonia.Controls.ContextMenu();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ContextMenu"/> instantiated class.</param>
+    /// <param name="interactionHandler">The interactionHandler value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ContextMenu> ContextMenu(out ElementRef<Avalonia.Controls.ContextMenu> @ref, Avalonia.Controls.Platform.IMenuInteractionHandler interactionHandler)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ContextMenu>(TypeMetadata.Avalonia_Controls_ContextMenu, () => new Avalonia.Controls.ContextMenu(interactionHandler))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ContextMenu"/> class.</returns>
     public static Avalonia.Controls.ContextMenu ContextMenu(out Avalonia.Controls.ContextMenu @ref, Avalonia.Controls.Platform.IMenuInteractionHandler interactionHandler)
         => @ref = new Avalonia.Controls.ContextMenu(interactionHandler);
+#endif
 
 }

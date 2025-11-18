@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ProgressBar"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ProgressBar"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ProgressBar"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ProgressBar> ProgressBar(out ElementRef<Avalonia.Controls.ProgressBar> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ProgressBar>(TypeMetadata.Avalonia_Controls_ProgressBar, () => new Avalonia.Controls.ProgressBar())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ProgressBar"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ProgressBar"/> class.</returns>
     public static Avalonia.Controls.ProgressBar ProgressBar(out Avalonia.Controls.ProgressBar @ref)
         => @ref = new Avalonia.Controls.ProgressBar();
+#endif
 
 }

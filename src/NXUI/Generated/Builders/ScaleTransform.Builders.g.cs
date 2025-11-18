@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ScaleTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleTransform(out ElementRef<Avalonia.Media.ScaleTransform> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.ScaleTransform>(TypeMetadata.Avalonia_Media_ScaleTransform, () => new Avalonia.Media.ScaleTransform())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.</returns>
     public static Avalonia.Media.ScaleTransform ScaleTransform(out Avalonia.Media.ScaleTransform @ref)
         => @ref = new Avalonia.Media.ScaleTransform();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ScaleTransform"/> instantiated class.</param>
+    /// <param name="scaleX">The scaleX value.</param>
+    /// <param name="scaleY">The scaleY value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleTransform(out ElementRef<Avalonia.Media.ScaleTransform> @ref, System.Double scaleX, System.Double scaleY)
+    {
+        return ElementBuilder.Create<Avalonia.Media.ScaleTransform>(TypeMetadata.Avalonia_Media_ScaleTransform, () => new Avalonia.Media.ScaleTransform(scaleX, scaleY))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ScaleTransform"/> class.</returns>
     public static Avalonia.Media.ScaleTransform ScaleTransform(out Avalonia.Media.ScaleTransform @ref, System.Double scaleX, System.Double scaleY)
         => @ref = new Avalonia.Media.ScaleTransform(scaleX, scaleY);
+#endif
 
 }

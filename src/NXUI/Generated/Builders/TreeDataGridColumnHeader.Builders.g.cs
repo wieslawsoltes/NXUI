@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TreeDataGridColumnHeader> TreeDataGridColumnHeader(out ElementRef<Avalonia.Controls.Primitives.TreeDataGridColumnHeader> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TreeDataGridColumnHeader>(TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridColumnHeader, () => new Avalonia.Controls.Primitives.TreeDataGridColumnHeader())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader"/> class.</returns>
     public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader TreeDataGridColumnHeader(out Avalonia.Controls.Primitives.TreeDataGridColumnHeader @ref)
         => @ref = new Avalonia.Controls.Primitives.TreeDataGridColumnHeader();
+#endif
 
 }

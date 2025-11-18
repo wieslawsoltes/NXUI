@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GeometryDrawing"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GeometryDrawing"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryDrawing"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.GeometryDrawing> GeometryDrawing(out ElementRef<Avalonia.Media.GeometryDrawing> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.GeometryDrawing>(TypeMetadata.Avalonia_Media_GeometryDrawing, () => new Avalonia.Media.GeometryDrawing())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.GeometryDrawing"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.GeometryDrawing"/> class.</returns>
     public static Avalonia.Media.GeometryDrawing GeometryDrawing(out Avalonia.Media.GeometryDrawing @ref)
         => @ref = new Avalonia.Media.GeometryDrawing();
+#endif
 
 }

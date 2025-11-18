@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.Layoutable"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.Layoutable"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.Layoutable"/> class.</returns>
+    public static ElementBuilder<Avalonia.Layout.Layoutable> Layoutable(out ElementRef<Avalonia.Layout.Layoutable> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Layout.Layoutable>(TypeMetadata.Avalonia_Layout_Layoutable, () => new Avalonia.Layout.Layoutable())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Layout.Layoutable"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.Layoutable"/> class.</returns>
     public static Avalonia.Layout.Layoutable Layoutable(out Avalonia.Layout.Layoutable @ref)
         => @ref = new Avalonia.Layout.Layoutable();
+#endif
 
 }

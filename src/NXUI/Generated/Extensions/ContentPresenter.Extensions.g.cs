@@ -20,7 +20,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         return builder.WithValue(PropertyMetadata.ContentPresenter_Background, Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -69,7 +69,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -139,7 +139,7 @@ public static partial class ContentPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBackground(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBackground(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
         handler(obj, observable);
@@ -483,7 +483,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         return builder.WithValue(PropertyMetadata.ContentPresenter_BorderBrush, Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, value);
     }
@@ -515,7 +515,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -532,7 +532,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T BorderBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T BorderBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty] = value;
         return obj;
@@ -569,7 +569,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -602,7 +602,7 @@ public static partial class ContentPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBorderBrush(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBorderBrush(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
     }
@@ -614,7 +614,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
         handler(obj, observable);
@@ -626,7 +626,7 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBorderBrush(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBorderBrush(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
     }
@@ -638,7 +638,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
         handler(obj, observable);
@@ -1367,7 +1367,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         return builder.WithValue(PropertyMetadata.ContentPresenter_Foreground, Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, value);
     }
@@ -1399,7 +1399,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1416,7 +1416,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty] = value;
         return obj;
@@ -1453,7 +1453,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Foreground<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -1486,7 +1486,7 @@ public static partial class ContentPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveForeground(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
     }
@@ -1498,7 +1498,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
         handler(obj, observable);
@@ -1510,7 +1510,7 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingForeground(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
     }
@@ -1522,7 +1522,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
         handler(obj, observable);
@@ -3299,7 +3299,7 @@ public static partial class ContentPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObserveChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<Avalonia.Controls.Control?> ObserveChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
@@ -3310,7 +3310,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.Control>> handler)
+    public static Avalonia.Controls.Presenters.ContentPresenter OnChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.Control?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
         handler(obj, observable);
@@ -3322,7 +3322,7 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingChild(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
@@ -3333,7 +3333,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Presenters.ContentPresenter OnBindingChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Controls.Control>>> handler)
+    public static Avalonia.Controls.Presenters.ContentPresenter OnBindingChild(this Avalonia.Controls.Presenters.ContentPresenter obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
         handler(obj, observable);
@@ -3371,7 +3371,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static ElementBuilder<T> Content<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         return builder.WithValue(PropertyMetadata.ContentPresenter_Content, Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, value);
     }
@@ -3403,7 +3403,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Content<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3420,7 +3420,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Content<T>(this T obj, System.Object value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T Content<T>(this T obj, System.Object? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.ContentProperty] = value;
         return obj;
@@ -3457,7 +3457,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T Content<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3490,7 +3490,7 @@ public static partial class ContentPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveContent(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<System.Object?> ObserveContent(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
     }
@@ -3502,7 +3502,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<System.Object>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnContent<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<System.Object?>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
         handler(obj, observable);
@@ -3514,7 +3514,7 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingContent(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingContent(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
     }
@@ -3526,7 +3526,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBindingContent<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
         handler(obj, observable);
@@ -3565,7 +3565,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static ElementBuilder<T> ContentTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         return builder.WithValue(PropertyMetadata.ContentPresenter_ContentTemplate, Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, value);
     }
@@ -3597,7 +3597,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContentTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3614,7 +3614,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T ContentTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         obj[Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty] = value;
         return obj;
@@ -3651,7 +3651,7 @@ public static partial class ContentPresenterExtensions
     /// <returns>The target object reference.</returns>
     public static T ContentTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
@@ -3684,7 +3684,7 @@ public static partial class ContentPresenterExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveContentTemplate(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveContentTemplate(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
     }
@@ -3696,7 +3696,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnContentTemplate<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
         handler(obj, observable);
@@ -3708,7 +3708,7 @@ public static partial class ContentPresenterExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingContentTemplate(this Avalonia.Controls.Presenters.ContentPresenter obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingContentTemplate(this Avalonia.Controls.Presenters.ContentPresenter obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
     }
@@ -3720,7 +3720,7 @@ public static partial class ContentPresenterExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
+    public static T OnBindingContentTemplate<T>(this T obj, Action<Avalonia.Controls.Presenters.ContentPresenter, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.Presenters.ContentPresenter
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
         handler(obj, observable);

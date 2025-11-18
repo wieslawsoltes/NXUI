@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolyBezierSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PolyBezierSegment> PolyBezierSegment(out ElementRef<Avalonia.Media.PolyBezierSegment> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PolyBezierSegment>(TypeMetadata.Avalonia_Media_PolyBezierSegment, () => new Avalonia.Media.PolyBezierSegment())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.</returns>
     public static Avalonia.Media.PolyBezierSegment PolyBezierSegment(out Avalonia.Media.PolyBezierSegment @ref)
         => @ref = new Avalonia.Media.PolyBezierSegment();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolyBezierSegment"/> instantiated class.</param>
+    /// <param name="points">The points value.</param>
+    /// <param name="isStroked">The isStroked value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PolyBezierSegment> PolyBezierSegment(out ElementRef<Avalonia.Media.PolyBezierSegment> @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points, System.Boolean isStroked)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PolyBezierSegment>(TypeMetadata.Avalonia_Media_PolyBezierSegment, () => new Avalonia.Media.PolyBezierSegment(points, isStroked))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolyBezierSegment"/> class.</returns>
     public static Avalonia.Media.PolyBezierSegment PolyBezierSegment(out Avalonia.Media.PolyBezierSegment @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points, System.Boolean isStroked)
         => @ref = new Avalonia.Media.PolyBezierSegment(points, isStroked);
+#endif
 
 }

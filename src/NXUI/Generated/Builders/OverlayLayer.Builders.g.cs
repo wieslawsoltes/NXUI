@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.OverlayLayer> OverlayLayer(out ElementRef<Avalonia.Controls.Primitives.OverlayLayer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.OverlayLayer>(TypeMetadata.Avalonia_Controls_Primitives_OverlayLayer, () => new Avalonia.Controls.Primitives.OverlayLayer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.OverlayLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.OverlayLayer OverlayLayer(out Avalonia.Controls.Primitives.OverlayLayer @ref)
         => @ref = new Avalonia.Controls.Primitives.OverlayLayer();
+#endif
 
 }

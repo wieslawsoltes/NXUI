@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RadioButton"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RadioButton> RadioButton(out ElementRef<Avalonia.Controls.RadioButton> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RadioButton>(TypeMetadata.Avalonia_Controls_RadioButton, () => new Avalonia.Controls.RadioButton())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RadioButton"/> class.</returns>
     public static Avalonia.Controls.RadioButton RadioButton(out Avalonia.Controls.RadioButton @ref)
         => @ref = new Avalonia.Controls.RadioButton();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class DashStyleExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(this ElementBuilder<Avalonia.Media.DashStyle> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(this ElementBuilder<Avalonia.Media.DashStyle> builder, Avalonia.Collections.AvaloniaList<System.Double>? value)
     {
         return builder.WithValue(PropertyMetadata.DashStyle_Dashes, Avalonia.Media.DashStyle.DashesProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class DashStyleExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(
         this ElementBuilder<Avalonia.Media.DashStyle> builder,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class DashStyleExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.DashStyle Dashes(this Avalonia.Media.DashStyle obj, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static Avalonia.Media.DashStyle Dashes(this Avalonia.Media.DashStyle obj, Avalonia.Collections.AvaloniaList<System.Double>? value)
     {
         obj[Avalonia.Media.DashStyle.DashesProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class DashStyleExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.DashStyle Dashes(
         this Avalonia.Media.DashStyle obj,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class DashStyleExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveDashes(this Avalonia.Media.DashStyle obj)
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> ObserveDashes(this Avalonia.Media.DashStyle obj)
     {
         return obj.GetObservable(Avalonia.Media.DashStyle.DashesProperty);
     }
@@ -146,7 +146,7 @@ public static partial class DashStyleExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DashStyle OnDashes(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler)
+    public static Avalonia.Media.DashStyle OnDashes(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<Avalonia.Collections.AvaloniaList<System.Double>?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.DashStyle.DashesProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class DashStyleExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingDashes(this Avalonia.Media.DashStyle obj)
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>> ObserveBindingDashes(this Avalonia.Media.DashStyle obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.DashStyle.DashesProperty);
     }
@@ -169,7 +169,7 @@ public static partial class DashStyleExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.DashStyle OnBindingDashes(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler)
+    public static Avalonia.Media.DashStyle OnBindingDashes(this Avalonia.Media.DashStyle obj, Action<Avalonia.Media.DashStyle, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.DashStyle.DashesProperty);
         handler(obj, observable);

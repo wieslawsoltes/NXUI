@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.AccessText"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.AccessText> AccessText(out ElementRef<Avalonia.Controls.Primitives.AccessText> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.AccessText>(TypeMetadata.Avalonia_Controls_Primitives_AccessText, () => new Avalonia.Controls.Primitives.AccessText())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.AccessText"/> class.</returns>
     public static Avalonia.Controls.Primitives.AccessText AccessText(out Avalonia.Controls.Primitives.AccessText @ref)
         => @ref = new Avalonia.Controls.Primitives.AccessText();
+#endif
 
 }

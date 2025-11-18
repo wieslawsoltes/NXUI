@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NumericUpDown"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NumericUpDown"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NumericUpDown"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.NumericUpDown> NumericUpDown(out ElementRef<Avalonia.Controls.NumericUpDown> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.NumericUpDown>(TypeMetadata.Avalonia_Controls_NumericUpDown, () => new Avalonia.Controls.NumericUpDown())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.NumericUpDown"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NumericUpDown"/> class.</returns>
     public static Avalonia.Controls.NumericUpDown NumericUpDown(out Avalonia.Controls.NumericUpDown @ref)
         => @ref = new Avalonia.Controls.NumericUpDown();
+#endif
 
 }

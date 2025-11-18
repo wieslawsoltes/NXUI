@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Slider"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Slider"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Slider"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Slider> Slider(out ElementRef<Avalonia.Controls.Slider> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Slider>(TypeMetadata.Avalonia_Controls_Slider, () => new Avalonia.Controls.Slider())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Slider"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Slider"/> class.</returns>
     public static Avalonia.Controls.Slider Slider(out Avalonia.Controls.Slider @ref)
         => @ref = new Avalonia.Controls.Slider();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Errors<T>(this ElementBuilder<T> builder, System.Collections.Generic.IEnumerable<System.Object> value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> Errors<T>(this ElementBuilder<T> builder, System.Collections.Generic.IEnumerable<System.Object>? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.DataValidationErrors_Errors, Avalonia.Controls.DataValidationErrors.ErrorsProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Errors<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Collections.Generic.IEnumerable<System.Object>> observable,
+        IObservable<System.Collections.Generic.IEnumerable<System.Object>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -69,7 +69,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Errors<T>(this T obj, System.Collections.Generic.IEnumerable<System.Object> value) where T : Avalonia.Controls.Control
+    public static T Errors<T>(this T obj, System.Collections.Generic.IEnumerable<System.Object>? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.DataValidationErrors.ErrorsProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T Errors<T>(
         this T obj,
-        IObservable<System.Collections.Generic.IEnumerable<System.Object>> observable,
+        IObservable<System.Collections.Generic.IEnumerable<System.Object>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -139,7 +139,7 @@ public static partial class DataValidationErrorsExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Collections.Generic.IEnumerable<System.Object>> ObserveErrors(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Collections.Generic.IEnumerable<System.Object>?> ObserveErrors(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
     }
@@ -151,7 +151,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Collections.Generic.IEnumerable<System.Object>>> handler) where T : Avalonia.Controls.Control
+    public static T OnErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Collections.Generic.IEnumerable<System.Object>?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class DataValidationErrorsExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Collections.Generic.IEnumerable<System.Object>>> ObserveBindingErrors(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<System.Collections.Generic.IEnumerable<System.Object>?>> ObserveBindingErrors(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
     }
@@ -175,7 +175,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Collections.Generic.IEnumerable<System.Object>>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingErrors<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Collections.Generic.IEnumerable<System.Object>?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ErrorConverter<T>(this ElementBuilder<T> builder, System.Func<System.Object,System.Object> value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> ErrorConverter<T>(this ElementBuilder<T> builder, System.Func<System.Object, System.Object>? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.DataValidationErrors_ErrorConverter, Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ErrorConverter<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Func<System.Object,System.Object>> observable,
+        IObservable<System.Func<System.Object, System.Object>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -457,7 +457,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ErrorConverter<T>(this T obj, System.Func<System.Object,System.Object> value) where T : Avalonia.Controls.Control
+    public static T ErrorConverter<T>(this T obj, System.Func<System.Object, System.Object>? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.DataValidationErrors.ErrorConverterProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T ErrorConverter<T>(
         this T obj,
-        IObservable<System.Func<System.Object,System.Object>> observable,
+        IObservable<System.Func<System.Object, System.Object>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -527,7 +527,7 @@ public static partial class DataValidationErrorsExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Func<System.Object,System.Object>> ObserveErrorConverter(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Func<System.Object, System.Object>?> ObserveErrorConverter(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
     }
@@ -539,7 +539,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnErrorConverter<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Func<System.Object,System.Object>>> handler) where T : Avalonia.Controls.Control
+    public static T OnErrorConverter<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Func<System.Object, System.Object>?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class DataValidationErrorsExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Func<System.Object,System.Object>>> ObserveBindingErrorConverter(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<System.Func<System.Object, System.Object>?>> ObserveBindingErrorConverter(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
     }
@@ -563,7 +563,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingErrorConverter<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Func<System.Object,System.Object>>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingErrorConverter<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Func<System.Object, System.Object>?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
         handler(obj, observable);
@@ -796,7 +796,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Owner<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.DataValidationErrors
+    public static ElementBuilder<T> Owner<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control? value) where T : Avalonia.Controls.DataValidationErrors
     {
         return builder.WithValue(PropertyMetadata.DataValidationErrors_Owner, Avalonia.Controls.DataValidationErrors.OwnerProperty, value);
     }
@@ -828,7 +828,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Owner<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -845,7 +845,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Owner<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.DataValidationErrors
+    public static T Owner<T>(this T obj, Avalonia.Controls.Control? value) where T : Avalonia.Controls.DataValidationErrors
     {
         obj[Avalonia.Controls.DataValidationErrors.OwnerProperty] = value;
         return obj;
@@ -882,7 +882,7 @@ public static partial class DataValidationErrorsExtensions
     /// <returns>The target object reference.</returns>
     public static T Owner<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.DataValidationErrors
     {
@@ -915,7 +915,7 @@ public static partial class DataValidationErrorsExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObserveOwner(this Avalonia.Controls.DataValidationErrors obj)
+    public static IObservable<Avalonia.Controls.Control?> ObserveOwner(this Avalonia.Controls.DataValidationErrors obj)
     {
         return obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
     }
@@ -927,7 +927,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnOwner<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.DataValidationErrors
+    public static T OnOwner<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<Avalonia.Controls.Control?>> handler) where T : Avalonia.Controls.DataValidationErrors
     {
         var observable = obj.GetObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
         handler(obj, observable);
@@ -939,7 +939,7 @@ public static partial class DataValidationErrorsExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingOwner(this Avalonia.Controls.DataValidationErrors obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingOwner(this Avalonia.Controls.DataValidationErrors obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
     }
@@ -951,7 +951,7 @@ public static partial class DataValidationErrorsExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingOwner<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.DataValidationErrors
+    public static T OnBindingOwner<T>(this T obj, Action<Avalonia.Controls.DataValidationErrors, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler) where T : Avalonia.Controls.DataValidationErrors
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.DataValidationErrors.OwnerProperty);
         handler(obj, observable);

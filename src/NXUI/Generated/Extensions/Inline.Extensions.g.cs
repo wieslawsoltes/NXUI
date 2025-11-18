@@ -20,7 +20,7 @@ public static partial class InlineExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> TextDecorations<T>(this ElementBuilder<T> builder, Avalonia.Media.TextDecorationCollection value) where T : Avalonia.Controls.Documents.Inline
+    public static ElementBuilder<T> TextDecorations<T>(this ElementBuilder<T> builder, Avalonia.Media.TextDecorationCollection? value) where T : Avalonia.Controls.Documents.Inline
     {
         return builder.WithValue(PropertyMetadata.Inline_TextDecorations, Avalonia.Controls.Documents.Inline.TextDecorationsProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class InlineExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> TextDecorations<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.TextDecorationCollection> observable,
+        IObservable<Avalonia.Media.TextDecorationCollection?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -69,7 +69,7 @@ public static partial class InlineExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T TextDecorations<T>(this T obj, Avalonia.Media.TextDecorationCollection value) where T : Avalonia.Controls.Documents.Inline
+    public static T TextDecorations<T>(this T obj, Avalonia.Media.TextDecorationCollection? value) where T : Avalonia.Controls.Documents.Inline
     {
         obj[Avalonia.Controls.Documents.Inline.TextDecorationsProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class InlineExtensions
     /// <returns>The target object reference.</returns>
     public static T TextDecorations<T>(
         this T obj,
-        IObservable<Avalonia.Media.TextDecorationCollection> observable,
+        IObservable<Avalonia.Media.TextDecorationCollection?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.Inline
     {
@@ -139,7 +139,7 @@ public static partial class InlineExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.TextDecorationCollection> ObserveTextDecorations(this Avalonia.Controls.Documents.Inline obj)
+    public static IObservable<Avalonia.Media.TextDecorationCollection?> ObserveTextDecorations(this Avalonia.Controls.Documents.Inline obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
     }
@@ -151,7 +151,7 @@ public static partial class InlineExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTextDecorations<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<Avalonia.Media.TextDecorationCollection>> handler) where T : Avalonia.Controls.Documents.Inline
+    public static T OnTextDecorations<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<Avalonia.Media.TextDecorationCollection?>> handler) where T : Avalonia.Controls.Documents.Inline
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class InlineExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.TextDecorationCollection>> ObserveBindingTextDecorations(this Avalonia.Controls.Documents.Inline obj)
+    public static IObservable<BindingValue<Avalonia.Media.TextDecorationCollection?>> ObserveBindingTextDecorations(this Avalonia.Controls.Documents.Inline obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
     }
@@ -175,7 +175,7 @@ public static partial class InlineExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTextDecorations<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<BindingValue<Avalonia.Media.TextDecorationCollection>>> handler) where T : Avalonia.Controls.Documents.Inline
+    public static T OnBindingTextDecorations<T>(this T obj, Action<Avalonia.Controls.Documents.Inline, IObservable<BindingValue<Avalonia.Media.TextDecorationCollection?>>> handler) where T : Avalonia.Controls.Documents.Inline
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
         handler(obj, observable);

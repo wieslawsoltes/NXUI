@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DatePickerPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DatePickerPresenter> DatePickerPresenter(out ElementRef<Avalonia.Controls.DatePickerPresenter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DatePickerPresenter>(TypeMetadata.Avalonia_Controls_DatePickerPresenter, () => new Avalonia.Controls.DatePickerPresenter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DatePickerPresenter"/> class.</returns>
     public static Avalonia.Controls.DatePickerPresenter DatePickerPresenter(out Avalonia.Controls.DatePickerPresenter @ref)
         => @ref = new Avalonia.Controls.DatePickerPresenter();
+#endif
 
 }

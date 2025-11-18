@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.TranslateTransform"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.TranslateTransform> TranslateTransform(out ElementRef<Avalonia.Media.TranslateTransform> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.TranslateTransform>(TypeMetadata.Avalonia_Media_TranslateTransform, () => new Avalonia.Media.TranslateTransform())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
     public static Avalonia.Media.TranslateTransform TranslateTransform(out Avalonia.Media.TranslateTransform @ref)
         => @ref = new Avalonia.Media.TranslateTransform();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.TranslateTransform"/> instantiated class.</param>
+    /// <param name="x">The x value.</param>
+    /// <param name="y">The y value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.TranslateTransform> TranslateTransform(out ElementRef<Avalonia.Media.TranslateTransform> @ref, System.Double x, System.Double y)
+    {
+        return ElementBuilder.Create<Avalonia.Media.TranslateTransform>(TypeMetadata.Avalonia_Media_TranslateTransform, () => new Avalonia.Media.TranslateTransform(x, y))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.TranslateTransform"/> class.</returns>
     public static Avalonia.Media.TranslateTransform TranslateTransform(out Avalonia.Media.TranslateTransform @ref, System.Double x, System.Double y)
         => @ref = new Avalonia.Media.TranslateTransform(x, y);
+#endif
 
 }

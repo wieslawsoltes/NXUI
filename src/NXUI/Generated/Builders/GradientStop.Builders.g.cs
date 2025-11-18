@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GradientStop"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.GradientStop> GradientStop(out ElementRef<Avalonia.Media.GradientStop> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.GradientStop>(TypeMetadata.Avalonia_Media_GradientStop, () => new Avalonia.Media.GradientStop())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
     public static Avalonia.Media.GradientStop GradientStop(out Avalonia.Media.GradientStop @ref)
         => @ref = new Avalonia.Media.GradientStop();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.GradientStop"/> instantiated class.</param>
+    /// <param name="color">The color value.</param>
+    /// <param name="offset">The offset value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.GradientStop> GradientStop(out ElementRef<Avalonia.Media.GradientStop> @ref, Avalonia.Media.Color color, System.Double offset)
+    {
+        return ElementBuilder.Create<Avalonia.Media.GradientStop>(TypeMetadata.Avalonia_Media_GradientStop, () => new Avalonia.Media.GradientStop(color, offset))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.GradientStop"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.GradientStop"/> class.</returns>
     public static Avalonia.Media.GradientStop GradientStop(out Avalonia.Media.GradientStop @ref, Avalonia.Media.Color color, System.Double offset)
         => @ref = new Avalonia.Media.GradientStop(color, offset);
+#endif
 
 }

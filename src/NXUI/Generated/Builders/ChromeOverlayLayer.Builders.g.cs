@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.ChromeOverlayLayer> ChromeOverlayLayer(out ElementRef<Avalonia.Controls.Primitives.ChromeOverlayLayer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.ChromeOverlayLayer>(TypeMetadata.Avalonia_Controls_Primitives_ChromeOverlayLayer, () => new Avalonia.Controls.Primitives.ChromeOverlayLayer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ChromeOverlayLayer"/> class.</returns>
     public static Avalonia.Controls.Primitives.ChromeOverlayLayer ChromeOverlayLayer(out Avalonia.Controls.Primitives.ChromeOverlayLayer @ref)
         => @ref = new Avalonia.Controls.Primitives.ChromeOverlayLayer();
+#endif
 
 }

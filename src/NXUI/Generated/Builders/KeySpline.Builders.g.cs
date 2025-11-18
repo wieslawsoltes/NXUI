@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.KeySpline"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.KeySpline> KeySpline(out ElementRef<Avalonia.Animation.KeySpline> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.KeySpline>(TypeMetadata.Avalonia_Animation_KeySpline, () => new Avalonia.Animation.KeySpline())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.</returns>
     public static Avalonia.Animation.KeySpline KeySpline(out Avalonia.Animation.KeySpline @ref)
         => @ref = new Avalonia.Animation.KeySpline();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -62,6 +75,22 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.KeySpline"/> instantiated class.</param>
+    /// <param name="x1">The x1 value.</param>
+    /// <param name="y1">The y1 value.</param>
+    /// <param name="x2">The x2 value.</param>
+    /// <param name="y2">The y2 value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.KeySpline> KeySpline(out ElementRef<Avalonia.Animation.KeySpline> @ref, System.Double x1, System.Double y1, System.Double x2, System.Double y2)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.KeySpline>(TypeMetadata.Avalonia_Animation_KeySpline, () => new Avalonia.Animation.KeySpline(x1, y1, x2, y2))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.
     /// </summary>
@@ -73,5 +102,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.KeySpline"/> class.</returns>
     public static Avalonia.Animation.KeySpline KeySpline(out Avalonia.Animation.KeySpline @ref, System.Double x1, System.Double y1, System.Double x2, System.Double y2)
         => @ref = new Avalonia.Animation.KeySpline(x1, y1, x2, y2);
+#endif
 
 }

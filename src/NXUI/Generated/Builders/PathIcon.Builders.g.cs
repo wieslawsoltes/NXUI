@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.PathIcon"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.PathIcon> PathIcon(out ElementRef<Avalonia.Controls.PathIcon> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.PathIcon>(TypeMetadata.Avalonia_Controls_PathIcon, () => new Avalonia.Controls.PathIcon())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.PathIcon"/> class.</returns>
     public static Avalonia.Controls.PathIcon PathIcon(out Avalonia.Controls.PathIcon @ref)
         => @ref = new Avalonia.Controls.PathIcon();
+#endif
 
 }

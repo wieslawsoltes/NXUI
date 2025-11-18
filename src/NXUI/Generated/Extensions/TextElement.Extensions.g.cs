@@ -20,7 +20,7 @@ public static partial class TextElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Documents.TextElement
+    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Documents.TextElement
     {
         return builder.WithValue(PropertyMetadata.TextElement_Background, Avalonia.Controls.Documents.TextElement.BackgroundProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -69,7 +69,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Documents.TextElement
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.BackgroundProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -139,7 +139,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Documents.TextElement obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBackground(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
     }
@@ -151,7 +151,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Documents.TextElement
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class TextElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Documents.TextElement obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBackground(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
     }
@@ -175,7 +175,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class TextElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> FontFeatures<T>(this ElementBuilder<T> builder, Avalonia.Media.FontFeatureCollection value) where T : Avalonia.Controls.Documents.TextElement
+    public static ElementBuilder<T> FontFeatures<T>(this ElementBuilder<T> builder, Avalonia.Media.FontFeatureCollection? value) where T : Avalonia.Controls.Documents.TextElement
     {
         return builder.WithValue(PropertyMetadata.TextElement_FontFeatures, Avalonia.Controls.Documents.TextElement.FontFeaturesProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FontFeatures<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.FontFeatureCollection> observable,
+        IObservable<Avalonia.Media.FontFeatureCollection?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -457,7 +457,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FontFeatures<T>(this T obj, Avalonia.Media.FontFeatureCollection value) where T : Avalonia.Controls.Documents.TextElement
+    public static T FontFeatures<T>(this T obj, Avalonia.Media.FontFeatureCollection? value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.FontFeaturesProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T FontFeatures<T>(
         this T obj,
-        IObservable<Avalonia.Media.FontFeatureCollection> observable,
+        IObservable<Avalonia.Media.FontFeatureCollection?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -527,7 +527,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.FontFeatureCollection> ObserveFontFeatures(this Avalonia.Controls.Documents.TextElement obj)
+    public static IObservable<Avalonia.Media.FontFeatureCollection?> ObserveFontFeatures(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
     }
@@ -539,7 +539,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFontFeatures<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontFeatureCollection>> handler) where T : Avalonia.Controls.Documents.TextElement
+    public static T OnFontFeatures<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.FontFeatureCollection?>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class TextElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>> ObserveBindingFontFeatures(this Avalonia.Controls.Documents.TextElement obj)
+    public static IObservable<BindingValue<Avalonia.Media.FontFeatureCollection?>> ObserveBindingFontFeatures(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
     }
@@ -563,7 +563,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFontFeatures<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.FontFeatureCollection>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    public static T OnBindingFontFeatures<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.FontFeatureCollection?>>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
         handler(obj, observable);
@@ -2128,7 +2128,7 @@ public static partial class TextElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Documents.TextElement
+    public static ElementBuilder<T> Foreground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Documents.TextElement
     {
         return builder.WithValue(PropertyMetadata.TextElement_Foreground, Avalonia.Controls.Documents.TextElement.ForegroundProperty, value);
     }
@@ -2160,7 +2160,7 @@ public static partial class TextElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Foreground<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -2177,7 +2177,7 @@ public static partial class TextElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Documents.TextElement
+    public static T Foreground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Documents.TextElement
     {
         obj[Avalonia.Controls.Documents.TextElement.ForegroundProperty] = value;
         return obj;
@@ -2214,7 +2214,7 @@ public static partial class TextElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Foreground<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Documents.TextElement
     {
@@ -2247,7 +2247,7 @@ public static partial class TextElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveForeground(this Avalonia.Controls.Documents.TextElement obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveForeground(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
     }
@@ -2259,7 +2259,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Documents.TextElement
+    public static T OnForeground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
         handler(obj, observable);
@@ -2271,7 +2271,7 @@ public static partial class TextElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingForeground(this Avalonia.Controls.Documents.TextElement obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingForeground(this Avalonia.Controls.Documents.TextElement obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
     }
@@ -2283,7 +2283,7 @@ public static partial class TextElementExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Documents.TextElement
+    public static T OnBindingForeground<T>(this T obj, Action<Avalonia.Controls.Documents.TextElement, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Documents.TextElement
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
         handler(obj, observable);

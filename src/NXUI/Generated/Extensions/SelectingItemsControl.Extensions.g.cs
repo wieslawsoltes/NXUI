@@ -408,7 +408,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         return builder.WithValue(PropertyMetadata.SelectingItemsControl_SelectedItem, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -457,7 +457,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectedItem<T>(this T obj, System.Object value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T SelectedItem<T>(this T obj, System.Object? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedItem<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -527,7 +527,7 @@ public static partial class SelectingItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<System.Object?> ObserveSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
     }
@@ -539,7 +539,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Object?>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingSelectedItem(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
     }
@@ -563,7 +563,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectedValue<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static ElementBuilder<T> SelectedValue<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         return builder.WithValue(PropertyMetadata.SelectingItemsControl_SelectedValue, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValue<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -651,7 +651,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectedValue<T>(this T obj, System.Object value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T SelectedValue<T>(this T obj, System.Object? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedValue<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -721,7 +721,7 @@ public static partial class SelectingItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveSelectedValue(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<System.Object?> ObserveSelectedValue(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
     }
@@ -733,7 +733,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedValue<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Object>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnSelectedValue<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<System.Object?>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedValue(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingSelectedValue(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
     }
@@ -757,7 +757,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectedValue<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnBindingSelectedValue<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
         handler(obj, observable);
@@ -796,7 +796,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectedValueBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.IBinding value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static ElementBuilder<T> SelectedValueBinding<T>(this ElementBuilder<T> builder, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         return builder.WithValue(PropertyMetadata.SelectingItemsControl_SelectedValueBinding, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, value);
     }
@@ -828,7 +828,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedValueBinding<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Data.IBinding> observable,
+        IObservable<Avalonia.Data.IBinding?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -845,7 +845,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectedValueBinding<T>(this T obj, Avalonia.Data.IBinding value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T SelectedValueBinding<T>(this T obj, Avalonia.Data.IBinding? value) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         obj[Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty] = value;
         return obj;
@@ -882,7 +882,7 @@ public static partial class SelectingItemsControlExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedValueBinding<T>(
         this T obj,
-        IObservable<Avalonia.Data.IBinding> observable,
+        IObservable<Avalonia.Data.IBinding?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
@@ -915,7 +915,7 @@ public static partial class SelectingItemsControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Data.IBinding> ObserveSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<Avalonia.Data.IBinding?> ObserveSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
     }
@@ -927,7 +927,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<Avalonia.Data.IBinding>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<Avalonia.Data.IBinding?>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
         handler(obj, observable);
@@ -939,7 +939,7 @@ public static partial class SelectingItemsControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Data.IBinding>> ObserveBindingSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
+    public static IObservable<BindingValue<Avalonia.Data.IBinding?>> ObserveBindingSelectedValueBinding(this Avalonia.Controls.Primitives.SelectingItemsControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
     }
@@ -951,7 +951,7 @@ public static partial class SelectingItemsControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<Avalonia.Data.IBinding>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
+    public static T OnBindingSelectedValueBinding<T>(this T obj, Action<Avalonia.Controls.Primitives.SelectingItemsControl, IObservable<BindingValue<Avalonia.Data.IBinding?>>> handler) where T : Avalonia.Controls.Primitives.SelectingItemsControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
         handler(obj, observable);

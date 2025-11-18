@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolyLineSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PolyLineSegment> PolyLineSegment(out ElementRef<Avalonia.Media.PolyLineSegment> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PolyLineSegment>(TypeMetadata.Avalonia_Media_PolyLineSegment, () => new Avalonia.Media.PolyLineSegment())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.</returns>
     public static Avalonia.Media.PolyLineSegment PolyLineSegment(out Avalonia.Media.PolyLineSegment @ref)
         => @ref = new Avalonia.Media.PolyLineSegment();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PolyLineSegment"/> instantiated class.</param>
+    /// <param name="points">The points value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PolyLineSegment> PolyLineSegment(out ElementRef<Avalonia.Media.PolyLineSegment> @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PolyLineSegment>(TypeMetadata.Avalonia_Media_PolyLineSegment, () => new Avalonia.Media.PolyLineSegment(points))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PolyLineSegment"/> class.</returns>
     public static Avalonia.Media.PolyLineSegment PolyLineSegment(out Avalonia.Media.PolyLineSegment @ref, System.Collections.Generic.IEnumerable<Avalonia.Point> points)
         => @ref = new Avalonia.Media.PolyLineSegment(points);
+#endif
 
 }

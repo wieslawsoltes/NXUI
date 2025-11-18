@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SolidColorBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.SolidColorBrush> SolidColorBrush(out ElementRef<Avalonia.Media.SolidColorBrush> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.SolidColorBrush>(TypeMetadata.Avalonia_Media_SolidColorBrush, () => new Avalonia.Media.SolidColorBrush())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
     public static Avalonia.Media.SolidColorBrush SolidColorBrush(out Avalonia.Media.SolidColorBrush @ref)
         => @ref = new Avalonia.Media.SolidColorBrush();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SolidColorBrush"/> instantiated class.</param>
+    /// <param name="color">The color value.</param>
+    /// <param name="opacity">The opacity value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.SolidColorBrush> SolidColorBrush(out ElementRef<Avalonia.Media.SolidColorBrush> @ref, Avalonia.Media.Color color, System.Double opacity = 1)
+    {
+        return ElementBuilder.Create<Avalonia.Media.SolidColorBrush>(TypeMetadata.Avalonia_Media_SolidColorBrush, () => new Avalonia.Media.SolidColorBrush(color, opacity))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
     /// </summary>
@@ -67,6 +94,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
     public static Avalonia.Media.SolidColorBrush SolidColorBrush(out Avalonia.Media.SolidColorBrush @ref, Avalonia.Media.Color color, System.Double opacity = 1)
         => @ref = new Avalonia.Media.SolidColorBrush(color, opacity);
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -88,6 +116,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.SolidColorBrush"/> instantiated class.</param>
+    /// <param name="color">The color value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.SolidColorBrush> SolidColorBrush(out ElementRef<Avalonia.Media.SolidColorBrush> @ref, System.UInt32 color)
+    {
+        return ElementBuilder.Create<Avalonia.Media.SolidColorBrush>(TypeMetadata.Avalonia_Media_SolidColorBrush, () => new Avalonia.Media.SolidColorBrush(color))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.
     /// </summary>
@@ -96,5 +137,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.SolidColorBrush"/> class.</returns>
     public static Avalonia.Media.SolidColorBrush SolidColorBrush(out Avalonia.Media.SolidColorBrush @ref, System.UInt32 color)
         => @ref = new Avalonia.Media.SolidColorBrush(color);
+#endif
 
 }

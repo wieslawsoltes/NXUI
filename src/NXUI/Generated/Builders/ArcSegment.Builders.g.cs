@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ArcSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.ArcSegment> ArcSegment(out ElementRef<Avalonia.Media.ArcSegment> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.ArcSegment>(TypeMetadata.Avalonia_Media_ArcSegment, () => new Avalonia.Media.ArcSegment())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ArcSegment"/> class.</returns>
     public static Avalonia.Media.ArcSegment ArcSegment(out Avalonia.Media.ArcSegment @ref)
         => @ref = new Avalonia.Media.ArcSegment();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Flyout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Flyout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Flyout"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Flyout> Flyout(out ElementRef<Avalonia.Controls.Flyout> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Flyout>(TypeMetadata.Avalonia_Controls_Flyout, () => new Avalonia.Controls.Flyout())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Flyout"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Flyout"/> class.</returns>
     public static Avalonia.Controls.Flyout Flyout(out Avalonia.Controls.Flyout @ref)
         => @ref = new Avalonia.Controls.Flyout();
+#endif
 
 }

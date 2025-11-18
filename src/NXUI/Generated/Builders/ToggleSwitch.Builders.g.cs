@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ToggleSwitch"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ToggleSwitch"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ToggleSwitch"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ToggleSwitch> ToggleSwitch(out ElementRef<Avalonia.Controls.ToggleSwitch> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ToggleSwitch>(TypeMetadata.Avalonia_Controls_ToggleSwitch, () => new Avalonia.Controls.ToggleSwitch())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ToggleSwitch"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ToggleSwitch"/> class.</returns>
     public static Avalonia.Controls.ToggleSwitch ToggleSwitch(out Avalonia.Controls.ToggleSwitch @ref)
         => @ref = new Avalonia.Controls.ToggleSwitch();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Rectangle"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Rectangle"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Rectangle"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Shapes.Rectangle> Rectangle(out ElementRef<Avalonia.Controls.Shapes.Rectangle> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Shapes.Rectangle>(TypeMetadata.Avalonia_Controls_Shapes_Rectangle, () => new Avalonia.Controls.Shapes.Rectangle())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Rectangle"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Rectangle"/> class.</returns>
     public static Avalonia.Controls.Shapes.Rectangle Rectangle(out Avalonia.Controls.Shapes.Rectangle @ref)
         => @ref = new Avalonia.Controls.Shapes.Rectangle();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class PopupRootExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> Transform(this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder, Avalonia.Media.Transform value)
+    public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> Transform(this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder, Avalonia.Media.Transform? value)
     {
         return builder.WithValue(PropertyMetadata.PopupRoot_Transform, Avalonia.Controls.Primitives.PopupRoot.TransformProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class PopupRootExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> Transform(
         this ElementBuilder<Avalonia.Controls.Primitives.PopupRoot> builder,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class PopupRootExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.PopupRoot Transform(this Avalonia.Controls.Primitives.PopupRoot obj, Avalonia.Media.Transform value)
+    public static Avalonia.Controls.Primitives.PopupRoot Transform(this Avalonia.Controls.Primitives.PopupRoot obj, Avalonia.Media.Transform? value)
     {
         obj[Avalonia.Controls.Primitives.PopupRoot.TransformProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class PopupRootExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Controls.Primitives.PopupRoot Transform(
         this Avalonia.Controls.Primitives.PopupRoot obj,
-        IObservable<Avalonia.Media.Transform> observable,
+        IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class PopupRootExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Transform> ObserveTransform(this Avalonia.Controls.Primitives.PopupRoot obj)
+    public static IObservable<Avalonia.Media.Transform?> ObserveTransform(this Avalonia.Controls.Primitives.PopupRoot obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
     }
@@ -146,7 +146,7 @@ public static partial class PopupRootExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Controls.Primitives.PopupRoot OnTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<Avalonia.Media.Transform>> handler)
+    public static Avalonia.Controls.Primitives.PopupRoot OnTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<Avalonia.Media.Transform?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class PopupRootExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Transform>> ObserveBindingTransform(this Avalonia.Controls.Primitives.PopupRoot obj)
+    public static IObservable<BindingValue<Avalonia.Media.Transform?>> ObserveBindingTransform(this Avalonia.Controls.Primitives.PopupRoot obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
     }
@@ -169,7 +169,7 @@ public static partial class PopupRootExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Controls.Primitives.PopupRoot OnBindingTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<BindingValue<Avalonia.Media.Transform>>> handler)
+    public static Avalonia.Controls.Primitives.PopupRoot OnBindingTransform(this Avalonia.Controls.Primitives.PopupRoot obj, Action<Avalonia.Controls.Primitives.PopupRoot, IObservable<BindingValue<Avalonia.Media.Transform?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.PopupRoot.TransformProperty);
         handler(obj, observable);

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TreeViewItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TreeViewItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TreeViewItem"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TreeViewItem> TreeViewItem(out ElementRef<Avalonia.Controls.TreeViewItem> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TreeViewItem>(TypeMetadata.Avalonia_Controls_TreeViewItem, () => new Avalonia.Controls.TreeViewItem())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TreeViewItem"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TreeViewItem"/> class.</returns>
     public static Avalonia.Controls.TreeViewItem TreeViewItem(out Avalonia.Controls.TreeViewItem @ref)
         => @ref = new Avalonia.Controls.TreeViewItem();
+#endif
 
 }

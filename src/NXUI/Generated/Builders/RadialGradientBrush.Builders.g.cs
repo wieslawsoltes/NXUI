@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.RadialGradientBrush"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.RadialGradientBrush"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.RadialGradientBrush"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.RadialGradientBrush> RadialGradientBrush(out ElementRef<Avalonia.Media.RadialGradientBrush> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.RadialGradientBrush>(TypeMetadata.Avalonia_Media_RadialGradientBrush, () => new Avalonia.Media.RadialGradientBrush())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.RadialGradientBrush"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.RadialGradientBrush"/> class.</returns>
     public static Avalonia.Media.RadialGradientBrush RadialGradientBrush(out Avalonia.Media.RadialGradientBrush @ref)
         => @ref = new Avalonia.Media.RadialGradientBrush();
+#endif
 
 }

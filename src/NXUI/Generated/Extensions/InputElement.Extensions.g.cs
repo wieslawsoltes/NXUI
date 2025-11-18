@@ -498,7 +498,7 @@ public static partial class InputElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Cursor<T>(this ElementBuilder<T> builder, Avalonia.Input.Cursor value) where T : Avalonia.Input.InputElement
+    public static ElementBuilder<T> Cursor<T>(this ElementBuilder<T> builder, Avalonia.Input.Cursor? value) where T : Avalonia.Input.InputElement
     {
         return builder.WithValue(PropertyMetadata.InputElement_Cursor, Avalonia.Input.InputElement.CursorProperty, value);
     }
@@ -530,7 +530,7 @@ public static partial class InputElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Cursor<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Input.Cursor> observable,
+        IObservable<Avalonia.Input.Cursor?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -547,7 +547,7 @@ public static partial class InputElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Cursor<T>(this T obj, Avalonia.Input.Cursor value) where T : Avalonia.Input.InputElement
+    public static T Cursor<T>(this T obj, Avalonia.Input.Cursor? value) where T : Avalonia.Input.InputElement
     {
         obj[Avalonia.Input.InputElement.CursorProperty] = value;
         return obj;
@@ -584,7 +584,7 @@ public static partial class InputElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Cursor<T>(
         this T obj,
-        IObservable<Avalonia.Input.Cursor> observable,
+        IObservable<Avalonia.Input.Cursor?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
     {
@@ -617,7 +617,7 @@ public static partial class InputElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Input.Cursor> ObserveCursor(this Avalonia.Input.InputElement obj)
+    public static IObservable<Avalonia.Input.Cursor?> ObserveCursor(this Avalonia.Input.InputElement obj)
     {
         return obj.GetObservable(Avalonia.Input.InputElement.CursorProperty);
     }
@@ -629,7 +629,7 @@ public static partial class InputElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCursor<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<Avalonia.Input.Cursor>> handler) where T : Avalonia.Input.InputElement
+    public static T OnCursor<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<Avalonia.Input.Cursor?>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = obj.GetObservable(Avalonia.Input.InputElement.CursorProperty);
         handler(obj, observable);
@@ -641,7 +641,7 @@ public static partial class InputElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Input.Cursor>> ObserveBindingCursor(this Avalonia.Input.InputElement obj)
+    public static IObservable<BindingValue<Avalonia.Input.Cursor?>> ObserveBindingCursor(this Avalonia.Input.InputElement obj)
     {
         return obj.GetBindingObservable(Avalonia.Input.InputElement.CursorProperty);
     }
@@ -653,7 +653,7 @@ public static partial class InputElementExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCursor<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<Avalonia.Input.Cursor>>> handler) where T : Avalonia.Input.InputElement
+    public static T OnBindingCursor<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<Avalonia.Input.Cursor?>>> handler) where T : Avalonia.Input.InputElement
     {
         var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.CursorProperty);
         handler(obj, observable);

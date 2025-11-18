@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.HeaderedItemsControl> HeaderedItemsControl(out ElementRef<Avalonia.Controls.Primitives.HeaderedItemsControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.HeaderedItemsControl>(TypeMetadata.Avalonia_Controls_Primitives_HeaderedItemsControl, () => new Avalonia.Controls.Primitives.HeaderedItemsControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class.</returns>
     public static Avalonia.Controls.Primitives.HeaderedItemsControl HeaderedItemsControl(out Avalonia.Controls.Primitives.HeaderedItemsControl @ref)
         => @ref = new Avalonia.Controls.Primitives.HeaderedItemsControl();
+#endif
 
 }

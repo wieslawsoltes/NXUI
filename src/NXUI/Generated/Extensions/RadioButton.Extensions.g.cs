@@ -20,7 +20,7 @@ public static partial class RadioButtonExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> GroupName<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.RadioButton
+    public static ElementBuilder<T> GroupName<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.RadioButton
     {
         return builder.WithValue(PropertyMetadata.RadioButton_GroupName, Avalonia.Controls.RadioButton.GroupNameProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class RadioButtonExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> GroupName<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RadioButton
     {
@@ -69,7 +69,7 @@ public static partial class RadioButtonExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T GroupName<T>(this T obj, System.String value) where T : Avalonia.Controls.RadioButton
+    public static T GroupName<T>(this T obj, System.String? value) where T : Avalonia.Controls.RadioButton
     {
         obj[Avalonia.Controls.RadioButton.GroupNameProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class RadioButtonExtensions
     /// <returns>The target object reference.</returns>
     public static T GroupName<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.RadioButton
     {
@@ -139,7 +139,7 @@ public static partial class RadioButtonExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveGroupName(this Avalonia.Controls.RadioButton obj)
+    public static IObservable<System.String?> ObserveGroupName(this Avalonia.Controls.RadioButton obj)
     {
         return obj.GetObservable(Avalonia.Controls.RadioButton.GroupNameProperty);
     }
@@ -151,7 +151,7 @@ public static partial class RadioButtonExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnGroupName<T>(this T obj, Action<Avalonia.Controls.RadioButton, IObservable<System.String>> handler) where T : Avalonia.Controls.RadioButton
+    public static T OnGroupName<T>(this T obj, Action<Avalonia.Controls.RadioButton, IObservable<System.String?>> handler) where T : Avalonia.Controls.RadioButton
     {
         var observable = obj.GetObservable(Avalonia.Controls.RadioButton.GroupNameProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class RadioButtonExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingGroupName(this Avalonia.Controls.RadioButton obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingGroupName(this Avalonia.Controls.RadioButton obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.RadioButton.GroupNameProperty);
     }
@@ -175,7 +175,7 @@ public static partial class RadioButtonExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingGroupName<T>(this T obj, Action<Avalonia.Controls.RadioButton, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.RadioButton
+    public static T OnBindingGroupName<T>(this T obj, Action<Avalonia.Controls.RadioButton, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.RadioButton
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.RadioButton.GroupNameProperty);
         handler(obj, observable);

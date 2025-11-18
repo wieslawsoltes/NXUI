@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.StreamGeometry"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.StreamGeometry"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.StreamGeometry"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.StreamGeometry> StreamGeometry(out ElementRef<Avalonia.Media.StreamGeometry> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.StreamGeometry>(TypeMetadata.Avalonia_Media_StreamGeometry, () => new Avalonia.Media.StreamGeometry())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.StreamGeometry"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.StreamGeometry"/> class.</returns>
     public static Avalonia.Media.StreamGeometry StreamGeometry(out Avalonia.Media.StreamGeometry @ref)
         => @ref = new Avalonia.Media.StreamGeometry();
+#endif
 
 }

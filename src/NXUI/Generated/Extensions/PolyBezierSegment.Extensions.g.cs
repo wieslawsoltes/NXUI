@@ -20,7 +20,7 @@ public static partial class PolyBezierSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PolyBezierSegment> Points(this ElementBuilder<Avalonia.Media.PolyBezierSegment> builder, Avalonia.Points value)
+    public static ElementBuilder<Avalonia.Media.PolyBezierSegment> Points(this ElementBuilder<Avalonia.Media.PolyBezierSegment> builder, Avalonia.Points? value)
     {
         return builder.WithValue(PropertyMetadata.PolyBezierSegment_Points, Avalonia.Media.PolyBezierSegment.PointsProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class PolyBezierSegmentExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.PolyBezierSegment> Points(
         this ElementBuilder<Avalonia.Media.PolyBezierSegment> builder,
-        IObservable<Avalonia.Points> observable,
+        IObservable<Avalonia.Points?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class PolyBezierSegmentExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.PolyBezierSegment Points(this Avalonia.Media.PolyBezierSegment obj, Avalonia.Points value)
+    public static Avalonia.Media.PolyBezierSegment Points(this Avalonia.Media.PolyBezierSegment obj, Avalonia.Points? value)
     {
         obj[Avalonia.Media.PolyBezierSegment.PointsProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class PolyBezierSegmentExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.PolyBezierSegment Points(
         this Avalonia.Media.PolyBezierSegment obj,
-        IObservable<Avalonia.Points> observable,
+        IObservable<Avalonia.Points?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class PolyBezierSegmentExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Points> ObservePoints(this Avalonia.Media.PolyBezierSegment obj)
+    public static IObservable<Avalonia.Points?> ObservePoints(this Avalonia.Media.PolyBezierSegment obj)
     {
         return obj.GetObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
     }
@@ -146,7 +146,7 @@ public static partial class PolyBezierSegmentExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.PolyBezierSegment OnPoints(this Avalonia.Media.PolyBezierSegment obj, Action<Avalonia.Media.PolyBezierSegment, IObservable<Avalonia.Points>> handler)
+    public static Avalonia.Media.PolyBezierSegment OnPoints(this Avalonia.Media.PolyBezierSegment obj, Action<Avalonia.Media.PolyBezierSegment, IObservable<Avalonia.Points?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class PolyBezierSegmentExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Points>> ObserveBindingPoints(this Avalonia.Media.PolyBezierSegment obj)
+    public static IObservable<BindingValue<Avalonia.Points?>> ObserveBindingPoints(this Avalonia.Media.PolyBezierSegment obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
     }
@@ -169,7 +169,7 @@ public static partial class PolyBezierSegmentExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.PolyBezierSegment OnBindingPoints(this Avalonia.Media.PolyBezierSegment obj, Action<Avalonia.Media.PolyBezierSegment, IObservable<BindingValue<Avalonia.Points>>> handler)
+    public static Avalonia.Media.PolyBezierSegment OnBindingPoints(this Avalonia.Media.PolyBezierSegment obj, Action<Avalonia.Media.PolyBezierSegment, IObservable<BindingValue<Avalonia.Points?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.PolyBezierSegment.PointsProperty);
         handler(obj, observable);

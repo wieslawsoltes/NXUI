@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.AutoCompleteBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.AutoCompleteBox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.AutoCompleteBox> AutoCompleteBox(out ElementRef<Avalonia.Controls.AutoCompleteBox> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.AutoCompleteBox>(TypeMetadata.Avalonia_Controls_AutoCompleteBox, () => new Avalonia.Controls.AutoCompleteBox())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.AutoCompleteBox"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.AutoCompleteBox"/> class.</returns>
     public static Avalonia.Controls.AutoCompleteBox AutoCompleteBox(out Avalonia.Controls.AutoCompleteBox @ref)
         => @ref = new Avalonia.Controls.AutoCompleteBox();
+#endif
 
 }

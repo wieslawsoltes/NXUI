@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Separator"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Separator"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Separator"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Separator> Separator(out ElementRef<Avalonia.Controls.Separator> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Separator>(TypeMetadata.Avalonia_Controls_Separator, () => new Avalonia.Controls.Separator())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Separator"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Separator"/> class.</returns>
     public static Avalonia.Controls.Separator Separator(out Avalonia.Controls.Separator @ref)
         => @ref = new Avalonia.Controls.Separator();
+#endif
 
 }

@@ -200,7 +200,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Value<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    public static ElementBuilder<T> Value<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_Value, Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty, value);
     }
@@ -232,7 +232,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Value<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -249,7 +249,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Value<T>(this T obj, System.String value) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    public static T Value<T>(this T obj, System.String? value) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
         obj[Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty] = value;
         return obj;
@@ -286,7 +286,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// <returns>The target object reference.</returns>
     public static T Value<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
@@ -319,7 +319,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveValue(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    public static IObservable<System.String?> ObserveValue(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
     }
@@ -331,7 +331,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnValue<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<System.String>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    public static T OnValue<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<System.String?>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
         handler(obj, observable);
@@ -343,7 +343,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingValue(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingValue(this Avalonia.Controls.Primitives.TreeDataGridTextCell obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
     }
@@ -355,7 +355,7 @@ public static partial class TreeDataGridTextCellExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingValue<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
+    public static T OnBindingValue<T>(this T obj, Action<Avalonia.Controls.Primitives.TreeDataGridTextCell, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.Primitives.TreeDataGridTextCell
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty);
         handler(obj, observable);

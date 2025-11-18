@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TabControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TabControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TabControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TabControl> TabControl(out ElementRef<Avalonia.Controls.TabControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TabControl>(TypeMetadata.Avalonia_Controls_TabControl, () => new Avalonia.Controls.TabControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TabControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TabControl"/> class.</returns>
     public static Avalonia.Controls.TabControl TabControl(out Avalonia.Controls.TabControl @ref)
         => @ref = new Avalonia.Controls.TabControl();
+#endif
 
 }

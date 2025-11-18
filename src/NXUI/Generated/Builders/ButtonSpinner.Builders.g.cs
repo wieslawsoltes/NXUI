@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ButtonSpinner"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ButtonSpinner> ButtonSpinner(out ElementRef<Avalonia.Controls.ButtonSpinner> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ButtonSpinner>(TypeMetadata.Avalonia_Controls_ButtonSpinner, () => new Avalonia.Controls.ButtonSpinner())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ButtonSpinner"/> class.</returns>
     public static Avalonia.Controls.ButtonSpinner ButtonSpinner(out Avalonia.Controls.ButtonSpinner @ref)
         => @ref = new Avalonia.Controls.ButtonSpinner();
+#endif
 
 }

@@ -498,7 +498,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectionBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SelectableTextBlock
+    public static ElementBuilder<T> SelectionBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SelectableTextBlock
     {
         return builder.WithValue(PropertyMetadata.SelectableTextBlock_SelectionBrush, Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, value);
     }
@@ -530,7 +530,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -547,7 +547,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SelectableTextBlock
+    public static T SelectionBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SelectableTextBlock
     {
         obj[Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty] = value;
         return obj;
@@ -584,7 +584,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -617,7 +617,7 @@ public static partial class SelectableTextBlockExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionBrush(this Avalonia.Controls.SelectableTextBlock obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveSelectionBrush(this Avalonia.Controls.SelectableTextBlock obj)
     {
         return obj.GetObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
     }
@@ -629,7 +629,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectionBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    public static T OnSelectionBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.SelectableTextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
         handler(obj, observable);
@@ -641,7 +641,7 @@ public static partial class SelectableTextBlockExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionBrush(this Avalonia.Controls.SelectableTextBlock obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingSelectionBrush(this Avalonia.Controls.SelectableTextBlock obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
     }
@@ -653,7 +653,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    public static T OnBindingSelectionBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.SelectableTextBlock
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
         handler(obj, observable);
@@ -692,7 +692,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectionForegroundBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SelectableTextBlock
+    public static ElementBuilder<T> SelectionForegroundBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SelectableTextBlock
     {
         return builder.WithValue(PropertyMetadata.SelectableTextBlock_SelectionForegroundBrush, Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, value);
     }
@@ -724,7 +724,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionForegroundBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -741,7 +741,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.SelectableTextBlock
+    public static T SelectionForegroundBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.SelectableTextBlock
     {
         obj[Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty] = value;
         return obj;
@@ -778,7 +778,7 @@ public static partial class SelectableTextBlockExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionForegroundBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.SelectableTextBlock
     {
@@ -811,7 +811,7 @@ public static partial class SelectableTextBlockExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveSelectionForegroundBrush(this Avalonia.Controls.SelectableTextBlock obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveSelectionForegroundBrush(this Avalonia.Controls.SelectableTextBlock obj)
     {
         return obj.GetObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
     }
@@ -823,7 +823,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    public static T OnSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.SelectableTextBlock
     {
         var observable = obj.GetObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
         handler(obj, observable);
@@ -835,7 +835,7 @@ public static partial class SelectableTextBlockExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.SelectableTextBlock obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingSelectionForegroundBrush(this Avalonia.Controls.SelectableTextBlock obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
     }
@@ -847,7 +847,7 @@ public static partial class SelectableTextBlockExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.SelectableTextBlock
+    public static T OnBindingSelectionForegroundBrush<T>(this T obj, Action<Avalonia.Controls.SelectableTextBlock, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.SelectableTextBlock
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
         handler(obj, observable);

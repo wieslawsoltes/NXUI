@@ -12,12 +12,12 @@ object Build() =>
                 .Text("Welcome to Avalonia + NXUI"),
               TextBox()
                 .Text("Edit me and save to trigger hot reload."),
-              Slider()
+              Slider(out var slider)
                 .Minimum(0)
                 .Maximum(100)
                 .Value(50),
               TextBox()
-                .Text("Current value."),
+                .Text(slider.ObserveValue().Select(value => $"Current value: {value:F0}")),
               Button()
                 .Content("Click Me")
                 .OnClickHandler((_, _) => clickCount.OnNext(clickCount.Value + 1)),

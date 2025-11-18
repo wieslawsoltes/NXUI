@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Viewbox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Viewbox> Viewbox(out ElementRef<Avalonia.Controls.Viewbox> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Viewbox>(TypeMetadata.Avalonia_Controls_Viewbox, () => new Avalonia.Controls.Viewbox())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Viewbox"/> class.</returns>
     public static Avalonia.Controls.Viewbox Viewbox(out Avalonia.Controls.Viewbox @ref)
         => @ref = new Avalonia.Controls.Viewbox();
+#endif
 
 }

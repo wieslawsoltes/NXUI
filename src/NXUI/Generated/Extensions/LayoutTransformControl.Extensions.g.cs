@@ -20,7 +20,7 @@ public static partial class LayoutTransformControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> LayoutTransform<T>(this ElementBuilder<T> builder, Avalonia.Media.ITransform value) where T : Avalonia.Controls.LayoutTransformControl
+    public static ElementBuilder<T> LayoutTransform<T>(this ElementBuilder<T> builder, Avalonia.Media.ITransform? value) where T : Avalonia.Controls.LayoutTransformControl
     {
         return builder.WithValue(PropertyMetadata.LayoutTransformControl_LayoutTransform, Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> LayoutTransform<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.ITransform> observable,
+        IObservable<Avalonia.Media.ITransform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -69,7 +69,7 @@ public static partial class LayoutTransformControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T LayoutTransform<T>(this T obj, Avalonia.Media.ITransform value) where T : Avalonia.Controls.LayoutTransformControl
+    public static T LayoutTransform<T>(this T obj, Avalonia.Media.ITransform? value) where T : Avalonia.Controls.LayoutTransformControl
     {
         obj[Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class LayoutTransformControlExtensions
     /// <returns>The target object reference.</returns>
     public static T LayoutTransform<T>(
         this T obj,
-        IObservable<Avalonia.Media.ITransform> observable,
+        IObservable<Avalonia.Media.ITransform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.LayoutTransformControl
     {
@@ -139,7 +139,7 @@ public static partial class LayoutTransformControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.ITransform> ObserveLayoutTransform(this Avalonia.Controls.LayoutTransformControl obj)
+    public static IObservable<Avalonia.Media.ITransform?> ObserveLayoutTransform(this Avalonia.Controls.LayoutTransformControl obj)
     {
         return obj.GetObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
     }
@@ -151,7 +151,7 @@ public static partial class LayoutTransformControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnLayoutTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<Avalonia.Media.ITransform>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    public static T OnLayoutTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<Avalonia.Media.ITransform?>> handler) where T : Avalonia.Controls.LayoutTransformControl
     {
         var observable = obj.GetObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class LayoutTransformControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.ITransform>> ObserveBindingLayoutTransform(this Avalonia.Controls.LayoutTransformControl obj)
+    public static IObservable<BindingValue<Avalonia.Media.ITransform?>> ObserveBindingLayoutTransform(this Avalonia.Controls.LayoutTransformControl obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
     }
@@ -175,7 +175,7 @@ public static partial class LayoutTransformControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingLayoutTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<BindingValue<Avalonia.Media.ITransform>>> handler) where T : Avalonia.Controls.LayoutTransformControl
+    public static T OnBindingLayoutTransform<T>(this T obj, Action<Avalonia.Controls.LayoutTransformControl, IObservable<BindingValue<Avalonia.Media.ITransform?>>> handler) where T : Avalonia.Controls.LayoutTransformControl
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
         handler(obj, observable);

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.QuadraticBezierSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.QuadraticBezierSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.QuadraticBezierSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.QuadraticBezierSegment> QuadraticBezierSegment(out ElementRef<Avalonia.Media.QuadraticBezierSegment> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.QuadraticBezierSegment>(TypeMetadata.Avalonia_Media_QuadraticBezierSegment, () => new Avalonia.Media.QuadraticBezierSegment())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.QuadraticBezierSegment"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.QuadraticBezierSegment"/> class.</returns>
     public static Avalonia.Media.QuadraticBezierSegment QuadraticBezierSegment(out Avalonia.Media.QuadraticBezierSegment @ref)
         => @ref = new Avalonia.Media.QuadraticBezierSegment();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.NativeMenuItemSeparator> NativeMenuItemSeparator(out ElementRef<Avalonia.Controls.NativeMenuItemSeparator> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.NativeMenuItemSeparator>(TypeMetadata.Avalonia_Controls_NativeMenuItemSeparator, () => new Avalonia.Controls.NativeMenuItemSeparator())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeMenuItemSeparator"/> class.</returns>
     public static Avalonia.Controls.NativeMenuItemSeparator NativeMenuItemSeparator(out Avalonia.Controls.NativeMenuItemSeparator @ref)
         => @ref = new Avalonia.Controls.NativeMenuItemSeparator();
+#endif
 
 }

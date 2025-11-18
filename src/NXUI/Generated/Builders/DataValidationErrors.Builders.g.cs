@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DataValidationErrors"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DataValidationErrors"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DataValidationErrors"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DataValidationErrors> DataValidationErrors(out ElementRef<Avalonia.Controls.DataValidationErrors> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DataValidationErrors>(TypeMetadata.Avalonia_Controls_DataValidationErrors, () => new Avalonia.Controls.DataValidationErrors())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DataValidationErrors"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DataValidationErrors"/> class.</returns>
     public static Avalonia.Controls.DataValidationErrors DataValidationErrors(out Avalonia.Controls.DataValidationErrors @ref)
         => @ref = new Avalonia.Controls.DataValidationErrors();
+#endif
 
 }

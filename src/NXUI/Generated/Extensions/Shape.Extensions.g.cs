@@ -20,7 +20,7 @@ public static partial class ShapeExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Fill<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Shapes.Shape
+    public static ElementBuilder<T> Fill<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Shapes.Shape
     {
         return builder.WithValue(PropertyMetadata.Shape_Fill, Avalonia.Controls.Shapes.Shape.FillProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -69,7 +69,7 @@ public static partial class ShapeExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Fill<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Shapes.Shape
+    public static T Fill<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.FillProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T Fill<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -139,7 +139,7 @@ public static partial class ShapeExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveFill(this Avalonia.Controls.Shapes.Shape obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveFill(this Avalonia.Controls.Shapes.Shape obj)
     {
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ShapeExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFill<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnFill<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingFill(this Avalonia.Controls.Shapes.Shape obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingFill(this Avalonia.Controls.Shapes.Shape obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ShapeExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFill<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnBindingFill<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.FillProperty);
         handler(obj, observable);
@@ -508,7 +508,7 @@ public static partial class ShapeExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Stroke<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Shapes.Shape
+    public static ElementBuilder<T> Stroke<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Shapes.Shape
     {
         return builder.WithValue(PropertyMetadata.Shape_Stroke, Avalonia.Controls.Shapes.Shape.StrokeProperty, value);
     }
@@ -540,7 +540,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Stroke<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -557,7 +557,7 @@ public static partial class ShapeExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Stroke<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Shapes.Shape
+    public static T Stroke<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeProperty] = value;
         return obj;
@@ -594,7 +594,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T Stroke<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -627,7 +627,7 @@ public static partial class ShapeExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveStroke(this Avalonia.Controls.Shapes.Shape obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveStroke(this Avalonia.Controls.Shapes.Shape obj)
     {
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
     }
@@ -639,7 +639,7 @@ public static partial class ShapeExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnStroke<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStroke<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
         handler(obj, observable);
@@ -651,7 +651,7 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingStroke(this Avalonia.Controls.Shapes.Shape obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingStroke(this Avalonia.Controls.Shapes.Shape obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
     }
@@ -663,7 +663,7 @@ public static partial class ShapeExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingStroke<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnBindingStroke<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeProperty);
         handler(obj, observable);
@@ -702,7 +702,7 @@ public static partial class ShapeExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> StrokeDashArray<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.Shapes.Shape
+    public static ElementBuilder<T> StrokeDashArray<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Controls.Shapes.Shape
     {
         return builder.WithValue(PropertyMetadata.Shape_StrokeDashArray, Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, value);
     }
@@ -734,7 +734,7 @@ public static partial class ShapeExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> StrokeDashArray<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -751,7 +751,7 @@ public static partial class ShapeExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T StrokeDashArray<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.Shapes.Shape
+    public static T StrokeDashArray<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Controls.Shapes.Shape
     {
         obj[Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty] = value;
         return obj;
@@ -788,7 +788,7 @@ public static partial class ShapeExtensions
     /// <returns>The target object reference.</returns>
     public static T StrokeDashArray<T>(
         this T obj,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Shapes.Shape
     {
@@ -821,7 +821,7 @@ public static partial class ShapeExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveStrokeDashArray(this Avalonia.Controls.Shapes.Shape obj)
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> ObserveStrokeDashArray(this Avalonia.Controls.Shapes.Shape obj)
     {
         return obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
     }
@@ -833,7 +833,7 @@ public static partial class ShapeExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnStrokeDashArray<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnStrokeDashArray<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<Avalonia.Collections.AvaloniaList<System.Double>?>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
         handler(obj, observable);
@@ -845,7 +845,7 @@ public static partial class ShapeExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingStrokeDashArray(this Avalonia.Controls.Shapes.Shape obj)
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>> ObserveBindingStrokeDashArray(this Avalonia.Controls.Shapes.Shape obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
     }
@@ -857,7 +857,7 @@ public static partial class ShapeExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingStrokeDashArray<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Controls.Shapes.Shape
+    public static T OnBindingStrokeDashArray<T>(this T obj, Action<Avalonia.Controls.Shapes.Shape, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>>> handler) where T : Avalonia.Controls.Shapes.Shape
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
         handler(obj, observable);

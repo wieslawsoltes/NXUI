@@ -20,7 +20,7 @@ public static partial class TrayIconExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand value) where T : Avalonia.Controls.TrayIcon
+    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.TrayIcon
     {
         return builder.WithValue(PropertyMetadata.TrayIcon_Command, Avalonia.Controls.TrayIcon.CommandProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class TrayIconExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -69,7 +69,7 @@ public static partial class TrayIconExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Command<T>(this T obj, System.Windows.Input.ICommand value) where T : Avalonia.Controls.TrayIcon
+    public static T Command<T>(this T obj, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.TrayIcon
     {
         obj[Avalonia.Controls.TrayIcon.CommandProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class TrayIconExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -139,7 +139,7 @@ public static partial class TrayIconExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<System.Windows.Input.ICommand?> ObserveCommand(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.CommandProperty);
     }
@@ -151,7 +151,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Windows.Input.ICommand?>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.CommandProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class TrayIconExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<BindingValue<System.Windows.Input.ICommand?>> ObserveBindingCommand(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandProperty);
     }
@@ -175,7 +175,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.Windows.Input.ICommand?>>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class TrayIconExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.TrayIcon
+    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.TrayIcon
     {
         return builder.WithValue(PropertyMetadata.TrayIcon_CommandParameter, Avalonia.Controls.TrayIcon.CommandParameterProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class TrayIconExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -263,7 +263,7 @@ public static partial class TrayIconExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Controls.TrayIcon
+    public static T CommandParameter<T>(this T obj, System.Object? value) where T : Avalonia.Controls.TrayIcon
     {
         obj[Avalonia.Controls.TrayIcon.CommandParameterProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class TrayIconExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -333,7 +333,7 @@ public static partial class TrayIconExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<System.Object?> ObserveCommandParameter(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
     }
@@ -345,7 +345,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Object>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.Object?>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class TrayIconExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingCommandParameter(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
     }
@@ -369,7 +369,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.CommandParameterProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class TrayIconExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Icons<T>(this ElementBuilder<T> builder, Avalonia.Controls.TrayIcons value) where T : Avalonia.Application
+    public static ElementBuilder<T> Icons<T>(this ElementBuilder<T> builder, Avalonia.Controls.TrayIcons? value) where T : Avalonia.Application
     {
         return builder.WithValue(PropertyMetadata.TrayIcon_Icons, Avalonia.Controls.TrayIcon.IconsProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class TrayIconExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icons<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.TrayIcons> observable,
+        IObservable<Avalonia.Controls.TrayIcons?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -457,7 +457,7 @@ public static partial class TrayIconExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Icons<T>(this T obj, Avalonia.Controls.TrayIcons value) where T : Avalonia.Application
+    public static T Icons<T>(this T obj, Avalonia.Controls.TrayIcons? value) where T : Avalonia.Application
     {
         obj[Avalonia.Controls.TrayIcon.IconsProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class TrayIconExtensions
     /// <returns>The target object reference.</returns>
     public static T Icons<T>(
         this T obj,
-        IObservable<Avalonia.Controls.TrayIcons> observable,
+        IObservable<Avalonia.Controls.TrayIcons?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Application
     {
@@ -527,7 +527,7 @@ public static partial class TrayIconExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.TrayIcons> ObserveIcons(this Avalonia.Application obj)
+    public static IObservable<Avalonia.Controls.TrayIcons?> ObserveIcons(this Avalonia.Application obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.IconsProperty);
     }
@@ -539,7 +539,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIcons<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Controls.TrayIcons>> handler) where T : Avalonia.Application
+    public static T OnIcons<T>(this T obj, Action<Avalonia.Application, IObservable<Avalonia.Controls.TrayIcons?>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IconsProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class TrayIconExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.TrayIcons>> ObserveBindingIcons(this Avalonia.Application obj)
+    public static IObservable<BindingValue<Avalonia.Controls.TrayIcons?>> ObserveBindingIcons(this Avalonia.Application obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconsProperty);
     }
@@ -563,7 +563,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingIcons<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<Avalonia.Controls.TrayIcons>>> handler) where T : Avalonia.Application
+    public static T OnBindingIcons<T>(this T obj, Action<Avalonia.Application, IObservable<BindingValue<Avalonia.Controls.TrayIcons?>>> handler) where T : Avalonia.Application
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconsProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class TrayIconExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Menu<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenu value) where T : Avalonia.Controls.TrayIcon
+    public static ElementBuilder<T> Menu<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenu? value) where T : Avalonia.Controls.TrayIcon
     {
         return builder.WithValue(PropertyMetadata.TrayIcon_Menu, Avalonia.Controls.TrayIcon.MenuProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class TrayIconExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.NativeMenu> observable,
+        IObservable<Avalonia.Controls.NativeMenu?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -651,7 +651,7 @@ public static partial class TrayIconExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Menu<T>(this T obj, Avalonia.Controls.NativeMenu value) where T : Avalonia.Controls.TrayIcon
+    public static T Menu<T>(this T obj, Avalonia.Controls.NativeMenu? value) where T : Avalonia.Controls.TrayIcon
     {
         obj[Avalonia.Controls.TrayIcon.MenuProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class TrayIconExtensions
     /// <returns>The target object reference.</returns>
     public static T Menu<T>(
         this T obj,
-        IObservable<Avalonia.Controls.NativeMenu> observable,
+        IObservable<Avalonia.Controls.NativeMenu?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -721,7 +721,7 @@ public static partial class TrayIconExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.NativeMenu> ObserveMenu(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<Avalonia.Controls.NativeMenu?> ObserveMenu(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.MenuProperty);
     }
@@ -733,7 +733,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnMenu<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnMenu<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<Avalonia.Controls.NativeMenu?>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.MenuProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class TrayIconExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.NativeMenu>> ObserveBindingMenu(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<BindingValue<Avalonia.Controls.NativeMenu?>> ObserveBindingMenu(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.MenuProperty);
     }
@@ -757,7 +757,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingMenu<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<Avalonia.Controls.NativeMenu>>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnBindingMenu<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<Avalonia.Controls.NativeMenu?>>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.MenuProperty);
         handler(obj, observable);
@@ -796,7 +796,7 @@ public static partial class TrayIconExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowIcon value) where T : Avalonia.Controls.TrayIcon
+    public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Controls.WindowIcon? value) where T : Avalonia.Controls.TrayIcon
     {
         return builder.WithValue(PropertyMetadata.TrayIcon_Icon, Avalonia.Controls.TrayIcon.IconProperty, value);
     }
@@ -828,7 +828,7 @@ public static partial class TrayIconExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.WindowIcon> observable,
+        IObservable<Avalonia.Controls.WindowIcon?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -845,7 +845,7 @@ public static partial class TrayIconExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Icon<T>(this T obj, Avalonia.Controls.WindowIcon value) where T : Avalonia.Controls.TrayIcon
+    public static T Icon<T>(this T obj, Avalonia.Controls.WindowIcon? value) where T : Avalonia.Controls.TrayIcon
     {
         obj[Avalonia.Controls.TrayIcon.IconProperty] = value;
         return obj;
@@ -882,7 +882,7 @@ public static partial class TrayIconExtensions
     /// <returns>The target object reference.</returns>
     public static T Icon<T>(
         this T obj,
-        IObservable<Avalonia.Controls.WindowIcon> observable,
+        IObservable<Avalonia.Controls.WindowIcon?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -915,7 +915,7 @@ public static partial class TrayIconExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.WindowIcon> ObserveIcon(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<Avalonia.Controls.WindowIcon?> ObserveIcon(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.IconProperty);
     }
@@ -927,7 +927,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<Avalonia.Controls.WindowIcon>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<Avalonia.Controls.WindowIcon?>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.IconProperty);
         handler(obj, observable);
@@ -939,7 +939,7 @@ public static partial class TrayIconExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.WindowIcon>> ObserveBindingIcon(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<BindingValue<Avalonia.Controls.WindowIcon?>> ObserveBindingIcon(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconProperty);
     }
@@ -951,7 +951,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<Avalonia.Controls.WindowIcon>>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<Avalonia.Controls.WindowIcon?>>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.IconProperty);
         handler(obj, observable);
@@ -990,7 +990,7 @@ public static partial class TrayIconExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ToolTipText<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.TrayIcon
+    public static ElementBuilder<T> ToolTipText<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.TrayIcon
     {
         return builder.WithValue(PropertyMetadata.TrayIcon_ToolTipText, Avalonia.Controls.TrayIcon.ToolTipTextProperty, value);
     }
@@ -1022,7 +1022,7 @@ public static partial class TrayIconExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToolTipText<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -1039,7 +1039,7 @@ public static partial class TrayIconExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ToolTipText<T>(this T obj, System.String value) where T : Avalonia.Controls.TrayIcon
+    public static T ToolTipText<T>(this T obj, System.String? value) where T : Avalonia.Controls.TrayIcon
     {
         obj[Avalonia.Controls.TrayIcon.ToolTipTextProperty] = value;
         return obj;
@@ -1076,7 +1076,7 @@ public static partial class TrayIconExtensions
     /// <returns>The target object reference.</returns>
     public static T ToolTipText<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TrayIcon
     {
@@ -1109,7 +1109,7 @@ public static partial class TrayIconExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveToolTipText(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<System.String?> ObserveToolTipText(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
     }
@@ -1121,7 +1121,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnToolTipText<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.String>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnToolTipText<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<System.String?>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
         handler(obj, observable);
@@ -1133,7 +1133,7 @@ public static partial class TrayIconExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingToolTipText(this Avalonia.Controls.TrayIcon obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingToolTipText(this Avalonia.Controls.TrayIcon obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
     }
@@ -1145,7 +1145,7 @@ public static partial class TrayIconExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingToolTipText<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.TrayIcon
+    public static T OnBindingToolTipText<T>(this T obj, Action<Avalonia.Controls.TrayIcon, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.TrayIcon
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
         handler(obj, observable);

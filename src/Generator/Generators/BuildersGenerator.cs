@@ -113,13 +113,41 @@ public class BuildersGenerator
             return;
         }
 
+        sb.AppendLine("#if NXUI_HOTRELOAD");
         AppendDocComment(sb, controlTypeName, parameters, includeRefParam: true);
-        AppendMethodSignature(sb, controlTypeName, methodName, parameters, includeRefParam: true, controlTypeName);
+        AppendMethodSignature(
+            sb,
+            $"ElementBuilder<{controlTypeName}>",
+            methodName,
+            parameters,
+            includeRefParam: true,
+            $"ElementRef<{controlTypeName}>");
+        sb.AppendLine();
+        sb.AppendLine("    {");
+        sb.Append("        return ElementBuilder.Create<");
+        sb.Append(controlTypeName);
+        sb.Append(">(TypeMetadata.");
+        sb.Append(typeConstName);
+        sb.Append(", () => ");
+        sb.Append(BuildConstructorExpression(controlTypeName, parameters));
+        sb.AppendLine(")");
+        sb.AppendLine("            .WithRef(out @ref);");
+        sb.AppendLine("    }");
+        sb.AppendLine("#else");
+        AppendDocComment(sb, controlTypeName, parameters, includeRefParam: true);
+        AppendMethodSignature(
+            sb,
+            controlTypeName,
+            methodName,
+            parameters,
+            includeRefParam: true,
+            controlTypeName);
         sb.AppendLine();
         sb.Append("        => @ref = ");
         sb.Append(BuildConstructorExpression(controlTypeName, parameters));
         sb.Append(";");
         sb.AppendLine();
+        sb.AppendLine("#endif");
     }
 
     private static void AppendDocComment(StringBuilder sb, string controlTypeName, ParameterInfo[] parameters, bool includeRefParam)
@@ -147,13 +175,13 @@ public class BuildersGenerator
         string methodName,
         ParameterInfo[] parameters,
         bool includeRefParam,
-        string controlTypeName)
+        string refTypeName)
     {
         sb.Append($"    public static {returnType} {methodName}(");
 
         if (includeRefParam)
         {
-            sb.Append($"out {controlTypeName} @ref");
+            sb.Append($"out {refTypeName} @ref");
 
             if (parameters.Length > 0)
             {

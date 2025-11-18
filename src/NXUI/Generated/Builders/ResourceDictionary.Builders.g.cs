@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ResourceDictionary"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ResourceDictionary> ResourceDictionary(out ElementRef<Avalonia.Controls.ResourceDictionary> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ResourceDictionary>(TypeMetadata.Avalonia_Controls_ResourceDictionary, () => new Avalonia.Controls.ResourceDictionary())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.</returns>
     public static Avalonia.Controls.ResourceDictionary ResourceDictionary(out Avalonia.Controls.ResourceDictionary @ref)
         => @ref = new Avalonia.Controls.ResourceDictionary();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -56,6 +69,19 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ResourceDictionary"/> instantiated class.</param>
+    /// <param name="owner">The owner value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ResourceDictionary> ResourceDictionary(out ElementRef<Avalonia.Controls.ResourceDictionary> @ref, Avalonia.Controls.IResourceHost owner)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ResourceDictionary>(TypeMetadata.Avalonia_Controls_ResourceDictionary, () => new Avalonia.Controls.ResourceDictionary(owner))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.
     /// </summary>
@@ -64,5 +90,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ResourceDictionary"/> class.</returns>
     public static Avalonia.Controls.ResourceDictionary ResourceDictionary(out Avalonia.Controls.ResourceDictionary @ref, Avalonia.Controls.IResourceHost owner)
         => @ref = new Avalonia.Controls.ResourceDictionary(owner);
+#endif
 
 }

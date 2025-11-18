@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Presenters.ScrollContentPresenter> ScrollContentPresenter(out ElementRef<Avalonia.Controls.Presenters.ScrollContentPresenter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Presenters.ScrollContentPresenter>(TypeMetadata.Avalonia_Controls_Presenters_ScrollContentPresenter, () => new Avalonia.Controls.Presenters.ScrollContentPresenter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/> class.</returns>
     public static Avalonia.Controls.Presenters.ScrollContentPresenter ScrollContentPresenter(out Avalonia.Controls.Presenters.ScrollContentPresenter @ref)
         => @ref = new Avalonia.Controls.Presenters.ScrollContentPresenter();
+#endif
 
 }

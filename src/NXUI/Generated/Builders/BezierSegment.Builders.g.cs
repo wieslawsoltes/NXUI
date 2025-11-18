@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.BezierSegment"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.BezierSegment> BezierSegment(out ElementRef<Avalonia.Media.BezierSegment> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.BezierSegment>(TypeMetadata.Avalonia_Media_BezierSegment, () => new Avalonia.Media.BezierSegment())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.BezierSegment"/> class.</returns>
     public static Avalonia.Media.BezierSegment BezierSegment(out Avalonia.Media.BezierSegment @ref)
         => @ref = new Avalonia.Media.BezierSegment();
+#endif
 
 }

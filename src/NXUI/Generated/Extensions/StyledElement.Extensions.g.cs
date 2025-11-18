@@ -20,7 +20,7 @@ public static partial class StyledElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> DataContext<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.StyledElement
+    public static ElementBuilder<T> DataContext<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.StyledElement
     {
         return builder.WithValue(PropertyMetadata.StyledElement_DataContext, Avalonia.StyledElement.DataContextProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class StyledElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> DataContext<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -69,7 +69,7 @@ public static partial class StyledElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T DataContext<T>(this T obj, System.Object value) where T : Avalonia.StyledElement
+    public static T DataContext<T>(this T obj, System.Object? value) where T : Avalonia.StyledElement
     {
         obj[Avalonia.StyledElement.DataContextProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class StyledElementExtensions
     /// <returns>The target object reference.</returns>
     public static T DataContext<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -139,7 +139,7 @@ public static partial class StyledElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveDataContext(this Avalonia.StyledElement obj)
+    public static IObservable<System.Object?> ObserveDataContext(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.DataContextProperty);
     }
@@ -151,7 +151,7 @@ public static partial class StyledElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnDataContext<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.Object>> handler) where T : Avalonia.StyledElement
+    public static T OnDataContext<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.Object?>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.DataContextProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class StyledElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingDataContext(this Avalonia.StyledElement obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingDataContext(this Avalonia.StyledElement obj)
     {
         return obj.GetBindingObservable(Avalonia.StyledElement.DataContextProperty);
     }
@@ -175,7 +175,7 @@ public static partial class StyledElementExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingDataContext<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.StyledElement
+    public static T OnBindingDataContext<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetBindingObservable(Avalonia.StyledElement.DataContextProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class StyledElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Name<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.StyledElement
+    public static ElementBuilder<T> Name<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.StyledElement
     {
         return builder.WithValue(PropertyMetadata.StyledElement_Name, Avalonia.StyledElement.NameProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class StyledElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Name<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -263,7 +263,7 @@ public static partial class StyledElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Name<T>(this T obj, System.String value) where T : Avalonia.StyledElement
+    public static T Name<T>(this T obj, System.String? value) where T : Avalonia.StyledElement
     {
         obj[Avalonia.StyledElement.NameProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class StyledElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Name<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -333,7 +333,7 @@ public static partial class StyledElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveName(this Avalonia.StyledElement obj)
+    public static IObservable<System.String?> ObserveName(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.NameProperty);
     }
@@ -345,7 +345,7 @@ public static partial class StyledElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnName<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.String>> handler) where T : Avalonia.StyledElement
+    public static T OnName<T>(this T obj, Action<Avalonia.StyledElement, IObservable<System.String?>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.NameProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class StyledElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingName(this Avalonia.StyledElement obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingName(this Avalonia.StyledElement obj)
     {
         return obj.GetBindingObservable(Avalonia.StyledElement.NameProperty);
     }
@@ -369,7 +369,7 @@ public static partial class StyledElementExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingName<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.StyledElement
+    public static T OnBindingName<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetBindingObservable(Avalonia.StyledElement.NameProperty);
         handler(obj, observable);
@@ -426,7 +426,7 @@ public static partial class StyledElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.StyledElement> ObserveParent(this Avalonia.StyledElement obj)
+    public static IObservable<Avalonia.StyledElement?> ObserveParent(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.ParentProperty);
     }
@@ -437,7 +437,7 @@ public static partial class StyledElementExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.StyledElement OnParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.StyledElement>> handler)
+    public static Avalonia.StyledElement OnParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.StyledElement?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.ParentProperty);
         handler(obj, observable);
@@ -449,7 +449,7 @@ public static partial class StyledElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.StyledElement>> ObserveBindingParent(this Avalonia.StyledElement obj)
+    public static IObservable<BindingValue<Avalonia.StyledElement?>> ObserveBindingParent(this Avalonia.StyledElement obj)
     {
         return obj.GetBindingObservable(Avalonia.StyledElement.ParentProperty);
     }
@@ -460,7 +460,7 @@ public static partial class StyledElementExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.StyledElement OnBindingParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<BindingValue<Avalonia.StyledElement>>> handler)
+    public static Avalonia.StyledElement OnBindingParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<BindingValue<Avalonia.StyledElement?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.StyledElement.ParentProperty);
         handler(obj, observable);
@@ -516,7 +516,7 @@ public static partial class StyledElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.AvaloniaObject> ObserveTemplatedParent(this Avalonia.StyledElement obj)
+    public static IObservable<Avalonia.AvaloniaObject?> ObserveTemplatedParent(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
     }
@@ -527,7 +527,7 @@ public static partial class StyledElementExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.StyledElement OnTemplatedParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.AvaloniaObject>> handler)
+    public static Avalonia.StyledElement OnTemplatedParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<Avalonia.AvaloniaObject?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.TemplatedParentProperty);
         handler(obj, observable);
@@ -539,7 +539,7 @@ public static partial class StyledElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.AvaloniaObject>> ObserveBindingTemplatedParent(this Avalonia.StyledElement obj)
+    public static IObservable<BindingValue<Avalonia.AvaloniaObject?>> ObserveBindingTemplatedParent(this Avalonia.StyledElement obj)
     {
         return obj.GetBindingObservable(Avalonia.StyledElement.TemplatedParentProperty);
     }
@@ -550,7 +550,7 @@ public static partial class StyledElementExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.StyledElement OnBindingTemplatedParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<BindingValue<Avalonia.AvaloniaObject>>> handler)
+    public static Avalonia.StyledElement OnBindingTemplatedParent(this Avalonia.StyledElement obj, Action<Avalonia.StyledElement, IObservable<BindingValue<Avalonia.AvaloniaObject?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.StyledElement.TemplatedParentProperty);
         handler(obj, observable);
@@ -588,7 +588,7 @@ public static partial class StyledElementExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Theme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme value) where T : Avalonia.StyledElement
+    public static ElementBuilder<T> Theme<T>(this ElementBuilder<T> builder, Avalonia.Styling.ControlTheme? value) where T : Avalonia.StyledElement
     {
         return builder.WithValue(PropertyMetadata.StyledElement_Theme, Avalonia.StyledElement.ThemeProperty, value);
     }
@@ -620,7 +620,7 @@ public static partial class StyledElementExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Theme<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -637,7 +637,7 @@ public static partial class StyledElementExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Theme<T>(this T obj, Avalonia.Styling.ControlTheme value) where T : Avalonia.StyledElement
+    public static T Theme<T>(this T obj, Avalonia.Styling.ControlTheme? value) where T : Avalonia.StyledElement
     {
         obj[Avalonia.StyledElement.ThemeProperty] = value;
         return obj;
@@ -674,7 +674,7 @@ public static partial class StyledElementExtensions
     /// <returns>The target object reference.</returns>
     public static T Theme<T>(
         this T obj,
-        IObservable<Avalonia.Styling.ControlTheme> observable,
+        IObservable<Avalonia.Styling.ControlTheme?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.StyledElement
     {
@@ -707,7 +707,7 @@ public static partial class StyledElementExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Styling.ControlTheme> ObserveTheme(this Avalonia.StyledElement obj)
+    public static IObservable<Avalonia.Styling.ControlTheme?> ObserveTheme(this Avalonia.StyledElement obj)
     {
         return obj.GetObservable(Avalonia.StyledElement.ThemeProperty);
     }
@@ -719,7 +719,7 @@ public static partial class StyledElementExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTheme<T>(this T obj, Action<Avalonia.StyledElement, IObservable<Avalonia.Styling.ControlTheme>> handler) where T : Avalonia.StyledElement
+    public static T OnTheme<T>(this T obj, Action<Avalonia.StyledElement, IObservable<Avalonia.Styling.ControlTheme?>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetObservable(Avalonia.StyledElement.ThemeProperty);
         handler(obj, observable);
@@ -731,7 +731,7 @@ public static partial class StyledElementExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme>> ObserveBindingTheme(this Avalonia.StyledElement obj)
+    public static IObservable<BindingValue<Avalonia.Styling.ControlTheme?>> ObserveBindingTheme(this Avalonia.StyledElement obj)
     {
         return obj.GetBindingObservable(Avalonia.StyledElement.ThemeProperty);
     }
@@ -743,7 +743,7 @@ public static partial class StyledElementExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTheme<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<Avalonia.Styling.ControlTheme>>> handler) where T : Avalonia.StyledElement
+    public static T OnBindingTheme<T>(this T obj, Action<Avalonia.StyledElement, IObservable<BindingValue<Avalonia.Styling.ControlTheme?>>> handler) where T : Avalonia.StyledElement
     {
         var observable = obj.GetBindingObservable(Avalonia.StyledElement.ThemeProperty);
         handler(obj, observable);

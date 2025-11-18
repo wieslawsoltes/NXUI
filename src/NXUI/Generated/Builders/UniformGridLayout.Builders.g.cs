@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.UniformGridLayout"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.</returns>
+    public static ElementBuilder<Avalonia.Layout.UniformGridLayout> UniformGridLayout(out ElementRef<Avalonia.Layout.UniformGridLayout> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Layout.UniformGridLayout>(TypeMetadata.Avalonia_Layout_UniformGridLayout, () => new Avalonia.Layout.UniformGridLayout())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.UniformGridLayout"/> class.</returns>
     public static Avalonia.Layout.UniformGridLayout UniformGridLayout(out Avalonia.Layout.UniformGridLayout @ref)
         => @ref = new Avalonia.Layout.UniformGridLayout();
+#endif
 
 }

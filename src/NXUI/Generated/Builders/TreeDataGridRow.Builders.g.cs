@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TreeDataGridRow> TreeDataGridRow(out ElementRef<Avalonia.Controls.Primitives.TreeDataGridRow> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TreeDataGridRow>(TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridRow, () => new Avalonia.Controls.Primitives.TreeDataGridRow())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow"/> class.</returns>
     public static Avalonia.Controls.Primitives.TreeDataGridRow TreeDataGridRow(out Avalonia.Controls.Primitives.TreeDataGridRow @ref)
         => @ref = new Avalonia.Controls.Primitives.TreeDataGridRow();
+#endif
 
 }

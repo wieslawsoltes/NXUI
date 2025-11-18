@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRowsPresenter"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRowsPresenter"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRowsPresenter"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.TreeDataGridRowsPresenter> TreeDataGridRowsPresenter(out ElementRef<Avalonia.Controls.Primitives.TreeDataGridRowsPresenter> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.TreeDataGridRowsPresenter>(TypeMetadata.Avalonia_Controls_Primitives_TreeDataGridRowsPresenter, () => new Avalonia.Controls.Primitives.TreeDataGridRowsPresenter())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRowsPresenter"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.TreeDataGridRowsPresenter"/> class.</returns>
     public static Avalonia.Controls.Primitives.TreeDataGridRowsPresenter TreeDataGridRowsPresenter(out Avalonia.Controls.Primitives.TreeDataGridRowsPresenter @ref)
         => @ref = new Avalonia.Controls.Primitives.TreeDataGridRowsPresenter();
+#endif
 
 }

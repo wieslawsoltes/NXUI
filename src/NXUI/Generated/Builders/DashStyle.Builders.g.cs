@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DashStyle"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.DashStyle> DashStyle(out ElementRef<Avalonia.Media.DashStyle> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.DashStyle>(TypeMetadata.Avalonia_Media_DashStyle, () => new Avalonia.Media.DashStyle())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
     /// </summary>
@@ -35,6 +47,7 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
     public static Avalonia.Media.DashStyle DashStyle(out Avalonia.Media.DashStyle @ref)
         => @ref = new Avalonia.Media.DashStyle();
+#endif
 
 
 #if NXUI_HOTRELOAD
@@ -58,6 +71,20 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.DashStyle"/> instantiated class.</param>
+    /// <param name="dashes">The dashes value.</param>
+    /// <param name="offset">The offset value.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.DashStyle> DashStyle(out ElementRef<Avalonia.Media.DashStyle> @ref, System.Collections.Generic.IEnumerable<System.Double> dashes, System.Double offset)
+    {
+        return ElementBuilder.Create<Avalonia.Media.DashStyle>(TypeMetadata.Avalonia_Media_DashStyle, () => new Avalonia.Media.DashStyle(dashes, offset))
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.DashStyle"/> class.
     /// </summary>
@@ -67,5 +94,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.DashStyle"/> class.</returns>
     public static Avalonia.Media.DashStyle DashStyle(out Avalonia.Media.DashStyle @ref, System.Collections.Generic.IEnumerable<System.Double> dashes, System.Double offset)
         => @ref = new Avalonia.Media.DashStyle(dashes, offset);
+#endif
 
 }

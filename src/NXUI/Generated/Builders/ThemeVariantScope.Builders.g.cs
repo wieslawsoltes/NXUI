@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ThemeVariantScope"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ThemeVariantScope"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ThemeVariantScope"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ThemeVariantScope> ThemeVariantScope(out ElementRef<Avalonia.Controls.ThemeVariantScope> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ThemeVariantScope>(TypeMetadata.Avalonia_Controls_ThemeVariantScope, () => new Avalonia.Controls.ThemeVariantScope())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ThemeVariantScope"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ThemeVariantScope"/> class.</returns>
     public static Avalonia.Controls.ThemeVariantScope ThemeVariantScope(out Avalonia.Controls.ThemeVariantScope @ref)
         => @ref = new Avalonia.Controls.ThemeVariantScope();
+#endif
 
 }

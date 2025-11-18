@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Shapes.Ellipse> Ellipse(out ElementRef<Avalonia.Controls.Shapes.Ellipse> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Shapes.Ellipse>(TypeMetadata.Avalonia_Controls_Shapes_Ellipse, () => new Avalonia.Controls.Shapes.Ellipse())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Ellipse"/> class.</returns>
     public static Avalonia.Controls.Shapes.Ellipse Ellipse(out Avalonia.Controls.Shapes.Ellipse @ref)
         => @ref = new Avalonia.Controls.Shapes.Ellipse();
+#endif
 
 }

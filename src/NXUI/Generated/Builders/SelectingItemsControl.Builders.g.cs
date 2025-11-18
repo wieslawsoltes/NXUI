@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.SelectingItemsControl> SelectingItemsControl(out ElementRef<Avalonia.Controls.Primitives.SelectingItemsControl> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.SelectingItemsControl>(TypeMetadata.Avalonia_Controls_Primitives_SelectingItemsControl, () => new Avalonia.Controls.Primitives.SelectingItemsControl())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class.</returns>
     public static Avalonia.Controls.Primitives.SelectingItemsControl SelectingItemsControl(out Avalonia.Controls.Primitives.SelectingItemsControl @ref)
         => @ref = new Avalonia.Controls.Primitives.SelectingItemsControl();
+#endif
 
 }

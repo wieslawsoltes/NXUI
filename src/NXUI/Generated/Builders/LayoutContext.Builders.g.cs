@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Layout.LayoutContext"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.</returns>
+    public static ElementBuilder<Avalonia.Layout.LayoutContext> LayoutContext(out ElementRef<Avalonia.Layout.LayoutContext> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Layout.LayoutContext>(TypeMetadata.Avalonia_Layout_LayoutContext, () => new Avalonia.Layout.LayoutContext())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Layout.LayoutContext"/> class.</returns>
     public static Avalonia.Layout.LayoutContext LayoutContext(out Avalonia.Layout.LayoutContext @ref)
         => @ref = new Avalonia.Layout.LayoutContext();
+#endif
 
 }

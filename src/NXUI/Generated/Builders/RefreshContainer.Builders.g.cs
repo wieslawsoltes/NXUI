@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RefreshContainer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RefreshContainer> RefreshContainer(out ElementRef<Avalonia.Controls.RefreshContainer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RefreshContainer>(TypeMetadata.Avalonia_Controls_RefreshContainer, () => new Avalonia.Controls.RefreshContainer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshContainer"/> class.</returns>
     public static Avalonia.Controls.RefreshContainer RefreshContainer(out Avalonia.Controls.RefreshContainer @ref)
         => @ref = new Avalonia.Controls.RefreshContainer();
+#endif
 
 }

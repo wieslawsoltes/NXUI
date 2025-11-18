@@ -20,7 +20,7 @@ public static partial class ControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> FocusAdorner<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> FocusAdorner<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control>? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.Control_FocusAdorner, Avalonia.Controls.Control.FocusAdornerProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> FocusAdorner<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -69,7 +69,7 @@ public static partial class ControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T FocusAdorner<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value) where T : Avalonia.Controls.Control
+    public static T FocusAdorner<T>(this T obj, Avalonia.Controls.ITemplate<Avalonia.Controls.Control>? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Control.FocusAdornerProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T FocusAdorner<T>(
         this T obj,
-        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable,
+        IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -139,7 +139,7 @@ public static partial class ControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> ObserveFocusAdorner(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?> ObserveFocusAdorner(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Control.FocusAdornerProperty);
     }
@@ -151,7 +151,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.Control
+    public static T OnFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.FocusAdornerProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class ControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>> ObserveBindingFocusAdorner(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?>> ObserveBindingFocusAdorner(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Control.FocusAdornerProperty);
     }
@@ -175,7 +175,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingFocusAdorner<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Control.FocusAdornerProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class ControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Tag<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> Tag<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.Control_Tag, Avalonia.Controls.Control.TagProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Tag<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -263,7 +263,7 @@ public static partial class ControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Tag<T>(this T obj, System.Object value) where T : Avalonia.Controls.Control
+    public static T Tag<T>(this T obj, System.Object? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Control.TagProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T Tag<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -333,7 +333,7 @@ public static partial class ControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveTag(this Avalonia.Controls.Control obj)
+    public static IObservable<System.Object?> ObserveTag(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Control.TagProperty);
     }
@@ -345,7 +345,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTag<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Object>> handler) where T : Avalonia.Controls.Control
+    public static T OnTag<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<System.Object?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.TagProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class ControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingTag(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingTag(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Control.TagProperty);
     }
@@ -369,7 +369,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTag<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingTag<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Control.TagProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class ControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContextMenu<T>(this ElementBuilder<T> builder, Avalonia.Controls.ContextMenu value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> ContextMenu<T>(this ElementBuilder<T> builder, Avalonia.Controls.ContextMenu? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.Control_ContextMenu, Avalonia.Controls.Control.ContextMenuProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContextMenu<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.ContextMenu> observable,
+        IObservable<Avalonia.Controls.ContextMenu?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -457,7 +457,7 @@ public static partial class ControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContextMenu<T>(this T obj, Avalonia.Controls.ContextMenu value) where T : Avalonia.Controls.Control
+    public static T ContextMenu<T>(this T obj, Avalonia.Controls.ContextMenu? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Control.ContextMenuProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ContextMenu<T>(
         this T obj,
-        IObservable<Avalonia.Controls.ContextMenu> observable,
+        IObservable<Avalonia.Controls.ContextMenu?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -527,7 +527,7 @@ public static partial class ControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ContextMenu> ObserveContextMenu(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Controls.ContextMenu?> ObserveContextMenu(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Control.ContextMenuProperty);
     }
@@ -539,7 +539,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContextMenu<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ContextMenu>> handler) where T : Avalonia.Controls.Control
+    public static T OnContextMenu<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.ContextMenu?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.ContextMenuProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class ControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.ContextMenu>> ObserveBindingContextMenu(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<Avalonia.Controls.ContextMenu?>> ObserveBindingContextMenu(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Control.ContextMenuProperty);
     }
@@ -563,7 +563,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContextMenu<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.ContextMenu>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingContextMenu<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.ContextMenu?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Control.ContextMenuProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class ControlExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ContextFlyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.Control
+    public static ElementBuilder<T> ContextFlyout<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.Control
     {
         return builder.WithValue(PropertyMetadata.Control_ContextFlyout, Avalonia.Controls.Control.ContextFlyoutProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class ControlExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ContextFlyout<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -651,7 +651,7 @@ public static partial class ControlExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ContextFlyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase value) where T : Avalonia.Controls.Control
+    public static T ContextFlyout<T>(this T obj, Avalonia.Controls.Primitives.FlyoutBase? value) where T : Avalonia.Controls.Control
     {
         obj[Avalonia.Controls.Control.ContextFlyoutProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class ControlExtensions
     /// <returns>The target object reference.</returns>
     public static T ContextFlyout<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable,
+        IObservable<Avalonia.Controls.Primitives.FlyoutBase?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Control
     {
@@ -721,7 +721,7 @@ public static partial class ControlExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase> ObserveContextFlyout(this Avalonia.Controls.Control obj)
+    public static IObservable<Avalonia.Controls.Primitives.FlyoutBase?> ObserveContextFlyout(this Avalonia.Controls.Control obj)
     {
         return obj.GetObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
     }
@@ -733,7 +733,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnContextFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase>> handler) where T : Avalonia.Controls.Control
+    public static T OnContextFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<Avalonia.Controls.Primitives.FlyoutBase?>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class ControlExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>> ObserveBindingContextFlyout(this Avalonia.Controls.Control obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>> ObserveBindingContextFlyout(this Avalonia.Controls.Control obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
     }
@@ -757,7 +757,7 @@ public static partial class ControlExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingContextFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase>>> handler) where T : Avalonia.Controls.Control
+    public static T OnBindingContextFlyout<T>(this T obj, Action<Avalonia.Controls.Control, IObservable<BindingValue<Avalonia.Controls.Primitives.FlyoutBase?>>> handler) where T : Avalonia.Controls.Control
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Control.ContextFlyoutProperty);
         handler(obj, observable);

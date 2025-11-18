@@ -20,7 +20,7 @@ public static partial class CroppedBitmapExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Media.IImage value) where T : Avalonia.Media.Imaging.CroppedBitmap
+    public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Media.IImage? value) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
         return builder.WithValue(PropertyMetadata.CroppedBitmap_Source, Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IImage> observable,
+        IObservable<Avalonia.Media.IImage?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -69,7 +69,7 @@ public static partial class CroppedBitmapExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Source<T>(this T obj, Avalonia.Media.IImage value) where T : Avalonia.Media.Imaging.CroppedBitmap
+    public static T Source<T>(this T obj, Avalonia.Media.IImage? value) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
         obj[Avalonia.Media.Imaging.CroppedBitmap.SourceProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class CroppedBitmapExtensions
     /// <returns>The target object reference.</returns>
     public static T Source<T>(
         this T obj,
-        IObservable<Avalonia.Media.IImage> observable,
+        IObservable<Avalonia.Media.IImage?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
@@ -139,7 +139,7 @@ public static partial class CroppedBitmapExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IImage> ObserveSource(this Avalonia.Media.Imaging.CroppedBitmap obj)
+    public static IObservable<Avalonia.Media.IImage?> ObserveSource(this Avalonia.Media.Imaging.CroppedBitmap obj)
     {
         return obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
     }
@@ -151,7 +151,7 @@ public static partial class CroppedBitmapExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSource<T>(this T obj, Action<Avalonia.Media.Imaging.CroppedBitmap, IObservable<Avalonia.Media.IImage>> handler) where T : Avalonia.Media.Imaging.CroppedBitmap
+    public static T OnSource<T>(this T obj, Action<Avalonia.Media.Imaging.CroppedBitmap, IObservable<Avalonia.Media.IImage?>> handler) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
         var observable = obj.GetObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class CroppedBitmapExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IImage>> ObserveBindingSource(this Avalonia.Media.Imaging.CroppedBitmap obj)
+    public static IObservable<BindingValue<Avalonia.Media.IImage?>> ObserveBindingSource(this Avalonia.Media.Imaging.CroppedBitmap obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
     }
@@ -175,7 +175,7 @@ public static partial class CroppedBitmapExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSource<T>(this T obj, Action<Avalonia.Media.Imaging.CroppedBitmap, IObservable<BindingValue<Avalonia.Media.IImage>>> handler) where T : Avalonia.Media.Imaging.CroppedBitmap
+    public static T OnBindingSource<T>(this T obj, Action<Avalonia.Media.Imaging.CroppedBitmap, IObservable<BindingValue<Avalonia.Media.IImage?>>> handler) where T : Avalonia.Media.Imaging.CroppedBitmap
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
         handler(obj, observable);

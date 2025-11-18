@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ToolTip"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ToolTip"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ToolTip"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ToolTip> ToolTip(out ElementRef<Avalonia.Controls.ToolTip> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ToolTip>(TypeMetadata.Avalonia_Controls_ToolTip, () => new Avalonia.Controls.ToolTip())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ToolTip"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ToolTip"/> class.</returns>
     public static Avalonia.Controls.ToolTip ToolTip(out Avalonia.Controls.ToolTip @ref)
         => @ref = new Avalonia.Controls.ToolTip();
+#endif
 
 }

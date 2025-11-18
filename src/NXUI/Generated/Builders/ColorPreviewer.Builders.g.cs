@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ColorPreviewer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ColorPreviewer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ColorPreviewer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.ColorPreviewer> ColorPreviewer(out ElementRef<Avalonia.Controls.Primitives.ColorPreviewer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.ColorPreviewer>(TypeMetadata.Avalonia_Controls_Primitives_ColorPreviewer, () => new Avalonia.Controls.Primitives.ColorPreviewer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ColorPreviewer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ColorPreviewer"/> class.</returns>
     public static Avalonia.Controls.Primitives.ColorPreviewer ColorPreviewer(out Avalonia.Controls.Primitives.ColorPreviewer @ref)
         => @ref = new Avalonia.Controls.Primitives.ColorPreviewer();
+#endif
 
 }

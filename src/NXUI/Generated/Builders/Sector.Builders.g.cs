@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Sector"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Shapes.Sector"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Sector"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Shapes.Sector> Sector(out ElementRef<Avalonia.Controls.Shapes.Sector> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Shapes.Sector>(TypeMetadata.Avalonia_Controls_Shapes_Sector, () => new Avalonia.Controls.Shapes.Sector())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Shapes.Sector"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Shapes.Sector"/> class.</returns>
     public static Avalonia.Controls.Shapes.Sector Sector(out Avalonia.Controls.Shapes.Sector @ref)
         => @ref = new Avalonia.Controls.Shapes.Sector();
+#endif
 
 }

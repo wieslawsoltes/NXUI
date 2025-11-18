@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.ExperimentalAcrylicMaterial> ExperimentalAcrylicMaterial(out ElementRef<Avalonia.Media.ExperimentalAcrylicMaterial> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.ExperimentalAcrylicMaterial>(TypeMetadata.Avalonia_Media_ExperimentalAcrylicMaterial, () => new Avalonia.Media.ExperimentalAcrylicMaterial())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class.</returns>
     public static Avalonia.Media.ExperimentalAcrylicMaterial ExperimentalAcrylicMaterial(out Avalonia.Media.ExperimentalAcrylicMaterial @ref)
         => @ref = new Avalonia.Media.ExperimentalAcrylicMaterial();
+#endif
 
 }

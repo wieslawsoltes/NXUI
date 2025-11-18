@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.DataGridRowGroupHeader"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.DataGridRowGroupHeader"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGridRowGroupHeader"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.DataGridRowGroupHeader> DataGridRowGroupHeader(out ElementRef<Avalonia.Controls.DataGridRowGroupHeader> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.DataGridRowGroupHeader>(TypeMetadata.Avalonia_Controls_DataGridRowGroupHeader, () => new Avalonia.Controls.DataGridRowGroupHeader())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.DataGridRowGroupHeader"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.DataGridRowGroupHeader"/> class.</returns>
     public static Avalonia.Controls.DataGridRowGroupHeader DataGridRowGroupHeader(out Avalonia.Controls.DataGridRowGroupHeader @ref)
         => @ref = new Avalonia.Controls.DataGridRowGroupHeader();
+#endif
 
 }

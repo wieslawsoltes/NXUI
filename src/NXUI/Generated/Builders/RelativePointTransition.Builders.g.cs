@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.RelativePointTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.RelativePointTransition> RelativePointTransition(out ElementRef<Avalonia.Animation.RelativePointTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.RelativePointTransition>(TypeMetadata.Avalonia_Animation_RelativePointTransition, () => new Avalonia.Animation.RelativePointTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.RelativePointTransition"/> class.</returns>
     public static Avalonia.Animation.RelativePointTransition RelativePointTransition(out Avalonia.Animation.RelativePointTransition @ref)
         => @ref = new Avalonia.Animation.RelativePointTransition();
+#endif
 
 }

@@ -426,7 +426,7 @@ public static partial class ComboBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveSelectionBoxItem(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<System.Object?> ObserveSelectionBoxItem(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
     }
@@ -437,7 +437,7 @@ public static partial class ComboBoxExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ComboBox OnSelectionBoxItem(this Avalonia.Controls.ComboBox obj, Action<Avalonia.Controls.ComboBox, IObservable<System.Object>> handler)
+    public static Avalonia.Controls.ComboBox OnSelectionBoxItem(this Avalonia.Controls.ComboBox obj, Action<Avalonia.Controls.ComboBox, IObservable<System.Object?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
         handler(obj, observable);
@@ -449,7 +449,7 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectionBoxItem(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingSelectionBoxItem(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
     }
@@ -460,7 +460,7 @@ public static partial class ComboBoxExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.ComboBox OnBindingSelectionBoxItem(this Avalonia.Controls.ComboBox obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<System.Object>>> handler)
+    public static Avalonia.Controls.ComboBox OnBindingSelectionBoxItem(this Avalonia.Controls.ComboBox obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<System.Object?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
         handler(obj, observable);
@@ -498,7 +498,7 @@ public static partial class ComboBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PlaceholderText<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.ComboBox
+    public static ElementBuilder<T> PlaceholderText<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.ComboBox
     {
         return builder.WithValue(PropertyMetadata.ComboBox_PlaceholderText, Avalonia.Controls.ComboBox.PlaceholderTextProperty, value);
     }
@@ -530,7 +530,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderText<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -547,7 +547,7 @@ public static partial class ComboBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaceholderText<T>(this T obj, System.String value) where T : Avalonia.Controls.ComboBox
+    public static T PlaceholderText<T>(this T obj, System.String? value) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.PlaceholderTextProperty] = value;
         return obj;
@@ -584,7 +584,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T PlaceholderText<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -617,7 +617,7 @@ public static partial class ComboBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObservePlaceholderText(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<System.String?> ObservePlaceholderText(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
     }
@@ -629,7 +629,7 @@ public static partial class ComboBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPlaceholderText<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<System.String>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnPlaceholderText<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<System.String?>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
         handler(obj, observable);
@@ -641,7 +641,7 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingPlaceholderText(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingPlaceholderText(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
     }
@@ -653,7 +653,7 @@ public static partial class ComboBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPlaceholderText<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnBindingPlaceholderText<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
         handler(obj, observable);
@@ -692,7 +692,7 @@ public static partial class ComboBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PlaceholderForeground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.ComboBox
+    public static ElementBuilder<T> PlaceholderForeground<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.ComboBox
     {
         return builder.WithValue(PropertyMetadata.ComboBox_PlaceholderForeground, Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, value);
     }
@@ -724,7 +724,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlaceholderForeground<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -741,7 +741,7 @@ public static partial class ComboBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlaceholderForeground<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.ComboBox
+    public static T PlaceholderForeground<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.PlaceholderForegroundProperty] = value;
         return obj;
@@ -778,7 +778,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T PlaceholderForeground<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -811,7 +811,7 @@ public static partial class ComboBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObservePlaceholderForeground(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObservePlaceholderForeground(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
     }
@@ -823,7 +823,7 @@ public static partial class ComboBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
         handler(obj, observable);
@@ -835,7 +835,7 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingPlaceholderForeground(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingPlaceholderForeground(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
     }
@@ -847,7 +847,7 @@ public static partial class ComboBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnBindingPlaceholderForeground<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
         handler(obj, observable);
@@ -1474,7 +1474,7 @@ public static partial class ComboBoxExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectionBoxItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ComboBox
+    public static ElementBuilder<T> SelectionBoxItemTemplate<T>(this ElementBuilder<T> builder, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ComboBox
     {
         return builder.WithValue(PropertyMetadata.ComboBox_SelectionBoxItemTemplate, Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty, value);
     }
@@ -1506,7 +1506,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectionBoxItemTemplate<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1523,7 +1523,7 @@ public static partial class ComboBoxExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectionBoxItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate value) where T : Avalonia.Controls.ComboBox
+    public static T SelectionBoxItemTemplate<T>(this T obj, Avalonia.Controls.Templates.IDataTemplate? value) where T : Avalonia.Controls.ComboBox
     {
         obj[Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty] = value;
         return obj;
@@ -1560,7 +1560,7 @@ public static partial class ComboBoxExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectionBoxItemTemplate<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Templates.IDataTemplate> observable,
+        IObservable<Avalonia.Controls.Templates.IDataTemplate?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ComboBox
     {
@@ -1593,7 +1593,7 @@ public static partial class ComboBoxExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Templates.IDataTemplate> ObserveSelectionBoxItemTemplate(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<Avalonia.Controls.Templates.IDataTemplate?> ObserveSelectionBoxItemTemplate(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetObservable(Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty);
     }
@@ -1605,7 +1605,7 @@ public static partial class ComboBoxExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectionBoxItemTemplate<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Controls.Templates.IDataTemplate>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnSelectionBoxItemTemplate<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<Avalonia.Controls.Templates.IDataTemplate?>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetObservable(Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty);
         handler(obj, observable);
@@ -1617,7 +1617,7 @@ public static partial class ComboBoxExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>> ObserveBindingSelectionBoxItemTemplate(this Avalonia.Controls.ComboBox obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>> ObserveBindingSelectionBoxItemTemplate(this Avalonia.Controls.ComboBox obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty);
     }
@@ -1629,7 +1629,7 @@ public static partial class ComboBoxExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectionBoxItemTemplate<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate>>> handler) where T : Avalonia.Controls.ComboBox
+    public static T OnBindingSelectionBoxItemTemplate<T>(this T obj, Action<Avalonia.Controls.ComboBox, IObservable<BindingValue<Avalonia.Controls.Templates.IDataTemplate?>>> handler) where T : Avalonia.Controls.ComboBox
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty);
         handler(obj, observable);

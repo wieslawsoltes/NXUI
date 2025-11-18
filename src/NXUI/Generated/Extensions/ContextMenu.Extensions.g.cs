@@ -2697,7 +2697,7 @@ public static partial class ContextMenuExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> PlacementTarget<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control value) where T : Avalonia.Controls.ContextMenu
+    public static ElementBuilder<T> PlacementTarget<T>(this ElementBuilder<T> builder, Avalonia.Controls.Control? value) where T : Avalonia.Controls.ContextMenu
     {
         return builder.WithValue(PropertyMetadata.ContextMenu_PlacementTarget, Avalonia.Controls.ContextMenu.PlacementTargetProperty, value);
     }
@@ -2729,7 +2729,7 @@ public static partial class ContextMenuExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> PlacementTarget<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
     {
@@ -2746,7 +2746,7 @@ public static partial class ContextMenuExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T PlacementTarget<T>(this T obj, Avalonia.Controls.Control value) where T : Avalonia.Controls.ContextMenu
+    public static T PlacementTarget<T>(this T obj, Avalonia.Controls.Control? value) where T : Avalonia.Controls.ContextMenu
     {
         obj[Avalonia.Controls.ContextMenu.PlacementTargetProperty] = value;
         return obj;
@@ -2783,7 +2783,7 @@ public static partial class ContextMenuExtensions
     /// <returns>The target object reference.</returns>
     public static T PlacementTarget<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Control> observable,
+        IObservable<Avalonia.Controls.Control?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
     {
@@ -2816,7 +2816,7 @@ public static partial class ContextMenuExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Control> ObservePlacementTarget(this Avalonia.Controls.ContextMenu obj)
+    public static IObservable<Avalonia.Controls.Control?> ObservePlacementTarget(this Avalonia.Controls.ContextMenu obj)
     {
         return obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
     }
@@ -2828,7 +2828,7 @@ public static partial class ContextMenuExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnPlacementTarget<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Control>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnPlacementTarget<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Control?>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
         handler(obj, observable);
@@ -2840,7 +2840,7 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Control>> ObserveBindingPlacementTarget(this Avalonia.Controls.ContextMenu obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Control?>> ObserveBindingPlacementTarget(this Avalonia.Controls.ContextMenu obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
     }
@@ -2852,7 +2852,7 @@ public static partial class ContextMenuExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingPlacementTarget<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Control>>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnBindingPlacementTarget<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Control?>>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
         handler(obj, observable);
@@ -2891,7 +2891,7 @@ public static partial class ContextMenuExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.ContextMenu
+    public static ElementBuilder<T> CustomPopupPlacementCallback<T>(this ElementBuilder<T> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback? value) where T : Avalonia.Controls.ContextMenu
     {
         return builder.WithValue(PropertyMetadata.ContextMenu_CustomPopupPlacementCallback, Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty, value);
     }
@@ -2923,7 +2923,7 @@ public static partial class ContextMenuExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CustomPopupPlacementCallback<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
     {
@@ -2940,7 +2940,7 @@ public static partial class ContextMenuExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value) where T : Avalonia.Controls.ContextMenu
+    public static T CustomPopupPlacementCallback<T>(this T obj, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback? value) where T : Avalonia.Controls.ContextMenu
     {
         obj[Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty] = value;
         return obj;
@@ -2977,7 +2977,7 @@ public static partial class ContextMenuExtensions
     /// <returns>The target object reference.</returns>
     public static T CustomPopupPlacementCallback<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable,
+        IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ContextMenu
     {
@@ -3010,7 +3010,7 @@ public static partial class ContextMenuExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.ContextMenu obj)
+    public static IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?> ObserveCustomPopupPlacementCallback(this Avalonia.Controls.ContextMenu obj)
     {
         return obj.GetObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
     }
@@ -3022,7 +3022,7 @@ public static partial class ContextMenuExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);
@@ -3034,7 +3034,7 @@ public static partial class ContextMenuExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.ContextMenu obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>> ObserveBindingCustomPopupPlacementCallback(this Avalonia.Controls.ContextMenu obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
     }
@@ -3046,7 +3046,7 @@ public static partial class ContextMenuExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback>>> handler) where T : Avalonia.Controls.ContextMenu
+    public static T OnBindingCustomPopupPlacementCallback<T>(this T obj, Action<Avalonia.Controls.ContextMenu, IObservable<BindingValue<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback?>>> handler) where T : Avalonia.Controls.ContextMenu
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
         handler(obj, observable);

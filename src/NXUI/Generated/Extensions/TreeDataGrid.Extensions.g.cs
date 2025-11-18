@@ -620,7 +620,7 @@ public static partial class TreeDataGridExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Models.TreeDataGrid.IColumns> ObserveColumns(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<Avalonia.Controls.Models.TreeDataGrid.IColumns?> ObserveColumns(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeDataGrid.ColumnsProperty);
     }
@@ -631,7 +631,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TreeDataGrid OnColumns(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.Models.TreeDataGrid.IColumns>> handler)
+    public static Avalonia.Controls.TreeDataGrid OnColumns(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.Models.TreeDataGrid.IColumns?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeDataGrid.ColumnsProperty);
         handler(obj, observable);
@@ -643,7 +643,7 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IColumns>> ObserveBindingColumns(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IColumns?>> ObserveBindingColumns(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.ColumnsProperty);
     }
@@ -654,7 +654,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TreeDataGrid OnBindingColumns(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IColumns>>> handler)
+    public static Avalonia.Controls.TreeDataGrid OnBindingColumns(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IColumns?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.ColumnsProperty);
         handler(obj, observable);
@@ -886,7 +886,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Rows<T>(this ElementBuilder<T> builder, Avalonia.Controls.Models.TreeDataGrid.IRows value) where T : Avalonia.Controls.TreeDataGrid
+    public static ElementBuilder<T> Rows<T>(this ElementBuilder<T> builder, Avalonia.Controls.Models.TreeDataGrid.IRows? value) where T : Avalonia.Controls.TreeDataGrid
     {
         return builder.WithValue(PropertyMetadata.TreeDataGrid_Rows, Avalonia.Controls.TreeDataGrid.RowsProperty, value);
     }
@@ -918,7 +918,7 @@ public static partial class TreeDataGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Rows<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable,
+        IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -935,7 +935,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Rows<T>(this T obj, Avalonia.Controls.Models.TreeDataGrid.IRows value) where T : Avalonia.Controls.TreeDataGrid
+    public static T Rows<T>(this T obj, Avalonia.Controls.Models.TreeDataGrid.IRows? value) where T : Avalonia.Controls.TreeDataGrid
     {
         obj[Avalonia.Controls.TreeDataGrid.RowsProperty] = value;
         return obj;
@@ -972,7 +972,7 @@ public static partial class TreeDataGridExtensions
     /// <returns>The target object reference.</returns>
     public static T Rows<T>(
         this T obj,
-        IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable,
+        IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -1005,7 +1005,7 @@ public static partial class TreeDataGridExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> ObserveRows(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows?> ObserveRows(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeDataGrid.RowsProperty);
     }
@@ -1017,7 +1017,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnRows<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows>> handler) where T : Avalonia.Controls.TreeDataGrid
+    public static T OnRows<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows?>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeDataGrid.RowsProperty);
         handler(obj, observable);
@@ -1029,7 +1029,7 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IRows>> ObserveBindingRows(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IRows?>> ObserveBindingRows(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.RowsProperty);
     }
@@ -1041,7 +1041,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingRows<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IRows>>> handler) where T : Avalonia.Controls.TreeDataGrid
+    public static T OnBindingRows<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.Models.TreeDataGrid.IRows?>>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.RowsProperty);
         handler(obj, observable);
@@ -1098,7 +1098,7 @@ public static partial class TreeDataGridExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.Primitives.IScrollable> ObserveScroll(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<Avalonia.Controls.Primitives.IScrollable?> ObserveScroll(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeDataGrid.ScrollProperty);
     }
@@ -1109,7 +1109,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TreeDataGrid OnScroll(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.Primitives.IScrollable>> handler)
+    public static Avalonia.Controls.TreeDataGrid OnScroll(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.Primitives.IScrollable?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeDataGrid.ScrollProperty);
         handler(obj, observable);
@@ -1121,7 +1121,7 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable>> ObserveBindingScroll(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable?>> ObserveBindingScroll(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.ScrollProperty);
     }
@@ -1132,7 +1132,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.TreeDataGrid OnBindingScroll(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable>>> handler)
+    public static Avalonia.Controls.TreeDataGrid OnBindingScroll(this Avalonia.Controls.TreeDataGrid obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.Primitives.IScrollable?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.ScrollProperty);
         handler(obj, observable);
@@ -1364,7 +1364,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITreeDataGridSource value) where T : Avalonia.Controls.TreeDataGrid
+    public static ElementBuilder<T> Source<T>(this ElementBuilder<T> builder, Avalonia.Controls.ITreeDataGridSource? value) where T : Avalonia.Controls.TreeDataGrid
     {
         return builder.WithValue(PropertyMetadata.TreeDataGrid_Source, Avalonia.Controls.TreeDataGrid.SourceProperty, value);
     }
@@ -1396,7 +1396,7 @@ public static partial class TreeDataGridExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Source<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.ITreeDataGridSource> observable,
+        IObservable<Avalonia.Controls.ITreeDataGridSource?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -1413,7 +1413,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Source<T>(this T obj, Avalonia.Controls.ITreeDataGridSource value) where T : Avalonia.Controls.TreeDataGrid
+    public static T Source<T>(this T obj, Avalonia.Controls.ITreeDataGridSource? value) where T : Avalonia.Controls.TreeDataGrid
     {
         obj[Avalonia.Controls.TreeDataGrid.SourceProperty] = value;
         return obj;
@@ -1450,7 +1450,7 @@ public static partial class TreeDataGridExtensions
     /// <returns>The target object reference.</returns>
     public static T Source<T>(
         this T obj,
-        IObservable<Avalonia.Controls.ITreeDataGridSource> observable,
+        IObservable<Avalonia.Controls.ITreeDataGridSource?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeDataGrid
     {
@@ -1483,7 +1483,7 @@ public static partial class TreeDataGridExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.ITreeDataGridSource> ObserveSource(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<Avalonia.Controls.ITreeDataGridSource?> ObserveSource(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeDataGrid.SourceProperty);
     }
@@ -1495,7 +1495,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSource<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.ITreeDataGridSource>> handler) where T : Avalonia.Controls.TreeDataGrid
+    public static T OnSource<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<Avalonia.Controls.ITreeDataGridSource?>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeDataGrid.SourceProperty);
         handler(obj, observable);
@@ -1507,7 +1507,7 @@ public static partial class TreeDataGridExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.ITreeDataGridSource>> ObserveBindingSource(this Avalonia.Controls.TreeDataGrid obj)
+    public static IObservable<BindingValue<Avalonia.Controls.ITreeDataGridSource?>> ObserveBindingSource(this Avalonia.Controls.TreeDataGrid obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.SourceProperty);
     }
@@ -1519,7 +1519,7 @@ public static partial class TreeDataGridExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSource<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.ITreeDataGridSource>>> handler) where T : Avalonia.Controls.TreeDataGrid
+    public static T OnBindingSource<T>(this T obj, Action<Avalonia.Controls.TreeDataGrid, IObservable<BindingValue<Avalonia.Controls.ITreeDataGridSource?>>> handler) where T : Avalonia.Controls.TreeDataGrid
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TreeDataGrid.SourceProperty);
         handler(obj, observable);

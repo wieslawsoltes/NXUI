@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridFrozenGrid"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.DataGridFrozenGrid"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridFrozenGrid"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.DataGridFrozenGrid> DataGridFrozenGrid(out ElementRef<Avalonia.Controls.Primitives.DataGridFrozenGrid> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.DataGridFrozenGrid>(TypeMetadata.Avalonia_Controls_Primitives_DataGridFrozenGrid, () => new Avalonia.Controls.Primitives.DataGridFrozenGrid())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.DataGridFrozenGrid"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.DataGridFrozenGrid"/> class.</returns>
     public static Avalonia.Controls.Primitives.DataGridFrozenGrid DataGridFrozenGrid(out Avalonia.Controls.Primitives.DataGridFrozenGrid @ref)
         => @ref = new Avalonia.Controls.Primitives.DataGridFrozenGrid();
+#endif
 
 }

@@ -2016,7 +2016,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.CalendarDatePicker
+    public static ElementBuilder<T> Text<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
     {
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_Text, Avalonia.Controls.CalendarDatePicker.TextProperty, value);
     }
@@ -2048,7 +2048,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Text<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2065,7 +2065,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Text<T>(this T obj, System.String value) where T : Avalonia.Controls.CalendarDatePicker
+    public static T Text<T>(this T obj, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.TextProperty] = value;
         return obj;
@@ -2102,7 +2102,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T Text<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2135,7 +2135,7 @@ public static partial class CalendarDatePickerExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveText(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<System.String?> ObserveText(this Avalonia.Controls.CalendarDatePicker obj)
     {
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.TextProperty);
     }
@@ -2147,7 +2147,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnText<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnText<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String?>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.TextProperty);
         handler(obj, observable);
@@ -2159,7 +2159,7 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingText(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingText(this Avalonia.Controls.CalendarDatePicker obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.TextProperty);
     }
@@ -2171,7 +2171,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnBindingText<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.TextProperty);
         handler(obj, observable);
@@ -2210,7 +2210,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.CalendarDatePicker
+    public static ElementBuilder<T> Watermark<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
     {
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_Watermark, Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value);
     }
@@ -2242,7 +2242,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Watermark<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2259,7 +2259,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Watermark<T>(this T obj, System.String value) where T : Avalonia.Controls.CalendarDatePicker
+    public static T Watermark<T>(this T obj, System.String? value) where T : Avalonia.Controls.CalendarDatePicker
     {
         obj[Avalonia.Controls.CalendarDatePicker.WatermarkProperty] = value;
         return obj;
@@ -2296,7 +2296,7 @@ public static partial class CalendarDatePickerExtensions
     /// <returns>The target object reference.</returns>
     public static T Watermark<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.CalendarDatePicker
     {
@@ -2329,7 +2329,7 @@ public static partial class CalendarDatePickerExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<System.String?> ObserveWatermark(this Avalonia.Controls.CalendarDatePicker obj)
     {
         return obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
     }
@@ -2341,7 +2341,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<System.String?>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
         handler(obj, observable);
@@ -2353,7 +2353,7 @@ public static partial class CalendarDatePickerExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingWatermark(this Avalonia.Controls.CalendarDatePicker obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingWatermark(this Avalonia.Controls.CalendarDatePicker obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
     }
@@ -2365,7 +2365,7 @@ public static partial class CalendarDatePickerExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.CalendarDatePicker
+    public static T OnBindingWatermark<T>(this T obj, Action<Avalonia.Controls.CalendarDatePicker, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.CalendarDatePicker
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
         handler(obj, observable);

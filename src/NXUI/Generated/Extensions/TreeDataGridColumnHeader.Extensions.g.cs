@@ -128,7 +128,7 @@ public static partial class TreeDataGridColumnHeaderExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    public static IObservable<System.Object?> ObserveHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
     }
@@ -139,7 +139,7 @@ public static partial class TreeDataGridColumnHeaderExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<System.Object>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<System.Object?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
         handler(obj, observable);
@@ -151,7 +151,7 @@ public static partial class TreeDataGridColumnHeaderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
     }
@@ -162,7 +162,7 @@ public static partial class TreeDataGridColumnHeaderExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnBindingHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<BindingValue<System.Object>>> handler)
+    public static Avalonia.Controls.Primitives.TreeDataGridColumnHeader OnBindingHeader(this Avalonia.Controls.Primitives.TreeDataGridColumnHeader obj, Action<Avalonia.Controls.Primitives.TreeDataGridColumnHeader, IObservable<BindingValue<System.Object?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
         handler(obj, observable);

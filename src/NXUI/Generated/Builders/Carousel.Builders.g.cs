@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Carousel"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Carousel"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Carousel"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Carousel> Carousel(out ElementRef<Avalonia.Controls.Carousel> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Carousel>(TypeMetadata.Avalonia_Controls_Carousel, () => new Avalonia.Controls.Carousel())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Carousel"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Carousel"/> class.</returns>
     public static Avalonia.Controls.Carousel Carousel(out Avalonia.Controls.Carousel @ref)
         => @ref = new Avalonia.Controls.Carousel();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ComboBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ComboBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ComboBox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ComboBox> ComboBox(out ElementRef<Avalonia.Controls.ComboBox> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ComboBox>(TypeMetadata.Avalonia_Controls_ComboBox, () => new Avalonia.Controls.ComboBox())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ComboBox"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ComboBox"/> class.</returns>
     public static Avalonia.Controls.ComboBox ComboBox(out Avalonia.Controls.ComboBox @ref)
         => @ref = new Avalonia.Controls.ComboBox();
+#endif
 
 }

@@ -20,7 +20,7 @@ public static partial class VisualBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.VisualBrush> Visual(this ElementBuilder<Avalonia.Media.VisualBrush> builder, Avalonia.Visual value)
+    public static ElementBuilder<Avalonia.Media.VisualBrush> Visual(this ElementBuilder<Avalonia.Media.VisualBrush> builder, Avalonia.Visual? value)
     {
         return builder.WithValue(PropertyMetadata.VisualBrush_Visual, Avalonia.Media.VisualBrush.VisualProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class VisualBrushExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<Avalonia.Media.VisualBrush> Visual(
         this ElementBuilder<Avalonia.Media.VisualBrush> builder,
-        IObservable<Avalonia.Visual> observable,
+        IObservable<Avalonia.Visual?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -68,7 +68,7 @@ public static partial class VisualBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Media.VisualBrush Visual(this Avalonia.Media.VisualBrush obj, Avalonia.Visual value)
+    public static Avalonia.Media.VisualBrush Visual(this Avalonia.Media.VisualBrush obj, Avalonia.Visual? value)
     {
         obj[Avalonia.Media.VisualBrush.VisualProperty] = value;
         return obj;
@@ -103,7 +103,7 @@ public static partial class VisualBrushExtensions
     /// <returns>The target object reference.</returns>
     public static Avalonia.Media.VisualBrush Visual(
         this Avalonia.Media.VisualBrush obj,
-        IObservable<Avalonia.Visual> observable,
+        IObservable<Avalonia.Visual?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -135,7 +135,7 @@ public static partial class VisualBrushExtensions
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<Avalonia.Visual> ObserveVisual(this Avalonia.Media.VisualBrush obj)
+    public static IObservable<Avalonia.Visual?> ObserveVisual(this Avalonia.Media.VisualBrush obj)
     {
         return obj.GetObservable(Avalonia.Media.VisualBrush.VisualProperty);
     }
@@ -146,7 +146,7 @@ public static partial class VisualBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.VisualBrush OnVisual(this Avalonia.Media.VisualBrush obj, Action<Avalonia.Media.VisualBrush, IObservable<Avalonia.Visual>> handler)
+    public static Avalonia.Media.VisualBrush OnVisual(this Avalonia.Media.VisualBrush obj, Action<Avalonia.Media.VisualBrush, IObservable<Avalonia.Visual?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Media.VisualBrush.VisualProperty);
         handler(obj, observable);
@@ -158,7 +158,7 @@ public static partial class VisualBrushExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Visual>> ObserveBindingVisual(this Avalonia.Media.VisualBrush obj)
+    public static IObservable<BindingValue<Avalonia.Visual?>> ObserveBindingVisual(this Avalonia.Media.VisualBrush obj)
     {
         return obj.GetBindingObservable(Avalonia.Media.VisualBrush.VisualProperty);
     }
@@ -169,7 +169,7 @@ public static partial class VisualBrushExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static Avalonia.Media.VisualBrush OnBindingVisual(this Avalonia.Media.VisualBrush obj, Action<Avalonia.Media.VisualBrush, IObservable<BindingValue<Avalonia.Visual>>> handler)
+    public static Avalonia.Media.VisualBrush OnBindingVisual(this Avalonia.Media.VisualBrush obj, Action<Avalonia.Media.VisualBrush, IObservable<BindingValue<Avalonia.Visual?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Media.VisualBrush.VisualProperty);
         handler(obj, observable);

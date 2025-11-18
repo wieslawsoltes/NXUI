@@ -20,7 +20,7 @@ public static partial class BorderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Border
+    public static ElementBuilder<T> Background<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Border
     {
         return builder.WithValue(PropertyMetadata.Border_Background, Avalonia.Controls.Border.BackgroundProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Background<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -69,7 +69,7 @@ public static partial class BorderExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Background<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Border
+    public static T Background<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BackgroundProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T Background<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -139,7 +139,7 @@ public static partial class BorderExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBackground(this Avalonia.Controls.Border obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBackground(this Avalonia.Controls.Border obj)
     {
         return obj.GetObservable(Avalonia.Controls.Border.BackgroundProperty);
     }
@@ -151,7 +151,7 @@ public static partial class BorderExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Border
+    public static T OnBackground<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BackgroundProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBackground(this Avalonia.Controls.Border obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBackground(this Avalonia.Controls.Border obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Border.BackgroundProperty);
     }
@@ -175,7 +175,7 @@ public static partial class BorderExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Border
+    public static T OnBindingBackground<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Border.BackgroundProperty);
         handler(obj, observable);
@@ -483,7 +483,7 @@ public static partial class BorderExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Border
+    public static ElementBuilder<T> BorderBrush<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Border
     {
         return builder.WithValue(PropertyMetadata.Border_BorderBrush, Avalonia.Controls.Border.BorderBrushProperty, value);
     }
@@ -515,7 +515,7 @@ public static partial class BorderExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> BorderBrush<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -532,7 +532,7 @@ public static partial class BorderExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T BorderBrush<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.Border
+    public static T BorderBrush<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.Border
     {
         obj[Avalonia.Controls.Border.BorderBrushProperty] = value;
         return obj;
@@ -569,7 +569,7 @@ public static partial class BorderExtensions
     /// <returns>The target object reference.</returns>
     public static T BorderBrush<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Border
     {
@@ -602,7 +602,7 @@ public static partial class BorderExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveBorderBrush(this Avalonia.Controls.Border obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveBorderBrush(this Avalonia.Controls.Border obj)
     {
         return obj.GetObservable(Avalonia.Controls.Border.BorderBrushProperty);
     }
@@ -614,7 +614,7 @@ public static partial class BorderExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.Border
+    public static T OnBorderBrush<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetObservable(Avalonia.Controls.Border.BorderBrushProperty);
         handler(obj, observable);
@@ -626,7 +626,7 @@ public static partial class BorderExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingBorderBrush(this Avalonia.Controls.Border obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingBorderBrush(this Avalonia.Controls.Border obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.Border.BorderBrushProperty);
     }
@@ -638,7 +638,7 @@ public static partial class BorderExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.Border
+    public static T OnBindingBorderBrush<T>(this T obj, Action<Avalonia.Controls.Border, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.Border
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.Border.BorderBrushProperty);
         handler(obj, observable);

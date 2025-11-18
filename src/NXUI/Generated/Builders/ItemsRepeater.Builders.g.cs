@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.ItemsRepeater"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.ItemsRepeater> ItemsRepeater(out ElementRef<Avalonia.Controls.ItemsRepeater> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.ItemsRepeater>(TypeMetadata.Avalonia_Controls_ItemsRepeater, () => new Avalonia.Controls.ItemsRepeater())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.ItemsRepeater"/> class.</returns>
     public static Avalonia.Controls.ItemsRepeater ItemsRepeater(out Avalonia.Controls.ItemsRepeater @ref)
         => @ref = new Avalonia.Controls.ItemsRepeater();
+#endif
 
 }

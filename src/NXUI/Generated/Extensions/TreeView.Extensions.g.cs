@@ -214,7 +214,7 @@ public static partial class TreeViewExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.TreeView
+    public static ElementBuilder<T> SelectedItem<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.TreeView
     {
         return builder.WithValue(PropertyMetadata.TreeView_SelectedItem, Avalonia.Controls.TreeView.SelectedItemProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class TreeViewExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> SelectedItem<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -263,7 +263,7 @@ public static partial class TreeViewExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T SelectedItem<T>(this T obj, System.Object value) where T : Avalonia.Controls.TreeView
+    public static T SelectedItem<T>(this T obj, System.Object? value) where T : Avalonia.Controls.TreeView
     {
         obj[Avalonia.Controls.TreeView.SelectedItemProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class TreeViewExtensions
     /// <returns>The target object reference.</returns>
     public static T SelectedItem<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TreeView
     {
@@ -333,7 +333,7 @@ public static partial class TreeViewExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveSelectedItem(this Avalonia.Controls.TreeView obj)
+    public static IObservable<System.Object?> ObserveSelectedItem(this Avalonia.Controls.TreeView obj)
     {
         return obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
     }
@@ -345,7 +345,7 @@ public static partial class TreeViewExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<System.Object>> handler) where T : Avalonia.Controls.TreeView
+    public static T OnSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<System.Object?>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class TreeViewExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingSelectedItem(this Avalonia.Controls.TreeView obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingSelectedItem(this Avalonia.Controls.TreeView obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
     }
@@ -369,7 +369,7 @@ public static partial class TreeViewExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.TreeView
+    public static T OnBindingSelectedItem<T>(this T obj, Action<Avalonia.Controls.TreeView, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.TreeView
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TreeView.SelectedItemProperty);
         handler(obj, observable);

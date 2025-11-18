@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Span"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Documents.Span"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Span"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Documents.Span> Span(out ElementRef<Avalonia.Controls.Documents.Span> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Documents.Span>(TypeMetadata.Avalonia_Controls_Documents_Span, () => new Avalonia.Controls.Documents.Span())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Documents.Span"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Documents.Span"/> class.</returns>
     public static Avalonia.Controls.Documents.Span Span(out Avalonia.Controls.Documents.Span @ref)
         => @ref = new Avalonia.Controls.Documents.Span();
+#endif
 
 }

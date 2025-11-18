@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Media.PathFigure"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Media.PathFigure"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Media.PathFigure"/> class.</returns>
+    public static ElementBuilder<Avalonia.Media.PathFigure> PathFigure(out ElementRef<Avalonia.Media.PathFigure> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Media.PathFigure>(TypeMetadata.Avalonia_Media_PathFigure, () => new Avalonia.Media.PathFigure())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Media.PathFigure"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Media.PathFigure"/> class.</returns>
     public static Avalonia.Media.PathFigure PathFigure(out Avalonia.Media.PathFigure @ref)
         => @ref = new Avalonia.Media.PathFigure();
+#endif
 
 }

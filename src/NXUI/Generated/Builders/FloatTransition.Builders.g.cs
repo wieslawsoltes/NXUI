@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.FloatTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.FloatTransition> FloatTransition(out ElementRef<Avalonia.Animation.FloatTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.FloatTransition>(TypeMetadata.Avalonia_Animation_FloatTransition, () => new Avalonia.Animation.FloatTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.FloatTransition"/> class.</returns>
     public static Avalonia.Animation.FloatTransition FloatTransition(out Avalonia.Animation.FloatTransition @ref)
         => @ref = new Avalonia.Animation.FloatTransition();
+#endif
 
 }

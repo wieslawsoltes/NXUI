@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Label"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Label"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Label"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Label> Label(out ElementRef<Avalonia.Controls.Label> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Label>(TypeMetadata.Avalonia_Controls_Label, () => new Avalonia.Controls.Label())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Label"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Label"/> class.</returns>
     public static Avalonia.Controls.Label Label(out Avalonia.Controls.Label @ref)
         => @ref = new Avalonia.Controls.Label();
+#endif
 
 }

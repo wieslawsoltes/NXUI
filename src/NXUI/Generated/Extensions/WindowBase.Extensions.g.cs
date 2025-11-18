@@ -128,7 +128,7 @@ public static partial class WindowBaseExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.WindowBase> ObserveOwner(this Avalonia.Controls.WindowBase obj)
+    public static IObservable<Avalonia.Controls.WindowBase?> ObserveOwner(this Avalonia.Controls.WindowBase obj)
     {
         return obj.GetObservable(Avalonia.Controls.WindowBase.OwnerProperty);
     }
@@ -139,7 +139,7 @@ public static partial class WindowBaseExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.WindowBase OnOwner(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<Avalonia.Controls.WindowBase>> handler)
+    public static Avalonia.Controls.WindowBase OnOwner(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<Avalonia.Controls.WindowBase?>> handler)
     {
         var observable = obj.GetObservable(Avalonia.Controls.WindowBase.OwnerProperty);
         handler(obj, observable);
@@ -151,7 +151,7 @@ public static partial class WindowBaseExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.WindowBase>> ObserveBindingOwner(this Avalonia.Controls.WindowBase obj)
+    public static IObservable<BindingValue<Avalonia.Controls.WindowBase?>> ObserveBindingOwner(this Avalonia.Controls.WindowBase obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.WindowBase.OwnerProperty);
     }
@@ -162,7 +162,7 @@ public static partial class WindowBaseExtensions
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static Avalonia.Controls.WindowBase OnBindingOwner(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<BindingValue<Avalonia.Controls.WindowBase>>> handler)
+    public static Avalonia.Controls.WindowBase OnBindingOwner(this Avalonia.Controls.WindowBase obj, Action<Avalonia.Controls.WindowBase, IObservable<BindingValue<Avalonia.Controls.WindowBase?>>> handler)
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.WindowBase.OwnerProperty);
         handler(obj, observable);

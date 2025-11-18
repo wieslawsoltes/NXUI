@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Animation.TransformOperationsTransition"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Animation.TransformOperationsTransition"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Animation.TransformOperationsTransition"/> class.</returns>
+    public static ElementBuilder<Avalonia.Animation.TransformOperationsTransition> TransformOperationsTransition(out ElementRef<Avalonia.Animation.TransformOperationsTransition> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Animation.TransformOperationsTransition>(TypeMetadata.Avalonia_Animation_TransformOperationsTransition, () => new Avalonia.Animation.TransformOperationsTransition())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Animation.TransformOperationsTransition"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Animation.TransformOperationsTransition"/> class.</returns>
     public static Avalonia.Animation.TransformOperationsTransition TransformOperationsTransition(out Avalonia.Animation.TransformOperationsTransition @ref)
         => @ref = new Avalonia.Animation.TransformOperationsTransition();
+#endif
 
 }

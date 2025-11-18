@@ -20,7 +20,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Menu<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenu value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> Menu<T>(this ElementBuilder<T> builder, Avalonia.Controls.NativeMenu? value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_Menu, Avalonia.Controls.NativeMenuItem.MenuProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Menu<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Controls.NativeMenu> observable,
+        IObservable<Avalonia.Controls.NativeMenu?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -69,7 +69,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Menu<T>(this T obj, Avalonia.Controls.NativeMenu value) where T : Avalonia.Controls.NativeMenuItem
+    public static T Menu<T>(this T obj, Avalonia.Controls.NativeMenu? value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.MenuProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Menu<T>(
         this T obj,
-        IObservable<Avalonia.Controls.NativeMenu> observable,
+        IObservable<Avalonia.Controls.NativeMenu?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -139,7 +139,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Controls.NativeMenu> ObserveMenu(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<Avalonia.Controls.NativeMenu?> ObserveMenu(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.MenuProperty);
     }
@@ -151,7 +151,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnMenu<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Controls.NativeMenu>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnMenu<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Controls.NativeMenu?>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.MenuProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Controls.NativeMenu>> ObserveBindingMenu(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<Avalonia.Controls.NativeMenu?>> ObserveBindingMenu(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.MenuProperty);
     }
@@ -175,7 +175,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingMenu<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Controls.NativeMenu>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingMenu<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Controls.NativeMenu?>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.MenuProperty);
         handler(obj, observable);
@@ -214,7 +214,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Media.Imaging.Bitmap value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> Icon<T>(this ElementBuilder<T> builder, Avalonia.Media.Imaging.Bitmap? value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_Icon, Avalonia.Controls.NativeMenuItem.IconProperty, value);
     }
@@ -246,7 +246,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Icon<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.Imaging.Bitmap> observable,
+        IObservable<Avalonia.Media.Imaging.Bitmap?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -263,7 +263,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Icon<T>(this T obj, Avalonia.Media.Imaging.Bitmap value) where T : Avalonia.Controls.NativeMenuItem
+    public static T Icon<T>(this T obj, Avalonia.Media.Imaging.Bitmap? value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.IconProperty] = value;
         return obj;
@@ -300,7 +300,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Icon<T>(
         this T obj,
-        IObservable<Avalonia.Media.Imaging.Bitmap> observable,
+        IObservable<Avalonia.Media.Imaging.Bitmap?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -333,7 +333,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.Imaging.Bitmap> ObserveIcon(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<Avalonia.Media.Imaging.Bitmap?> ObserveIcon(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
     }
@@ -345,7 +345,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Media.Imaging.Bitmap>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnIcon<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Media.Imaging.Bitmap?>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
         handler(obj, observable);
@@ -357,7 +357,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.Imaging.Bitmap>> ObserveBindingIcon(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<Avalonia.Media.Imaging.Bitmap?>> ObserveBindingIcon(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
     }
@@ -369,7 +369,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Media.Imaging.Bitmap>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingIcon<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Media.Imaging.Bitmap?>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.IconProperty);
         handler(obj, observable);
@@ -408,7 +408,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Header<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> Header<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_Header, Avalonia.Controls.NativeMenuItem.HeaderProperty, value);
     }
@@ -440,7 +440,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Header<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -457,7 +457,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Header<T>(this T obj, System.String value) where T : Avalonia.Controls.NativeMenuItem
+    public static T Header<T>(this T obj, System.String? value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.HeaderProperty] = value;
         return obj;
@@ -494,7 +494,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Header<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -527,7 +527,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveHeader(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<System.String?> ObserveHeader(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.HeaderProperty);
     }
@@ -539,7 +539,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnHeader<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.String>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnHeader<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.String?>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.HeaderProperty);
         handler(obj, observable);
@@ -551,7 +551,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingHeader(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingHeader(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.HeaderProperty);
     }
@@ -563,7 +563,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingHeader<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingHeader<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.HeaderProperty);
         handler(obj, observable);
@@ -602,7 +602,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> ToolTip<T>(this ElementBuilder<T> builder, System.String value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> ToolTip<T>(this ElementBuilder<T> builder, System.String? value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_ToolTip, Avalonia.Controls.NativeMenuItem.ToolTipProperty, value);
     }
@@ -634,7 +634,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> ToolTip<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -651,7 +651,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T ToolTip<T>(this T obj, System.String value) where T : Avalonia.Controls.NativeMenuItem
+    public static T ToolTip<T>(this T obj, System.String? value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.ToolTipProperty] = value;
         return obj;
@@ -688,7 +688,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T ToolTip<T>(
         this T obj,
-        IObservable<System.String> observable,
+        IObservable<System.String?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -721,7 +721,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.String> ObserveToolTip(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<System.String?> ObserveToolTip(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.ToolTipProperty);
     }
@@ -733,7 +733,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnToolTip<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.String>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnToolTip<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.String?>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.ToolTipProperty);
         handler(obj, observable);
@@ -745,7 +745,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.String>> ObserveBindingToolTip(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<System.String?>> ObserveBindingToolTip(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.ToolTipProperty);
     }
@@ -757,7 +757,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingToolTip<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.String>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingToolTip<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.String?>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.ToolTipProperty);
         handler(obj, observable);
@@ -796,7 +796,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Gesture<T>(this ElementBuilder<T> builder, Avalonia.Input.KeyGesture value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> Gesture<T>(this ElementBuilder<T> builder, Avalonia.Input.KeyGesture? value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_Gesture, Avalonia.Controls.NativeMenuItem.GestureProperty, value);
     }
@@ -828,7 +828,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Gesture<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Input.KeyGesture> observable,
+        IObservable<Avalonia.Input.KeyGesture?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -845,7 +845,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Gesture<T>(this T obj, Avalonia.Input.KeyGesture value) where T : Avalonia.Controls.NativeMenuItem
+    public static T Gesture<T>(this T obj, Avalonia.Input.KeyGesture? value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.GestureProperty] = value;
         return obj;
@@ -882,7 +882,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Gesture<T>(
         this T obj,
-        IObservable<Avalonia.Input.KeyGesture> observable,
+        IObservable<Avalonia.Input.KeyGesture?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -915,7 +915,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Input.KeyGesture> ObserveGesture(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<Avalonia.Input.KeyGesture?> ObserveGesture(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.GestureProperty);
     }
@@ -927,7 +927,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnGesture<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Input.KeyGesture>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnGesture<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<Avalonia.Input.KeyGesture?>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.GestureProperty);
         handler(obj, observable);
@@ -939,7 +939,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Input.KeyGesture>> ObserveBindingGesture(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<Avalonia.Input.KeyGesture?>> ObserveBindingGesture(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.GestureProperty);
     }
@@ -951,7 +951,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingGesture<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Input.KeyGesture>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingGesture<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<Avalonia.Input.KeyGesture?>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.GestureProperty);
         handler(obj, observable);
@@ -1453,7 +1453,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> Command<T>(this ElementBuilder<T> builder, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_Command, Avalonia.Controls.NativeMenuItem.CommandProperty, value);
     }
@@ -1485,7 +1485,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Command<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1502,7 +1502,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Command<T>(this T obj, System.Windows.Input.ICommand value) where T : Avalonia.Controls.NativeMenuItem
+    public static T Command<T>(this T obj, System.Windows.Input.ICommand? value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.CommandProperty] = value;
         return obj;
@@ -1539,7 +1539,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T Command<T>(
         this T obj,
-        IObservable<System.Windows.Input.ICommand> observable,
+        IObservable<System.Windows.Input.ICommand?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1572,7 +1572,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Windows.Input.ICommand> ObserveCommand(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<System.Windows.Input.ICommand?> ObserveCommand(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.CommandProperty);
     }
@@ -1584,7 +1584,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.Windows.Input.ICommand>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnCommand<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.Windows.Input.ICommand?>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.CommandProperty);
         handler(obj, observable);
@@ -1596,7 +1596,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Windows.Input.ICommand>> ObserveBindingCommand(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<System.Windows.Input.ICommand?>> ObserveBindingCommand(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.CommandProperty);
     }
@@ -1608,7 +1608,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.Windows.Input.ICommand>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingCommand<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.Windows.Input.ICommand?>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.CommandProperty);
         handler(obj, observable);
@@ -1647,7 +1647,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object value) where T : Avalonia.Controls.NativeMenuItem
+    public static ElementBuilder<T> CommandParameter<T>(this ElementBuilder<T> builder, System.Object? value) where T : Avalonia.Controls.NativeMenuItem
     {
         return builder.WithValue(PropertyMetadata.NativeMenuItem_CommandParameter, Avalonia.Controls.NativeMenuItem.CommandParameterProperty, value);
     }
@@ -1679,7 +1679,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> CommandParameter<T>(
         this ElementBuilder<T> builder,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1696,7 +1696,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T CommandParameter<T>(this T obj, System.Object value) where T : Avalonia.Controls.NativeMenuItem
+    public static T CommandParameter<T>(this T obj, System.Object? value) where T : Avalonia.Controls.NativeMenuItem
     {
         obj[Avalonia.Controls.NativeMenuItem.CommandParameterProperty] = value;
         return obj;
@@ -1733,7 +1733,7 @@ public static partial class NativeMenuItemExtensions
     /// <returns>The target object reference.</returns>
     public static T CommandParameter<T>(
         this T obj,
-        IObservable<System.Object> observable,
+        IObservable<System.Object?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.NativeMenuItem
     {
@@ -1766,7 +1766,7 @@ public static partial class NativeMenuItemExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<System.Object> ObserveCommandParameter(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<System.Object?> ObserveCommandParameter(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetObservable(Avalonia.Controls.NativeMenuItem.CommandParameterProperty);
     }
@@ -1778,7 +1778,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.Object>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnCommandParameter<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<System.Object?>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetObservable(Avalonia.Controls.NativeMenuItem.CommandParameterProperty);
         handler(obj, observable);
@@ -1790,7 +1790,7 @@ public static partial class NativeMenuItemExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<System.Object>> ObserveBindingCommandParameter(this Avalonia.Controls.NativeMenuItem obj)
+    public static IObservable<BindingValue<System.Object?>> ObserveBindingCommandParameter(this Avalonia.Controls.NativeMenuItem obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.CommandParameterProperty);
     }
@@ -1802,7 +1802,7 @@ public static partial class NativeMenuItemExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.Object>>> handler) where T : Avalonia.Controls.NativeMenuItem
+    public static T OnBindingCommandParameter<T>(this T obj, Action<Avalonia.Controls.NativeMenuItem, IObservable<BindingValue<System.Object?>>> handler) where T : Avalonia.Controls.NativeMenuItem
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.NativeMenuItem.CommandParameterProperty);
         handler(obj, observable);

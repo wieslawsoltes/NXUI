@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.TextBlock"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.TextBlock"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.TextBlock"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.TextBlock> TextBlock(out ElementRef<Avalonia.Controls.TextBlock> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.TextBlock>(TypeMetadata.Avalonia_Controls_TextBlock, () => new Avalonia.Controls.TextBlock())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.TextBlock"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.TextBlock"/> class.</returns>
     public static Avalonia.Controls.TextBlock TextBlock(out Avalonia.Controls.TextBlock @ref)
         => @ref = new Avalonia.Controls.TextBlock();
+#endif
 
 }

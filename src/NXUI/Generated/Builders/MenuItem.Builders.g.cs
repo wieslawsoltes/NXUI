@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.MenuItem"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.MenuItem> MenuItem(out ElementRef<Avalonia.Controls.MenuItem> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.MenuItem>(TypeMetadata.Avalonia_Controls_MenuItem, () => new Avalonia.Controls.MenuItem())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.MenuItem"/> class.</returns>
     public static Avalonia.Controls.MenuItem MenuItem(out Avalonia.Controls.MenuItem @ref)
         => @ref = new Avalonia.Controls.MenuItem();
+#endif
 
 }

@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Primitives.ColorSpectrum> ColorSpectrum(out ElementRef<Avalonia.Controls.Primitives.ColorSpectrum> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Primitives.ColorSpectrum>(TypeMetadata.Avalonia_Controls_Primitives_ColorSpectrum, () => new Avalonia.Controls.Primitives.ColorSpectrum())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/> class.</returns>
     public static Avalonia.Controls.Primitives.ColorSpectrum ColorSpectrum(out Avalonia.Controls.Primitives.ColorSpectrum @ref)
         => @ref = new Avalonia.Controls.Primitives.ColorSpectrum();
+#endif
 
 }

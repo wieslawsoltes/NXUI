@@ -20,7 +20,7 @@ public static partial class TickBarExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Fill<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TickBar
+    public static ElementBuilder<T> Fill<T>(this ElementBuilder<T> builder, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TickBar
     {
         return builder.WithValue(PropertyMetadata.TickBar_Fill, Avalonia.Controls.TickBar.FillProperty, value);
     }
@@ -52,7 +52,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Fill<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -69,7 +69,7 @@ public static partial class TickBarExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Fill<T>(this T obj, Avalonia.Media.IBrush value) where T : Avalonia.Controls.TickBar
+    public static T Fill<T>(this T obj, Avalonia.Media.IBrush? value) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.FillProperty] = value;
         return obj;
@@ -106,7 +106,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Fill<T>(
         this T obj,
-        IObservable<Avalonia.Media.IBrush> observable,
+        IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -139,7 +139,7 @@ public static partial class TickBarExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Media.IBrush> ObserveFill(this Avalonia.Controls.TickBar obj)
+    public static IObservable<Avalonia.Media.IBrush?> ObserveFill(this Avalonia.Controls.TickBar obj)
     {
         return obj.GetObservable(Avalonia.Controls.TickBar.FillProperty);
     }
@@ -151,7 +151,7 @@ public static partial class TickBarExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnFill<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Media.IBrush>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnFill<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Media.IBrush?>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.FillProperty);
         handler(obj, observable);
@@ -163,7 +163,7 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Media.IBrush>> ObserveBindingFill(this Avalonia.Controls.TickBar obj)
+    public static IObservable<BindingValue<Avalonia.Media.IBrush?>> ObserveBindingFill(this Avalonia.Controls.TickBar obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TickBar.FillProperty);
     }
@@ -175,7 +175,7 @@ public static partial class TickBarExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingFill<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Media.IBrush>>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnBindingFill<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Media.IBrush?>>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.FillProperty);
         handler(obj, observable);
@@ -1040,7 +1040,7 @@ public static partial class TickBarExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<T> Ticks<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.TickBar
+    public static ElementBuilder<T> Ticks<T>(this ElementBuilder<T> builder, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Controls.TickBar
     {
         return builder.WithValue(PropertyMetadata.TickBar_Ticks, Avalonia.Controls.TickBar.TicksProperty, value);
     }
@@ -1072,7 +1072,7 @@ public static partial class TickBarExtensions
     /// <returns>The builder instance.</returns>
     public static ElementBuilder<T> Ticks<T>(
         this ElementBuilder<T> builder,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1089,7 +1089,7 @@ public static partial class TickBarExtensions
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T Ticks<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double> value) where T : Avalonia.Controls.TickBar
+    public static T Ticks<T>(this T obj, Avalonia.Collections.AvaloniaList<System.Double>? value) where T : Avalonia.Controls.TickBar
     {
         obj[Avalonia.Controls.TickBar.TicksProperty] = value;
         return obj;
@@ -1126,7 +1126,7 @@ public static partial class TickBarExtensions
     /// <returns>The target object reference.</returns>
     public static T Ticks<T>(
         this T obj,
-        IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable,
+        IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.TickBar
     {
@@ -1159,7 +1159,7 @@ public static partial class TickBarExtensions
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>> ObserveTicks(this Avalonia.Controls.TickBar obj)
+    public static IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> ObserveTicks(this Avalonia.Controls.TickBar obj)
     {
         return obj.GetObservable(Avalonia.Controls.TickBar.TicksProperty);
     }
@@ -1171,7 +1171,7 @@ public static partial class TickBarExtensions
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnTicks<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Collections.AvaloniaList<System.Double>>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnTicks<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<Avalonia.Collections.AvaloniaList<System.Double>?>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetObservable(Avalonia.Controls.TickBar.TicksProperty);
         handler(obj, observable);
@@ -1183,7 +1183,7 @@ public static partial class TickBarExtensions
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>> ObserveBindingTicks(this Avalonia.Controls.TickBar obj)
+    public static IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>> ObserveBindingTicks(this Avalonia.Controls.TickBar obj)
     {
         return obj.GetBindingObservable(Avalonia.Controls.TickBar.TicksProperty);
     }
@@ -1195,7 +1195,7 @@ public static partial class TickBarExtensions
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBindingTicks<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>>>> handler) where T : Avalonia.Controls.TickBar
+    public static T OnBindingTicks<T>(this T obj, Action<Avalonia.Controls.TickBar, IObservable<BindingValue<Avalonia.Collections.AvaloniaList<System.Double>?>>> handler) where T : Avalonia.Controls.TickBar
     {
         var observable = obj.GetBindingObservable(Avalonia.Controls.TickBar.TicksProperty);
         handler(obj, observable);

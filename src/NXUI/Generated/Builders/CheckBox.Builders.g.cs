@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.CheckBox"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.CheckBox> CheckBox(out ElementRef<Avalonia.Controls.CheckBox> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.CheckBox>(TypeMetadata.Avalonia_Controls_CheckBox, () => new Avalonia.Controls.CheckBox())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.CheckBox"/> class.</returns>
     public static Avalonia.Controls.CheckBox CheckBox(out Avalonia.Controls.CheckBox @ref)
         => @ref = new Avalonia.Controls.CheckBox();
+#endif
 
 }

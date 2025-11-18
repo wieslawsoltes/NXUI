@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Input.PinchGestureRecognizer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Input.PinchGestureRecognizer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Input.PinchGestureRecognizer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Input.PinchGestureRecognizer> PinchGestureRecognizer(out ElementRef<Avalonia.Input.PinchGestureRecognizer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Input.PinchGestureRecognizer>(TypeMetadata.Avalonia_Input_PinchGestureRecognizer, () => new Avalonia.Input.PinchGestureRecognizer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Input.PinchGestureRecognizer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Input.PinchGestureRecognizer"/> class.</returns>
     public static Avalonia.Input.PinchGestureRecognizer PinchGestureRecognizer(out Avalonia.Input.PinchGestureRecognizer @ref)
         => @ref = new Avalonia.Input.PinchGestureRecognizer();
+#endif
 
 }

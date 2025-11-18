@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.SelectableTextBlock"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.SelectableTextBlock> SelectableTextBlock(out ElementRef<Avalonia.Controls.SelectableTextBlock> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.SelectableTextBlock>(TypeMetadata.Avalonia_Controls_SelectableTextBlock, () => new Avalonia.Controls.SelectableTextBlock())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.SelectableTextBlock"/> class.</returns>
     public static Avalonia.Controls.SelectableTextBlock SelectableTextBlock(out Avalonia.Controls.SelectableTextBlock @ref)
         => @ref = new Avalonia.Controls.SelectableTextBlock();
+#endif
 
 }

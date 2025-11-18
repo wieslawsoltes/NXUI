@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.Chrome.CaptionButtons> CaptionButtons(out ElementRef<Avalonia.Controls.Chrome.CaptionButtons> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.Chrome.CaptionButtons>(TypeMetadata.Avalonia_Controls_Chrome_CaptionButtons, () => new Avalonia.Controls.Chrome.CaptionButtons())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.Chrome.CaptionButtons"/> class.</returns>
     public static Avalonia.Controls.Chrome.CaptionButtons CaptionButtons(out Avalonia.Controls.Chrome.CaptionButtons @ref)
         => @ref = new Avalonia.Controls.Chrome.CaptionButtons();
+#endif
 
 }

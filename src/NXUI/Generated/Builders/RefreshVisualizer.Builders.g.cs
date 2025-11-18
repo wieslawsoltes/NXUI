@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.RefreshVisualizer"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.RefreshVisualizer> RefreshVisualizer(out ElementRef<Avalonia.Controls.RefreshVisualizer> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.RefreshVisualizer>(TypeMetadata.Avalonia_Controls_RefreshVisualizer, () => new Avalonia.Controls.RefreshVisualizer())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.RefreshVisualizer"/> class.</returns>
     public static Avalonia.Controls.RefreshVisualizer RefreshVisualizer(out Avalonia.Controls.RefreshVisualizer @ref)
         => @ref = new Avalonia.Controls.RefreshVisualizer();
+#endif
 
 }

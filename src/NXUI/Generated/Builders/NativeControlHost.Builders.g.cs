@@ -28,6 +28,18 @@ public static partial class Builders
 #endif
 
 
+#if NXUI_HOTRELOAD
+    /// <summary>
+    /// Creates a new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.
+    /// </summary>
+    /// <param name="ref">The reference of the <see cref="Avalonia.Controls.NativeControlHost"/> instantiated class.</param>
+    /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.</returns>
+    public static ElementBuilder<Avalonia.Controls.NativeControlHost> NativeControlHost(out ElementRef<Avalonia.Controls.NativeControlHost> @ref)
+    {
+        return ElementBuilder.Create<Avalonia.Controls.NativeControlHost>(TypeMetadata.Avalonia_Controls_NativeControlHost, () => new Avalonia.Controls.NativeControlHost())
+            .WithRef(out @ref);
+    }
+#else
     /// <summary>
     /// Creates a new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.
     /// </summary>
@@ -35,5 +47,6 @@ public static partial class Builders
     /// <returns>The new instance of the <see cref="Avalonia.Controls.NativeControlHost"/> class.</returns>
     public static Avalonia.Controls.NativeControlHost NativeControlHost(out Avalonia.Controls.NativeControlHost @ref)
         => @ref = new Avalonia.Controls.NativeControlHost();
+#endif
 
 }
