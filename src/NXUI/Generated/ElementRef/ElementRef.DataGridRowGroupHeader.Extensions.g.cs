@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGridRowGroupHeader"/>.
 /// </summary>
 public static partial class DataGridRowGroupHeaderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataGridRowGroupHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DataGridRowGroupHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DataGridRowGroupHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DataGridRowGroupHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class DataGridRowGroupHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty);
     }
 
-#endif
 }

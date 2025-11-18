@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.LineGeometry"/>.
 /// </summary>
 public static partial class LineGeometryElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class LineGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.LineGeometry.StartPointProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class LineGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.LineGeometry.EndPointProperty);
     }
 
-#endif
 }

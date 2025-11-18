@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ItemsControl"/>.
 /// </summary>
 public static partial class ItemsControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ItemsControl.ItemContainerThemeProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ItemsControl.ItemCountProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ItemsControl.ItemCountProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ItemsControl.ItemsPanelProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ItemsControl.ItemsPanelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ItemsControl.ItemsSourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ItemsControl.ItemTemplateProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ItemsControl.ItemTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class ItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty);
     }
 
-#endif
 }

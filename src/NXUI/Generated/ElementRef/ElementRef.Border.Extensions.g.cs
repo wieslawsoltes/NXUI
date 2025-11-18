@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Border"/>.
 /// </summary>
 public static partial class BorderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Border.BackgroundProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class BorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Border.BackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class BorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Border.BackgroundSizingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class BorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Border.BorderBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class BorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Border.BorderThicknessProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class BorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Border.CornerRadiusProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class BorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Border.BoxShadowProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridColumnHeader"/> class property extension methods.
 /// </summary>
 public static partial class DataGridColumnHeaderExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataGridColumnHeaderExtensions
         return builder.WithBinding(PropertyMetadata.DataGridColumnHeader_SeparatorBrush, Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataGridColumnHeaderExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridColumnHeader.SeparatorBrushProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DataGridColumnHeaderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DataGridColumnHeaderExtensions
         return builder.WithBinding(PropertyMetadata.DataGridColumnHeader_AreSeparatorsVisible, Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DataGridColumnHeaderExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridColumnHeader.AreSeparatorsVisibleProperty
 
     /// <summary>

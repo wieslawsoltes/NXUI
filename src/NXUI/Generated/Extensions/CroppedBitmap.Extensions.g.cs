@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.Imaging.CroppedBitmap"/> class property extension methods.
 /// </summary>
 public static partial class CroppedBitmapExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class CroppedBitmapExtensions
         return builder.WithBinding(PropertyMetadata.CroppedBitmap_Source, Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class CroppedBitmapExtensions
         return elementRef.SetBinding(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Imaging.CroppedBitmap.SourceProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class CroppedBitmapExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class CroppedBitmapExtensions
         return builder.WithBinding(PropertyMetadata.CroppedBitmap_SourceRect, Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class CroppedBitmapExtensions
         return elementRef.SetBinding(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty
 
     /// <summary>

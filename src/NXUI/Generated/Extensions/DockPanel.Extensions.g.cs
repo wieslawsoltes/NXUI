@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DockPanel"/> class property extension methods.
 /// </summary>
 public static partial class DockPanelExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DockPanelExtensions
         return builder.WithBinding(PropertyMetadata.DockPanel_Dock, Avalonia.Controls.DockPanel.DockProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DockPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.DockPanel.DockProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DockPanel.DockProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class DockPanelExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class DockPanelExtensions
         return builder.WithValue(PropertyMetadata.DockPanel_Dock, Avalonia.Controls.DockPanel.DockProperty, Avalonia.Controls.Dock.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
@@ -278,7 +270,6 @@ public static partial class DockPanelExtensions
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class DockPanelExtensions
         return builder.WithValue(PropertyMetadata.DockPanel_Dock, Avalonia.Controls.DockPanel.DockProperty, Avalonia.Controls.Dock.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Bottom"/>.
@@ -303,7 +293,6 @@ public static partial class DockPanelExtensions
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class DockPanelExtensions
         return builder.WithValue(PropertyMetadata.DockPanel_Dock, Avalonia.Controls.DockPanel.DockProperty, Avalonia.Controls.Dock.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
@@ -328,7 +316,6 @@ public static partial class DockPanelExtensions
         obj[Avalonia.Controls.DockPanel.DockProperty] = Avalonia.Controls.Dock.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class DockPanelExtensions
         return builder.WithValue(PropertyMetadata.DockPanel_Dock, Avalonia.Controls.DockPanel.DockProperty, Avalonia.Controls.Dock.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.DockProperty"/> property value to <see cref="Avalonia.Controls.Dock.Top"/>.
@@ -354,7 +340,6 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/> literal value for hot reload builds.
@@ -401,8 +386,6 @@ public static partial class DockPanelExtensions
         return builder.WithBinding(PropertyMetadata.DockPanel_LastChildFill, Avalonia.Controls.DockPanel.LastChildFillProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/> value on a referenced control.
@@ -449,7 +432,6 @@ public static partial class DockPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.DockPanel.LastChildFillProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DockPanel.LastChildFillProperty
 
     /// <summary>
@@ -596,7 +578,6 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class DockPanelExtensions
         return builder.WithBinding(PropertyMetadata.DockPanel_HorizontalSpacing, Avalonia.Controls.DockPanel.HorizontalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class DockPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.DockPanel.HorizontalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DockPanel.HorizontalSpacingProperty
 
     /// <summary>
@@ -838,7 +816,6 @@ public static partial class DockPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/> literal value for hot reload builds.
@@ -885,8 +862,6 @@ public static partial class DockPanelExtensions
         return builder.WithBinding(PropertyMetadata.DockPanel_VerticalSpacing, Avalonia.Controls.DockPanel.VerticalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/> value on a referenced control.
@@ -933,7 +908,6 @@ public static partial class DockPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.DockPanel.VerticalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DockPanel.VerticalSpacingProperty
 
     /// <summary>

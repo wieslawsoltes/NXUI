@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DropShadowDirectionEffect"/> class property extension methods.
 /// </summary>
 public static partial class DropShadowDirectionEffectExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> ShadowDepth(this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder, System.Double value)
+    public static DropShadowDirectionEffectBuilder ShadowDepth(this DropShadowDirectionEffectBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.DropShadowDirectionEffect_ShadowDepth, Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> ShadowDepth(
-        this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,
+    public static DropShadowDirectionEffectBuilder ShadowDepth(
+        this DropShadowDirectionEffectBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> ShadowDepth(
-        this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,
+    public static DropShadowDirectionEffectBuilder ShadowDepth(
+        this DropShadowDirectionEffectBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class DropShadowDirectionEffectExtensions
         return builder.WithBinding(PropertyMetadata.DropShadowDirectionEffect_ShadowDepth, Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DropShadowDirectionEffectExtensions
         return elementRef.SetBinding(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class DropShadowDirectionEffectExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> Direction(this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder, System.Double value)
+    public static DropShadowDirectionEffectBuilder Direction(this DropShadowDirectionEffectBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.DropShadowDirectionEffect_Direction, Avalonia.Media.DropShadowDirectionEffect.DirectionProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> Direction(
-        this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,
+    public static DropShadowDirectionEffectBuilder Direction(
+        this DropShadowDirectionEffectBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class DropShadowDirectionEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> Direction(
-        this ElementBuilder<Avalonia.Media.DropShadowDirectionEffect> builder,
+    public static DropShadowDirectionEffectBuilder Direction(
+        this DropShadowDirectionEffectBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class DropShadowDirectionEffectExtensions
         return builder.WithBinding(PropertyMetadata.DropShadowDirectionEffect_Direction, Avalonia.Media.DropShadowDirectionEffect.DirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class DropShadowDirectionEffectExtensions
         return elementRef.SetBinding(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DropShadowDirectionEffect.DirectionProperty
 
     /// <summary>

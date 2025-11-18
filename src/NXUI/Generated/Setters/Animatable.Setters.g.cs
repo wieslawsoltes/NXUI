@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Animation.Animatable"/> class style setters extension methods.
 /// </summary>
 public static partial class AnimatableSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class AnimatableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimatableTransitions(this ElementBuilder<Style> builder, Avalonia.Animation.Transitions value)
+    public static StyleBuilder SetAnimatableTransitions(this StyleBuilder builder, Avalonia.Animation.Transitions value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class AnimatableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimatableTransitions(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.Transitions value)
+    public static KeyFrameBuilder SetAnimatableTransitions(this KeyFrameBuilder builder, Avalonia.Animation.Transitions value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class AnimatableSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animatable.TransitionsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class AnimatableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animatable.TransitionsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class AnimatableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimatableTransitions(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.Transitions> observable)
+    public static StyleBuilder SetAnimatableTransitions(this StyleBuilder builder, IObservable<Avalonia.Animation.Transitions> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class AnimatableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimatableTransitions(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.Transitions> observable)
+    public static KeyFrameBuilder SetAnimatableTransitions(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.Transitions> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class AnimatableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class AnimatableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animatable.TransitionsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class AnimatableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimatableTransitions(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimatableTransitions(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class AnimatableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimatableTransitions(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimatableTransitions(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class AnimatableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animatable.TransitionsProperty"/>.
     /// </summary>

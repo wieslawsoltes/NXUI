@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.RowDefinition"/>.
 /// </summary>
 public static partial class RowDefinitionElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class RowDefinitionElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RowDefinition.MaxHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class RowDefinitionElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RowDefinition.MinHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class RowDefinitionElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RowDefinition.HeightProperty);
     }
 
-#endif
 }

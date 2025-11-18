@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.AutoCompleteBox"/>.
 /// </summary>
 public static partial class AutoCompleteBoxElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.WatermarkProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.TextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.SearchTextProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.SearchTextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.FilterModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.TextFilterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> value.
@@ -231,8 +190,6 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> value.
@@ -242,5 +199,4 @@ public static partial class AutoCompleteBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ToggleSplitButton"/> class property extension methods.
 /// </summary>
 public static partial class ToggleSplitButtonExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ToggleSplitButtonExtensions
         return builder.WithBinding(PropertyMetadata.ToggleSplitButton_IsChecked, Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ToggleSplitButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToggleSplitButton.IsCheckedProperty
 
     /// <summary>
@@ -302,7 +296,6 @@ public static partial class ToggleSplitButtonExtensions
     {
         return obj.GetObservable(Avalonia.Controls.ToggleSplitButton.IsCheckedChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -345,7 +338,6 @@ public static partial class ToggleSplitButtonExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.ToggleSplitButton.IsCheckedChanged
 
@@ -380,7 +372,6 @@ public static partial class ToggleSplitButtonExtensions
                 h => obj.IsCheckedChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -402,5 +393,4 @@ public static partial class ToggleSplitButtonExtensions
         }));
     }
 
-#endif
 }

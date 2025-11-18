@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Button"/>.
 /// </summary>
 public static partial class ButtonElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.ClickModeProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.ClickModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.CommandProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.CommandProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.HotKeyProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.HotKeyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.CommandParameterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.IsDefaultProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.IsCancelProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.IsCancelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.IsPressedProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.IsPressedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.FlyoutProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class ButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Button.FlyoutProperty);
     }
 
-#endif
 }

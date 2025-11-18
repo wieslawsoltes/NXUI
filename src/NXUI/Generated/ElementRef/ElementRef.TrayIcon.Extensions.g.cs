@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TrayIcon"/>.
 /// </summary>
 public static partial class TrayIconElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TrayIconElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TrayIcon.CommandProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TrayIconElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TrayIcon.CommandParameterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TrayIconElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TrayIcon.IconsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TrayIconElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TrayIcon.MenuProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TrayIcon.IconProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TrayIconElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TrayIcon.IconProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TrayIconElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TrayIcon.ToolTipTextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/> value.
@@ -88,5 +73,4 @@ public static partial class TrayIconElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TrayIcon.IsVisibleProperty);
     }
 
-#endif
 }

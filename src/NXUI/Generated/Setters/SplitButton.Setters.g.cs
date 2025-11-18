@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.SplitButton"/> class style setters extension methods.
 /// </summary>
 public static partial class SplitButtonSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.CommandProperty"/>.
@@ -20,7 +17,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonCommand(this ElementBuilder<Style> builder, System.Windows.Input.ICommand value)
+    public static StyleBuilder SetSplitButtonCommand(this StyleBuilder builder, System.Windows.Input.ICommand value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonCommand(this ElementBuilder<KeyFrame> builder, System.Windows.Input.ICommand value)
+    public static KeyFrameBuilder SetSplitButtonCommand(this KeyFrameBuilder builder, System.Windows.Input.ICommand value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitButton.CommandProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.CommandProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonCommand(this ElementBuilder<Style> builder, IObservable<System.Windows.Input.ICommand> observable)
+    public static StyleBuilder SetSplitButtonCommand(this StyleBuilder builder, IObservable<System.Windows.Input.ICommand> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonCommand(this ElementBuilder<KeyFrame> builder, IObservable<System.Windows.Input.ICommand> observable)
+    public static KeyFrameBuilder SetSplitButtonCommand(this KeyFrameBuilder builder, IObservable<System.Windows.Input.ICommand> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.CommandProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.CommandProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonCommand(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonCommand(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonCommand(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonCommand(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.CommandProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class SplitButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/>.
@@ -185,7 +176,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonCommandParameter(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetSplitButtonCommandParameter(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonCommandParameter(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetSplitButtonCommandParameter(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitButton.CommandParameterProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandParameterProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonCommandParameter(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetSplitButtonCommandParameter(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonCommandParameter(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetSplitButtonCommandParameter(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.CommandParameterProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonCommandParameter(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonCommandParameter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonCommandParameter(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class SplitButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/>.
@@ -350,7 +335,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonFlyout(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static StyleBuilder SetSplitButtonFlyout(this StyleBuilder builder, Avalonia.Controls.Primitives.FlyoutBase value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonFlyout(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static KeyFrameBuilder SetSplitButtonFlyout(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.FlyoutBase value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitButton.FlyoutProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.FlyoutProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonFlyout(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
+    public static StyleBuilder SetSplitButtonFlyout(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonFlyout(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
+    public static KeyFrameBuilder SetSplitButtonFlyout(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.FlyoutProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonFlyout(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonFlyout(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonFlyout(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonFlyout(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class SplitButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/>.
@@ -515,7 +494,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonHotKey(this ElementBuilder<Style> builder, Avalonia.Input.KeyGesture value)
+    public static StyleBuilder SetSplitButtonHotKey(this StyleBuilder builder, Avalonia.Input.KeyGesture value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonHotKey(this ElementBuilder<KeyFrame> builder, Avalonia.Input.KeyGesture value)
+    public static KeyFrameBuilder SetSplitButtonHotKey(this KeyFrameBuilder builder, Avalonia.Input.KeyGesture value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitButton.HotKeyProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.HotKeyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonHotKey(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.KeyGesture> observable)
+    public static StyleBuilder SetSplitButtonHotKey(this StyleBuilder builder, IObservable<Avalonia.Input.KeyGesture> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonHotKey(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.KeyGesture> observable)
+    public static KeyFrameBuilder SetSplitButtonHotKey(this KeyFrameBuilder builder, IObservable<Avalonia.Input.KeyGesture> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class SplitButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitButton.HotKeyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitButtonHotKey(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitButtonHotKey(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class SplitButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitButtonHotKey(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitButtonHotKey(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class SplitButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/>.
     /// </summary>

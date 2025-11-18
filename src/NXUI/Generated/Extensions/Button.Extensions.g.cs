@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Button"/> class property extension methods.
 /// </summary>
 public static partial class ButtonExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ButtonExtensions
         return builder.WithBinding(PropertyMetadata.Button_ClickMode, Avalonia.Controls.Button.ClickModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Button.ClickModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Button.ClickModeProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class ButtonExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class ButtonExtensions
         return builder.WithValue(PropertyMetadata.Button_ClickMode, Avalonia.Controls.Button.ClickModeProperty, Avalonia.Controls.ClickMode.Release);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> property value to <see cref="Avalonia.Controls.ClickMode.Release"/>.
@@ -278,7 +270,6 @@ public static partial class ButtonExtensions
         obj[Avalonia.Controls.Button.ClickModeProperty] = Avalonia.Controls.ClickMode.Release;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class ButtonExtensions
         return builder.WithValue(PropertyMetadata.Button_ClickMode, Avalonia.Controls.Button.ClickModeProperty, Avalonia.Controls.ClickMode.Press);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.ClickModeProperty"/> property value to <see cref="Avalonia.Controls.ClickMode.Press"/>.
@@ -304,7 +294,6 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.CommandProperty"/> literal value for hot reload builds.
@@ -351,8 +340,6 @@ public static partial class ButtonExtensions
         return builder.WithBinding(PropertyMetadata.Button_Command, Avalonia.Controls.Button.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.CommandProperty"/> value on a referenced control.
@@ -399,7 +386,6 @@ public static partial class ButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Button.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Button.CommandProperty
 
     /// <summary>
@@ -546,7 +532,6 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.HotKeyProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class ButtonExtensions
         return builder.WithBinding(PropertyMetadata.Button_HotKey, Avalonia.Controls.Button.HotKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.HotKeyProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class ButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Button.HotKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Button.HotKeyProperty
 
     /// <summary>
@@ -788,7 +770,6 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> literal value for hot reload builds.
@@ -835,8 +816,6 @@ public static partial class ButtonExtensions
         return builder.WithBinding(PropertyMetadata.Button_CommandParameter, Avalonia.Controls.Button.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> value on a referenced control.
@@ -883,7 +862,6 @@ public static partial class ButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Button.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Button.CommandParameterProperty
 
     /// <summary>
@@ -1030,7 +1008,6 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> literal value for hot reload builds.
@@ -1077,8 +1054,6 @@ public static partial class ButtonExtensions
         return builder.WithBinding(PropertyMetadata.Button_IsDefault, Avalonia.Controls.Button.IsDefaultProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> value on a referenced control.
@@ -1125,7 +1100,6 @@ public static partial class ButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Button.IsDefaultProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Button.IsDefaultProperty
 
     /// <summary>
@@ -1272,7 +1246,6 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.IsCancelProperty"/> literal value for hot reload builds.
@@ -1319,8 +1292,6 @@ public static partial class ButtonExtensions
         return builder.WithBinding(PropertyMetadata.Button_IsCancel, Avalonia.Controls.Button.IsCancelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.IsCancelProperty"/> value on a referenced control.
@@ -1367,7 +1338,6 @@ public static partial class ButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Button.IsCancelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Button.IsCancelProperty
 
     /// <summary>
@@ -1604,7 +1574,6 @@ public static partial class ButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Button.FlyoutProperty"/> literal value for hot reload builds.
@@ -1651,8 +1620,6 @@ public static partial class ButtonExtensions
         return builder.WithBinding(PropertyMetadata.Button_Flyout, Avalonia.Controls.Button.FlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Button.FlyoutProperty"/> value on a referenced control.
@@ -1699,7 +1666,6 @@ public static partial class ButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Button.FlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Button.FlyoutProperty
 
     /// <summary>
@@ -1894,7 +1860,6 @@ public static partial class ButtonExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Button.ClickEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1937,7 +1902,6 @@ public static partial class ButtonExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Button.Click
 
@@ -1972,7 +1936,6 @@ public static partial class ButtonExtensions
                 h => obj.Click -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1994,5 +1957,4 @@ public static partial class ButtonExtensions
         }));
     }
 
-#endif
 }

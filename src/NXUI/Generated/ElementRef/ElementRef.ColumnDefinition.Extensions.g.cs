@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ColumnDefinition"/>.
 /// </summary>
 public static partial class ColumnDefinitionElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ColumnDefinitionElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColumnDefinition.MaxWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ColumnDefinitionElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColumnDefinition.MinWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class ColumnDefinitionElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColumnDefinition.WidthProperty);
     }
 
-#endif
 }

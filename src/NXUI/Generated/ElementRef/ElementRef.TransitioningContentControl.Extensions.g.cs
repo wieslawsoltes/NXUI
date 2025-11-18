@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TransitioningContentControl"/>.
 /// </summary>
 public static partial class TransitioningContentControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TransitioningContentControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class TransitioningContentControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty);
     }
 
-#endif
 }

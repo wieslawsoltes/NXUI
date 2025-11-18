@@ -2,11 +2,9 @@ namespace NXUI.HotReload;
 
 using System;
 using System.Diagnostics;
-#if NXUI_HOTRELOAD
 using System.Text;
 using NXUI.HotReload.Diffing;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// Centralized diagnostics helper gated behind the NXUI_HOTRELOAD_DIAGNOSTICS environment switch.
@@ -16,31 +14,21 @@ internal static class HotReloadDiagnostics
     private const string Category = "NXUI.HotReload";
     private const string DiagnosticsEnvVariable = "NXUI_HOTRELOAD_DIAGNOSTICS";
     private const string SnapshotEnvVariable = "NXUI_HOTRELOAD_SNAPSHOT";
-#if NXUI_HOTRELOAD
     private static readonly bool s_enabled = IsFlagEnabled(DiagnosticsEnvVariable);
     private static readonly bool s_emitSnapshots = IsFlagEnabled(SnapshotEnvVariable);
-#else
-    private const bool s_enabled = false;
-    private const bool s_emitSnapshots = false;
-#endif
 
     internal static bool IsEnabled => s_enabled;
 
     public static void Trace(string message)
     {
-#if NXUI_HOTRELOAD
         if (!s_enabled)
         {
             return;
         }
 
         WriteDebug(message);
-#else
-        _ = message;
-#endif
     }
 
-#if NXUI_HOTRELOAD
     internal static void TracePatchStart(ElementNode previous, ElementNode next)
     {
         if (!s_enabled)
@@ -233,5 +221,4 @@ internal static class HotReloadDiagnostics
             || value.Equals("yes", StringComparison.OrdinalIgnoreCase)
             || value.Equals("on", StringComparison.OrdinalIgnoreCase);
     }
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RelativePanel"/> class style setters extension methods.
 /// </summary>
 public static partial class RelativePanelSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
@@ -20,7 +17,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAbove(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelAbove(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAbove(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelAbove(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AboveProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAbove(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelAbove(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAbove(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelAbove(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AboveProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAbove(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAbove(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAbove(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAbove(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
@@ -185,7 +176,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignBottomWithPanel(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetRelativePanelAlignBottomWithPanel(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignBottomWithPanel(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetRelativePanelAlignBottomWithPanel(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignBottomWithPanel(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetRelativePanelAlignBottomWithPanel(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignBottomWithPanel(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignBottomWithPanel(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignBottomWithPanel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignBottomWithPanel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignBottomWithPanel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignBottomWithPanel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
@@ -350,7 +335,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignBottomWith(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelAlignBottomWith(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignBottomWith(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelAlignBottomWith(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignBottomWithProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignBottomWith(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelAlignBottomWith(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignBottomWith(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignBottomWith(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignBottomWith(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignBottomWith(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignBottomWith(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignBottomWith(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
@@ -515,7 +494,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignHorizontalCenterWithPanel(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetRelativePanelAlignHorizontalCenterWithPanel(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignHorizontalCenterWithPanel(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignHorizontalCenterWithPanel(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetRelativePanelAlignHorizontalCenterWithPanel(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignHorizontalCenterWithPanel(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignHorizontalCenterWithPanel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignHorizontalCenterWithPanel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignHorizontalCenterWithPanel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignHorizontalCenterWithPanel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
@@ -680,7 +653,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignLeftWithPanel(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetRelativePanelAlignLeftWithPanel(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignLeftWithPanel(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetRelativePanelAlignLeftWithPanel(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignLeftWithPanel(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetRelativePanelAlignLeftWithPanel(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignLeftWithPanel(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignLeftWithPanel(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignLeftWithPanel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignLeftWithPanel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignLeftWithPanel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignLeftWithPanel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
@@ -845,7 +812,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignLeftWith(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelAlignLeftWith(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignLeftWith(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelAlignLeftWith(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignLeftWithProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignLeftWith(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelAlignLeftWith(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignLeftWith(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignLeftWith(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignLeftWith(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignLeftWith(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignLeftWith(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignLeftWith(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignRightWithPanel(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetRelativePanelAlignRightWithPanel(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignRightWithPanel(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetRelativePanelAlignRightWithPanel(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignRightWithPanel(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetRelativePanelAlignRightWithPanel(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignRightWithPanel(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignRightWithPanel(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignRightWithPanel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignRightWithPanel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignRightWithPanel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignRightWithPanel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignRightWith(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelAlignRightWith(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignRightWith(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelAlignRightWith(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignRightWithProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignRightWith(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelAlignRightWith(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignRightWith(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignRightWith(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignRightWithProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignRightWith(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignRightWith(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignRightWith(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignRightWith(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignTopWithPanel(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetRelativePanelAlignTopWithPanel(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignTopWithPanel(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetRelativePanelAlignTopWithPanel(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignTopWithPanel(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetRelativePanelAlignTopWithPanel(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignTopWithPanel(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignTopWithPanel(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignTopWithPanel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignTopWithPanel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignTopWithPanel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignTopWithPanel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignTopWith(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelAlignTopWith(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignTopWith(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelAlignTopWith(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignTopWithProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignTopWith(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelAlignTopWith(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignTopWith(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignTopWith(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignTopWithProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignTopWith(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignTopWith(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignTopWith(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignTopWith(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignVerticalCenterWithPanel(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetRelativePanelAlignVerticalCenterWithPanel(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignVerticalCenterWithPanel(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignVerticalCenterWithPanel(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetRelativePanelAlignVerticalCenterWithPanel(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignVerticalCenterWithPanel(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignVerticalCenterWithPanel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignVerticalCenterWithPanel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignVerticalCenterWithPanel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignVerticalCenterWithPanel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignVerticalCenterWith(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelAlignVerticalCenterWith(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignVerticalCenterWith(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelAlignVerticalCenterWith(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignVerticalCenterWith(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelAlignVerticalCenterWith(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignVerticalCenterWith(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignVerticalCenterWith(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignVerticalCenterWith(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignVerticalCenterWith(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignVerticalCenterWith(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignVerticalCenterWith(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelBelow(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelBelow(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelBelow(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelBelow(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.BelowProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelBelow(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelBelow(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelBelow(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelBelow(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.BelowProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelBelow(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelBelow(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelBelow(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelBelow(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/>.
     /// </summary>
@@ -2157,7 +2077,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
@@ -2165,7 +2084,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelLeftOf(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelLeftOf(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -2179,7 +2098,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelLeftOf(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelLeftOf(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2187,7 +2106,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.LeftOfProperty
 
     /// <summary>
@@ -2213,7 +2131,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> using an observable source.
@@ -2221,7 +2138,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelLeftOf(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelLeftOf(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2235,7 +2152,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelLeftOf(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelLeftOf(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2243,7 +2160,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
     /// </summary>
@@ -2267,7 +2183,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.LeftOfProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> using a binding.
@@ -2275,7 +2190,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelLeftOf(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelLeftOf(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2289,7 +2204,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelLeftOf(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelLeftOf(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2297,7 +2212,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/>.
     /// </summary>
@@ -2322,7 +2236,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
@@ -2330,7 +2243,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelRightOf(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelRightOf(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -2344,7 +2257,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelRightOf(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelRightOf(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2352,7 +2265,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.RightOfProperty
 
     /// <summary>
@@ -2378,7 +2290,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> using an observable source.
@@ -2386,7 +2297,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelRightOf(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelRightOf(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2400,7 +2311,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelRightOf(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelRightOf(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2408,7 +2319,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
     /// </summary>
@@ -2432,7 +2342,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.RightOfProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> using a binding.
@@ -2440,7 +2349,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelRightOf(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelRightOf(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2454,7 +2363,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelRightOf(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelRightOf(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2462,7 +2371,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/>.
     /// </summary>
@@ -2487,7 +2395,6 @@ public static partial class RelativePanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/>.
@@ -2495,7 +2402,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignHorizontalCenterWith(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetRelativePanelAlignHorizontalCenterWith(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -2509,7 +2416,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignHorizontalCenterWith(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetRelativePanelAlignHorizontalCenterWith(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2517,7 +2424,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty
 
     /// <summary>
@@ -2543,7 +2449,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> using an observable source.
@@ -2551,7 +2456,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignHorizontalCenterWith(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetRelativePanelAlignHorizontalCenterWith(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2565,7 +2470,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignHorizontalCenterWith(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetRelativePanelAlignHorizontalCenterWith(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2573,7 +2478,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/>.
     /// </summary>
@@ -2597,7 +2501,6 @@ public static partial class RelativePanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> using a binding.
@@ -2605,7 +2508,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRelativePanelAlignHorizontalCenterWith(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRelativePanelAlignHorizontalCenterWith(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2619,7 +2522,7 @@ public static partial class RelativePanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRelativePanelAlignHorizontalCenterWith(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRelativePanelAlignHorizontalCenterWith(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2627,7 +2530,6 @@ public static partial class RelativePanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Border"/> class style setters extension methods.
 /// </summary>
 public static partial class BorderSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
@@ -20,7 +17,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBackground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetBorderBackground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetBorderBackground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Border.BackgroundProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBackground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetBorderBackground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBackground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetBorderBackground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBackground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBorderBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBorderBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BackgroundProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class BorderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
@@ -185,7 +176,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBackgroundSizing(this ElementBuilder<Style> builder, Avalonia.Media.BackgroundSizing value)
+    public static StyleBuilder SetBorderBackgroundSizing(this StyleBuilder builder, Avalonia.Media.BackgroundSizing value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBackgroundSizing(this ElementBuilder<KeyFrame> builder, Avalonia.Media.BackgroundSizing value)
+    public static KeyFrameBuilder SetBorderBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Media.BackgroundSizing value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Border.BackgroundSizingProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundSizingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBackgroundSizing(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    public static StyleBuilder SetBorderBackgroundSizing(this StyleBuilder builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBackgroundSizing(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    public static KeyFrameBuilder SetBorderBackgroundSizing(this KeyFrameBuilder builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BackgroundSizingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBackgroundSizing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBorderBackgroundSizing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBackgroundSizing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBorderBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class BorderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
@@ -350,7 +335,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBorderBrush(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetBorderBorderBrush(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBorderBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetBorderBorderBrush(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Border.BorderBrushProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBorderBrush(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetBorderBorderBrush(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBorderBrush(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetBorderBorderBrush(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBorderBrush(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBorderBorderBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBorderBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBorderBorderBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderBrushProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class BorderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
@@ -515,7 +494,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBorderThickness(this ElementBuilder<Style> builder, Avalonia.Thickness value)
+    public static StyleBuilder SetBorderBorderThickness(this StyleBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBorderThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Thickness value)
+    public static KeyFrameBuilder SetBorderBorderThickness(this KeyFrameBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Border.BorderThicknessProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBorderThickness(this ElementBuilder<Style> builder, IObservable<Avalonia.Thickness> observable)
+    public static StyleBuilder SetBorderBorderThickness(this StyleBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBorderThickness(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Thickness> observable)
+    public static KeyFrameBuilder SetBorderBorderThickness(this KeyFrameBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBorderThickness(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBorderBorderThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBorderThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBorderBorderThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class BorderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
@@ -680,7 +653,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderCornerRadius(this ElementBuilder<Style> builder, Avalonia.CornerRadius value)
+    public static StyleBuilder SetBorderCornerRadius(this StyleBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.CornerRadius value)
+    public static KeyFrameBuilder SetBorderCornerRadius(this KeyFrameBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Border.CornerRadiusProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderCornerRadius(this ElementBuilder<Style> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static StyleBuilder SetBorderCornerRadius(this StyleBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderCornerRadius(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static KeyFrameBuilder SetBorderCornerRadius(this KeyFrameBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderCornerRadius(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBorderCornerRadius(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBorderCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class BorderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
@@ -845,7 +812,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBoxShadow(this ElementBuilder<Style> builder, Avalonia.Media.BoxShadows value)
+    public static StyleBuilder SetBorderBoxShadow(this StyleBuilder builder, Avalonia.Media.BoxShadows value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBoxShadow(this ElementBuilder<KeyFrame> builder, Avalonia.Media.BoxShadows value)
+    public static KeyFrameBuilder SetBorderBoxShadow(this KeyFrameBuilder builder, Avalonia.Media.BoxShadows value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Border.BoxShadowProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBoxShadow(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.BoxShadows> observable)
+    public static StyleBuilder SetBorderBoxShadow(this StyleBuilder builder, IObservable<Avalonia.Media.BoxShadows> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBoxShadow(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.BoxShadows> observable)
+    public static KeyFrameBuilder SetBorderBoxShadow(this KeyFrameBuilder builder, IObservable<Avalonia.Media.BoxShadows> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class BorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Border.BoxShadowProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class BorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBorderBoxShadow(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBorderBoxShadow(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class BorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBorderBoxShadow(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBorderBoxShadow(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class BorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Border.BoxShadowProperty"/>.
     /// </summary>

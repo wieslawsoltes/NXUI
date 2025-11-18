@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TopLevel"/> class style setters extension methods.
 /// </summary>
 public static partial class TopLevelSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelPointerOverElement(this ElementBuilder<Style> builder, Avalonia.Input.IInputElement value)
+    public static StyleBuilder SetTopLevelPointerOverElement(this StyleBuilder builder, Avalonia.Input.IInputElement value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelPointerOverElement(this ElementBuilder<KeyFrame> builder, Avalonia.Input.IInputElement value)
+    public static KeyFrameBuilder SetTopLevelPointerOverElement(this KeyFrameBuilder builder, Avalonia.Input.IInputElement value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TopLevel.PointerOverElementProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelPointerOverElement(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.IInputElement> observable)
+    public static StyleBuilder SetTopLevelPointerOverElement(this StyleBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelPointerOverElement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.IInputElement> observable)
+    public static KeyFrameBuilder SetTopLevelPointerOverElement(this KeyFrameBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelPointerOverElement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelPointerOverElement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelPointerOverElement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelPointerOverElement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TopLevelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelTransparencyLevelHint(this ElementBuilder<Style> builder, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value)
+    public static StyleBuilder SetTopLevelTransparencyLevelHint(this StyleBuilder builder, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelTransparencyLevelHint(this ElementBuilder<KeyFrame> builder, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value)
+    public static KeyFrameBuilder SetTopLevelTransparencyLevelHint(this KeyFrameBuilder builder, System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TopLevel.TransparencyLevelHintProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelTransparencyLevelHint(this ElementBuilder<Style> builder, IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable)
+    public static StyleBuilder SetTopLevelTransparencyLevelHint(this StyleBuilder builder, IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelTransparencyLevelHint(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable)
+    public static KeyFrameBuilder SetTopLevelTransparencyLevelHint(this KeyFrameBuilder builder, IObservable<System.Collections.Generic.IReadOnlyList<Avalonia.Controls.WindowTransparencyLevel>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelTransparencyLevelHint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelTransparencyLevelHint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelTransparencyLevelHint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelTransparencyLevelHint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TopLevelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelTransparencyBackgroundFallback(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTopLevelTransparencyBackgroundFallback(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelTransparencyBackgroundFallback(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTopLevelTransparencyBackgroundFallback(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelTransparencyBackgroundFallback(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTopLevelTransparencyBackgroundFallback(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelTransparencyBackgroundFallback(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTopLevelTransparencyBackgroundFallback(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelTransparencyBackgroundFallback(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelTransparencyBackgroundFallback(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelTransparencyBackgroundFallback(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelTransparencyBackgroundFallback(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TopLevelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelSystemBarColor(this ElementBuilder<Style> builder, Avalonia.Media.SolidColorBrush value)
+    public static StyleBuilder SetTopLevelSystemBarColor(this StyleBuilder builder, Avalonia.Media.SolidColorBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelSystemBarColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.SolidColorBrush value)
+    public static KeyFrameBuilder SetTopLevelSystemBarColor(this KeyFrameBuilder builder, Avalonia.Media.SolidColorBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TopLevel.SystemBarColorProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.SystemBarColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelSystemBarColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.SolidColorBrush> observable)
+    public static StyleBuilder SetTopLevelSystemBarColor(this StyleBuilder builder, IObservable<Avalonia.Media.SolidColorBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelSystemBarColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.SolidColorBrush> observable)
+    public static KeyFrameBuilder SetTopLevelSystemBarColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.SolidColorBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.SystemBarColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelSystemBarColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelSystemBarColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelSystemBarColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelSystemBarColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TopLevelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelAutoSafeAreaPadding(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTopLevelAutoSafeAreaPadding(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelAutoSafeAreaPadding(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTopLevelAutoSafeAreaPadding(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelAutoSafeAreaPadding(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTopLevelAutoSafeAreaPadding(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelAutoSafeAreaPadding(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTopLevelAutoSafeAreaPadding(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TopLevelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTopLevelAutoSafeAreaPadding(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTopLevelAutoSafeAreaPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TopLevelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTopLevelAutoSafeAreaPadding(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTopLevelAutoSafeAreaPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TopLevelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/>.
     /// </summary>

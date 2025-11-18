@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.PolyLineSegment"/>.
 /// </summary>
 public static partial class PolyLineSegmentElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class PolyLineSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.PolyLineSegment.PointsProperty);
     }
 
-#endif
 }

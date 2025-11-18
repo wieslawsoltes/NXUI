@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.TextDecoration"/> class style setters extension methods.
 /// </summary>
 public static partial class TextDecorationSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationLocation(this ElementBuilder<Style> builder, Avalonia.Media.TextDecorationLocation value)
+    public static StyleBuilder SetTextDecorationLocation(this StyleBuilder builder, Avalonia.Media.TextDecorationLocation value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationLocation(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextDecorationLocation value)
+    public static KeyFrameBuilder SetTextDecorationLocation(this KeyFrameBuilder builder, Avalonia.Media.TextDecorationLocation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.LocationProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationLocation(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextDecorationLocation> observable)
+    public static StyleBuilder SetTextDecorationLocation(this StyleBuilder builder, IObservable<Avalonia.Media.TextDecorationLocation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationLocation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextDecorationLocation> observable)
+    public static KeyFrameBuilder SetTextDecorationLocation(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextDecorationLocation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.LocationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationLocation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationLocation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationLocation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationLocation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.LocationProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStroke(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTextDecorationStroke(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStroke(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTextDecorationStroke(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStroke(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTextDecorationStroke(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStroke(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTextDecorationStroke(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStroke(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStroke(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStroke(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStroke(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeThicknessUnit(this ElementBuilder<Style> builder, Avalonia.Media.TextDecorationUnit value)
+    public static StyleBuilder SetTextDecorationStrokeThicknessUnit(this StyleBuilder builder, Avalonia.Media.TextDecorationUnit value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeThicknessUnit(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextDecorationUnit value)
+    public static KeyFrameBuilder SetTextDecorationStrokeThicknessUnit(this KeyFrameBuilder builder, Avalonia.Media.TextDecorationUnit value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeThicknessUnit(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
+    public static StyleBuilder SetTextDecorationStrokeThicknessUnit(this StyleBuilder builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeThicknessUnit(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
+    public static KeyFrameBuilder SetTextDecorationStrokeThicknessUnit(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeThicknessUnit(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeThicknessUnit(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeThicknessUnit(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeThicknessUnit(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeDashArray(this ElementBuilder<Style> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static StyleBuilder SetTextDecorationStrokeDashArray(this StyleBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeDashArray(this ElementBuilder<KeyFrame> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashArray(this KeyFrameBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeDashArrayProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeDashArray(this ElementBuilder<Style> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static StyleBuilder SetTextDecorationStrokeDashArray(this StyleBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeDashArray(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashArray(this KeyFrameBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeDashArray(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeDashArray(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeDashArray(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashArray(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeDashOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextDecorationStrokeDashOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeDashOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeDashOffsetProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeDashOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextDecorationStrokeDashOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeDashOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeDashOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeDashOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeDashOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeDashOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeThickness(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextDecorationStrokeThickness(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeThickness(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextDecorationStrokeThickness(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeThicknessProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeThickness(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextDecorationStrokeThickness(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeThickness(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextDecorationStrokeThickness(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeThickness(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeLineCap(this ElementBuilder<Style> builder, Avalonia.Media.PenLineCap value)
+    public static StyleBuilder SetTextDecorationStrokeLineCap(this StyleBuilder builder, Avalonia.Media.PenLineCap value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeLineCap(this ElementBuilder<KeyFrame> builder, Avalonia.Media.PenLineCap value)
+    public static KeyFrameBuilder SetTextDecorationStrokeLineCap(this KeyFrameBuilder builder, Avalonia.Media.PenLineCap value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeLineCapProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeLineCap(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.PenLineCap> observable)
+    public static StyleBuilder SetTextDecorationStrokeLineCap(this StyleBuilder builder, IObservable<Avalonia.Media.PenLineCap> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeLineCap(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.PenLineCap> observable)
+    public static KeyFrameBuilder SetTextDecorationStrokeLineCap(this KeyFrameBuilder builder, IObservable<Avalonia.Media.PenLineCap> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeLineCapProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeLineCap(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeLineCap(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeLineCap(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeLineCap(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextDecorationStrokeOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeOffsetProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextDecorationStrokeOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class TextDecorationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeOffsetUnit(this ElementBuilder<Style> builder, Avalonia.Media.TextDecorationUnit value)
+    public static StyleBuilder SetTextDecorationStrokeOffsetUnit(this StyleBuilder builder, Avalonia.Media.TextDecorationUnit value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeOffsetUnit(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextDecorationUnit value)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffsetUnit(this KeyFrameBuilder builder, Avalonia.Media.TextDecorationUnit value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeOffsetUnit(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
+    public static StyleBuilder SetTextDecorationStrokeOffsetUnit(this StyleBuilder builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeOffsetUnit(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffsetUnit(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextDecorationUnit> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class TextDecorationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextDecorationStrokeOffsetUnit(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextDecorationStrokeOffsetUnit(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class TextDecorationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextDecorationStrokeOffsetUnit(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextDecorationStrokeOffsetUnit(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class TextDecorationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/>.
     /// </summary>

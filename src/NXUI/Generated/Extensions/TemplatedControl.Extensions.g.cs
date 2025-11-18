@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class property extension methods.
 /// </summary>
 public static partial class TemplatedControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_Background, Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_BackgroundSizing, Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_BackgroundSizing, Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.InnerBorderEdge);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.InnerBorderEdge"/>.
@@ -520,7 +508,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.InnerBorderEdge;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_BackgroundSizing, Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.OuterBorderEdge);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.OuterBorderEdge"/>.
@@ -545,7 +531,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.OuterBorderEdge;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_BackgroundSizing, Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.CenterBorder);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.CenterBorder"/>.
@@ -571,7 +555,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> literal value for hot reload builds.
@@ -618,8 +601,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_BorderBrush, Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> value on a referenced control.
@@ -666,7 +647,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty
 
     /// <summary>
@@ -813,7 +793,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> literal value for hot reload builds.
@@ -860,8 +839,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_BorderThickness, Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> value on a referenced control.
@@ -908,7 +885,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty
 
     /// <summary>
@@ -1054,8 +1030,6 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -1079,8 +1053,6 @@ public static partial class TemplatedControlExtensions
     {
         return builder.BorderThickness(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>
@@ -1109,7 +1081,6 @@ public static partial class TemplatedControlExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> literal value for hot reload builds.
@@ -1156,8 +1127,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_CornerRadius, Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> value on a referenced control.
@@ -1204,7 +1173,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty
 
     /// <summary>
@@ -1350,8 +1318,6 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> literal value using a uniform radius for hot reload builds.
     /// </summary>
@@ -1375,8 +1341,6 @@ public static partial class TemplatedControlExtensions
     {
         return builder.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
     }
-
-#endif
 
 
     /// <summary>
@@ -1405,7 +1369,6 @@ public static partial class TemplatedControlExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> literal value for hot reload builds.
@@ -1452,8 +1415,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_FontFamily, Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> value on a referenced control.
@@ -1500,7 +1461,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty
 
     /// <summary>
@@ -1647,7 +1607,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> literal value for hot reload builds.
@@ -1694,8 +1653,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_FontFeatures, Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> value on a referenced control.
@@ -1742,7 +1699,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty
 
     /// <summary>
@@ -1889,7 +1845,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> literal value for hot reload builds.
@@ -1936,8 +1891,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_FontSize, Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> value on a referenced control.
@@ -1984,7 +1937,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty
 
     /// <summary>
@@ -2131,7 +2083,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> literal value for hot reload builds.
@@ -2178,8 +2129,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_FontStyle, Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> value on a referenced control.
@@ -2226,7 +2175,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty
 
     /// <summary>
@@ -2372,7 +2320,6 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> enum value for hot reload builds.
@@ -2384,7 +2331,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStyle, Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, Avalonia.Media.FontStyle.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
@@ -2397,7 +2343,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> enum value for hot reload builds.
@@ -2409,7 +2354,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStyle, Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, Avalonia.Media.FontStyle.Italic);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
@@ -2422,7 +2366,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> enum value for hot reload builds.
@@ -2434,7 +2377,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStyle, Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, Avalonia.Media.FontStyle.Oblique);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Oblique"/>.
@@ -2448,7 +2390,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> literal value for hot reload builds.
@@ -2495,8 +2436,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> value on a referenced control.
@@ -2543,7 +2482,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty
 
     /// <summary>
@@ -2689,7 +2627,6 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2701,7 +2638,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Thin);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
@@ -2714,7 +2650,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2726,7 +2661,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.ExtraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraLight"/>.
@@ -2739,7 +2673,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2751,7 +2684,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.UltraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
@@ -2764,7 +2696,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2776,7 +2707,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Light);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Light"/>.
@@ -2789,7 +2719,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2801,7 +2730,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.SemiLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
@@ -2814,7 +2742,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2826,7 +2753,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Normal"/>.
@@ -2839,7 +2765,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2851,7 +2776,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Regular);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
@@ -2864,7 +2788,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2876,7 +2799,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Medium);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Medium"/>.
@@ -2889,7 +2811,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2901,7 +2822,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.DemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
@@ -2914,7 +2834,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2926,7 +2845,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.SemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiBold"/>.
@@ -2939,7 +2857,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2951,7 +2868,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Bold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
@@ -2964,7 +2880,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -2976,7 +2891,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBold"/>.
@@ -2989,7 +2903,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -3001,7 +2914,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.UltraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
@@ -3014,7 +2926,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -3026,7 +2937,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Black);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Black"/>.
@@ -3039,7 +2949,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -3051,7 +2960,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Heavy);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
@@ -3064,7 +2972,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -3076,7 +2983,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.Solid);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Solid"/>.
@@ -3089,7 +2995,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.Solid;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -3101,7 +3006,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
@@ -3114,7 +3018,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> enum value for hot reload builds.
@@ -3126,7 +3029,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontWeight, Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, Avalonia.Media.FontWeight.UltraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBlack"/>.
@@ -3140,7 +3042,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> literal value for hot reload builds.
@@ -3187,8 +3088,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> value on a referenced control.
@@ -3235,7 +3134,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty
 
     /// <summary>
@@ -3381,7 +3279,6 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3393,7 +3290,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.UltraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
@@ -3406,7 +3302,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3418,7 +3313,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.ExtraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraCondensed"/>.
@@ -3431,7 +3325,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3443,7 +3336,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.Condensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
@@ -3456,7 +3348,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3468,7 +3359,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.SemiCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiCondensed"/>.
@@ -3481,7 +3371,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3493,7 +3382,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
@@ -3506,7 +3394,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3518,7 +3405,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.SemiExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiExpanded"/>.
@@ -3531,7 +3417,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3543,7 +3428,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.Expanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
@@ -3556,7 +3440,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3568,7 +3451,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.ExtraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
@@ -3581,7 +3463,6 @@ public static partial class TemplatedControlExtensions
         obj[Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> enum value for hot reload builds.
@@ -3593,7 +3474,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithValue(PropertyMetadata.TemplatedControl_FontStretch, Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, Avalonia.Media.FontStretch.UltraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraExpanded"/>.
@@ -3607,7 +3487,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> literal value for hot reload builds.
@@ -3654,8 +3533,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_Foreground, Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> value on a referenced control.
@@ -3702,7 +3579,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty
 
     /// <summary>
@@ -3849,7 +3725,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> literal value for hot reload builds.
@@ -3896,8 +3771,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_Padding, Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> value on a referenced control.
@@ -3944,7 +3817,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty
 
     /// <summary>
@@ -4090,8 +3962,6 @@ public static partial class TemplatedControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -4115,8 +3985,6 @@ public static partial class TemplatedControlExtensions
     {
         return builder.Padding(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>
@@ -4145,7 +4013,6 @@ public static partial class TemplatedControlExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/> literal value for hot reload builds.
@@ -4192,8 +4059,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_Template, Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/> value on a referenced control.
@@ -4240,7 +4105,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty
 
     /// <summary>
@@ -4387,7 +4251,6 @@ public static partial class TemplatedControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/> literal value for hot reload builds.
@@ -4434,8 +4297,6 @@ public static partial class TemplatedControlExtensions
         return builder.WithBinding(PropertyMetadata.TemplatedControl_IsTemplateFocusTarget, Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/> value on a referenced control.
@@ -4482,7 +4343,6 @@ public static partial class TemplatedControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty
 
     /// <summary>
@@ -4677,7 +4537,6 @@ public static partial class TemplatedControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -4720,7 +4579,6 @@ public static partial class TemplatedControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.TemplatedControl.TemplateApplied
 
@@ -4755,7 +4613,6 @@ public static partial class TemplatedControlExtensions
                 h => obj.TemplateApplied -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -4777,5 +4634,4 @@ public static partial class TemplatedControlExtensions
         }));
     }
 
-#endif
 }

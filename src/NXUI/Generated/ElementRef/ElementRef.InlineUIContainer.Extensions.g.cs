@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Documents.InlineUIContainer"/>.
 /// </summary>
 public static partial class InlineUIContainerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class InlineUIContainerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty);
     }
 
-#endif
 }

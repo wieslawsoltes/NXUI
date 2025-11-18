@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ContentControl"/> class property extension methods.
 /// </summary>
 public static partial class ContentControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.ContentProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ContentControlExtensions
         return builder.WithBinding(PropertyMetadata.ContentControl_Content, Avalonia.Controls.ContentControl.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.ContentProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ContentControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ContentControl.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ContentControl.ContentProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ContentControlExtensions
         return builder.WithBinding(PropertyMetadata.ContentControl_ContentTemplate, Avalonia.Controls.ContentControl.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ContentControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ContentControl.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ContentControl.ContentTemplateProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ContentControlExtensions
         return builder.WithBinding(PropertyMetadata.ContentControl_HorizontalContentAlignment, Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ContentControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class ContentControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_HorizontalContentAlignment, Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -762,7 +746,6 @@ public static partial class ContentControlExtensions
         obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_HorizontalContentAlignment, Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -787,7 +769,6 @@ public static partial class ContentControlExtensions
         obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -799,7 +780,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_HorizontalContentAlignment, Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -812,7 +792,6 @@ public static partial class ContentControlExtensions
         obj[Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -824,7 +803,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_HorizontalContentAlignment, Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -838,7 +816,6 @@ public static partial class ContentControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -885,8 +862,6 @@ public static partial class ContentControlExtensions
         return builder.WithBinding(PropertyMetadata.ContentControl_VerticalContentAlignment, Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -933,7 +908,6 @@ public static partial class ContentControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -1079,7 +1053,6 @@ public static partial class ContentControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1091,7 +1064,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_VerticalContentAlignment, Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -1104,7 +1076,6 @@ public static partial class ContentControlExtensions
         obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1116,7 +1087,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_VerticalContentAlignment, Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -1129,7 +1099,6 @@ public static partial class ContentControlExtensions
         obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1141,7 +1110,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_VerticalContentAlignment, Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -1154,7 +1122,6 @@ public static partial class ContentControlExtensions
         obj[Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1166,7 +1133,6 @@ public static partial class ContentControlExtensions
         return builder.WithValue(PropertyMetadata.ContentControl_VerticalContentAlignment, Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.

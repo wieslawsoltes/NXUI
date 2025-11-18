@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TreeView"/> class style setters extension methods.
 /// </summary>
 public static partial class TreeViewSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewAutoScrollToSelectedItem(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTreeViewAutoScrollToSelectedItem(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewAutoScrollToSelectedItem(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTreeViewAutoScrollToSelectedItem(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewAutoScrollToSelectedItem(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTreeViewAutoScrollToSelectedItem(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewAutoScrollToSelectedItem(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTreeViewAutoScrollToSelectedItem(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewAutoScrollToSelectedItem(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeViewAutoScrollToSelectedItem(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewAutoScrollToSelectedItem(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeViewAutoScrollToSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TreeViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectedItem(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetTreeViewSelectedItem(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectedItem(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetTreeViewSelectedItem(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeView.SelectedItemProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectedItem(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetTreeViewSelectedItem(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectedItem(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetTreeViewSelectedItem(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectedItem(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeViewSelectedItem(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectedItem(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeViewSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TreeViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectedItems(this ElementBuilder<Style> builder, System.Collections.IList value)
+    public static StyleBuilder SetTreeViewSelectedItems(this StyleBuilder builder, System.Collections.IList value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectedItems(this ElementBuilder<KeyFrame> builder, System.Collections.IList value)
+    public static KeyFrameBuilder SetTreeViewSelectedItems(this KeyFrameBuilder builder, System.Collections.IList value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeView.SelectedItemsProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectedItems(this ElementBuilder<Style> builder, IObservable<System.Collections.IList> observable)
+    public static StyleBuilder SetTreeViewSelectedItems(this StyleBuilder builder, IObservable<System.Collections.IList> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectedItems(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.IList> observable)
+    public static KeyFrameBuilder SetTreeViewSelectedItems(this KeyFrameBuilder builder, IObservable<System.Collections.IList> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectedItemsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectedItems(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeViewSelectedItems(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectedItems(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeViewSelectedItems(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TreeViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectionMode(this ElementBuilder<Style> builder, Avalonia.Controls.SelectionMode value)
+    public static StyleBuilder SetTreeViewSelectionMode(this StyleBuilder builder, Avalonia.Controls.SelectionMode value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectionMode(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.SelectionMode value)
+    public static KeyFrameBuilder SetTreeViewSelectionMode(this KeyFrameBuilder builder, Avalonia.Controls.SelectionMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeView.SelectionModeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectionMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.SelectionMode> observable)
+    public static StyleBuilder SetTreeViewSelectionMode(this StyleBuilder builder, IObservable<Avalonia.Controls.SelectionMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectionMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.SelectionMode> observable)
+    public static KeyFrameBuilder SetTreeViewSelectionMode(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.SelectionMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TreeViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeView.SelectionModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeViewSelectionMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeViewSelectionMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TreeViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeViewSelectionMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeViewSelectionMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TreeViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/>.
     /// </summary>

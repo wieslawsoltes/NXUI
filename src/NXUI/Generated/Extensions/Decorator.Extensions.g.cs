@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Decorator"/> class property extension methods.
 /// </summary>
 public static partial class DecoratorExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Decorator.ChildProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DecoratorExtensions
         return builder.WithBinding(PropertyMetadata.Decorator_Child, Avalonia.Controls.Decorator.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Decorator.ChildProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DecoratorExtensions
         return elementRef.SetBinding(Avalonia.Controls.Decorator.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Decorator.ChildProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DecoratorExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Decorator.PaddingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DecoratorExtensions
         return builder.WithBinding(PropertyMetadata.Decorator_Padding, Avalonia.Controls.Decorator.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Decorator.PaddingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DecoratorExtensions
         return elementRef.SetBinding(Avalonia.Controls.Decorator.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Decorator.PaddingProperty
 
     /// <summary>
@@ -495,8 +485,6 @@ public static partial class DecoratorExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Decorator.PaddingProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -520,8 +508,6 @@ public static partial class DecoratorExtensions
     {
         return builder.Padding(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>

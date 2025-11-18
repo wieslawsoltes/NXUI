@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Window"/> class property extension methods.
 /// </summary>
 public static partial class WindowExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_SizeToContent, Avalonia.Controls.Window.SizeToContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.SizeToContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.SizeToContentProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class WindowExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_SizeToContent, Avalonia.Controls.Window.SizeToContentProperty, Avalonia.Controls.SizeToContent.Manual);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Manual"/>.
@@ -278,7 +270,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Manual;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_SizeToContent, Avalonia.Controls.Window.SizeToContentProperty, Avalonia.Controls.SizeToContent.Width);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Width"/>.
@@ -303,7 +293,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Width;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_SizeToContent, Avalonia.Controls.Window.SizeToContentProperty, Avalonia.Controls.SizeToContent.Height);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.Height"/>.
@@ -328,7 +316,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.SizeToContentProperty] = Avalonia.Controls.SizeToContent.Height;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_SizeToContent, Avalonia.Controls.Window.SizeToContentProperty, Avalonia.Controls.SizeToContent.WidthAndHeight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> property value to <see cref="Avalonia.Controls.SizeToContent.WidthAndHeight"/>.
@@ -354,7 +340,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/> literal value for hot reload builds.
@@ -401,8 +386,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_ExtendClientAreaToDecorationsHint, Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/> value on a referenced control.
@@ -449,7 +432,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty
 
     /// <summary>
@@ -596,7 +578,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty
 
     /// <summary>
@@ -837,7 +815,6 @@ public static partial class WindowExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
@@ -849,7 +826,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome"/>.
@@ -862,7 +838,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.NoChrome;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
@@ -874,7 +849,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome"/>.
@@ -887,7 +861,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.SystemChrome;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
@@ -899,7 +872,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.Default);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.Default"/>.
@@ -912,7 +884,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.Default;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
@@ -924,7 +895,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome"/>.
@@ -937,7 +907,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty] = Avalonia.Platform.ExtendClientAreaChromeHints.PreferSystemChrome;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> enum value for hot reload builds.
@@ -949,7 +918,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_ExtendClientAreaChromeHints, Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> property value to <see cref="Avalonia.Platform.ExtendClientAreaChromeHints.OSXThickTitleBar"/>.
@@ -963,7 +931,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> literal value for hot reload builds.
@@ -1010,8 +977,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_ExtendClientAreaTitleBarHeightHint, Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> value on a referenced control.
@@ -1058,7 +1023,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty
 
     /// <summary>
@@ -1475,7 +1439,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> literal value for hot reload builds.
@@ -1522,8 +1485,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> value on a referenced control.
@@ -1570,7 +1531,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.SystemDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.SystemDecorationsProperty
 
     /// <summary>
@@ -1716,7 +1676,6 @@ public static partial class WindowExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
@@ -1728,7 +1687,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, Avalonia.Controls.SystemDecorations.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.None"/>.
@@ -1741,7 +1699,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
@@ -1753,7 +1710,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, Avalonia.Controls.SystemDecorations.BorderOnly);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.BorderOnly"/>.
@@ -1766,7 +1722,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.SystemDecorationsProperty] = Avalonia.Controls.SystemDecorations.BorderOnly;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> enum value for hot reload builds.
@@ -1778,7 +1733,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_SystemDecorations, Avalonia.Controls.Window.SystemDecorationsProperty, Avalonia.Controls.SystemDecorations.Full);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> property value to <see cref="Avalonia.Controls.SystemDecorations.Full"/>.
@@ -1792,7 +1746,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> literal value for hot reload builds.
@@ -1839,8 +1792,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_ShowActivated, Avalonia.Controls.Window.ShowActivatedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> value on a referenced control.
@@ -1887,7 +1838,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.ShowActivatedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.ShowActivatedProperty
 
     /// <summary>
@@ -2034,7 +1984,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/> literal value for hot reload builds.
@@ -2081,8 +2030,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_ShowInTaskbar, Avalonia.Controls.Window.ShowInTaskbarProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/> value on a referenced control.
@@ -2129,7 +2076,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.ShowInTaskbarProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.ShowInTaskbarProperty
 
     /// <summary>
@@ -2276,7 +2222,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> literal value for hot reload builds.
@@ -2323,8 +2268,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_ClosingBehavior, Avalonia.Controls.Window.ClosingBehaviorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> value on a referenced control.
@@ -2371,7 +2314,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.ClosingBehaviorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.ClosingBehaviorProperty
 
     /// <summary>
@@ -2517,7 +2459,6 @@ public static partial class WindowExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> enum value for hot reload builds.
@@ -2529,7 +2470,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_ClosingBehavior, Avalonia.Controls.Window.ClosingBehaviorProperty, Avalonia.Controls.WindowClosingBehavior.OwnerAndChildWindows);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> property value to <see cref="Avalonia.Controls.WindowClosingBehavior.OwnerAndChildWindows"/>.
@@ -2542,7 +2482,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.ClosingBehaviorProperty] = Avalonia.Controls.WindowClosingBehavior.OwnerAndChildWindows;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> enum value for hot reload builds.
@@ -2554,7 +2493,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_ClosingBehavior, Avalonia.Controls.Window.ClosingBehaviorProperty, Avalonia.Controls.WindowClosingBehavior.OwnerWindowOnly);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> property value to <see cref="Avalonia.Controls.WindowClosingBehavior.OwnerWindowOnly"/>.
@@ -2568,7 +2506,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> literal value for hot reload builds.
@@ -2615,8 +2552,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_WindowState, Avalonia.Controls.Window.WindowStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> value on a referenced control.
@@ -2663,7 +2598,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.WindowStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.WindowStateProperty
 
     /// <summary>
@@ -2809,7 +2743,6 @@ public static partial class WindowExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
@@ -2821,7 +2754,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_WindowState, Avalonia.Controls.Window.WindowStateProperty, Avalonia.Controls.WindowState.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Normal"/>.
@@ -2834,7 +2766,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
@@ -2846,7 +2777,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_WindowState, Avalonia.Controls.Window.WindowStateProperty, Avalonia.Controls.WindowState.Minimized);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Minimized"/>.
@@ -2859,7 +2789,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Minimized;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
@@ -2871,7 +2800,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_WindowState, Avalonia.Controls.Window.WindowStateProperty, Avalonia.Controls.WindowState.Maximized);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.Maximized"/>.
@@ -2884,7 +2812,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.WindowStateProperty] = Avalonia.Controls.WindowState.Maximized;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> enum value for hot reload builds.
@@ -2896,7 +2823,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_WindowState, Avalonia.Controls.Window.WindowStateProperty, Avalonia.Controls.WindowState.FullScreen);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStateProperty"/> property value to <see cref="Avalonia.Controls.WindowState.FullScreen"/>.
@@ -2910,7 +2836,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.TitleProperty"/> literal value for hot reload builds.
@@ -2957,8 +2882,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_Title, Avalonia.Controls.Window.TitleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.TitleProperty"/> value on a referenced control.
@@ -3005,7 +2928,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.TitleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.TitleProperty
 
     /// <summary>
@@ -3152,7 +3074,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.IconProperty"/> literal value for hot reload builds.
@@ -3199,8 +3120,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_Icon, Avalonia.Controls.Window.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.IconProperty"/> value on a referenced control.
@@ -3247,7 +3166,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.IconProperty
 
     /// <summary>
@@ -3394,7 +3312,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> literal value for hot reload builds.
@@ -3441,8 +3358,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_WindowStartupLocation, Avalonia.Controls.Window.WindowStartupLocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> value on a referenced control.
@@ -3489,7 +3404,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.WindowStartupLocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.WindowStartupLocationProperty
 
     /// <summary>
@@ -3635,7 +3549,6 @@ public static partial class WindowExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> enum value for hot reload builds.
@@ -3647,7 +3560,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_WindowStartupLocation, Avalonia.Controls.Window.WindowStartupLocationProperty, Avalonia.Controls.WindowStartupLocation.Manual);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.Manual"/>.
@@ -3660,7 +3572,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.Manual;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> enum value for hot reload builds.
@@ -3672,7 +3583,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_WindowStartupLocation, Avalonia.Controls.Window.WindowStartupLocationProperty, Avalonia.Controls.WindowStartupLocation.CenterScreen);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.CenterScreen"/>.
@@ -3685,7 +3595,6 @@ public static partial class WindowExtensions
         obj[Avalonia.Controls.Window.WindowStartupLocationProperty] = Avalonia.Controls.WindowStartupLocation.CenterScreen;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> enum value for hot reload builds.
@@ -3697,7 +3606,6 @@ public static partial class WindowExtensions
         return builder.WithValue(PropertyMetadata.Window_WindowStartupLocation, Avalonia.Controls.Window.WindowStartupLocationProperty, Avalonia.Controls.WindowStartupLocation.CenterOwner);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> property value to <see cref="Avalonia.Controls.WindowStartupLocation.CenterOwner"/>.
@@ -3711,7 +3619,6 @@ public static partial class WindowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Window.CanResizeProperty"/> literal value for hot reload builds.
@@ -3758,8 +3665,6 @@ public static partial class WindowExtensions
         return builder.WithBinding(PropertyMetadata.Window_CanResize, Avalonia.Controls.Window.CanResizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Window.CanResizeProperty"/> value on a referenced control.
@@ -3806,7 +3711,6 @@ public static partial class WindowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Window.CanResizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Window.CanResizeProperty
 
     /// <summary>
@@ -4001,7 +3905,6 @@ public static partial class WindowExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Window.WindowClosedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -4044,7 +3947,6 @@ public static partial class WindowExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Window.WindowOpenedEvent
 
@@ -4094,7 +3996,6 @@ public static partial class WindowExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Window.WindowOpenedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -4137,7 +4038,6 @@ public static partial class WindowExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Window.Closing
 
@@ -4172,7 +4072,6 @@ public static partial class WindowExtensions
                 h => obj.Closing -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -4194,5 +4093,4 @@ public static partial class WindowExtensions
         }));
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.TileBrush"/> class style setters extension methods.
 /// </summary>
 public static partial class TileBrushSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushAlignmentX(this ElementBuilder<Style> builder, Avalonia.Media.AlignmentX value)
+    public static StyleBuilder SetTileBrushAlignmentX(this StyleBuilder builder, Avalonia.Media.AlignmentX value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushAlignmentX(this ElementBuilder<KeyFrame> builder, Avalonia.Media.AlignmentX value)
+    public static KeyFrameBuilder SetTileBrushAlignmentX(this KeyFrameBuilder builder, Avalonia.Media.AlignmentX value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.TileBrush.AlignmentXProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushAlignmentX(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.AlignmentX> observable)
+    public static StyleBuilder SetTileBrushAlignmentX(this StyleBuilder builder, IObservable<Avalonia.Media.AlignmentX> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushAlignmentX(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.AlignmentX> observable)
+    public static KeyFrameBuilder SetTileBrushAlignmentX(this KeyFrameBuilder builder, IObservable<Avalonia.Media.AlignmentX> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentXProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushAlignmentX(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushAlignmentX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushAlignmentX(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushAlignmentX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TileBrushSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushAlignmentY(this ElementBuilder<Style> builder, Avalonia.Media.AlignmentY value)
+    public static StyleBuilder SetTileBrushAlignmentY(this StyleBuilder builder, Avalonia.Media.AlignmentY value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushAlignmentY(this ElementBuilder<KeyFrame> builder, Avalonia.Media.AlignmentY value)
+    public static KeyFrameBuilder SetTileBrushAlignmentY(this KeyFrameBuilder builder, Avalonia.Media.AlignmentY value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.TileBrush.AlignmentYProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushAlignmentY(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.AlignmentY> observable)
+    public static StyleBuilder SetTileBrushAlignmentY(this StyleBuilder builder, IObservable<Avalonia.Media.AlignmentY> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushAlignmentY(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.AlignmentY> observable)
+    public static KeyFrameBuilder SetTileBrushAlignmentY(this KeyFrameBuilder builder, IObservable<Avalonia.Media.AlignmentY> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.AlignmentYProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushAlignmentY(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushAlignmentY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushAlignmentY(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushAlignmentY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TileBrushSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushDestinationRect(this ElementBuilder<Style> builder, Avalonia.RelativeRect value)
+    public static StyleBuilder SetTileBrushDestinationRect(this StyleBuilder builder, Avalonia.RelativeRect value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushDestinationRect(this ElementBuilder<KeyFrame> builder, Avalonia.RelativeRect value)
+    public static KeyFrameBuilder SetTileBrushDestinationRect(this KeyFrameBuilder builder, Avalonia.RelativeRect value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.TileBrush.DestinationRectProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushDestinationRect(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativeRect> observable)
+    public static StyleBuilder SetTileBrushDestinationRect(this StyleBuilder builder, IObservable<Avalonia.RelativeRect> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushDestinationRect(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativeRect> observable)
+    public static KeyFrameBuilder SetTileBrushDestinationRect(this KeyFrameBuilder builder, IObservable<Avalonia.RelativeRect> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.DestinationRectProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushDestinationRect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushDestinationRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushDestinationRect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushDestinationRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TileBrushSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushSourceRect(this ElementBuilder<Style> builder, Avalonia.RelativeRect value)
+    public static StyleBuilder SetTileBrushSourceRect(this StyleBuilder builder, Avalonia.RelativeRect value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushSourceRect(this ElementBuilder<KeyFrame> builder, Avalonia.RelativeRect value)
+    public static KeyFrameBuilder SetTileBrushSourceRect(this KeyFrameBuilder builder, Avalonia.RelativeRect value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.TileBrush.SourceRectProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushSourceRect(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativeRect> observable)
+    public static StyleBuilder SetTileBrushSourceRect(this StyleBuilder builder, IObservable<Avalonia.RelativeRect> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushSourceRect(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativeRect> observable)
+    public static KeyFrameBuilder SetTileBrushSourceRect(this KeyFrameBuilder builder, IObservable<Avalonia.RelativeRect> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.SourceRectProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushSourceRect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushSourceRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushSourceRect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushSourceRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TileBrushSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushStretch(this ElementBuilder<Style> builder, Avalonia.Media.Stretch value)
+    public static StyleBuilder SetTileBrushStretch(this StyleBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Stretch value)
+    public static KeyFrameBuilder SetTileBrushStretch(this KeyFrameBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.TileBrush.StretchProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static StyleBuilder SetTileBrushStretch(this StyleBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static KeyFrameBuilder SetTileBrushStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.StretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.StretchProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TileBrushSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushTileMode(this ElementBuilder<Style> builder, Avalonia.Media.TileMode value)
+    public static StyleBuilder SetTileBrushTileMode(this StyleBuilder builder, Avalonia.Media.TileMode value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushTileMode(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TileMode value)
+    public static KeyFrameBuilder SetTileBrushTileMode(this KeyFrameBuilder builder, Avalonia.Media.TileMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.TileBrush.TileModeProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushTileMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TileMode> observable)
+    public static StyleBuilder SetTileBrushTileMode(this StyleBuilder builder, IObservable<Avalonia.Media.TileMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushTileMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TileMode> observable)
+    public static KeyFrameBuilder SetTileBrushTileMode(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TileMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TileBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.TileBrush.TileModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTileBrushTileMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTileBrushTileMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TileBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTileBrushTileMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTileBrushTileMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TileBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.TileBrush.TileModeProperty"/>.
     /// </summary>

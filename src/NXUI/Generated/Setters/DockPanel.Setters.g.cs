@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DockPanel"/> class style setters extension methods.
 /// </summary>
 public static partial class DockPanelSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelDock(this ElementBuilder<Style> builder, Avalonia.Controls.Dock value)
+    public static StyleBuilder SetDockPanelDock(this StyleBuilder builder, Avalonia.Controls.Dock value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelDock(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Dock value)
+    public static KeyFrameBuilder SetDockPanelDock(this KeyFrameBuilder builder, Avalonia.Controls.Dock value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DockPanel.DockProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelDock(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Dock> observable)
+    public static StyleBuilder SetDockPanelDock(this StyleBuilder builder, IObservable<Avalonia.Controls.Dock> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelDock(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Dock> observable)
+    public static KeyFrameBuilder SetDockPanelDock(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Dock> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.DockProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelDock(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelDock(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelDock(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelDock(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.DockProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DockPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelLastChildFill(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDockPanelLastChildFill(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelLastChildFill(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDockPanelLastChildFill(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DockPanel.LastChildFillProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelLastChildFill(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDockPanelLastChildFill(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelLastChildFill(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDockPanelLastChildFill(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.LastChildFillProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelLastChildFill(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelLastChildFill(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelLastChildFill(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelLastChildFill(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DockPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelHorizontalSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetDockPanelHorizontalSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelHorizontalSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetDockPanelHorizontalSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DockPanel.HorizontalSpacingProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.HorizontalSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelHorizontalSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetDockPanelHorizontalSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelHorizontalSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetDockPanelHorizontalSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.HorizontalSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelHorizontalSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelHorizontalSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelHorizontalSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelHorizontalSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class DockPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/>.
@@ -515,7 +494,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelVerticalSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetDockPanelVerticalSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelVerticalSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetDockPanelVerticalSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DockPanel.VerticalSpacingProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.VerticalSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelVerticalSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetDockPanelVerticalSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelVerticalSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetDockPanelVerticalSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class DockPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DockPanel.VerticalSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDockPanelVerticalSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDockPanelVerticalSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class DockPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDockPanelVerticalSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDockPanelVerticalSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class DockPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/>.
     /// </summary>

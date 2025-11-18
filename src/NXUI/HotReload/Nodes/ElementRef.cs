@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Nodes;
 
 using System;
@@ -297,4 +296,3 @@ internal sealed class ElementRefHost<TControl> : IElementAttachment
         }
     }
 }
-#endif

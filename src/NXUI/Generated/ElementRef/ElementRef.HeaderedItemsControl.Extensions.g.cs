@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/>.
 /// </summary>
 public static partial class HeaderedItemsControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class HeaderedItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class HeaderedItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty);
     }
 
-#endif
 }

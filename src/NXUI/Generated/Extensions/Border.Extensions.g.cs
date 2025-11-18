@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Border"/> class property extension methods.
 /// </summary>
 public static partial class BorderExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class BorderExtensions
         return builder.WithBinding(PropertyMetadata.Border_Background, Avalonia.Controls.Border.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BackgroundProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class BorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Border.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Border.BackgroundProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class BorderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class BorderExtensions
         return builder.WithBinding(PropertyMetadata.Border_BackgroundSizing, Avalonia.Controls.Border.BackgroundSizingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class BorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Border.BackgroundSizingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Border.BackgroundSizingProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class BorderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class BorderExtensions
         return builder.WithValue(PropertyMetadata.Border_BackgroundSizing, Avalonia.Controls.Border.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.InnerBorderEdge);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.InnerBorderEdge"/>.
@@ -520,7 +508,6 @@ public static partial class BorderExtensions
         obj[Avalonia.Controls.Border.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.InnerBorderEdge;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class BorderExtensions
         return builder.WithValue(PropertyMetadata.Border_BackgroundSizing, Avalonia.Controls.Border.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.OuterBorderEdge);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.OuterBorderEdge"/>.
@@ -545,7 +531,6 @@ public static partial class BorderExtensions
         obj[Avalonia.Controls.Border.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.OuterBorderEdge;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class BorderExtensions
         return builder.WithValue(PropertyMetadata.Border_BackgroundSizing, Avalonia.Controls.Border.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.CenterBorder);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.CenterBorder"/>.
@@ -571,7 +555,6 @@ public static partial class BorderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> literal value for hot reload builds.
@@ -618,8 +601,6 @@ public static partial class BorderExtensions
         return builder.WithBinding(PropertyMetadata.Border_BorderBrush, Avalonia.Controls.Border.BorderBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderBrushProperty"/> value on a referenced control.
@@ -666,7 +647,6 @@ public static partial class BorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Border.BorderBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Border.BorderBrushProperty
 
     /// <summary>
@@ -813,7 +793,6 @@ public static partial class BorderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> literal value for hot reload builds.
@@ -860,8 +839,6 @@ public static partial class BorderExtensions
         return builder.WithBinding(PropertyMetadata.Border_BorderThickness, Avalonia.Controls.Border.BorderThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> value on a referenced control.
@@ -908,7 +885,6 @@ public static partial class BorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Border.BorderThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Border.BorderThicknessProperty
 
     /// <summary>
@@ -1054,8 +1030,6 @@ public static partial class BorderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BorderThicknessProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -1079,8 +1053,6 @@ public static partial class BorderExtensions
     {
         return builder.BorderThickness(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>
@@ -1109,7 +1081,6 @@ public static partial class BorderExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> literal value for hot reload builds.
@@ -1156,8 +1127,6 @@ public static partial class BorderExtensions
         return builder.WithBinding(PropertyMetadata.Border_CornerRadius, Avalonia.Controls.Border.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> value on a referenced control.
@@ -1204,7 +1173,6 @@ public static partial class BorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Border.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Border.CornerRadiusProperty
 
     /// <summary>
@@ -1350,8 +1318,6 @@ public static partial class BorderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.CornerRadiusProperty"/> literal value using a uniform radius for hot reload builds.
     /// </summary>
@@ -1375,8 +1341,6 @@ public static partial class BorderExtensions
     {
         return builder.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
     }
-
-#endif
 
 
     /// <summary>
@@ -1405,7 +1369,6 @@ public static partial class BorderExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> literal value for hot reload builds.
@@ -1452,8 +1415,6 @@ public static partial class BorderExtensions
         return builder.WithBinding(PropertyMetadata.Border_BoxShadow, Avalonia.Controls.Border.BoxShadowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Border.BoxShadowProperty"/> value on a referenced control.
@@ -1500,7 +1461,6 @@ public static partial class BorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Border.BoxShadowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Border.BoxShadowProperty
 
     /// <summary>

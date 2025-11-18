@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DropShadowEffect"/> class property extension methods.
 /// </summary>
 public static partial class DropShadowEffectExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class DropShadowEffectExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowEffect> OffsetX(this ElementBuilder<Avalonia.Media.DropShadowEffect> builder, System.Double value)
+    public static DropShadowEffectBuilder OffsetX(this DropShadowEffectBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.DropShadowEffect_OffsetX, Avalonia.Media.DropShadowEffect.OffsetXProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class DropShadowEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowEffect> OffsetX(
-        this ElementBuilder<Avalonia.Media.DropShadowEffect> builder,
+    public static DropShadowEffectBuilder OffsetX(
+        this DropShadowEffectBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class DropShadowEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowEffect> OffsetX(
-        this ElementBuilder<Avalonia.Media.DropShadowEffect> builder,
+    public static DropShadowEffectBuilder OffsetX(
+        this DropShadowEffectBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class DropShadowEffectExtensions
         return builder.WithBinding(PropertyMetadata.DropShadowEffect_OffsetX, Avalonia.Media.DropShadowEffect.OffsetXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DropShadowEffect.OffsetXProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DropShadowEffectExtensions
         return elementRef.SetBinding(Avalonia.Media.DropShadowEffect.OffsetXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DropShadowEffect.OffsetXProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class DropShadowEffectExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class DropShadowEffectExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowEffect> OffsetY(this ElementBuilder<Avalonia.Media.DropShadowEffect> builder, System.Double value)
+    public static DropShadowEffectBuilder OffsetY(this DropShadowEffectBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.DropShadowEffect_OffsetY, Avalonia.Media.DropShadowEffect.OffsetYProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class DropShadowEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowEffect> OffsetY(
-        this ElementBuilder<Avalonia.Media.DropShadowEffect> builder,
+    public static DropShadowEffectBuilder OffsetY(
+        this DropShadowEffectBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class DropShadowEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DropShadowEffect> OffsetY(
-        this ElementBuilder<Avalonia.Media.DropShadowEffect> builder,
+    public static DropShadowEffectBuilder OffsetY(
+        this DropShadowEffectBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class DropShadowEffectExtensions
         return builder.WithBinding(PropertyMetadata.DropShadowEffect_OffsetY, Avalonia.Media.DropShadowEffect.OffsetYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DropShadowEffect.OffsetYProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class DropShadowEffectExtensions
         return elementRef.SetBinding(Avalonia.Media.DropShadowEffect.OffsetYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DropShadowEffect.OffsetYProperty
 
     /// <summary>

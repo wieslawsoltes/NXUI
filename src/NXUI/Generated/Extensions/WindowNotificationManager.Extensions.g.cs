@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/> class property extension methods.
 /// </summary>
 public static partial class WindowNotificationManagerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithBinding(PropertyMetadata.WindowNotificationManager_Position, Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class WindowNotificationManagerExtensions
         return elementRef.SetBinding(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class WindowNotificationManagerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithValue(PropertyMetadata.WindowNotificationManager_Position, Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, Avalonia.Controls.Notifications.NotificationPosition.TopLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.TopLeft"/>.
@@ -278,7 +270,6 @@ public static partial class WindowNotificationManagerExtensions
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithValue(PropertyMetadata.WindowNotificationManager_Position, Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, Avalonia.Controls.Notifications.NotificationPosition.TopRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.TopRight"/>.
@@ -303,7 +293,6 @@ public static partial class WindowNotificationManagerExtensions
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithValue(PropertyMetadata.WindowNotificationManager_Position, Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, Avalonia.Controls.Notifications.NotificationPosition.BottomLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.BottomLeft"/>.
@@ -328,7 +316,6 @@ public static partial class WindowNotificationManagerExtensions
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithValue(PropertyMetadata.WindowNotificationManager_Position, Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, Avalonia.Controls.Notifications.NotificationPosition.BottomRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.BottomRight"/>.
@@ -353,7 +339,6 @@ public static partial class WindowNotificationManagerExtensions
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.BottomRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
@@ -365,7 +350,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithValue(PropertyMetadata.WindowNotificationManager_Position, Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, Avalonia.Controls.Notifications.NotificationPosition.TopCenter);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.TopCenter"/>.
@@ -378,7 +362,6 @@ public static partial class WindowNotificationManagerExtensions
         obj[Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty] = Avalonia.Controls.Notifications.NotificationPosition.TopCenter;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> enum value for hot reload builds.
@@ -390,7 +373,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithValue(PropertyMetadata.WindowNotificationManager_Position, Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty, Avalonia.Controls.Notifications.NotificationPosition.BottomCenter);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationPosition.BottomCenter"/>.
@@ -404,7 +386,6 @@ public static partial class WindowNotificationManagerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/> literal value for hot reload builds.
@@ -451,8 +432,6 @@ public static partial class WindowNotificationManagerExtensions
         return builder.WithBinding(PropertyMetadata.WindowNotificationManager_MaxItems, Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/> value on a referenced control.
@@ -499,7 +478,6 @@ public static partial class WindowNotificationManagerExtensions
         return elementRef.SetBinding(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty
 
     /// <summary>

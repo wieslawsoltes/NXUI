@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.RadialGradientBrush"/>.
 /// </summary>
 public static partial class RadialGradientBrushElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RadialGradientBrush.CenterProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class RadialGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RadialGradientBrush.CenterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RadialGradientBrush.GradientOriginProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class RadialGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RadialGradientBrush.GradientOriginProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RadialGradientBrush.RadiusXProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class RadialGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RadialGradientBrush.RadiusXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RadialGradientBrush.RadiusYProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class RadialGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RadialGradientBrush.RadiusYProperty);
     }
 
-#endif
 }

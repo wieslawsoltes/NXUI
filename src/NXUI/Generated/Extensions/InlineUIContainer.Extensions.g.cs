@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class property extension methods.
 /// </summary>
 public static partial class InlineUIContainerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class InlineUIContainerExtensions
         return builder.WithBinding(PropertyMetadata.InlineUIContainer_Child, Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class InlineUIContainerExtensions
         return elementRef.SetBinding(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Documents.InlineUIContainer.ChildProperty
 
     /// <summary>

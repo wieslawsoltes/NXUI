@@ -4,9 +4,6 @@
         <TargetFramework>net8.0</TargetFramework>
         <IsPackable>false</IsPackable>
     </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-        <EnableNXUIHotReload>true</EnableNXUIHotReload>
-    </PropertyGroup>
     <ItemGroup>
         <Compile Include="Program.fs"/>
     </ItemGroup>

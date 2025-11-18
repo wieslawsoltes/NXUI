@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataValidationErrors"/> class property extension methods.
 /// </summary>
 public static partial class DataValidationErrorsExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataValidationErrorsExtensions
         return builder.WithBinding(PropertyMetadata.DataValidationErrors_Errors, Avalonia.Controls.DataValidationErrors.ErrorsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataValidationErrorsExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataValidationErrors.ErrorsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.ErrorsProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DataValidationErrorsExtensions
         return builder.WithBinding(PropertyMetadata.DataValidationErrors_HasErrors, Avalonia.Controls.DataValidationErrors.HasErrorsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DataValidationErrorsExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataValidationErrors.HasErrorsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.HasErrorsProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class DataValidationErrorsExtensions
         return builder.WithBinding(PropertyMetadata.DataValidationErrors_ErrorConverter, Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class DataValidationErrorsExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.ErrorConverterProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class DataValidationErrorsExtensions
         return builder.WithBinding(PropertyMetadata.DataValidationErrors_ErrorTemplate, Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class DataValidationErrorsExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class DataValidationErrorsExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class DataValidationErrorsExtensions
         return builder.WithBinding(PropertyMetadata.DataValidationErrors_Owner, Avalonia.Controls.DataValidationErrors.OwnerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class DataValidationErrorsExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataValidationErrors.OwnerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.OwnerProperty
 
     /// <summary>

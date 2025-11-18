@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.UniformGrid"/>.
 /// </summary>
 public static partial class UniformGridElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class UniformGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.UniformGrid.RowsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class UniformGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class UniformGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class UniformGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class UniformGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty);
     }
 
-#endif
 }

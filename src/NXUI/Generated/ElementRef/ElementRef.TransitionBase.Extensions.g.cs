@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Animation.TransitionBase"/>.
 /// </summary>
 public static partial class TransitionBaseElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TransitionBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.TransitionBase.DurationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TransitionBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.TransitionBase.DelayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TransitionBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.TransitionBase.EasingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class TransitionBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.TransitionBase.PropertyProperty);
     }
 
-#endif
 }

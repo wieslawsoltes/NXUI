@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.NativeMenu"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class NativeMenuExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class NativeMenuExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenu_IsNativeMenuExported, Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class NativeMenuExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty
 
     /// <summary>
@@ -344,7 +338,6 @@ public static partial class NativeMenuExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> literal value for hot reload builds.
@@ -391,8 +384,6 @@ public static partial class NativeMenuExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenu_Menu, Avalonia.Controls.NativeMenu.MenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> value on a referenced control.
@@ -439,7 +430,6 @@ public static partial class NativeMenuExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenu.MenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenu.MenuProperty
 
     /// <summary>

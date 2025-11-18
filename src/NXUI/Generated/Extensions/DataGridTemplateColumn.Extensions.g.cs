@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridTemplateColumn"/> class property extension methods.
 /// </summary>
 public static partial class DataGridTemplateColumnExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataGridTemplateColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTemplateColumn_CellTemplate, Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataGridTemplateColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DataGridTemplateColumnExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DataGridTemplateColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTemplateColumn_CellEditingTemplate, Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DataGridTemplateColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty
 
     /// <summary>

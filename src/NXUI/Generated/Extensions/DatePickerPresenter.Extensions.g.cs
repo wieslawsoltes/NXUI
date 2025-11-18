@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DatePickerPresenter"/> class property extension methods.
 /// </summary>
 public static partial class DatePickerPresenterExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_Date, Avalonia.Controls.DatePickerPresenter.DateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.DateProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_DayFormat, Avalonia.Controls.DatePickerPresenter.DayFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.DayFormatProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_DayVisible, Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.DayVisibleProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_MaxYear, Avalonia.Controls.DatePickerPresenter.MaxYearProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MaxYearProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_MinYear, Avalonia.Controls.DatePickerPresenter.MinYearProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MinYearProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MinYearProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_MonthFormat, Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MonthFormatProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_MonthVisible, Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_YearFormat, Avalonia.Controls.DatePickerPresenter.YearFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.YearFormatProperty
 
     /// <summary>
@@ -1948,7 +1914,6 @@ public static partial class DatePickerPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> literal value for hot reload builds.
@@ -1995,8 +1960,6 @@ public static partial class DatePickerPresenterExtensions
         return builder.WithBinding(PropertyMetadata.DatePickerPresenter_YearVisible, Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> value on a referenced control.
@@ -2043,7 +2006,6 @@ public static partial class DatePickerPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.YearVisibleProperty
 
     /// <summary>

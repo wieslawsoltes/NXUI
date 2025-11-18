@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.PathFigure"/> class style setters extension methods.
 /// </summary>
 public static partial class PathFigureSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
@@ -20,7 +17,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureIsClosed(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPathFigureIsClosed(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureIsClosed(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPathFigureIsClosed(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     // Avalonia.Media.PathFigure.IsClosedProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureIsClosed(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPathFigureIsClosed(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureIsClosed(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPathFigureIsClosed(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsClosedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureIsClosed(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureIsClosed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureIsClosed(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureIsClosed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class PathFigureSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
@@ -185,7 +176,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureIsFilled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPathFigureIsFilled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureIsFilled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPathFigureIsFilled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     // Avalonia.Media.PathFigure.IsFilledProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureIsFilled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPathFigureIsFilled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureIsFilled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPathFigureIsFilled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.IsFilledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureIsFilled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureIsFilled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureIsFilled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureIsFilled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class PathFigureSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
@@ -350,7 +335,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureSegments(this ElementBuilder<Style> builder, Avalonia.Media.PathSegments value)
+    public static StyleBuilder SetPathFigureSegments(this StyleBuilder builder, Avalonia.Media.PathSegments value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureSegments(this ElementBuilder<KeyFrame> builder, Avalonia.Media.PathSegments value)
+    public static KeyFrameBuilder SetPathFigureSegments(this KeyFrameBuilder builder, Avalonia.Media.PathSegments value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     // Avalonia.Media.PathFigure.SegmentsProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureSegments(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.PathSegments> observable)
+    public static StyleBuilder SetPathFigureSegments(this StyleBuilder builder, IObservable<Avalonia.Media.PathSegments> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureSegments(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.PathSegments> observable)
+    public static KeyFrameBuilder SetPathFigureSegments(this KeyFrameBuilder builder, IObservable<Avalonia.Media.PathSegments> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.SegmentsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureSegments(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureSegments(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureSegments(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureSegments(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class PathFigureSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
@@ -515,7 +494,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureStartPoint(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetPathFigureStartPoint(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureStartPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetPathFigureStartPoint(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     // Avalonia.Media.PathFigure.StartPointProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureStartPoint(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetPathFigureStartPoint(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureStartPoint(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetPathFigureStartPoint(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class PathFigureSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathFigure.StartPointProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathFigureStartPoint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathFigureStartPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class PathFigureSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathFigureStartPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathFigureStartPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class PathFigureSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathFigure.StartPointProperty"/>.
     /// </summary>

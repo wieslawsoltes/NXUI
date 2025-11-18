@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ComboBox"/>.
 /// </summary>
 public static partial class ComboBoxElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.IsDropDownOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.SelectionBoxItemProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.PlaceholderTextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class ComboBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty);
     }
 
-#endif
 }

@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Diffing;
 
 using System;
@@ -324,4 +323,3 @@ internal static class TreeDiffer
         return lookup;
     }
 }
-#endif

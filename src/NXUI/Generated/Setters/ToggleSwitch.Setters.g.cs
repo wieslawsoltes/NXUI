@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ToggleSwitch"/> class style setters extension methods.
 /// </summary>
 public static partial class ToggleSwitchSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOffContent(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetToggleSwitchOffContent(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOffContent(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetToggleSwitchOffContent(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OffContentProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OffContentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOffContent(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetToggleSwitchOffContent(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOffContent(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetToggleSwitchOffContent(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OffContentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOffContent(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetToggleSwitchOffContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOffContent(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetToggleSwitchOffContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ToggleSwitchSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOffContentTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetToggleSwitchOffContentTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOffContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetToggleSwitchOffContentTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOffContentTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetToggleSwitchOffContentTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOffContentTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetToggleSwitchOffContentTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOffContentTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetToggleSwitchOffContentTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOffContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetToggleSwitchOffContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ToggleSwitchSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOnContent(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetToggleSwitchOnContent(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOnContent(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetToggleSwitchOnContent(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OnContentProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OnContentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOnContent(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetToggleSwitchOnContent(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOnContent(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetToggleSwitchOnContent(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OnContentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOnContent(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetToggleSwitchOnContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOnContent(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetToggleSwitchOnContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ToggleSwitchSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOnContentTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetToggleSwitchOnContentTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOnContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetToggleSwitchOnContentTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOnContentTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetToggleSwitchOnContentTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOnContentTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetToggleSwitchOnContentTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchOnContentTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetToggleSwitchOnContentTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchOnContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetToggleSwitchOnContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ToggleSwitchSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchKnobTransitions(this ElementBuilder<Style> builder, Avalonia.Animation.Transitions value)
+    public static StyleBuilder SetToggleSwitchKnobTransitions(this StyleBuilder builder, Avalonia.Animation.Transitions value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchKnobTransitions(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.Transitions value)
+    public static KeyFrameBuilder SetToggleSwitchKnobTransitions(this KeyFrameBuilder builder, Avalonia.Animation.Transitions value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchKnobTransitions(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.Transitions> observable)
+    public static StyleBuilder SetToggleSwitchKnobTransitions(this StyleBuilder builder, IObservable<Avalonia.Animation.Transitions> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchKnobTransitions(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.Transitions> observable)
+    public static KeyFrameBuilder SetToggleSwitchKnobTransitions(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.Transitions> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ToggleSwitchSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetToggleSwitchKnobTransitions(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetToggleSwitchKnobTransitions(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ToggleSwitchSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetToggleSwitchKnobTransitions(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetToggleSwitchKnobTransitions(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ToggleSwitchSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/>.
     /// </summary>

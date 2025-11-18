@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Viewbox"/> class style setters extension methods.
 /// </summary>
 public static partial class ViewboxSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.StretchProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxStretch(this ElementBuilder<Style> builder, Avalonia.Media.Stretch value)
+    public static StyleBuilder SetViewboxStretch(this StyleBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Stretch value)
+    public static KeyFrameBuilder SetViewboxStretch(this KeyFrameBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Viewbox.StretchProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ViewboxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Viewbox.StretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static StyleBuilder SetViewboxStretch(this StyleBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static KeyFrameBuilder SetViewboxStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Viewbox.StretchProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ViewboxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Viewbox.StretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetViewboxStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetViewboxStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Viewbox.StretchProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ViewboxSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxStretchDirection(this ElementBuilder<Style> builder, Avalonia.Media.StretchDirection value)
+    public static StyleBuilder SetViewboxStretchDirection(this StyleBuilder builder, Avalonia.Media.StretchDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxStretchDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Media.StretchDirection value)
+    public static KeyFrameBuilder SetViewboxStretchDirection(this KeyFrameBuilder builder, Avalonia.Media.StretchDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Viewbox.StretchDirectionProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ViewboxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Viewbox.StretchDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxStretchDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.StretchDirection> observable)
+    public static StyleBuilder SetViewboxStretchDirection(this StyleBuilder builder, IObservable<Avalonia.Media.StretchDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxStretchDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.StretchDirection> observable)
+    public static KeyFrameBuilder SetViewboxStretchDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Media.StretchDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ViewboxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Viewbox.StretchDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxStretchDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetViewboxStretchDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxStretchDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetViewboxStretchDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ViewboxSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.ChildProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxChild(this ElementBuilder<Style> builder, Avalonia.Controls.Control value)
+    public static StyleBuilder SetViewboxChild(this StyleBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxChild(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Control value)
+    public static KeyFrameBuilder SetViewboxChild(this KeyFrameBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Viewbox.ChildProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ViewboxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Viewbox.ChildProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxChild(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static StyleBuilder SetViewboxChild(this StyleBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxChild(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static KeyFrameBuilder SetViewboxChild(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Viewbox.ChildProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ViewboxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Viewbox.ChildProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetViewboxChild(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetViewboxChild(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ViewboxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetViewboxChild(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetViewboxChild(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ViewboxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Viewbox.ChildProperty"/>.
     /// </summary>

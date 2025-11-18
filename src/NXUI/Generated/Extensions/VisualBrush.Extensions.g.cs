@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.VisualBrush"/> class property extension methods.
 /// </summary>
 public static partial class VisualBrushExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.VisualBrush.VisualProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class VisualBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.VisualBrush> Visual(this ElementBuilder<Avalonia.Media.VisualBrush> builder, Avalonia.Visual? value)
+    public static VisualBrushBuilder Visual(this VisualBrushBuilder builder, Avalonia.Visual? value)
     {
         return builder.WithValue(PropertyMetadata.VisualBrush_Visual, Avalonia.Media.VisualBrush.VisualProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class VisualBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.VisualBrush> Visual(
-        this ElementBuilder<Avalonia.Media.VisualBrush> builder,
+    public static VisualBrushBuilder Visual(
+        this VisualBrushBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class VisualBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.VisualBrush> Visual(
-        this ElementBuilder<Avalonia.Media.VisualBrush> builder,
+    public static VisualBrushBuilder Visual(
+        this VisualBrushBuilder builder,
         IObservable<Avalonia.Visual?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class VisualBrushExtensions
         return builder.WithBinding(PropertyMetadata.VisualBrush_Visual, Avalonia.Media.VisualBrush.VisualProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.VisualBrush.VisualProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class VisualBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.VisualBrush.VisualProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.VisualBrush.VisualProperty
 
     /// <summary>

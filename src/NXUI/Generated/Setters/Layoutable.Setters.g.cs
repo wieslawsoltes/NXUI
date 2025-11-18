@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Layout.Layoutable"/> class style setters extension methods.
 /// </summary>
 public static partial class LayoutableSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.WidthProperty"/>.
@@ -20,7 +17,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableWidth(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetLayoutableWidth(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableWidth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetLayoutableWidth(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.WidthProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.WidthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableWidth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetLayoutableWidth(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableWidth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetLayoutableWidth(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.WidthProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.WidthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.WidthProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.HeightProperty"/>.
@@ -185,7 +176,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableHeight(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetLayoutableHeight(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetLayoutableHeight(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.HeightProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.HeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetLayoutableHeight(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetLayoutableHeight(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.HeightProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.HeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.HeightProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/>.
@@ -350,7 +335,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMinWidth(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetLayoutableMinWidth(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMinWidth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetLayoutableMinWidth(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MinWidthProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MinWidthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMinWidth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetLayoutableMinWidth(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMinWidth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetLayoutableMinWidth(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MinWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMinWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableMinWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMinWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableMinWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/>.
@@ -515,7 +494,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMaxWidth(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetLayoutableMaxWidth(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMaxWidth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetLayoutableMaxWidth(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MaxWidthProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MaxWidthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMaxWidth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetLayoutableMaxWidth(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMaxWidth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetLayoutableMaxWidth(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MaxWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMaxWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableMaxWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMaxWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableMaxWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/>.
@@ -680,7 +653,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMinHeight(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetLayoutableMinHeight(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMinHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetLayoutableMinHeight(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MinHeightProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MinHeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMinHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetLayoutableMinHeight(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMinHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetLayoutableMinHeight(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MinHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMinHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableMinHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMinHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableMinHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/>.
@@ -845,7 +812,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMaxHeight(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetLayoutableMaxHeight(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMaxHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetLayoutableMaxHeight(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MaxHeightProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MaxHeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMaxHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetLayoutableMaxHeight(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMaxHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetLayoutableMaxHeight(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MaxHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMaxHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableMaxHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMaxHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableMaxHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MarginProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMargin(this ElementBuilder<Style> builder, Avalonia.Thickness value)
+    public static StyleBuilder SetLayoutableMargin(this StyleBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMargin(this ElementBuilder<KeyFrame> builder, Avalonia.Thickness value)
+    public static KeyFrameBuilder SetLayoutableMargin(this KeyFrameBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MarginProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MarginProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMargin(this ElementBuilder<Style> builder, IObservable<Avalonia.Thickness> observable)
+    public static StyleBuilder SetLayoutableMargin(this StyleBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMargin(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Thickness> observable)
+    public static KeyFrameBuilder SetLayoutableMargin(this KeyFrameBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MarginProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.MarginProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableMargin(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableMargin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableMargin(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableMargin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.MarginProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableHorizontalAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static StyleBuilder SetLayoutableHorizontalAlignment(this StyleBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableHorizontalAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static KeyFrameBuilder SetLayoutableHorizontalAlignment(this KeyFrameBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.HorizontalAlignmentProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableHorizontalAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static StyleBuilder SetLayoutableHorizontalAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableHorizontalAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static KeyFrameBuilder SetLayoutableHorizontalAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableHorizontalAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableHorizontalAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableHorizontalAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableHorizontalAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableVerticalAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.VerticalAlignment value)
+    public static StyleBuilder SetLayoutableVerticalAlignment(this StyleBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableVerticalAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.VerticalAlignment value)
+    public static KeyFrameBuilder SetLayoutableVerticalAlignment(this KeyFrameBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.VerticalAlignmentProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.VerticalAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableVerticalAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static StyleBuilder SetLayoutableVerticalAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableVerticalAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static KeyFrameBuilder SetLayoutableVerticalAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.VerticalAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableVerticalAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableVerticalAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableVerticalAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableVerticalAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class LayoutableSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableUseLayoutRounding(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetLayoutableUseLayoutRounding(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableUseLayoutRounding(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetLayoutableUseLayoutRounding(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     // Avalonia.Layout.Layoutable.UseLayoutRoundingProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableUseLayoutRounding(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetLayoutableUseLayoutRounding(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableUseLayoutRounding(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetLayoutableUseLayoutRounding(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class LayoutableSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutableUseLayoutRounding(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutableUseLayoutRounding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class LayoutableSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutableUseLayoutRounding(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutableUseLayoutRounding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class LayoutableSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/>.
     /// </summary>

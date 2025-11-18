@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.Brush"/> class property extension methods.
 /// </summary>
 public static partial class BrushExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Brush.OpacityProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class BrushExtensions
         return builder.WithBinding(PropertyMetadata.Brush_Opacity, Avalonia.Media.Brush.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Brush.OpacityProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class BrushExtensions
         return elementRef.SetBinding(Avalonia.Media.Brush.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Brush.OpacityProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class BrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Brush.TransformProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class BrushExtensions
         return builder.WithBinding(PropertyMetadata.Brush_Transform, Avalonia.Media.Brush.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Brush.TransformProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class BrushExtensions
         return elementRef.SetBinding(Avalonia.Media.Brush.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Brush.TransformProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class BrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Brush.TransformOriginProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class BrushExtensions
         return builder.WithBinding(PropertyMetadata.Brush_TransformOrigin, Avalonia.Media.Brush.TransformOriginProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Brush.TransformOriginProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class BrushExtensions
         return elementRef.SetBinding(Avalonia.Media.Brush.TransformOriginProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Brush.TransformOriginProperty
 
     /// <summary>

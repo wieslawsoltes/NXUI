@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Nodes;
 
 using System;
@@ -71,4 +70,3 @@ public readonly struct BindingDescriptor : IEquatable<BindingDescriptor>
         return HashCode.Combine(PropertyId, Property, Mode, Priority);
     }
 }
-#endif

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class style setters extension methods.
 /// </summary>
 public static partial class SelectingItemsControlSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
@@ -20,7 +17,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlAutoScrollToSelectedItem(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlAutoScrollToSelectedItem(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlAutoScrollToSelectedItem(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlAutoScrollToSelectedItem(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlAutoScrollToSelectedItem(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlAutoScrollToSelectedItem(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlAutoScrollToSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class SelectingItemsControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
@@ -185,7 +176,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedIndex(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetSelectingItemsControlSelectedIndex(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedIndex(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedIndex(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedIndex(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetSelectingItemsControlSelectedIndex(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedIndex(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedIndex(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedIndex(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlSelectedIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedIndex(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class SelectingItemsControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
@@ -350,7 +335,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedItem(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetSelectingItemsControlSelectedItem(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedItem(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedItem(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedItem(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetSelectingItemsControlSelectedItem(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedItem(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedItem(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedItem(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlSelectedItem(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedItem(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedItem(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class SelectingItemsControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
@@ -515,7 +494,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedValue(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetSelectingItemsControlSelectedValue(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedValue(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValue(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedValue(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetSelectingItemsControlSelectedValue(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValue(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlSelectedValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class SelectingItemsControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
@@ -680,7 +653,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedValueBinding(this ElementBuilder<Style> builder, Avalonia.Data.IBinding value)
+    public static StyleBuilder SetSelectingItemsControlSelectedValueBinding(this StyleBuilder builder, Avalonia.Data.IBinding value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedValueBinding(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding value)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValueBinding(this KeyFrameBuilder builder, Avalonia.Data.IBinding value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlSelectedValueBinding(this ElementBuilder<Style> builder, IObservable<Avalonia.Data.IBinding> observable)
+    public static StyleBuilder SetSelectingItemsControlSelectedValueBinding(this StyleBuilder builder, IObservable<Avalonia.Data.IBinding> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlSelectedValueBinding(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Data.IBinding> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlSelectedValueBinding(this KeyFrameBuilder builder, IObservable<Avalonia.Data.IBinding> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/>.
     /// </summary>
@@ -783,7 +753,6 @@ public static partial class SelectingItemsControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/>.
@@ -791,7 +760,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlIsSelected(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSelectingItemsControlIsSelected(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -805,7 +774,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlIsSelected(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSelectingItemsControlIsSelected(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -813,7 +782,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty
 
     /// <summary>
@@ -839,7 +807,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> using an observable source.
@@ -847,7 +814,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlIsSelected(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSelectingItemsControlIsSelected(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -861,7 +828,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlIsSelected(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlIsSelected(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -869,7 +836,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/>.
     /// </summary>
@@ -893,7 +859,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> using a binding.
@@ -901,7 +866,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlIsSelected(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlIsSelected(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlIsSelected(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlIsSelected(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/>.
     /// </summary>
@@ -948,7 +912,6 @@ public static partial class SelectingItemsControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
@@ -956,7 +919,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlIsTextSearchEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSelectingItemsControlIsTextSearchEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -970,7 +933,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlIsTextSearchEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSelectingItemsControlIsTextSearchEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -978,7 +941,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty
 
     /// <summary>
@@ -1004,7 +966,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> using an observable source.
@@ -1012,7 +973,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlIsTextSearchEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSelectingItemsControlIsTextSearchEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1026,7 +987,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlIsTextSearchEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlIsTextSearchEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1034,7 +995,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
     /// </summary>
@@ -1058,7 +1018,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> using a binding.
@@ -1066,7 +1025,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlIsTextSearchEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlIsTextSearchEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlIsTextSearchEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlIsTextSearchEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/>.
     /// </summary>
@@ -1113,7 +1071,6 @@ public static partial class SelectingItemsControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
@@ -1121,7 +1078,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlWrapSelection(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSelectingItemsControlWrapSelection(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1135,7 +1092,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlWrapSelection(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSelectingItemsControlWrapSelection(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1143,7 +1100,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty
 
     /// <summary>
@@ -1169,7 +1125,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> using an observable source.
@@ -1177,7 +1132,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlWrapSelection(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSelectingItemsControlWrapSelection(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1191,7 +1146,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlWrapSelection(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSelectingItemsControlWrapSelection(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1199,7 +1154,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
     /// </summary>
@@ -1223,7 +1177,6 @@ public static partial class SelectingItemsControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> using a binding.
@@ -1231,7 +1184,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectingItemsControlWrapSelection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectingItemsControlWrapSelection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class SelectingItemsControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectingItemsControlWrapSelection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectingItemsControlWrapSelection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class SelectingItemsControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ColorPicker"/>.
 /// </summary>
 public static partial class ColorPickerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorPicker.ContentProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ColorPickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorPicker.ContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorPicker.ContentTemplateProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ColorPickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorPicker.ContentTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ColorPickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class ColorPickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty);
     }
 
-#endif
 }

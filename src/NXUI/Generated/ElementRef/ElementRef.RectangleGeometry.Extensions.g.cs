@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.RectangleGeometry"/>.
 /// </summary>
 public static partial class RectangleGeometryElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class RectangleGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RectangleGeometry.RadiusXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class RectangleGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RectangleGeometry.RadiusYProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class RectangleGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RectangleGeometry.RectProperty);
     }
 
-#endif
 }

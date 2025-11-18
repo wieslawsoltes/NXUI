@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.Track"/>.
 /// </summary>
 public static partial class TrackElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.MinimumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.MaximumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.ValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.ViewportSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.ThumbProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/> value.
@@ -132,5 +109,4 @@ public static partial class TrackElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty);
     }
 
-#endif
 }

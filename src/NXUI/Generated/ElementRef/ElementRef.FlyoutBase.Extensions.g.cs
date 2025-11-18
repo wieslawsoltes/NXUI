@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.FlyoutBase"/>.
 /// </summary>
 public static partial class FlyoutBaseElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class FlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.FlyoutBase.IsOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.FlyoutBase.TargetProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class FlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.FlyoutBase.TargetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class FlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
     }
 
-#endif
 }

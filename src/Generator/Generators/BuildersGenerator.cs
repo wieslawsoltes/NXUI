@@ -93,31 +93,27 @@ public class BuildersGenerator
         var methodName = ReflectoniaFactory.FixClassNameType(type.Name);
         var typeConstName = MetadataNameUtility.GetTypeConstName(controlTypeName);
 
+        var builderTypeName = BuilderAliasRegistry.FormatBuilderType(type);
+
         if (!includeRefParam)
         {
-            sb.AppendLine("#if NXUI_HOTRELOAD");
             AppendDocComment(sb, controlTypeName, parameters, includeRefParam: false);
-            AppendMethodSignature(sb, $"ElementBuilder<{controlTypeName}>", methodName, parameters, includeRefParam: false, controlTypeName);
+            AppendMethodSignature(
+                sb,
+                builderTypeName,
+                methodName,
+                parameters,
+                includeRefParam: false,
+                controlTypeName);
             sb.AppendLine();
             sb.AppendLine($"        => ElementBuilder.Create<{controlTypeName}>(TypeMetadata.{typeConstName}, () => {BuildConstructorExpression(controlTypeName, parameters)});");
-            sb.AppendLine("#else");
-
-            AppendDocComment(sb, controlTypeName, parameters, includeRefParam: false);
-            AppendMethodSignature(sb, controlTypeName, methodName, parameters, includeRefParam: false, controlTypeName);
-            sb.AppendLine();
-            sb.Append("        => ");
-            sb.Append(BuildConstructorExpression(controlTypeName, parameters));
-            sb.Append(";");
-            sb.AppendLine();
-            sb.AppendLine("#endif");
             return;
         }
 
-        sb.AppendLine("#if NXUI_HOTRELOAD");
         AppendDocComment(sb, controlTypeName, parameters, includeRefParam: true);
         AppendMethodSignature(
             sb,
-            $"ElementBuilder<{controlTypeName}>",
+            builderTypeName,
             methodName,
             parameters,
             includeRefParam: true,
@@ -133,21 +129,6 @@ public class BuildersGenerator
         sb.AppendLine(")");
         sb.AppendLine("            .WithRef(out @ref);");
         sb.AppendLine("    }");
-        sb.AppendLine("#else");
-        AppendDocComment(sb, controlTypeName, parameters, includeRefParam: true);
-        AppendMethodSignature(
-            sb,
-            controlTypeName,
-            methodName,
-            parameters,
-            includeRefParam: true,
-            controlTypeName);
-        sb.AppendLine();
-        sb.Append("        => @ref = ");
-        sb.Append(BuildConstructorExpression(controlTypeName, parameters));
-        sb.Append(";");
-        sb.AppendLine();
-        sb.AppendLine("#endif");
     }
 
     private static void AppendDocComment(StringBuilder sb, string controlTypeName, ParameterInfo[] parameters, bool includeRefParam)

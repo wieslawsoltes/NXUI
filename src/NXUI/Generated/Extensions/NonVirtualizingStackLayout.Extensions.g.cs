@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/> class property extension methods.
 /// </summary>
 public static partial class NonVirtualizingStackLayoutExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return builder.WithBinding(PropertyMetadata.NonVirtualizingStackLayout_Orientation, Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return builder.WithValue(PropertyMetadata.NonVirtualizingStackLayout_Orientation, Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -278,7 +270,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         obj[Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return builder.WithValue(PropertyMetadata.NonVirtualizingStackLayout_Orientation, Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -304,7 +294,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/> literal value for hot reload builds.
@@ -351,8 +340,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return builder.WithBinding(PropertyMetadata.NonVirtualizingStackLayout_Spacing, Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/> value on a referenced control.
@@ -399,7 +386,6 @@ public static partial class NonVirtualizingStackLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty
 
     /// <summary>

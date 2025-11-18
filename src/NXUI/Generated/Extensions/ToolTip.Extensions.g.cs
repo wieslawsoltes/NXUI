@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ToolTip"/> class property extension methods.
 /// </summary>
 public static partial class ToolTipExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.TipProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_Tip, Avalonia.Controls.ToolTip.TipProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.TipProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.TipProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.TipProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_IsOpen, Avalonia.Controls.ToolTip.IsOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.IsOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.IsOpenProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.PlacementProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class ToolTipExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.Pointer);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
@@ -762,7 +746,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Bottom"/>.
@@ -787,7 +769,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -799,7 +780,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
@@ -812,7 +792,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -824,7 +803,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Left"/>.
@@ -837,7 +815,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -849,7 +826,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
@@ -862,7 +838,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -874,7 +849,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Center"/>.
@@ -887,7 +861,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -899,7 +872,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.AnchorAndGravity);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.AnchorAndGravity"/>.
@@ -912,7 +884,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -924,7 +895,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft"/>.
@@ -937,7 +907,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -949,7 +918,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.TopEdgeAlignedRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedRight"/>.
@@ -962,7 +930,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -974,7 +941,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft"/>.
@@ -987,7 +953,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -999,7 +964,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight"/>.
@@ -1012,7 +976,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -1024,7 +987,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop"/>.
@@ -1037,7 +999,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -1049,7 +1010,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom"/>.
@@ -1062,7 +1022,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -1074,7 +1033,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.RightEdgeAlignedTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedTop"/>.
@@ -1087,7 +1045,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -1099,7 +1056,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom"/>.
@@ -1112,7 +1068,6 @@ public static partial class ToolTipExtensions
         obj[Avalonia.Controls.ToolTip.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> enum value for hot reload builds.
@@ -1124,7 +1079,6 @@ public static partial class ToolTipExtensions
         return builder.WithValue(PropertyMetadata.ToolTip_Placement, Avalonia.Controls.ToolTip.PlacementProperty, Avalonia.Controls.PlacementMode.Custom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Custom"/>.
@@ -1138,7 +1092,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/> literal value for hot reload builds.
@@ -1185,8 +1138,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_HorizontalOffset, Avalonia.Controls.ToolTip.HorizontalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/> value on a referenced control.
@@ -1233,7 +1184,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.HorizontalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.HorizontalOffsetProperty
 
     /// <summary>
@@ -1380,7 +1330,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/> literal value for hot reload builds.
@@ -1427,8 +1376,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_VerticalOffset, Avalonia.Controls.ToolTip.VerticalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/> value on a referenced control.
@@ -1475,7 +1422,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.VerticalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.VerticalOffsetProperty
 
     /// <summary>
@@ -1622,7 +1568,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> literal value for hot reload builds.
@@ -1669,8 +1614,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_CustomPopupPlacementCallback, Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> value on a referenced control.
@@ -1717,7 +1660,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty
 
     /// <summary>
@@ -1864,7 +1806,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> literal value for hot reload builds.
@@ -1911,8 +1852,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_ShowDelay, Avalonia.Controls.ToolTip.ShowDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> value on a referenced control.
@@ -1959,7 +1898,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.ShowDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.ShowDelayProperty
 
     /// <summary>
@@ -2106,7 +2044,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/> literal value for hot reload builds.
@@ -2153,8 +2090,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_BetweenShowDelay, Avalonia.Controls.ToolTip.BetweenShowDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/> value on a referenced control.
@@ -2201,7 +2136,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.BetweenShowDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.BetweenShowDelayProperty
 
     /// <summary>
@@ -2348,7 +2282,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/> literal value for hot reload builds.
@@ -2395,8 +2328,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_ShowOnDisabled, Avalonia.Controls.ToolTip.ShowOnDisabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/> value on a referenced control.
@@ -2443,7 +2374,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.ShowOnDisabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.ShowOnDisabledProperty
 
     /// <summary>
@@ -2590,7 +2520,6 @@ public static partial class ToolTipExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/> literal value for hot reload builds.
@@ -2637,8 +2566,6 @@ public static partial class ToolTipExtensions
         return builder.WithBinding(PropertyMetadata.ToolTip_ServiceEnabled, Avalonia.Controls.ToolTip.ServiceEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/> value on a referenced control.
@@ -2685,7 +2612,6 @@ public static partial class ToolTipExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToolTip.ServiceEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToolTip.ServiceEnabledProperty
 
     /// <summary>
@@ -2880,7 +2806,6 @@ public static partial class ToolTipExtensions
     {
         return obj.GetObservable(Avalonia.Controls.ToolTip.ToolTipOpeningEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2923,7 +2848,6 @@ public static partial class ToolTipExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.ToolTip.ToolTipClosingEvent
 
@@ -2973,7 +2897,6 @@ public static partial class ToolTipExtensions
     {
         return obj.GetObservable<Avalonia.Interactivity.RoutedEventArgs>(Avalonia.Controls.ToolTip.ToolTipClosingEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -3016,5 +2939,4 @@ public static partial class ToolTipExtensions
         }));
     }
 
-#endif
 }

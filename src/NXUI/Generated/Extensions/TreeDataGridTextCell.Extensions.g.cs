@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell"/> class property extension methods.
@@ -192,7 +190,6 @@ public static partial class TreeDataGridTextCellExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty"/> literal value for hot reload builds.
@@ -239,8 +236,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGridTextCell_Value, Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty"/> value on a referenced control.
@@ -287,7 +282,6 @@ public static partial class TreeDataGridTextCellExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridTextCell.ValueProperty
 
     /// <summary>
@@ -434,7 +428,6 @@ public static partial class TreeDataGridTextCellExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> literal value for hot reload builds.
@@ -481,8 +474,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> value on a referenced control.
@@ -529,7 +520,6 @@ public static partial class TreeDataGridTextCellExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty
 
     /// <summary>
@@ -675,7 +665,6 @@ public static partial class TreeDataGridTextCellExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -687,7 +676,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, Avalonia.Media.TextAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
@@ -700,7 +688,6 @@ public static partial class TreeDataGridTextCellExtensions
         obj[Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -712,7 +699,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, Avalonia.Media.TextAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
@@ -725,7 +711,6 @@ public static partial class TreeDataGridTextCellExtensions
         obj[Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -737,7 +722,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, Avalonia.Media.TextAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
@@ -750,7 +734,6 @@ public static partial class TreeDataGridTextCellExtensions
         obj[Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -762,7 +745,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, Avalonia.Media.TextAlignment.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
@@ -775,7 +757,6 @@ public static partial class TreeDataGridTextCellExtensions
         obj[Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -787,7 +768,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, Avalonia.Media.TextAlignment.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
@@ -800,7 +780,6 @@ public static partial class TreeDataGridTextCellExtensions
         obj[Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -812,7 +791,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, Avalonia.Media.TextAlignment.DetectFromContent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
@@ -825,7 +803,6 @@ public static partial class TreeDataGridTextCellExtensions
         obj[Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -837,7 +814,6 @@ public static partial class TreeDataGridTextCellExtensions
         return builder.WithValue(PropertyMetadata.TreeDataGridTextCell_TextAlignment, Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty, Avalonia.Media.TextAlignment.Justify);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridTextCell.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.

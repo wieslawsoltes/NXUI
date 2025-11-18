@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Label"/> class style setters extension methods.
 /// </summary>
 public static partial class LabelSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Label.TargetProperty"/>.
@@ -20,7 +17,7 @@ public static partial class LabelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLabelTarget(this ElementBuilder<Style> builder, Avalonia.Input.IInputElement value)
+    public static StyleBuilder SetLabelTarget(this StyleBuilder builder, Avalonia.Input.IInputElement value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class LabelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLabelTarget(this ElementBuilder<KeyFrame> builder, Avalonia.Input.IInputElement value)
+    public static KeyFrameBuilder SetLabelTarget(this KeyFrameBuilder builder, Avalonia.Input.IInputElement value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class LabelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Label.TargetProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class LabelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Label.TargetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Label.TargetProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class LabelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLabelTarget(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.IInputElement> observable)
+    public static StyleBuilder SetLabelTarget(this StyleBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class LabelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLabelTarget(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.IInputElement> observable)
+    public static KeyFrameBuilder SetLabelTarget(this KeyFrameBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class LabelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Label.TargetProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class LabelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Label.TargetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Label.TargetProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class LabelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLabelTarget(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLabelTarget(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class LabelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLabelTarget(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLabelTarget(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class LabelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Label.TargetProperty"/>.
     /// </summary>

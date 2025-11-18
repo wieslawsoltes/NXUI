@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.WindowBase"/> class property extension methods.
@@ -192,7 +190,6 @@ public static partial class WindowBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/> literal value for hot reload builds.
@@ -239,8 +236,6 @@ public static partial class WindowBaseExtensions
         return builder.WithBinding(PropertyMetadata.WindowBase_Topmost, Avalonia.Controls.WindowBase.TopmostProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/> value on a referenced control.
@@ -287,7 +282,6 @@ public static partial class WindowBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.WindowBase.TopmostProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.WindowBase.TopmostProperty
 
     /// <summary>

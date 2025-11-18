@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DrawingImage"/> class property extension methods.
 /// </summary>
 public static partial class DrawingImageExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DrawingImageExtensions
         return builder.WithBinding(PropertyMetadata.DrawingImage_Drawing, Avalonia.Media.DrawingImage.DrawingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingImage.DrawingProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DrawingImageExtensions
         return elementRef.SetBinding(Avalonia.Media.DrawingImage.DrawingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DrawingImage.DrawingProperty
 
     /// <summary>

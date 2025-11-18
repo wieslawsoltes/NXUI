@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/> class property extension methods.
 /// </summary>
 public static partial class SelectingItemsControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_AutoScrollToSelectedItem, Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_SelectedIndex, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_SelectedItem, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_SelectedValue, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_SelectedValueBinding, Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_IsSelected, Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_IsTextSearchEnabled, Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class SelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.SelectingItemsControl_WrapSelection, Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class SelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty
 
     /// <summary>
@@ -1996,7 +1962,6 @@ public static partial class SelectingItemsControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2039,7 +2004,6 @@ public static partial class SelectingItemsControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent
 
@@ -2089,7 +2053,6 @@ public static partial class SelectingItemsControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2132,7 +2095,6 @@ public static partial class SelectingItemsControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChanged
 
@@ -2167,7 +2129,6 @@ public static partial class SelectingItemsControlExtensions
                 h => obj.SelectionChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2189,5 +2150,4 @@ public static partial class SelectingItemsControlExtensions
         }));
     }
 
-#endif
 }

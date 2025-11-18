@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.MenuFlyout"/>.
 /// </summary>
 public static partial class MenuFlyoutElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class MenuFlyoutElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuFlyout.ItemsSourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class MenuFlyoutElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuFlyout.ItemTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class MenuFlyoutElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class MenuFlyoutElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty);
     }
 
-#endif
 }

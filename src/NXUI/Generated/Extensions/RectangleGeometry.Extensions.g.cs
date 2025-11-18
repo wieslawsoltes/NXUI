@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.RectangleGeometry"/> class property extension methods.
 /// </summary>
 public static partial class RectangleGeometryExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class RectangleGeometryExtensions
         return builder.WithBinding(PropertyMetadata.RectangleGeometry_RadiusX, Avalonia.Media.RectangleGeometry.RadiusXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RectangleGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RadiusXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.RectangleGeometry.RadiusXProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class RectangleGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class RectangleGeometryExtensions
         return builder.WithBinding(PropertyMetadata.RectangleGeometry_RadiusY, Avalonia.Media.RectangleGeometry.RadiusYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class RectangleGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RadiusYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.RectangleGeometry.RadiusYProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class RectangleGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class RectangleGeometryExtensions
         return builder.WithBinding(PropertyMetadata.RectangleGeometry_Rect, Avalonia.Media.RectangleGeometry.RectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class RectangleGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.RectangleGeometry.RectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.RectangleGeometry.RectProperty
 
     /// <summary>

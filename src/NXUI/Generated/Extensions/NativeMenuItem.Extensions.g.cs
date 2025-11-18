@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.NativeMenuItem"/> class property extension methods.
 /// </summary>
 public static partial class NativeMenuItemExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.MenuProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_Menu, Avalonia.Controls.NativeMenuItem.MenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.MenuProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.MenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.MenuProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.IconProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_Icon, Avalonia.Controls.NativeMenuItem.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.IconProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.IconProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.HeaderProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_Header, Avalonia.Controls.NativeMenuItem.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.HeaderProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.HeaderProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToolTipProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_ToolTip, Avalonia.Controls.NativeMenuItem.ToolTipProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToolTipProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.ToolTipProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.ToolTipProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.GestureProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_Gesture, Avalonia.Controls.NativeMenuItem.GestureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.GestureProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.GestureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.GestureProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.IsCheckedProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_IsChecked, Avalonia.Controls.NativeMenuItem.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.IsCheckedProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.IsCheckedProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.ToggleTypeProperty
 
     /// <summary>
@@ -1705,7 +1675,6 @@ public static partial class NativeMenuItemExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
@@ -1717,7 +1686,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.NativeMenuItemToggleType.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.None"/>.
@@ -1730,7 +1698,6 @@ public static partial class NativeMenuItemExtensions
         obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
@@ -1742,7 +1709,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.NativeMenuItemToggleType.CheckBox);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.CheckBox"/>.
@@ -1755,7 +1721,6 @@ public static partial class NativeMenuItemExtensions
         obj[Avalonia.Controls.NativeMenuItem.ToggleTypeProperty] = Avalonia.Controls.NativeMenuItemToggleType.CheckBox;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
@@ -1767,7 +1732,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithValue(PropertyMetadata.NativeMenuItem_ToggleType, Avalonia.Controls.NativeMenuItem.ToggleTypeProperty, Avalonia.Controls.NativeMenuItemToggleType.Radio);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.NativeMenuItemToggleType.Radio"/>.
@@ -1781,7 +1745,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.CommandProperty"/> literal value for hot reload builds.
@@ -1828,8 +1791,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_Command, Avalonia.Controls.NativeMenuItem.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.CommandProperty"/> value on a referenced control.
@@ -1876,7 +1837,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.CommandProperty
 
     /// <summary>
@@ -2023,7 +1983,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.CommandParameterProperty"/> literal value for hot reload builds.
@@ -2070,8 +2029,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_CommandParameter, Avalonia.Controls.NativeMenuItem.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.CommandParameterProperty"/> value on a referenced control.
@@ -2118,7 +2075,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.CommandParameterProperty
 
     /// <summary>
@@ -2265,7 +2221,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.IsEnabledProperty"/> literal value for hot reload builds.
@@ -2312,8 +2267,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_IsEnabled, Avalonia.Controls.NativeMenuItem.IsEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.IsEnabledProperty"/> value on a referenced control.
@@ -2360,7 +2313,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.IsEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.IsEnabledProperty
 
     /// <summary>
@@ -2507,7 +2459,6 @@ public static partial class NativeMenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuItem.IsVisibleProperty"/> literal value for hot reload builds.
@@ -2554,8 +2505,6 @@ public static partial class NativeMenuItemExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuItem_IsVisible, Avalonia.Controls.NativeMenuItem.IsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuItem.IsVisibleProperty"/> value on a referenced control.
@@ -2602,7 +2551,6 @@ public static partial class NativeMenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuItem.IsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuItem.IsVisibleProperty
 
     /// <summary>

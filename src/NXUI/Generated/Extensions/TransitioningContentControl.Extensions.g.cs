@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TransitioningContentControl"/> class property extension methods.
 /// </summary>
 public static partial class TransitioningContentControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TransitioningContentControlExtensions
         return builder.WithBinding(PropertyMetadata.TransitioningContentControl_PageTransition, Avalonia.Controls.TransitioningContentControl.PageTransitionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TransitioningContentControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TransitioningContentControl.PageTransitionProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TransitioningContentControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TransitioningContentControlExtensions
         return builder.WithBinding(PropertyMetadata.TransitioningContentControl_IsTransitionReversed, Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TransitioningContentControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty
 
     /// <summary>
@@ -544,7 +534,6 @@ public static partial class TransitioningContentControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -587,7 +576,6 @@ public static partial class TransitioningContentControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TransitioningContentControl.TransitionCompleted
 
@@ -622,7 +610,6 @@ public static partial class TransitioningContentControlExtensions
                 h => obj.TransitionCompleted -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -644,5 +631,4 @@ public static partial class TransitioningContentControlExtensions
         }));
     }
 
-#endif
 }

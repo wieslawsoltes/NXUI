@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using System;
@@ -25,4 +24,3 @@ internal static class HotReloadBoundaryMetadata
                 || type.IsDefined(typeof(HotReloadCandidateBoundaryAttribute), inherit: true));
     }
 }
-#endif

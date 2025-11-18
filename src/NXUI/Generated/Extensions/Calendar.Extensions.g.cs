@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Calendar"/> class property extension methods.
 /// </summary>
 public static partial class CalendarExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.FirstDayOfWeekProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.FirstDayOfWeekProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class CalendarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, System.DayOfWeek.Sunday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Sunday"/>.
@@ -278,7 +270,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, System.DayOfWeek.Monday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Monday"/>.
@@ -303,7 +293,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Monday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, System.DayOfWeek.Tuesday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Tuesday"/>.
@@ -328,7 +316,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, System.DayOfWeek.Wednesday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Wednesday"/>.
@@ -353,7 +339,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Wednesday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -365,7 +350,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, System.DayOfWeek.Thursday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Thursday"/>.
@@ -378,7 +362,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Thursday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -390,7 +373,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, System.DayOfWeek.Friday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Friday"/>.
@@ -403,7 +385,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -415,7 +396,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_FirstDayOfWeek, Avalonia.Controls.Calendar.FirstDayOfWeekProperty, System.DayOfWeek.Saturday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Saturday"/>.
@@ -429,7 +409,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/> literal value for hot reload builds.
@@ -476,8 +455,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_IsTodayHighlighted, Avalonia.Controls.Calendar.IsTodayHighlightedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/> value on a referenced control.
@@ -524,7 +501,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.IsTodayHighlightedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.IsTodayHighlightedProperty
 
     /// <summary>
@@ -671,7 +647,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/> literal value for hot reload builds.
@@ -718,8 +693,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_HeaderBackground, Avalonia.Controls.Calendar.HeaderBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/> value on a referenced control.
@@ -766,7 +739,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.HeaderBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.HeaderBackgroundProperty
 
     /// <summary>
@@ -913,7 +885,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> literal value for hot reload builds.
@@ -960,8 +931,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_DisplayMode, Avalonia.Controls.Calendar.DisplayModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> value on a referenced control.
@@ -1008,7 +977,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.DisplayModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.DisplayModeProperty
 
     /// <summary>
@@ -1154,7 +1122,6 @@ public static partial class CalendarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> enum value for hot reload builds.
@@ -1166,7 +1133,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_DisplayMode, Avalonia.Controls.Calendar.DisplayModeProperty, Avalonia.Controls.CalendarMode.Month);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Month"/>.
@@ -1179,7 +1145,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Month;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> enum value for hot reload builds.
@@ -1191,7 +1156,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_DisplayMode, Avalonia.Controls.Calendar.DisplayModeProperty, Avalonia.Controls.CalendarMode.Year);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Year"/>.
@@ -1204,7 +1168,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.DisplayModeProperty] = Avalonia.Controls.CalendarMode.Year;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> enum value for hot reload builds.
@@ -1216,7 +1179,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_DisplayMode, Avalonia.Controls.Calendar.DisplayModeProperty, Avalonia.Controls.CalendarMode.Decade);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarMode.Decade"/>.
@@ -1230,7 +1192,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> literal value for hot reload builds.
@@ -1277,8 +1238,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_SelectionMode, Avalonia.Controls.Calendar.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> value on a referenced control.
@@ -1325,7 +1284,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.SelectionModeProperty
 
     /// <summary>
@@ -1471,7 +1429,6 @@ public static partial class CalendarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> enum value for hot reload builds.
@@ -1483,7 +1440,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_SelectionMode, Avalonia.Controls.Calendar.SelectionModeProperty, Avalonia.Controls.CalendarSelectionMode.SingleDate);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.SingleDate"/>.
@@ -1496,7 +1452,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.SingleDate;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> enum value for hot reload builds.
@@ -1508,7 +1463,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_SelectionMode, Avalonia.Controls.Calendar.SelectionModeProperty, Avalonia.Controls.CalendarSelectionMode.SingleRange);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.SingleRange"/>.
@@ -1521,7 +1475,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.SingleRange;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> enum value for hot reload builds.
@@ -1533,7 +1486,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_SelectionMode, Avalonia.Controls.Calendar.SelectionModeProperty, Avalonia.Controls.CalendarSelectionMode.MultipleRange);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.MultipleRange"/>.
@@ -1546,7 +1498,6 @@ public static partial class CalendarExtensions
         obj[Avalonia.Controls.Calendar.SelectionModeProperty] = Avalonia.Controls.CalendarSelectionMode.MultipleRange;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> enum value for hot reload builds.
@@ -1558,7 +1509,6 @@ public static partial class CalendarExtensions
         return builder.WithValue(PropertyMetadata.Calendar_SelectionMode, Avalonia.Controls.Calendar.SelectionModeProperty, Avalonia.Controls.CalendarSelectionMode.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.CalendarSelectionMode.None"/>.
@@ -1572,7 +1522,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> literal value for hot reload builds.
@@ -1619,8 +1568,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_SelectedDate, Avalonia.Controls.Calendar.SelectedDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> value on a referenced control.
@@ -1667,7 +1614,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.SelectedDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.SelectedDateProperty
 
     /// <summary>
@@ -1814,7 +1760,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/> literal value for hot reload builds.
@@ -1861,8 +1806,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_DisplayDate, Avalonia.Controls.Calendar.DisplayDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/> value on a referenced control.
@@ -1909,7 +1852,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.DisplayDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.DisplayDateProperty
 
     /// <summary>
@@ -2056,7 +1998,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/> literal value for hot reload builds.
@@ -2103,8 +2044,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_DisplayDateStart, Avalonia.Controls.Calendar.DisplayDateStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/> value on a referenced control.
@@ -2151,7 +2090,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.DisplayDateStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.DisplayDateStartProperty
 
     /// <summary>
@@ -2298,7 +2236,6 @@ public static partial class CalendarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/> literal value for hot reload builds.
@@ -2345,8 +2282,6 @@ public static partial class CalendarExtensions
         return builder.WithBinding(PropertyMetadata.Calendar_DisplayDateEnd, Avalonia.Controls.Calendar.DisplayDateEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/> value on a referenced control.
@@ -2393,7 +2328,6 @@ public static partial class CalendarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Calendar.DisplayDateEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Calendar.DisplayDateEndProperty
 
     /// <summary>

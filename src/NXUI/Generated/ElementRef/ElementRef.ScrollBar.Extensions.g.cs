@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.ScrollBar"/>.
 /// </summary>
 public static partial class ScrollBarElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ScrollBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ScrollBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ScrollBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ScrollBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ScrollBar.IsExpandedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ScrollBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ScrollBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/> value.
@@ -88,5 +73,4 @@ public static partial class ScrollBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty);
     }
 
-#endif
 }

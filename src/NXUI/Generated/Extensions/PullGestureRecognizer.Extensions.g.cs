@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Input.PullGestureRecognizer"/> class property extension methods.
 /// </summary>
 public static partial class PullGestureRecognizerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PullGestureRecognizerExtensions
         return builder.WithBinding(PropertyMetadata.PullGestureRecognizer_PullDirection, Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PullGestureRecognizerExtensions
         return elementRef.SetBinding(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.PullGestureRecognizer.PullDirectionProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class PullGestureRecognizerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class PullGestureRecognizerExtensions
         return builder.WithValue(PropertyMetadata.PullGestureRecognizer_PullDirection, Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, Avalonia.Input.PullDirection.TopToBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.TopToBottom"/>.
@@ -278,7 +270,6 @@ public static partial class PullGestureRecognizerExtensions
         obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.TopToBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class PullGestureRecognizerExtensions
         return builder.WithValue(PropertyMetadata.PullGestureRecognizer_PullDirection, Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, Avalonia.Input.PullDirection.BottomToTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.BottomToTop"/>.
@@ -303,7 +293,6 @@ public static partial class PullGestureRecognizerExtensions
         obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.BottomToTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class PullGestureRecognizerExtensions
         return builder.WithValue(PropertyMetadata.PullGestureRecognizer_PullDirection, Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, Avalonia.Input.PullDirection.LeftToRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.LeftToRight"/>.
@@ -328,7 +316,6 @@ public static partial class PullGestureRecognizerExtensions
         obj[Avalonia.Input.PullGestureRecognizer.PullDirectionProperty] = Avalonia.Input.PullDirection.LeftToRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class PullGestureRecognizerExtensions
         return builder.WithValue(PropertyMetadata.PullGestureRecognizer_PullDirection, Avalonia.Input.PullGestureRecognizer.PullDirectionProperty, Avalonia.Input.PullDirection.RightToLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.RightToLeft"/>.

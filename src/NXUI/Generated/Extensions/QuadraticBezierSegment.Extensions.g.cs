@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.QuadraticBezierSegment"/> class property extension methods.
 /// </summary>
 public static partial class QuadraticBezierSegmentExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class QuadraticBezierSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.QuadraticBezierSegment> Point1(this ElementBuilder<Avalonia.Media.QuadraticBezierSegment> builder, Avalonia.Point value)
+    public static QuadraticBezierSegmentBuilder Point1(this QuadraticBezierSegmentBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.QuadraticBezierSegment_Point1, Avalonia.Media.QuadraticBezierSegment.Point1Property, value);
     }
@@ -33,8 +30,8 @@ public static partial class QuadraticBezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.QuadraticBezierSegment> Point1(
-        this ElementBuilder<Avalonia.Media.QuadraticBezierSegment> builder,
+    public static QuadraticBezierSegmentBuilder Point1(
+        this QuadraticBezierSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class QuadraticBezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.QuadraticBezierSegment> Point1(
-        this ElementBuilder<Avalonia.Media.QuadraticBezierSegment> builder,
+    public static QuadraticBezierSegmentBuilder Point1(
+        this QuadraticBezierSegmentBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class QuadraticBezierSegmentExtensions
         return builder.WithBinding(PropertyMetadata.QuadraticBezierSegment_Point1, Avalonia.Media.QuadraticBezierSegment.Point1Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class QuadraticBezierSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.QuadraticBezierSegment.Point1Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.QuadraticBezierSegment.Point1Property
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class QuadraticBezierSegmentExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class QuadraticBezierSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.QuadraticBezierSegment> Point2(this ElementBuilder<Avalonia.Media.QuadraticBezierSegment> builder, Avalonia.Point value)
+    public static QuadraticBezierSegmentBuilder Point2(this QuadraticBezierSegmentBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.QuadraticBezierSegment_Point2, Avalonia.Media.QuadraticBezierSegment.Point2Property, value);
     }
@@ -268,8 +261,8 @@ public static partial class QuadraticBezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.QuadraticBezierSegment> Point2(
-        this ElementBuilder<Avalonia.Media.QuadraticBezierSegment> builder,
+    public static QuadraticBezierSegmentBuilder Point2(
+        this QuadraticBezierSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class QuadraticBezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.QuadraticBezierSegment> Point2(
-        this ElementBuilder<Avalonia.Media.QuadraticBezierSegment> builder,
+    public static QuadraticBezierSegmentBuilder Point2(
+        this QuadraticBezierSegmentBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class QuadraticBezierSegmentExtensions
         return builder.WithBinding(PropertyMetadata.QuadraticBezierSegment_Point2, Avalonia.Media.QuadraticBezierSegment.Point2Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class QuadraticBezierSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.QuadraticBezierSegment.Point2Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.QuadraticBezierSegment.Point2Property
 
     /// <summary>

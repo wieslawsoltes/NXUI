@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.AdornerLayer"/>.
 /// </summary>
 public static partial class AdornerLayerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class AdornerLayerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class AdornerLayerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class AdornerLayerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class AdornerLayerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell"/> class style setters extension methods.
 /// </summary>
 public static partial class TreeDataGridCheckBoxCellSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellIsReadOnly(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellIsReadOnly(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellIsReadOnly(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellIsReadOnly(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellIsReadOnly(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellIsReadOnly(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellIsReadOnly(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellIsReadOnly(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellIsReadOnly(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellIsReadOnly(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellIsReadOnly(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellIsReadOnly(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellIsThreeState(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellIsThreeState(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellIsThreeState(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellIsThreeState(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellIsThreeState(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellIsThreeState(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellIsThreeState(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellIsThreeState(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellIsThreeState(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellIsThreeState(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellIsThreeState(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellIsThreeState(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellValue(this ElementBuilder<Style> builder, System.Nullable<System.Boolean> value)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellValue(this StyleBuilder builder, System.Nullable<System.Boolean> value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellValue(this ElementBuilder<KeyFrame> builder, System.Nullable<System.Boolean> value)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellValue(this KeyFrameBuilder builder, System.Nullable<System.Boolean> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellValue(this ElementBuilder<Style> builder, IObservable<System.Nullable<System.Boolean>> observable)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellValue(this StyleBuilder builder, IObservable<System.Nullable<System.Boolean>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Nullable<System.Boolean>> observable)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellValue(this KeyFrameBuilder builder, IObservable<System.Nullable<System.Boolean>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCheckBoxCellValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridCheckBoxCellValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TreeDataGridCheckBoxCellSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCheckBoxCellValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridCheckBoxCellValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TreeDataGridCheckBoxCellSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/>.
     /// </summary>

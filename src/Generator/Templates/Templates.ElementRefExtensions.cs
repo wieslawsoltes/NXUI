@@ -11,10 +11,8 @@ public static partial class Templates
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="%ClassType%"/>.
@@ -24,7 +22,6 @@ public static partial class %ClassName%ElementRefExtensions
 """;
 
     public static string ElementRefExtensionsMethod = """
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="%ClassType%.%Name%Property"/> value.
@@ -34,7 +31,6 @@ public static partial class %ClassName%ElementRefExtensions
         return elementRef.Observe(%ClassType%.%Name%Property);
     }
 
-#endif
 """;
 
     public static string ElementRefExtensionsFooter = """

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class style setters extension methods.
 /// </summary>
 public static partial class ContentPresenterSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBackground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetContentPresenterBackground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetContentPresenterBackground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBackground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetContentPresenterBackground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBackground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetContentPresenterBackground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBackground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBackgroundSizing(this ElementBuilder<Style> builder, Avalonia.Media.BackgroundSizing value)
+    public static StyleBuilder SetContentPresenterBackgroundSizing(this StyleBuilder builder, Avalonia.Media.BackgroundSizing value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBackgroundSizing(this ElementBuilder<KeyFrame> builder, Avalonia.Media.BackgroundSizing value)
+    public static KeyFrameBuilder SetContentPresenterBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Media.BackgroundSizing value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBackgroundSizing(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    public static StyleBuilder SetContentPresenterBackgroundSizing(this StyleBuilder builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBackgroundSizing(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    public static KeyFrameBuilder SetContentPresenterBackgroundSizing(this KeyFrameBuilder builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBackgroundSizing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBackgroundSizing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBackgroundSizing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBorderBrush(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetContentPresenterBorderBrush(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBorderBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetContentPresenterBorderBrush(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBorderBrush(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetContentPresenterBorderBrush(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBorderBrush(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetContentPresenterBorderBrush(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBorderBrush(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBorderBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBorderBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBorderBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBorderThickness(this ElementBuilder<Style> builder, Avalonia.Thickness value)
+    public static StyleBuilder SetContentPresenterBorderThickness(this StyleBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBorderThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Thickness value)
+    public static KeyFrameBuilder SetContentPresenterBorderThickness(this KeyFrameBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBorderThickness(this ElementBuilder<Style> builder, IObservable<Avalonia.Thickness> observable)
+    public static StyleBuilder SetContentPresenterBorderThickness(this StyleBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBorderThickness(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Thickness> observable)
+    public static KeyFrameBuilder SetContentPresenterBorderThickness(this KeyFrameBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBorderThickness(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBorderThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBorderThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBorderThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterCornerRadius(this ElementBuilder<Style> builder, Avalonia.CornerRadius value)
+    public static StyleBuilder SetContentPresenterCornerRadius(this StyleBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.CornerRadius value)
+    public static KeyFrameBuilder SetContentPresenterCornerRadius(this KeyFrameBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterCornerRadius(this ElementBuilder<Style> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static StyleBuilder SetContentPresenterCornerRadius(this StyleBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterCornerRadius(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static KeyFrameBuilder SetContentPresenterCornerRadius(this KeyFrameBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterCornerRadius(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterCornerRadius(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBoxShadow(this ElementBuilder<Style> builder, Avalonia.Media.BoxShadows value)
+    public static StyleBuilder SetContentPresenterBoxShadow(this StyleBuilder builder, Avalonia.Media.BoxShadows value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBoxShadow(this ElementBuilder<KeyFrame> builder, Avalonia.Media.BoxShadows value)
+    public static KeyFrameBuilder SetContentPresenterBoxShadow(this KeyFrameBuilder builder, Avalonia.Media.BoxShadows value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBoxShadow(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.BoxShadows> observable)
+    public static StyleBuilder SetContentPresenterBoxShadow(this StyleBuilder builder, IObservable<Avalonia.Media.BoxShadows> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBoxShadow(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.BoxShadows> observable)
+    public static KeyFrameBuilder SetContentPresenterBoxShadow(this KeyFrameBuilder builder, IObservable<Avalonia.Media.BoxShadows> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterBoxShadow(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterBoxShadow(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterBoxShadow(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterBoxShadow(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterForeground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetContentPresenterForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetContentPresenterForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterForeground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetContentPresenterForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterForeground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetContentPresenterForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterForeground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontFamily(this ElementBuilder<Style> builder, Avalonia.Media.FontFamily value)
+    public static StyleBuilder SetContentPresenterFontFamily(this StyleBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontFamily value)
+    public static KeyFrameBuilder SetContentPresenterFontFamily(this KeyFrameBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontFamily(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static StyleBuilder SetContentPresenterFontFamily(this StyleBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontFamily(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static KeyFrameBuilder SetContentPresenterFontFamily(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontFamily(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontFamily(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontFamily(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontSize(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetContentPresenterFontSize(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontSize(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetContentPresenterFontSize(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontSize(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetContentPresenterFontSize(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontSize(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetContentPresenterFontSize(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontSize(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontSize(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontStyle(this ElementBuilder<Style> builder, Avalonia.Media.FontStyle value)
+    public static StyleBuilder SetContentPresenterFontStyle(this StyleBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStyle value)
+    public static KeyFrameBuilder SetContentPresenterFontStyle(this KeyFrameBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontStyle(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static StyleBuilder SetContentPresenterFontStyle(this StyleBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontStyle(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static KeyFrameBuilder SetContentPresenterFontStyle(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontStyle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontWeight(this ElementBuilder<Style> builder, Avalonia.Media.FontWeight value)
+    public static StyleBuilder SetContentPresenterFontWeight(this StyleBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontWeight value)
+    public static KeyFrameBuilder SetContentPresenterFontWeight(this KeyFrameBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontWeight(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static StyleBuilder SetContentPresenterFontWeight(this StyleBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontWeight(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static KeyFrameBuilder SetContentPresenterFontWeight(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontWeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontWeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontWeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontStretch(this ElementBuilder<Style> builder, Avalonia.Media.FontStretch value)
+    public static StyleBuilder SetContentPresenterFontStretch(this StyleBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStretch value)
+    public static KeyFrameBuilder SetContentPresenterFontStretch(this KeyFrameBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static StyleBuilder SetContentPresenterFontStretch(this StyleBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static KeyFrameBuilder SetContentPresenterFontStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterFontStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterFontStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterFontStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextAlignment(this ElementBuilder<Style> builder, Avalonia.Media.TextAlignment value)
+    public static StyleBuilder SetContentPresenterTextAlignment(this StyleBuilder builder, Avalonia.Media.TextAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextAlignment value)
+    public static KeyFrameBuilder SetContentPresenterTextAlignment(this KeyFrameBuilder builder, Avalonia.Media.TextAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    public static StyleBuilder SetContentPresenterTextAlignment(this StyleBuilder builder, IObservable<Avalonia.Media.TextAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    public static KeyFrameBuilder SetContentPresenterTextAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterTextAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/>.
     /// </summary>
@@ -2157,7 +2077,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/>.
@@ -2165,7 +2084,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextWrapping(this ElementBuilder<Style> builder, Avalonia.Media.TextWrapping value)
+    public static StyleBuilder SetContentPresenterTextWrapping(this StyleBuilder builder, Avalonia.Media.TextWrapping value)
     {
         return builder.WithAction(style =>
         {
@@ -2179,7 +2098,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextWrapping(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextWrapping value)
+    public static KeyFrameBuilder SetContentPresenterTextWrapping(this KeyFrameBuilder builder, Avalonia.Media.TextWrapping value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2187,7 +2106,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty
 
     /// <summary>
@@ -2213,7 +2131,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> using an observable source.
@@ -2221,7 +2138,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextWrapping(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextWrapping> observable)
+    public static StyleBuilder SetContentPresenterTextWrapping(this StyleBuilder builder, IObservable<Avalonia.Media.TextWrapping> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2235,7 +2152,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextWrapping(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextWrapping> observable)
+    public static KeyFrameBuilder SetContentPresenterTextWrapping(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextWrapping> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2243,7 +2160,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/>.
     /// </summary>
@@ -2267,7 +2183,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> using a binding.
@@ -2275,7 +2190,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextWrapping(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterTextWrapping(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2289,7 +2204,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextWrapping(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2297,7 +2212,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/>.
     /// </summary>
@@ -2322,7 +2236,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/>.
@@ -2330,7 +2243,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextTrimming(this ElementBuilder<Style> builder, Avalonia.Media.TextTrimming value)
+    public static StyleBuilder SetContentPresenterTextTrimming(this StyleBuilder builder, Avalonia.Media.TextTrimming value)
     {
         return builder.WithAction(style =>
         {
@@ -2344,7 +2257,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextTrimming(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextTrimming value)
+    public static KeyFrameBuilder SetContentPresenterTextTrimming(this KeyFrameBuilder builder, Avalonia.Media.TextTrimming value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2352,7 +2265,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty
 
     /// <summary>
@@ -2378,7 +2290,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> using an observable source.
@@ -2386,7 +2297,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextTrimming(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextTrimming> observable)
+    public static StyleBuilder SetContentPresenterTextTrimming(this StyleBuilder builder, IObservable<Avalonia.Media.TextTrimming> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2400,7 +2311,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextTrimming(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextTrimming> observable)
+    public static KeyFrameBuilder SetContentPresenterTextTrimming(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextTrimming> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2408,7 +2319,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/>.
     /// </summary>
@@ -2432,7 +2342,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> using a binding.
@@ -2440,7 +2349,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterTextTrimming(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterTextTrimming(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2454,7 +2363,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterTextTrimming(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterTextTrimming(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2462,7 +2371,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/>.
     /// </summary>
@@ -2487,7 +2395,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/>.
@@ -2495,7 +2402,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterLineHeight(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetContentPresenterLineHeight(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -2509,7 +2416,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterLineHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetContentPresenterLineHeight(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2517,7 +2424,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty
 
     /// <summary>
@@ -2543,7 +2449,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> using an observable source.
@@ -2551,7 +2456,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterLineHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetContentPresenterLineHeight(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2565,7 +2470,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterLineHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetContentPresenterLineHeight(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2573,7 +2478,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/>.
     /// </summary>
@@ -2597,7 +2501,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> using a binding.
@@ -2605,7 +2508,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterLineHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterLineHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2619,7 +2522,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterLineHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterLineHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2627,7 +2530,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/>.
     /// </summary>
@@ -2652,7 +2554,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/>.
@@ -2660,7 +2561,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterMaxLines(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetContentPresenterMaxLines(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -2674,7 +2575,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterMaxLines(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetContentPresenterMaxLines(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2682,7 +2583,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty
 
     /// <summary>
@@ -2708,7 +2608,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> using an observable source.
@@ -2716,7 +2615,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterMaxLines(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetContentPresenterMaxLines(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2730,7 +2629,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterMaxLines(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetContentPresenterMaxLines(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2738,7 +2637,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/>.
     /// </summary>
@@ -2762,7 +2660,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> using a binding.
@@ -2770,7 +2667,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterMaxLines(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterMaxLines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2784,7 +2681,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterMaxLines(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterMaxLines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2792,7 +2689,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/>.
     /// </summary>
@@ -2817,7 +2713,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
@@ -2825,7 +2720,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterContent(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetContentPresenterContent(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -2839,7 +2734,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterContent(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetContentPresenterContent(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2847,7 +2742,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.ContentProperty
 
     /// <summary>
@@ -2873,7 +2767,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> using an observable source.
@@ -2881,7 +2774,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterContent(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetContentPresenterContent(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2895,7 +2788,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterContent(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetContentPresenterContent(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2903,7 +2796,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
     /// </summary>
@@ -2927,7 +2819,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> using a binding.
@@ -2935,7 +2826,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterContent(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2949,7 +2840,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterContent(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2957,7 +2848,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/>.
     /// </summary>
@@ -2982,7 +2872,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
@@ -2990,7 +2879,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterContentTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetContentPresenterContentTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -3004,7 +2893,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetContentPresenterContentTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3012,7 +2901,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty
 
     /// <summary>
@@ -3038,7 +2926,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> using an observable source.
@@ -3046,7 +2933,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterContentTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetContentPresenterContentTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3060,7 +2947,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterContentTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetContentPresenterContentTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3068,7 +2955,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
     /// </summary>
@@ -3092,7 +2978,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> using a binding.
@@ -3100,7 +2985,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterContentTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterContentTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3114,7 +2999,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3122,7 +3007,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/>.
     /// </summary>
@@ -3147,7 +3031,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
@@ -3155,7 +3038,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterHorizontalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static StyleBuilder SetContentPresenterHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -3169,7 +3052,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static KeyFrameBuilder SetContentPresenterHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3177,7 +3060,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -3203,7 +3085,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> using an observable source.
@@ -3211,7 +3092,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterHorizontalContentAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static StyleBuilder SetContentPresenterHorizontalContentAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3225,7 +3106,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static KeyFrameBuilder SetContentPresenterHorizontalContentAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3233,7 +3114,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -3257,7 +3137,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> using a binding.
@@ -3265,7 +3144,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterHorizontalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3279,7 +3158,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3287,7 +3166,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -3312,7 +3190,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
@@ -3320,7 +3197,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterVerticalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.VerticalAlignment value)
+    public static StyleBuilder SetContentPresenterVerticalContentAlignment(this StyleBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -3334,7 +3211,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.VerticalAlignment value)
+    public static KeyFrameBuilder SetContentPresenterVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3342,7 +3219,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -3368,7 +3244,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> using an observable source.
@@ -3376,7 +3251,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterVerticalContentAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static StyleBuilder SetContentPresenterVerticalContentAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3390,7 +3265,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static KeyFrameBuilder SetContentPresenterVerticalContentAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3398,7 +3273,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -3422,7 +3296,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> using a binding.
@@ -3430,7 +3303,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterVerticalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3444,7 +3317,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3452,7 +3325,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -3477,7 +3349,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
@@ -3485,7 +3356,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterPadding(this ElementBuilder<Style> builder, Avalonia.Thickness value)
+    public static StyleBuilder SetContentPresenterPadding(this StyleBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(style =>
         {
@@ -3499,7 +3370,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterPadding(this ElementBuilder<KeyFrame> builder, Avalonia.Thickness value)
+    public static KeyFrameBuilder SetContentPresenterPadding(this KeyFrameBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3507,7 +3378,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty
 
     /// <summary>
@@ -3533,7 +3403,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> using an observable source.
@@ -3541,7 +3410,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterPadding(this ElementBuilder<Style> builder, IObservable<Avalonia.Thickness> observable)
+    public static StyleBuilder SetContentPresenterPadding(this StyleBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3555,7 +3424,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterPadding(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Thickness> observable)
+    public static KeyFrameBuilder SetContentPresenterPadding(this KeyFrameBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3563,7 +3432,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
     /// </summary>
@@ -3587,7 +3455,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> using a binding.
@@ -3595,7 +3462,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterPadding(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3609,7 +3476,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterPadding(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3617,7 +3484,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/>.
     /// </summary>
@@ -3642,7 +3508,6 @@ public static partial class ContentPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
@@ -3650,7 +3515,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterRecognizesAccessKey(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetContentPresenterRecognizesAccessKey(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -3664,7 +3529,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterRecognizesAccessKey(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetContentPresenterRecognizesAccessKey(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3672,7 +3537,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty
 
     /// <summary>
@@ -3698,7 +3562,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> using an observable source.
@@ -3706,7 +3569,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterRecognizesAccessKey(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetContentPresenterRecognizesAccessKey(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3720,7 +3583,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterRecognizesAccessKey(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetContentPresenterRecognizesAccessKey(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3728,7 +3591,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
     /// </summary>
@@ -3752,7 +3614,6 @@ public static partial class ContentPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> using a binding.
@@ -3760,7 +3621,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContentPresenterRecognizesAccessKey(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContentPresenterRecognizesAccessKey(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3774,7 +3635,7 @@ public static partial class ContentPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContentPresenterRecognizesAccessKey(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContentPresenterRecognizesAccessKey(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3782,7 +3643,6 @@ public static partial class ContentPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/>.
     /// </summary>

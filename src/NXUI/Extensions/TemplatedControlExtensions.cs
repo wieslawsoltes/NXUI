@@ -1,10 +1,8 @@
 namespace NXUI.Extensions;
 
 using System;
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Nodes;
 using NXUI.HotReload.Templates;
-#endif
 
 /// <summary>
 /// Control template helpers.
@@ -36,7 +34,6 @@ public static partial class TemplatedControlExtensions
         return style;
     }
 
-#if NXUI_HOTRELOAD
     /// <summary>
     /// Adds a <see cref="FuncControlTemplate"/> created from a fluent builder delegate to keep hot reload working.
     /// </summary>
@@ -50,35 +47,26 @@ public static partial class TemplatedControlExtensions
         ArgumentNullException.ThrowIfNull(style);
         ArgumentNullException.ThrowIfNull(build);
 
-#if NXUI_HOTRELOAD
         var value = CreateTemplate(build);
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
         return style;
-#else
-        return style.SetTemplatedControlTemplate<TControl>((parent, scope) => build(parent, scope).Mount());
-#endif
     }
 
     /// <summary>
     /// Builder-compatible overload that records the template assignment for hot reload.
     /// </summary>
-    public static ElementBuilder<Style> SetTemplatedControlTemplate<TControl, TContent>(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder SetTemplatedControlTemplate<TControl, TContent>(
+        this StyleBuilder builder,
         Func<TControl, INameScope, ElementBuilder<TContent>> build)
         where TControl : TemplatedControl
         where TContent : Control
     {
         ArgumentNullException.ThrowIfNull(build);
-#if NXUI_HOTRELOAD
         return builder.WithAction(style =>
         {
             var value = CreateTemplate(build);
             style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
         });
-#else
-        return builder.WithAction(style =>
-            style.SetTemplatedControlTemplate<TControl>((parent, scope) => build(parent, scope).Mount()));
-#endif
     }
 
     private static FuncControlTemplate CreateTemplate<TControl, TContent>(
@@ -110,5 +98,4 @@ public static partial class TemplatedControlExtensions
         templateRef = value;
         return value;
     }
-#endif
 }

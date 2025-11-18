@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.MenuItem"/> class property extension methods.
 /// </summary>
 public static partial class MenuItemExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.CommandProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_Command, Avalonia.Controls.MenuItem.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.CommandProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.CommandProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_HotKey, Avalonia.Controls.MenuItem.HotKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.HotKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.HotKeyProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_CommandParameter, Avalonia.Controls.MenuItem.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.CommandParameterProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.IconProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_Icon, Avalonia.Controls.MenuItem.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.IconProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.IconProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_InputGesture, Avalonia.Controls.MenuItem.InputGestureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.InputGestureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.InputGestureProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_IsSubMenuOpen, Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.IsSubMenuOpenProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_StaysOpenOnClick, Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.StaysOpenOnClickProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_ToggleType, Avalonia.Controls.MenuItem.ToggleTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.ToggleTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.ToggleTypeProperty
 
     /// <summary>
@@ -1947,7 +1913,6 @@ public static partial class MenuItemExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
@@ -1959,7 +1924,6 @@ public static partial class MenuItemExtensions
         return builder.WithValue(PropertyMetadata.MenuItem_ToggleType, Avalonia.Controls.MenuItem.ToggleTypeProperty, Avalonia.Controls.MenuItemToggleType.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.None"/>.
@@ -1972,7 +1936,6 @@ public static partial class MenuItemExtensions
         obj[Avalonia.Controls.MenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
@@ -1984,7 +1947,6 @@ public static partial class MenuItemExtensions
         return builder.WithValue(PropertyMetadata.MenuItem_ToggleType, Avalonia.Controls.MenuItem.ToggleTypeProperty, Avalonia.Controls.MenuItemToggleType.CheckBox);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.CheckBox"/>.
@@ -1997,7 +1959,6 @@ public static partial class MenuItemExtensions
         obj[Avalonia.Controls.MenuItem.ToggleTypeProperty] = Avalonia.Controls.MenuItemToggleType.CheckBox;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> enum value for hot reload builds.
@@ -2009,7 +1970,6 @@ public static partial class MenuItemExtensions
         return builder.WithValue(PropertyMetadata.MenuItem_ToggleType, Avalonia.Controls.MenuItem.ToggleTypeProperty, Avalonia.Controls.MenuItemToggleType.Radio);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> property value to <see cref="Avalonia.Controls.MenuItemToggleType.Radio"/>.
@@ -2023,7 +1983,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> literal value for hot reload builds.
@@ -2070,8 +2029,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_IsChecked, Avalonia.Controls.MenuItem.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> value on a referenced control.
@@ -2118,7 +2075,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.IsCheckedProperty
 
     /// <summary>
@@ -2265,7 +2221,6 @@ public static partial class MenuItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> literal value for hot reload builds.
@@ -2312,8 +2267,6 @@ public static partial class MenuItemExtensions
         return builder.WithBinding(PropertyMetadata.MenuItem_GroupName, Avalonia.Controls.MenuItem.GroupNameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> value on a referenced control.
@@ -2360,7 +2313,6 @@ public static partial class MenuItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuItem.GroupNameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuItem.GroupNameProperty
 
     /// <summary>
@@ -2555,7 +2507,6 @@ public static partial class MenuItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.MenuItem.ClickEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2598,7 +2549,6 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuItem.PointerEnteredItemEvent
 
@@ -2648,7 +2598,6 @@ public static partial class MenuItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.MenuItem.PointerEnteredItemEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2691,7 +2640,6 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuItem.PointerExitedItemEvent
 
@@ -2741,7 +2689,6 @@ public static partial class MenuItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.MenuItem.PointerExitedItemEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2784,7 +2731,6 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuItem.SubmenuOpenedEvent
 
@@ -2834,7 +2780,6 @@ public static partial class MenuItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.MenuItem.SubmenuOpenedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2877,7 +2822,6 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuItem.Click
 
@@ -2912,7 +2856,6 @@ public static partial class MenuItemExtensions
                 h => obj.Click -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2934,7 +2877,6 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuItem.PointerEnteredItem
 
@@ -2969,7 +2911,6 @@ public static partial class MenuItemExtensions
                 h => obj.PointerEnteredItem -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2991,7 +2932,6 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuItem.PointerExitedItem
 
@@ -3026,7 +2966,6 @@ public static partial class MenuItemExtensions
                 h => obj.PointerExitedItem -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3048,7 +2987,6 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuItem.SubmenuOpened
 
@@ -3083,7 +3021,6 @@ public static partial class MenuItemExtensions
                 h => obj.SubmenuOpened -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3105,5 +3042,4 @@ public static partial class MenuItemExtensions
         }));
     }
 
-#endif
 }

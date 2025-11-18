@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DockPanel"/>.
 /// </summary>
 public static partial class DockPanelElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DockPanel.DockProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DockPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DockPanel.DockProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DockPanel.LastChildFillProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DockPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DockPanel.LastChildFillProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DockPanel.HorizontalSpacingProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DockPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DockPanel.HorizontalSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DockPanel.VerticalSpacingProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class DockPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DockPanel.VerticalSpacingProperty);
     }
 
-#endif
 }

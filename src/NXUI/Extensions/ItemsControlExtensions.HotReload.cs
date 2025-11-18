@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.Extensions;
 
 using Avalonia.Collections;
@@ -82,4 +81,3 @@ public static partial class ItemsControlExtensions
         });
     }
 }
-#endif

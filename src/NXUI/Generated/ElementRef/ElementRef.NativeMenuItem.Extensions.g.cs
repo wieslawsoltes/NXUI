@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.NativeMenuItem"/>.
 /// </summary>
 public static partial class NativeMenuItemElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.MenuProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.MenuProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.IconProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.IconProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.HeaderProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.HeaderProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.ToolTipProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.ToolTipProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.GestureProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.GestureProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.IsCheckedProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.IsCheckedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.ToggleTypeProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.ToggleTypeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.CommandProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.CommandProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.CommandParameterProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.CommandParameterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.IsEnabledProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.IsEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenuItem.IsVisibleProperty"/> value.
@@ -132,5 +109,4 @@ public static partial class NativeMenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenuItem.IsVisibleProperty);
     }
 
-#endif
 }

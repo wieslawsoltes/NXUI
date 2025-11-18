@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Documents.Inline"/> class property extension methods.
 /// </summary>
 public static partial class InlineExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class InlineExtensions
         return builder.WithBinding(PropertyMetadata.Inline_TextDecorations, Avalonia.Controls.Documents.Inline.TextDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class InlineExtensions
         return elementRef.SetBinding(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Documents.Inline.TextDecorationsProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class InlineExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class InlineExtensions
         return builder.WithBinding(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class InlineExtensions
         return elementRef.SetBinding(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class InlineExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Top"/>.
@@ -520,7 +508,6 @@ public static partial class InlineExtensions
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Center"/>.
@@ -545,7 +531,6 @@ public static partial class InlineExtensions
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Bottom"/>.
@@ -570,7 +554,6 @@ public static partial class InlineExtensions
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.Baseline);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Baseline"/>.
@@ -595,7 +577,6 @@ public static partial class InlineExtensions
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Baseline;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.TextTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.TextTop"/>.
@@ -620,7 +600,6 @@ public static partial class InlineExtensions
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.TextTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.TextBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.TextBottom"/>.
@@ -645,7 +623,6 @@ public static partial class InlineExtensions
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.TextBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -657,7 +634,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.Subscript);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Subscript"/>.
@@ -670,7 +646,6 @@ public static partial class InlineExtensions
         obj[Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty] = Avalonia.Media.BaselineAlignment.Subscript;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> enum value for hot reload builds.
@@ -682,7 +657,6 @@ public static partial class InlineExtensions
         return builder.WithValue(PropertyMetadata.Inline_BaselineAlignment, Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, Avalonia.Media.BaselineAlignment.Superscript);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> property value to <see cref="Avalonia.Media.BaselineAlignment.Superscript"/>.

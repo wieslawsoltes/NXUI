@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ColorView"/> class style setters extension methods.
 /// </summary>
 public static partial class ColorViewSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColor(this ElementBuilder<Style> builder, Avalonia.Media.Color value)
+    public static StyleBuilder SetColorViewColor(this StyleBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Color value)
+    public static KeyFrameBuilder SetColorViewColor(this KeyFrameBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Color> observable)
+    public static StyleBuilder SetColorViewColor(this StyleBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Color> observable)
+    public static KeyFrameBuilder SetColorViewColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorModel(this ElementBuilder<Style> builder, Avalonia.Controls.ColorModel value)
+    public static StyleBuilder SetColorViewColorModel(this StyleBuilder builder, Avalonia.Controls.ColorModel value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorModel(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ColorModel value)
+    public static KeyFrameBuilder SetColorViewColorModel(this KeyFrameBuilder builder, Avalonia.Controls.ColorModel value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorModelProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorModelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorModel(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ColorModel> observable)
+    public static StyleBuilder SetColorViewColorModel(this StyleBuilder builder, IObservable<Avalonia.Controls.ColorModel> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorModel(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ColorModel> observable)
+    public static KeyFrameBuilder SetColorViewColorModel(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ColorModel> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorModelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorModel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColorModel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorModel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColorModel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorSpectrumComponents(this ElementBuilder<Style> builder, Avalonia.Controls.ColorSpectrumComponents value)
+    public static StyleBuilder SetColorViewColorSpectrumComponents(this StyleBuilder builder, Avalonia.Controls.ColorSpectrumComponents value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorSpectrumComponents(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ColorSpectrumComponents value)
+    public static KeyFrameBuilder SetColorViewColorSpectrumComponents(this KeyFrameBuilder builder, Avalonia.Controls.ColorSpectrumComponents value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorSpectrumComponents(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
+    public static StyleBuilder SetColorViewColorSpectrumComponents(this StyleBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorSpectrumComponents(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
+    public static KeyFrameBuilder SetColorViewColorSpectrumComponents(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorSpectrumComponents(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColorSpectrumComponents(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorSpectrumComponents(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColorSpectrumComponents(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorSpectrumShape(this ElementBuilder<Style> builder, Avalonia.Controls.ColorSpectrumShape value)
+    public static StyleBuilder SetColorViewColorSpectrumShape(this StyleBuilder builder, Avalonia.Controls.ColorSpectrumShape value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorSpectrumShape(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ColorSpectrumShape value)
+    public static KeyFrameBuilder SetColorViewColorSpectrumShape(this KeyFrameBuilder builder, Avalonia.Controls.ColorSpectrumShape value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorSpectrumShapeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorSpectrumShape(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
+    public static StyleBuilder SetColorViewColorSpectrumShape(this StyleBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorSpectrumShape(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
+    public static KeyFrameBuilder SetColorViewColorSpectrumShape(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewColorSpectrumShape(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewColorSpectrumShape(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewColorSpectrumShape(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewColorSpectrumShape(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewHexInputAlphaPosition(this ElementBuilder<Style> builder, Avalonia.Controls.AlphaComponentPosition value)
+    public static StyleBuilder SetColorViewHexInputAlphaPosition(this StyleBuilder builder, Avalonia.Controls.AlphaComponentPosition value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewHexInputAlphaPosition(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.AlphaComponentPosition value)
+    public static KeyFrameBuilder SetColorViewHexInputAlphaPosition(this KeyFrameBuilder builder, Avalonia.Controls.AlphaComponentPosition value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.HexInputAlphaPositionProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewHexInputAlphaPosition(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.AlphaComponentPosition> observable)
+    public static StyleBuilder SetColorViewHexInputAlphaPosition(this StyleBuilder builder, IObservable<Avalonia.Controls.AlphaComponentPosition> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewHexInputAlphaPosition(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.AlphaComponentPosition> observable)
+    public static KeyFrameBuilder SetColorViewHexInputAlphaPosition(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.AlphaComponentPosition> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewHexInputAlphaPosition(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewHexInputAlphaPosition(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewHexInputAlphaPosition(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewHexInputAlphaPosition(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewHsvColor(this ElementBuilder<Style> builder, Avalonia.Media.HsvColor value)
+    public static StyleBuilder SetColorViewHsvColor(this StyleBuilder builder, Avalonia.Media.HsvColor value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewHsvColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.HsvColor value)
+    public static KeyFrameBuilder SetColorViewHsvColor(this KeyFrameBuilder builder, Avalonia.Media.HsvColor value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.HsvColorProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.HsvColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewHsvColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.HsvColor> observable)
+    public static StyleBuilder SetColorViewHsvColor(this StyleBuilder builder, IObservable<Avalonia.Media.HsvColor> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewHsvColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.HsvColor> observable)
+    public static KeyFrameBuilder SetColorViewHsvColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.HsvColor> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.HsvColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewHsvColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewHsvColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewHsvColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewHsvColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAccentColorsVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsAccentColorsVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAccentColorsVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsAccentColorsVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAccentColorsVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsAccentColorsVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAccentColorsVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsAccentColorsVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAccentColorsVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsAccentColorsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAccentColorsVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsAccentColorsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAlphaEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsAlphaEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAlphaEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsAlphaEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsAlphaEnabledProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAlphaEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsAlphaEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAlphaEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsAlphaEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAlphaEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsAlphaEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAlphaEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsAlphaEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAlphaVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsAlphaVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAlphaVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsAlphaVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsAlphaVisibleProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAlphaVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsAlphaVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAlphaVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsAlphaVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsAlphaVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsAlphaVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsAlphaVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsAlphaVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsAlphaVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorComponentsVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsColorComponentsVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorComponentsVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsColorComponentsVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorComponentsVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsColorComponentsVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorComponentsVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsColorComponentsVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorComponentsVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorComponentsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorComponentsVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorComponentsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorModelVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsColorModelVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorModelVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsColorModelVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorModelVisibleProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorModelVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorModelVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsColorModelVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorModelVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsColorModelVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorModelVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorModelVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorModelVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorModelVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorModelVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorPaletteVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsColorPaletteVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorPaletteVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsColorPaletteVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorPaletteVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsColorPaletteVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorPaletteVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsColorPaletteVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorPaletteVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorPaletteVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorPaletteVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorPaletteVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorPreviewVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsColorPreviewVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorPreviewVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsColorPreviewVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorPreviewVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsColorPreviewVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorPreviewVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsColorPreviewVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorPreviewVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorPreviewVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorPreviewVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorPreviewVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/>.
     /// </summary>
@@ -2157,7 +2077,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/>.
@@ -2165,7 +2084,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorSpectrumVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsColorSpectrumVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2179,7 +2098,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorSpectrumVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2187,7 +2106,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty
 
     /// <summary>
@@ -2213,7 +2131,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/> using an observable source.
@@ -2221,7 +2138,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorSpectrumVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsColorSpectrumVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2235,7 +2152,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorSpectrumVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2243,7 +2160,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/>.
     /// </summary>
@@ -2267,7 +2183,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/> using a binding.
@@ -2275,7 +2190,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorSpectrumVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorSpectrumVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2289,7 +2204,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorSpectrumVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2297,7 +2212,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/>.
     /// </summary>
@@ -2322,7 +2236,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/>.
@@ -2330,7 +2243,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorSpectrumSliderVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsColorSpectrumSliderVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2344,7 +2257,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorSpectrumSliderVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumSliderVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2352,7 +2265,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty
 
     /// <summary>
@@ -2378,7 +2290,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/> using an observable source.
@@ -2386,7 +2297,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorSpectrumSliderVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsColorSpectrumSliderVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2400,7 +2311,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorSpectrumSliderVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumSliderVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2408,7 +2319,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/>.
     /// </summary>
@@ -2432,7 +2342,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/> using a binding.
@@ -2440,7 +2349,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsColorSpectrumSliderVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsColorSpectrumSliderVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2454,7 +2363,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsColorSpectrumSliderVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsColorSpectrumSliderVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2462,7 +2371,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/>.
     /// </summary>
@@ -2487,7 +2395,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/>.
@@ -2495,7 +2402,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsComponentSliderVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsComponentSliderVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2509,7 +2416,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsComponentSliderVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsComponentSliderVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2517,7 +2424,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty
 
     /// <summary>
@@ -2543,7 +2449,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/> using an observable source.
@@ -2551,7 +2456,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsComponentSliderVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsComponentSliderVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2565,7 +2470,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsComponentSliderVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsComponentSliderVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2573,7 +2478,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/>.
     /// </summary>
@@ -2597,7 +2501,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/> using a binding.
@@ -2605,7 +2508,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsComponentSliderVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsComponentSliderVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2619,7 +2522,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsComponentSliderVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsComponentSliderVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2627,7 +2530,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/>.
     /// </summary>
@@ -2652,7 +2554,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/>.
@@ -2660,7 +2561,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsComponentTextInputVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsComponentTextInputVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2674,7 +2575,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsComponentTextInputVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsComponentTextInputVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2682,7 +2583,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty
 
     /// <summary>
@@ -2708,7 +2608,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/> using an observable source.
@@ -2716,7 +2615,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsComponentTextInputVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsComponentTextInputVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2730,7 +2629,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsComponentTextInputVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsComponentTextInputVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2738,7 +2637,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/>.
     /// </summary>
@@ -2762,7 +2660,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/> using a binding.
@@ -2770,7 +2667,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsComponentTextInputVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsComponentTextInputVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2784,7 +2681,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsComponentTextInputVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsComponentTextInputVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2792,7 +2689,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/>.
     /// </summary>
@@ -2817,7 +2713,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/>.
@@ -2825,7 +2720,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsHexInputVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorViewIsHexInputVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2839,7 +2734,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsHexInputVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorViewIsHexInputVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2847,7 +2742,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsHexInputVisibleProperty
 
     /// <summary>
@@ -2873,7 +2767,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsHexInputVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/> using an observable source.
@@ -2881,7 +2774,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsHexInputVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorViewIsHexInputVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2895,7 +2788,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsHexInputVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorViewIsHexInputVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2903,7 +2796,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/>.
     /// </summary>
@@ -2927,7 +2819,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.IsHexInputVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/> using a binding.
@@ -2935,7 +2826,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewIsHexInputVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewIsHexInputVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2949,7 +2840,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewIsHexInputVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewIsHexInputVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2957,7 +2848,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/>.
     /// </summary>
@@ -2982,7 +2872,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/>.
@@ -2990,7 +2879,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxHue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewMaxHue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -3004,7 +2893,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxHue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewMaxHue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3012,7 +2901,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.MaxHueProperty
 
     /// <summary>
@@ -3038,7 +2926,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxHueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/> using an observable source.
@@ -3046,7 +2933,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxHue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewMaxHue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3060,7 +2947,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxHue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewMaxHue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3068,7 +2955,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/>.
     /// </summary>
@@ -3092,7 +2978,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxHueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/> using a binding.
@@ -3100,7 +2985,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxHue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMaxHue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3114,7 +2999,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxHue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMaxHue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3122,7 +3007,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/>.
     /// </summary>
@@ -3147,7 +3031,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/>.
@@ -3155,7 +3038,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxSaturation(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewMaxSaturation(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -3169,7 +3052,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxSaturation(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewMaxSaturation(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3177,7 +3060,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.MaxSaturationProperty
 
     /// <summary>
@@ -3203,7 +3085,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxSaturationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/> using an observable source.
@@ -3211,7 +3092,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxSaturation(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewMaxSaturation(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3225,7 +3106,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxSaturation(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewMaxSaturation(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3233,7 +3114,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/>.
     /// </summary>
@@ -3257,7 +3137,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxSaturationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/> using a binding.
@@ -3265,7 +3144,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxSaturation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMaxSaturation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3279,7 +3158,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxSaturation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMaxSaturation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3287,7 +3166,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/>.
     /// </summary>
@@ -3312,7 +3190,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/>.
@@ -3320,7 +3197,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxValue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewMaxValue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -3334,7 +3211,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxValue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewMaxValue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3342,7 +3219,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.MaxValueProperty
 
     /// <summary>
@@ -3368,7 +3244,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/> using an observable source.
@@ -3376,7 +3251,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxValue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewMaxValue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3390,7 +3265,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewMaxValue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3398,7 +3273,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/>.
     /// </summary>
@@ -3422,7 +3296,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MaxValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/> using a binding.
@@ -3430,7 +3303,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMaxValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMaxValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3444,7 +3317,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMaxValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMaxValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3452,7 +3325,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/>.
     /// </summary>
@@ -3477,7 +3349,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinHueProperty"/>.
@@ -3485,7 +3356,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinHue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewMinHue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -3499,7 +3370,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinHue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewMinHue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3507,7 +3378,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.MinHueProperty
 
     /// <summary>
@@ -3533,7 +3403,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinHueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinHueProperty"/> using an observable source.
@@ -3541,7 +3410,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinHue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewMinHue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3555,7 +3424,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinHue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewMinHue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3563,7 +3432,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MinHueProperty"/>.
     /// </summary>
@@ -3587,7 +3455,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinHueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinHueProperty"/> using a binding.
@@ -3595,7 +3462,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinHue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMinHue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3609,7 +3476,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinHue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMinHue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3617,7 +3484,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MinHueProperty"/>.
     /// </summary>
@@ -3642,7 +3508,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/>.
@@ -3650,7 +3515,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinSaturation(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewMinSaturation(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -3664,7 +3529,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinSaturation(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewMinSaturation(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3672,7 +3537,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.MinSaturationProperty
 
     /// <summary>
@@ -3698,7 +3562,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinSaturationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/> using an observable source.
@@ -3706,7 +3569,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinSaturation(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewMinSaturation(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3720,7 +3583,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinSaturation(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewMinSaturation(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3728,7 +3591,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/>.
     /// </summary>
@@ -3752,7 +3614,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinSaturationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/> using a binding.
@@ -3760,7 +3621,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinSaturation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMinSaturation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3774,7 +3635,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinSaturation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMinSaturation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3782,7 +3643,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/>.
     /// </summary>
@@ -3807,7 +3667,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinValueProperty"/>.
@@ -3815,7 +3674,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinValue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewMinValue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -3829,7 +3688,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinValue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewMinValue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3837,7 +3696,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.MinValueProperty
 
     /// <summary>
@@ -3863,7 +3721,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinValueProperty"/> using an observable source.
@@ -3871,7 +3728,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinValue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewMinValue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3885,7 +3742,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewMinValue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3893,7 +3750,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MinValueProperty"/>.
     /// </summary>
@@ -3917,7 +3773,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.MinValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.MinValueProperty"/> using a binding.
@@ -3925,7 +3780,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewMinValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewMinValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3939,7 +3794,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewMinValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewMinValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3947,7 +3802,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.MinValueProperty"/>.
     /// </summary>
@@ -3972,7 +3826,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/>.
@@ -3980,7 +3833,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPaletteColors(this ElementBuilder<Style> builder, System.Collections.Generic.IEnumerable<Avalonia.Media.Color> value)
+    public static StyleBuilder SetColorViewPaletteColors(this StyleBuilder builder, System.Collections.Generic.IEnumerable<Avalonia.Media.Color> value)
     {
         return builder.WithAction(style =>
         {
@@ -3994,7 +3847,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPaletteColors(this ElementBuilder<KeyFrame> builder, System.Collections.Generic.IEnumerable<Avalonia.Media.Color> value)
+    public static KeyFrameBuilder SetColorViewPaletteColors(this KeyFrameBuilder builder, System.Collections.Generic.IEnumerable<Avalonia.Media.Color> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4002,7 +3855,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.PaletteColorsProperty
 
     /// <summary>
@@ -4028,7 +3880,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColorsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/> using an observable source.
@@ -4036,7 +3887,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPaletteColors(this ElementBuilder<Style> builder, IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>> observable)
+    public static StyleBuilder SetColorViewPaletteColors(this StyleBuilder builder, IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -4050,7 +3901,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPaletteColors(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>> observable)
+    public static KeyFrameBuilder SetColorViewPaletteColors(this KeyFrameBuilder builder, IObservable<System.Collections.Generic.IEnumerable<Avalonia.Media.Color>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4058,7 +3909,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/>.
     /// </summary>
@@ -4082,7 +3932,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColorsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/> using a binding.
@@ -4090,7 +3939,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPaletteColors(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewPaletteColors(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -4104,7 +3953,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPaletteColors(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewPaletteColors(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4112,7 +3961,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/>.
     /// </summary>
@@ -4137,7 +3985,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/>.
@@ -4145,7 +3992,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPaletteColumnCount(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewPaletteColumnCount(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -4159,7 +4006,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPaletteColumnCount(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewPaletteColumnCount(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4167,7 +4014,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.PaletteColumnCountProperty
 
     /// <summary>
@@ -4193,7 +4039,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColumnCountProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/> using an observable source.
@@ -4201,7 +4046,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPaletteColumnCount(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewPaletteColumnCount(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -4215,7 +4060,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPaletteColumnCount(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewPaletteColumnCount(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4223,7 +4068,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/>.
     /// </summary>
@@ -4247,7 +4091,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteColumnCountProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/> using a binding.
@@ -4255,7 +4098,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPaletteColumnCount(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewPaletteColumnCount(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -4269,7 +4112,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPaletteColumnCount(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewPaletteColumnCount(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4277,7 +4120,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/>.
     /// </summary>
@@ -4302,7 +4144,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteProperty"/>.
@@ -4310,7 +4151,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPalette(this ElementBuilder<Style> builder, Avalonia.Controls.IColorPalette value)
+    public static StyleBuilder SetColorViewPalette(this StyleBuilder builder, Avalonia.Controls.IColorPalette value)
     {
         return builder.WithAction(style =>
         {
@@ -4324,7 +4165,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPalette(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.IColorPalette value)
+    public static KeyFrameBuilder SetColorViewPalette(this KeyFrameBuilder builder, Avalonia.Controls.IColorPalette value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4332,7 +4173,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.PaletteProperty
 
     /// <summary>
@@ -4358,7 +4198,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteProperty"/> using an observable source.
@@ -4366,7 +4205,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPalette(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.IColorPalette> observable)
+    public static StyleBuilder SetColorViewPalette(this StyleBuilder builder, IObservable<Avalonia.Controls.IColorPalette> observable)
     {
         return builder.WithAction(style =>
         {
@@ -4380,7 +4219,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPalette(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.IColorPalette> observable)
+    public static KeyFrameBuilder SetColorViewPalette(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.IColorPalette> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4388,7 +4227,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.PaletteProperty"/>.
     /// </summary>
@@ -4412,7 +4250,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.PaletteProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.PaletteProperty"/> using a binding.
@@ -4420,7 +4257,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewPalette(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewPalette(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -4434,7 +4271,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewPalette(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewPalette(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4442,7 +4279,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.PaletteProperty"/>.
     /// </summary>
@@ -4467,7 +4303,6 @@ public static partial class ColorViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/>.
@@ -4475,7 +4310,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewSelectedIndex(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorViewSelectedIndex(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -4489,7 +4324,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewSelectedIndex(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorViewSelectedIndex(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4497,7 +4332,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColorView.SelectedIndexProperty
 
     /// <summary>
@@ -4523,7 +4357,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.SelectedIndexProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/> using an observable source.
@@ -4531,7 +4364,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewSelectedIndex(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorViewSelectedIndex(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -4545,7 +4378,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewSelectedIndex(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorViewSelectedIndex(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4553,7 +4386,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/>.
     /// </summary>
@@ -4577,7 +4409,6 @@ public static partial class ColorViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColorView.SelectedIndexProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/> using a binding.
@@ -4585,7 +4416,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorViewSelectedIndex(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorViewSelectedIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -4599,7 +4430,7 @@ public static partial class ColorViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorViewSelectedIndex(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorViewSelectedIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -4607,7 +4438,6 @@ public static partial class ColorViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/>.
     /// </summary>

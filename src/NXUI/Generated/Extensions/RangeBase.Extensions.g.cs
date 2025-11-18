@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.RangeBase"/> class property extension methods.
 /// </summary>
 public static partial class RangeBaseExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class RangeBaseExtensions
         return builder.WithBinding(PropertyMetadata.RangeBase_Minimum, Avalonia.Controls.Primitives.RangeBase.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RangeBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.RangeBase.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.MinimumProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class RangeBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class RangeBaseExtensions
         return builder.WithBinding(PropertyMetadata.RangeBase_Maximum, Avalonia.Controls.Primitives.RangeBase.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class RangeBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.RangeBase.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.MaximumProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class RangeBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class RangeBaseExtensions
         return builder.WithBinding(PropertyMetadata.RangeBase_Value, Avalonia.Controls.Primitives.RangeBase.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class RangeBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.RangeBase.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.ValueProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class RangeBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class RangeBaseExtensions
         return builder.WithBinding(PropertyMetadata.RangeBase_SmallChange, Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class RangeBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class RangeBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class RangeBaseExtensions
         return builder.WithBinding(PropertyMetadata.RangeBase_LargeChange, Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class RangeBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty
 
     /// <summary>
@@ -1270,7 +1248,6 @@ public static partial class RangeBaseExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1313,7 +1290,6 @@ public static partial class RangeBaseExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.RangeBase.ValueChanged
 
@@ -1348,7 +1324,6 @@ public static partial class RangeBaseExtensions
                 h => obj.ValueChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1370,5 +1345,4 @@ public static partial class RangeBaseExtensions
         }));
     }
 
-#endif
 }

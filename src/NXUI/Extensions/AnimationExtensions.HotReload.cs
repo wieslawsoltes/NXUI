@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.Extensions;
 
 using System;
@@ -13,8 +12,8 @@ public static partial class AnimationExtensions
     /// <summary>
     /// Records the iteration count with the specified <see cref="IterationType"/>.
     /// </summary>
-    public static ElementBuilder<Animation> IterationCount(
-        this ElementBuilder<Animation> builder,
+    public static AnimationBuilder IterationCount(
+        this AnimationBuilder builder,
         ulong value,
         IterationType type)
     {
@@ -27,8 +26,8 @@ public static partial class AnimationExtensions
     /// <summary>
     /// Records the iteration count for the specified number of iterations.
     /// </summary>
-    public static ElementBuilder<Animation> IterationCountMany(
-        this ElementBuilder<Animation> builder,
+    public static AnimationBuilder IterationCountMany(
+        this AnimationBuilder builder,
         ulong value)
     {
         return builder.WithAction(animation =>
@@ -40,7 +39,7 @@ public static partial class AnimationExtensions
     /// <summary>
     /// Records the infinite iteration count.
     /// </summary>
-    public static ElementBuilder<Animation> IterationCountInfinite(this ElementBuilder<Animation> builder)
+    public static AnimationBuilder IterationCountInfinite(this AnimationBuilder builder)
     {
         return builder.WithAction(animation =>
         {
@@ -51,7 +50,7 @@ public static partial class AnimationExtensions
     /// <summary>
     /// Records an existing <see cref="Avalonia.Animation.KeyFrame"/> instance on the animation.
     /// </summary>
-    public static ElementBuilder<Animation> KeyFrames(this ElementBuilder<Animation> builder, KeyFrame keyFrame)
+    public static AnimationBuilder KeyFrames(this AnimationBuilder builder, KeyFrame keyFrame)
     {
         ArgumentNullException.ThrowIfNull(keyFrame);
 
@@ -64,7 +63,7 @@ public static partial class AnimationExtensions
     /// <summary>
     /// Records an array of <see cref="Avalonia.Animation.KeyFrame"/> instances on the animation.
     /// </summary>
-    public static ElementBuilder<Animation> KeyFrames(this ElementBuilder<Animation> builder, params KeyFrame[] keyFrames)
+    public static AnimationBuilder KeyFrames(this AnimationBuilder builder, params KeyFrame[] keyFrames)
     {
         ArgumentNullException.ThrowIfNull(keyFrames);
 
@@ -77,9 +76,9 @@ public static partial class AnimationExtensions
     /// <summary>
     /// Records a builder-based <see cref="Avalonia.Animation.KeyFrame"/>.
     /// </summary>
-    public static ElementBuilder<Animation> KeyFrames(
-        this ElementBuilder<Animation> builder,
-        ElementBuilder<KeyFrame> keyFrame)
+    public static AnimationBuilder KeyFrames(
+        this AnimationBuilder builder,
+        KeyFrameBuilder keyFrame)
     {
         return builder.WithChild(
             keyFrame,
@@ -92,9 +91,9 @@ public static partial class AnimationExtensions
     /// <summary>
     /// Records multiple builder-based keyframes.
     /// </summary>
-    public static ElementBuilder<Animation> KeyFrames(
-        this ElementBuilder<Animation> builder,
-        params ElementBuilder<KeyFrame>[] keyFrames)
+    public static AnimationBuilder KeyFrames(
+        this AnimationBuilder builder,
+        params KeyFrameBuilder[] keyFrames)
     {
         ArgumentNullException.ThrowIfNull(keyFrames);
 
@@ -106,4 +105,3 @@ public static partial class AnimationExtensions
         return builder;
     }
 }
-#endif

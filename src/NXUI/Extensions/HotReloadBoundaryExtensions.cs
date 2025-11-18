@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.Extensions;
 
 using Avalonia;
@@ -18,4 +17,3 @@ public static class HotReloadBoundaryExtensions
         return builder.MarkBoundary();
     }
 }
-#endif

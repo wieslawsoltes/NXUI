@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RepeatButton"/> class style setters extension methods.
 /// </summary>
 public static partial class RepeatButtonSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/>.
@@ -20,7 +17,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRepeatButtonInterval(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetRepeatButtonInterval(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRepeatButtonInterval(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetRepeatButtonInterval(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class RepeatButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RepeatButton.IntervalProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class RepeatButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RepeatButton.IntervalProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRepeatButtonInterval(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetRepeatButtonInterval(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRepeatButtonInterval(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetRepeatButtonInterval(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class RepeatButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class RepeatButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RepeatButton.IntervalProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRepeatButtonInterval(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRepeatButtonInterval(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRepeatButtonInterval(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRepeatButtonInterval(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class RepeatButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class RepeatButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/>.
@@ -185,7 +176,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRepeatButtonDelay(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetRepeatButtonDelay(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRepeatButtonDelay(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetRepeatButtonDelay(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class RepeatButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RepeatButton.DelayProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class RepeatButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RepeatButton.DelayProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRepeatButtonDelay(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetRepeatButtonDelay(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRepeatButtonDelay(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetRepeatButtonDelay(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class RepeatButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class RepeatButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RepeatButton.DelayProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRepeatButtonDelay(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRepeatButtonDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class RepeatButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRepeatButtonDelay(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRepeatButtonDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class RepeatButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/>.
     /// </summary>

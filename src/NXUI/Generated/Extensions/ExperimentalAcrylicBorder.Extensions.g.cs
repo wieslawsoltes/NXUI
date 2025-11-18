@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class property extension methods.
 /// </summary>
 public static partial class ExperimentalAcrylicBorderExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicBorder_CornerRadius, Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty
 
     /// <summary>
@@ -253,8 +247,6 @@ public static partial class ExperimentalAcrylicBorderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> literal value using a uniform radius for hot reload builds.
     /// </summary>
@@ -278,8 +270,6 @@ public static partial class ExperimentalAcrylicBorderExtensions
     {
         return builder.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
     }
-
-#endif
 
 
     /// <summary>
@@ -308,7 +298,6 @@ public static partial class ExperimentalAcrylicBorderExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> literal value for hot reload builds.
@@ -355,8 +344,6 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicBorder_Material, Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> value on a referenced control.
@@ -403,7 +390,6 @@ public static partial class ExperimentalAcrylicBorderExtensions
         return elementRef.SetBinding(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty
 
     /// <summary>

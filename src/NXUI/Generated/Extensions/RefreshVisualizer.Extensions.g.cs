@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RefreshVisualizer"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class RefreshVisualizerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class RefreshVisualizerExtensions
         return builder.WithBinding(PropertyMetadata.RefreshVisualizer_Orientation, Avalonia.Controls.RefreshVisualizer.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class RefreshVisualizerExtensions
         return elementRef.SetBinding(Avalonia.Controls.RefreshVisualizer.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RefreshVisualizer.OrientationProperty
 
     /// <summary>
@@ -343,7 +337,6 @@ public static partial class RefreshVisualizerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
@@ -355,7 +348,6 @@ public static partial class RefreshVisualizerExtensions
         return builder.WithValue(PropertyMetadata.RefreshVisualizer_Orientation, Avalonia.Controls.RefreshVisualizer.OrientationProperty, Avalonia.Controls.RefreshVisualizerOrientation.Auto);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> property value to <see cref="Avalonia.Controls.RefreshVisualizerOrientation.Auto"/>.
@@ -368,7 +360,6 @@ public static partial class RefreshVisualizerExtensions
         obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Auto;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
@@ -380,7 +371,6 @@ public static partial class RefreshVisualizerExtensions
         return builder.WithValue(PropertyMetadata.RefreshVisualizer_Orientation, Avalonia.Controls.RefreshVisualizer.OrientationProperty, Avalonia.Controls.RefreshVisualizerOrientation.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> property value to <see cref="Avalonia.Controls.RefreshVisualizerOrientation.Normal"/>.
@@ -393,7 +383,6 @@ public static partial class RefreshVisualizerExtensions
         obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
@@ -405,7 +394,6 @@ public static partial class RefreshVisualizerExtensions
         return builder.WithValue(PropertyMetadata.RefreshVisualizer_Orientation, Avalonia.Controls.RefreshVisualizer.OrientationProperty, Avalonia.Controls.RefreshVisualizerOrientation.Rotate90DegreesCounterclockwise);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> property value to <see cref="Avalonia.Controls.RefreshVisualizerOrientation.Rotate90DegreesCounterclockwise"/>.
@@ -418,7 +406,6 @@ public static partial class RefreshVisualizerExtensions
         obj[Avalonia.Controls.RefreshVisualizer.OrientationProperty] = Avalonia.Controls.RefreshVisualizerOrientation.Rotate90DegreesCounterclockwise;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> enum value for hot reload builds.
@@ -430,7 +417,6 @@ public static partial class RefreshVisualizerExtensions
         return builder.WithValue(PropertyMetadata.RefreshVisualizer_Orientation, Avalonia.Controls.RefreshVisualizer.OrientationProperty, Avalonia.Controls.RefreshVisualizerOrientation.Rotate270DegreesCounterclockwise);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshVisualizer.OrientationProperty"/> property value to <see cref="Avalonia.Controls.RefreshVisualizerOrientation.Rotate270DegreesCounterclockwise"/>.
@@ -492,7 +478,6 @@ public static partial class RefreshVisualizerExtensions
     {
         return obj.GetObservable(Avalonia.Controls.RefreshVisualizer.RefreshRequestedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -535,7 +520,6 @@ public static partial class RefreshVisualizerExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.RefreshVisualizer.RefreshRequested
 
@@ -570,7 +554,6 @@ public static partial class RefreshVisualizerExtensions
                 h => obj.RefreshRequested -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -592,5 +575,4 @@ public static partial class RefreshVisualizerExtensions
         }));
     }
 
-#endif
 }

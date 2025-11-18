@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.HyperlinkButton"/> class style setters extension methods.
 /// </summary>
 public static partial class HyperlinkButtonSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/>.
@@ -20,7 +17,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetHyperlinkButtonIsVisited(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetHyperlinkButtonIsVisited(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetHyperlinkButtonIsVisited(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetHyperlinkButtonIsVisited(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class HyperlinkButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.HyperlinkButton.IsVisitedProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class HyperlinkButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.HyperlinkButton.IsVisitedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetHyperlinkButtonIsVisited(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetHyperlinkButtonIsVisited(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetHyperlinkButtonIsVisited(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetHyperlinkButtonIsVisited(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class HyperlinkButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class HyperlinkButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.HyperlinkButton.IsVisitedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetHyperlinkButtonIsVisited(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetHyperlinkButtonIsVisited(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetHyperlinkButtonIsVisited(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetHyperlinkButtonIsVisited(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class HyperlinkButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.HyperlinkButton.IsVisitedProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class HyperlinkButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/>.
@@ -185,7 +176,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetHyperlinkButtonNavigateUri(this ElementBuilder<Style> builder, System.Uri value)
+    public static StyleBuilder SetHyperlinkButtonNavigateUri(this StyleBuilder builder, System.Uri value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetHyperlinkButtonNavigateUri(this ElementBuilder<KeyFrame> builder, System.Uri value)
+    public static KeyFrameBuilder SetHyperlinkButtonNavigateUri(this KeyFrameBuilder builder, System.Uri value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class HyperlinkButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.HyperlinkButton.NavigateUriProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class HyperlinkButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.HyperlinkButton.NavigateUriProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetHyperlinkButtonNavigateUri(this ElementBuilder<Style> builder, IObservable<System.Uri> observable)
+    public static StyleBuilder SetHyperlinkButtonNavigateUri(this StyleBuilder builder, IObservable<System.Uri> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetHyperlinkButtonNavigateUri(this ElementBuilder<KeyFrame> builder, IObservable<System.Uri> observable)
+    public static KeyFrameBuilder SetHyperlinkButtonNavigateUri(this KeyFrameBuilder builder, IObservable<System.Uri> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class HyperlinkButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class HyperlinkButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.HyperlinkButton.NavigateUriProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetHyperlinkButtonNavigateUri(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetHyperlinkButtonNavigateUri(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class HyperlinkButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetHyperlinkButtonNavigateUri(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetHyperlinkButtonNavigateUri(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class HyperlinkButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.HyperlinkButton.NavigateUriProperty"/>.
     /// </summary>

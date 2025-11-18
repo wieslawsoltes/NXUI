@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ItemsControl"/> class property extension methods.
 /// </summary>
 public static partial class ItemsControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsControl.ItemContainerThemeProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.ItemsControl_ItemContainerTheme, Avalonia.Controls.ItemsControl.ItemContainerThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemContainerThemeProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsControl.ItemContainerThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsControl.ItemContainerThemeProperty
 
     /// <summary>
@@ -344,7 +338,6 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsControl.ItemsPanelProperty"/> literal value for hot reload builds.
@@ -391,8 +384,6 @@ public static partial class ItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.ItemsControl_ItemsPanel, Avalonia.Controls.ItemsControl.ItemsPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemsPanelProperty"/> value on a referenced control.
@@ -439,7 +430,6 @@ public static partial class ItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsControl.ItemsPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsControl.ItemsPanelProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class ItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.ItemsControl_ItemsSource, Avalonia.Controls.ItemsControl.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemsSourceProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class ItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsControl.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsControl.ItemsSourceProperty
 
     /// <summary>
@@ -828,7 +814,6 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsControl.ItemTemplateProperty"/> literal value for hot reload builds.
@@ -875,8 +860,6 @@ public static partial class ItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.ItemsControl_ItemTemplate, Avalonia.Controls.ItemsControl.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.ItemTemplateProperty"/> value on a referenced control.
@@ -923,7 +906,6 @@ public static partial class ItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsControl.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsControl.ItemTemplateProperty
 
     /// <summary>
@@ -1070,7 +1052,6 @@ public static partial class ItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> literal value for hot reload builds.
@@ -1117,8 +1098,6 @@ public static partial class ItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.ItemsControl_DisplayMemberBinding, Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty"/> value on a referenced control.
@@ -1165,7 +1144,6 @@ public static partial class ItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsControl.DisplayMemberBindingProperty
 
     /// <summary>

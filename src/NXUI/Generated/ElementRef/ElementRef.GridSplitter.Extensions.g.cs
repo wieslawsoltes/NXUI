@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.GridSplitter"/>.
 /// </summary>
 public static partial class GridSplitterElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class GridSplitterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.GridSplitter.ResizeDirectionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class GridSplitterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class GridSplitterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.GridSplitter.ShowsPreviewProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class GridSplitterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class GridSplitterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.GridSplitter.DragIncrementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class GridSplitterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.GridSplitter.PreviewContentProperty);
     }
 
-#endif
 }

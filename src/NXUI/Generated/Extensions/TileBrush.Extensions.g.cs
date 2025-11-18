@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.TileBrush"/> class property extension methods.
 /// </summary>
 public static partial class TileBrushExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TileBrushExtensions
         return builder.WithBinding(PropertyMetadata.TileBrush_AlignmentX, Avalonia.Media.TileBrush.AlignmentXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TileBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.TileBrush.AlignmentXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TileBrush.AlignmentXProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class TileBrushExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_AlignmentX, Avalonia.Media.TileBrush.AlignmentXProperty, Avalonia.Media.AlignmentX.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Left"/>.
@@ -278,7 +270,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_AlignmentX, Avalonia.Media.TileBrush.AlignmentXProperty, Avalonia.Media.AlignmentX.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Center"/>.
@@ -303,7 +293,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.AlignmentXProperty] = Avalonia.Media.AlignmentX.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_AlignmentX, Avalonia.Media.TileBrush.AlignmentXProperty, Avalonia.Media.AlignmentX.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> property value to <see cref="Avalonia.Media.AlignmentX.Right"/>.
@@ -329,7 +317,6 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> literal value for hot reload builds.
@@ -376,8 +363,6 @@ public static partial class TileBrushExtensions
         return builder.WithBinding(PropertyMetadata.TileBrush_AlignmentY, Avalonia.Media.TileBrush.AlignmentYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> value on a referenced control.
@@ -424,7 +409,6 @@ public static partial class TileBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.TileBrush.AlignmentYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TileBrush.AlignmentYProperty
 
     /// <summary>
@@ -570,7 +554,6 @@ public static partial class TileBrushExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_AlignmentY, Avalonia.Media.TileBrush.AlignmentYProperty, Avalonia.Media.AlignmentY.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Top"/>.
@@ -595,7 +577,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_AlignmentY, Avalonia.Media.TileBrush.AlignmentYProperty, Avalonia.Media.AlignmentY.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Center"/>.
@@ -620,7 +600,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.AlignmentYProperty] = Avalonia.Media.AlignmentY.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_AlignmentY, Avalonia.Media.TileBrush.AlignmentYProperty, Avalonia.Media.AlignmentY.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> property value to <see cref="Avalonia.Media.AlignmentY.Bottom"/>.
@@ -646,7 +624,6 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> literal value for hot reload builds.
@@ -693,8 +670,6 @@ public static partial class TileBrushExtensions
         return builder.WithBinding(PropertyMetadata.TileBrush_DestinationRect, Avalonia.Media.TileBrush.DestinationRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> value on a referenced control.
@@ -741,7 +716,6 @@ public static partial class TileBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.TileBrush.DestinationRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TileBrush.DestinationRectProperty
 
     /// <summary>
@@ -888,7 +862,6 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> literal value for hot reload builds.
@@ -935,8 +908,6 @@ public static partial class TileBrushExtensions
         return builder.WithBinding(PropertyMetadata.TileBrush_SourceRect, Avalonia.Media.TileBrush.SourceRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> value on a referenced control.
@@ -983,7 +954,6 @@ public static partial class TileBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.TileBrush.SourceRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TileBrush.SourceRectProperty
 
     /// <summary>
@@ -1130,7 +1100,6 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> literal value for hot reload builds.
@@ -1177,8 +1146,6 @@ public static partial class TileBrushExtensions
         return builder.WithBinding(PropertyMetadata.TileBrush_Stretch, Avalonia.Media.TileBrush.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> value on a referenced control.
@@ -1225,7 +1192,6 @@ public static partial class TileBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.TileBrush.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TileBrush.StretchProperty
 
     /// <summary>
@@ -1371,7 +1337,6 @@ public static partial class TileBrushExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
@@ -1383,7 +1348,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_Stretch, Avalonia.Media.TileBrush.StretchProperty, Avalonia.Media.Stretch.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
@@ -1396,7 +1360,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
@@ -1408,7 +1371,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_Stretch, Avalonia.Media.TileBrush.StretchProperty, Avalonia.Media.Stretch.Fill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Fill"/>.
@@ -1421,7 +1383,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.Fill;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
@@ -1433,7 +1394,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_Stretch, Avalonia.Media.TileBrush.StretchProperty, Avalonia.Media.Stretch.Uniform);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
@@ -1446,7 +1406,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> enum value for hot reload builds.
@@ -1458,7 +1417,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_Stretch, Avalonia.Media.TileBrush.StretchProperty, Avalonia.Media.Stretch.UniformToFill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.UniformToFill"/>.
@@ -1472,7 +1430,6 @@ public static partial class TileBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> literal value for hot reload builds.
@@ -1519,8 +1476,6 @@ public static partial class TileBrushExtensions
         return builder.WithBinding(PropertyMetadata.TileBrush_TileMode, Avalonia.Media.TileBrush.TileModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> value on a referenced control.
@@ -1567,7 +1522,6 @@ public static partial class TileBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.TileBrush.TileModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TileBrush.TileModeProperty
 
     /// <summary>
@@ -1713,7 +1667,6 @@ public static partial class TileBrushExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
@@ -1725,7 +1678,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_TileMode, Avalonia.Media.TileBrush.TileModeProperty, Avalonia.Media.TileMode.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.None"/>.
@@ -1738,7 +1690,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
@@ -1750,7 +1701,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_TileMode, Avalonia.Media.TileBrush.TileModeProperty, Avalonia.Media.TileMode.FlipX);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipX"/>.
@@ -1763,7 +1713,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipX;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
@@ -1775,7 +1724,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_TileMode, Avalonia.Media.TileBrush.TileModeProperty, Avalonia.Media.TileMode.FlipY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipY"/>.
@@ -1788,7 +1736,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
@@ -1800,7 +1747,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_TileMode, Avalonia.Media.TileBrush.TileModeProperty, Avalonia.Media.TileMode.FlipXY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.FlipXY"/>.
@@ -1813,7 +1759,6 @@ public static partial class TileBrushExtensions
         obj[Avalonia.Media.TileBrush.TileModeProperty] = Avalonia.Media.TileMode.FlipXY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> enum value for hot reload builds.
@@ -1825,7 +1770,6 @@ public static partial class TileBrushExtensions
         return builder.WithValue(PropertyMetadata.TileBrush_TileMode, Avalonia.Media.TileBrush.TileModeProperty, Avalonia.Media.TileMode.Tile);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> property value to <see cref="Avalonia.Media.TileMode.Tile"/>.

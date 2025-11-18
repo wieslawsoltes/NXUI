@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/> class style setters extension methods.
 /// </summary>
 public static partial class ColorSpectrumSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumColor(this ElementBuilder<Style> builder, Avalonia.Media.Color value)
+    public static StyleBuilder SetColorSpectrumColor(this StyleBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Color value)
+    public static KeyFrameBuilder SetColorSpectrumColor(this KeyFrameBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Color> observable)
+    public static StyleBuilder SetColorSpectrumColor(this StyleBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Color> observable)
+    public static KeyFrameBuilder SetColorSpectrumColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumComponents(this ElementBuilder<Style> builder, Avalonia.Controls.ColorSpectrumComponents value)
+    public static StyleBuilder SetColorSpectrumComponents(this StyleBuilder builder, Avalonia.Controls.ColorSpectrumComponents value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumComponents(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ColorSpectrumComponents value)
+    public static KeyFrameBuilder SetColorSpectrumComponents(this KeyFrameBuilder builder, Avalonia.Controls.ColorSpectrumComponents value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumComponents(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
+    public static StyleBuilder SetColorSpectrumComponents(this StyleBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumComponents(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
+    public static KeyFrameBuilder SetColorSpectrumComponents(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumComponents> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumComponents(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumComponents(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumComponents(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumComponents(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumHsvColor(this ElementBuilder<Style> builder, Avalonia.Media.HsvColor value)
+    public static StyleBuilder SetColorSpectrumHsvColor(this StyleBuilder builder, Avalonia.Media.HsvColor value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumHsvColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.HsvColor value)
+    public static KeyFrameBuilder SetColorSpectrumHsvColor(this KeyFrameBuilder builder, Avalonia.Media.HsvColor value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumHsvColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.HsvColor> observable)
+    public static StyleBuilder SetColorSpectrumHsvColor(this StyleBuilder builder, IObservable<Avalonia.Media.HsvColor> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumHsvColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.HsvColor> observable)
+    public static KeyFrameBuilder SetColorSpectrumHsvColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.HsvColor> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumHsvColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumHsvColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumHsvColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumHsvColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxHue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorSpectrumMaxHue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxHue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorSpectrumMaxHue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxHue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorSpectrumMaxHue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxHue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorSpectrumMaxHue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxHue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumMaxHue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxHue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumMaxHue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxSaturation(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorSpectrumMaxSaturation(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxSaturation(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorSpectrumMaxSaturation(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxSaturation(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorSpectrumMaxSaturation(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxSaturation(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorSpectrumMaxSaturation(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxSaturation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumMaxSaturation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxSaturation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumMaxSaturation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxValue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorSpectrumMaxValue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxValue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorSpectrumMaxValue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxValue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorSpectrumMaxValue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorSpectrumMaxValue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMaxValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumMaxValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMaxValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumMaxValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinHue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorSpectrumMinHue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinHue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorSpectrumMinHue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinHue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorSpectrumMinHue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinHue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorSpectrumMinHue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinHue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumMinHue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinHue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumMinHue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinSaturation(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorSpectrumMinSaturation(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinSaturation(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorSpectrumMinSaturation(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinSaturation(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorSpectrumMinSaturation(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinSaturation(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorSpectrumMinSaturation(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinSaturation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumMinSaturation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinSaturation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumMinSaturation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinValue(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetColorSpectrumMinValue(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinValue(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetColorSpectrumMinValue(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinValue(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetColorSpectrumMinValue(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetColorSpectrumMinValue(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumMinValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumMinValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumMinValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumMinValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class ColorSpectrumSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumShape(this ElementBuilder<Style> builder, Avalonia.Controls.ColorSpectrumShape value)
+    public static StyleBuilder SetColorSpectrumShape(this StyleBuilder builder, Avalonia.Controls.ColorSpectrumShape value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumShape(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ColorSpectrumShape value)
+    public static KeyFrameBuilder SetColorSpectrumShape(this KeyFrameBuilder builder, Avalonia.Controls.ColorSpectrumShape value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumShape(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
+    public static StyleBuilder SetColorSpectrumShape(this StyleBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumShape(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
+    public static KeyFrameBuilder SetColorSpectrumShape(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ColorSpectrumShape> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class ColorSpectrumSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSpectrumShape(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSpectrumShape(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class ColorSpectrumSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSpectrumShape(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSpectrumShape(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class ColorSpectrumSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ArcSegment"/> class style setters extension methods.
 /// </summary>
 public static partial class ArcSegmentSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentIsLargeArc(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetArcSegmentIsLargeArc(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentIsLargeArc(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetArcSegmentIsLargeArc(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.ArcSegment.IsLargeArcProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentIsLargeArc(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetArcSegmentIsLargeArc(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentIsLargeArc(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetArcSegmentIsLargeArc(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.IsLargeArcProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentIsLargeArc(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentIsLargeArc(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentIsLargeArc(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentIsLargeArc(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ArcSegmentSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentPoint(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetArcSegmentPoint(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetArcSegmentPoint(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.ArcSegment.PointProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentPoint(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetArcSegmentPoint(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentPoint(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetArcSegmentPoint(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.PointProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentPoint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.PointProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ArcSegmentSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentRotationAngle(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetArcSegmentRotationAngle(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentRotationAngle(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetArcSegmentRotationAngle(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.ArcSegment.RotationAngleProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentRotationAngle(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetArcSegmentRotationAngle(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentRotationAngle(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetArcSegmentRotationAngle(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.RotationAngleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentRotationAngle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentRotationAngle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentRotationAngle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentRotationAngle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ArcSegmentSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentSize(this ElementBuilder<Style> builder, Avalonia.Size value)
+    public static StyleBuilder SetArcSegmentSize(this StyleBuilder builder, Avalonia.Size value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentSize(this ElementBuilder<KeyFrame> builder, Avalonia.Size value)
+    public static KeyFrameBuilder SetArcSegmentSize(this KeyFrameBuilder builder, Avalonia.Size value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.ArcSegment.SizeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentSize(this ElementBuilder<Style> builder, IObservable<Avalonia.Size> observable)
+    public static StyleBuilder SetArcSegmentSize(this StyleBuilder builder, IObservable<Avalonia.Size> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentSize(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Size> observable)
+    public static KeyFrameBuilder SetArcSegmentSize(this KeyFrameBuilder builder, IObservable<Avalonia.Size> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SizeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentSize(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentSize(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SizeProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ArcSegmentSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentSweepDirection(this ElementBuilder<Style> builder, Avalonia.Media.SweepDirection value)
+    public static StyleBuilder SetArcSegmentSweepDirection(this StyleBuilder builder, Avalonia.Media.SweepDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentSweepDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Media.SweepDirection value)
+    public static KeyFrameBuilder SetArcSegmentSweepDirection(this KeyFrameBuilder builder, Avalonia.Media.SweepDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.ArcSegment.SweepDirectionProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentSweepDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.SweepDirection> observable)
+    public static StyleBuilder SetArcSegmentSweepDirection(this StyleBuilder builder, IObservable<Avalonia.Media.SweepDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentSweepDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.SweepDirection> observable)
+    public static KeyFrameBuilder SetArcSegmentSweepDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Media.SweepDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ArcSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ArcSegment.SweepDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetArcSegmentSweepDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetArcSegmentSweepDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ArcSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetArcSegmentSweepDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetArcSegmentSweepDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ArcSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/>.
     /// </summary>

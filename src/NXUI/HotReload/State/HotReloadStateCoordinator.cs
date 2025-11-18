@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.State;
 
 using Avalonia;
@@ -27,4 +26,3 @@ internal static class HotReloadStateCoordinator
         HotReloadDiagnostics.TraceStateTransfer(adapter.GetType(), source.GetType(), target.GetType());
     }
 }
-#endif

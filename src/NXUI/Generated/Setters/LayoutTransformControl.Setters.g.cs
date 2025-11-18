@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.LayoutTransformControl"/> class style setters extension methods.
 /// </summary>
 public static partial class LayoutTransformControlSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
@@ -20,7 +17,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutTransformControlLayoutTransform(this ElementBuilder<Style> builder, Avalonia.Media.ITransform value)
+    public static StyleBuilder SetLayoutTransformControlLayoutTransform(this StyleBuilder builder, Avalonia.Media.ITransform value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutTransformControlLayoutTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Media.ITransform value)
+    public static KeyFrameBuilder SetLayoutTransformControlLayoutTransform(this KeyFrameBuilder builder, Avalonia.Media.ITransform value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class LayoutTransformControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class LayoutTransformControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutTransformControlLayoutTransform(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.ITransform> observable)
+    public static StyleBuilder SetLayoutTransformControlLayoutTransform(this StyleBuilder builder, IObservable<Avalonia.Media.ITransform> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutTransformControlLayoutTransform(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.ITransform> observable)
+    public static KeyFrameBuilder SetLayoutTransformControlLayoutTransform(this KeyFrameBuilder builder, IObservable<Avalonia.Media.ITransform> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class LayoutTransformControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class LayoutTransformControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutTransformControlLayoutTransform(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutTransformControlLayoutTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutTransformControlLayoutTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutTransformControlLayoutTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class LayoutTransformControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class LayoutTransformControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
@@ -185,7 +176,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutTransformControlUseRenderTransform(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetLayoutTransformControlUseRenderTransform(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutTransformControlUseRenderTransform(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetLayoutTransformControlUseRenderTransform(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class LayoutTransformControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class LayoutTransformControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutTransformControlUseRenderTransform(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetLayoutTransformControlUseRenderTransform(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutTransformControlUseRenderTransform(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetLayoutTransformControlUseRenderTransform(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class LayoutTransformControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class LayoutTransformControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLayoutTransformControlUseRenderTransform(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLayoutTransformControlUseRenderTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class LayoutTransformControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLayoutTransformControlUseRenderTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLayoutTransformControlUseRenderTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class LayoutTransformControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.TextDecoration"/> class property extension methods.
 /// </summary>
 public static partial class TextDecorationExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_Location, Avalonia.Media.TextDecoration.LocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.LocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.LocationProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class TextDecorationExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_Location, Avalonia.Media.TextDecoration.LocationProperty, Avalonia.Media.TextDecorationLocation.Underline);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Underline"/>.
@@ -278,7 +270,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Underline;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_Location, Avalonia.Media.TextDecoration.LocationProperty, Avalonia.Media.TextDecorationLocation.Overline);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Overline"/>.
@@ -303,7 +293,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Overline;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_Location, Avalonia.Media.TextDecoration.LocationProperty, Avalonia.Media.TextDecorationLocation.Strikethrough);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Strikethrough"/>.
@@ -328,7 +316,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.LocationProperty] = Avalonia.Media.TextDecorationLocation.Strikethrough;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_Location, Avalonia.Media.TextDecoration.LocationProperty, Avalonia.Media.TextDecorationLocation.Baseline);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> property value to <see cref="Avalonia.Media.TextDecorationLocation.Baseline"/>.
@@ -354,7 +340,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> literal value for hot reload builds.
@@ -401,8 +386,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_Stroke, Avalonia.Media.TextDecoration.StrokeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> value on a referenced control.
@@ -449,7 +432,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeProperty
 
     /// <summary>
@@ -596,7 +578,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeThicknessUnit, Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty
 
     /// <summary>
@@ -837,7 +815,6 @@ public static partial class TextDecorationExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> enum value for hot reload builds.
@@ -849,7 +826,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeThicknessUnit, Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, Avalonia.Media.TextDecorationUnit.FontRecommended);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRecommended"/>.
@@ -862,7 +838,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRecommended;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> enum value for hot reload builds.
@@ -874,7 +849,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeThicknessUnit, Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, Avalonia.Media.TextDecorationUnit.FontRenderingEmSize);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRenderingEmSize"/>.
@@ -887,7 +861,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> enum value for hot reload builds.
@@ -899,7 +872,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeThicknessUnit, Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty, Avalonia.Media.TextDecorationUnit.Pixel);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.Pixel"/>.
@@ -913,7 +885,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> literal value for hot reload builds.
@@ -960,8 +931,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeDashArray, Avalonia.Media.TextDecoration.StrokeDashArrayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> value on a referenced control.
@@ -1008,7 +977,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeDashArrayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeDashArrayProperty
 
     /// <summary>
@@ -1155,7 +1123,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> literal value for hot reload builds.
@@ -1202,8 +1169,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeDashOffset, Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> value on a referenced control.
@@ -1250,7 +1215,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeDashOffsetProperty
 
     /// <summary>
@@ -1397,7 +1361,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> literal value for hot reload builds.
@@ -1444,8 +1407,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeThickness, Avalonia.Media.TextDecoration.StrokeThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> value on a referenced control.
@@ -1492,7 +1453,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeThicknessProperty
 
     /// <summary>
@@ -1639,7 +1599,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> literal value for hot reload builds.
@@ -1686,8 +1645,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeLineCap, Avalonia.Media.TextDecoration.StrokeLineCapProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> value on a referenced control.
@@ -1734,7 +1691,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeLineCapProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeLineCapProperty
 
     /// <summary>
@@ -1880,7 +1836,6 @@ public static partial class TextDecorationExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> enum value for hot reload builds.
@@ -1892,7 +1847,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeLineCap, Avalonia.Media.TextDecoration.StrokeLineCapProperty, Avalonia.Media.PenLineCap.Flat);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
@@ -1905,7 +1859,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> enum value for hot reload builds.
@@ -1917,7 +1870,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeLineCap, Avalonia.Media.TextDecoration.StrokeLineCapProperty, Avalonia.Media.PenLineCap.Round);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
@@ -1930,7 +1882,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> enum value for hot reload builds.
@@ -1942,7 +1893,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeLineCap, Avalonia.Media.TextDecoration.StrokeLineCapProperty, Avalonia.Media.PenLineCap.Square);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Square"/>.
@@ -1956,7 +1906,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> literal value for hot reload builds.
@@ -2003,8 +1952,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeOffset, Avalonia.Media.TextDecoration.StrokeOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> value on a referenced control.
@@ -2051,7 +1998,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeOffsetProperty
 
     /// <summary>
@@ -2198,7 +2144,6 @@ public static partial class TextDecorationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> literal value for hot reload builds.
@@ -2245,8 +2190,6 @@ public static partial class TextDecorationExtensions
         return builder.WithBinding(PropertyMetadata.TextDecoration_StrokeOffsetUnit, Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> value on a referenced control.
@@ -2293,7 +2236,6 @@ public static partial class TextDecorationExtensions
         return elementRef.SetBinding(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty
 
     /// <summary>
@@ -2439,7 +2381,6 @@ public static partial class TextDecorationExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> enum value for hot reload builds.
@@ -2451,7 +2392,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeOffsetUnit, Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, Avalonia.Media.TextDecorationUnit.FontRecommended);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRecommended"/>.
@@ -2464,7 +2404,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRecommended;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> enum value for hot reload builds.
@@ -2476,7 +2415,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeOffsetUnit, Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, Avalonia.Media.TextDecorationUnit.FontRenderingEmSize);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.FontRenderingEmSize"/>.
@@ -2489,7 +2427,6 @@ public static partial class TextDecorationExtensions
         obj[Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty] = Avalonia.Media.TextDecorationUnit.FontRenderingEmSize;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> enum value for hot reload builds.
@@ -2501,7 +2438,6 @@ public static partial class TextDecorationExtensions
         return builder.WithValue(PropertyMetadata.TextDecoration_StrokeOffsetUnit, Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty, Avalonia.Media.TextDecorationUnit.Pixel);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> property value to <see cref="Avalonia.Media.TextDecorationUnit.Pixel"/>.

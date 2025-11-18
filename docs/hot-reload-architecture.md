@@ -44,7 +44,7 @@ Each node carries:
 
 ### Builder Extension Coverage
 - Several fluent helpers are authored manually instead of coming from the generator (e.g., animations, control collections, binding shims, `ObjectExtensions`, and routed event helpers). Each of these now exposes a `*.HotReload.cs` partial that mirrors the runtime behavior on `ElementBuilder<T>` using `WithAction`, `WithRef`, or `ElementNode.RegisterAttachment`.
-- This guarantees that DSL calls such as `.Transitions(...)`, `.DataTemplates(...)`, `.ItemsSource(object[])`, `.BindOneWay(...)`, `.Self(...)`, and `.AddDisposableHandler(...)` behave identically when `NXUI_HOTRELOAD` is defined.
+- This guarantees that DSL calls such as `.Transitions(...)`, `.DataTemplates(...)`, `.ItemsSource(object[])`, `.BindOneWay(...)`, `.Self(...)`, and `.AddDisposableHandler(...)` behave identically inside the always-on hot reload pipeline.
 - Regression coverage for these helpers lives in `tests/NXUI.HotReload.Tests/BuilderExtensionIntegrationTests.cs`. New helpers must add both a hot reload partial and an integration test before landing; otherwise hot reload builds regress silently when codegen changes.
 - Prefer augmenting the generator for property/event helpers when possible. Manual partials are reserved for higher-level behaviors (collection manipulation, event bridge wiring, `ElementRef` plumbing) that the generator cannot infer automatically.
 
@@ -52,7 +52,7 @@ Each node carries:
 - `src/Generator` is extended to emit:
   - `ElementBuilder<TControl>` partial structs per control with method-chaining returning `ref readonly ElementBuilder<TControl>` (for minimal allocations).
   - Central metadata table `GeneratedMetadata.g.cs` mapping `Type -> TypeId` and `AvaloniaProperty -> PropertyId` to enable compact diffs.
-  - Overloads that return immediate controls guarded by `#if !NXUI_HOTRELOAD` (legacy path) or by calling `.Mount()` internally.
+  - Overloads that return immediate controls do so by calling `.Mount()` internally; builder-first APIs no longer require compile-time guards.
 - Analyzer ensures consuming projects reference `NXUI.HotReload` package when `PropertyGroup` enables hot reload.
 
 ## Runtime Composition
@@ -116,7 +116,7 @@ Each node carries:
 Implementation shares `ComponentRegistry` and `TreeDiffer`. Only the transport changes.
 
 ## Developer Experience
-- Opt-in flag via `PropertyGroup` `&lt;EnableNXUIHotReload&gt;true&lt;/EnableNXUIHotReload&gt;` or `#define NXUI_HOTRELOAD`.
+- Hot reload is always enabled; no MSBuild properties or preprocessor defines are required.
 - Template updates: NXUI project templates updated to call `AppBuilder.Configure().UseNXUIHotReload().StartWithClassicDesktopLifetime(...)` when in Debug.
 - Logging: `HotReloadDiagnostics` logger (wraps `ILogger`) prints patch summaries and warnings about replaced nodes. When richer insights are needed, enable `NXUI_HOTRELOAD_DIAGNOSTICS` and attach the `nxui hotreload trace` CLI (`dotnet run --project src/NXUI.Cli -- hotreload trace --pid <processId>`) to stream the `NXUI-HotReload` EventSource and visualize per-subtree counts.
 - Snapshots: set `NXUI_HOTRELOAD_SNAPSHOT=1` to emit serialized `ElementNode` trees. Collect them via `nxui hotreload snapshot --pid <processId> [--output tree.json] [--watch]` for inspection or automated regressions.

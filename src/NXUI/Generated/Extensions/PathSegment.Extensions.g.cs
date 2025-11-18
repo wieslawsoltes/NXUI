@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.PathSegment"/> class property extension methods.
 /// </summary>
 public static partial class PathSegmentExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathSegment.IsStrokedProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PathSegmentExtensions
         return builder.WithBinding(PropertyMetadata.PathSegment_IsStroked, Avalonia.Media.PathSegment.IsStrokedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathSegment.IsStrokedProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PathSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.PathSegment.IsStrokedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PathSegment.IsStrokedProperty
 
     /// <summary>

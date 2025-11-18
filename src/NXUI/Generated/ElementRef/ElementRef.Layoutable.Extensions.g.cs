@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Layout.Layoutable"/>.
 /// </summary>
 public static partial class LayoutableElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.DesiredSizeProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.DesiredSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.WidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.HeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.MinWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.MaxWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.MinHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.MaxHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.MarginProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.VerticalAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> value.
@@ -132,5 +109,4 @@ public static partial class LayoutableElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty);
     }
 
-#endif
 }

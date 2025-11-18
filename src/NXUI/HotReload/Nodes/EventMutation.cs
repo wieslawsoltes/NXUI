@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Nodes;
 
 using System;
@@ -207,4 +206,3 @@ public readonly struct EventFingerprint : IEquatable<EventFingerprint>
             HandlerMethod);
     }
 }
-#endif

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.MenuFlyout"/> class property extension methods.
 /// </summary>
 public static partial class MenuFlyoutExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class MenuFlyoutExtensions
         return builder.WithBinding(PropertyMetadata.MenuFlyout_ItemsSource, Avalonia.Controls.MenuFlyout.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class MenuFlyoutExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuFlyout.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.ItemsSourceProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class MenuFlyoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class MenuFlyoutExtensions
         return builder.WithBinding(PropertyMetadata.MenuFlyout_ItemTemplate, Avalonia.Controls.MenuFlyout.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class MenuFlyoutExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuFlyout.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.ItemTemplateProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class MenuFlyoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class MenuFlyoutExtensions
         return builder.WithBinding(PropertyMetadata.MenuFlyout_ItemContainerTheme, Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class MenuFlyoutExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class MenuFlyoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class MenuFlyoutExtensions
         return builder.WithBinding(PropertyMetadata.MenuFlyout_FlyoutPresenterTheme, Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class MenuFlyoutExtensions
         return elementRef.SetBinding(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty
 
     /// <summary>

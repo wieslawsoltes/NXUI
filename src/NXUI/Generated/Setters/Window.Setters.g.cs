@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Window"/> class style setters extension methods.
 /// </summary>
 public static partial class WindowSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
@@ -20,7 +17,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowSizeToContent(this ElementBuilder<Style> builder, Avalonia.Controls.SizeToContent value)
+    public static StyleBuilder SetWindowSizeToContent(this StyleBuilder builder, Avalonia.Controls.SizeToContent value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowSizeToContent(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.SizeToContent value)
+    public static KeyFrameBuilder SetWindowSizeToContent(this KeyFrameBuilder builder, Avalonia.Controls.SizeToContent value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.SizeToContentProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowSizeToContent(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.SizeToContent> observable)
+    public static StyleBuilder SetWindowSizeToContent(this StyleBuilder builder, IObservable<Avalonia.Controls.SizeToContent> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowSizeToContent(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.SizeToContent> observable)
+    public static KeyFrameBuilder SetWindowSizeToContent(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.SizeToContent> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SizeToContentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowSizeToContent(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowSizeToContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowSizeToContent(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowSizeToContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SizeToContentProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
@@ -185,7 +176,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaToDecorationsHint(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetWindowExtendClientAreaToDecorationsHint(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaToDecorationsHint(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetWindowExtendClientAreaToDecorationsHint(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaToDecorationsHint(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetWindowExtendClientAreaToDecorationsHint(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaToDecorationsHint(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetWindowExtendClientAreaToDecorationsHint(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaToDecorationsHint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowExtendClientAreaToDecorationsHint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaToDecorationsHint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowExtendClientAreaToDecorationsHint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
@@ -350,7 +335,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaChromeHints(this ElementBuilder<Style> builder, Avalonia.Platform.ExtendClientAreaChromeHints value)
+    public static StyleBuilder SetWindowExtendClientAreaChromeHints(this StyleBuilder builder, Avalonia.Platform.ExtendClientAreaChromeHints value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaChromeHints(this ElementBuilder<KeyFrame> builder, Avalonia.Platform.ExtendClientAreaChromeHints value)
+    public static KeyFrameBuilder SetWindowExtendClientAreaChromeHints(this KeyFrameBuilder builder, Avalonia.Platform.ExtendClientAreaChromeHints value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaChromeHints(this ElementBuilder<Style> builder, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable)
+    public static StyleBuilder SetWindowExtendClientAreaChromeHints(this StyleBuilder builder, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaChromeHints(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable)
+    public static KeyFrameBuilder SetWindowExtendClientAreaChromeHints(this KeyFrameBuilder builder, IObservable<Avalonia.Platform.ExtendClientAreaChromeHints> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaChromeHints(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowExtendClientAreaChromeHints(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaChromeHints(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowExtendClientAreaChromeHints(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
@@ -515,7 +494,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaTitleBarHeightHint(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetWindowExtendClientAreaTitleBarHeightHint(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaTitleBarHeightHint(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaTitleBarHeightHint(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetWindowExtendClientAreaTitleBarHeightHint(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaTitleBarHeightHint(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowExtendClientAreaTitleBarHeightHint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowExtendClientAreaTitleBarHeightHint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowExtendClientAreaTitleBarHeightHint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowExtendClientAreaTitleBarHeightHint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
@@ -680,7 +653,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowSystemDecorations(this ElementBuilder<Style> builder, Avalonia.Controls.SystemDecorations value)
+    public static StyleBuilder SetWindowSystemDecorations(this StyleBuilder builder, Avalonia.Controls.SystemDecorations value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowSystemDecorations(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.SystemDecorations value)
+    public static KeyFrameBuilder SetWindowSystemDecorations(this KeyFrameBuilder builder, Avalonia.Controls.SystemDecorations value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.SystemDecorationsProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowSystemDecorations(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.SystemDecorations> observable)
+    public static StyleBuilder SetWindowSystemDecorations(this StyleBuilder builder, IObservable<Avalonia.Controls.SystemDecorations> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowSystemDecorations(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.SystemDecorations> observable)
+    public static KeyFrameBuilder SetWindowSystemDecorations(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.SystemDecorations> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.SystemDecorationsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowSystemDecorations(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowSystemDecorations(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowSystemDecorations(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowSystemDecorations(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
@@ -845,7 +812,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowShowActivated(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetWindowShowActivated(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowShowActivated(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetWindowShowActivated(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.ShowActivatedProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowShowActivated(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetWindowShowActivated(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowShowActivated(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetWindowShowActivated(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowActivatedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowShowActivated(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowShowActivated(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowShowActivated(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowShowActivated(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowShowInTaskbar(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetWindowShowInTaskbar(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowShowInTaskbar(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetWindowShowInTaskbar(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.ShowInTaskbarProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowShowInTaskbar(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetWindowShowInTaskbar(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowShowInTaskbar(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetWindowShowInTaskbar(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ShowInTaskbarProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowShowInTaskbar(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowShowInTaskbar(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowShowInTaskbar(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowShowInTaskbar(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowClosingBehavior(this ElementBuilder<Style> builder, Avalonia.Controls.WindowClosingBehavior value)
+    public static StyleBuilder SetWindowClosingBehavior(this StyleBuilder builder, Avalonia.Controls.WindowClosingBehavior value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowClosingBehavior(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.WindowClosingBehavior value)
+    public static KeyFrameBuilder SetWindowClosingBehavior(this KeyFrameBuilder builder, Avalonia.Controls.WindowClosingBehavior value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.ClosingBehaviorProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ClosingBehaviorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowClosingBehavior(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.WindowClosingBehavior> observable)
+    public static StyleBuilder SetWindowClosingBehavior(this StyleBuilder builder, IObservable<Avalonia.Controls.WindowClosingBehavior> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowClosingBehavior(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.WindowClosingBehavior> observable)
+    public static KeyFrameBuilder SetWindowClosingBehavior(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.WindowClosingBehavior> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.ClosingBehaviorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowClosingBehavior(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowClosingBehavior(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowClosingBehavior(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowClosingBehavior(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowWindowState(this ElementBuilder<Style> builder, Avalonia.Controls.WindowState value)
+    public static StyleBuilder SetWindowWindowState(this StyleBuilder builder, Avalonia.Controls.WindowState value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowWindowState(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.WindowState value)
+    public static KeyFrameBuilder SetWindowWindowState(this KeyFrameBuilder builder, Avalonia.Controls.WindowState value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.WindowStateProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowWindowState(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.WindowState> observable)
+    public static StyleBuilder SetWindowWindowState(this StyleBuilder builder, IObservable<Avalonia.Controls.WindowState> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowWindowState(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.WindowState> observable)
+    public static KeyFrameBuilder SetWindowWindowState(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.WindowState> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowWindowState(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowWindowState(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowWindowState(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowWindowState(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStateProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowTitle(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetWindowTitle(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowTitle(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetWindowTitle(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.TitleProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowTitle(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetWindowTitle(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowTitle(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetWindowTitle(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.TitleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowTitle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowTitle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowTitle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowTitle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.TitleProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowIcon(this ElementBuilder<Style> builder, Avalonia.Controls.WindowIcon value)
+    public static StyleBuilder SetWindowIcon(this StyleBuilder builder, Avalonia.Controls.WindowIcon value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowIcon(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.WindowIcon value)
+    public static KeyFrameBuilder SetWindowIcon(this KeyFrameBuilder builder, Avalonia.Controls.WindowIcon value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.IconProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowIcon(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.WindowIcon> observable)
+    public static StyleBuilder SetWindowIcon(this StyleBuilder builder, IObservable<Avalonia.Controls.WindowIcon> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowIcon(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.WindowIcon> observable)
+    public static KeyFrameBuilder SetWindowIcon(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.WindowIcon> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.IconProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowIcon(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowIcon(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowIcon(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowIcon(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.IconProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowWindowStartupLocation(this ElementBuilder<Style> builder, Avalonia.Controls.WindowStartupLocation value)
+    public static StyleBuilder SetWindowWindowStartupLocation(this StyleBuilder builder, Avalonia.Controls.WindowStartupLocation value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowWindowStartupLocation(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.WindowStartupLocation value)
+    public static KeyFrameBuilder SetWindowWindowStartupLocation(this KeyFrameBuilder builder, Avalonia.Controls.WindowStartupLocation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.WindowStartupLocationProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowWindowStartupLocation(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.WindowStartupLocation> observable)
+    public static StyleBuilder SetWindowWindowStartupLocation(this StyleBuilder builder, IObservable<Avalonia.Controls.WindowStartupLocation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowWindowStartupLocation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.WindowStartupLocation> observable)
+    public static KeyFrameBuilder SetWindowWindowStartupLocation(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.WindowStartupLocation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.WindowStartupLocationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowWindowStartupLocation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowWindowStartupLocation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowWindowStartupLocation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowWindowStartupLocation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class WindowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowCanResize(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetWindowCanResize(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowCanResize(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetWindowCanResize(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Window.CanResizeProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowCanResize(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetWindowCanResize(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowCanResize(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetWindowCanResize(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class WindowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Window.CanResizeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class WindowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWindowCanResize(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWindowCanResize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class WindowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWindowCanResize(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWindowCanResize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class WindowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Window.CanResizeProperty"/>.
     /// </summary>

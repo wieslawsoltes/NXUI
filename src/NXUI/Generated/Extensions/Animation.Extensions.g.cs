@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Animation.Animation"/> class property extension methods.
 /// </summary>
 public static partial class AnimationExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.DurationProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Duration(this ElementBuilder<Avalonia.Animation.Animation> builder, System.TimeSpan value)
+    public static AnimationBuilder Duration(this AnimationBuilder builder, System.TimeSpan value)
     {
         return builder.WithValue(PropertyMetadata.Animation_Duration, Avalonia.Animation.Animation.DurationProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Duration(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder Duration(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Duration(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder Duration(
+        this AnimationBuilder builder,
         IObservable<System.TimeSpan> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_Duration, Avalonia.Animation.Animation.DurationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.DurationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.DurationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.DurationProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> IterationCount(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.IterationCount value)
+    public static AnimationBuilder IterationCount(this AnimationBuilder builder, Avalonia.Animation.IterationCount value)
     {
         return builder.WithValue(PropertyMetadata.Animation_IterationCount, Avalonia.Animation.Animation.IterationCountProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> IterationCount(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder IterationCount(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> IterationCount(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder IterationCount(
+        this AnimationBuilder builder,
         IObservable<Avalonia.Animation.IterationCount> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_IterationCount, Avalonia.Animation.Animation.IterationCountProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.IterationCountProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.IterationCountProperty
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirection(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.PlaybackDirection value)
+    public static AnimationBuilder PlaybackDirection(this AnimationBuilder builder, Avalonia.Animation.PlaybackDirection value)
     {
         return builder.WithValue(PropertyMetadata.Animation_PlaybackDirection, Avalonia.Animation.Animation.PlaybackDirectionProperty, value);
     }
@@ -503,8 +492,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirection(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder PlaybackDirection(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirection(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder PlaybackDirection(
+        this AnimationBuilder builder,
         IObservable<Avalonia.Animation.PlaybackDirection> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_PlaybackDirection, Avalonia.Animation.Animation.PlaybackDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.PlaybackDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.PlaybackDirectionProperty
 
     /// <summary>
@@ -716,19 +702,17 @@ public static partial class AnimationExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionNormal(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder PlaybackDirectionNormal(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_PlaybackDirection, Avalonia.Animation.Animation.PlaybackDirectionProperty, Avalonia.Animation.PlaybackDirection.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Normal"/>.
@@ -740,19 +724,17 @@ public static partial class AnimationExtensions
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionReverse(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder PlaybackDirectionReverse(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_PlaybackDirection, Avalonia.Animation.Animation.PlaybackDirectionProperty, Avalonia.Animation.PlaybackDirection.Reverse);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Reverse"/>.
@@ -764,19 +746,17 @@ public static partial class AnimationExtensions
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Reverse;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionAlternate(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder PlaybackDirectionAlternate(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_PlaybackDirection, Avalonia.Animation.Animation.PlaybackDirectionProperty, Avalonia.Animation.PlaybackDirection.Alternate);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.Alternate"/>.
@@ -788,19 +768,17 @@ public static partial class AnimationExtensions
         obj[Avalonia.Animation.Animation.PlaybackDirectionProperty] = Avalonia.Animation.PlaybackDirection.Alternate;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> PlaybackDirectionAlternateReverse(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder PlaybackDirectionAlternateReverse(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_PlaybackDirection, Avalonia.Animation.Animation.PlaybackDirectionProperty, Avalonia.Animation.PlaybackDirection.AlternateReverse);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> property value to <see cref="Avalonia.Animation.PlaybackDirection.AlternateReverse"/>.
@@ -813,7 +791,6 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> literal value for hot reload builds.
@@ -821,7 +798,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> FillMode(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.FillMode value)
+    public static AnimationBuilder FillMode(this AnimationBuilder builder, Avalonia.Animation.FillMode value)
     {
         return builder.WithValue(PropertyMetadata.Animation_FillMode, Avalonia.Animation.Animation.FillModeProperty, value);
     }
@@ -834,8 +811,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> FillMode(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder FillMode(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -851,8 +828,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> FillMode(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder FillMode(
+        this AnimationBuilder builder,
         IObservable<Avalonia.Animation.FillMode> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -860,8 +837,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_FillMode, Avalonia.Animation.Animation.FillModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> value on a referenced control.
@@ -908,7 +883,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.FillModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.FillModeProperty
 
     /// <summary>
@@ -1047,19 +1021,17 @@ public static partial class AnimationExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> FillModeNone(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder FillModeNone(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_FillMode, Avalonia.Animation.Animation.FillModeProperty, Avalonia.Animation.FillMode.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.None"/>.
@@ -1071,19 +1043,17 @@ public static partial class AnimationExtensions
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> FillModeForward(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder FillModeForward(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_FillMode, Avalonia.Animation.Animation.FillModeProperty, Avalonia.Animation.FillMode.Forward);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Forward"/>.
@@ -1095,19 +1065,17 @@ public static partial class AnimationExtensions
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Forward;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> FillModeBackward(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder FillModeBackward(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_FillMode, Avalonia.Animation.Animation.FillModeProperty, Avalonia.Animation.FillMode.Backward);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Backward"/>.
@@ -1119,19 +1087,17 @@ public static partial class AnimationExtensions
         obj[Avalonia.Animation.Animation.FillModeProperty] = Avalonia.Animation.FillMode.Backward;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> FillModeBoth(this ElementBuilder<Avalonia.Animation.Animation> builder)
+    public static AnimationBuilder FillModeBoth(this AnimationBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Animation_FillMode, Avalonia.Animation.Animation.FillModeProperty, Avalonia.Animation.FillMode.Both);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.FillModeProperty"/> property value to <see cref="Avalonia.Animation.FillMode.Both"/>.
@@ -1144,7 +1110,6 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.EasingProperty"/> literal value for hot reload builds.
@@ -1152,7 +1117,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Easing(this ElementBuilder<Avalonia.Animation.Animation> builder, Avalonia.Animation.Easings.Easing value)
+    public static AnimationBuilder Easing(this AnimationBuilder builder, Avalonia.Animation.Easings.Easing value)
     {
         return builder.WithValue(PropertyMetadata.Animation_Easing, Avalonia.Animation.Animation.EasingProperty, value);
     }
@@ -1165,8 +1130,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Easing(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder Easing(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1182,8 +1147,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Easing(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder Easing(
+        this AnimationBuilder builder,
         IObservable<Avalonia.Animation.Easings.Easing> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1191,8 +1156,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_Easing, Avalonia.Animation.Animation.EasingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.EasingProperty"/> value on a referenced control.
@@ -1239,7 +1202,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.EasingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.EasingProperty
 
     /// <summary>
@@ -1379,7 +1341,6 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.DelayProperty"/> literal value for hot reload builds.
@@ -1387,7 +1348,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Delay(this ElementBuilder<Avalonia.Animation.Animation> builder, System.TimeSpan value)
+    public static AnimationBuilder Delay(this AnimationBuilder builder, System.TimeSpan value)
     {
         return builder.WithValue(PropertyMetadata.Animation_Delay, Avalonia.Animation.Animation.DelayProperty, value);
     }
@@ -1400,8 +1361,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Delay(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder Delay(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1417,8 +1378,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> Delay(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder Delay(
+        this AnimationBuilder builder,
         IObservable<System.TimeSpan> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1426,8 +1387,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_Delay, Avalonia.Animation.Animation.DelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.DelayProperty"/> value on a referenced control.
@@ -1474,7 +1433,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.DelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.DelayProperty
 
     /// <summary>
@@ -1614,7 +1572,6 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> literal value for hot reload builds.
@@ -1622,7 +1579,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> DelayBetweenIterations(this ElementBuilder<Avalonia.Animation.Animation> builder, System.TimeSpan value)
+    public static AnimationBuilder DelayBetweenIterations(this AnimationBuilder builder, System.TimeSpan value)
     {
         return builder.WithValue(PropertyMetadata.Animation_DelayBetweenIterations, Avalonia.Animation.Animation.DelayBetweenIterationsProperty, value);
     }
@@ -1635,8 +1592,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> DelayBetweenIterations(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder DelayBetweenIterations(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1652,8 +1609,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> DelayBetweenIterations(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder DelayBetweenIterations(
+        this AnimationBuilder builder,
         IObservable<System.TimeSpan> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1661,8 +1618,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_DelayBetweenIterations, Avalonia.Animation.Animation.DelayBetweenIterationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> value on a referenced control.
@@ -1709,7 +1664,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.DelayBetweenIterationsProperty
 
     /// <summary>
@@ -1849,7 +1803,6 @@ public static partial class AnimationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> literal value for hot reload builds.
@@ -1857,7 +1810,7 @@ public static partial class AnimationExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> SpeedRatio(this ElementBuilder<Avalonia.Animation.Animation> builder, System.Double value)
+    public static AnimationBuilder SpeedRatio(this AnimationBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.Animation_SpeedRatio, Avalonia.Animation.Animation.SpeedRatioProperty, value);
     }
@@ -1870,8 +1823,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> SpeedRatio(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder SpeedRatio(
+        this AnimationBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1887,8 +1840,8 @@ public static partial class AnimationExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Animation.Animation> SpeedRatio(
-        this ElementBuilder<Avalonia.Animation.Animation> builder,
+    public static AnimationBuilder SpeedRatio(
+        this AnimationBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1896,8 +1849,6 @@ public static partial class AnimationExtensions
         return builder.WithBinding(PropertyMetadata.Animation_SpeedRatio, Avalonia.Animation.Animation.SpeedRatioProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> value on a referenced control.
@@ -1944,7 +1895,6 @@ public static partial class AnimationExtensions
         return elementRef.SetBinding(Avalonia.Animation.Animation.SpeedRatioProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.Animation.SpeedRatioProperty
 
     /// <summary>

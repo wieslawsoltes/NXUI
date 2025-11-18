@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.WindowBase"/>.
 /// </summary>
 public static partial class WindowBaseElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WindowBase.IsActiveProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class WindowBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WindowBase.IsActiveProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WindowBase.OwnerProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class WindowBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WindowBase.OwnerProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WindowBase.TopmostProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class WindowBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WindowBase.TopmostProperty);
     }
 
-#endif
 }

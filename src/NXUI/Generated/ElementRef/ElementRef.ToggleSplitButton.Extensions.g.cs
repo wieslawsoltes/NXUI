@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ToggleSplitButton"/>.
 /// </summary>
 public static partial class ToggleSplitButtonElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToggleSplitButton.IsCheckedProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class ToggleSplitButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToggleSplitButton.IsCheckedProperty);
     }
 
-#endif
 }

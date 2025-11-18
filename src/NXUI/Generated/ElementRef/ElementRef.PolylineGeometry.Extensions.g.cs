@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.PolylineGeometry"/>.
 /// </summary>
 public static partial class PolylineGeometryElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class PolylineGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.PolylineGeometry.PointsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class PolylineGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.PolylineGeometry.IsFilledProperty);
     }
 
-#endif
 }

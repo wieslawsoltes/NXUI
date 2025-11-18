@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.MenuBase"/> class property extension methods.
@@ -150,7 +148,6 @@ public static partial class MenuBaseExtensions
     {
         return obj.GetObservable(Avalonia.Controls.MenuBase.OpenedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -193,7 +190,6 @@ public static partial class MenuBaseExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuBase.ClosedEvent
 
@@ -243,7 +239,6 @@ public static partial class MenuBaseExtensions
     {
         return obj.GetObservable(Avalonia.Controls.MenuBase.ClosedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -286,7 +281,6 @@ public static partial class MenuBaseExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuBase.Opened
 
@@ -321,7 +315,6 @@ public static partial class MenuBaseExtensions
                 h => obj.Opened -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -343,7 +336,6 @@ public static partial class MenuBaseExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.MenuBase.Closed
 
@@ -378,7 +370,6 @@ public static partial class MenuBaseExtensions
                 h => obj.Closed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -400,5 +391,4 @@ public static partial class MenuBaseExtensions
         }));
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.Brush"/>.
 /// </summary>
 public static partial class BrushElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Brush.OpacityProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class BrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Brush.OpacityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Brush.TransformProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class BrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Brush.TransformProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Brush.TransformOriginProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class BrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Brush.TransformOriginProperty);
     }
 
-#endif
 }

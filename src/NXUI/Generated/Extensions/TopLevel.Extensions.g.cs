@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TopLevel"/> class property extension methods.
@@ -192,7 +190,6 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> literal value for hot reload builds.
@@ -239,8 +236,6 @@ public static partial class TopLevelExtensions
         return builder.WithBinding(PropertyMetadata.TopLevel_PointerOverElement, Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> value on a referenced control.
@@ -287,7 +282,6 @@ public static partial class TopLevelExtensions
         return elementRef.SetBinding(Avalonia.Controls.TopLevel.PointerOverElementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TopLevel.PointerOverElementProperty
 
     /// <summary>
@@ -434,7 +428,6 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> literal value for hot reload builds.
@@ -481,8 +474,6 @@ public static partial class TopLevelExtensions
         return builder.WithBinding(PropertyMetadata.TopLevel_TransparencyLevelHint, Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> value on a referenced control.
@@ -529,7 +520,6 @@ public static partial class TopLevelExtensions
         return elementRef.SetBinding(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TopLevel.TransparencyLevelHintProperty
 
     /// <summary>
@@ -766,7 +756,6 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> literal value for hot reload builds.
@@ -813,8 +802,6 @@ public static partial class TopLevelExtensions
         return builder.WithBinding(PropertyMetadata.TopLevel_TransparencyBackgroundFallback, Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> value on a referenced control.
@@ -861,7 +848,6 @@ public static partial class TopLevelExtensions
         return elementRef.SetBinding(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty
 
     /// <summary>
@@ -1008,7 +994,6 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> literal value for hot reload builds.
@@ -1055,8 +1040,6 @@ public static partial class TopLevelExtensions
         return builder.WithBinding(PropertyMetadata.TopLevel_SystemBarColor, Avalonia.Controls.TopLevel.SystemBarColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> value on a referenced control.
@@ -1103,7 +1086,6 @@ public static partial class TopLevelExtensions
         return elementRef.SetBinding(Avalonia.Controls.TopLevel.SystemBarColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TopLevel.SystemBarColorProperty
 
     /// <summary>
@@ -1250,7 +1232,6 @@ public static partial class TopLevelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> literal value for hot reload builds.
@@ -1297,8 +1278,6 @@ public static partial class TopLevelExtensions
         return builder.WithBinding(PropertyMetadata.TopLevel_AutoSafeAreaPadding, Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> value on a referenced control.
@@ -1345,7 +1324,6 @@ public static partial class TopLevelExtensions
         return elementRef.SetBinding(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty
 
     /// <summary>
@@ -1540,7 +1518,6 @@ public static partial class TopLevelExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TopLevel.BackRequestedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1583,7 +1560,6 @@ public static partial class TopLevelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TopLevel.Opened
 
@@ -1618,7 +1594,6 @@ public static partial class TopLevelExtensions
                 h => obj.Opened -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1640,7 +1615,6 @@ public static partial class TopLevelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TopLevel.Closed
 
@@ -1675,7 +1649,6 @@ public static partial class TopLevelExtensions
                 h => obj.Closed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1697,7 +1670,6 @@ public static partial class TopLevelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TopLevel.ScalingChanged
 
@@ -1732,7 +1704,6 @@ public static partial class TopLevelExtensions
                 h => obj.ScalingChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1754,7 +1725,6 @@ public static partial class TopLevelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TopLevel.BackRequested
 
@@ -1789,7 +1759,6 @@ public static partial class TopLevelExtensions
                 h => obj.BackRequested -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1811,5 +1780,4 @@ public static partial class TopLevelExtensions
         }));
     }
 
-#endif
 }

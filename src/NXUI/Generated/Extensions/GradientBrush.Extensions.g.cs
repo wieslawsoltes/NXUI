@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.GradientBrush"/> class property extension methods.
 /// </summary>
 public static partial class GradientBrushExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class GradientBrushExtensions
         return builder.WithBinding(PropertyMetadata.GradientBrush_SpreadMethod, Avalonia.Media.GradientBrush.SpreadMethodProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GradientBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.GradientBrush.SpreadMethodProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GradientBrush.SpreadMethodProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class GradientBrushExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class GradientBrushExtensions
         return builder.WithValue(PropertyMetadata.GradientBrush_SpreadMethod, Avalonia.Media.GradientBrush.SpreadMethodProperty, Avalonia.Media.GradientSpreadMethod.Pad);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Pad"/>.
@@ -278,7 +270,6 @@ public static partial class GradientBrushExtensions
         obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Pad;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class GradientBrushExtensions
         return builder.WithValue(PropertyMetadata.GradientBrush_SpreadMethod, Avalonia.Media.GradientBrush.SpreadMethodProperty, Avalonia.Media.GradientSpreadMethod.Reflect);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Reflect"/>.
@@ -303,7 +293,6 @@ public static partial class GradientBrushExtensions
         obj[Avalonia.Media.GradientBrush.SpreadMethodProperty] = Avalonia.Media.GradientSpreadMethod.Reflect;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class GradientBrushExtensions
         return builder.WithValue(PropertyMetadata.GradientBrush_SpreadMethod, Avalonia.Media.GradientBrush.SpreadMethodProperty, Avalonia.Media.GradientSpreadMethod.Repeat);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.SpreadMethodProperty"/> property value to <see cref="Avalonia.Media.GradientSpreadMethod.Repeat"/>.
@@ -329,7 +317,6 @@ public static partial class GradientBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> literal value for hot reload builds.
@@ -376,8 +363,6 @@ public static partial class GradientBrushExtensions
         return builder.WithBinding(PropertyMetadata.GradientBrush_GradientStops, Avalonia.Media.GradientBrush.GradientStopsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientBrush.GradientStopsProperty"/> value on a referenced control.
@@ -424,7 +409,6 @@ public static partial class GradientBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.GradientBrush.GradientStopsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GradientBrush.GradientStopsProperty
 
     /// <summary>

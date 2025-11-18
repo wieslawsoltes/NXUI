@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGridColumn"/>.
 /// </summary>
 public static partial class DataGridColumnElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridColumn.IsVisibleProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataGridColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridColumn.IsVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridColumn.CellThemeProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DataGridColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridColumn.CellThemeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridColumn.HeaderProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DataGridColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridColumn.HeaderProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridColumn.HeaderTemplateProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DataGridColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridColumn.HeaderTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridColumn.WidthProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class DataGridColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridColumn.WidthProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.Popup"/> class property extension methods.
 /// </summary>
 public static partial class PopupExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_WindowManagerAddShadowHint, Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_Child, Avalonia.Controls.Primitives.Popup.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.ChildProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_InheritsTransform, Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.InheritsTransformProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_IsOpen, Avalonia.Controls.Primitives.Popup.IsOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.IsOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.IsOpenProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty
 
     /// <summary>
@@ -1221,7 +1199,6 @@ public static partial class PopupExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1233,7 +1210,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None"/>.
@@ -1246,7 +1222,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1258,7 +1233,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top"/>.
@@ -1271,7 +1245,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1283,7 +1256,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom"/>.
@@ -1296,7 +1268,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1308,7 +1279,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask"/>.
@@ -1321,7 +1291,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1333,7 +1302,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left"/>.
@@ -1346,7 +1314,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1358,7 +1325,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft"/>.
@@ -1371,7 +1337,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1383,7 +1348,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft"/>.
@@ -1396,7 +1360,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1408,7 +1371,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right"/>.
@@ -1421,7 +1383,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1433,7 +1394,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight"/>.
@@ -1446,7 +1406,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1458,7 +1417,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight"/>.
@@ -1471,7 +1429,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1483,7 +1440,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask"/>.
@@ -1496,7 +1452,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1508,7 +1463,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementAnchor, Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask"/>.
@@ -1522,7 +1476,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> literal value for hot reload builds.
@@ -1569,8 +1522,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> value on a referenced control.
@@ -1617,7 +1568,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty
 
     /// <summary>
@@ -1763,7 +1713,6 @@ public static partial class PopupExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1775,7 +1724,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None"/>.
@@ -1788,7 +1736,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1800,7 +1747,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX"/>.
@@ -1813,7 +1759,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1825,7 +1770,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY"/>.
@@ -1838,7 +1782,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1850,7 +1793,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX"/>.
@@ -1863,7 +1805,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1875,7 +1816,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY"/>.
@@ -1888,7 +1828,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1900,7 +1839,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX"/>.
@@ -1913,7 +1851,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1925,7 +1862,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY"/>.
@@ -1938,7 +1874,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -1950,7 +1885,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All"/>.
@@ -1964,7 +1898,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> literal value for hot reload builds.
@@ -2011,8 +1944,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> value on a referenced control.
@@ -2059,7 +1990,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementGravityProperty
 
     /// <summary>
@@ -2205,7 +2135,6 @@ public static partial class PopupExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2217,7 +2146,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None"/>.
@@ -2230,7 +2158,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2242,7 +2169,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top"/>.
@@ -2255,7 +2181,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2267,7 +2192,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom"/>.
@@ -2280,7 +2204,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2292,7 +2215,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left"/>.
@@ -2305,7 +2227,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2317,7 +2238,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft"/>.
@@ -2330,7 +2250,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2342,7 +2261,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft"/>.
@@ -2355,7 +2273,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2367,7 +2284,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right"/>.
@@ -2380,7 +2296,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2392,7 +2307,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight"/>.
@@ -2405,7 +2319,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2417,7 +2330,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_PlacementGravity, Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight"/>.
@@ -2431,7 +2343,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> literal value for hot reload builds.
@@ -2478,8 +2389,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> value on a referenced control.
@@ -2526,7 +2435,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementProperty
 
     /// <summary>
@@ -2672,7 +2580,6 @@ public static partial class PopupExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2684,7 +2591,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.Pointer);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
@@ -2697,7 +2603,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2709,7 +2614,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Bottom"/>.
@@ -2722,7 +2626,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2734,7 +2637,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
@@ -2747,7 +2649,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2759,7 +2660,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Left"/>.
@@ -2772,7 +2672,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2784,7 +2683,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
@@ -2797,7 +2695,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2809,7 +2706,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Center"/>.
@@ -2822,7 +2718,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2834,7 +2729,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.AnchorAndGravity);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.AnchorAndGravity"/>.
@@ -2847,7 +2741,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2859,7 +2752,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft"/>.
@@ -2872,7 +2764,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2884,7 +2775,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.TopEdgeAlignedRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedRight"/>.
@@ -2897,7 +2787,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2909,7 +2798,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft"/>.
@@ -2922,7 +2810,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2934,7 +2821,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight"/>.
@@ -2947,7 +2833,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2959,7 +2844,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop"/>.
@@ -2972,7 +2856,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -2984,7 +2867,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom"/>.
@@ -2997,7 +2879,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -3009,7 +2890,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.RightEdgeAlignedTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedTop"/>.
@@ -3022,7 +2902,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -3034,7 +2913,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom"/>.
@@ -3047,7 +2925,6 @@ public static partial class PopupExtensions
         obj[Avalonia.Controls.Primitives.Popup.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> enum value for hot reload builds.
@@ -3059,7 +2936,6 @@ public static partial class PopupExtensions
         return builder.WithValue(PropertyMetadata.Popup_Placement, Avalonia.Controls.Primitives.Popup.PlacementProperty, Avalonia.Controls.PlacementMode.Custom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Custom"/>.
@@ -3073,7 +2949,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> literal value for hot reload builds.
@@ -3120,8 +2995,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_PlacementRect, Avalonia.Controls.Primitives.Popup.PlacementRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> value on a referenced control.
@@ -3168,7 +3041,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementRectProperty
 
     /// <summary>
@@ -3315,7 +3187,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/> literal value for hot reload builds.
@@ -3362,8 +3233,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_PlacementTarget, Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/> value on a referenced control.
@@ -3410,7 +3279,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementTargetProperty
 
     /// <summary>
@@ -3557,7 +3425,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/> literal value for hot reload builds.
@@ -3604,8 +3471,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_CustomPopupPlacementCallback, Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/> value on a referenced control.
@@ -3652,7 +3517,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty
 
     /// <summary>
@@ -3799,7 +3663,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> literal value for hot reload builds.
@@ -3846,8 +3709,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_OverlayDismissEventPassThrough, Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> value on a referenced control.
@@ -3894,7 +3755,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty
 
     /// <summary>
@@ -4041,7 +3901,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> literal value for hot reload builds.
@@ -4088,8 +3947,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_OverlayInputPassThroughElement, Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> value on a referenced control.
@@ -4136,7 +3993,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty
 
     /// <summary>
@@ -4283,7 +4139,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> literal value for hot reload builds.
@@ -4330,8 +4185,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_HorizontalOffset, Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> value on a referenced control.
@@ -4378,7 +4231,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty
 
     /// <summary>
@@ -4525,7 +4377,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/> literal value for hot reload builds.
@@ -4572,8 +4423,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_IsLightDismissEnabled, Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/> value on a referenced control.
@@ -4620,7 +4469,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty
 
     /// <summary>
@@ -4767,7 +4615,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/> literal value for hot reload builds.
@@ -4814,8 +4661,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_VerticalOffset, Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/> value on a referenced control.
@@ -4862,7 +4707,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty
 
     /// <summary>
@@ -5009,7 +4853,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> literal value for hot reload builds.
@@ -5056,8 +4899,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_Topmost, Avalonia.Controls.Primitives.Popup.TopmostProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> value on a referenced control.
@@ -5104,7 +4945,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.TopmostProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.TopmostProperty
 
     /// <summary>
@@ -5251,7 +5091,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> literal value for hot reload builds.
@@ -5298,8 +5137,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_TakesFocusFromNativeControl, Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> value on a referenced control.
@@ -5346,7 +5183,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty
 
     /// <summary>
@@ -5493,7 +5329,6 @@ public static partial class PopupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/> literal value for hot reload builds.
@@ -5540,8 +5375,6 @@ public static partial class PopupExtensions
         return builder.WithBinding(PropertyMetadata.Popup_ShouldUseOverlayLayer, Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/> value on a referenced control.
@@ -5588,7 +5421,6 @@ public static partial class PopupExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty
 
     /// <summary>

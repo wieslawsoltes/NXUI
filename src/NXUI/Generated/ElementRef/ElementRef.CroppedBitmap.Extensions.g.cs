@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.Imaging.CroppedBitmap"/>.
 /// </summary>
 public static partial class CroppedBitmapElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class CroppedBitmapElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Imaging.CroppedBitmap.SourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class CroppedBitmapElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Imaging.CroppedBitmap.SourceRectProperty);
     }
 
-#endif
 }

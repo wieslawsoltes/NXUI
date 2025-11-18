@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using System.Diagnostics.Tracing;
@@ -84,4 +83,3 @@ internal sealed class HotReloadEventSource : EventSource
         WriteEvent(3, path, nodeDescription, reason);
     }
 }
-#endif

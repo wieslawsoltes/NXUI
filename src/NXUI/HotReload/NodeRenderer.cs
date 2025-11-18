@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using System;
@@ -157,4 +156,3 @@ public sealed class NodeRenderer
         }
     }
 }
-#endif

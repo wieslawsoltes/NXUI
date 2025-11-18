@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Input.KeyBinding"/> class property extension methods.
 /// </summary>
 public static partial class KeyBindingExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class KeyBindingExtensions
         return builder.WithBinding(PropertyMetadata.KeyBinding_Command, Avalonia.Input.KeyBinding.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class KeyBindingExtensions
         return elementRef.SetBinding(Avalonia.Input.KeyBinding.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.KeyBinding.CommandProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class KeyBindingExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class KeyBindingExtensions
         return builder.WithBinding(PropertyMetadata.KeyBinding_CommandParameter, Avalonia.Input.KeyBinding.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class KeyBindingExtensions
         return elementRef.SetBinding(Avalonia.Input.KeyBinding.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.KeyBinding.CommandParameterProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class KeyBindingExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class KeyBindingExtensions
         return builder.WithBinding(PropertyMetadata.KeyBinding_Gesture, Avalonia.Input.KeyBinding.GestureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class KeyBindingExtensions
         return elementRef.SetBinding(Avalonia.Input.KeyBinding.GestureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.KeyBinding.GestureProperty
 
     /// <summary>

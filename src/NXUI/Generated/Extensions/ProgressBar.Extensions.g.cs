@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ProgressBar"/> class property extension methods.
 /// </summary>
 public static partial class ProgressBarExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ProgressBarExtensions
         return builder.WithBinding(PropertyMetadata.ProgressBar_IsIndeterminate, Avalonia.Controls.ProgressBar.IsIndeterminateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ProgressBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.ProgressBar.IsIndeterminateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ProgressBar.IsIndeterminateProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ProgressBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ProgressBarExtensions
         return builder.WithBinding(PropertyMetadata.ProgressBar_ShowProgressText, Avalonia.Controls.ProgressBar.ShowProgressTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ProgressBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.ProgressBar.ShowProgressTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ProgressBar.ShowProgressTextProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ProgressBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ProgressBarExtensions
         return builder.WithBinding(PropertyMetadata.ProgressBar_ProgressTextFormat, Avalonia.Controls.ProgressBar.ProgressTextFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ProgressBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ProgressBar.ProgressTextFormatProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class ProgressBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class ProgressBarExtensions
         return builder.WithBinding(PropertyMetadata.ProgressBar_Orientation, Avalonia.Controls.ProgressBar.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class ProgressBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.ProgressBar.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ProgressBar.OrientationProperty
 
     /// <summary>
@@ -979,7 +961,6 @@ public static partial class ProgressBarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> enum value for hot reload builds.
@@ -991,7 +972,6 @@ public static partial class ProgressBarExtensions
         return builder.WithValue(PropertyMetadata.ProgressBar_Orientation, Avalonia.Controls.ProgressBar.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -1004,7 +984,6 @@ public static partial class ProgressBarExtensions
         obj[Avalonia.Controls.ProgressBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> enum value for hot reload builds.
@@ -1016,7 +995,6 @@ public static partial class ProgressBarExtensions
         return builder.WithValue(PropertyMetadata.ProgressBar_Orientation, Avalonia.Controls.ProgressBar.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.

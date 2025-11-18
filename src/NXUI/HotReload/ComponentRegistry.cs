@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using System;
@@ -137,4 +136,3 @@ internal sealed class ComponentRegistry
         return string.Join(", ", types.Select(t => t.Name));
     }
 }
-#endif

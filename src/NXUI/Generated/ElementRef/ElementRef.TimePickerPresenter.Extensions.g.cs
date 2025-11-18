@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TimePickerPresenter"/>.
 /// </summary>
 public static partial class TimePickerPresenterElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TimePickerPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TimePickerPresenter.MinuteIncrementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TimePickerPresenter.SecondIncrementProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TimePickerPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TimePickerPresenter.SecondIncrementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TimePickerPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TimePickerPresenter.ClockIdentifierProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TimePickerPresenter.UseSecondsProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TimePickerPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TimePickerPresenter.UseSecondsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TimePickerPresenter.TimeProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class TimePickerPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TimePickerPresenter.TimeProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.Pen"/> class property extension methods.
 /// </summary>
 public static partial class PenExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.BrushProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> Brush(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IBrush? value)
+    public static PenBuilder Brush(this PenBuilder builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.Pen_Brush, Avalonia.Media.Pen.BrushProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> Brush(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder Brush(
+        this PenBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> Brush(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder Brush(
+        this PenBuilder builder,
         IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class PenExtensions
         return builder.WithBinding(PropertyMetadata.Pen_Brush, Avalonia.Media.Pen.BrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.BrushProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PenExtensions
         return elementRef.SetBinding(Avalonia.Media.Pen.BrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Pen.BrushProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class PenExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.ThicknessProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> Thickness(this ElementBuilder<Avalonia.Media.Pen> builder, System.Double value)
+    public static PenBuilder Thickness(this PenBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.Pen_Thickness, Avalonia.Media.Pen.ThicknessProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> Thickness(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder Thickness(
+        this PenBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> Thickness(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder Thickness(
+        this PenBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class PenExtensions
         return builder.WithBinding(PropertyMetadata.Pen_Thickness, Avalonia.Media.Pen.ThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.ThicknessProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class PenExtensions
         return elementRef.SetBinding(Avalonia.Media.Pen.ThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Pen.ThicknessProperty
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class PenExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.DashStyleProperty"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> DashStyle(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.IDashStyle? value)
+    public static PenBuilder DashStyle(this PenBuilder builder, Avalonia.Media.IDashStyle? value)
     {
         return builder.WithValue(PropertyMetadata.Pen_DashStyle, Avalonia.Media.Pen.DashStyleProperty, value);
     }
@@ -503,8 +492,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> DashStyle(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder DashStyle(
+        this PenBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> DashStyle(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder DashStyle(
+        this PenBuilder builder,
         IObservable<Avalonia.Media.IDashStyle?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class PenExtensions
         return builder.WithBinding(PropertyMetadata.Pen_DashStyle, Avalonia.Media.Pen.DashStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.DashStyleProperty"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class PenExtensions
         return elementRef.SetBinding(Avalonia.Media.Pen.DashStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Pen.DashStyleProperty
 
     /// <summary>
@@ -717,7 +703,6 @@ public static partial class PenExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineCapProperty"/> literal value for hot reload builds.
@@ -725,7 +710,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineCap(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.PenLineCap value)
+    public static PenBuilder LineCap(this PenBuilder builder, Avalonia.Media.PenLineCap value)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineCap, Avalonia.Media.Pen.LineCapProperty, value);
     }
@@ -738,8 +723,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineCap(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder LineCap(
+        this PenBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -755,8 +740,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineCap(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder LineCap(
+        this PenBuilder builder,
         IObservable<Avalonia.Media.PenLineCap> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -764,8 +749,6 @@ public static partial class PenExtensions
         return builder.WithBinding(PropertyMetadata.Pen_LineCap, Avalonia.Media.Pen.LineCapProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> value on a referenced control.
@@ -812,7 +795,6 @@ public static partial class PenExtensions
         return elementRef.SetBinding(Avalonia.Media.Pen.LineCapProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Pen.LineCapProperty
 
     /// <summary>
@@ -951,19 +933,17 @@ public static partial class PenExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineCapFlat(this ElementBuilder<Avalonia.Media.Pen> builder)
+    public static PenBuilder LineCapFlat(this PenBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineCap, Avalonia.Media.Pen.LineCapProperty, Avalonia.Media.PenLineCap.Flat);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
@@ -975,19 +955,17 @@ public static partial class PenExtensions
         obj[Avalonia.Media.Pen.LineCapProperty] = Avalonia.Media.PenLineCap.Flat;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineCapRound(this ElementBuilder<Avalonia.Media.Pen> builder)
+    public static PenBuilder LineCapRound(this PenBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineCap, Avalonia.Media.Pen.LineCapProperty, Avalonia.Media.PenLineCap.Round);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
@@ -999,19 +977,17 @@ public static partial class PenExtensions
         obj[Avalonia.Media.Pen.LineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineCapProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineCapSquare(this ElementBuilder<Avalonia.Media.Pen> builder)
+    public static PenBuilder LineCapSquare(this PenBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineCap, Avalonia.Media.Pen.LineCapProperty, Avalonia.Media.PenLineCap.Square);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Square"/>.
@@ -1024,7 +1000,6 @@ public static partial class PenExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> literal value for hot reload builds.
@@ -1032,7 +1007,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineJoin(this ElementBuilder<Avalonia.Media.Pen> builder, Avalonia.Media.PenLineJoin value)
+    public static PenBuilder LineJoin(this PenBuilder builder, Avalonia.Media.PenLineJoin value)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineJoin, Avalonia.Media.Pen.LineJoinProperty, value);
     }
@@ -1045,8 +1020,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineJoin(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder LineJoin(
+        this PenBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1062,8 +1037,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineJoin(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder LineJoin(
+        this PenBuilder builder,
         IObservable<Avalonia.Media.PenLineJoin> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1071,8 +1046,6 @@ public static partial class PenExtensions
         return builder.WithBinding(PropertyMetadata.Pen_LineJoin, Avalonia.Media.Pen.LineJoinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> value on a referenced control.
@@ -1119,7 +1092,6 @@ public static partial class PenExtensions
         return elementRef.SetBinding(Avalonia.Media.Pen.LineJoinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Pen.LineJoinProperty
 
     /// <summary>
@@ -1258,19 +1230,17 @@ public static partial class PenExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineJoinBevel(this ElementBuilder<Avalonia.Media.Pen> builder)
+    public static PenBuilder LineJoinBevel(this PenBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineJoin, Avalonia.Media.Pen.LineJoinProperty, Avalonia.Media.PenLineJoin.Bevel);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
@@ -1282,19 +1252,17 @@ public static partial class PenExtensions
         obj[Avalonia.Media.Pen.LineJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineJoinMiter(this ElementBuilder<Avalonia.Media.Pen> builder)
+    public static PenBuilder LineJoinMiter(this PenBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineJoin, Avalonia.Media.Pen.LineJoinProperty, Avalonia.Media.PenLineJoin.Miter);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Miter"/>.
@@ -1306,19 +1274,17 @@ public static partial class PenExtensions
         obj[Avalonia.Media.Pen.LineJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> LineJoinRound(this ElementBuilder<Avalonia.Media.Pen> builder)
+    public static PenBuilder LineJoinRound(this PenBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.Pen_LineJoin, Avalonia.Media.Pen.LineJoinProperty, Avalonia.Media.PenLineJoin.Round);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.LineJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Round"/>.
@@ -1331,7 +1297,6 @@ public static partial class PenExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> literal value for hot reload builds.
@@ -1339,7 +1304,7 @@ public static partial class PenExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> MiterLimit(this ElementBuilder<Avalonia.Media.Pen> builder, System.Double value)
+    public static PenBuilder MiterLimit(this PenBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.Pen_MiterLimit, Avalonia.Media.Pen.MiterLimitProperty, value);
     }
@@ -1352,8 +1317,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> MiterLimit(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder MiterLimit(
+        this PenBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1369,8 +1334,8 @@ public static partial class PenExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.Pen> MiterLimit(
-        this ElementBuilder<Avalonia.Media.Pen> builder,
+    public static PenBuilder MiterLimit(
+        this PenBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -1378,8 +1343,6 @@ public static partial class PenExtensions
         return builder.WithBinding(PropertyMetadata.Pen_MiterLimit, Avalonia.Media.Pen.MiterLimitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> value on a referenced control.
@@ -1426,7 +1389,6 @@ public static partial class PenExtensions
         return elementRef.SetBinding(Avalonia.Media.Pen.MiterLimitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Pen.MiterLimitProperty
 
     /// <summary>

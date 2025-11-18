@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class style setters extension methods.
 /// </summary>
 public static partial class VirtualizingStackPanelSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/>.
@@ -20,7 +17,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    public static StyleBuilder SetVirtualizingStackPanelOrientation(this StyleBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    public static KeyFrameBuilder SetVirtualizingStackPanelOrientation(this KeyFrameBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.VirtualizingStackPanel.OrientationProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class VirtualizingStackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.VirtualizingStackPanel.OrientationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static StyleBuilder SetVirtualizingStackPanelOrientation(this StyleBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static KeyFrameBuilder SetVirtualizingStackPanelOrientation(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class VirtualizingStackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.VirtualizingStackPanel.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVirtualizingStackPanelOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVirtualizingStackPanelOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class VirtualizingStackPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/>.
@@ -185,7 +176,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class VirtualizingStackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class VirtualizingStackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVirtualizingStackPanelAreHorizontalSnapPointsRegular(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class VirtualizingStackPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/>.
@@ -350,7 +335,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class VirtualizingStackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class VirtualizingStackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class VirtualizingStackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVirtualizingStackPanelAreVerticalSnapPointsRegular(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class VirtualizingStackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/>.
     /// </summary>

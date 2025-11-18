@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.SelectableTextBlock"/> class style setters extension methods.
 /// </summary>
 public static partial class SelectableTextBlockSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/>.
@@ -20,7 +17,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionStart(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetSelectableTextBlockSelectionStart(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionStart(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionStart(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionStartProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionStart(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetSelectableTextBlockSelectionStart(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionStart(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionStart(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionStart(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionStart(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionStart(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionStart(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class SelectableTextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/>.
@@ -185,7 +176,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionEnd(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetSelectableTextBlockSelectionEnd(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionEnd(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionEnd(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionEndProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionEnd(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetSelectableTextBlockSelectionEnd(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionEnd(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionEnd(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionEnd(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionEnd(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionEnd(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionEnd(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class SelectableTextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/>.
@@ -350,7 +335,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionBrush(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetSelectableTextBlockSelectionBrush(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionBrush(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionBrush(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetSelectableTextBlockSelectionBrush(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionBrush(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionBrush(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionBrush(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class SelectableTextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/>.
@@ -515,7 +494,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionForegroundBrush(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetSelectableTextBlockSelectionForegroundBrush(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionForegroundBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionForegroundBrush(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionForegroundBrush(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetSelectableTextBlockSelectionForegroundBrush(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionForegroundBrush(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionForegroundBrush(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class SelectableTextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSelectableTextBlockSelectionForegroundBrush(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSelectableTextBlockSelectionForegroundBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class SelectableTextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSelectableTextBlockSelectionForegroundBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSelectableTextBlockSelectionForegroundBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class SelectableTextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/>.
     /// </summary>

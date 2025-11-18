@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridRow"/> class style setters extension methods.
 /// </summary>
 public static partial class DataGridRowSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowHeader(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetDataGridRowHeader(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowHeader(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetDataGridRowHeader(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.HeaderProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.HeaderProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowHeader(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetDataGridRowHeader(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowHeader(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetDataGridRowHeader(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.HeaderProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowHeader(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowHeader(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowHeader(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowHeader(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DataGridRowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowIsSelected(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDataGridRowIsSelected(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowIsSelected(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDataGridRowIsSelected(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.IsSelectedProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.IsSelectedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowIsSelected(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDataGridRowIsSelected(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowIsSelected(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDataGridRowIsSelected(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.IsSelectedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowIsSelected(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowIsSelected(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowIsSelected(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowIsSelected(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DataGridRowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowDetailsTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetDataGridRowDetailsTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowDetailsTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetDataGridRowDetailsTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.DetailsTemplateProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.DetailsTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowDetailsTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetDataGridRowDetailsTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowDetailsTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetDataGridRowDetailsTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.DetailsTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowDetailsTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowDetailsTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowDetailsTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowDetailsTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class DataGridRowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/>.
@@ -515,7 +494,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowAreDetailsVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDataGridRowAreDetailsVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowAreDetailsVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDataGridRowAreDetailsVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowAreDetailsVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDataGridRowAreDetailsVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowAreDetailsVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDataGridRowAreDetailsVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowAreDetailsVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowAreDetailsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowAreDetailsVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowAreDetailsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class DataGridRowSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/>.
@@ -680,7 +653,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowIndex(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetDataGridRowIndex(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowIndex(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetDataGridRowIndex(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.IndexProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.IndexProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowIndex(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetDataGridRowIndex(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowIndex(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetDataGridRowIndex(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class DataGridRowSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRow.IndexProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowIndex(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class DataGridRowSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowIndex(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class DataGridRowSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/>.
     /// </summary>

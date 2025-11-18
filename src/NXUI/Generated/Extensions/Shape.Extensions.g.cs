@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Shape"/> class property extension methods.
 /// </summary>
 public static partial class ShapeExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_Fill, Avalonia.Controls.Shapes.Shape.FillProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.FillProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.FillProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ShapeExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_Stretch, Avalonia.Controls.Shapes.Shape.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StretchProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ShapeExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_Stretch, Avalonia.Controls.Shapes.Shape.StretchProperty, Avalonia.Media.Stretch.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
@@ -520,7 +508,6 @@ public static partial class ShapeExtensions
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_Stretch, Avalonia.Controls.Shapes.Shape.StretchProperty, Avalonia.Media.Stretch.Fill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Fill"/>.
@@ -545,7 +531,6 @@ public static partial class ShapeExtensions
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.Fill;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_Stretch, Avalonia.Controls.Shapes.Shape.StretchProperty, Avalonia.Media.Stretch.Uniform);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
@@ -570,7 +554,6 @@ public static partial class ShapeExtensions
         obj[Avalonia.Controls.Shapes.Shape.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_Stretch, Avalonia.Controls.Shapes.Shape.StretchProperty, Avalonia.Media.Stretch.UniformToFill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.UniformToFill"/>.
@@ -596,7 +578,6 @@ public static partial class ShapeExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_Stroke, Avalonia.Controls.Shapes.Shape.StrokeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeProperty
 
     /// <summary>
@@ -838,7 +816,6 @@ public static partial class ShapeExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> literal value for hot reload builds.
@@ -885,8 +862,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_StrokeDashArray, Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> value on a referenced control.
@@ -933,7 +908,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty
 
     /// <summary>
@@ -1080,7 +1054,6 @@ public static partial class ShapeExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> literal value for hot reload builds.
@@ -1127,8 +1100,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_StrokeDashOffset, Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> value on a referenced control.
@@ -1175,7 +1146,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty
 
     /// <summary>
@@ -1322,7 +1292,6 @@ public static partial class ShapeExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> literal value for hot reload builds.
@@ -1369,8 +1338,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_StrokeThickness, Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> value on a referenced control.
@@ -1417,7 +1384,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty
 
     /// <summary>
@@ -1564,7 +1530,6 @@ public static partial class ShapeExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> literal value for hot reload builds.
@@ -1611,8 +1576,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_StrokeLineCap, Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> value on a referenced control.
@@ -1659,7 +1622,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty
 
     /// <summary>
@@ -1805,7 +1767,6 @@ public static partial class ShapeExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> enum value for hot reload builds.
@@ -1817,7 +1778,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_StrokeLineCap, Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, Avalonia.Media.PenLineCap.Flat);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Flat"/>.
@@ -1830,7 +1790,6 @@ public static partial class ShapeExtensions
         obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Flat;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> enum value for hot reload builds.
@@ -1842,7 +1801,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_StrokeLineCap, Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, Avalonia.Media.PenLineCap.Round);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Round"/>.
@@ -1855,7 +1813,6 @@ public static partial class ShapeExtensions
         obj[Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty] = Avalonia.Media.PenLineCap.Round;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> enum value for hot reload builds.
@@ -1867,7 +1824,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_StrokeLineCap, Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, Avalonia.Media.PenLineCap.Square);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> property value to <see cref="Avalonia.Media.PenLineCap.Square"/>.
@@ -1881,7 +1837,6 @@ public static partial class ShapeExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> literal value for hot reload builds.
@@ -1928,8 +1883,6 @@ public static partial class ShapeExtensions
         return builder.WithBinding(PropertyMetadata.Shape_StrokeJoin, Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> value on a referenced control.
@@ -1976,7 +1929,6 @@ public static partial class ShapeExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeJoinProperty
 
     /// <summary>
@@ -2122,7 +2074,6 @@ public static partial class ShapeExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> enum value for hot reload builds.
@@ -2134,7 +2085,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_StrokeJoin, Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, Avalonia.Media.PenLineJoin.Bevel);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Bevel"/>.
@@ -2147,7 +2097,6 @@ public static partial class ShapeExtensions
         obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Bevel;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> enum value for hot reload builds.
@@ -2159,7 +2108,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_StrokeJoin, Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, Avalonia.Media.PenLineJoin.Miter);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Miter"/>.
@@ -2172,7 +2120,6 @@ public static partial class ShapeExtensions
         obj[Avalonia.Controls.Shapes.Shape.StrokeJoinProperty] = Avalonia.Media.PenLineJoin.Miter;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> enum value for hot reload builds.
@@ -2184,7 +2131,6 @@ public static partial class ShapeExtensions
         return builder.WithValue(PropertyMetadata.Shape_StrokeJoin, Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, Avalonia.Media.PenLineJoin.Round);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> property value to <see cref="Avalonia.Media.PenLineJoin.Round"/>.

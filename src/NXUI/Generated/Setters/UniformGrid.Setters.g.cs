@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class style setters extension methods.
 /// </summary>
 public static partial class UniformGridSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridRows(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetUniformGridRows(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridRows(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetUniformGridRows(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.RowsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridRows(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetUniformGridRows(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridRows(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetUniformGridRows(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridRows(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetUniformGridRows(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridRows(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetUniformGridRows(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class UniformGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
@@ -185,7 +176,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridColumns(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetUniformGridColumns(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridColumns(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetUniformGridColumns(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridColumns(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetUniformGridColumns(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridColumns(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetUniformGridColumns(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridColumns(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetUniformGridColumns(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridColumns(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetUniformGridColumns(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class UniformGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
@@ -350,7 +335,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridFirstColumn(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetUniformGridFirstColumn(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridFirstColumn(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetUniformGridFirstColumn(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridFirstColumn(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetUniformGridFirstColumn(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridFirstColumn(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetUniformGridFirstColumn(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridFirstColumn(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetUniformGridFirstColumn(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridFirstColumn(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetUniformGridFirstColumn(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class UniformGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/>.
@@ -515,7 +494,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridRowSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetUniformGridRowSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridRowSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetUniformGridRowSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridRowSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetUniformGridRowSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridRowSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetUniformGridRowSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridRowSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetUniformGridRowSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridRowSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetUniformGridRowSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class UniformGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/>.
@@ -680,7 +653,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridColumnSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetUniformGridColumnSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridColumnSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetUniformGridColumnSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridColumnSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetUniformGridColumnSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridColumnSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetUniformGridColumnSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class UniformGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetUniformGridColumnSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetUniformGridColumnSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class UniformGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetUniformGridColumnSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetUniformGridColumnSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class UniformGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/>.
     /// </summary>

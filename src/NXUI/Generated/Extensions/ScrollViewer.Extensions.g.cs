@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ScrollViewer"/> class property extension methods.
 /// </summary>
 public static partial class ScrollViewerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_BringIntoViewOnFocusChange, Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty
 
     /// <summary>
@@ -344,7 +338,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/> literal value for hot reload builds.
@@ -391,8 +384,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_Offset, Avalonia.Controls.ScrollViewer.OffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/> value on a referenced control.
@@ -439,7 +430,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.OffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.OffsetProperty
 
     /// <summary>
@@ -946,7 +936,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> literal value for hot reload builds.
@@ -993,8 +982,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_HorizontalScrollBarVisibility, Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> value on a referenced control.
@@ -1041,7 +1028,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty
 
     /// <summary>
@@ -1187,7 +1173,6 @@ public static partial class ScrollViewerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -1199,7 +1184,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalScrollBarVisibility, Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
@@ -1212,7 +1196,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -1224,7 +1207,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalScrollBarVisibility, Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Auto);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Auto"/>.
@@ -1237,7 +1219,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -1249,7 +1230,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalScrollBarVisibility, Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden"/>.
@@ -1262,7 +1242,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -1274,7 +1253,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalScrollBarVisibility, Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Visible);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Visible"/>.
@@ -1288,7 +1266,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> literal value for hot reload builds.
@@ -1335,8 +1312,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_HorizontalSnapPointsType, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> value on a referenced control.
@@ -1383,7 +1358,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty
 
     /// <summary>
@@ -1529,7 +1503,6 @@ public static partial class ScrollViewerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> enum value for hot reload builds.
@@ -1541,7 +1514,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalSnapPointsType, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, Avalonia.Controls.Primitives.SnapPointsType.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.None"/>.
@@ -1554,7 +1526,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> enum value for hot reload builds.
@@ -1566,7 +1537,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalSnapPointsType, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, Avalonia.Controls.Primitives.SnapPointsType.Mandatory);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.Mandatory"/>.
@@ -1579,7 +1549,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.Mandatory;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> enum value for hot reload builds.
@@ -1591,7 +1560,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalSnapPointsType, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle"/>.
@@ -1605,7 +1573,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> literal value for hot reload builds.
@@ -1652,8 +1619,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_VerticalSnapPointsType, Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> value on a referenced control.
@@ -1700,7 +1665,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty
 
     /// <summary>
@@ -1846,7 +1810,6 @@ public static partial class ScrollViewerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> enum value for hot reload builds.
@@ -1858,7 +1821,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalSnapPointsType, Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, Avalonia.Controls.Primitives.SnapPointsType.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.None"/>.
@@ -1871,7 +1833,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> enum value for hot reload builds.
@@ -1883,7 +1844,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalSnapPointsType, Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, Avalonia.Controls.Primitives.SnapPointsType.Mandatory);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.Mandatory"/>.
@@ -1896,7 +1856,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty] = Avalonia.Controls.Primitives.SnapPointsType.Mandatory;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> enum value for hot reload builds.
@@ -1908,7 +1867,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalSnapPointsType, Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsType.MandatorySingle"/>.
@@ -1922,7 +1880,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> literal value for hot reload builds.
@@ -1969,8 +1926,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_HorizontalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> value on a referenced control.
@@ -2017,7 +1972,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty
 
     /// <summary>
@@ -2163,7 +2117,6 @@ public static partial class ScrollViewerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> enum value for hot reload builds.
@@ -2175,7 +2128,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, Avalonia.Controls.Primitives.SnapPointsAlignment.Near);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Near"/>.
@@ -2188,7 +2140,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Near;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> enum value for hot reload builds.
@@ -2200,7 +2151,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, Avalonia.Controls.Primitives.SnapPointsAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Center"/>.
@@ -2213,7 +2163,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> enum value for hot reload builds.
@@ -2225,7 +2174,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_HorizontalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, Avalonia.Controls.Primitives.SnapPointsAlignment.Far);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Far"/>.
@@ -2239,7 +2187,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> literal value for hot reload builds.
@@ -2286,8 +2233,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_VerticalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> value on a referenced control.
@@ -2334,7 +2279,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty
 
     /// <summary>
@@ -2480,7 +2424,6 @@ public static partial class ScrollViewerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> enum value for hot reload builds.
@@ -2492,7 +2435,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, Avalonia.Controls.Primitives.SnapPointsAlignment.Near);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Near"/>.
@@ -2505,7 +2447,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Near;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> enum value for hot reload builds.
@@ -2517,7 +2458,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, Avalonia.Controls.Primitives.SnapPointsAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Center"/>.
@@ -2530,7 +2470,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty] = Avalonia.Controls.Primitives.SnapPointsAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> enum value for hot reload builds.
@@ -2542,7 +2481,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalSnapPointsAlignment, Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, Avalonia.Controls.Primitives.SnapPointsAlignment.Far);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.SnapPointsAlignment.Far"/>.
@@ -2556,7 +2494,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> literal value for hot reload builds.
@@ -2603,8 +2540,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_VerticalScrollBarVisibility, Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> value on a referenced control.
@@ -2651,7 +2586,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty
 
     /// <summary>
@@ -2797,7 +2731,6 @@ public static partial class ScrollViewerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -2809,7 +2742,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalScrollBarVisibility, Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
@@ -2822,7 +2754,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -2834,7 +2765,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalScrollBarVisibility, Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Auto);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Auto"/>.
@@ -2847,7 +2777,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -2859,7 +2788,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalScrollBarVisibility, Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden"/>.
@@ -2872,7 +2800,6 @@ public static partial class ScrollViewerExtensions
         obj[Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -2884,7 +2811,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithValue(PropertyMetadata.ScrollViewer_VerticalScrollBarVisibility, Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Visible);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Visible"/>.
@@ -2988,7 +2914,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/> literal value for hot reload builds.
@@ -3035,8 +2960,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_AllowAutoHide, Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/> value on a referenced control.
@@ -3083,7 +3006,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.AllowAutoHideProperty
 
     /// <summary>
@@ -3230,7 +3152,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/> literal value for hot reload builds.
@@ -3277,8 +3198,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_IsScrollChainingEnabled, Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/> value on a referenced control.
@@ -3325,7 +3244,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty
 
     /// <summary>
@@ -3472,7 +3390,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> literal value for hot reload builds.
@@ -3519,8 +3436,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_IsScrollInertiaEnabled, Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> value on a referenced control.
@@ -3567,7 +3482,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty
 
     /// <summary>
@@ -3714,7 +3628,6 @@ public static partial class ScrollViewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/> literal value for hot reload builds.
@@ -3761,8 +3674,6 @@ public static partial class ScrollViewerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollViewer_IsDeferredScrollingEnabled, Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/> value on a referenced control.
@@ -3809,7 +3720,6 @@ public static partial class ScrollViewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty
 
     /// <summary>
@@ -4004,7 +3914,6 @@ public static partial class ScrollViewerExtensions
     {
         return obj.GetObservable(Avalonia.Controls.ScrollViewer.ScrollChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -4047,7 +3956,6 @@ public static partial class ScrollViewerExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.ScrollViewer.ScrollChanged
 
@@ -4082,7 +3990,6 @@ public static partial class ScrollViewerExtensions
                 h => obj.ScrollChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -4104,5 +4011,4 @@ public static partial class ScrollViewerExtensions
         }));
     }
 
-#endif
 }

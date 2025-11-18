@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Input.InputElement"/>.
 /// </summary>
 public static partial class InputElementElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.FocusableProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.FocusableProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.IsEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.IsEffectivelyEnabledProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.IsEffectivelyEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.CursorProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.CursorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.IsKeyboardFocusWithinProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.IsFocusedProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.IsFocusedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.IsHitTestVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.IsPointerOverProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.IsPointerOverProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.IsTabStopProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> value.
@@ -121,5 +100,4 @@ public static partial class InputElementElementRefExtensions
         return elementRef.Observe(Avalonia.Input.InputElement.TabIndexProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DrawingGroup"/> class style setters extension methods.
 /// </summary>
 public static partial class DrawingGroupSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupOpacity(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetDrawingGroupOpacity(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupOpacity(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetDrawingGroupOpacity(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.OpacityProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupOpacity(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetDrawingGroupOpacity(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupOpacity(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetDrawingGroupOpacity(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupOpacity(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupOpacity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupOpacity(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupOpacity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DrawingGroupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupTransform(this ElementBuilder<Style> builder, Avalonia.Media.Transform value)
+    public static StyleBuilder SetDrawingGroupTransform(this StyleBuilder builder, Avalonia.Media.Transform value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Transform value)
+    public static KeyFrameBuilder SetDrawingGroupTransform(this KeyFrameBuilder builder, Avalonia.Media.Transform value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.TransformProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.TransformProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupTransform(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Transform> observable)
+    public static StyleBuilder SetDrawingGroupTransform(this StyleBuilder builder, IObservable<Avalonia.Media.Transform> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupTransform(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Transform> observable)
+    public static KeyFrameBuilder SetDrawingGroupTransform(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Transform> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.TransformProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupTransform(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DrawingGroupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupClipGeometry(this ElementBuilder<Style> builder, Avalonia.Media.Geometry value)
+    public static StyleBuilder SetDrawingGroupClipGeometry(this StyleBuilder builder, Avalonia.Media.Geometry value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupClipGeometry(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Geometry value)
+    public static KeyFrameBuilder SetDrawingGroupClipGeometry(this KeyFrameBuilder builder, Avalonia.Media.Geometry value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.ClipGeometryProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ClipGeometryProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupClipGeometry(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Geometry> observable)
+    public static StyleBuilder SetDrawingGroupClipGeometry(this StyleBuilder builder, IObservable<Avalonia.Media.Geometry> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupClipGeometry(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Geometry> observable)
+    public static KeyFrameBuilder SetDrawingGroupClipGeometry(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Geometry> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ClipGeometryProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupClipGeometry(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupClipGeometry(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupClipGeometry(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupClipGeometry(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class DrawingGroupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
@@ -515,7 +494,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupOpacityMask(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetDrawingGroupOpacityMask(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupOpacityMask(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetDrawingGroupOpacityMask(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.OpacityMaskProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityMaskProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupOpacityMask(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetDrawingGroupOpacityMask(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupOpacityMask(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetDrawingGroupOpacityMask(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.OpacityMaskProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupOpacityMask(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupOpacityMask(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupOpacityMask(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupOpacityMask(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class DrawingGroupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
@@ -680,7 +653,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupChildren(this ElementBuilder<Style> builder, Avalonia.Media.DrawingCollection value)
+    public static StyleBuilder SetDrawingGroupChildren(this StyleBuilder builder, Avalonia.Media.DrawingCollection value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupChildren(this ElementBuilder<KeyFrame> builder, Avalonia.Media.DrawingCollection value)
+    public static KeyFrameBuilder SetDrawingGroupChildren(this KeyFrameBuilder builder, Avalonia.Media.DrawingCollection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.ChildrenProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ChildrenProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupChildren(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.DrawingCollection> observable)
+    public static StyleBuilder SetDrawingGroupChildren(this StyleBuilder builder, IObservable<Avalonia.Media.DrawingCollection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupChildren(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.DrawingCollection> observable)
+    public static KeyFrameBuilder SetDrawingGroupChildren(this KeyFrameBuilder builder, IObservable<Avalonia.Media.DrawingCollection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class DrawingGroupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DrawingGroup.ChildrenProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDrawingGroupChildren(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDrawingGroupChildren(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class DrawingGroupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDrawingGroupChildren(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDrawingGroupChildren(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class DrawingGroupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/>.
     /// </summary>

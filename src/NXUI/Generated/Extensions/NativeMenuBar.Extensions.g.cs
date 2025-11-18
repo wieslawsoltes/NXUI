@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.NativeMenuBar"/> class property extension methods.
 /// </summary>
 public static partial class NativeMenuBarExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class NativeMenuBarExtensions
         return builder.WithBinding(PropertyMetadata.NativeMenuBar_EnableMenuItemClickForwarding, Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class NativeMenuBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NativeMenuBar.EnableMenuItemClickForwardingProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/>.
 /// </summary>
 public static partial class NonVirtualizingStackLayoutElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class NonVirtualizingStackLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class NonVirtualizingStackLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty);
     }
 
-#endif
 }

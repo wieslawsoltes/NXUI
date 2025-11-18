@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Layout.UniformGridLayout"/> class property extension methods.
 /// </summary>
 public static partial class UniformGridLayoutExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_ItemsJustification, Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class UniformGridLayoutExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsJustification, Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, Avalonia.Layout.UniformGridLayoutItemsJustification.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.Start"/>.
@@ -278,7 +270,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsJustification, Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, Avalonia.Layout.UniformGridLayoutItemsJustification.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.Center"/>.
@@ -303,7 +293,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsJustification, Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, Avalonia.Layout.UniformGridLayoutItemsJustification.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.End"/>.
@@ -328,7 +316,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.End;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsJustification, Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceAround);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceAround"/>.
@@ -353,7 +339,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceAround;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
@@ -365,7 +350,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsJustification, Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween"/>.
@@ -378,7 +362,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty] = Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceBetween;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> enum value for hot reload builds.
@@ -390,7 +373,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsJustification, Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty, Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceEvenly);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsJustification.SpaceEvenly"/>.
@@ -404,7 +386,6 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> literal value for hot reload builds.
@@ -451,8 +432,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_ItemsStretch, Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> value on a referenced control.
@@ -499,7 +478,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.ItemsStretchProperty
 
     /// <summary>
@@ -645,7 +623,6 @@ public static partial class UniformGridLayoutExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> enum value for hot reload builds.
@@ -657,7 +634,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsStretch, Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, Avalonia.Layout.UniformGridLayoutItemsStretch.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.None"/>.
@@ -670,7 +646,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> enum value for hot reload builds.
@@ -682,7 +657,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsStretch, Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, Avalonia.Layout.UniformGridLayoutItemsStretch.Fill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.Fill"/>.
@@ -695,7 +669,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.ItemsStretchProperty] = Avalonia.Layout.UniformGridLayoutItemsStretch.Fill;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> enum value for hot reload builds.
@@ -707,7 +680,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_ItemsStretch, Avalonia.Layout.UniformGridLayout.ItemsStretchProperty, Avalonia.Layout.UniformGridLayoutItemsStretch.Uniform);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> property value to <see cref="Avalonia.Layout.UniformGridLayoutItemsStretch.Uniform"/>.
@@ -721,7 +693,6 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> literal value for hot reload builds.
@@ -768,8 +739,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_MinColumnSpacing, Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> value on a referenced control.
@@ -816,7 +785,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty
 
     /// <summary>
@@ -963,7 +931,6 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> literal value for hot reload builds.
@@ -1010,8 +977,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_MinItemHeight, Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> value on a referenced control.
@@ -1058,7 +1023,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.MinItemHeightProperty
 
     /// <summary>
@@ -1205,7 +1169,6 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> literal value for hot reload builds.
@@ -1252,8 +1215,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_MinItemWidth, Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> value on a referenced control.
@@ -1300,7 +1261,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.MinItemWidthProperty
 
     /// <summary>
@@ -1447,7 +1407,6 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> literal value for hot reload builds.
@@ -1494,8 +1453,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_MinRowSpacing, Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> value on a referenced control.
@@ -1542,7 +1499,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty
 
     /// <summary>
@@ -1689,7 +1645,6 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> literal value for hot reload builds.
@@ -1736,8 +1691,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_MaximumRowsOrColumns, Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> value on a referenced control.
@@ -1784,7 +1737,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty
 
     /// <summary>
@@ -1931,7 +1883,6 @@ public static partial class UniformGridLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> literal value for hot reload builds.
@@ -1978,8 +1929,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithBinding(PropertyMetadata.UniformGridLayout_Orientation, Avalonia.Layout.UniformGridLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> value on a referenced control.
@@ -2026,7 +1975,6 @@ public static partial class UniformGridLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.UniformGridLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.UniformGridLayout.OrientationProperty
 
     /// <summary>
@@ -2172,7 +2120,6 @@ public static partial class UniformGridLayoutExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -2184,7 +2131,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_Orientation, Avalonia.Layout.UniformGridLayout.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -2197,7 +2143,6 @@ public static partial class UniformGridLayoutExtensions
         obj[Avalonia.Layout.UniformGridLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -2209,7 +2154,6 @@ public static partial class UniformGridLayoutExtensions
         return builder.WithValue(PropertyMetadata.UniformGridLayout_Orientation, Avalonia.Layout.UniformGridLayout.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.

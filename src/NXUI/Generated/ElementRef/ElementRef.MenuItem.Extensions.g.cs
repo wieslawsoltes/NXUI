@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.MenuItem"/>.
 /// </summary>
 public static partial class MenuItemElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.CommandProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.CommandProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.HotKeyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.CommandParameterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.IconProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.IconProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.InputGestureProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.InputGestureProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.IsSubMenuOpenProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.IsSubMenuOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.StaysOpenOnClickProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.StaysOpenOnClickProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.ToggleTypeProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.ToggleTypeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.IsCheckedProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.IsCheckedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.GroupNameProperty"/> value.
@@ -121,5 +100,4 @@ public static partial class MenuItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MenuItem.GroupNameProperty);
     }
 
-#endif
 }

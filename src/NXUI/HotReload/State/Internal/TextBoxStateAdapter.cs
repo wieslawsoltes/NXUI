@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.State.Internal;
 
 using System;
@@ -38,4 +37,3 @@ internal sealed class TextBoxStateAdapter : IHotReloadStateAdapter
 
     private sealed record Snapshot(string? Text, int SelectionStart, int SelectionEnd, int CaretIndex);
 }
-#endif

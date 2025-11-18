@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Shapes.Arc"/>.
 /// </summary>
 public static partial class ArcElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ArcElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Arc.StartAngleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class ArcElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Arc.SweepAngleProperty);
     }
 
-#endif
 }

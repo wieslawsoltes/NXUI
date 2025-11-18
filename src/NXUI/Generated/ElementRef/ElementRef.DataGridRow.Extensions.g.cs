@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGridRow"/>.
 /// </summary>
 public static partial class DataGridRowElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRow.HeaderProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRow.IsSelectedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRow.IsValidProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRow.IsValidProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRow.DetailsTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class DataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class DataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridRow.IndexProperty);
     }
 
-#endif
 }

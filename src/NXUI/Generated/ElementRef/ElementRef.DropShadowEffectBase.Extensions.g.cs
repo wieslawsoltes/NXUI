@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.DropShadowEffectBase"/>.
 /// </summary>
 public static partial class DropShadowEffectBaseElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DropShadowEffectBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DropShadowEffectBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DropShadowEffectBase.ColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class DropShadowEffectBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DropShadowEffectBase.OpacityProperty);
     }
 
-#endif
 }

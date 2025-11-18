@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Input.InputElement"/> class style setters extension methods.
 /// </summary>
 public static partial class InputElementSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
@@ -20,7 +17,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementFocusable(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetInputElementFocusable(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementFocusable(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetInputElementFocusable(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     // Avalonia.Input.InputElement.FocusableProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementFocusable(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetInputElementFocusable(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementFocusable(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetInputElementFocusable(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.FocusableProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementFocusable(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInputElementFocusable(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementFocusable(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInputElementFocusable(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.FocusableProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class InputElementSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
@@ -185,7 +176,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetInputElementIsEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetInputElementIsEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     // Avalonia.Input.InputElement.IsEnabledProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetInputElementIsEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetInputElementIsEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInputElementIsEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInputElementIsEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class InputElementSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
@@ -350,7 +335,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementCursor(this ElementBuilder<Style> builder, Avalonia.Input.Cursor value)
+    public static StyleBuilder SetInputElementCursor(this StyleBuilder builder, Avalonia.Input.Cursor value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementCursor(this ElementBuilder<KeyFrame> builder, Avalonia.Input.Cursor value)
+    public static KeyFrameBuilder SetInputElementCursor(this KeyFrameBuilder builder, Avalonia.Input.Cursor value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     // Avalonia.Input.InputElement.CursorProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementCursor(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.Cursor> observable)
+    public static StyleBuilder SetInputElementCursor(this StyleBuilder builder, IObservable<Avalonia.Input.Cursor> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementCursor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.Cursor> observable)
+    public static KeyFrameBuilder SetInputElementCursor(this KeyFrameBuilder builder, IObservable<Avalonia.Input.Cursor> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.CursorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementCursor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInputElementCursor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementCursor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInputElementCursor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.CursorProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class InputElementSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
@@ -515,7 +494,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsHitTestVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetInputElementIsHitTestVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsHitTestVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetInputElementIsHitTestVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     // Avalonia.Input.InputElement.IsHitTestVisibleProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsHitTestVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetInputElementIsHitTestVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsHitTestVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetInputElementIsHitTestVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsHitTestVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsHitTestVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInputElementIsHitTestVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsHitTestVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInputElementIsHitTestVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class InputElementSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
@@ -680,7 +653,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsTabStop(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetInputElementIsTabStop(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsTabStop(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetInputElementIsTabStop(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     // Avalonia.Input.InputElement.IsTabStopProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsTabStopProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsTabStop(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetInputElementIsTabStop(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsTabStop(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetInputElementIsTabStop(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.IsTabStopProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementIsTabStop(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInputElementIsTabStop(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementIsTabStop(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInputElementIsTabStop(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class InputElementSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
@@ -845,7 +812,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementTabIndex(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetInputElementTabIndex(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementTabIndex(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetInputElementTabIndex(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     // Avalonia.Input.InputElement.TabIndexProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.TabIndexProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementTabIndex(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetInputElementTabIndex(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementTabIndex(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetInputElementTabIndex(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class InputElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.InputElement.TabIndexProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInputElementTabIndex(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInputElementTabIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class InputElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInputElementTabIndex(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInputElementTabIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class InputElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ArcSegment"/> class property extension methods.
 /// </summary>
 public static partial class ArcSegmentExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> IsLargeArc(this ElementBuilder<Avalonia.Media.ArcSegment> builder, System.Boolean value)
+    public static ArcSegmentBuilder IsLargeArc(this ArcSegmentBuilder builder, System.Boolean value)
     {
         return builder.WithValue(PropertyMetadata.ArcSegment_IsLargeArc, Avalonia.Media.ArcSegment.IsLargeArcProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> IsLargeArc(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder IsLargeArc(
+        this ArcSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> IsLargeArc(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder IsLargeArc(
+        this ArcSegmentBuilder builder,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class ArcSegmentExtensions
         return builder.WithBinding(PropertyMetadata.ArcSegment_IsLargeArc, Avalonia.Media.ArcSegment.IsLargeArcProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ArcSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.ArcSegment.IsLargeArcProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ArcSegment.IsLargeArcProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ArcSegment.PointProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> Point(this ElementBuilder<Avalonia.Media.ArcSegment> builder, Avalonia.Point value)
+    public static ArcSegmentBuilder Point(this ArcSegmentBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.ArcSegment_Point, Avalonia.Media.ArcSegment.PointProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> Point(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder Point(
+        this ArcSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> Point(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder Point(
+        this ArcSegmentBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class ArcSegmentExtensions
         return builder.WithBinding(PropertyMetadata.ArcSegment_Point, Avalonia.Media.ArcSegment.PointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ArcSegment.PointProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class ArcSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.ArcSegment.PointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ArcSegment.PointProperty
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> RotationAngle(this ElementBuilder<Avalonia.Media.ArcSegment> builder, System.Double value)
+    public static ArcSegmentBuilder RotationAngle(this ArcSegmentBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.ArcSegment_RotationAngle, Avalonia.Media.ArcSegment.RotationAngleProperty, value);
     }
@@ -503,8 +492,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> RotationAngle(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder RotationAngle(
+        this ArcSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> RotationAngle(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder RotationAngle(
+        this ArcSegmentBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class ArcSegmentExtensions
         return builder.WithBinding(PropertyMetadata.ArcSegment_RotationAngle, Avalonia.Media.ArcSegment.RotationAngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class ArcSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.ArcSegment.RotationAngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ArcSegment.RotationAngleProperty
 
     /// <summary>
@@ -717,7 +703,6 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ArcSegment.SizeProperty"/> literal value for hot reload builds.
@@ -725,7 +710,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> Size(this ElementBuilder<Avalonia.Media.ArcSegment> builder, Avalonia.Size value)
+    public static ArcSegmentBuilder Size(this ArcSegmentBuilder builder, Avalonia.Size value)
     {
         return builder.WithValue(PropertyMetadata.ArcSegment_Size, Avalonia.Media.ArcSegment.SizeProperty, value);
     }
@@ -738,8 +723,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> Size(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder Size(
+        this ArcSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -755,8 +740,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> Size(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder Size(
+        this ArcSegmentBuilder builder,
         IObservable<Avalonia.Size> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -764,8 +749,6 @@ public static partial class ArcSegmentExtensions
         return builder.WithBinding(PropertyMetadata.ArcSegment_Size, Avalonia.Media.ArcSegment.SizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ArcSegment.SizeProperty"/> value on a referenced control.
@@ -812,7 +795,6 @@ public static partial class ArcSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.ArcSegment.SizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ArcSegment.SizeProperty
 
     /// <summary>
@@ -952,7 +934,6 @@ public static partial class ArcSegmentExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> literal value for hot reload builds.
@@ -960,7 +941,7 @@ public static partial class ArcSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirection(this ElementBuilder<Avalonia.Media.ArcSegment> builder, Avalonia.Media.SweepDirection value)
+    public static ArcSegmentBuilder SweepDirection(this ArcSegmentBuilder builder, Avalonia.Media.SweepDirection value)
     {
         return builder.WithValue(PropertyMetadata.ArcSegment_SweepDirection, Avalonia.Media.ArcSegment.SweepDirectionProperty, value);
     }
@@ -973,8 +954,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirection(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder SweepDirection(
+        this ArcSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -990,8 +971,8 @@ public static partial class ArcSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirection(
-        this ElementBuilder<Avalonia.Media.ArcSegment> builder,
+    public static ArcSegmentBuilder SweepDirection(
+        this ArcSegmentBuilder builder,
         IObservable<Avalonia.Media.SweepDirection> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -999,8 +980,6 @@ public static partial class ArcSegmentExtensions
         return builder.WithBinding(PropertyMetadata.ArcSegment_SweepDirection, Avalonia.Media.ArcSegment.SweepDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> value on a referenced control.
@@ -1047,7 +1026,6 @@ public static partial class ArcSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.ArcSegment.SweepDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ArcSegment.SweepDirectionProperty
 
     /// <summary>
@@ -1186,19 +1164,17 @@ public static partial class ArcSegmentExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirectionCounterClockwise(this ElementBuilder<Avalonia.Media.ArcSegment> builder)
+    public static ArcSegmentBuilder SweepDirectionCounterClockwise(this ArcSegmentBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.ArcSegment_SweepDirection, Avalonia.Media.ArcSegment.SweepDirectionProperty, Avalonia.Media.SweepDirection.CounterClockwise);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> property value to <see cref="Avalonia.Media.SweepDirection.CounterClockwise"/>.
@@ -1210,19 +1186,17 @@ public static partial class ArcSegmentExtensions
         obj[Avalonia.Media.ArcSegment.SweepDirectionProperty] = Avalonia.Media.SweepDirection.CounterClockwise;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> enum value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ArcSegment> SweepDirectionClockwise(this ElementBuilder<Avalonia.Media.ArcSegment> builder)
+    public static ArcSegmentBuilder SweepDirectionClockwise(this ArcSegmentBuilder builder)
     {
         return builder.WithValue(PropertyMetadata.ArcSegment_SweepDirection, Avalonia.Media.ArcSegment.SweepDirectionProperty, Avalonia.Media.SweepDirection.Clockwise);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> property value to <see cref="Avalonia.Media.SweepDirection.Clockwise"/>.

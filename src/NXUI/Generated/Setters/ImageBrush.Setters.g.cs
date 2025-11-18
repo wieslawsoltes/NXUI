@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ImageBrush"/> class style setters extension methods.
 /// </summary>
 public static partial class ImageBrushSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ImageBrush.SourceProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ImageBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageBrushSource(this ElementBuilder<Style> builder, Avalonia.Media.IImageBrushSource value)
+    public static StyleBuilder SetImageBrushSource(this StyleBuilder builder, Avalonia.Media.IImageBrushSource value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ImageBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageBrushSource(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IImageBrushSource value)
+    public static KeyFrameBuilder SetImageBrushSource(this KeyFrameBuilder builder, Avalonia.Media.IImageBrushSource value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ImageBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.ImageBrush.SourceProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ImageBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageBrush.SourceProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ImageBrush.SourceProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ImageBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageBrushSource(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IImageBrushSource> observable)
+    public static StyleBuilder SetImageBrushSource(this StyleBuilder builder, IObservable<Avalonia.Media.IImageBrushSource> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ImageBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageBrushSource(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IImageBrushSource> observable)
+    public static KeyFrameBuilder SetImageBrushSource(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IImageBrushSource> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ImageBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ImageBrush.SourceProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ImageBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ImageBrush.SourceProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ImageBrush.SourceProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ImageBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageBrushSource(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetImageBrushSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ImageBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageBrushSource(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetImageBrushSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ImageBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ImageBrush.SourceProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.StackPanel"/> class property extension methods.
 /// </summary>
 public static partial class StackPanelExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class StackPanelExtensions
         return builder.WithBinding(PropertyMetadata.StackPanel_Spacing, Avalonia.Controls.StackPanel.SpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class StackPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.StackPanel.SpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.StackPanel.SpacingProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class StackPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class StackPanelExtensions
         return builder.WithBinding(PropertyMetadata.StackPanel_Orientation, Avalonia.Controls.StackPanel.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class StackPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.StackPanel.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.StackPanel.OrientationProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class StackPanelExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class StackPanelExtensions
         return builder.WithValue(PropertyMetadata.StackPanel_Orientation, Avalonia.Controls.StackPanel.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -520,7 +508,6 @@ public static partial class StackPanelExtensions
         obj[Avalonia.Controls.StackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class StackPanelExtensions
         return builder.WithValue(PropertyMetadata.StackPanel_Orientation, Avalonia.Controls.StackPanel.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -546,7 +532,6 @@ public static partial class StackPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class StackPanelExtensions
         return builder.WithBinding(PropertyMetadata.StackPanel_AreHorizontalSnapPointsRegular, Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class StackPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty
 
     /// <summary>
@@ -788,7 +770,6 @@ public static partial class StackPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/> literal value for hot reload builds.
@@ -835,8 +816,6 @@ public static partial class StackPanelExtensions
         return builder.WithBinding(PropertyMetadata.StackPanel_AreVerticalSnapPointsRegular, Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/> value on a referenced control.
@@ -883,7 +862,6 @@ public static partial class StackPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty
 
     /// <summary>
@@ -1078,7 +1056,6 @@ public static partial class StackPanelExtensions
     {
         return obj.GetObservable(Avalonia.Controls.StackPanel.HorizontalSnapPointsChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1121,7 +1098,6 @@ public static partial class StackPanelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.StackPanel.VerticalSnapPointsChangedEvent
 
@@ -1171,7 +1147,6 @@ public static partial class StackPanelExtensions
     {
         return obj.GetObservable(Avalonia.Controls.StackPanel.VerticalSnapPointsChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1214,7 +1189,6 @@ public static partial class StackPanelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.StackPanel.HorizontalSnapPointsChanged
 
@@ -1249,7 +1223,6 @@ public static partial class StackPanelExtensions
                 h => obj.HorizontalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1271,7 +1244,6 @@ public static partial class StackPanelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.StackPanel.VerticalSnapPointsChanged
 
@@ -1306,7 +1278,6 @@ public static partial class StackPanelExtensions
                 h => obj.VerticalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1328,5 +1299,4 @@ public static partial class StackPanelExtensions
         }));
     }
 
-#endif
 }

@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Templates;
 
 using System;
@@ -41,4 +40,3 @@ internal static class TemplateManifestCollector
         return null;
     }
 }
-#endif

@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using System.Buffers;
@@ -50,4 +49,3 @@ internal static class ElementNodeSerializer
         writer.WriteEndObject();
     }
 }
-#endif

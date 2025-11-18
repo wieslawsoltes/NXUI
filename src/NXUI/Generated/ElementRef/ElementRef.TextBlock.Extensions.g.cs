@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TextBlock"/>.
 /// </summary>
 public static partial class TextBlockElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.BackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.PaddingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.FontFamilyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.FontSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.FontStyleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.FontWeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.FontStretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.ForegroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.BaselineOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.LineHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.LineSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.LetterSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.MaxLinesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.TextProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.TextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.TextAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.TextWrappingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.TextTrimmingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.TextDecorationsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.FontFeaturesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> value.
@@ -231,5 +190,4 @@ public static partial class TextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBlock.InlinesProperty);
     }
 
-#endif
 }

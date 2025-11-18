@@ -21,12 +21,6 @@
   <PropertyGroup Condition="'$(EnableNXUIHotReloadBoundaries)' == ''">
     <EnableNXUIHotReloadBoundaries>false</EnableNXUIHotReloadBoundaries>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == ''">
-    <EnableNXUIHotReload>true</EnableNXUIHotReload>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == 'true'">
-    <DefineConstants>$(DefineConstants);NXUI_HOTRELOAD</DefineConstants>
-  </PropertyGroup>
   <ItemGroup Condition="'$(EnableNXUIHotReloadBoundaries)' == 'true'">
     <PackageReference Include="NXUI.Fody" Version="$(VersionPrefix)" PrivateAssets="all" />
   </ItemGroup>

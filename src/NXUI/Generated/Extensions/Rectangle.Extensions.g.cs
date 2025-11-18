@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Rectangle"/> class property extension methods.
 /// </summary>
 public static partial class RectangleExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusXProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class RectangleExtensions
         return builder.WithBinding(PropertyMetadata.Rectangle_RadiusX, Avalonia.Controls.Shapes.Rectangle.RadiusXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusXProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RectangleExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Rectangle.RadiusXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Rectangle.RadiusXProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class RectangleExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusYProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class RectangleExtensions
         return builder.WithBinding(PropertyMetadata.Rectangle_RadiusY, Avalonia.Controls.Shapes.Rectangle.RadiusYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Rectangle.RadiusYProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class RectangleExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Rectangle.RadiusYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Rectangle.RadiusYProperty
 
     /// <summary>

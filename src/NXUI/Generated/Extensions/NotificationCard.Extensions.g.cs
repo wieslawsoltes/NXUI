@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Notifications.NotificationCard"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class NotificationCardExtensions
         return builder.WithBinding(PropertyMetadata.NotificationCard_IsClosed, Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class NotificationCardExtensions
         return elementRef.SetBinding(Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Notifications.NotificationCard.IsClosedProperty
 
     /// <summary>
@@ -344,7 +338,6 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> literal value for hot reload builds.
@@ -391,8 +384,6 @@ public static partial class NotificationCardExtensions
         return builder.WithBinding(PropertyMetadata.NotificationCard_NotificationType, Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> value on a referenced control.
@@ -439,7 +430,6 @@ public static partial class NotificationCardExtensions
         return elementRef.SetBinding(Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty
 
     /// <summary>
@@ -585,7 +575,6 @@ public static partial class NotificationCardExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
@@ -597,7 +586,6 @@ public static partial class NotificationCardExtensions
         return builder.WithValue(PropertyMetadata.NotificationCard_NotificationType, Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, Avalonia.Controls.Notifications.NotificationType.Information);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Information"/>.
@@ -610,7 +598,6 @@ public static partial class NotificationCardExtensions
         obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = Avalonia.Controls.Notifications.NotificationType.Information;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
@@ -622,7 +609,6 @@ public static partial class NotificationCardExtensions
         return builder.WithValue(PropertyMetadata.NotificationCard_NotificationType, Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, Avalonia.Controls.Notifications.NotificationType.Success);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Success"/>.
@@ -635,7 +621,6 @@ public static partial class NotificationCardExtensions
         obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = Avalonia.Controls.Notifications.NotificationType.Success;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
@@ -647,7 +632,6 @@ public static partial class NotificationCardExtensions
         return builder.WithValue(PropertyMetadata.NotificationCard_NotificationType, Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, Avalonia.Controls.Notifications.NotificationType.Warning);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Warning"/>.
@@ -660,7 +644,6 @@ public static partial class NotificationCardExtensions
         obj[Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty] = Avalonia.Controls.Notifications.NotificationType.Warning;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> enum value for hot reload builds.
@@ -672,7 +655,6 @@ public static partial class NotificationCardExtensions
         return builder.WithValue(PropertyMetadata.NotificationCard_NotificationType, Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty, Avalonia.Controls.Notifications.NotificationType.Error);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.NotificationTypeProperty"/> property value to <see cref="Avalonia.Controls.Notifications.NotificationType.Error"/>.
@@ -686,7 +668,6 @@ public static partial class NotificationCardExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/> literal value for hot reload builds.
@@ -733,8 +714,6 @@ public static partial class NotificationCardExtensions
         return builder.WithBinding(PropertyMetadata.NotificationCard_CloseOnClick, Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty"/> value on a referenced control.
@@ -781,7 +760,6 @@ public static partial class NotificationCardExtensions
         return elementRef.SetBinding(Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Notifications.NotificationCard.CloseOnClickProperty
 
     /// <summary>
@@ -976,7 +954,6 @@ public static partial class NotificationCardExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1019,7 +996,6 @@ public static partial class NotificationCardExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Notifications.NotificationCard.NotificationClosed
 
@@ -1054,7 +1030,6 @@ public static partial class NotificationCardExtensions
                 h => obj.NotificationClosed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1076,5 +1051,4 @@ public static partial class NotificationCardExtensions
         }));
     }
 
-#endif
 }

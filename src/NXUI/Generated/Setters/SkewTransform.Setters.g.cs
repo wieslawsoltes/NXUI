@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.SkewTransform"/> class style setters extension methods.
 /// </summary>
 public static partial class SkewTransformSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/>.
@@ -20,7 +17,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSkewTransformAngleX(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetSkewTransformAngleX(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSkewTransformAngleX(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetSkewTransformAngleX(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class SkewTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.SkewTransform.AngleXProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class SkewTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.SkewTransform.AngleXProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSkewTransformAngleX(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetSkewTransformAngleX(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSkewTransformAngleX(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetSkewTransformAngleX(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class SkewTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class SkewTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.SkewTransform.AngleXProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSkewTransformAngleX(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSkewTransformAngleX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSkewTransformAngleX(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSkewTransformAngleX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class SkewTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class SkewTransformSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/>.
@@ -185,7 +176,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSkewTransformAngleY(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetSkewTransformAngleY(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSkewTransformAngleY(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetSkewTransformAngleY(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class SkewTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.SkewTransform.AngleYProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class SkewTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.SkewTransform.AngleYProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSkewTransformAngleY(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetSkewTransformAngleY(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSkewTransformAngleY(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetSkewTransformAngleY(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class SkewTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class SkewTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.SkewTransform.AngleYProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSkewTransformAngleY(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSkewTransformAngleY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class SkewTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSkewTransformAngleY(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSkewTransformAngleY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class SkewTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/>.
     /// </summary>

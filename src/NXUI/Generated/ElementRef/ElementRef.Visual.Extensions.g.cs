@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Visual"/>.
 /// </summary>
 public static partial class VisualElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.BoundsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.BoundsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.ClipToBoundsProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.ClipToBoundsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.ClipProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.ClipProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.IsVisibleProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.IsVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.OpacityProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.OpacityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.OpacityMaskProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.OpacityMaskProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.EffectProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.EffectProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.HasMirrorTransformProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.HasMirrorTransformProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.RenderTransformProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.RenderTransformProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.RenderTransformOriginProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.FlowDirectionProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.FlowDirectionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.VisualParentProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.VisualParentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Visual.ZIndexProperty"/> value.
@@ -154,5 +127,4 @@ public static partial class VisualElementRefExtensions
         return elementRef.Observe(Avalonia.Visual.ZIndexProperty);
     }
 
-#endif
 }

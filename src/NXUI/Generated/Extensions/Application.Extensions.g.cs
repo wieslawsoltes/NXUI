@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Application"/> class property extension methods.
 /// </summary>
 public static partial class ApplicationExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Application.DataContextProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ApplicationExtensions
         return builder.WithBinding(PropertyMetadata.Application_DataContext, Avalonia.Application.DataContextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Application.DataContextProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ApplicationExtensions
         return elementRef.SetBinding(Avalonia.Application.DataContextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Application.DataContextProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ApplicationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Application.ActualThemeVariantProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ApplicationExtensions
         return builder.WithBinding(PropertyMetadata.Application_ActualThemeVariant, Avalonia.Application.ActualThemeVariantProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Application.ActualThemeVariantProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ApplicationExtensions
         return elementRef.SetBinding(Avalonia.Application.ActualThemeVariantProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Application.ActualThemeVariantProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ApplicationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ApplicationExtensions
         return builder.WithBinding(PropertyMetadata.Application_RequestedThemeVariant, Avalonia.Application.RequestedThemeVariantProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ApplicationExtensions
         return elementRef.SetBinding(Avalonia.Application.RequestedThemeVariantProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Application.RequestedThemeVariantProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class ApplicationExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Application.NameProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class ApplicationExtensions
         return builder.WithBinding(PropertyMetadata.Application_Name, Avalonia.Application.NameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Application.NameProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class ApplicationExtensions
         return elementRef.SetBinding(Avalonia.Application.NameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Application.NameProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TabControl"/> class style setters extension methods.
 /// </summary>
 public static partial class TabControlSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlTabStripPlacement(this ElementBuilder<Style> builder, Avalonia.Controls.Dock value)
+    public static StyleBuilder SetTabControlTabStripPlacement(this StyleBuilder builder, Avalonia.Controls.Dock value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlTabStripPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Dock value)
+    public static KeyFrameBuilder SetTabControlTabStripPlacement(this KeyFrameBuilder builder, Avalonia.Controls.Dock value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TabControl.TabStripPlacementProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlTabStripPlacement(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Dock> observable)
+    public static StyleBuilder SetTabControlTabStripPlacement(this StyleBuilder builder, IObservable<Avalonia.Controls.Dock> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlTabStripPlacement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Dock> observable)
+    public static KeyFrameBuilder SetTabControlTabStripPlacement(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Dock> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.TabStripPlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlTabStripPlacement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTabControlTabStripPlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlTabStripPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTabControlTabStripPlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TabControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlHorizontalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static StyleBuilder SetTabControlHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static KeyFrameBuilder SetTabControlHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlHorizontalContentAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static StyleBuilder SetTabControlHorizontalContentAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static KeyFrameBuilder SetTabControlHorizontalContentAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlHorizontalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTabControlHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTabControlHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TabControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlVerticalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.VerticalAlignment value)
+    public static StyleBuilder SetTabControlVerticalContentAlignment(this StyleBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.VerticalAlignment value)
+    public static KeyFrameBuilder SetTabControlVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TabControl.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlVerticalContentAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static StyleBuilder SetTabControlVerticalContentAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static KeyFrameBuilder SetTabControlVerticalContentAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlVerticalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTabControlVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTabControlVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TabControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlContentTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetTabControlContentTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetTabControlContentTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TabControl.ContentTemplateProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlContentTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetTabControlContentTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlContentTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetTabControlContentTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TabControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabControl.ContentTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTabControlContentTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTabControlContentTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TabControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTabControlContentTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTabControlContentTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TabControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/>.
     /// </summary>

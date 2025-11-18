@@ -7,9 +7,6 @@
     <IsPackable>false</IsPackable>
     <RootNamespace>Counter</RootNamespace>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <EnableNXUIHotReload>true</EnableNXUIHotReload>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>

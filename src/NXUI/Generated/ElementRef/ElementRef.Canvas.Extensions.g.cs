@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Canvas"/>.
 /// </summary>
 public static partial class CanvasElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Canvas.LeftProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class CanvasElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Canvas.LeftProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Canvas.TopProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class CanvasElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Canvas.TopProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Canvas.RightProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class CanvasElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Canvas.RightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Canvas.BottomProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class CanvasElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Canvas.BottomProperty);
     }
 
-#endif
 }

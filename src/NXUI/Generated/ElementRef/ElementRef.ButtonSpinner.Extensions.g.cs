@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ButtonSpinner"/>.
 /// </summary>
 public static partial class ButtonSpinnerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ButtonSpinnerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ButtonSpinner.AllowSpinProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ButtonSpinnerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class ButtonSpinnerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty);
     }
 
-#endif
 }

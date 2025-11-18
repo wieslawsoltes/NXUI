@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.ScaleTransform"/>.
 /// </summary>
 public static partial class ScaleTransformElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ScaleTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ScaleTransform.ScaleXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class ScaleTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ScaleTransform.ScaleYProperty);
     }
 
-#endif
 }

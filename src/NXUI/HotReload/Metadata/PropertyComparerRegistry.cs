@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Metadata;
 
 using System;
@@ -128,4 +127,3 @@ internal static class PropertyComparerRegistry
     private static bool NearlyEquals(double left, double right)
         => Math.Abs(left - right) <= 0.0000001;
 }
-#endif

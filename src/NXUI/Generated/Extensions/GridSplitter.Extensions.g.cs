@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.GridSplitter"/> class property extension methods.
 /// </summary>
 public static partial class GridSplitterExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class GridSplitterExtensions
         return builder.WithBinding(PropertyMetadata.GridSplitter_ResizeDirection, Avalonia.Controls.GridSplitter.ResizeDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GridSplitterExtensions
         return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ResizeDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.ResizeDirectionProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class GridSplitterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class GridSplitterExtensions
         return builder.WithValue(PropertyMetadata.GridSplitter_ResizeDirection, Avalonia.Controls.GridSplitter.ResizeDirectionProperty, Avalonia.Controls.GridResizeDirection.Auto);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Auto"/>.
@@ -278,7 +270,6 @@ public static partial class GridSplitterExtensions
         obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Auto;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class GridSplitterExtensions
         return builder.WithValue(PropertyMetadata.GridSplitter_ResizeDirection, Avalonia.Controls.GridSplitter.ResizeDirectionProperty, Avalonia.Controls.GridResizeDirection.Columns);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Columns"/>.
@@ -303,7 +293,6 @@ public static partial class GridSplitterExtensions
         obj[Avalonia.Controls.GridSplitter.ResizeDirectionProperty] = Avalonia.Controls.GridResizeDirection.Columns;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class GridSplitterExtensions
         return builder.WithValue(PropertyMetadata.GridSplitter_ResizeDirection, Avalonia.Controls.GridSplitter.ResizeDirectionProperty, Avalonia.Controls.GridResizeDirection.Rows);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> property value to <see cref="Avalonia.Controls.GridResizeDirection.Rows"/>.
@@ -329,7 +317,6 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> literal value for hot reload builds.
@@ -376,8 +363,6 @@ public static partial class GridSplitterExtensions
         return builder.WithBinding(PropertyMetadata.GridSplitter_ResizeBehavior, Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> value on a referenced control.
@@ -424,7 +409,6 @@ public static partial class GridSplitterExtensions
         return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.ResizeBehaviorProperty
 
     /// <summary>
@@ -570,7 +554,6 @@ public static partial class GridSplitterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class GridSplitterExtensions
         return builder.WithValue(PropertyMetadata.GridSplitter_ResizeBehavior, Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, Avalonia.Controls.GridResizeBehavior.BasedOnAlignment);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.BasedOnAlignment"/>.
@@ -595,7 +577,6 @@ public static partial class GridSplitterExtensions
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.BasedOnAlignment;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class GridSplitterExtensions
         return builder.WithValue(PropertyMetadata.GridSplitter_ResizeBehavior, Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, Avalonia.Controls.GridResizeBehavior.CurrentAndNext);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.CurrentAndNext"/>.
@@ -620,7 +600,6 @@ public static partial class GridSplitterExtensions
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.CurrentAndNext;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class GridSplitterExtensions
         return builder.WithValue(PropertyMetadata.GridSplitter_ResizeBehavior, Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent"/>.
@@ -645,7 +623,6 @@ public static partial class GridSplitterExtensions
         obj[Avalonia.Controls.GridSplitter.ResizeBehaviorProperty] = Avalonia.Controls.GridResizeBehavior.PreviousAndCurrent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> enum value for hot reload builds.
@@ -657,7 +634,6 @@ public static partial class GridSplitterExtensions
         return builder.WithValue(PropertyMetadata.GridSplitter_ResizeBehavior, Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, Avalonia.Controls.GridResizeBehavior.PreviousAndNext);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> property value to <see cref="Avalonia.Controls.GridResizeBehavior.PreviousAndNext"/>.
@@ -671,7 +647,6 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> literal value for hot reload builds.
@@ -718,8 +693,6 @@ public static partial class GridSplitterExtensions
         return builder.WithBinding(PropertyMetadata.GridSplitter_ShowsPreview, Avalonia.Controls.GridSplitter.ShowsPreviewProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> value on a referenced control.
@@ -766,7 +739,6 @@ public static partial class GridSplitterExtensions
         return elementRef.SetBinding(Avalonia.Controls.GridSplitter.ShowsPreviewProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.ShowsPreviewProperty
 
     /// <summary>
@@ -913,7 +885,6 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> literal value for hot reload builds.
@@ -960,8 +931,6 @@ public static partial class GridSplitterExtensions
         return builder.WithBinding(PropertyMetadata.GridSplitter_KeyboardIncrement, Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> value on a referenced control.
@@ -1008,7 +977,6 @@ public static partial class GridSplitterExtensions
         return elementRef.SetBinding(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.KeyboardIncrementProperty
 
     /// <summary>
@@ -1155,7 +1123,6 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> literal value for hot reload builds.
@@ -1202,8 +1169,6 @@ public static partial class GridSplitterExtensions
         return builder.WithBinding(PropertyMetadata.GridSplitter_DragIncrement, Avalonia.Controls.GridSplitter.DragIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> value on a referenced control.
@@ -1250,7 +1215,6 @@ public static partial class GridSplitterExtensions
         return elementRef.SetBinding(Avalonia.Controls.GridSplitter.DragIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.DragIncrementProperty
 
     /// <summary>
@@ -1397,7 +1361,6 @@ public static partial class GridSplitterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> literal value for hot reload builds.
@@ -1444,8 +1407,6 @@ public static partial class GridSplitterExtensions
         return builder.WithBinding(PropertyMetadata.GridSplitter_PreviewContent, Avalonia.Controls.GridSplitter.PreviewContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> value on a referenced control.
@@ -1492,7 +1453,6 @@ public static partial class GridSplitterExtensions
         return elementRef.SetBinding(Avalonia.Controls.GridSplitter.PreviewContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.PreviewContentProperty
 
     /// <summary>

@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.FlyoutBase"/> class property extension methods.
@@ -192,7 +190,6 @@ public static partial class FlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/> literal value for hot reload builds.
@@ -239,8 +236,6 @@ public static partial class FlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.FlyoutBase_AttachedFlyout, Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty"/> value on a referenced control.
@@ -287,7 +282,6 @@ public static partial class FlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DropShadowEffectBase"/> class style setters extension methods.
 /// </summary>
 public static partial class DropShadowEffectBaseSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseBlurRadius(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetDropShadowEffectBaseBlurRadius(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseBlurRadius(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetDropShadowEffectBaseBlurRadius(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     // Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DropShadowEffectBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseBlurRadius(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetDropShadowEffectBaseBlurRadius(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseBlurRadius(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetDropShadowEffectBaseBlurRadius(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DropShadowEffectBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseBlurRadius(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDropShadowEffectBaseBlurRadius(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseBlurRadius(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDropShadowEffectBaseBlurRadius(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DropShadowEffectBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseColor(this ElementBuilder<Style> builder, Avalonia.Media.Color value)
+    public static StyleBuilder SetDropShadowEffectBaseColor(this StyleBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Color value)
+    public static KeyFrameBuilder SetDropShadowEffectBaseColor(this KeyFrameBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     // Avalonia.Media.DropShadowEffectBase.ColorProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DropShadowEffectBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DropShadowEffectBase.ColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Color> observable)
+    public static StyleBuilder SetDropShadowEffectBaseColor(this StyleBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Color> observable)
+    public static KeyFrameBuilder SetDropShadowEffectBaseColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DropShadowEffectBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DropShadowEffectBase.ColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDropShadowEffectBaseColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDropShadowEffectBaseColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DropShadowEffectBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseOpacity(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetDropShadowEffectBaseOpacity(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseOpacity(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetDropShadowEffectBaseOpacity(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     // Avalonia.Media.DropShadowEffectBase.OpacityProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DropShadowEffectBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DropShadowEffectBase.OpacityProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseOpacity(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetDropShadowEffectBaseOpacity(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseOpacity(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetDropShadowEffectBaseOpacity(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DropShadowEffectBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.DropShadowEffectBase.OpacityProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDropShadowEffectBaseOpacity(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDropShadowEffectBaseOpacity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DropShadowEffectBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDropShadowEffectBaseOpacity(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDropShadowEffectBaseOpacity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DropShadowEffectBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/>.
     /// </summary>

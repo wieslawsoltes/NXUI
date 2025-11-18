@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Presenters.ContentPresenter"/>.
 /// </summary>
 public static partial class ContentPresenterElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.ChildProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> value.
@@ -231,8 +190,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> value.
@@ -242,8 +199,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> value.
@@ -253,8 +208,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> value.
@@ -264,8 +217,6 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> value.
@@ -275,5 +226,4 @@ public static partial class ContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty);
     }
 
-#endif
 }

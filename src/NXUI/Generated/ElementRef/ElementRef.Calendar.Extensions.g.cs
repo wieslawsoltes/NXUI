@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Calendar"/>.
 /// </summary>
 public static partial class CalendarElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.FirstDayOfWeekProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.FirstDayOfWeekProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.IsTodayHighlightedProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.IsTodayHighlightedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.HeaderBackgroundProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.HeaderBackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.DisplayModeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.DisplayModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.SelectionModeProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.SelectionModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.SelectedDateProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.SelectedDateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.DisplayDateProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.DisplayDateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.DisplayDateStartProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.DisplayDateStartProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Calendar.DisplayDateEndProperty"/> value.
@@ -110,5 +91,4 @@ public static partial class CalendarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Calendar.DisplayDateEndProperty);
     }
 
-#endif
 }

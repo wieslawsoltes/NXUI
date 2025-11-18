@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Window"/>.
 /// </summary>
 public static partial class WindowElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.SizeToContentProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.SizeToContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.ExtendClientAreaToDecorationsHintProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.ExtendClientAreaChromeHintsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.ExtendClientAreaTitleBarHeightHintProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.IsExtendedIntoWindowDecorationsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.WindowDecorationMarginProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.WindowDecorationMarginProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.OffScreenMarginProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.OffScreenMarginProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.SystemDecorationsProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.SystemDecorationsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.ShowActivatedProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.ShowActivatedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.ShowInTaskbarProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.ShowInTaskbarProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.ClosingBehaviorProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.ClosingBehaviorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.WindowStateProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.WindowStateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.TitleProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.TitleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.IconProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.IconProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.WindowStartupLocationProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.WindowStartupLocationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Window.CanResizeProperty"/> value.
@@ -187,5 +154,4 @@ public static partial class WindowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Window.CanResizeProperty);
     }
 
-#endif
 }

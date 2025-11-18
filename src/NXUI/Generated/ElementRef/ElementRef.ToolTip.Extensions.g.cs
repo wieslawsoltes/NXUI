@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ToolTip"/>.
 /// </summary>
 public static partial class ToolTipElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.TipProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.TipProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.IsOpenProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.IsOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.PlacementProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.PlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.HorizontalOffsetProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.HorizontalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.VerticalOffsetProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.VerticalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.CustomPopupPlacementCallbackProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.ShowDelayProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.ShowDelayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.BetweenShowDelayProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.BetweenShowDelayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.ShowOnDisabledProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.ShowOnDisabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToolTip.ServiceEnabledProperty"/> value.
@@ -121,5 +100,4 @@ public static partial class ToolTipElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToolTip.ServiceEnabledProperty);
     }
 
-#endif
 }

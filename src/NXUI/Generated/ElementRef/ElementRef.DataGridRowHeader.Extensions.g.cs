@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.DataGridRowHeader"/>.
 /// </summary>
 public static partial class DataGridRowHeaderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataGridRowHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class DataGridRowHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.DataGridRowHeader.AreSeparatorsVisibleProperty);
     }
 
-#endif
 }

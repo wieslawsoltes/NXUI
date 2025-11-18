@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Layout.UniformGridLayout"/>.
 /// </summary>
 public static partial class UniformGridLayoutElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.ItemsJustificationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.ItemsStretchProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.ItemsStretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.MinColumnSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.MinItemHeightProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.MinItemHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.MinItemWidthProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.MinItemWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.MinRowSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.MaximumRowsOrColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.UniformGridLayout.OrientationProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class UniformGridLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.UniformGridLayout.OrientationProperty);
     }
 
-#endif
 }

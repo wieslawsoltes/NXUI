@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.LayoutTransformControl"/> class property extension methods.
 /// </summary>
 public static partial class LayoutTransformControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class LayoutTransformControlExtensions
         return builder.WithBinding(PropertyMetadata.LayoutTransformControl_LayoutTransform, Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class LayoutTransformControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class LayoutTransformControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class LayoutTransformControlExtensions
         return builder.WithBinding(PropertyMetadata.LayoutTransformControl_UseRenderTransform, Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class LayoutTransformControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty
 
     /// <summary>

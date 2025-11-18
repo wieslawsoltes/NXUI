@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Nodes;
 
 using System;
@@ -237,4 +236,3 @@ internal enum PropertyMutationKind
     AttachChildren,
     InvokeAction,
 }
-#endif

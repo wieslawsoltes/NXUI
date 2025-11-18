@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ConicGradientBrush"/> class style setters extension methods.
 /// </summary>
 public static partial class ConicGradientBrushSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetConicGradientBrushCenter(this ElementBuilder<Style> builder, Avalonia.RelativePoint value)
+    public static StyleBuilder SetConicGradientBrushCenter(this StyleBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetConicGradientBrushCenter(this ElementBuilder<KeyFrame> builder, Avalonia.RelativePoint value)
+    public static KeyFrameBuilder SetConicGradientBrushCenter(this KeyFrameBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ConicGradientBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.ConicGradientBrush.CenterProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ConicGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetConicGradientBrushCenter(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static StyleBuilder SetConicGradientBrushCenter(this StyleBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetConicGradientBrushCenter(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static KeyFrameBuilder SetConicGradientBrushCenter(this KeyFrameBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ConicGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ConicGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.CenterProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetConicGradientBrushCenter(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetConicGradientBrushCenter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetConicGradientBrushCenter(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetConicGradientBrushCenter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ConicGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ConicGradientBrushSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetConicGradientBrushAngle(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetConicGradientBrushAngle(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetConicGradientBrushAngle(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetConicGradientBrushAngle(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ConicGradientBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.ConicGradientBrush.AngleProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ConicGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetConicGradientBrushAngle(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetConicGradientBrushAngle(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetConicGradientBrushAngle(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetConicGradientBrushAngle(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ConicGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ConicGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.ConicGradientBrush.AngleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetConicGradientBrushAngle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetConicGradientBrushAngle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ConicGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetConicGradientBrushAngle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetConicGradientBrushAngle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ConicGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/>.
     /// </summary>

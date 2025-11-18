@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.Popup"/>.
 /// </summary>
 public static partial class PopupElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.ChildProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.IsOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.PlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.PlacementRectProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.TopmostProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.Popup.IsUsingOverlayLayerProperty"/> value.
@@ -231,5 +190,4 @@ public static partial class PopupElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.Popup.IsUsingOverlayLayerProperty);
     }
 
-#endif
 }

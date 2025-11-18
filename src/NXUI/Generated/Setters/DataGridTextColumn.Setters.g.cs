@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridTextColumn"/> class style setters extension methods.
 /// </summary>
 public static partial class DataGridTextColumnSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontFamily(this ElementBuilder<Style> builder, Avalonia.Media.FontFamily value)
+    public static StyleBuilder SetDataGridTextColumnFontFamily(this StyleBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontFamily value)
+    public static KeyFrameBuilder SetDataGridTextColumnFontFamily(this KeyFrameBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontFamilyProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontFamily(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static StyleBuilder SetDataGridTextColumnFontFamily(this StyleBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontFamily(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static KeyFrameBuilder SetDataGridTextColumnFontFamily(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontFamily(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridTextColumnFontFamily(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridTextColumnFontFamily(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DataGridTextColumnSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontSize(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetDataGridTextColumnFontSize(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontSize(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetDataGridTextColumnFontSize(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontSizeProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontSizeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontSize(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetDataGridTextColumnFontSize(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontSize(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetDataGridTextColumnFontSize(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontSize(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridTextColumnFontSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontSize(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridTextColumnFontSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DataGridTextColumnSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontStyle(this ElementBuilder<Style> builder, Avalonia.Media.FontStyle value)
+    public static StyleBuilder SetDataGridTextColumnFontStyle(this StyleBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStyle value)
+    public static KeyFrameBuilder SetDataGridTextColumnFontStyle(this KeyFrameBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontStyleProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontStyleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontStyle(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static StyleBuilder SetDataGridTextColumnFontStyle(this StyleBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontStyle(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static KeyFrameBuilder SetDataGridTextColumnFontStyle(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontStyle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridTextColumnFontStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridTextColumnFontStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class DataGridTextColumnSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/>.
@@ -515,7 +494,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontWeight(this ElementBuilder<Style> builder, Avalonia.Media.FontWeight value)
+    public static StyleBuilder SetDataGridTextColumnFontWeight(this StyleBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontWeight value)
+    public static KeyFrameBuilder SetDataGridTextColumnFontWeight(this KeyFrameBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontWeightProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontWeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontWeight(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static StyleBuilder SetDataGridTextColumnFontWeight(this StyleBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontWeight(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static KeyFrameBuilder SetDataGridTextColumnFontWeight(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontWeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridTextColumnFontWeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridTextColumnFontWeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class DataGridTextColumnSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/>.
@@ -680,7 +653,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontStretch(this ElementBuilder<Style> builder, Avalonia.Media.FontStretch value)
+    public static StyleBuilder SetDataGridTextColumnFontStretch(this StyleBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStretch value)
+    public static KeyFrameBuilder SetDataGridTextColumnFontStretch(this KeyFrameBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontStretchProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontStretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static StyleBuilder SetDataGridTextColumnFontStretch(this StyleBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static KeyFrameBuilder SetDataGridTextColumnFontStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnFontStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridTextColumnFontStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridTextColumnFontStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class DataGridTextColumnSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/>.
@@ -845,7 +812,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnForeground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetDataGridTextColumnForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetDataGridTextColumnForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.ForegroundProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.ForegroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnForeground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetDataGridTextColumnForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnForeground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetDataGridTextColumnForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class DataGridTextColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridTextColumn.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridTextColumnForeground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridTextColumnForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class DataGridTextColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridTextColumnForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridTextColumnForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class DataGridTextColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Label"/> class property extension methods.
 /// </summary>
 public static partial class LabelExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Label.TargetProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class LabelExtensions
         return builder.WithBinding(PropertyMetadata.Label_Target, Avalonia.Controls.Label.TargetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Label.TargetProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class LabelExtensions
         return elementRef.SetBinding(Avalonia.Controls.Label.TargetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Label.TargetProperty
 
     /// <summary>

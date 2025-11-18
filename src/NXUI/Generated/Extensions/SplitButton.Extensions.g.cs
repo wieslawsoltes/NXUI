@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.SplitButton"/> class property extension methods.
 /// </summary>
 public static partial class SplitButtonExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitButton.CommandProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class SplitButtonExtensions
         return builder.WithBinding(PropertyMetadata.SplitButton_Command, Avalonia.Controls.SplitButton.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitButton.CommandProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SplitButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitButton.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitButton.CommandProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class SplitButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class SplitButtonExtensions
         return builder.WithBinding(PropertyMetadata.SplitButton_CommandParameter, Avalonia.Controls.SplitButton.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitButton.CommandParameterProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class SplitButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitButton.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitButton.CommandParameterProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class SplitButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class SplitButtonExtensions
         return builder.WithBinding(PropertyMetadata.SplitButton_Flyout, Avalonia.Controls.SplitButton.FlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitButton.FlyoutProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class SplitButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitButton.FlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitButton.FlyoutProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class SplitButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class SplitButtonExtensions
         return builder.WithBinding(PropertyMetadata.SplitButton_HotKey, Avalonia.Controls.SplitButton.HotKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class SplitButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitButton.HotKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitButton.HotKeyProperty
 
     /// <summary>
@@ -1028,7 +1010,6 @@ public static partial class SplitButtonExtensions
     {
         return obj.GetObservable(Avalonia.Controls.SplitButton.ClickEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1071,7 +1052,6 @@ public static partial class SplitButtonExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitButton.Click
 
@@ -1106,7 +1086,6 @@ public static partial class SplitButtonExtensions
                 h => obj.Click -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1128,5 +1107,4 @@ public static partial class SplitButtonExtensions
         }));
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.Rotate3DTransform"/> class style setters extension methods.
 /// </summary>
 public static partial class Rotate3DTransformSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
@@ -20,7 +17,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleX(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRotate3DTransformAngleX(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleX(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRotate3DTransformAngleX(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.Rotate3DTransform.AngleXProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleX(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRotate3DTransformAngleX(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleX(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRotate3DTransformAngleX(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleXProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleX(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformAngleX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleX(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformAngleX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class Rotate3DTransformSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
@@ -185,7 +176,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleY(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRotate3DTransformAngleY(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleY(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRotate3DTransformAngleY(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.Rotate3DTransform.AngleYProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleY(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRotate3DTransformAngleY(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleY(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRotate3DTransformAngleY(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleYProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleY(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformAngleY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleY(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformAngleY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class Rotate3DTransformSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
@@ -350,7 +335,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleZ(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRotate3DTransformAngleZ(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleZ(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRotate3DTransformAngleZ(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.Rotate3DTransform.AngleZProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleZ(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRotate3DTransformAngleZ(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleZ(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRotate3DTransformAngleZ(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.AngleZProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformAngleZ(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformAngleZ(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformAngleZ(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformAngleZ(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class Rotate3DTransformSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
@@ -515,7 +494,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterX(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRotate3DTransformCenterX(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterX(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRotate3DTransformCenterX(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.Rotate3DTransform.CenterXProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterX(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRotate3DTransformCenterX(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterX(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRotate3DTransformCenterX(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterXProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterX(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformCenterX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterX(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformCenterX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class Rotate3DTransformSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
@@ -680,7 +653,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterY(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRotate3DTransformCenterY(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterY(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRotate3DTransformCenterY(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.Rotate3DTransform.CenterYProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterY(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRotate3DTransformCenterY(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterY(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRotate3DTransformCenterY(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterYProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterY(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformCenterY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterY(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformCenterY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class Rotate3DTransformSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
@@ -845,7 +812,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterZ(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRotate3DTransformCenterZ(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterZ(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRotate3DTransformCenterZ(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.Rotate3DTransform.CenterZProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterZ(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRotate3DTransformCenterZ(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterZ(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRotate3DTransformCenterZ(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.CenterZProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformCenterZ(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformCenterZ(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformCenterZ(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformCenterZ(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class Rotate3DTransformSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformDepth(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRotate3DTransformDepth(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformDepth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRotate3DTransformDepth(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     // Avalonia.Media.Rotate3DTransform.DepthProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformDepth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRotate3DTransformDepth(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformDepth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRotate3DTransformDepth(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class Rotate3DTransformSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Rotate3DTransform.DepthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRotate3DTransformDepth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRotate3DTransformDepth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class Rotate3DTransformSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRotate3DTransformDepth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRotate3DTransformDepth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class Rotate3DTransformSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/>.
     /// </summary>

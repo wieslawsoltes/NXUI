@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Button"/> class style setters extension methods.
 /// </summary>
 public static partial class ButtonSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonClickMode(this ElementBuilder<Style> builder, Avalonia.Controls.ClickMode value)
+    public static StyleBuilder SetButtonClickMode(this StyleBuilder builder, Avalonia.Controls.ClickMode value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonClickMode(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ClickMode value)
+    public static KeyFrameBuilder SetButtonClickMode(this KeyFrameBuilder builder, Avalonia.Controls.ClickMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Button.ClickModeProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonClickMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ClickMode> observable)
+    public static StyleBuilder SetButtonClickMode(this StyleBuilder builder, IObservable<Avalonia.Controls.ClickMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonClickMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ClickMode> observable)
+    public static KeyFrameBuilder SetButtonClickMode(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ClickMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.ClickModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonClickMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonClickMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonClickMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonClickMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.ClickModeProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonCommand(this ElementBuilder<Style> builder, System.Windows.Input.ICommand value)
+    public static StyleBuilder SetButtonCommand(this StyleBuilder builder, System.Windows.Input.ICommand value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonCommand(this ElementBuilder<KeyFrame> builder, System.Windows.Input.ICommand value)
+    public static KeyFrameBuilder SetButtonCommand(this KeyFrameBuilder builder, System.Windows.Input.ICommand value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Button.CommandProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonCommand(this ElementBuilder<Style> builder, IObservable<System.Windows.Input.ICommand> observable)
+    public static StyleBuilder SetButtonCommand(this StyleBuilder builder, IObservable<System.Windows.Input.ICommand> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonCommand(this ElementBuilder<KeyFrame> builder, IObservable<System.Windows.Input.ICommand> observable)
+    public static KeyFrameBuilder SetButtonCommand(this KeyFrameBuilder builder, IObservable<System.Windows.Input.ICommand> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonCommand(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonCommand(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonCommand(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonCommand(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.HotKeyProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonHotKey(this ElementBuilder<Style> builder, Avalonia.Input.KeyGesture value)
+    public static StyleBuilder SetButtonHotKey(this StyleBuilder builder, Avalonia.Input.KeyGesture value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonHotKey(this ElementBuilder<KeyFrame> builder, Avalonia.Input.KeyGesture value)
+    public static KeyFrameBuilder SetButtonHotKey(this KeyFrameBuilder builder, Avalonia.Input.KeyGesture value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Button.HotKeyProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.HotKeyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.HotKeyProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonHotKey(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.KeyGesture> observable)
+    public static StyleBuilder SetButtonHotKey(this StyleBuilder builder, IObservable<Avalonia.Input.KeyGesture> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonHotKey(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.KeyGesture> observable)
+    public static KeyFrameBuilder SetButtonHotKey(this KeyFrameBuilder builder, IObservable<Avalonia.Input.KeyGesture> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.HotKeyProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.HotKeyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.HotKeyProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonHotKey(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonHotKey(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonHotKey(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonHotKey(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.HotKeyProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonCommandParameter(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetButtonCommandParameter(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonCommandParameter(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetButtonCommandParameter(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Button.CommandParameterProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonCommandParameter(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetButtonCommandParameter(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonCommandParameter(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetButtonCommandParameter(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.CommandParameterProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonCommandParameter(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonCommandParameter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonCommandParameter(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.CommandParameterProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonIsDefault(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetButtonIsDefault(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonIsDefault(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetButtonIsDefault(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Button.IsDefaultProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonIsDefault(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetButtonIsDefault(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonIsDefault(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetButtonIsDefault(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsDefaultProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonIsDefault(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonIsDefault(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonIsDefault(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonIsDefault(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsDefaultProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonIsCancel(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetButtonIsCancel(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonIsCancel(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetButtonIsCancel(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Button.IsCancelProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonIsCancel(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetButtonIsCancel(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonIsCancel(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetButtonIsCancel(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.IsCancelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonIsCancel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonIsCancel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonIsCancel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonIsCancel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.IsCancelProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ButtonSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonFlyout(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static StyleBuilder SetButtonFlyout(this StyleBuilder builder, Avalonia.Controls.Primitives.FlyoutBase value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonFlyout(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static KeyFrameBuilder SetButtonFlyout(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.FlyoutBase value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Button.FlyoutProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonFlyout(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
+    public static StyleBuilder SetButtonFlyout(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonFlyout(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
+    public static KeyFrameBuilder SetButtonFlyout(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ButtonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Button.FlyoutProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetButtonFlyout(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetButtonFlyout(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ButtonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetButtonFlyout(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetButtonFlyout(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ButtonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Button.FlyoutProperty"/>.
     /// </summary>

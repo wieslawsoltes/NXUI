@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.NativeMenu"/> class style setters extension methods.
 /// </summary>
 public static partial class NativeMenuSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/>.
@@ -20,7 +17,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNativeMenuIsNativeMenuExported(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetNativeMenuIsNativeMenuExported(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNativeMenuIsNativeMenuExported(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetNativeMenuIsNativeMenuExported(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class NativeMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class NativeMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNativeMenuIsNativeMenuExported(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetNativeMenuIsNativeMenuExported(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNativeMenuIsNativeMenuExported(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetNativeMenuIsNativeMenuExported(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class NativeMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class NativeMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNativeMenuIsNativeMenuExported(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNativeMenuIsNativeMenuExported(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNativeMenuIsNativeMenuExported(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNativeMenuIsNativeMenuExported(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class NativeMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class NativeMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/>.
@@ -185,7 +176,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNativeMenuMenu(this ElementBuilder<Style> builder, Avalonia.Controls.NativeMenu value)
+    public static StyleBuilder SetNativeMenuMenu(this StyleBuilder builder, Avalonia.Controls.NativeMenu value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNativeMenuMenu(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.NativeMenu value)
+    public static KeyFrameBuilder SetNativeMenuMenu(this KeyFrameBuilder builder, Avalonia.Controls.NativeMenu value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class NativeMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.NativeMenu.MenuProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class NativeMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenu.MenuProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNativeMenuMenu(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.NativeMenu> observable)
+    public static StyleBuilder SetNativeMenuMenu(this StyleBuilder builder, IObservable<Avalonia.Controls.NativeMenu> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNativeMenuMenu(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.NativeMenu> observable)
+    public static KeyFrameBuilder SetNativeMenuMenu(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.NativeMenu> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class NativeMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class NativeMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.NativeMenu.MenuProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNativeMenuMenu(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNativeMenuMenu(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class NativeMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNativeMenuMenu(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNativeMenuMenu(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class NativeMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/>.
     /// </summary>

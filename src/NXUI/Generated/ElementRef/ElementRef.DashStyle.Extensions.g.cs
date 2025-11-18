@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.DashStyle"/>.
 /// </summary>
 public static partial class DashStyleElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DashStyle.DashesProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DashStyleElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DashStyle.DashesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class DashStyleElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DashStyle.OffsetProperty);
     }
 
-#endif
 }

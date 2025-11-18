@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ContextMenu"/> class style setters extension methods.
 /// </summary>
 public static partial class ContextMenuSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuHorizontalOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetContextMenuHorizontalOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuHorizontalOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetContextMenuHorizontalOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.HorizontalOffsetProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuHorizontalOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetContextMenuHorizontalOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuHorizontalOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetContextMenuHorizontalOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuHorizontalOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuHorizontalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuHorizontalOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuHorizontalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuVerticalOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetContextMenuVerticalOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuVerticalOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetContextMenuVerticalOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.VerticalOffsetProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.VerticalOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuVerticalOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetContextMenuVerticalOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuVerticalOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetContextMenuVerticalOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.VerticalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuVerticalOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuVerticalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuVerticalOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuVerticalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementAnchor(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
+    public static StyleBuilder SetContextMenuPlacementAnchor(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementAnchor(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
+    public static KeyFrameBuilder SetContextMenuPlacementAnchor(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.PlacementAnchorProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementAnchorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementAnchor(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
+    public static StyleBuilder SetContextMenuPlacementAnchor(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementAnchor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
+    public static KeyFrameBuilder SetContextMenuPlacementAnchor(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementAnchorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementAnchor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementAnchor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementAnchor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementAnchor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementConstraintAdjustment(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
+    public static StyleBuilder SetContextMenuPlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementConstraintAdjustment(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
+    public static KeyFrameBuilder SetContextMenuPlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementConstraintAdjustment(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
+    public static StyleBuilder SetContextMenuPlacementConstraintAdjustment(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementConstraintAdjustment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
+    public static KeyFrameBuilder SetContextMenuPlacementConstraintAdjustment(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementConstraintAdjustment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementConstraintAdjustment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementGravity(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
+    public static StyleBuilder SetContextMenuPlacementGravity(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementGravity(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
+    public static KeyFrameBuilder SetContextMenuPlacementGravity(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.PlacementGravityProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementGravityProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementGravity(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
+    public static StyleBuilder SetContextMenuPlacementGravity(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementGravity(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
+    public static KeyFrameBuilder SetContextMenuPlacementGravity(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementGravityProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementGravity(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementGravity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementGravity(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementGravity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacement(this ElementBuilder<Style> builder, Avalonia.Controls.PlacementMode value)
+    public static StyleBuilder SetContextMenuPlacement(this StyleBuilder builder, Avalonia.Controls.PlacementMode value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.PlacementMode value)
+    public static KeyFrameBuilder SetContextMenuPlacement(this KeyFrameBuilder builder, Avalonia.Controls.PlacementMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.PlacementProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacement(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static StyleBuilder SetContextMenuPlacement(this StyleBuilder builder, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static KeyFrameBuilder SetContextMenuPlacement(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementRect(this ElementBuilder<Style> builder, System.Nullable<Avalonia.Rect> value)
+    public static StyleBuilder SetContextMenuPlacementRect(this StyleBuilder builder, System.Nullable<Avalonia.Rect> value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementRect(this ElementBuilder<KeyFrame> builder, System.Nullable<Avalonia.Rect> value)
+    public static KeyFrameBuilder SetContextMenuPlacementRect(this KeyFrameBuilder builder, System.Nullable<Avalonia.Rect> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.PlacementRectProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementRectProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementRect(this ElementBuilder<Style> builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
+    public static StyleBuilder SetContextMenuPlacementRect(this StyleBuilder builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementRect(this ElementBuilder<KeyFrame> builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
+    public static KeyFrameBuilder SetContextMenuPlacementRect(this KeyFrameBuilder builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementRectProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementRect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementRect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuWindowManagerAddShadowHint(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetContextMenuWindowManagerAddShadowHint(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuWindowManagerAddShadowHint(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetContextMenuWindowManagerAddShadowHint(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuWindowManagerAddShadowHint(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetContextMenuWindowManagerAddShadowHint(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuWindowManagerAddShadowHint(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetContextMenuWindowManagerAddShadowHint(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuWindowManagerAddShadowHint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuWindowManagerAddShadowHint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuWindowManagerAddShadowHint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuWindowManagerAddShadowHint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementTarget(this ElementBuilder<Style> builder, Avalonia.Controls.Control value)
+    public static StyleBuilder SetContextMenuPlacementTarget(this StyleBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementTarget(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Control value)
+    public static KeyFrameBuilder SetContextMenuPlacementTarget(this KeyFrameBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.PlacementTargetProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementTargetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementTarget(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static StyleBuilder SetContextMenuPlacementTarget(this StyleBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementTarget(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static KeyFrameBuilder SetContextMenuPlacementTarget(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.PlacementTargetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuPlacementTarget(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuPlacementTarget(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuPlacementTarget(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuPlacementTarget(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class ContextMenuSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuCustomPopupPlacementCallback(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    public static StyleBuilder SetContextMenuCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuCustomPopupPlacementCallback(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    public static KeyFrameBuilder SetContextMenuCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuCustomPopupPlacementCallback(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    public static StyleBuilder SetContextMenuCustomPopupPlacementCallback(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuCustomPopupPlacementCallback(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    public static KeyFrameBuilder SetContextMenuCustomPopupPlacementCallback(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class ContextMenuSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetContextMenuCustomPopupPlacementCallback(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetContextMenuCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class ContextMenuSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetContextMenuCustomPopupPlacementCallback(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetContextMenuCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class ContextMenuSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/>.
     /// </summary>

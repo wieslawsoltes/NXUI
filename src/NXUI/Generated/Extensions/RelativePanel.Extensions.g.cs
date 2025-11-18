@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RelativePanel"/> class property extension methods.
 /// </summary>
 public static partial class RelativePanelExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_Above, Avalonia.Controls.RelativePanel.AboveProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AboveProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AboveProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignBottomWithPanel, Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignBottomWith, Avalonia.Controls.RelativePanel.AlignBottomWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignBottomWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignBottomWithProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignHorizontalCenterWithPanel, Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignLeftWithPanel, Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignLeftWith, Avalonia.Controls.RelativePanel.AlignLeftWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignLeftWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignLeftWithProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignRightWithPanel, Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignRightWith, Avalonia.Controls.RelativePanel.AlignRightWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignRightWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignRightWithProperty
 
     /// <summary>
@@ -1948,7 +1914,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> literal value for hot reload builds.
@@ -1995,8 +1960,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignTopWithPanel, Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> value on a referenced control.
@@ -2043,7 +2006,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty
 
     /// <summary>
@@ -2190,7 +2152,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> literal value for hot reload builds.
@@ -2237,8 +2198,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignTopWith, Avalonia.Controls.RelativePanel.AlignTopWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> value on a referenced control.
@@ -2285,7 +2244,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignTopWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignTopWithProperty
 
     /// <summary>
@@ -2432,7 +2390,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> literal value for hot reload builds.
@@ -2479,8 +2436,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignVerticalCenterWithPanel, Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> value on a referenced control.
@@ -2527,7 +2482,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty
 
     /// <summary>
@@ -2674,7 +2628,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> literal value for hot reload builds.
@@ -2721,8 +2674,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignVerticalCenterWith, Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> value on a referenced control.
@@ -2769,7 +2720,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty
 
     /// <summary>
@@ -2916,7 +2866,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> literal value for hot reload builds.
@@ -2963,8 +2912,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_Below, Avalonia.Controls.RelativePanel.BelowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> value on a referenced control.
@@ -3011,7 +2958,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.BelowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.BelowProperty
 
     /// <summary>
@@ -3158,7 +3104,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> literal value for hot reload builds.
@@ -3205,8 +3150,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_LeftOf, Avalonia.Controls.RelativePanel.LeftOfProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> value on a referenced control.
@@ -3253,7 +3196,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.LeftOfProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.LeftOfProperty
 
     /// <summary>
@@ -3400,7 +3342,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> literal value for hot reload builds.
@@ -3447,8 +3388,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_RightOf, Avalonia.Controls.RelativePanel.RightOfProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> value on a referenced control.
@@ -3495,7 +3434,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.RightOfProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.RightOfProperty
 
     /// <summary>
@@ -3642,7 +3580,6 @@ public static partial class RelativePanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> literal value for hot reload builds.
@@ -3689,8 +3626,6 @@ public static partial class RelativePanelExtensions
         return builder.WithBinding(PropertyMetadata.RelativePanel_AlignHorizontalCenterWith, Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> value on a referenced control.
@@ -3737,7 +3672,6 @@ public static partial class RelativePanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty
 
     /// <summary>

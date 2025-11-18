@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Control"/> class style setters extension methods.
 /// </summary>
 public static partial class ControlSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlFocusAdorner(this ElementBuilder<Style> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static StyleBuilder SetControlFocusAdorner(this StyleBuilder builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlFocusAdorner(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static KeyFrameBuilder SetControlFocusAdorner(this KeyFrameBuilder builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Control.FocusAdornerProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlFocusAdorner(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    public static StyleBuilder SetControlFocusAdorner(this StyleBuilder builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlFocusAdorner(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    public static KeyFrameBuilder SetControlFocusAdorner(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.FocusAdornerProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlFocusAdorner(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlFocusAdorner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlFocusAdorner(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlFocusAdorner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlTag(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetControlTag(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlTag(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetControlTag(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Control.TagProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlTag(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetControlTag(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlTag(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetControlTag(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.TagProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlTag(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlTag(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlTag(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlTag(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.TagProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlContextMenu(this ElementBuilder<Style> builder, Avalonia.Controls.ContextMenu value)
+    public static StyleBuilder SetControlContextMenu(this StyleBuilder builder, Avalonia.Controls.ContextMenu value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlContextMenu(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ContextMenu value)
+    public static KeyFrameBuilder SetControlContextMenu(this KeyFrameBuilder builder, Avalonia.Controls.ContextMenu value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Control.ContextMenuProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlContextMenu(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ContextMenu> observable)
+    public static StyleBuilder SetControlContextMenu(this StyleBuilder builder, IObservable<Avalonia.Controls.ContextMenu> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlContextMenu(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ContextMenu> observable)
+    public static KeyFrameBuilder SetControlContextMenu(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ContextMenu> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextMenuProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlContextMenu(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlContextMenu(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlContextMenu(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlContextMenu(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextMenuProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlContextFlyout(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static StyleBuilder SetControlContextFlyout(this StyleBuilder builder, Avalonia.Controls.Primitives.FlyoutBase value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlContextFlyout(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.FlyoutBase value)
+    public static KeyFrameBuilder SetControlContextFlyout(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.FlyoutBase value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Control.ContextFlyoutProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlContextFlyout(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
+    public static StyleBuilder SetControlContextFlyout(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlContextFlyout(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
+    public static KeyFrameBuilder SetControlContextFlyout(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.FlyoutBase> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Control.ContextFlyoutProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetControlContextFlyout(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetControlContextFlyout(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetControlContextFlyout(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetControlContextFlyout(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/>.
     /// </summary>

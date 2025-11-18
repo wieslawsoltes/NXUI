@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ScaleTransform"/> class property extension methods.
 /// </summary>
 public static partial class ScaleTransformExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class ScaleTransformExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleX(this ElementBuilder<Avalonia.Media.ScaleTransform> builder, System.Double value)
+    public static ScaleTransformBuilder ScaleX(this ScaleTransformBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.ScaleTransform_ScaleX, Avalonia.Media.ScaleTransform.ScaleXProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class ScaleTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleX(
-        this ElementBuilder<Avalonia.Media.ScaleTransform> builder,
+    public static ScaleTransformBuilder ScaleX(
+        this ScaleTransformBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class ScaleTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleX(
-        this ElementBuilder<Avalonia.Media.ScaleTransform> builder,
+    public static ScaleTransformBuilder ScaleX(
+        this ScaleTransformBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class ScaleTransformExtensions
         return builder.WithBinding(PropertyMetadata.ScaleTransform_ScaleX, Avalonia.Media.ScaleTransform.ScaleXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ScaleTransform.ScaleXProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ScaleTransformExtensions
         return elementRef.SetBinding(Avalonia.Media.ScaleTransform.ScaleXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ScaleTransform.ScaleXProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class ScaleTransformExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class ScaleTransformExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleY(this ElementBuilder<Avalonia.Media.ScaleTransform> builder, System.Double value)
+    public static ScaleTransformBuilder ScaleY(this ScaleTransformBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.ScaleTransform_ScaleY, Avalonia.Media.ScaleTransform.ScaleYProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class ScaleTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleY(
-        this ElementBuilder<Avalonia.Media.ScaleTransform> builder,
+    public static ScaleTransformBuilder ScaleY(
+        this ScaleTransformBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class ScaleTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ScaleTransform> ScaleY(
-        this ElementBuilder<Avalonia.Media.ScaleTransform> builder,
+    public static ScaleTransformBuilder ScaleY(
+        this ScaleTransformBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class ScaleTransformExtensions
         return builder.WithBinding(PropertyMetadata.ScaleTransform_ScaleY, Avalonia.Media.ScaleTransform.ScaleYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ScaleTransform.ScaleYProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class ScaleTransformExtensions
         return elementRef.SetBinding(Avalonia.Media.ScaleTransform.ScaleYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ScaleTransform.ScaleYProperty
 
     /// <summary>

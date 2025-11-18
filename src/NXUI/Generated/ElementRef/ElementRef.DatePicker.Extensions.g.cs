@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DatePicker"/>.
 /// </summary>
 public static partial class DatePickerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.DayFormatProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.DayFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.DayVisibleProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.DayVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.MaxYearProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.MaxYearProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.MinYearProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.MinYearProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.MonthFormatProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.MonthFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.MonthVisibleProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.MonthVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.YearFormatProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.YearFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.YearVisibleProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.YearVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DatePicker.SelectedDateProperty"/> value.
@@ -110,5 +91,4 @@ public static partial class DatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DatePicker.SelectedDateProperty);
     }
 
-#endif
 }

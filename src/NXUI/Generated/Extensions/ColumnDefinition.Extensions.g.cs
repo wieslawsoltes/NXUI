@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ColumnDefinition"/> class property extension methods.
 /// </summary>
 public static partial class ColumnDefinitionExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ColumnDefinitionExtensions
         return builder.WithBinding(PropertyMetadata.ColumnDefinition_MaxWidth, Avalonia.Controls.ColumnDefinition.MaxWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ColumnDefinitionExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColumnDefinition.MaxWidthProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ColumnDefinitionExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ColumnDefinitionExtensions
         return builder.WithBinding(PropertyMetadata.ColumnDefinition_MinWidth, Avalonia.Controls.ColumnDefinition.MinWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ColumnDefinitionExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColumnDefinition.MinWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColumnDefinition.MinWidthProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ColumnDefinitionExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ColumnDefinitionExtensions
         return builder.WithBinding(PropertyMetadata.ColumnDefinition_Width, Avalonia.Controls.ColumnDefinition.WidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ColumnDefinitionExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColumnDefinition.WidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColumnDefinition.WidthProperty
 
     /// <summary>
@@ -737,8 +723,6 @@ public static partial class ColumnDefinitionExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> literal value using a pixel value for hot reload builds.
     /// </summary>
@@ -754,8 +738,6 @@ public static partial class ColumnDefinitionExtensions
     {
         return builder.Width(new Avalonia.Controls.GridLength(value, unitType));
     }
-
-#endif
 
 
     /// <summary>

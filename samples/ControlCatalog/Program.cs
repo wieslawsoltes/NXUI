@@ -1,7 +1,3 @@
-﻿#if NXUI_HOTRELOAD
-using StyleBuilder = NXUI.HotReload.Nodes.ElementBuilder<Avalonia.Styling.Style>;
-#endif
-
 object Build()
 {
   var border = Border()
@@ -133,11 +129,7 @@ object Build()
   window.Styles(TabControlStyle(), buttonStyle, labelStyle, InteractionStyle());
 
 #if DEBUG
-#if NXUI_HOTRELOAD
   window = window.WithAction(w => w.AttachDevTools());
-#else
-  window.AttachDevTools();
-#endif
 #endif
 
   return window;
@@ -159,18 +151,13 @@ StyleBuilder TabControlStyle()
   var style = Style()
     .Selector(x => x.OfType<TabControl>().Class("tabControl"));
 
-#if NXUI_HOTRELOAD
   style = style.WithAction(s =>
     s.SetTemplatedControlTemplate<TabControl>((x, ns) => BuildTabControlTemplate(x, ns).Mount()));
-#else
-  style = style.SetTemplatedControlTemplate<TabControl>(BuildTabControlTemplate);
-#endif
 
   return style;
 }
 
-#if NXUI_HOTRELOAD
-ElementBuilder<Border> BuildTabControlTemplate(TabControl x, INameScope ns)
+BorderBuilder BuildTabControlTemplate(TabControl x, INameScope ns)
 {
   return Border()
     .BorderBrush(x.BindBorderBrush())
@@ -194,32 +181,6 @@ ElementBuilder<Border> BuildTabControlTemplate(TabControl x, INameScope ns)
       )
     );
 }
-#else
-Border BuildTabControlTemplate(TabControl x, INameScope ns)
-{
-  return Border()
-    .BorderBrush(x.BindBorderBrush())
-    .BorderThickness(x.BindBorderThickness())
-    .CornerRadius(x.BindCornerRadius())
-    .Background(x.BindBackground())
-    .HorizontalAlignment(x.BindHorizontalAlignment())
-    .VerticalAlignment(x.BindVerticalAlignment())
-    .Child(
-      DockPanel().Children(
-        ScrollViewer().Content(
-          ItemsPresenter().Name("PART_ItemsPresenter", ns)
-            .ItemsPanel(x.BindItemsPanel())
-            .Dock(x.BindTabStripPlacement())),
-        ContentPresenter().Name("PART_SelectedContentHost", ns)
-          .Margin(x.BindPadding())
-          .HorizontalContentAlignment(x.BindHorizontalContentAlignment())
-          .VerticalContentAlignment(x.BindVerticalContentAlignment())
-          .Content(x.BindSelectedContent())
-          .ContentTemplate(x.BindSelectedContentTemplate())
-      )
-    );
-}
-#endif
 
 StyleBuilder RotateAnimation(TimeSpan duration, double startAngle, double endAngle)
   => Style()

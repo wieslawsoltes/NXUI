@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.LinearGradientBrush"/> class property extension methods.
 /// </summary>
 public static partial class LinearGradientBrushExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LinearGradientBrush> StartPoint(this ElementBuilder<Avalonia.Media.LinearGradientBrush> builder, Avalonia.RelativePoint value)
+    public static LinearGradientBrushBuilder StartPoint(this LinearGradientBrushBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithValue(PropertyMetadata.LinearGradientBrush_StartPoint, Avalonia.Media.LinearGradientBrush.StartPointProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LinearGradientBrush> StartPoint(
-        this ElementBuilder<Avalonia.Media.LinearGradientBrush> builder,
+    public static LinearGradientBrushBuilder StartPoint(
+        this LinearGradientBrushBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LinearGradientBrush> StartPoint(
-        this ElementBuilder<Avalonia.Media.LinearGradientBrush> builder,
+    public static LinearGradientBrushBuilder StartPoint(
+        this LinearGradientBrushBuilder builder,
         IObservable<Avalonia.RelativePoint> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class LinearGradientBrushExtensions
         return builder.WithBinding(PropertyMetadata.LinearGradientBrush_StartPoint, Avalonia.Media.LinearGradientBrush.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class LinearGradientBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.LinearGradientBrush.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.LinearGradientBrush.StartPointProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class LinearGradientBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LinearGradientBrush> EndPoint(this ElementBuilder<Avalonia.Media.LinearGradientBrush> builder, Avalonia.RelativePoint value)
+    public static LinearGradientBrushBuilder EndPoint(this LinearGradientBrushBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithValue(PropertyMetadata.LinearGradientBrush_EndPoint, Avalonia.Media.LinearGradientBrush.EndPointProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LinearGradientBrush> EndPoint(
-        this ElementBuilder<Avalonia.Media.LinearGradientBrush> builder,
+    public static LinearGradientBrushBuilder EndPoint(
+        this LinearGradientBrushBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class LinearGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LinearGradientBrush> EndPoint(
-        this ElementBuilder<Avalonia.Media.LinearGradientBrush> builder,
+    public static LinearGradientBrushBuilder EndPoint(
+        this LinearGradientBrushBuilder builder,
         IObservable<Avalonia.RelativePoint> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class LinearGradientBrushExtensions
         return builder.WithBinding(PropertyMetadata.LinearGradientBrush_EndPoint, Avalonia.Media.LinearGradientBrush.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class LinearGradientBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.LinearGradientBrush.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.LinearGradientBrush.EndPointProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.EllipseGeometry"/> class style setters extension methods.
 /// </summary>
 public static partial class EllipseGeometrySetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
@@ -20,7 +17,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRect(this ElementBuilder<Style> builder, Avalonia.Rect value)
+    public static StyleBuilder SetEllipseGeometryRect(this StyleBuilder builder, Avalonia.Rect value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRect(this ElementBuilder<KeyFrame> builder, Avalonia.Rect value)
+    public static KeyFrameBuilder SetEllipseGeometryRect(this KeyFrameBuilder builder, Avalonia.Rect value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.RectProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRect(this ElementBuilder<Style> builder, IObservable<Avalonia.Rect> observable)
+    public static StyleBuilder SetEllipseGeometryRect(this StyleBuilder builder, IObservable<Avalonia.Rect> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRect(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Rect> observable)
+    public static KeyFrameBuilder SetEllipseGeometryRect(this KeyFrameBuilder builder, IObservable<Avalonia.Rect> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RectProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class EllipseGeometrySetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
@@ -185,7 +176,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRadiusX(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetEllipseGeometryRadiusX(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRadiusX(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusX(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.RadiusXProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRadiusX(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetEllipseGeometryRadiusX(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRadiusX(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusX(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusXProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRadiusX(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryRadiusX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRadiusX(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class EllipseGeometrySetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
@@ -350,7 +335,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRadiusY(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetEllipseGeometryRadiusY(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRadiusY(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusY(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.RadiusYProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRadiusY(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetEllipseGeometryRadiusY(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRadiusY(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusY(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.RadiusYProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryRadiusY(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryRadiusY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryRadiusY(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryRadiusY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class EllipseGeometrySetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
@@ -515,7 +494,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryCenter(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetEllipseGeometryCenter(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryCenter(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetEllipseGeometryCenter(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.CenterProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryCenter(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetEllipseGeometryCenter(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryCenter(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetEllipseGeometryCenter(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class EllipseGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.EllipseGeometry.CenterProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetEllipseGeometryCenter(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetEllipseGeometryCenter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class EllipseGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetEllipseGeometryCenter(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetEllipseGeometryCenter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class EllipseGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/>.
     /// </summary>

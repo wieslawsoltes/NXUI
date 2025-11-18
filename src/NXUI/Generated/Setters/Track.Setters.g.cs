@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.Track"/> class style setters extension methods.
 /// </summary>
 public static partial class TrackSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackMinimum(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTrackMinimum(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackMinimum(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTrackMinimum(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.MinimumProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackMinimum(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTrackMinimum(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackMinimum(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTrackMinimum(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MinimumProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackMinimum(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackMinimum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackMinimum(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackMinimum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackMaximum(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTrackMaximum(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackMaximum(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTrackMaximum(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.MaximumProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackMaximum(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTrackMaximum(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackMaximum(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTrackMaximum(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.MaximumProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackMaximum(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackMaximum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackMaximum(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackMaximum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackValue(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTrackValue(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackValue(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTrackValue(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.ValueProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackValue(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTrackValue(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTrackValue(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackViewportSize(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTrackViewportSize(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackViewportSize(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTrackViewportSize(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.ViewportSizeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackViewportSize(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTrackViewportSize(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackViewportSize(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTrackViewportSize(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackViewportSize(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackViewportSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackViewportSize(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackViewportSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    public static StyleBuilder SetTrackOrientation(this StyleBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    public static KeyFrameBuilder SetTrackOrientation(this KeyFrameBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.OrientationProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static StyleBuilder SetTrackOrientation(this StyleBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static KeyFrameBuilder SetTrackOrientation(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackThumb(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.Thumb value)
+    public static StyleBuilder SetTrackThumb(this StyleBuilder builder, Avalonia.Controls.Primitives.Thumb value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackThumb(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.Thumb value)
+    public static KeyFrameBuilder SetTrackThumb(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.Thumb value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.ThumbProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackThumb(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.Thumb> observable)
+    public static StyleBuilder SetTrackThumb(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.Thumb> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackThumb(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.Thumb> observable)
+    public static KeyFrameBuilder SetTrackThumb(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.Thumb> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.ThumbProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackThumb(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackThumb(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackThumb(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackThumb(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIncreaseButton(this ElementBuilder<Style> builder, Avalonia.Controls.Button value)
+    public static StyleBuilder SetTrackIncreaseButton(this StyleBuilder builder, Avalonia.Controls.Button value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIncreaseButton(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Button value)
+    public static KeyFrameBuilder SetTrackIncreaseButton(this KeyFrameBuilder builder, Avalonia.Controls.Button value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.IncreaseButtonProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIncreaseButton(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Button> observable)
+    public static StyleBuilder SetTrackIncreaseButton(this StyleBuilder builder, IObservable<Avalonia.Controls.Button> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIncreaseButton(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Button> observable)
+    public static KeyFrameBuilder SetTrackIncreaseButton(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Button> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIncreaseButton(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackIncreaseButton(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIncreaseButton(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackIncreaseButton(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackDecreaseButton(this ElementBuilder<Style> builder, Avalonia.Controls.Button value)
+    public static StyleBuilder SetTrackDecreaseButton(this StyleBuilder builder, Avalonia.Controls.Button value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackDecreaseButton(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Button value)
+    public static KeyFrameBuilder SetTrackDecreaseButton(this KeyFrameBuilder builder, Avalonia.Controls.Button value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.DecreaseButtonProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackDecreaseButton(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Button> observable)
+    public static StyleBuilder SetTrackDecreaseButton(this StyleBuilder builder, IObservable<Avalonia.Controls.Button> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackDecreaseButton(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Button> observable)
+    public static KeyFrameBuilder SetTrackDecreaseButton(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Button> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackDecreaseButton(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackDecreaseButton(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackDecreaseButton(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackDecreaseButton(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIsDirectionReversed(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTrackIsDirectionReversed(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIsDirectionReversed(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTrackIsDirectionReversed(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIsDirectionReversed(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTrackIsDirectionReversed(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIsDirectionReversed(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTrackIsDirectionReversed(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIsDirectionReversed(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackIsDirectionReversed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIsDirectionReversed(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackIsDirectionReversed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIgnoreThumbDrag(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTrackIgnoreThumbDrag(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIgnoreThumbDrag(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTrackIgnoreThumbDrag(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIgnoreThumbDrag(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTrackIgnoreThumbDrag(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIgnoreThumbDrag(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTrackIgnoreThumbDrag(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackIgnoreThumbDrag(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackIgnoreThumbDrag(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackIgnoreThumbDrag(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackIgnoreThumbDrag(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class TrackSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackDeferThumbDrag(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTrackDeferThumbDrag(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackDeferThumbDrag(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTrackDeferThumbDrag(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.DeferThumbDragProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackDeferThumbDrag(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTrackDeferThumbDrag(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackDeferThumbDrag(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTrackDeferThumbDrag(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class TrackSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class TrackSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrackDeferThumbDrag(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrackDeferThumbDrag(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class TrackSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrackDeferThumbDrag(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrackDeferThumbDrag(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class TrackSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/>.
     /// </summary>

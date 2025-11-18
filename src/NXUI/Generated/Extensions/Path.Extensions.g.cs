@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Path"/> class property extension methods.
 /// </summary>
 public static partial class PathExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Path.DataProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PathExtensions
         return builder.WithBinding(PropertyMetadata.Path_Data, Avalonia.Controls.Shapes.Path.DataProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Path.DataProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PathExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Path.DataProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Path.DataProperty
 
     /// <summary>

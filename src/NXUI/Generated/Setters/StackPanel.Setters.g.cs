@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.StackPanel"/> class style setters extension methods.
 /// </summary>
 public static partial class StackPanelSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/>.
@@ -20,7 +17,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetStackPanelSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetStackPanelSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.StackPanel.SpacingProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.SpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetStackPanelSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetStackPanelSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.SpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStackPanelSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStackPanelSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class StackPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/>.
@@ -185,7 +176,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    public static StyleBuilder SetStackPanelOrientation(this StyleBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    public static KeyFrameBuilder SetStackPanelOrientation(this KeyFrameBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.StackPanel.OrientationProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.OrientationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static StyleBuilder SetStackPanelOrientation(this StyleBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static KeyFrameBuilder SetStackPanelOrientation(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStackPanelOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStackPanelOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class StackPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
@@ -350,7 +335,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetStackPanelAreHorizontalSnapPointsRegular(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetStackPanelAreHorizontalSnapPointsRegular(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetStackPanelAreHorizontalSnapPointsRegular(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetStackPanelAreHorizontalSnapPointsRegular(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStackPanelAreHorizontalSnapPointsRegular(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelAreHorizontalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStackPanelAreHorizontalSnapPointsRegular(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class StackPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
@@ -515,7 +494,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetStackPanelAreVerticalSnapPointsRegular(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetStackPanelAreVerticalSnapPointsRegular(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetStackPanelAreVerticalSnapPointsRegular(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetStackPanelAreVerticalSnapPointsRegular(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class StackPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStackPanelAreVerticalSnapPointsRegular(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class StackPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStackPanelAreVerticalSnapPointsRegular(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStackPanelAreVerticalSnapPointsRegular(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class StackPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/>.
     /// </summary>

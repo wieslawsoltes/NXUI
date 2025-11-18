@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ConicGradientBrush"/> class property extension methods.
 /// </summary>
 public static partial class ConicGradientBrushExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ConicGradientBrush> Center(this ElementBuilder<Avalonia.Media.ConicGradientBrush> builder, Avalonia.RelativePoint value)
+    public static ConicGradientBrushBuilder Center(this ConicGradientBrushBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithValue(PropertyMetadata.ConicGradientBrush_Center, Avalonia.Media.ConicGradientBrush.CenterProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ConicGradientBrush> Center(
-        this ElementBuilder<Avalonia.Media.ConicGradientBrush> builder,
+    public static ConicGradientBrushBuilder Center(
+        this ConicGradientBrushBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ConicGradientBrush> Center(
-        this ElementBuilder<Avalonia.Media.ConicGradientBrush> builder,
+    public static ConicGradientBrushBuilder Center(
+        this ConicGradientBrushBuilder builder,
         IObservable<Avalonia.RelativePoint> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class ConicGradientBrushExtensions
         return builder.WithBinding(PropertyMetadata.ConicGradientBrush_Center, Avalonia.Media.ConicGradientBrush.CenterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ConicGradientBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.ConicGradientBrush.CenterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ConicGradientBrush.CenterProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class ConicGradientBrushExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ConicGradientBrush> Angle(this ElementBuilder<Avalonia.Media.ConicGradientBrush> builder, System.Double value)
+    public static ConicGradientBrushBuilder Angle(this ConicGradientBrushBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.ConicGradientBrush_Angle, Avalonia.Media.ConicGradientBrush.AngleProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ConicGradientBrush> Angle(
-        this ElementBuilder<Avalonia.Media.ConicGradientBrush> builder,
+    public static ConicGradientBrushBuilder Angle(
+        this ConicGradientBrushBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class ConicGradientBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ConicGradientBrush> Angle(
-        this ElementBuilder<Avalonia.Media.ConicGradientBrush> builder,
+    public static ConicGradientBrushBuilder Angle(
+        this ConicGradientBrushBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class ConicGradientBrushExtensions
         return builder.WithBinding(PropertyMetadata.ConicGradientBrush_Angle, Avalonia.Media.ConicGradientBrush.AngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class ConicGradientBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.ConicGradientBrush.AngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ConicGradientBrush.AngleProperty
 
     /// <summary>

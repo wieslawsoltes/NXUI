@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Animation.Animation"/>.
 /// </summary>
 public static partial class AnimationElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.DurationProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.DurationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.IterationCountProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.PlaybackDirectionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.FillModeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.FillModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.EasingProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.EasingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.DelayProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.DelayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.DelayBetweenIterationsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class AnimationElementRefExtensions
         return elementRef.Observe(Avalonia.Animation.Animation.SpeedRatioProperty);
     }
 
-#endif
 }

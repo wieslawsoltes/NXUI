@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.LineGeometry"/> class property extension methods.
 /// </summary>
 public static partial class LineGeometryExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class LineGeometryExtensions
         return builder.WithBinding(PropertyMetadata.LineGeometry_StartPoint, Avalonia.Media.LineGeometry.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class LineGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.LineGeometry.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.LineGeometry.StartPointProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class LineGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class LineGeometryExtensions
         return builder.WithBinding(PropertyMetadata.LineGeometry_EndPoint, Avalonia.Media.LineGeometry.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class LineGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.LineGeometry.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.LineGeometry.EndPointProperty
 
     /// <summary>

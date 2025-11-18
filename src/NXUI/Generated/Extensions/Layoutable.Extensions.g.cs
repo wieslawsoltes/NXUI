@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Layout.Layoutable"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_Width, Avalonia.Layout.Layoutable.WidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.WidthProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.WidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.WidthProperty
 
     /// <summary>
@@ -344,7 +338,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> literal value for hot reload builds.
@@ -391,8 +384,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_Height, Avalonia.Layout.Layoutable.HeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HeightProperty"/> value on a referenced control.
@@ -439,7 +430,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.HeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.HeightProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_MinWidth, Avalonia.Layout.Layoutable.MinWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MinWidthProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.MinWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MinWidthProperty
 
     /// <summary>
@@ -828,7 +814,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> literal value for hot reload builds.
@@ -875,8 +860,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_MaxWidth, Avalonia.Layout.Layoutable.MaxWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MaxWidthProperty"/> value on a referenced control.
@@ -923,7 +906,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.MaxWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MaxWidthProperty
 
     /// <summary>
@@ -1070,7 +1052,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> literal value for hot reload builds.
@@ -1117,8 +1098,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_MinHeight, Avalonia.Layout.Layoutable.MinHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MinHeightProperty"/> value on a referenced control.
@@ -1165,7 +1144,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.MinHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MinHeightProperty
 
     /// <summary>
@@ -1312,7 +1290,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> literal value for hot reload builds.
@@ -1359,8 +1336,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_MaxHeight, Avalonia.Layout.Layoutable.MaxHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MaxHeightProperty"/> value on a referenced control.
@@ -1407,7 +1382,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.MaxHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MaxHeightProperty
 
     /// <summary>
@@ -1554,7 +1528,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> literal value for hot reload builds.
@@ -1601,8 +1574,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_Margin, Avalonia.Layout.Layoutable.MarginProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> value on a referenced control.
@@ -1649,7 +1620,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.MarginProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.MarginProperty
 
     /// <summary>
@@ -1795,8 +1765,6 @@ public static partial class LayoutableExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.MarginProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -1820,8 +1788,6 @@ public static partial class LayoutableExtensions
     {
         return builder.Margin(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>
@@ -1850,7 +1816,6 @@ public static partial class LayoutableExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> literal value for hot reload builds.
@@ -1897,8 +1862,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_HorizontalAlignment, Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> value on a referenced control.
@@ -1945,7 +1908,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.HorizontalAlignmentProperty
 
     /// <summary>
@@ -2091,7 +2053,6 @@ public static partial class LayoutableExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
@@ -2103,7 +2064,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_HorizontalAlignment, Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -2116,7 +2076,6 @@ public static partial class LayoutableExtensions
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
@@ -2128,7 +2087,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_HorizontalAlignment, Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -2141,7 +2099,6 @@ public static partial class LayoutableExtensions
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
@@ -2153,7 +2110,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_HorizontalAlignment, Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -2166,7 +2122,6 @@ public static partial class LayoutableExtensions
         obj[Avalonia.Layout.Layoutable.HorizontalAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> enum value for hot reload builds.
@@ -2178,7 +2133,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_HorizontalAlignment, Avalonia.Layout.Layoutable.HorizontalAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.HorizontalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -2192,7 +2146,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> literal value for hot reload builds.
@@ -2239,8 +2192,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_VerticalAlignment, Avalonia.Layout.Layoutable.VerticalAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> value on a referenced control.
@@ -2287,7 +2238,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.VerticalAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.VerticalAlignmentProperty
 
     /// <summary>
@@ -2433,7 +2383,6 @@ public static partial class LayoutableExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
@@ -2445,7 +2394,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_VerticalAlignment, Avalonia.Layout.Layoutable.VerticalAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -2458,7 +2406,6 @@ public static partial class LayoutableExtensions
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
@@ -2470,7 +2417,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_VerticalAlignment, Avalonia.Layout.Layoutable.VerticalAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -2483,7 +2429,6 @@ public static partial class LayoutableExtensions
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
@@ -2495,7 +2440,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_VerticalAlignment, Avalonia.Layout.Layoutable.VerticalAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -2508,7 +2452,6 @@ public static partial class LayoutableExtensions
         obj[Avalonia.Layout.Layoutable.VerticalAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> enum value for hot reload builds.
@@ -2520,7 +2463,6 @@ public static partial class LayoutableExtensions
         return builder.WithValue(PropertyMetadata.Layoutable_VerticalAlignment, Avalonia.Layout.Layoutable.VerticalAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.VerticalAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
@@ -2534,7 +2476,6 @@ public static partial class LayoutableExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> literal value for hot reload builds.
@@ -2581,8 +2522,6 @@ public static partial class LayoutableExtensions
         return builder.WithBinding(PropertyMetadata.Layoutable_UseLayoutRounding, Avalonia.Layout.Layoutable.UseLayoutRoundingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.Layoutable.UseLayoutRoundingProperty"/> value on a referenced control.
@@ -2629,7 +2568,6 @@ public static partial class LayoutableExtensions
         return elementRef.SetBinding(Avalonia.Layout.Layoutable.UseLayoutRoundingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.Layoutable.UseLayoutRoundingProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TextBlock"/> class style setters extension methods.
 /// </summary>
 public static partial class TextBlockSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockBackground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTextBlockBackground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTextBlockBackground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.BackgroundProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockBackground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTextBlockBackground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockBackground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTextBlockBackground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockBackground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockPadding(this ElementBuilder<Style> builder, Avalonia.Thickness value)
+    public static StyleBuilder SetTextBlockPadding(this StyleBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockPadding(this ElementBuilder<KeyFrame> builder, Avalonia.Thickness value)
+    public static KeyFrameBuilder SetTextBlockPadding(this KeyFrameBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.PaddingProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockPadding(this ElementBuilder<Style> builder, IObservable<Avalonia.Thickness> observable)
+    public static StyleBuilder SetTextBlockPadding(this StyleBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockPadding(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Thickness> observable)
+    public static KeyFrameBuilder SetTextBlockPadding(this KeyFrameBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.PaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockPadding(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockPadding(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontFamily(this ElementBuilder<Style> builder, Avalonia.Media.FontFamily value)
+    public static StyleBuilder SetTextBlockFontFamily(this StyleBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontFamily value)
+    public static KeyFrameBuilder SetTextBlockFontFamily(this KeyFrameBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontFamilyProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontFamily(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static StyleBuilder SetTextBlockFontFamily(this StyleBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontFamily(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static KeyFrameBuilder SetTextBlockFontFamily(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontFamily(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontFamily(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontFamily(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontSize(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextBlockFontSize(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontSize(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextBlockFontSize(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontSizeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontSize(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextBlockFontSize(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontSize(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextBlockFontSize(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontSize(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontSize(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontStyle(this ElementBuilder<Style> builder, Avalonia.Media.FontStyle value)
+    public static StyleBuilder SetTextBlockFontStyle(this StyleBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStyle value)
+    public static KeyFrameBuilder SetTextBlockFontStyle(this KeyFrameBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontStyleProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontStyle(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static StyleBuilder SetTextBlockFontStyle(this StyleBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontStyle(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static KeyFrameBuilder SetTextBlockFontStyle(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontStyle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontWeight(this ElementBuilder<Style> builder, Avalonia.Media.FontWeight value)
+    public static StyleBuilder SetTextBlockFontWeight(this StyleBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontWeight value)
+    public static KeyFrameBuilder SetTextBlockFontWeight(this KeyFrameBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontWeightProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontWeight(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static StyleBuilder SetTextBlockFontWeight(this StyleBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontWeight(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static KeyFrameBuilder SetTextBlockFontWeight(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontWeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontWeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontWeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontStretch(this ElementBuilder<Style> builder, Avalonia.Media.FontStretch value)
+    public static StyleBuilder SetTextBlockFontStretch(this StyleBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStretch value)
+    public static KeyFrameBuilder SetTextBlockFontStretch(this KeyFrameBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontStretchProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static StyleBuilder SetTextBlockFontStretch(this StyleBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static KeyFrameBuilder SetTextBlockFontStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockForeground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTextBlockForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTextBlockForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.ForegroundProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockForeground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTextBlockForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockForeground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTextBlockForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockForeground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockBaselineOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextBlockBaselineOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockBaselineOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextBlockBaselineOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.BaselineOffsetProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockBaselineOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextBlockBaselineOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockBaselineOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextBlockBaselineOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.BaselineOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockBaselineOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockBaselineOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockBaselineOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockBaselineOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLineHeight(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextBlockLineHeight(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLineHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextBlockLineHeight(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.LineHeightProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLineHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextBlockLineHeight(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLineHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextBlockLineHeight(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLineHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockLineHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLineHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockLineHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLineSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextBlockLineSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLineSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextBlockLineSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.LineSpacingProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLineSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextBlockLineSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLineSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextBlockLineSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LineSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLineSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockLineSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLineSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockLineSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLetterSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTextBlockLetterSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLetterSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTextBlockLetterSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.LetterSpacingProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLetterSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTextBlockLetterSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLetterSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTextBlockLetterSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.LetterSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockLetterSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockLetterSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockLetterSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockLetterSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockMaxLines(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetTextBlockMaxLines(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockMaxLines(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetTextBlockMaxLines(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.MaxLinesProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockMaxLines(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetTextBlockMaxLines(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockMaxLines(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetTextBlockMaxLines(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.MaxLinesProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockMaxLines(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockMaxLines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockMaxLines(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockMaxLines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/>.
     /// </summary>
@@ -2157,7 +2077,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
@@ -2165,7 +2084,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockText(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetTextBlockText(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -2179,7 +2098,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockText(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetTextBlockText(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2187,7 +2106,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextProperty
 
     /// <summary>
@@ -2213,7 +2131,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/> using an observable source.
@@ -2221,7 +2138,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockText(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetTextBlockText(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2235,7 +2152,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockText(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetTextBlockText(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2243,7 +2160,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
     /// </summary>
@@ -2267,7 +2183,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/> using a binding.
@@ -2275,7 +2190,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockText(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2289,7 +2204,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockText(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2297,7 +2212,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextProperty"/>.
     /// </summary>
@@ -2322,7 +2236,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
@@ -2330,7 +2243,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextAlignment(this ElementBuilder<Style> builder, Avalonia.Media.TextAlignment value)
+    public static StyleBuilder SetTextBlockTextAlignment(this StyleBuilder builder, Avalonia.Media.TextAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -2344,7 +2257,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextAlignment value)
+    public static KeyFrameBuilder SetTextBlockTextAlignment(this KeyFrameBuilder builder, Avalonia.Media.TextAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2352,7 +2265,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextAlignmentProperty
 
     /// <summary>
@@ -2378,7 +2290,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> using an observable source.
@@ -2386,7 +2297,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    public static StyleBuilder SetTextBlockTextAlignment(this StyleBuilder builder, IObservable<Avalonia.Media.TextAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2400,7 +2311,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    public static KeyFrameBuilder SetTextBlockTextAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2408,7 +2319,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
     /// </summary>
@@ -2432,7 +2342,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> using a binding.
@@ -2440,7 +2349,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2454,7 +2363,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2462,7 +2371,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/>.
     /// </summary>
@@ -2487,7 +2395,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
@@ -2495,7 +2402,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextWrapping(this ElementBuilder<Style> builder, Avalonia.Media.TextWrapping value)
+    public static StyleBuilder SetTextBlockTextWrapping(this StyleBuilder builder, Avalonia.Media.TextWrapping value)
     {
         return builder.WithAction(style =>
         {
@@ -2509,7 +2416,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextWrapping(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextWrapping value)
+    public static KeyFrameBuilder SetTextBlockTextWrapping(this KeyFrameBuilder builder, Avalonia.Media.TextWrapping value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2517,7 +2424,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextWrappingProperty
 
     /// <summary>
@@ -2543,7 +2449,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> using an observable source.
@@ -2551,7 +2456,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextWrapping(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextWrapping> observable)
+    public static StyleBuilder SetTextBlockTextWrapping(this StyleBuilder builder, IObservable<Avalonia.Media.TextWrapping> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2565,7 +2470,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextWrapping(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextWrapping> observable)
+    public static KeyFrameBuilder SetTextBlockTextWrapping(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextWrapping> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2573,7 +2478,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
     /// </summary>
@@ -2597,7 +2501,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextWrappingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> using a binding.
@@ -2605,7 +2508,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextWrapping(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextWrapping(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2619,7 +2522,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextWrapping(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextWrapping(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2627,7 +2530,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/>.
     /// </summary>
@@ -2652,7 +2554,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
@@ -2660,7 +2561,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextTrimming(this ElementBuilder<Style> builder, Avalonia.Media.TextTrimming value)
+    public static StyleBuilder SetTextBlockTextTrimming(this StyleBuilder builder, Avalonia.Media.TextTrimming value)
     {
         return builder.WithAction(style =>
         {
@@ -2674,7 +2575,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextTrimming(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextTrimming value)
+    public static KeyFrameBuilder SetTextBlockTextTrimming(this KeyFrameBuilder builder, Avalonia.Media.TextTrimming value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2682,7 +2583,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextTrimmingProperty
 
     /// <summary>
@@ -2708,7 +2608,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> using an observable source.
@@ -2716,7 +2615,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextTrimming(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextTrimming> observable)
+    public static StyleBuilder SetTextBlockTextTrimming(this StyleBuilder builder, IObservable<Avalonia.Media.TextTrimming> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2730,7 +2629,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextTrimming(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextTrimming> observable)
+    public static KeyFrameBuilder SetTextBlockTextTrimming(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextTrimming> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2738,7 +2637,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
     /// </summary>
@@ -2762,7 +2660,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextTrimmingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> using a binding.
@@ -2770,7 +2667,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextTrimming(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextTrimming(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2784,7 +2681,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextTrimming(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextTrimming(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2792,7 +2689,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/>.
     /// </summary>
@@ -2817,7 +2713,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
@@ -2825,7 +2720,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextDecorations(this ElementBuilder<Style> builder, Avalonia.Media.TextDecorationCollection value)
+    public static StyleBuilder SetTextBlockTextDecorations(this StyleBuilder builder, Avalonia.Media.TextDecorationCollection value)
     {
         return builder.WithAction(style =>
         {
@@ -2839,7 +2734,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextDecorations(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextDecorationCollection value)
+    public static KeyFrameBuilder SetTextBlockTextDecorations(this KeyFrameBuilder builder, Avalonia.Media.TextDecorationCollection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2847,7 +2742,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextDecorationsProperty
 
     /// <summary>
@@ -2873,7 +2767,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> using an observable source.
@@ -2881,7 +2774,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextDecorations(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
+    public static StyleBuilder SetTextBlockTextDecorations(this StyleBuilder builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2895,7 +2788,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextDecorations(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
+    public static KeyFrameBuilder SetTextBlockTextDecorations(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2903,7 +2796,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
     /// </summary>
@@ -2927,7 +2819,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.TextDecorationsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> using a binding.
@@ -2935,7 +2826,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockTextDecorations(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockTextDecorations(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2949,7 +2840,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockTextDecorations(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockTextDecorations(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2957,7 +2848,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/>.
     /// </summary>
@@ -2982,7 +2872,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
@@ -2990,7 +2879,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontFeatures(this ElementBuilder<Style> builder, Avalonia.Media.FontFeatureCollection value)
+    public static StyleBuilder SetTextBlockFontFeatures(this StyleBuilder builder, Avalonia.Media.FontFeatureCollection value)
     {
         return builder.WithAction(style =>
         {
@@ -3004,7 +2893,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontFeatures(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontFeatureCollection value)
+    public static KeyFrameBuilder SetTextBlockFontFeatures(this KeyFrameBuilder builder, Avalonia.Media.FontFeatureCollection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3012,7 +2901,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontFeaturesProperty
 
     /// <summary>
@@ -3038,7 +2926,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFeaturesProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> using an observable source.
@@ -3046,7 +2933,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontFeatures(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
+    public static StyleBuilder SetTextBlockFontFeatures(this StyleBuilder builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3060,7 +2947,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontFeatures(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
+    public static KeyFrameBuilder SetTextBlockFontFeatures(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3068,7 +2955,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
     /// </summary>
@@ -3092,7 +2978,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.FontFeaturesProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> using a binding.
@@ -3100,7 +2985,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockFontFeatures(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockFontFeatures(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3114,7 +2999,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockFontFeatures(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockFontFeatures(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3122,7 +3007,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/>.
     /// </summary>
@@ -3147,7 +3031,6 @@ public static partial class TextBlockSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
@@ -3155,7 +3038,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockInlines(this ElementBuilder<Style> builder, Avalonia.Controls.Documents.InlineCollection value)
+    public static StyleBuilder SetTextBlockInlines(this StyleBuilder builder, Avalonia.Controls.Documents.InlineCollection value)
     {
         return builder.WithAction(style =>
         {
@@ -3169,7 +3052,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockInlines(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Documents.InlineCollection value)
+    public static KeyFrameBuilder SetTextBlockInlines(this KeyFrameBuilder builder, Avalonia.Controls.Documents.InlineCollection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3177,7 +3060,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TextBlock.InlinesProperty
 
     /// <summary>
@@ -3203,7 +3085,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> using an observable source.
@@ -3211,7 +3092,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockInlines(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
+    public static StyleBuilder SetTextBlockInlines(this StyleBuilder builder, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3225,7 +3106,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockInlines(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
+    public static KeyFrameBuilder SetTextBlockInlines(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Documents.InlineCollection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3233,7 +3114,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
     /// </summary>
@@ -3257,7 +3137,6 @@ public static partial class TextBlockSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TextBlock.InlinesProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> using a binding.
@@ -3265,7 +3144,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTextBlockInlines(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTextBlockInlines(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3279,7 +3158,7 @@ public static partial class TextBlockSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTextBlockInlines(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTextBlockInlines(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3287,7 +3166,6 @@ public static partial class TextBlockSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/>.
     /// </summary>

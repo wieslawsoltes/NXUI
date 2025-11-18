@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/> class style setters extension methods.
 /// </summary>
 public static partial class ExperimentalAcrylicBorderSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExperimentalAcrylicBorderCornerRadius(this ElementBuilder<Style> builder, Avalonia.CornerRadius value)
+    public static StyleBuilder SetExperimentalAcrylicBorderCornerRadius(this StyleBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicBorderCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.CornerRadius value)
+    public static KeyFrameBuilder SetExperimentalAcrylicBorderCornerRadius(this KeyFrameBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExperimentalAcrylicBorderCornerRadius(this ElementBuilder<Style> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static StyleBuilder SetExperimentalAcrylicBorderCornerRadius(this StyleBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicBorderCornerRadius(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static KeyFrameBuilder SetExperimentalAcrylicBorderCornerRadius(this KeyFrameBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExperimentalAcrylicBorderCornerRadius(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetExperimentalAcrylicBorderCornerRadius(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicBorderCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetExperimentalAcrylicBorderCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExperimentalAcrylicBorderMaterial(this ElementBuilder<Style> builder, Avalonia.Media.ExperimentalAcrylicMaterial value)
+    public static StyleBuilder SetExperimentalAcrylicBorderMaterial(this StyleBuilder builder, Avalonia.Media.ExperimentalAcrylicMaterial value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicBorderMaterial(this ElementBuilder<KeyFrame> builder, Avalonia.Media.ExperimentalAcrylicMaterial value)
+    public static KeyFrameBuilder SetExperimentalAcrylicBorderMaterial(this KeyFrameBuilder builder, Avalonia.Media.ExperimentalAcrylicMaterial value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExperimentalAcrylicBorderMaterial(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable)
+    public static StyleBuilder SetExperimentalAcrylicBorderMaterial(this StyleBuilder builder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicBorderMaterial(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable)
+    public static KeyFrameBuilder SetExperimentalAcrylicBorderMaterial(this KeyFrameBuilder builder, IObservable<Avalonia.Media.ExperimentalAcrylicMaterial> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExperimentalAcrylicBorderMaterial(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetExperimentalAcrylicBorderMaterial(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ExperimentalAcrylicBorderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExperimentalAcrylicBorderMaterial(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetExperimentalAcrylicBorderMaterial(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ExperimentalAcrylicBorderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/>.
     /// </summary>

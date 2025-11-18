@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TrayIcon"/> class property extension methods.
 /// </summary>
 public static partial class TrayIconExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TrayIconExtensions
         return builder.WithBinding(PropertyMetadata.TrayIcon_Command, Avalonia.Controls.TrayIcon.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TrayIconExtensions
         return elementRef.SetBinding(Avalonia.Controls.TrayIcon.CommandProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.CommandProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TrayIconExtensions
         return builder.WithBinding(PropertyMetadata.TrayIcon_CommandParameter, Avalonia.Controls.TrayIcon.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TrayIconExtensions
         return elementRef.SetBinding(Avalonia.Controls.TrayIcon.CommandParameterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.CommandParameterProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TrayIconExtensions
         return builder.WithBinding(PropertyMetadata.TrayIcon_Icons, Avalonia.Controls.TrayIcon.IconsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TrayIconExtensions
         return elementRef.SetBinding(Avalonia.Controls.TrayIcon.IconsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.IconsProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TrayIconExtensions
         return builder.WithBinding(PropertyMetadata.TrayIcon_Menu, Avalonia.Controls.TrayIcon.MenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TrayIconExtensions
         return elementRef.SetBinding(Avalonia.Controls.TrayIcon.MenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.MenuProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TrayIcon.IconProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class TrayIconExtensions
         return builder.WithBinding(PropertyMetadata.TrayIcon_Icon, Avalonia.Controls.TrayIcon.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.IconProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class TrayIconExtensions
         return elementRef.SetBinding(Avalonia.Controls.TrayIcon.IconProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.IconProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class TrayIconExtensions
         return builder.WithBinding(PropertyMetadata.TrayIcon_ToolTipText, Avalonia.Controls.TrayIcon.ToolTipTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class TrayIconExtensions
         return elementRef.SetBinding(Avalonia.Controls.TrayIcon.ToolTipTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.ToolTipTextProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class TrayIconExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class TrayIconExtensions
         return builder.WithBinding(PropertyMetadata.TrayIcon_IsVisible, Avalonia.Controls.TrayIcon.IsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class TrayIconExtensions
         return elementRef.SetBinding(Avalonia.Controls.TrayIcon.IsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.IsVisibleProperty
 
     /// <summary>

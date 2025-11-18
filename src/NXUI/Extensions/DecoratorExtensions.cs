@@ -1,15 +1,12 @@
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// 
 /// </summary>
 public static partial class DecoratorExtensions
 {
-#if NXUI_HOTRELOAD
     /// <summary>
     /// Records a builder child for hot reload builds.
     /// </summary>
@@ -27,5 +24,4 @@ public static partial class DecoratorExtensions
             },
             ChildSlot.Content);
     }
-#endif
 }

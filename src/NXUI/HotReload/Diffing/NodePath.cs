@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Diffing;
 
 using System;
@@ -171,4 +170,3 @@ public readonly struct NodePathSegment : IEquatable<NodePathSegment>
         return Key is null ? index : $"{index}:{Key}";
     }
 }
-#endif

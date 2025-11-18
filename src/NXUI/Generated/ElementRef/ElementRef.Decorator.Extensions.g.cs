@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Decorator"/>.
 /// </summary>
 public static partial class DecoratorElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Decorator.ChildProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DecoratorElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Decorator.ChildProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Decorator.PaddingProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class DecoratorElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Decorator.PaddingProperty);
     }
 
-#endif
 }

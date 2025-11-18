@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Documents.Inline"/>.
 /// </summary>
 public static partial class InlineElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class InlineElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.Inline.TextDecorationsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class InlineElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty);
     }
 
-#endif
 }

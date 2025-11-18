@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.RotateTransform"/> class property extension methods.
 /// </summary>
 public static partial class RotateTransformExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class RotateTransformExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> Angle(this ElementBuilder<Avalonia.Media.RotateTransform> builder, System.Double value)
+    public static RotateTransformBuilder Angle(this RotateTransformBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.RotateTransform_Angle, Avalonia.Media.RotateTransform.AngleProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> Angle(
-        this ElementBuilder<Avalonia.Media.RotateTransform> builder,
+    public static RotateTransformBuilder Angle(
+        this RotateTransformBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> Angle(
-        this ElementBuilder<Avalonia.Media.RotateTransform> builder,
+    public static RotateTransformBuilder Angle(
+        this RotateTransformBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class RotateTransformExtensions
         return builder.WithBinding(PropertyMetadata.RotateTransform_Angle, Avalonia.Media.RotateTransform.AngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RotateTransformExtensions
         return elementRef.SetBinding(Avalonia.Media.RotateTransform.AngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.RotateTransform.AngleProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class RotateTransformExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class RotateTransformExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> CenterX(this ElementBuilder<Avalonia.Media.RotateTransform> builder, System.Double value)
+    public static RotateTransformBuilder CenterX(this RotateTransformBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.RotateTransform_CenterX, Avalonia.Media.RotateTransform.CenterXProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> CenterX(
-        this ElementBuilder<Avalonia.Media.RotateTransform> builder,
+    public static RotateTransformBuilder CenterX(
+        this RotateTransformBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> CenterX(
-        this ElementBuilder<Avalonia.Media.RotateTransform> builder,
+    public static RotateTransformBuilder CenterX(
+        this RotateTransformBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class RotateTransformExtensions
         return builder.WithBinding(PropertyMetadata.RotateTransform_CenterX, Avalonia.Media.RotateTransform.CenterXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class RotateTransformExtensions
         return elementRef.SetBinding(Avalonia.Media.RotateTransform.CenterXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.RotateTransform.CenterXProperty
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class RotateTransformExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class RotateTransformExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> CenterY(this ElementBuilder<Avalonia.Media.RotateTransform> builder, System.Double value)
+    public static RotateTransformBuilder CenterY(this RotateTransformBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.RotateTransform_CenterY, Avalonia.Media.RotateTransform.CenterYProperty, value);
     }
@@ -503,8 +492,8 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> CenterY(
-        this ElementBuilder<Avalonia.Media.RotateTransform> builder,
+    public static RotateTransformBuilder CenterY(
+        this RotateTransformBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class RotateTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.RotateTransform> CenterY(
-        this ElementBuilder<Avalonia.Media.RotateTransform> builder,
+    public static RotateTransformBuilder CenterY(
+        this RotateTransformBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class RotateTransformExtensions
         return builder.WithBinding(PropertyMetadata.RotateTransform_CenterY, Avalonia.Media.RotateTransform.CenterYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class RotateTransformExtensions
         return elementRef.SetBinding(Avalonia.Media.RotateTransform.CenterYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.RotateTransform.CenterYProperty
 
     /// <summary>

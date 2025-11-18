@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.VirtualizingStackPanel"/> class property extension methods.
 /// </summary>
 public static partial class VirtualizingStackPanelExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class VirtualizingStackPanelExtensions
         return builder.WithBinding(PropertyMetadata.VirtualizingStackPanel_Orientation, Avalonia.Controls.VirtualizingStackPanel.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class VirtualizingStackPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.VirtualizingStackPanel.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.VirtualizingStackPanel.OrientationProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class VirtualizingStackPanelExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class VirtualizingStackPanelExtensions
         return builder.WithValue(PropertyMetadata.VirtualizingStackPanel_Orientation, Avalonia.Controls.VirtualizingStackPanel.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -278,7 +270,6 @@ public static partial class VirtualizingStackPanelExtensions
         obj[Avalonia.Controls.VirtualizingStackPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class VirtualizingStackPanelExtensions
         return builder.WithValue(PropertyMetadata.VirtualizingStackPanel_Orientation, Avalonia.Controls.VirtualizingStackPanel.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -304,7 +294,6 @@ public static partial class VirtualizingStackPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/> literal value for hot reload builds.
@@ -351,8 +340,6 @@ public static partial class VirtualizingStackPanelExtensions
         return builder.WithBinding(PropertyMetadata.VirtualizingStackPanel_AreHorizontalSnapPointsRegular, Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/> value on a referenced control.
@@ -399,7 +386,6 @@ public static partial class VirtualizingStackPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty
 
     /// <summary>
@@ -546,7 +532,6 @@ public static partial class VirtualizingStackPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class VirtualizingStackPanelExtensions
         return builder.WithBinding(PropertyMetadata.VirtualizingStackPanel_AreVerticalSnapPointsRegular, Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class VirtualizingStackPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty
 
     /// <summary>
@@ -836,7 +818,6 @@ public static partial class VirtualizingStackPanelExtensions
     {
         return obj.GetObservable(Avalonia.Controls.VirtualizingStackPanel.HorizontalSnapPointsChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -879,7 +860,6 @@ public static partial class VirtualizingStackPanelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.VirtualizingStackPanel.VerticalSnapPointsChangedEvent
 
@@ -929,7 +909,6 @@ public static partial class VirtualizingStackPanelExtensions
     {
         return obj.GetObservable(Avalonia.Controls.VirtualizingStackPanel.VerticalSnapPointsChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -972,7 +951,6 @@ public static partial class VirtualizingStackPanelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.VirtualizingStackPanel.HorizontalSnapPointsChanged
 
@@ -1007,7 +985,6 @@ public static partial class VirtualizingStackPanelExtensions
                 h => obj.HorizontalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1029,7 +1006,6 @@ public static partial class VirtualizingStackPanelExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.VirtualizingStackPanel.VerticalSnapPointsChanged
 
@@ -1064,7 +1040,6 @@ public static partial class VirtualizingStackPanelExtensions
                 h => obj.VerticalSnapPointsChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1086,5 +1061,4 @@ public static partial class VirtualizingStackPanelExtensions
         }));
     }
 
-#endif
 }

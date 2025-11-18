@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Layout.NonVirtualizingStackLayout"/> class style setters extension methods.
 /// </summary>
 public static partial class NonVirtualizingStackLayoutSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
@@ -20,7 +17,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNonVirtualizingStackLayoutOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    public static StyleBuilder SetNonVirtualizingStackLayoutOrientation(this StyleBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNonVirtualizingStackLayoutOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    public static KeyFrameBuilder SetNonVirtualizingStackLayoutOrientation(this KeyFrameBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         });
     }
 
-#endif
     // Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNonVirtualizingStackLayoutOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static StyleBuilder SetNonVirtualizingStackLayoutOrientation(this StyleBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNonVirtualizingStackLayoutOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static KeyFrameBuilder SetNonVirtualizingStackLayoutOrientation(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNonVirtualizingStackLayoutOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNonVirtualizingStackLayoutOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNonVirtualizingStackLayoutOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNonVirtualizingStackLayoutOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.OrientationProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
@@ -185,7 +176,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNonVirtualizingStackLayoutSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetNonVirtualizingStackLayoutSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNonVirtualizingStackLayoutSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetNonVirtualizingStackLayoutSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         });
     }
 
-#endif
     // Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNonVirtualizingStackLayoutSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetNonVirtualizingStackLayoutSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNonVirtualizingStackLayoutSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetNonVirtualizingStackLayoutSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetNonVirtualizingStackLayoutSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetNonVirtualizingStackLayoutSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class NonVirtualizingStackLayoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetNonVirtualizingStackLayoutSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetNonVirtualizingStackLayoutSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class NonVirtualizingStackLayoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Layout.NonVirtualizingStackLayout.SpacingProperty"/>.
     /// </summary>

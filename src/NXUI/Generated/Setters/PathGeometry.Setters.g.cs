@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.PathGeometry"/> class style setters extension methods.
 /// </summary>
 public static partial class PathGeometrySetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
@@ -20,7 +17,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathGeometryFigures(this ElementBuilder<Style> builder, Avalonia.Media.PathFigures value)
+    public static StyleBuilder SetPathGeometryFigures(this StyleBuilder builder, Avalonia.Media.PathFigures value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathGeometryFigures(this ElementBuilder<KeyFrame> builder, Avalonia.Media.PathFigures value)
+    public static KeyFrameBuilder SetPathGeometryFigures(this KeyFrameBuilder builder, Avalonia.Media.PathFigures value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class PathGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.PathGeometry.FiguresProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class PathGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathGeometryFigures(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.PathFigures> observable)
+    public static StyleBuilder SetPathGeometryFigures(this StyleBuilder builder, IObservable<Avalonia.Media.PathFigures> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathGeometryFigures(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.PathFigures> observable)
+    public static KeyFrameBuilder SetPathGeometryFigures(this KeyFrameBuilder builder, IObservable<Avalonia.Media.PathFigures> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class PathGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class PathGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FiguresProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathGeometryFigures(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathGeometryFigures(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathGeometryFigures(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathGeometryFigures(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class PathGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class PathGeometrySetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
@@ -185,7 +176,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathGeometryFillRule(this ElementBuilder<Style> builder, Avalonia.Media.FillRule value)
+    public static StyleBuilder SetPathGeometryFillRule(this StyleBuilder builder, Avalonia.Media.FillRule value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathGeometryFillRule(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FillRule value)
+    public static KeyFrameBuilder SetPathGeometryFillRule(this KeyFrameBuilder builder, Avalonia.Media.FillRule value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class PathGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.PathGeometry.FillRuleProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class PathGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathGeometryFillRule(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FillRule> observable)
+    public static StyleBuilder SetPathGeometryFillRule(this StyleBuilder builder, IObservable<Avalonia.Media.FillRule> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathGeometryFillRule(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FillRule> observable)
+    public static KeyFrameBuilder SetPathGeometryFillRule(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FillRule> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class PathGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class PathGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PathGeometry.FillRuleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPathGeometryFillRule(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPathGeometryFillRule(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class PathGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPathGeometryFillRule(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPathGeometryFillRule(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class PathGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/>.
     /// </summary>

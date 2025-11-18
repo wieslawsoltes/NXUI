@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.SkewTransform"/> class property extension methods.
 /// </summary>
 public static partial class SkewTransformExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class SkewTransformExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.SkewTransform> AngleX(this ElementBuilder<Avalonia.Media.SkewTransform> builder, System.Double value)
+    public static SkewTransformBuilder AngleX(this SkewTransformBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.SkewTransform_AngleX, Avalonia.Media.SkewTransform.AngleXProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class SkewTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.SkewTransform> AngleX(
-        this ElementBuilder<Avalonia.Media.SkewTransform> builder,
+    public static SkewTransformBuilder AngleX(
+        this SkewTransformBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class SkewTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.SkewTransform> AngleX(
-        this ElementBuilder<Avalonia.Media.SkewTransform> builder,
+    public static SkewTransformBuilder AngleX(
+        this SkewTransformBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class SkewTransformExtensions
         return builder.WithBinding(PropertyMetadata.SkewTransform_AngleX, Avalonia.Media.SkewTransform.AngleXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.SkewTransform.AngleXProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SkewTransformExtensions
         return elementRef.SetBinding(Avalonia.Media.SkewTransform.AngleXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.SkewTransform.AngleXProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class SkewTransformExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class SkewTransformExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.SkewTransform> AngleY(this ElementBuilder<Avalonia.Media.SkewTransform> builder, System.Double value)
+    public static SkewTransformBuilder AngleY(this SkewTransformBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.SkewTransform_AngleY, Avalonia.Media.SkewTransform.AngleYProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class SkewTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.SkewTransform> AngleY(
-        this ElementBuilder<Avalonia.Media.SkewTransform> builder,
+    public static SkewTransformBuilder AngleY(
+        this SkewTransformBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class SkewTransformExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.SkewTransform> AngleY(
-        this ElementBuilder<Avalonia.Media.SkewTransform> builder,
+    public static SkewTransformBuilder AngleY(
+        this SkewTransformBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class SkewTransformExtensions
         return builder.WithBinding(PropertyMetadata.SkewTransform_AngleY, Avalonia.Media.SkewTransform.AngleYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.SkewTransform.AngleYProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class SkewTransformExtensions
         return elementRef.SetBinding(Avalonia.Media.SkewTransform.AngleYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.SkewTransform.AngleYProperty
 
     /// <summary>

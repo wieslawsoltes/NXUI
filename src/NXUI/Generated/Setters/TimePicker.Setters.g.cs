@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TimePicker"/> class style setters extension methods.
 /// </summary>
 public static partial class TimePickerSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerMinuteIncrement(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetTimePickerMinuteIncrement(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerMinuteIncrement(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetTimePickerMinuteIncrement(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TimePicker.MinuteIncrementProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.MinuteIncrementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerMinuteIncrement(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetTimePickerMinuteIncrement(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerMinuteIncrement(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetTimePickerMinuteIncrement(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.MinuteIncrementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerMinuteIncrement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerMinuteIncrement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerMinuteIncrement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerMinuteIncrement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TimePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerSecondIncrement(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetTimePickerSecondIncrement(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerSecondIncrement(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetTimePickerSecondIncrement(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TimePicker.SecondIncrementProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.SecondIncrementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerSecondIncrement(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetTimePickerSecondIncrement(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerSecondIncrement(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetTimePickerSecondIncrement(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.SecondIncrementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerSecondIncrement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerSecondIncrement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerSecondIncrement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerSecondIncrement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TimePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerClockIdentifier(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetTimePickerClockIdentifier(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerClockIdentifier(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetTimePickerClockIdentifier(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TimePicker.ClockIdentifierProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.ClockIdentifierProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerClockIdentifier(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetTimePickerClockIdentifier(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerClockIdentifier(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetTimePickerClockIdentifier(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.ClockIdentifierProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerClockIdentifier(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerClockIdentifier(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerClockIdentifier(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerClockIdentifier(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TimePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerUseSeconds(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTimePickerUseSeconds(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerUseSeconds(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTimePickerUseSeconds(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TimePicker.UseSecondsProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.UseSecondsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerUseSeconds(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTimePickerUseSeconds(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerUseSeconds(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTimePickerUseSeconds(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.UseSecondsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerUseSeconds(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerUseSeconds(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerUseSeconds(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerUseSeconds(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TimePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerSelectedTime(this ElementBuilder<Style> builder, System.Nullable<System.TimeSpan> value)
+    public static StyleBuilder SetTimePickerSelectedTime(this StyleBuilder builder, System.Nullable<System.TimeSpan> value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerSelectedTime(this ElementBuilder<KeyFrame> builder, System.Nullable<System.TimeSpan> value)
+    public static KeyFrameBuilder SetTimePickerSelectedTime(this KeyFrameBuilder builder, System.Nullable<System.TimeSpan> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TimePicker.SelectedTimeProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.SelectedTimeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerSelectedTime(this ElementBuilder<Style> builder, IObservable<System.Nullable<System.TimeSpan>> observable)
+    public static StyleBuilder SetTimePickerSelectedTime(this StyleBuilder builder, IObservable<System.Nullable<System.TimeSpan>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerSelectedTime(this ElementBuilder<KeyFrame> builder, IObservable<System.Nullable<System.TimeSpan>> observable)
+    public static KeyFrameBuilder SetTimePickerSelectedTime(this KeyFrameBuilder builder, IObservable<System.Nullable<System.TimeSpan>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TimePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TimePicker.SelectedTimeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTimePickerSelectedTime(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTimePickerSelectedTime(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TimePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTimePickerSelectedTime(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTimePickerSelectedTime(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TimePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/>.
     /// </summary>

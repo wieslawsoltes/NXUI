@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.CalendarDatePicker"/> class style setters extension methods.
 /// </summary>
 public static partial class CalendarDatePickerSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/>.
@@ -20,7 +17,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDate(this ElementBuilder<Style> builder, System.DateTime value)
+    public static StyleBuilder SetCalendarDatePickerDisplayDate(this StyleBuilder builder, System.DateTime value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDate(this ElementBuilder<KeyFrame> builder, System.DateTime value)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDate(this KeyFrameBuilder builder, System.DateTime value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.DisplayDateProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDate(this ElementBuilder<Style> builder, IObservable<System.DateTime> observable)
+    public static StyleBuilder SetCalendarDatePickerDisplayDate(this StyleBuilder builder, IObservable<System.DateTime> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDate(this ElementBuilder<KeyFrame> builder, IObservable<System.DateTime> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDate(this KeyFrameBuilder builder, IObservable<System.DateTime> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerDisplayDate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/>.
@@ -185,7 +176,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDateStart(this ElementBuilder<Style> builder, System.Nullable<System.DateTime> value)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateStart(this StyleBuilder builder, System.Nullable<System.DateTime> value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDateStart(this ElementBuilder<KeyFrame> builder, System.Nullable<System.DateTime> value)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateStart(this KeyFrameBuilder builder, System.Nullable<System.DateTime> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDateStart(this ElementBuilder<Style> builder, IObservable<System.Nullable<System.DateTime>> observable)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateStart(this StyleBuilder builder, IObservable<System.Nullable<System.DateTime>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDateStart(this ElementBuilder<KeyFrame> builder, IObservable<System.Nullable<System.DateTime>> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateStart(this KeyFrameBuilder builder, IObservable<System.Nullable<System.DateTime>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDateStart(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateStart(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDateStart(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateStart(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/>.
@@ -350,7 +335,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDateEnd(this ElementBuilder<Style> builder, System.Nullable<System.DateTime> value)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateEnd(this StyleBuilder builder, System.Nullable<System.DateTime> value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDateEnd(this ElementBuilder<KeyFrame> builder, System.Nullable<System.DateTime> value)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateEnd(this KeyFrameBuilder builder, System.Nullable<System.DateTime> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDateEnd(this ElementBuilder<Style> builder, IObservable<System.Nullable<System.DateTime>> observable)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateEnd(this StyleBuilder builder, IObservable<System.Nullable<System.DateTime>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDateEnd(this ElementBuilder<KeyFrame> builder, IObservable<System.Nullable<System.DateTime>> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateEnd(this KeyFrameBuilder builder, IObservable<System.Nullable<System.DateTime>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerDisplayDateEnd(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerDisplayDateEnd(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerDisplayDateEnd(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerDisplayDateEnd(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/>.
@@ -515,7 +494,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerFirstDayOfWeek(this ElementBuilder<Style> builder, System.DayOfWeek value)
+    public static StyleBuilder SetCalendarDatePickerFirstDayOfWeek(this StyleBuilder builder, System.DayOfWeek value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerFirstDayOfWeek(this ElementBuilder<KeyFrame> builder, System.DayOfWeek value)
+    public static KeyFrameBuilder SetCalendarDatePickerFirstDayOfWeek(this KeyFrameBuilder builder, System.DayOfWeek value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerFirstDayOfWeek(this ElementBuilder<Style> builder, IObservable<System.DayOfWeek> observable)
+    public static StyleBuilder SetCalendarDatePickerFirstDayOfWeek(this StyleBuilder builder, IObservable<System.DayOfWeek> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerFirstDayOfWeek(this ElementBuilder<KeyFrame> builder, IObservable<System.DayOfWeek> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerFirstDayOfWeek(this KeyFrameBuilder builder, IObservable<System.DayOfWeek> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerFirstDayOfWeek(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerFirstDayOfWeek(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerFirstDayOfWeek(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerFirstDayOfWeek(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/>.
@@ -680,7 +653,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerIsDropDownOpen(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetCalendarDatePickerIsDropDownOpen(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerIsDropDownOpen(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetCalendarDatePickerIsDropDownOpen(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerIsDropDownOpen(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetCalendarDatePickerIsDropDownOpen(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerIsDropDownOpen(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerIsDropDownOpen(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerIsDropDownOpen(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerIsDropDownOpen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerIsDropDownOpen(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerIsDropDownOpen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/>.
@@ -845,7 +812,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerIsTodayHighlighted(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetCalendarDatePickerIsTodayHighlighted(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerIsTodayHighlighted(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetCalendarDatePickerIsTodayHighlighted(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerIsTodayHighlighted(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetCalendarDatePickerIsTodayHighlighted(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerIsTodayHighlighted(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerIsTodayHighlighted(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerIsTodayHighlighted(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerIsTodayHighlighted(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerIsTodayHighlighted(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerIsTodayHighlighted(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerSelectedDate(this ElementBuilder<Style> builder, System.Nullable<System.DateTime> value)
+    public static StyleBuilder SetCalendarDatePickerSelectedDate(this StyleBuilder builder, System.Nullable<System.DateTime> value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerSelectedDate(this ElementBuilder<KeyFrame> builder, System.Nullable<System.DateTime> value)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDate(this KeyFrameBuilder builder, System.Nullable<System.DateTime> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.SelectedDateProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerSelectedDate(this ElementBuilder<Style> builder, IObservable<System.Nullable<System.DateTime>> observable)
+    public static StyleBuilder SetCalendarDatePickerSelectedDate(this StyleBuilder builder, IObservable<System.Nullable<System.DateTime>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerSelectedDate(this ElementBuilder<KeyFrame> builder, IObservable<System.Nullable<System.DateTime>> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDate(this KeyFrameBuilder builder, IObservable<System.Nullable<System.DateTime>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerSelectedDate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerSelectedDate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerSelectedDate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerSelectedDateFormat(this ElementBuilder<Style> builder, Avalonia.Controls.CalendarDatePickerFormat value)
+    public static StyleBuilder SetCalendarDatePickerSelectedDateFormat(this StyleBuilder builder, Avalonia.Controls.CalendarDatePickerFormat value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerSelectedDateFormat(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.CalendarDatePickerFormat value)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDateFormat(this KeyFrameBuilder builder, Avalonia.Controls.CalendarDatePickerFormat value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerSelectedDateFormat(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.CalendarDatePickerFormat> observable)
+    public static StyleBuilder SetCalendarDatePickerSelectedDateFormat(this StyleBuilder builder, IObservable<Avalonia.Controls.CalendarDatePickerFormat> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerSelectedDateFormat(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.CalendarDatePickerFormat> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDateFormat(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.CalendarDatePickerFormat> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerSelectedDateFormat(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerSelectedDateFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerSelectedDateFormat(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerSelectedDateFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerCustomDateFormatString(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetCalendarDatePickerCustomDateFormatString(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerCustomDateFormatString(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetCalendarDatePickerCustomDateFormatString(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerCustomDateFormatString(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetCalendarDatePickerCustomDateFormatString(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerCustomDateFormatString(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerCustomDateFormatString(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerCustomDateFormatString(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerCustomDateFormatString(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerCustomDateFormatString(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerCustomDateFormatString(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerText(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetCalendarDatePickerText(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerText(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetCalendarDatePickerText(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.TextProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.TextProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerText(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetCalendarDatePickerText(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerText(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerText(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.TextProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerText(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerText(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerWatermark(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetCalendarDatePickerWatermark(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerWatermark(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetCalendarDatePickerWatermark(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.WatermarkProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerWatermark(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetCalendarDatePickerWatermark(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerWatermark(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerWatermark(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerWatermark(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerWatermark(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerUseFloatingWatermark(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetCalendarDatePickerUseFloatingWatermark(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerUseFloatingWatermark(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingWatermark(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerUseFloatingWatermark(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetCalendarDatePickerUseFloatingWatermark(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerUseFloatingWatermark(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingWatermark(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerUseFloatingWatermark(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerUseFloatingWatermark(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerUseFloatingWatermark(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerUseFloatingWatermark(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerHorizontalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static StyleBuilder SetCalendarDatePickerHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.HorizontalAlignment value)
+    public static KeyFrameBuilder SetCalendarDatePickerHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Layout.HorizontalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerHorizontalContentAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static StyleBuilder SetCalendarDatePickerHorizontalContentAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerHorizontalContentAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.HorizontalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerHorizontalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerHorizontalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerHorizontalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerHorizontalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/>.
     /// </summary>
@@ -2157,7 +2077,6 @@ public static partial class CalendarDatePickerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/>.
@@ -2165,7 +2084,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerVerticalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Layout.VerticalAlignment value)
+    public static StyleBuilder SetCalendarDatePickerVerticalContentAlignment(this StyleBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -2179,7 +2098,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.VerticalAlignment value)
+    public static KeyFrameBuilder SetCalendarDatePickerVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Layout.VerticalAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2187,7 +2106,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -2213,7 +2131,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> using an observable source.
@@ -2221,7 +2138,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerVerticalContentAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static StyleBuilder SetCalendarDatePickerVerticalContentAlignment(this StyleBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2235,7 +2152,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
+    public static KeyFrameBuilder SetCalendarDatePickerVerticalContentAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.VerticalAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2243,7 +2160,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/>.
     /// </summary>
@@ -2267,7 +2183,6 @@ public static partial class CalendarDatePickerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> using a binding.
@@ -2275,7 +2190,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetCalendarDatePickerVerticalContentAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetCalendarDatePickerVerticalContentAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2289,7 +2204,7 @@ public static partial class CalendarDatePickerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetCalendarDatePickerVerticalContentAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetCalendarDatePickerVerticalContentAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2297,7 +2212,6 @@ public static partial class CalendarDatePickerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/>.
     /// </summary>

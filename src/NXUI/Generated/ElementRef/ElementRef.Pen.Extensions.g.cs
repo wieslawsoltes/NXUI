@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.Pen"/>.
 /// </summary>
 public static partial class PenElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Pen.BrushProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class PenElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Pen.BrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Pen.ThicknessProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class PenElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Pen.ThicknessProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Pen.DashStyleProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class PenElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Pen.DashStyleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Pen.LineCapProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class PenElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Pen.LineCapProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Pen.LineJoinProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class PenElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Pen.LineJoinProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class PenElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Pen.MiterLimitProperty);
     }
 
-#endif
 }

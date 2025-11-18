@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.DataGridDetailsPresenter"/>.
 /// </summary>
 public static partial class DataGridDetailsPresenterElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class DataGridDetailsPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty);
     }
 
-#endif
 }

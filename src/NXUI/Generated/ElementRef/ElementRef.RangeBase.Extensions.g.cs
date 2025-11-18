@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.RangeBase"/>.
 /// </summary>
 public static partial class RangeBaseElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class RangeBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.RangeBase.MinimumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class RangeBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.RangeBase.MaximumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class RangeBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.RangeBase.ValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class RangeBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class RangeBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.PathGeometry"/> class property extension methods.
 /// </summary>
 public static partial class PathGeometryExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PathGeometryExtensions
         return builder.WithBinding(PropertyMetadata.PathGeometry_Figures, Avalonia.Media.PathGeometry.FiguresProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathGeometry.FiguresProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PathGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.PathGeometry.FiguresProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PathGeometry.FiguresProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class PathGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class PathGeometryExtensions
         return builder.WithBinding(PropertyMetadata.PathGeometry_FillRule, Avalonia.Media.PathGeometry.FillRuleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class PathGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.PathGeometry.FillRuleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PathGeometry.FillRuleProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class PathGeometryExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class PathGeometryExtensions
         return builder.WithValue(PropertyMetadata.PathGeometry_FillRule, Avalonia.Media.PathGeometry.FillRuleProperty, Avalonia.Media.FillRule.EvenOdd);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.EvenOdd"/>.
@@ -520,7 +508,6 @@ public static partial class PathGeometryExtensions
         obj[Avalonia.Media.PathGeometry.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class PathGeometryExtensions
         return builder.WithValue(PropertyMetadata.PathGeometry_FillRule, Avalonia.Media.PathGeometry.FillRuleProperty, Avalonia.Media.FillRule.NonZero);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathGeometry.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.NonZero"/>.

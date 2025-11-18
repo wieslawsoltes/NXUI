@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Expander"/> class property extension methods.
 /// </summary>
 public static partial class ExpanderExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ExpanderExtensions
         return builder.WithBinding(PropertyMetadata.Expander_ContentTransition, Avalonia.Controls.Expander.ContentTransitionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ExpanderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Expander.ContentTransitionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Expander.ContentTransitionProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ExpanderExtensions
         return builder.WithBinding(PropertyMetadata.Expander_ExpandDirection, Avalonia.Controls.Expander.ExpandDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ExpanderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Expander.ExpandDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Expander.ExpandDirectionProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ExpanderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ExpanderExtensions
         return builder.WithValue(PropertyMetadata.Expander_ExpandDirection, Avalonia.Controls.Expander.ExpandDirectionProperty, Avalonia.Controls.ExpandDirection.Down);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Down"/>.
@@ -520,7 +508,6 @@ public static partial class ExpanderExtensions
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Down;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ExpanderExtensions
         return builder.WithValue(PropertyMetadata.Expander_ExpandDirection, Avalonia.Controls.Expander.ExpandDirectionProperty, Avalonia.Controls.ExpandDirection.Up);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Up"/>.
@@ -545,7 +531,6 @@ public static partial class ExpanderExtensions
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Up;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class ExpanderExtensions
         return builder.WithValue(PropertyMetadata.Expander_ExpandDirection, Avalonia.Controls.Expander.ExpandDirectionProperty, Avalonia.Controls.ExpandDirection.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Left"/>.
@@ -570,7 +554,6 @@ public static partial class ExpanderExtensions
         obj[Avalonia.Controls.Expander.ExpandDirectionProperty] = Avalonia.Controls.ExpandDirection.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class ExpanderExtensions
         return builder.WithValue(PropertyMetadata.Expander_ExpandDirection, Avalonia.Controls.Expander.ExpandDirectionProperty, Avalonia.Controls.ExpandDirection.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> property value to <see cref="Avalonia.Controls.ExpandDirection.Right"/>.
@@ -596,7 +578,6 @@ public static partial class ExpanderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class ExpanderExtensions
         return builder.WithBinding(PropertyMetadata.Expander_IsExpanded, Avalonia.Controls.Expander.IsExpandedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class ExpanderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Expander.IsExpandedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Expander.IsExpandedProperty
 
     /// <summary>
@@ -886,7 +864,6 @@ public static partial class ExpanderExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Expander.CollapsedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -929,7 +906,6 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Expander.CollapsingEvent
 
@@ -979,7 +955,6 @@ public static partial class ExpanderExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Expander.CollapsingEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1022,7 +997,6 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Expander.ExpandedEvent
 
@@ -1072,7 +1046,6 @@ public static partial class ExpanderExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Expander.ExpandedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1115,7 +1088,6 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Expander.ExpandingEvent
 
@@ -1165,7 +1137,6 @@ public static partial class ExpanderExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Expander.ExpandingEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1208,7 +1179,6 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Expander.Collapsed
 
@@ -1243,7 +1213,6 @@ public static partial class ExpanderExtensions
                 h => obj.Collapsed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1265,7 +1234,6 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Expander.Collapsing
 
@@ -1300,7 +1268,6 @@ public static partial class ExpanderExtensions
                 h => obj.Collapsing -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1322,7 +1289,6 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Expander.Expanded
 
@@ -1357,7 +1323,6 @@ public static partial class ExpanderExtensions
                 h => obj.Expanded -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1379,7 +1344,6 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Expander.Expanding
 
@@ -1414,7 +1378,6 @@ public static partial class ExpanderExtensions
                 h => obj.Expanding -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1436,5 +1399,4 @@ public static partial class ExpanderExtensions
         }));
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/> class property extension methods.
 /// </summary>
 public static partial class PopupFlyoutBaseExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class PopupFlyoutBaseExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.Pointer);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Pointer"/>.
@@ -278,7 +270,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.Pointer;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Bottom"/>.
@@ -303,7 +293,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Right"/>.
@@ -328,7 +316,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Left"/>.
@@ -353,7 +339,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -365,7 +350,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Top"/>.
@@ -378,7 +362,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -390,7 +373,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Center"/>.
@@ -403,7 +385,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -415,7 +396,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.AnchorAndGravity);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.AnchorAndGravity"/>.
@@ -428,7 +408,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.AnchorAndGravity;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -440,7 +419,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft"/>.
@@ -453,7 +431,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -465,7 +442,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.TopEdgeAlignedRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.TopEdgeAlignedRight"/>.
@@ -478,7 +454,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.TopEdgeAlignedRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -490,7 +465,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft"/>.
@@ -503,7 +477,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -515,7 +488,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight"/>.
@@ -528,7 +500,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.BottomEdgeAlignedRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -540,7 +511,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop"/>.
@@ -553,7 +523,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -565,7 +534,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom"/>.
@@ -578,7 +546,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.LeftEdgeAlignedBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -590,7 +557,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.RightEdgeAlignedTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedTop"/>.
@@ -603,7 +569,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -615,7 +580,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom"/>.
@@ -628,7 +592,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty] = Avalonia.Controls.PlacementMode.RightEdgeAlignedBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> enum value for hot reload builds.
@@ -640,7 +603,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_Placement, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty, Avalonia.Controls.PlacementMode.Custom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> property value to <see cref="Avalonia.Controls.PlacementMode.Custom"/>.
@@ -654,7 +616,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/> literal value for hot reload builds.
@@ -701,8 +662,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_HorizontalOffset, Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/> value on a referenced control.
@@ -749,7 +708,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty
 
     /// <summary>
@@ -896,7 +854,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/> literal value for hot reload builds.
@@ -943,8 +900,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_VerticalOffset, Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/> value on a referenced control.
@@ -991,7 +946,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty
 
     /// <summary>
@@ -1138,7 +1092,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> literal value for hot reload builds.
@@ -1185,8 +1138,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> value on a referenced control.
@@ -1233,7 +1184,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty
 
     /// <summary>
@@ -1379,7 +1329,6 @@ public static partial class PopupFlyoutBaseExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1391,7 +1340,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None"/>.
@@ -1404,7 +1352,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1416,7 +1363,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top"/>.
@@ -1429,7 +1375,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1441,7 +1386,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom"/>.
@@ -1454,7 +1398,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1466,7 +1409,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask"/>.
@@ -1479,7 +1421,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.VerticalMask;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1491,7 +1432,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left"/>.
@@ -1504,7 +1444,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1516,7 +1455,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft"/>.
@@ -1529,7 +1467,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1541,7 +1478,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft"/>.
@@ -1554,7 +1490,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1566,7 +1501,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right"/>.
@@ -1579,7 +1513,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1591,7 +1524,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight"/>.
@@ -1604,7 +1536,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.TopRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1616,7 +1547,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight"/>.
@@ -1629,7 +1559,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.BottomRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1641,7 +1570,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask"/>.
@@ -1654,7 +1582,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.HorizontalMask;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> enum value for hot reload builds.
@@ -1666,7 +1593,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementAnchor, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor.AllMask"/>.
@@ -1680,7 +1606,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> literal value for hot reload builds.
@@ -1727,8 +1652,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> value on a referenced control.
@@ -1775,7 +1698,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty
 
     /// <summary>
@@ -1921,7 +1843,6 @@ public static partial class PopupFlyoutBaseExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -1933,7 +1854,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None"/>.
@@ -1946,7 +1866,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -1958,7 +1877,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top"/>.
@@ -1971,7 +1889,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -1983,7 +1900,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom"/>.
@@ -1996,7 +1912,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2008,7 +1923,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left"/>.
@@ -2021,7 +1935,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2033,7 +1946,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft"/>.
@@ -2046,7 +1958,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2058,7 +1969,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft"/>.
@@ -2071,7 +1981,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2083,7 +1992,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right"/>.
@@ -2096,7 +2004,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2108,7 +2015,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight"/>.
@@ -2121,7 +2027,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.TopRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> enum value for hot reload builds.
@@ -2133,7 +2038,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementGravity, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupGravity.BottomRight"/>.
@@ -2147,7 +2051,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/> literal value for hot reload builds.
@@ -2194,8 +2097,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_CustomPopupPlacementCallback, Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/> value on a referenced control.
@@ -2242,7 +2143,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty
 
     /// <summary>
@@ -2389,7 +2289,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> literal value for hot reload builds.
@@ -2436,8 +2335,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_ShowMode, Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> value on a referenced control.
@@ -2484,7 +2381,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty
 
     /// <summary>
@@ -2630,7 +2526,6 @@ public static partial class PopupFlyoutBaseExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> enum value for hot reload builds.
@@ -2642,7 +2537,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_ShowMode, Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty, Avalonia.Controls.FlyoutShowMode.Standard);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.Standard"/>.
@@ -2655,7 +2549,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.Standard;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> enum value for hot reload builds.
@@ -2667,7 +2560,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_ShowMode, Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty, Avalonia.Controls.FlyoutShowMode.Transient);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.Transient"/>.
@@ -2680,7 +2572,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty] = Avalonia.Controls.FlyoutShowMode.Transient;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> enum value for hot reload builds.
@@ -2692,7 +2583,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_ShowMode, Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty, Avalonia.Controls.FlyoutShowMode.TransientWithDismissOnPointerMoveAway);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> property value to <see cref="Avalonia.Controls.FlyoutShowMode.TransientWithDismissOnPointerMoveAway"/>.
@@ -2706,7 +2596,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/> literal value for hot reload builds.
@@ -2753,8 +2642,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_OverlayDismissEventPassThrough, Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/> value on a referenced control.
@@ -2801,7 +2688,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty
 
     /// <summary>
@@ -2948,7 +2834,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/> literal value for hot reload builds.
@@ -2995,8 +2880,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_OverlayInputPassThroughElement, Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/> value on a referenced control.
@@ -3043,7 +2926,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty
 
     /// <summary>
@@ -3190,7 +3072,6 @@ public static partial class PopupFlyoutBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> literal value for hot reload builds.
@@ -3237,8 +3118,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithBinding(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> value on a referenced control.
@@ -3285,7 +3164,6 @@ public static partial class PopupFlyoutBaseExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty
 
     /// <summary>
@@ -3431,7 +3309,6 @@ public static partial class PopupFlyoutBaseExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3443,7 +3320,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None"/>.
@@ -3456,7 +3332,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3468,7 +3343,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX"/>.
@@ -3481,7 +3355,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideX;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3493,7 +3366,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY"/>.
@@ -3506,7 +3378,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.SlideY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3518,7 +3389,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX"/>.
@@ -3531,7 +3401,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipX;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3543,7 +3412,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY"/>.
@@ -3556,7 +3424,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.FlipY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3568,7 +3435,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX"/>.
@@ -3581,7 +3447,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeX;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3593,7 +3458,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY"/>.
@@ -3606,7 +3470,6 @@ public static partial class PopupFlyoutBaseExtensions
         obj[Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty] = Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.ResizeY;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> enum value for hot reload builds.
@@ -3618,7 +3481,6 @@ public static partial class PopupFlyoutBaseExtensions
         return builder.WithValue(PropertyMetadata.PopupFlyoutBase_PlacementConstraintAdjustment, Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> property value to <see cref="Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment.All"/>.

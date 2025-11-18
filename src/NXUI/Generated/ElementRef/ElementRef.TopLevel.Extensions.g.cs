@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TopLevel"/>.
 /// </summary>
 public static partial class TopLevelElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.ClientSizeProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.ClientSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.FrameSizeProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.FrameSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.PointerOverElementProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.PointerOverElementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.TransparencyLevelHintProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.TransparencyLevelHintProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.ActualTransparencyLevelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.TransparencyBackgroundFallbackProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.SystemBarColorProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.SystemBarColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class TopLevelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TopLevel.AutoSafeAreaPaddingProperty);
     }
 
-#endif
 }

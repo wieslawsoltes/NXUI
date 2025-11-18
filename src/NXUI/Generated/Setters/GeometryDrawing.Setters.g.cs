@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.GeometryDrawing"/> class style setters extension methods.
 /// </summary>
 public static partial class GeometryDrawingSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
@@ -20,7 +17,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingGeometry(this ElementBuilder<Style> builder, Avalonia.Media.Geometry value)
+    public static StyleBuilder SetGeometryDrawingGeometry(this StyleBuilder builder, Avalonia.Media.Geometry value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingGeometry(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Geometry value)
+    public static KeyFrameBuilder SetGeometryDrawingGeometry(this KeyFrameBuilder builder, Avalonia.Media.Geometry value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     // Avalonia.Media.GeometryDrawing.GeometryProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class GeometryDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingGeometry(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Geometry> observable)
+    public static StyleBuilder SetGeometryDrawingGeometry(this StyleBuilder builder, IObservable<Avalonia.Media.Geometry> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingGeometry(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Geometry> observable)
+    public static KeyFrameBuilder SetGeometryDrawingGeometry(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Geometry> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class GeometryDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.GeometryProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingGeometry(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGeometryDrawingGeometry(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingGeometry(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGeometryDrawingGeometry(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class GeometryDrawingSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
@@ -185,7 +176,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingBrush(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetGeometryDrawingBrush(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetGeometryDrawingBrush(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     // Avalonia.Media.GeometryDrawing.BrushProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class GeometryDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingBrush(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetGeometryDrawingBrush(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingBrush(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetGeometryDrawingBrush(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class GeometryDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.BrushProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingBrush(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGeometryDrawingBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGeometryDrawingBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class GeometryDrawingSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
@@ -350,7 +335,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingPen(this ElementBuilder<Style> builder, Avalonia.Media.IPen value)
+    public static StyleBuilder SetGeometryDrawingPen(this StyleBuilder builder, Avalonia.Media.IPen value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingPen(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IPen value)
+    public static KeyFrameBuilder SetGeometryDrawingPen(this KeyFrameBuilder builder, Avalonia.Media.IPen value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     // Avalonia.Media.GeometryDrawing.PenProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class GeometryDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingPen(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IPen> observable)
+    public static StyleBuilder SetGeometryDrawingPen(this StyleBuilder builder, IObservable<Avalonia.Media.IPen> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingPen(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IPen> observable)
+    public static KeyFrameBuilder SetGeometryDrawingPen(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IPen> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class GeometryDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryDrawingPen(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGeometryDrawingPen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class GeometryDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryDrawingPen(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGeometryDrawingPen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class GeometryDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/>.
     /// </summary>

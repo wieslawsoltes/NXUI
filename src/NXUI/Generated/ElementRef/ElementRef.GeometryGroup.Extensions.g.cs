@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.GeometryGroup"/>.
 /// </summary>
 public static partial class GeometryGroupElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class GeometryGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GeometryGroup.ChildrenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class GeometryGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GeometryGroup.FillRuleProperty);
     }
 
-#endif
 }

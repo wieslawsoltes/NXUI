@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Input.KeyBinding"/>.
 /// </summary>
 public static partial class KeyBindingElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.KeyBinding.CommandProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class KeyBindingElementRefExtensions
         return elementRef.Observe(Avalonia.Input.KeyBinding.CommandProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.KeyBinding.CommandParameterProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class KeyBindingElementRefExtensions
         return elementRef.Observe(Avalonia.Input.KeyBinding.CommandParameterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.KeyBinding.GestureProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class KeyBindingElementRefExtensions
         return elementRef.Observe(Avalonia.Input.KeyBinding.GestureProperty);
     }
 
-#endif
 }

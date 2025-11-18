@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.CalendarDatePicker"/> class property extension methods.
 /// </summary>
 public static partial class CalendarDatePickerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_DisplayDate, Avalonia.Controls.CalendarDatePicker.DisplayDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.DisplayDateProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_DisplayDateStart, Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_DisplayDateEnd, Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty
 
     /// <summary>
@@ -979,7 +961,6 @@ public static partial class CalendarDatePickerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -991,7 +972,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, System.DayOfWeek.Sunday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Sunday"/>.
@@ -1004,7 +984,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Sunday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -1016,7 +995,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, System.DayOfWeek.Monday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Monday"/>.
@@ -1029,7 +1007,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Monday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -1041,7 +1018,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, System.DayOfWeek.Tuesday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Tuesday"/>.
@@ -1054,7 +1030,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Tuesday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -1066,7 +1041,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, System.DayOfWeek.Wednesday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Wednesday"/>.
@@ -1079,7 +1053,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Wednesday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -1091,7 +1064,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, System.DayOfWeek.Thursday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Thursday"/>.
@@ -1104,7 +1076,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Thursday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -1116,7 +1087,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, System.DayOfWeek.Friday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Friday"/>.
@@ -1129,7 +1099,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty] = System.DayOfWeek.Friday;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> enum value for hot reload builds.
@@ -1141,7 +1110,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_FirstDayOfWeek, Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty, System.DayOfWeek.Saturday);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> property value to <see cref="System.DayOfWeek.Saturday"/>.
@@ -1155,7 +1123,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> literal value for hot reload builds.
@@ -1202,8 +1169,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_IsDropDownOpen, Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> value on a referenced control.
@@ -1250,7 +1215,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty
 
     /// <summary>
@@ -1397,7 +1361,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> literal value for hot reload builds.
@@ -1444,8 +1407,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_IsTodayHighlighted, Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> value on a referenced control.
@@ -1492,7 +1453,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty
 
     /// <summary>
@@ -1639,7 +1599,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> literal value for hot reload builds.
@@ -1686,8 +1645,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_SelectedDate, Avalonia.Controls.CalendarDatePicker.SelectedDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> value on a referenced control.
@@ -1734,7 +1691,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.SelectedDateProperty
 
     /// <summary>
@@ -1881,7 +1837,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> literal value for hot reload builds.
@@ -1928,8 +1883,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_SelectedDateFormat, Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> value on a referenced control.
@@ -1976,7 +1929,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty
 
     /// <summary>
@@ -2122,7 +2074,6 @@ public static partial class CalendarDatePickerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> enum value for hot reload builds.
@@ -2134,7 +2085,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_SelectedDateFormat, Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, Avalonia.Controls.CalendarDatePickerFormat.Long);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Long"/>.
@@ -2147,7 +2097,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Long;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> enum value for hot reload builds.
@@ -2159,7 +2108,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_SelectedDateFormat, Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, Avalonia.Controls.CalendarDatePickerFormat.Short);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Short"/>.
@@ -2172,7 +2120,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty] = Avalonia.Controls.CalendarDatePickerFormat.Short;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> enum value for hot reload builds.
@@ -2184,7 +2131,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_SelectedDateFormat, Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty, Avalonia.Controls.CalendarDatePickerFormat.Custom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> property value to <see cref="Avalonia.Controls.CalendarDatePickerFormat.Custom"/>.
@@ -2198,7 +2144,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> literal value for hot reload builds.
@@ -2245,8 +2190,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_CustomDateFormatString, Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> value on a referenced control.
@@ -2293,7 +2236,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty
 
     /// <summary>
@@ -2440,7 +2382,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> literal value for hot reload builds.
@@ -2487,8 +2428,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_Text, Avalonia.Controls.CalendarDatePicker.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> value on a referenced control.
@@ -2535,7 +2474,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.TextProperty
 
     /// <summary>
@@ -2682,7 +2620,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> literal value for hot reload builds.
@@ -2729,8 +2666,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_Watermark, Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> value on a referenced control.
@@ -2777,7 +2712,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.WatermarkProperty
 
     /// <summary>
@@ -2924,7 +2858,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> literal value for hot reload builds.
@@ -2971,8 +2904,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_UseFloatingWatermark, Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> value on a referenced control.
@@ -3019,7 +2950,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty
 
     /// <summary>
@@ -3166,7 +3096,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -3213,8 +3142,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_HorizontalContentAlignment, Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -3261,7 +3188,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -3407,7 +3333,6 @@ public static partial class CalendarDatePickerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3419,7 +3344,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_HorizontalContentAlignment, Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -3432,7 +3356,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3444,7 +3367,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_HorizontalContentAlignment, Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -3457,7 +3379,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3469,7 +3390,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_HorizontalContentAlignment, Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -3482,7 +3402,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3494,7 +3413,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_HorizontalContentAlignment, Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -3508,7 +3426,6 @@ public static partial class CalendarDatePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -3555,8 +3472,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithBinding(PropertyMetadata.CalendarDatePicker_VerticalContentAlignment, Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -3603,7 +3518,6 @@ public static partial class CalendarDatePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -3749,7 +3663,6 @@ public static partial class CalendarDatePickerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3761,7 +3674,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_VerticalContentAlignment, Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -3774,7 +3686,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3786,7 +3697,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_VerticalContentAlignment, Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -3799,7 +3709,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3811,7 +3720,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_VerticalContentAlignment, Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -3824,7 +3732,6 @@ public static partial class CalendarDatePickerExtensions
         obj[Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -3836,7 +3743,6 @@ public static partial class CalendarDatePickerExtensions
         return builder.WithValue(PropertyMetadata.CalendarDatePicker_VerticalContentAlignment, Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Image"/> class property extension methods.
 /// </summary>
 public static partial class ImageExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.SourceProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ImageExtensions
         return builder.WithBinding(PropertyMetadata.Image_Source, Avalonia.Controls.Image.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.SourceProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ImageExtensions
         return elementRef.SetBinding(Avalonia.Controls.Image.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Image.SourceProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ImageExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ImageExtensions
         return builder.WithBinding(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ImageExtensions
         return elementRef.SetBinding(Avalonia.Controls.Image.BlendModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Image.BlendModeProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ImageExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Unspecified);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Unspecified"/>.
@@ -520,7 +508,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Unspecified;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.SourceOver);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceOver"/>.
@@ -545,7 +531,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceOver;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Source);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Source"/>.
@@ -570,7 +554,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Source;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Destination);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Destination"/>.
@@ -595,7 +577,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Destination;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOver);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOver"/>.
@@ -620,7 +600,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOver;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.SourceIn);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceIn"/>.
@@ -645,7 +623,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceIn;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -657,7 +634,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.DestinationIn);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationIn"/>.
@@ -670,7 +646,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationIn;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -682,7 +657,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.SourceOut);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceOut"/>.
@@ -695,7 +669,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceOut;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -707,7 +680,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOut);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOut"/>.
@@ -720,7 +692,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationOut;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -732,7 +703,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.SourceAtop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SourceAtop"/>.
@@ -745,7 +715,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SourceAtop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -757,7 +726,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.DestinationAtop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.DestinationAtop"/>.
@@ -770,7 +738,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.DestinationAtop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -782,7 +749,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Xor);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Xor"/>.
@@ -795,7 +761,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Xor;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -807,7 +772,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Plus);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Plus"/>.
@@ -820,7 +784,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Plus;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -832,7 +795,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Screen);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Screen"/>.
@@ -845,7 +807,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Screen;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -857,7 +818,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Overlay);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Overlay"/>.
@@ -870,7 +830,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Overlay;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -882,7 +841,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Darken);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Darken"/>.
@@ -895,7 +853,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Darken;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -907,7 +864,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Lighten);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Lighten"/>.
@@ -920,7 +876,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Lighten;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -932,7 +887,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.ColorDodge);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.ColorDodge"/>.
@@ -945,7 +899,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.ColorDodge;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -957,7 +910,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.ColorBurn);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.ColorBurn"/>.
@@ -970,7 +922,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.ColorBurn;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -982,7 +933,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.HardLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.HardLight"/>.
@@ -995,7 +945,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.HardLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1007,7 +956,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.SoftLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.SoftLight"/>.
@@ -1020,7 +968,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.SoftLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1032,7 +979,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Difference);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Difference"/>.
@@ -1045,7 +991,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Difference;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1057,7 +1002,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Exclusion);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Exclusion"/>.
@@ -1070,7 +1014,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Exclusion;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1082,7 +1025,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Multiply);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Multiply"/>.
@@ -1095,7 +1037,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Multiply;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1107,7 +1048,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Hue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Hue"/>.
@@ -1120,7 +1060,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Hue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1132,7 +1071,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Saturation);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Saturation"/>.
@@ -1145,7 +1083,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Saturation;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1157,7 +1094,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Color);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Color"/>.
@@ -1170,7 +1106,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.BlendModeProperty] = Avalonia.Media.Imaging.BitmapBlendingMode.Color;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> enum value for hot reload builds.
@@ -1182,7 +1117,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_BlendMode, Avalonia.Controls.Image.BlendModeProperty, Avalonia.Media.Imaging.BitmapBlendingMode.Luminosity);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.BlendModeProperty"/> property value to <see cref="Avalonia.Media.Imaging.BitmapBlendingMode.Luminosity"/>.
@@ -1196,7 +1130,6 @@ public static partial class ImageExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> literal value for hot reload builds.
@@ -1243,8 +1176,6 @@ public static partial class ImageExtensions
         return builder.WithBinding(PropertyMetadata.Image_Stretch, Avalonia.Controls.Image.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> value on a referenced control.
@@ -1291,7 +1222,6 @@ public static partial class ImageExtensions
         return elementRef.SetBinding(Avalonia.Controls.Image.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Image.StretchProperty
 
     /// <summary>
@@ -1437,7 +1367,6 @@ public static partial class ImageExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
@@ -1449,7 +1378,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_Stretch, Avalonia.Controls.Image.StretchProperty, Avalonia.Media.Stretch.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
@@ -1462,7 +1390,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
@@ -1474,7 +1401,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_Stretch, Avalonia.Controls.Image.StretchProperty, Avalonia.Media.Stretch.Fill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Fill"/>.
@@ -1487,7 +1413,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.Fill;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
@@ -1499,7 +1424,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_Stretch, Avalonia.Controls.Image.StretchProperty, Avalonia.Media.Stretch.Uniform);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
@@ -1512,7 +1436,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchProperty"/> enum value for hot reload builds.
@@ -1524,7 +1447,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_Stretch, Avalonia.Controls.Image.StretchProperty, Avalonia.Media.Stretch.UniformToFill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.UniformToFill"/>.
@@ -1538,7 +1460,6 @@ public static partial class ImageExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> literal value for hot reload builds.
@@ -1585,8 +1506,6 @@ public static partial class ImageExtensions
         return builder.WithBinding(PropertyMetadata.Image_StretchDirection, Avalonia.Controls.Image.StretchDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> value on a referenced control.
@@ -1633,7 +1552,6 @@ public static partial class ImageExtensions
         return elementRef.SetBinding(Avalonia.Controls.Image.StretchDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Image.StretchDirectionProperty
 
     /// <summary>
@@ -1779,7 +1697,6 @@ public static partial class ImageExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> enum value for hot reload builds.
@@ -1791,7 +1708,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_StretchDirection, Avalonia.Controls.Image.StretchDirectionProperty, Avalonia.Media.StretchDirection.UpOnly);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.UpOnly"/>.
@@ -1804,7 +1720,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.StretchDirectionProperty] = Avalonia.Media.StretchDirection.UpOnly;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> enum value for hot reload builds.
@@ -1816,7 +1731,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_StretchDirection, Avalonia.Controls.Image.StretchDirectionProperty, Avalonia.Media.StretchDirection.DownOnly);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.DownOnly"/>.
@@ -1829,7 +1743,6 @@ public static partial class ImageExtensions
         obj[Avalonia.Controls.Image.StretchDirectionProperty] = Avalonia.Media.StretchDirection.DownOnly;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> enum value for hot reload builds.
@@ -1841,7 +1754,6 @@ public static partial class ImageExtensions
         return builder.WithValue(PropertyMetadata.Image_StretchDirection, Avalonia.Controls.Image.StretchDirectionProperty, Avalonia.Media.StretchDirection.Both);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.Both"/>.

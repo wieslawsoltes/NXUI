@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.NumericUpDown"/> class property extension methods.
 /// </summary>
 public static partial class NumericUpDownExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_AllowSpin, Avalonia.Controls.NumericUpDown.AllowSpinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.AllowSpinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.AllowSpinProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_ButtonSpinnerLocation, Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class NumericUpDownExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ButtonSpinnerLocation, Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty, Avalonia.Controls.Location.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Left"/>.
@@ -520,7 +508,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ButtonSpinnerLocation, Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty, Avalonia.Controls.Location.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Right"/>.
@@ -546,7 +532,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_ShowButtonSpinner, Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty
 
     /// <summary>
@@ -788,7 +770,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/> literal value for hot reload builds.
@@ -835,8 +816,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_ClipValueToMinMax, Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/> value on a referenced control.
@@ -883,7 +862,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty
 
     /// <summary>
@@ -1030,7 +1008,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/> literal value for hot reload builds.
@@ -1077,8 +1054,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_NumberFormat, Avalonia.Controls.NumericUpDown.NumberFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/> value on a referenced control.
@@ -1125,7 +1100,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.NumberFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.NumberFormatProperty
 
     /// <summary>
@@ -1272,7 +1246,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/> literal value for hot reload builds.
@@ -1319,8 +1292,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_FormatString, Avalonia.Controls.NumericUpDown.FormatStringProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/> value on a referenced control.
@@ -1367,7 +1338,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.FormatStringProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.FormatStringProperty
 
     /// <summary>
@@ -1514,7 +1484,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/> literal value for hot reload builds.
@@ -1561,8 +1530,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_Increment, Avalonia.Controls.NumericUpDown.IncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/> value on a referenced control.
@@ -1609,7 +1576,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.IncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.IncrementProperty
 
     /// <summary>
@@ -1756,7 +1722,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/> literal value for hot reload builds.
@@ -1803,8 +1768,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_IsReadOnly, Avalonia.Controls.NumericUpDown.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/> value on a referenced control.
@@ -1851,7 +1814,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.IsReadOnlyProperty
 
     /// <summary>
@@ -1998,7 +1960,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/> literal value for hot reload builds.
@@ -2045,8 +2006,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_Maximum, Avalonia.Controls.NumericUpDown.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/> value on a referenced control.
@@ -2093,7 +2052,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.MaximumProperty
 
     /// <summary>
@@ -2240,7 +2198,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/> literal value for hot reload builds.
@@ -2287,8 +2244,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_Minimum, Avalonia.Controls.NumericUpDown.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/> value on a referenced control.
@@ -2335,7 +2290,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.MinimumProperty
 
     /// <summary>
@@ -2482,7 +2436,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> literal value for hot reload builds.
@@ -2529,8 +2482,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> value on a referenced control.
@@ -2577,7 +2528,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty
 
     /// <summary>
@@ -2723,7 +2673,6 @@ public static partial class NumericUpDownExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2735,7 +2684,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.None"/>.
@@ -2748,7 +2696,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2760,7 +2707,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowLeadingWhite);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowLeadingWhite"/>.
@@ -2773,7 +2719,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowLeadingWhite;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2785,7 +2730,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowTrailingWhite);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowTrailingWhite"/>.
@@ -2798,7 +2742,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowTrailingWhite;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2810,7 +2753,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowLeadingSign);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowLeadingSign"/>.
@@ -2823,7 +2765,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowLeadingSign;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2835,7 +2776,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.Integer);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Integer"/>.
@@ -2848,7 +2788,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Integer;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2860,7 +2799,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowTrailingSign);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowTrailingSign"/>.
@@ -2873,7 +2811,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowTrailingSign;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2885,7 +2822,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowParentheses);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowParentheses"/>.
@@ -2898,7 +2834,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowParentheses;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2910,7 +2845,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowDecimalPoint);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowDecimalPoint"/>.
@@ -2923,7 +2857,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowDecimalPoint;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2935,7 +2868,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowThousands);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowThousands"/>.
@@ -2948,7 +2880,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowThousands;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2960,7 +2891,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.Number);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Number"/>.
@@ -2973,7 +2903,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Number;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -2985,7 +2914,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowExponent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowExponent"/>.
@@ -2998,7 +2926,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowExponent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3010,7 +2937,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.Float);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Float"/>.
@@ -3023,7 +2949,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Float;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3035,7 +2960,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowCurrencySymbol);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowCurrencySymbol"/>.
@@ -3048,7 +2972,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowCurrencySymbol;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3060,7 +2983,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.Currency);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Currency"/>.
@@ -3073,7 +2995,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Currency;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3085,7 +3006,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.Any);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.Any"/>.
@@ -3098,7 +3018,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.Any;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3110,7 +3029,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowHexSpecifier);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowHexSpecifier"/>.
@@ -3123,7 +3041,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowHexSpecifier;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3135,7 +3052,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.HexNumber);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.HexNumber"/>.
@@ -3148,7 +3064,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.HexNumber;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3160,7 +3075,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.AllowBinarySpecifier);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.AllowBinarySpecifier"/>.
@@ -3173,7 +3087,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty] = System.Globalization.NumberStyles.AllowBinarySpecifier;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> enum value for hot reload builds.
@@ -3185,7 +3098,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_ParsingNumberStyle, Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty, System.Globalization.NumberStyles.BinaryNumber);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> property value to <see cref="System.Globalization.NumberStyles.BinaryNumber"/>.
@@ -3199,7 +3111,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/> literal value for hot reload builds.
@@ -3246,8 +3157,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_Text, Avalonia.Controls.NumericUpDown.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/> value on a referenced control.
@@ -3294,7 +3203,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.TextProperty
 
     /// <summary>
@@ -3441,7 +3349,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/> literal value for hot reload builds.
@@ -3488,8 +3395,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_TextConverter, Avalonia.Controls.NumericUpDown.TextConverterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/> value on a referenced control.
@@ -3536,7 +3441,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.TextConverterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.TextConverterProperty
 
     /// <summary>
@@ -3683,7 +3587,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/> literal value for hot reload builds.
@@ -3730,8 +3633,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_Value, Avalonia.Controls.NumericUpDown.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/> value on a referenced control.
@@ -3778,7 +3679,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.ValueProperty
 
     /// <summary>
@@ -3925,7 +3825,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> literal value for hot reload builds.
@@ -3972,8 +3871,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_Watermark, Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> value on a referenced control.
@@ -4020,7 +3917,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.WatermarkProperty
 
     /// <summary>
@@ -4167,7 +4063,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -4214,8 +4109,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_HorizontalContentAlignment, Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -4262,7 +4155,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -4408,7 +4300,6 @@ public static partial class NumericUpDownExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4420,7 +4311,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_HorizontalContentAlignment, Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -4433,7 +4323,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4445,7 +4334,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_HorizontalContentAlignment, Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -4458,7 +4346,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4470,7 +4357,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_HorizontalContentAlignment, Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -4483,7 +4369,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4495,7 +4380,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_HorizontalContentAlignment, Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -4509,7 +4393,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -4556,8 +4439,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_VerticalContentAlignment, Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -4604,7 +4485,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -4750,7 +4630,6 @@ public static partial class NumericUpDownExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4762,7 +4641,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_VerticalContentAlignment, Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -4775,7 +4653,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4787,7 +4664,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_VerticalContentAlignment, Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -4800,7 +4676,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4812,7 +4687,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_VerticalContentAlignment, Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -4825,7 +4699,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4837,7 +4710,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_VerticalContentAlignment, Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
@@ -4851,7 +4723,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> literal value for hot reload builds.
@@ -4898,8 +4769,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> value on a referenced control.
@@ -4946,7 +4815,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.TextAlignmentProperty
 
     /// <summary>
@@ -5092,7 +4960,6 @@ public static partial class NumericUpDownExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -5104,7 +4971,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, Avalonia.Media.TextAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
@@ -5117,7 +4983,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -5129,7 +4994,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, Avalonia.Media.TextAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
@@ -5142,7 +5006,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -5154,7 +5017,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, Avalonia.Media.TextAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
@@ -5167,7 +5029,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -5179,7 +5040,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, Avalonia.Media.TextAlignment.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
@@ -5192,7 +5052,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -5204,7 +5063,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, Avalonia.Media.TextAlignment.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
@@ -5217,7 +5075,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -5229,7 +5086,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, Avalonia.Media.TextAlignment.DetectFromContent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
@@ -5242,7 +5098,6 @@ public static partial class NumericUpDownExtensions
         obj[Avalonia.Controls.NumericUpDown.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -5254,7 +5109,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithValue(PropertyMetadata.NumericUpDown_TextAlignment, Avalonia.Controls.NumericUpDown.TextAlignmentProperty, Avalonia.Media.TextAlignment.Justify);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.
@@ -5268,7 +5122,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/> literal value for hot reload builds.
@@ -5315,8 +5168,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_InnerLeftContent, Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/> value on a referenced control.
@@ -5363,7 +5214,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.InnerLeftContentProperty
 
     /// <summary>
@@ -5510,7 +5360,6 @@ public static partial class NumericUpDownExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/> literal value for hot reload builds.
@@ -5557,8 +5406,6 @@ public static partial class NumericUpDownExtensions
         return builder.WithBinding(PropertyMetadata.NumericUpDown_InnerRightContent, Avalonia.Controls.NumericUpDown.InnerRightContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/> value on a referenced control.
@@ -5605,7 +5452,6 @@ public static partial class NumericUpDownExtensions
         return elementRef.SetBinding(Avalonia.Controls.NumericUpDown.InnerRightContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.NumericUpDown.InnerRightContentProperty
 
     /// <summary>
@@ -5800,7 +5646,6 @@ public static partial class NumericUpDownExtensions
     {
         return obj.GetObservable(Avalonia.Controls.NumericUpDown.ValueChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -5843,7 +5688,6 @@ public static partial class NumericUpDownExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.NumericUpDown.Spinned
 
@@ -5878,7 +5722,6 @@ public static partial class NumericUpDownExtensions
                 h => obj.Spinned -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5900,7 +5743,6 @@ public static partial class NumericUpDownExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.NumericUpDown.ValueChanged
 
@@ -5935,7 +5777,6 @@ public static partial class NumericUpDownExtensions
                 h => obj.ValueChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5957,5 +5798,4 @@ public static partial class NumericUpDownExtensions
         }));
     }
 
-#endif
 }

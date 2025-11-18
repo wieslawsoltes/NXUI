@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.RangeBase"/> class style setters extension methods.
 /// </summary>
 public static partial class RangeBaseSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/>.
@@ -20,7 +17,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseMinimum(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRangeBaseMinimum(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseMinimum(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRangeBaseMinimum(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.MinimumProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MinimumProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseMinimum(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRangeBaseMinimum(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseMinimum(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRangeBaseMinimum(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MinimumProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseMinimum(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseMinimum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseMinimum(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseMinimum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MinimumProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class RangeBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/>.
@@ -185,7 +176,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseMaximum(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRangeBaseMaximum(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseMaximum(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRangeBaseMaximum(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.MaximumProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MaximumProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseMaximum(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRangeBaseMaximum(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseMaximum(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRangeBaseMaximum(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.MaximumProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseMaximum(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseMaximum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseMaximum(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseMaximum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.MaximumProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class RangeBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/>.
@@ -350,7 +335,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseValue(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRangeBaseValue(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseValue(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRangeBaseValue(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.ValueProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.ValueProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseValue(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRangeBaseValue(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseValue(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRangeBaseValue(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.ValueProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseValue(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseValue(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseValue(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseValue(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.ValueProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class RangeBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseSmallChange(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRangeBaseSmallChange(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseSmallChange(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRangeBaseSmallChange(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseSmallChange(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRangeBaseSmallChange(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseSmallChange(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRangeBaseSmallChange(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseSmallChange(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseSmallChange(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseSmallChange(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseSmallChange(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.SmallChangeProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class RangeBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/>.
@@ -680,7 +653,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseLargeChange(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRangeBaseLargeChange(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseLargeChange(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRangeBaseLargeChange(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseLargeChange(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRangeBaseLargeChange(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseLargeChange(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRangeBaseLargeChange(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class RangeBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRangeBaseLargeChange(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRangeBaseLargeChange(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class RangeBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRangeBaseLargeChange(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRangeBaseLargeChange(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class RangeBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.RangeBase.LargeChangeProperty"/>.
     /// </summary>

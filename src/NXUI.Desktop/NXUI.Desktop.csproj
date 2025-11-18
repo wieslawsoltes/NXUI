@@ -9,12 +9,6 @@
     <RootNamespace>NXUI.Desktop</RootNamespace>
     <PackageId>NXUI.Desktop</PackageId>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == ''">
-    <EnableNXUIHotReload>true</EnableNXUIHotReload>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(EnableNXUIHotReload)' == 'true'">
-    <DefineConstants>$(DefineConstants);NXUI_HOTRELOAD</DefineConstants>
-  </PropertyGroup>
   <PropertyGroup>
     <!-- Avoid reference assembly and deps.json file locks when multiple targets build concurrently on CI. -->
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>

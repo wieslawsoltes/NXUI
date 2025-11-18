@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.MaskedTextBox"/> class property extension methods.
 /// </summary>
 public static partial class MaskedTextBoxExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class MaskedTextBoxExtensions
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_AsciiOnly, Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class MaskedTextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class MaskedTextBoxExtensions
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_Culture, Avalonia.Controls.MaskedTextBox.CultureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class MaskedTextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.CultureProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MaskedTextBox.CultureProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class MaskedTextBoxExtensions
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_HidePromptOnLeave, Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class MaskedTextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty
 
     /// <summary>
@@ -918,7 +904,6 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> literal value for hot reload builds.
@@ -965,8 +950,6 @@ public static partial class MaskedTextBoxExtensions
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_Mask, Avalonia.Controls.MaskedTextBox.MaskProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> value on a referenced control.
@@ -1013,7 +996,6 @@ public static partial class MaskedTextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.MaskProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MaskedTextBox.MaskProperty
 
     /// <summary>
@@ -1160,7 +1142,6 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> literal value for hot reload builds.
@@ -1207,8 +1188,6 @@ public static partial class MaskedTextBoxExtensions
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_PromptChar, Avalonia.Controls.MaskedTextBox.PromptCharProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> value on a referenced control.
@@ -1255,7 +1234,6 @@ public static partial class MaskedTextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.PromptCharProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MaskedTextBox.PromptCharProperty
 
     /// <summary>
@@ -1402,7 +1380,6 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> literal value for hot reload builds.
@@ -1449,8 +1426,6 @@ public static partial class MaskedTextBoxExtensions
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_ResetOnPrompt, Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> value on a referenced control.
@@ -1497,7 +1472,6 @@ public static partial class MaskedTextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty
 
     /// <summary>
@@ -1644,7 +1618,6 @@ public static partial class MaskedTextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> literal value for hot reload builds.
@@ -1691,8 +1664,6 @@ public static partial class MaskedTextBoxExtensions
         return builder.WithBinding(PropertyMetadata.MaskedTextBox_ResetOnSpace, Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> value on a referenced control.
@@ -1739,7 +1710,6 @@ public static partial class MaskedTextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty
 
     /// <summary>

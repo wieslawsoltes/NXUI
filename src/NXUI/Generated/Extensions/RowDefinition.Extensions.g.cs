@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RowDefinition"/> class property extension methods.
 /// </summary>
 public static partial class RowDefinitionExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class RowDefinitionExtensions
         return builder.WithBinding(PropertyMetadata.RowDefinition_MaxHeight, Avalonia.Controls.RowDefinition.MaxHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RowDefinition.MaxHeightProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RowDefinitionExtensions
         return elementRef.SetBinding(Avalonia.Controls.RowDefinition.MaxHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RowDefinition.MaxHeightProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class RowDefinitionExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class RowDefinitionExtensions
         return builder.WithBinding(PropertyMetadata.RowDefinition_MinHeight, Avalonia.Controls.RowDefinition.MinHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RowDefinition.MinHeightProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class RowDefinitionExtensions
         return elementRef.SetBinding(Avalonia.Controls.RowDefinition.MinHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RowDefinition.MinHeightProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class RowDefinitionExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class RowDefinitionExtensions
         return builder.WithBinding(PropertyMetadata.RowDefinition_Height, Avalonia.Controls.RowDefinition.HeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class RowDefinitionExtensions
         return elementRef.SetBinding(Avalonia.Controls.RowDefinition.HeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RowDefinition.HeightProperty
 
     /// <summary>
@@ -737,8 +723,6 @@ public static partial class RowDefinitionExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RowDefinition.HeightProperty"/> literal value using a pixel value for hot reload builds.
     /// </summary>
@@ -754,8 +738,6 @@ public static partial class RowDefinitionExtensions
     {
         return builder.Height(new Avalonia.Controls.GridLength(value, unitType));
     }
-
-#endif
 
 
     /// <summary>

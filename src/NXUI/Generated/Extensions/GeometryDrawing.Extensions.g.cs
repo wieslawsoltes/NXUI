@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.GeometryDrawing"/> class property extension methods.
 /// </summary>
 public static partial class GeometryDrawingExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.Geometry? value)
+    public static GeometryDrawingBuilder Geometry(this GeometryDrawingBuilder builder, Avalonia.Media.Geometry? value)
     {
         return builder.WithValue(PropertyMetadata.GeometryDrawing_Geometry, Avalonia.Media.GeometryDrawing.GeometryProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(
-        this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
+    public static GeometryDrawingBuilder Geometry(
+        this GeometryDrawingBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Geometry(
-        this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
+    public static GeometryDrawingBuilder Geometry(
+        this GeometryDrawingBuilder builder,
         IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class GeometryDrawingExtensions
         return builder.WithBinding(PropertyMetadata.GeometryDrawing_Geometry, Avalonia.Media.GeometryDrawing.GeometryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GeometryDrawingExtensions
         return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.GeometryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GeometryDrawing.GeometryProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class GeometryDrawingExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IBrush? value)
+    public static GeometryDrawingBuilder Brush(this GeometryDrawingBuilder builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.GeometryDrawing_Brush, Avalonia.Media.GeometryDrawing.BrushProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(
-        this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
+    public static GeometryDrawingBuilder Brush(
+        this GeometryDrawingBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Brush(
-        this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
+    public static GeometryDrawingBuilder Brush(
+        this GeometryDrawingBuilder builder,
         IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class GeometryDrawingExtensions
         return builder.WithBinding(PropertyMetadata.GeometryDrawing_Brush, Avalonia.Media.GeometryDrawing.BrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class GeometryDrawingExtensions
         return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.BrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GeometryDrawing.BrushProperty
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class GeometryDrawingExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class GeometryDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(this ElementBuilder<Avalonia.Media.GeometryDrawing> builder, Avalonia.Media.IPen? value)
+    public static GeometryDrawingBuilder Pen(this GeometryDrawingBuilder builder, Avalonia.Media.IPen? value)
     {
         return builder.WithValue(PropertyMetadata.GeometryDrawing_Pen, Avalonia.Media.GeometryDrawing.PenProperty, value);
     }
@@ -503,8 +492,8 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(
-        this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
+    public static GeometryDrawingBuilder Pen(
+        this GeometryDrawingBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class GeometryDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GeometryDrawing> Pen(
-        this ElementBuilder<Avalonia.Media.GeometryDrawing> builder,
+    public static GeometryDrawingBuilder Pen(
+        this GeometryDrawingBuilder builder,
         IObservable<Avalonia.Media.IPen?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class GeometryDrawingExtensions
         return builder.WithBinding(PropertyMetadata.GeometryDrawing_Pen, Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class GeometryDrawingExtensions
         return elementRef.SetBinding(Avalonia.Media.GeometryDrawing.PenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GeometryDrawing.PenProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.ColorSlider"/> class style setters extension methods.
 /// </summary>
 public static partial class ColorSliderSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColor(this ElementBuilder<Style> builder, Avalonia.Media.Color value)
+    public static StyleBuilder SetColorSliderColor(this StyleBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Color value)
+    public static KeyFrameBuilder SetColorSliderColor(this KeyFrameBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.ColorProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Color> observable)
+    public static StyleBuilder SetColorSliderColor(this StyleBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Color> observable)
+    public static KeyFrameBuilder SetColorSliderColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Color> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ColorSliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColorComponent(this ElementBuilder<Style> builder, Avalonia.Controls.ColorComponent value)
+    public static StyleBuilder SetColorSliderColorComponent(this StyleBuilder builder, Avalonia.Controls.ColorComponent value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColorComponent(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ColorComponent value)
+    public static KeyFrameBuilder SetColorSliderColorComponent(this KeyFrameBuilder builder, Avalonia.Controls.ColorComponent value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColorComponent(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ColorComponent> observable)
+    public static StyleBuilder SetColorSliderColorComponent(this StyleBuilder builder, IObservable<Avalonia.Controls.ColorComponent> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColorComponent(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ColorComponent> observable)
+    public static KeyFrameBuilder SetColorSliderColorComponent(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ColorComponent> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColorComponent(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderColorComponent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColorComponent(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderColorComponent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ColorSliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColorModel(this ElementBuilder<Style> builder, Avalonia.Controls.ColorModel value)
+    public static StyleBuilder SetColorSliderColorModel(this StyleBuilder builder, Avalonia.Controls.ColorModel value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColorModel(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ColorModel value)
+    public static KeyFrameBuilder SetColorSliderColorModel(this KeyFrameBuilder builder, Avalonia.Controls.ColorModel value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColorModel(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ColorModel> observable)
+    public static StyleBuilder SetColorSliderColorModel(this StyleBuilder builder, IObservable<Avalonia.Controls.ColorModel> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColorModel(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ColorModel> observable)
+    public static KeyFrameBuilder SetColorSliderColorModel(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ColorModel> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderColorModel(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderColorModel(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderColorModel(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderColorModel(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ColorSliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderHsvColor(this ElementBuilder<Style> builder, Avalonia.Media.HsvColor value)
+    public static StyleBuilder SetColorSliderHsvColor(this StyleBuilder builder, Avalonia.Media.HsvColor value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderHsvColor(this ElementBuilder<KeyFrame> builder, Avalonia.Media.HsvColor value)
+    public static KeyFrameBuilder SetColorSliderHsvColor(this KeyFrameBuilder builder, Avalonia.Media.HsvColor value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderHsvColor(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.HsvColor> observable)
+    public static StyleBuilder SetColorSliderHsvColor(this StyleBuilder builder, IObservable<Avalonia.Media.HsvColor> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderHsvColor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.HsvColor> observable)
+    public static KeyFrameBuilder SetColorSliderHsvColor(this KeyFrameBuilder builder, IObservable<Avalonia.Media.HsvColor> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderHsvColor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderHsvColor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderHsvColor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderHsvColor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ColorSliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsAlphaVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorSliderIsAlphaVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsAlphaVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorSliderIsAlphaVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsAlphaVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorSliderIsAlphaVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsAlphaVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorSliderIsAlphaVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsAlphaVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderIsAlphaVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsAlphaVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderIsAlphaVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ColorSliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsPerceptive(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorSliderIsPerceptive(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsPerceptive(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorSliderIsPerceptive(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsPerceptive(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorSliderIsPerceptive(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsPerceptive(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorSliderIsPerceptive(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsPerceptive(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderIsPerceptive(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsPerceptive(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderIsPerceptive(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ColorSliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsRoundingEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetColorSliderIsRoundingEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsRoundingEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetColorSliderIsRoundingEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsRoundingEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetColorSliderIsRoundingEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsRoundingEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetColorSliderIsRoundingEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ColorSliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColorSliderIsRoundingEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColorSliderIsRoundingEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ColorSliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColorSliderIsRoundingEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColorSliderIsRoundingEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ColorSliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/>.
     /// </summary>

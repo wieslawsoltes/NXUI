@@ -78,8 +78,6 @@ public partial class ExtensionsGenerator
         var methodName = property.Name;
 
         var sb = new StringBuilder();
-        sb.AppendLine("#if NXUI_HOTRELOAD");
-        sb.AppendLine("");
 
         foreach (var (parameters, arguments, summary) in overloads)
         {
@@ -93,8 +91,6 @@ public partial class ExtensionsGenerator
             sb.AppendLine("");
         }
 
-        sb.AppendLine("#endif");
-        sb.AppendLine("");
         return sb.ToString();
     }
 

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.AutoCompleteBox"/> class property extension methods.
 /// </summary>
 public static partial class AutoCompleteBoxExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_CaretIndex, Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.CaretIndexProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.CaretIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.CaretIndexProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_Watermark, Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.WatermarkProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.WatermarkProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_MinimumPrefixLength, Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.MinimumPrefixLengthProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_MinimumPopulateDelay, Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.MinimumPopulateDelayProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_MaxDropDownHeight, Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.MaxDropDownHeightProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_IsTextCompletionEnabled, Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.IsTextCompletionEnabledProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_ItemTemplate, Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.ItemTemplateProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_IsDropDownOpen, Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.IsDropDownOpenProperty
 
     /// <summary>
@@ -1948,7 +1914,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> literal value for hot reload builds.
@@ -1995,8 +1960,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_SelectedItem, Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.SelectedItemProperty"/> value on a referenced control.
@@ -2043,7 +2006,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.SelectedItemProperty
 
     /// <summary>
@@ -2190,7 +2152,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> literal value for hot reload builds.
@@ -2237,8 +2198,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_Text, Avalonia.Controls.AutoCompleteBox.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextProperty"/> value on a referenced control.
@@ -2285,7 +2244,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.TextProperty
 
     /// <summary>
@@ -2522,7 +2480,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> literal value for hot reload builds.
@@ -2569,8 +2526,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> value on a referenced control.
@@ -2617,7 +2572,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.FilterModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.FilterModeProperty
 
     /// <summary>
@@ -2763,7 +2717,6 @@ public static partial class AutoCompleteBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2775,7 +2728,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.None"/>.
@@ -2788,7 +2740,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2800,7 +2751,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.StartsWith);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWith"/>.
@@ -2813,7 +2763,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWith;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2825,7 +2774,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive"/>.
@@ -2838,7 +2786,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithCaseSensitive;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2850,7 +2797,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinal"/>.
@@ -2863,7 +2809,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2875,7 +2820,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive"/>.
@@ -2888,7 +2832,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.StartsWithOrdinalCaseSensitive;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2900,7 +2843,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.Contains);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.Contains"/>.
@@ -2913,7 +2855,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Contains;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2925,7 +2866,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive"/>.
@@ -2938,7 +2878,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsCaseSensitive;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2950,7 +2889,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinal"/>.
@@ -2963,7 +2901,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -2975,7 +2912,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive"/>.
@@ -2988,7 +2924,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.ContainsOrdinalCaseSensitive;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -3000,7 +2935,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.Equals);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.Equals"/>.
@@ -3013,7 +2947,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.Equals;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -3025,7 +2958,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive"/>.
@@ -3038,7 +2970,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsCaseSensitive;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -3050,7 +2981,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinal"/>.
@@ -3063,7 +2993,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -3075,7 +3004,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive"/>.
@@ -3088,7 +3016,6 @@ public static partial class AutoCompleteBoxExtensions
         obj[Avalonia.Controls.AutoCompleteBox.FilterModeProperty] = Avalonia.Controls.AutoCompleteFilterMode.EqualsOrdinalCaseSensitive;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> enum value for hot reload builds.
@@ -3100,7 +3027,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithValue(PropertyMetadata.AutoCompleteBox_FilterMode, Avalonia.Controls.AutoCompleteBox.FilterModeProperty, Avalonia.Controls.AutoCompleteFilterMode.Custom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.FilterModeProperty"/> property value to <see cref="Avalonia.Controls.AutoCompleteFilterMode.Custom"/>.
@@ -3114,7 +3040,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> literal value for hot reload builds.
@@ -3161,8 +3086,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_ItemFilter, Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemFilterProperty"/> value on a referenced control.
@@ -3209,7 +3132,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemFilterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.ItemFilterProperty
 
     /// <summary>
@@ -3356,7 +3278,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> literal value for hot reload builds.
@@ -3403,8 +3324,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_TextFilter, Avalonia.Controls.AutoCompleteBox.TextFilterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextFilterProperty"/> value on a referenced control.
@@ -3451,7 +3370,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextFilterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.TextFilterProperty
 
     /// <summary>
@@ -3598,7 +3516,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> literal value for hot reload builds.
@@ -3645,8 +3562,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_ItemSelector, Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty"/> value on a referenced control.
@@ -3693,7 +3608,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.ItemSelectorProperty
 
     /// <summary>
@@ -3840,7 +3754,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> literal value for hot reload builds.
@@ -3887,8 +3800,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_TextSelector, Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.TextSelectorProperty"/> value on a referenced control.
@@ -3935,7 +3846,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.TextSelectorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.TextSelectorProperty
 
     /// <summary>
@@ -4082,7 +3992,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> literal value for hot reload builds.
@@ -4129,8 +4038,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_ItemsSource, Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty"/> value on a referenced control.
@@ -4177,7 +4084,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.ItemsSourceProperty
 
     /// <summary>
@@ -4324,7 +4230,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> literal value for hot reload builds.
@@ -4371,8 +4276,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_AsyncPopulator, Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty"/> value on a referenced control.
@@ -4419,7 +4322,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.AsyncPopulatorProperty
 
     /// <summary>
@@ -4566,7 +4468,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> literal value for hot reload builds.
@@ -4613,8 +4514,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_MaxLength, Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.MaxLengthProperty"/> value on a referenced control.
@@ -4661,7 +4560,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.MaxLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.MaxLengthProperty
 
     /// <summary>
@@ -4808,7 +4706,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> literal value for hot reload builds.
@@ -4855,8 +4752,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_InnerLeftContent, Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty"/> value on a referenced control.
@@ -4903,7 +4798,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.InnerLeftContentProperty
 
     /// <summary>
@@ -5050,7 +4944,6 @@ public static partial class AutoCompleteBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> literal value for hot reload builds.
@@ -5097,8 +4990,6 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithBinding(PropertyMetadata.AutoCompleteBox_InnerRightContent, Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty"/> value on a referenced control.
@@ -5145,7 +5036,6 @@ public static partial class AutoCompleteBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.AutoCompleteBox.InnerRightContentProperty
 
     /// <summary>
@@ -5340,7 +5230,6 @@ public static partial class AutoCompleteBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -5383,7 +5272,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.TextChangedEvent
 
@@ -5433,7 +5321,6 @@ public static partial class AutoCompleteBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.AutoCompleteBox.TextChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -5476,7 +5363,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.TextChanged
 
@@ -5511,7 +5397,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.TextChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5533,7 +5418,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.Populating
 
@@ -5568,7 +5452,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.Populating -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5590,7 +5473,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.Populated
 
@@ -5625,7 +5507,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.Populated -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5647,7 +5528,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.DropDownOpening
 
@@ -5682,7 +5562,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.DropDownOpening -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5704,7 +5583,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.DropDownOpened
 
@@ -5739,7 +5617,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.DropDownOpened -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5761,7 +5638,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.DropDownClosing
 
@@ -5796,7 +5672,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.DropDownClosing -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5818,7 +5693,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.DropDownClosed
 
@@ -5853,7 +5727,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.DropDownClosed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5875,7 +5748,6 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.AutoCompleteBox.SelectionChanged
 
@@ -5910,7 +5782,6 @@ public static partial class AutoCompleteBoxExtensions
                 h => obj.SelectionChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -5932,5 +5803,4 @@ public static partial class AutoCompleteBoxExtensions
         }));
     }
 
-#endif
 }

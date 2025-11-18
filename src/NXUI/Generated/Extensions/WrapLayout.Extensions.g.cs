@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Layout.WrapLayout"/> class property extension methods.
 /// </summary>
 public static partial class WrapLayoutExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class WrapLayoutExtensions
         return builder.WithBinding(PropertyMetadata.WrapLayout_HorizontalSpacing, Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class WrapLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.WrapLayout.HorizontalSpacingProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class WrapLayoutExtensions
         return builder.WithBinding(PropertyMetadata.WrapLayout_VerticalSpacing, Avalonia.Layout.WrapLayout.VerticalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class WrapLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.WrapLayout.VerticalSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.WrapLayout.VerticalSpacingProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class WrapLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class WrapLayoutExtensions
         return builder.WithBinding(PropertyMetadata.WrapLayout_Orientation, Avalonia.Layout.WrapLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class WrapLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.WrapLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.WrapLayout.OrientationProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class WrapLayoutExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class WrapLayoutExtensions
         return builder.WithValue(PropertyMetadata.WrapLayout_Orientation, Avalonia.Layout.WrapLayout.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -762,7 +746,6 @@ public static partial class WrapLayoutExtensions
         obj[Avalonia.Layout.WrapLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class WrapLayoutExtensions
         return builder.WithValue(PropertyMetadata.WrapLayout_Orientation, Avalonia.Layout.WrapLayout.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.

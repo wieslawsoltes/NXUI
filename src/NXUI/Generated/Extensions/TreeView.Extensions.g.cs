@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TreeView"/> class property extension methods.
 /// </summary>
 public static partial class TreeViewExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TreeViewExtensions
         return builder.WithBinding(PropertyMetadata.TreeView_AutoScrollToSelectedItem, Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TreeViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TreeViewExtensions
         return builder.WithBinding(PropertyMetadata.TreeView_SelectedItem, Avalonia.Controls.TreeView.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TreeViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeView.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeView.SelectedItemProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TreeViewExtensions
         return builder.WithBinding(PropertyMetadata.TreeView_SelectedItems, Avalonia.Controls.TreeView.SelectedItemsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TreeViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeView.SelectedItemsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeView.SelectedItemsProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TreeViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TreeViewExtensions
         return builder.WithBinding(PropertyMetadata.TreeView_SelectionMode, Avalonia.Controls.TreeView.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TreeViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeView.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeView.SelectionModeProperty
 
     /// <summary>
@@ -979,7 +961,6 @@ public static partial class TreeViewExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
@@ -991,7 +972,6 @@ public static partial class TreeViewExtensions
         return builder.WithValue(PropertyMetadata.TreeView_SelectionMode, Avalonia.Controls.TreeView.SelectionModeProperty, Avalonia.Controls.SelectionMode.Single);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Single"/>.
@@ -1004,7 +984,6 @@ public static partial class TreeViewExtensions
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Single;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
@@ -1016,7 +995,6 @@ public static partial class TreeViewExtensions
         return builder.WithValue(PropertyMetadata.TreeView_SelectionMode, Avalonia.Controls.TreeView.SelectionModeProperty, Avalonia.Controls.SelectionMode.Multiple);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Multiple"/>.
@@ -1029,7 +1007,6 @@ public static partial class TreeViewExtensions
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Multiple;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
@@ -1041,7 +1018,6 @@ public static partial class TreeViewExtensions
         return builder.WithValue(PropertyMetadata.TreeView_SelectionMode, Avalonia.Controls.TreeView.SelectionModeProperty, Avalonia.Controls.SelectionMode.Toggle);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Toggle"/>.
@@ -1054,7 +1030,6 @@ public static partial class TreeViewExtensions
         obj[Avalonia.Controls.TreeView.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Toggle;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> enum value for hot reload builds.
@@ -1066,7 +1041,6 @@ public static partial class TreeViewExtensions
         return builder.WithValue(PropertyMetadata.TreeView_SelectionMode, Avalonia.Controls.TreeView.SelectionModeProperty, Avalonia.Controls.SelectionMode.AlwaysSelected);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.AlwaysSelected"/>.

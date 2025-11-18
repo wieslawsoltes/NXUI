@@ -7,7 +7,6 @@ namespace Generator;
 public static partial class Templates
 {
     public static string PropertyMethodsHotReloadTemplate = """
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="%ClassType%.%Name%Property"/> literal value for hot reload builds.
@@ -54,11 +53,9 @@ public static partial class Templates
         return builder.WithBinding(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
 """;
 
     public static string PropertyMethodsElementRefTemplate = """
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="%ClassType%.%Name%Property"/> value on a referenced control.
@@ -105,11 +102,9 @@ public static partial class Templates
         return elementRef.SetBinding(%ClassType%.%Name%Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
 """;
 
     public static string PropertyMethodEnumHotReloadTemplate = """
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="%ClassType%.%Name%Property"/> enum value for hot reload builds.
@@ -121,7 +116,6 @@ public static partial class Templates
         return builder.WithValue(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, %ValueType%.%EnumValue%);
     }
 
-#endif
 """;
 
     public static string PropertyMethodEnumTemplate = """
@@ -535,7 +529,6 @@ public static partial class Templates
 """;
 
     public static string RoutedEventMethodsHotReloadTemplate = """
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -578,7 +571,6 @@ public static partial class Templates
         }));
     }
 
-#endif
 """;
 
     public static string RoutedEventMethodsTemplate = """
@@ -633,7 +625,6 @@ public static partial class Templates
 """;
 
     public static string RoutedEventMethodsHotReloadTemplateNonGeneric = """
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -676,7 +667,6 @@ public static partial class Templates
         }));
     }
 
-#endif
 """;
 
     public static string RoutedEventMethodsTemplateNonGeneric = """
@@ -827,7 +817,6 @@ public static partial class Templates
 """;
 
     public static string EventMethodsHotReloadTemplate = """
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -849,7 +838,6 @@ public static partial class Templates
         }));
     }
 
-#endif
 """;
 
     public static string EventMethodsTemplate = """

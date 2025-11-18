@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Arc"/> class property extension methods.
 /// </summary>
 public static partial class ArcExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ArcExtensions
         return builder.WithBinding(PropertyMetadata.Arc_StartAngle, Avalonia.Controls.Shapes.Arc.StartAngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Arc.StartAngleProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ArcExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Arc.StartAngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Arc.StartAngleProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ArcExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ArcExtensions
         return builder.WithBinding(PropertyMetadata.Arc_SweepAngle, Avalonia.Controls.Shapes.Arc.SweepAngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Arc.SweepAngleProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ArcExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Arc.SweepAngleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Arc.SweepAngleProperty
 
     /// <summary>

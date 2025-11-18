@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Visual"/> class style setters extension methods.
 /// </summary>
 public static partial class VisualSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualClipToBounds(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetVisualClipToBounds(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualClipToBounds(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetVisualClipToBounds(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.ClipToBoundsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualClipToBounds(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetVisualClipToBounds(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualClipToBounds(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetVisualClipToBounds(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipToBoundsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualClipToBounds(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualClipToBounds(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualClipToBounds(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualClipToBounds(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ClipToBoundsProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
@@ -185,7 +176,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualClip(this ElementBuilder<Style> builder, Avalonia.Media.Geometry value)
+    public static StyleBuilder SetVisualClip(this StyleBuilder builder, Avalonia.Media.Geometry value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualClip(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Geometry value)
+    public static KeyFrameBuilder SetVisualClip(this KeyFrameBuilder builder, Avalonia.Media.Geometry value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.ClipProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ClipProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualClip(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Geometry> observable)
+    public static StyleBuilder SetVisualClip(this StyleBuilder builder, IObservable<Avalonia.Media.Geometry> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualClip(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Geometry> observable)
+    public static KeyFrameBuilder SetVisualClip(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Geometry> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ClipProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ClipProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualClip(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualClip(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualClip(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualClip(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ClipProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
@@ -350,7 +335,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualIsVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetVisualIsVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualIsVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetVisualIsVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.IsVisibleProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualIsVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetVisualIsVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualIsVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetVisualIsVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.IsVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualIsVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualIsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualIsVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualIsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.IsVisibleProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
@@ -515,7 +494,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualOpacity(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetVisualOpacity(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualOpacity(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetVisualOpacity(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.OpacityProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.OpacityProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualOpacity(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetVisualOpacity(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualOpacity(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetVisualOpacity(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.OpacityProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualOpacity(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualOpacity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualOpacity(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualOpacity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
@@ -680,7 +653,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualOpacityMask(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetVisualOpacityMask(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualOpacityMask(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetVisualOpacityMask(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.OpacityMaskProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualOpacityMask(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetVisualOpacityMask(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualOpacityMask(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetVisualOpacityMask(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.OpacityMaskProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualOpacityMask(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualOpacityMask(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualOpacityMask(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualOpacityMask(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.OpacityMaskProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
@@ -845,7 +812,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualEffect(this ElementBuilder<Style> builder, Avalonia.Media.IEffect value)
+    public static StyleBuilder SetVisualEffect(this StyleBuilder builder, Avalonia.Media.IEffect value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualEffect(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IEffect value)
+    public static KeyFrameBuilder SetVisualEffect(this KeyFrameBuilder builder, Avalonia.Media.IEffect value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.EffectProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.EffectProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualEffect(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IEffect> observable)
+    public static StyleBuilder SetVisualEffect(this StyleBuilder builder, IObservable<Avalonia.Media.IEffect> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualEffect(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IEffect> observable)
+    public static KeyFrameBuilder SetVisualEffect(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IEffect> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.EffectProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.EffectProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualEffect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualEffect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualEffect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualEffect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.EffectProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualRenderTransform(this ElementBuilder<Style> builder, Avalonia.Media.ITransform value)
+    public static StyleBuilder SetVisualRenderTransform(this StyleBuilder builder, Avalonia.Media.ITransform value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualRenderTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Media.ITransform value)
+    public static KeyFrameBuilder SetVisualRenderTransform(this KeyFrameBuilder builder, Avalonia.Media.ITransform value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.RenderTransformProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualRenderTransform(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.ITransform> observable)
+    public static StyleBuilder SetVisualRenderTransform(this StyleBuilder builder, IObservable<Avalonia.Media.ITransform> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualRenderTransform(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.ITransform> observable)
+    public static KeyFrameBuilder SetVisualRenderTransform(this KeyFrameBuilder builder, IObservable<Avalonia.Media.ITransform> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualRenderTransform(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualRenderTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualRenderTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualRenderTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualRenderTransformOrigin(this ElementBuilder<Style> builder, Avalonia.RelativePoint value)
+    public static StyleBuilder SetVisualRenderTransformOrigin(this StyleBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualRenderTransformOrigin(this ElementBuilder<KeyFrame> builder, Avalonia.RelativePoint value)
+    public static KeyFrameBuilder SetVisualRenderTransformOrigin(this KeyFrameBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.RenderTransformOriginProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualRenderTransformOrigin(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static StyleBuilder SetVisualRenderTransformOrigin(this StyleBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualRenderTransformOrigin(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static KeyFrameBuilder SetVisualRenderTransformOrigin(this KeyFrameBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.RenderTransformOriginProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualRenderTransformOrigin(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualRenderTransformOrigin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualRenderTransformOrigin(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualRenderTransformOrigin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.RenderTransformOriginProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualFlowDirection(this ElementBuilder<Style> builder, Avalonia.Media.FlowDirection value)
+    public static StyleBuilder SetVisualFlowDirection(this StyleBuilder builder, Avalonia.Media.FlowDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualFlowDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FlowDirection value)
+    public static KeyFrameBuilder SetVisualFlowDirection(this KeyFrameBuilder builder, Avalonia.Media.FlowDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.FlowDirectionProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualFlowDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FlowDirection> observable)
+    public static StyleBuilder SetVisualFlowDirection(this StyleBuilder builder, IObservable<Avalonia.Media.FlowDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualFlowDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FlowDirection> observable)
+    public static KeyFrameBuilder SetVisualFlowDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FlowDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.FlowDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualFlowDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualFlowDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualFlowDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualFlowDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.FlowDirectionProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class VisualSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualZIndex(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetVisualZIndex(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualZIndex(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetVisualZIndex(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     // Avalonia.Visual.ZIndexProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualZIndex(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetVisualZIndex(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualZIndex(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetVisualZIndex(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class VisualSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Visual.ZIndexProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class VisualSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetVisualZIndex(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetVisualZIndex(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class VisualSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetVisualZIndex(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetVisualZIndex(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class VisualSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Visual.ZIndexProperty"/>.
     /// </summary>

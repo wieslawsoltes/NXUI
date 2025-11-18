@@ -1,16 +1,13 @@
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// 
 /// </summary>
 public static partial class StyledElementExtensions
 {
-#if NXUI_HOTRELOAD
     /// <summary>
     /// Records a name assignment and scope registration for hot reload builds.
     /// </summary>
@@ -117,7 +114,7 @@ public static partial class StyledElementExtensions
     /// </summary>
     public static ElementBuilder<TElement> Resources<TElement>(
         this ElementBuilder<TElement> styledElement,
-        ElementBuilder<ResourceDictionary> resources)
+        ResourceDictionaryBuilder resources)
         where TElement : StyledElement
     {
         return styledElement.WithChild(
@@ -152,7 +149,6 @@ public static partial class StyledElementExtensions
         ArgumentNullException.ThrowIfNull(key);
         return styledElement.WithAction(target => target.Resources[key] = value);
     }
-#endif
     // Name
 
     /// <summary>

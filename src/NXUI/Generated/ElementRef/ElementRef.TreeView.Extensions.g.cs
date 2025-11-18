@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TreeView"/>.
 /// </summary>
 public static partial class TreeViewElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TreeViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeView.AutoScrollToSelectedItemProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeView.SelectedItemProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TreeViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeView.SelectedItemProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeView.SelectedItemsProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TreeViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeView.SelectedItemsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeView.SelectionModeProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class TreeViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeView.SelectionModeProperty);
     }
 
-#endif
 }

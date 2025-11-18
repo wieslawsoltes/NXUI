@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.TemplatedControl"/>.
 /// </summary>
 public static partial class TemplatedControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/> value.
@@ -176,5 +145,4 @@ public static partial class TemplatedControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty);
     }
 
-#endif
 }

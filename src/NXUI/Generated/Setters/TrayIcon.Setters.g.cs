@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TrayIcon"/> class style setters extension methods.
 /// </summary>
 public static partial class TrayIconSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconCommand(this ElementBuilder<Style> builder, System.Windows.Input.ICommand value)
+    public static StyleBuilder SetTrayIconCommand(this StyleBuilder builder, System.Windows.Input.ICommand value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconCommand(this ElementBuilder<KeyFrame> builder, System.Windows.Input.ICommand value)
+    public static KeyFrameBuilder SetTrayIconCommand(this KeyFrameBuilder builder, System.Windows.Input.ICommand value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.CommandProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconCommand(this ElementBuilder<Style> builder, IObservable<System.Windows.Input.ICommand> observable)
+    public static StyleBuilder SetTrayIconCommand(this StyleBuilder builder, IObservable<System.Windows.Input.ICommand> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconCommand(this ElementBuilder<KeyFrame> builder, IObservable<System.Windows.Input.ICommand> observable)
+    public static KeyFrameBuilder SetTrayIconCommand(this KeyFrameBuilder builder, IObservable<System.Windows.Input.ICommand> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconCommand(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconCommand(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconCommand(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconCommand(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TrayIconSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconCommandParameter(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetTrayIconCommandParameter(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconCommandParameter(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetTrayIconCommandParameter(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.CommandParameterProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandParameterProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconCommandParameter(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetTrayIconCommandParameter(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconCommandParameter(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetTrayIconCommandParameter(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.CommandParameterProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconCommandParameter(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconCommandParameter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconCommandParameter(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconCommandParameter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.CommandParameterProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TrayIconSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIcons(this ElementBuilder<Style> builder, Avalonia.Controls.TrayIcons value)
+    public static StyleBuilder SetTrayIconIcons(this StyleBuilder builder, Avalonia.Controls.TrayIcons value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIcons(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.TrayIcons value)
+    public static KeyFrameBuilder SetTrayIconIcons(this KeyFrameBuilder builder, Avalonia.Controls.TrayIcons value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.IconsProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIcons(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.TrayIcons> observable)
+    public static StyleBuilder SetTrayIconIcons(this StyleBuilder builder, IObservable<Avalonia.Controls.TrayIcons> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIcons(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.TrayIcons> observable)
+    public static KeyFrameBuilder SetTrayIconIcons(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.TrayIcons> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIcons(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconIcons(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIcons(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconIcons(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconsProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TrayIconSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconMenu(this ElementBuilder<Style> builder, Avalonia.Controls.NativeMenu value)
+    public static StyleBuilder SetTrayIconMenu(this StyleBuilder builder, Avalonia.Controls.NativeMenu value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconMenu(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.NativeMenu value)
+    public static KeyFrameBuilder SetTrayIconMenu(this KeyFrameBuilder builder, Avalonia.Controls.NativeMenu value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.MenuProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconMenu(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.NativeMenu> observable)
+    public static StyleBuilder SetTrayIconMenu(this StyleBuilder builder, IObservable<Avalonia.Controls.NativeMenu> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconMenu(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.NativeMenu> observable)
+    public static KeyFrameBuilder SetTrayIconMenu(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.NativeMenu> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.MenuProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconMenu(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconMenu(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconMenu(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconMenu(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.MenuProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TrayIconSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIcon(this ElementBuilder<Style> builder, Avalonia.Controls.WindowIcon value)
+    public static StyleBuilder SetTrayIconIcon(this StyleBuilder builder, Avalonia.Controls.WindowIcon value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIcon(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.WindowIcon value)
+    public static KeyFrameBuilder SetTrayIconIcon(this KeyFrameBuilder builder, Avalonia.Controls.WindowIcon value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.IconProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIcon(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.WindowIcon> observable)
+    public static StyleBuilder SetTrayIconIcon(this StyleBuilder builder, IObservable<Avalonia.Controls.WindowIcon> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIcon(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.WindowIcon> observable)
+    public static KeyFrameBuilder SetTrayIconIcon(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.WindowIcon> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IconProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIcon(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconIcon(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIcon(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconIcon(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IconProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TrayIconSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconToolTipText(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetTrayIconToolTipText(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconToolTipText(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetTrayIconToolTipText(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.ToolTipTextProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconToolTipText(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetTrayIconToolTipText(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconToolTipText(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetTrayIconToolTipText(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.ToolTipTextProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconToolTipText(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconToolTipText(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconToolTipText(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconToolTipText(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.ToolTipTextProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class TrayIconSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIsVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTrayIconIsVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIsVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTrayIconIsVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TrayIcon.IsVisibleProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIsVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTrayIconIsVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIsVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTrayIconIsVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class TrayIconSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TrayIcon.IsVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTrayIconIsVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTrayIconIsVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class TrayIconSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTrayIconIsVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTrayIconIsVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class TrayIconSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TrayIcon.IsVisibleProperty"/>.
     /// </summary>

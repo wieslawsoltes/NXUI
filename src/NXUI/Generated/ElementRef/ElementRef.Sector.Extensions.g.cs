@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Shapes.Sector"/>.
 /// </summary>
 public static partial class SectorElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Sector.StartAngleProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class SectorElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Sector.StartAngleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Sector.SweepAngleProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class SectorElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Sector.SweepAngleProperty);
     }
 
-#endif
 }

@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class TreeDataGridExpanderCellExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class TreeDataGridExpanderCellExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGridExpanderCell_IsExpanded, Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class TreeDataGridExpanderCellExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridExpanderCell.IsExpandedProperty
 
     /// <summary>

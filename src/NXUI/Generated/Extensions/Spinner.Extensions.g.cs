@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Spinner"/> class property extension methods.
 /// </summary>
 public static partial class SpinnerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class SpinnerExtensions
         return builder.WithBinding(PropertyMetadata.Spinner_ValidSpinDirection, Avalonia.Controls.Spinner.ValidSpinDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SpinnerExtensions
         return elementRef.SetBinding(Avalonia.Controls.Spinner.ValidSpinDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Spinner.ValidSpinDirectionProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class SpinnerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class SpinnerExtensions
         return builder.WithValue(PropertyMetadata.Spinner_ValidSpinDirection, Avalonia.Controls.Spinner.ValidSpinDirectionProperty, Avalonia.Controls.ValidSpinDirections.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.None"/>.
@@ -278,7 +270,6 @@ public static partial class SpinnerExtensions
         obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class SpinnerExtensions
         return builder.WithValue(PropertyMetadata.Spinner_ValidSpinDirection, Avalonia.Controls.Spinner.ValidSpinDirectionProperty, Avalonia.Controls.ValidSpinDirections.Increase);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.Increase"/>.
@@ -303,7 +293,6 @@ public static partial class SpinnerExtensions
         obj[Avalonia.Controls.Spinner.ValidSpinDirectionProperty] = Avalonia.Controls.ValidSpinDirections.Increase;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class SpinnerExtensions
         return builder.WithValue(PropertyMetadata.Spinner_ValidSpinDirection, Avalonia.Controls.Spinner.ValidSpinDirectionProperty, Avalonia.Controls.ValidSpinDirections.Decrease);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Spinner.ValidSpinDirectionProperty"/> property value to <see cref="Avalonia.Controls.ValidSpinDirections.Decrease"/>.
@@ -377,7 +365,6 @@ public static partial class SpinnerExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Spinner.SpinEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -420,7 +407,6 @@ public static partial class SpinnerExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Spinner.Spin
 
@@ -455,7 +441,6 @@ public static partial class SpinnerExtensions
                 h => obj.Spin -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -477,5 +462,4 @@ public static partial class SpinnerExtensions
         }));
     }
 
-#endif
 }

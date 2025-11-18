@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TreeViewItem"/> class property extension methods.
 /// </summary>
 public static partial class TreeViewItemExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TreeViewItemExtensions
         return builder.WithBinding(PropertyMetadata.TreeViewItem_IsExpanded, Avalonia.Controls.TreeViewItem.IsExpandedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeViewItem.IsExpandedProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TreeViewItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeViewItem.IsExpandedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeViewItem.IsExpandedProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TreeViewItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeViewItem.IsSelectedProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TreeViewItemExtensions
         return builder.WithBinding(PropertyMetadata.TreeViewItem_IsSelected, Avalonia.Controls.TreeViewItem.IsSelectedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeViewItem.IsSelectedProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TreeViewItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeViewItem.IsSelectedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeViewItem.IsSelectedProperty
 
     /// <summary>
@@ -634,7 +624,6 @@ public static partial class TreeViewItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.ExpandedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -677,7 +666,6 @@ public static partial class TreeViewItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeViewItem.CollapsedEvent
 
@@ -727,7 +715,6 @@ public static partial class TreeViewItemExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TreeViewItem.CollapsedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -770,7 +757,6 @@ public static partial class TreeViewItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeViewItem.Expanded
 
@@ -805,7 +791,6 @@ public static partial class TreeViewItemExtensions
                 h => obj.Expanded -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -827,7 +812,6 @@ public static partial class TreeViewItemExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeViewItem.Collapsed
 
@@ -862,7 +846,6 @@ public static partial class TreeViewItemExtensions
                 h => obj.Collapsed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -884,5 +867,4 @@ public static partial class TreeViewItemExtensions
         }));
     }
 
-#endif
 }

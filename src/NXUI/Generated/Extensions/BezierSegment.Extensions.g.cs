@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.BezierSegment"/> class property extension methods.
 /// </summary>
 public static partial class BezierSegmentExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.BezierSegment.Point1Property"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class BezierSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point1(this ElementBuilder<Avalonia.Media.BezierSegment> builder, Avalonia.Point value)
+    public static BezierSegmentBuilder Point1(this BezierSegmentBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.BezierSegment_Point1, Avalonia.Media.BezierSegment.Point1Property, value);
     }
@@ -33,8 +30,8 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point1(
-        this ElementBuilder<Avalonia.Media.BezierSegment> builder,
+    public static BezierSegmentBuilder Point1(
+        this BezierSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point1(
-        this ElementBuilder<Avalonia.Media.BezierSegment> builder,
+    public static BezierSegmentBuilder Point1(
+        this BezierSegmentBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class BezierSegmentExtensions
         return builder.WithBinding(PropertyMetadata.BezierSegment_Point1, Avalonia.Media.BezierSegment.Point1Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.BezierSegment.Point1Property"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class BezierSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.BezierSegment.Point1Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.BezierSegment.Point1Property
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class BezierSegmentExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.BezierSegment.Point2Property"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class BezierSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point2(this ElementBuilder<Avalonia.Media.BezierSegment> builder, Avalonia.Point value)
+    public static BezierSegmentBuilder Point2(this BezierSegmentBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.BezierSegment_Point2, Avalonia.Media.BezierSegment.Point2Property, value);
     }
@@ -268,8 +261,8 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point2(
-        this ElementBuilder<Avalonia.Media.BezierSegment> builder,
+    public static BezierSegmentBuilder Point2(
+        this BezierSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point2(
-        this ElementBuilder<Avalonia.Media.BezierSegment> builder,
+    public static BezierSegmentBuilder Point2(
+        this BezierSegmentBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class BezierSegmentExtensions
         return builder.WithBinding(PropertyMetadata.BezierSegment_Point2, Avalonia.Media.BezierSegment.Point2Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.BezierSegment.Point2Property"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class BezierSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.BezierSegment.Point2Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.BezierSegment.Point2Property
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class BezierSegmentExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.BezierSegment.Point3Property"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class BezierSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point3(this ElementBuilder<Avalonia.Media.BezierSegment> builder, Avalonia.Point value)
+    public static BezierSegmentBuilder Point3(this BezierSegmentBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.BezierSegment_Point3, Avalonia.Media.BezierSegment.Point3Property, value);
     }
@@ -503,8 +492,8 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point3(
-        this ElementBuilder<Avalonia.Media.BezierSegment> builder,
+    public static BezierSegmentBuilder Point3(
+        this BezierSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class BezierSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BezierSegment> Point3(
-        this ElementBuilder<Avalonia.Media.BezierSegment> builder,
+    public static BezierSegmentBuilder Point3(
+        this BezierSegmentBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class BezierSegmentExtensions
         return builder.WithBinding(PropertyMetadata.BezierSegment_Point3, Avalonia.Media.BezierSegment.Point3Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.BezierSegment.Point3Property"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class BezierSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.BezierSegment.Point3Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.BezierSegment.Point3Property
 
     /// <summary>

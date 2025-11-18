@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.QuadraticBezierSegment"/>.
 /// </summary>
 public static partial class QuadraticBezierSegmentElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.QuadraticBezierSegment.Point1Property"/> value.
@@ -22,8 +19,6 @@ public static partial class QuadraticBezierSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.QuadraticBezierSegment.Point1Property);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.QuadraticBezierSegment.Point2Property"/> value.
@@ -33,5 +28,4 @@ public static partial class QuadraticBezierSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.QuadraticBezierSegment.Point2Property);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.WrapPanel"/> class style setters extension methods.
 /// </summary>
 public static partial class WrapPanelSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
@@ -20,7 +17,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetWrapPanelItemSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetWrapPanelItemSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemSpacingProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetWrapPanelItemSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetWrapPanelItemSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapPanelItemSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapPanelItemSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class WrapPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
@@ -185,7 +176,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelLineSpacing(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetWrapPanelLineSpacing(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelLineSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetWrapPanelLineSpacing(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.LineSpacingProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.LineSpacingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelLineSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetWrapPanelLineSpacing(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelLineSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetWrapPanelLineSpacing(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.LineSpacingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelLineSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapPanelLineSpacing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelLineSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapPanelLineSpacing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class WrapPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
@@ -350,7 +335,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    public static StyleBuilder SetWrapPanelOrientation(this StyleBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    public static KeyFrameBuilder SetWrapPanelOrientation(this KeyFrameBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.OrientationProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static StyleBuilder SetWrapPanelOrientation(this StyleBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static KeyFrameBuilder SetWrapPanelOrientation(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapPanelOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapPanelOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class WrapPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
@@ -515,7 +494,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemsAlignment(this ElementBuilder<Style> builder, Avalonia.Controls.WrapPanelItemsAlignment value)
+    public static StyleBuilder SetWrapPanelItemsAlignment(this StyleBuilder builder, Avalonia.Controls.WrapPanelItemsAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.WrapPanelItemsAlignment value)
+    public static KeyFrameBuilder SetWrapPanelItemsAlignment(this KeyFrameBuilder builder, Avalonia.Controls.WrapPanelItemsAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemsAlignmentProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemsAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.WrapPanelItemsAlignment> observable)
+    public static StyleBuilder SetWrapPanelItemsAlignment(this StyleBuilder builder, IObservable<Avalonia.Controls.WrapPanelItemsAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemsAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.WrapPanelItemsAlignment> observable)
+    public static KeyFrameBuilder SetWrapPanelItemsAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.WrapPanelItemsAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemsAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapPanelItemsAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapPanelItemsAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class WrapPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
@@ -680,7 +653,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemWidth(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetWrapPanelItemWidth(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemWidth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetWrapPanelItemWidth(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemWidthProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemWidth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetWrapPanelItemWidth(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemWidth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetWrapPanelItemWidth(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapPanelItemWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapPanelItemWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class WrapPanelSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
@@ -845,7 +812,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemHeight(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetWrapPanelItemHeight(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetWrapPanelItemHeight(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemHeightProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetWrapPanelItemHeight(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetWrapPanelItemHeight(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class WrapPanelSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.WrapPanel.ItemHeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetWrapPanelItemHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetWrapPanelItemHeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class WrapPanelSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetWrapPanelItemHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetWrapPanelItemHeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class WrapPanelSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/>.
     /// </summary>

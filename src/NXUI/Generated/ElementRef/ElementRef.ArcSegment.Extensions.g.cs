@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.ArcSegment"/>.
 /// </summary>
 public static partial class ArcSegmentElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ArcSegment.IsLargeArcProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ArcSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ArcSegment.IsLargeArcProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ArcSegment.PointProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ArcSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ArcSegment.PointProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ArcSegment.RotationAngleProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ArcSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ArcSegment.RotationAngleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ArcSegment.SizeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ArcSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ArcSegment.SizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ArcSegment.SweepDirectionProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class ArcSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ArcSegment.SweepDirectionProperty);
     }
 
-#endif
 }

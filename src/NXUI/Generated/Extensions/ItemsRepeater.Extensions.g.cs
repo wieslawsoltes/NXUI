@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ItemsRepeater"/> class property extension methods.
 /// </summary>
 public static partial class ItemsRepeaterExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ItemsRepeaterExtensions
         return builder.WithBinding(PropertyMetadata.ItemsRepeater_HorizontalCacheLength, Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ItemsRepeaterExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ItemsRepeaterExtensions
         return builder.WithBinding(PropertyMetadata.ItemsRepeater_ItemTemplate, Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ItemsRepeaterExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.ItemTemplateProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ItemsRepeaterExtensions
         return builder.WithBinding(PropertyMetadata.ItemsRepeater_ItemsSource, Avalonia.Controls.ItemsRepeater.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ItemsRepeaterExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.ItemsSourceProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class ItemsRepeaterExtensions
         return builder.WithBinding(PropertyMetadata.ItemsRepeater_Layout, Avalonia.Controls.ItemsRepeater.LayoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class ItemsRepeaterExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsRepeater.LayoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.LayoutProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class ItemsRepeaterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class ItemsRepeaterExtensions
         return builder.WithBinding(PropertyMetadata.ItemsRepeater_VerticalCacheLength, Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class ItemsRepeaterExtensions
         return elementRef.SetBinding(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Input.PullGestureRecognizer"/>.
 /// </summary>
 public static partial class PullGestureRecognizerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.PullGestureRecognizer.PullDirectionProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class PullGestureRecognizerElementRefExtensions
         return elementRef.Observe(Avalonia.Input.PullGestureRecognizer.PullDirectionProperty);
     }
 
-#endif
 }

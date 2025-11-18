@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter"/>.
 /// </summary>
 public static partial class ScrollContentPresenterElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.CanHorizontallyScrollProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.CanVerticallyScrollProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.ExtentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.OffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.ViewportProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> value.
@@ -121,5 +100,4 @@ public static partial class ScrollContentPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class style setters extension methods.
 /// </summary>
 public static partial class ScrollGestureRecognizerSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerCanHorizontallyScroll(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollGestureRecognizerCanHorizontallyScroll(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerCanHorizontallyScroll(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerCanHorizontallyScroll(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollGestureRecognizerCanHorizontallyScroll(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerCanHorizontallyScroll(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerCanHorizontallyScroll(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollGestureRecognizerCanHorizontallyScroll(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerCanHorizontallyScroll(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollGestureRecognizerCanHorizontallyScroll(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ScrollGestureRecognizerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerCanVerticallyScroll(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollGestureRecognizerCanVerticallyScroll(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerCanVerticallyScroll(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollGestureRecognizerCanVerticallyScroll(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerCanVerticallyScroll(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollGestureRecognizerCanVerticallyScroll(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerCanVerticallyScroll(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollGestureRecognizerCanVerticallyScroll(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerCanVerticallyScroll(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollGestureRecognizerCanVerticallyScroll(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerCanVerticallyScroll(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollGestureRecognizerCanVerticallyScroll(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ScrollGestureRecognizerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerIsScrollInertiaEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollGestureRecognizerIsScrollInertiaEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerIsScrollInertiaEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollGestureRecognizerIsScrollInertiaEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerIsScrollInertiaEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollGestureRecognizerIsScrollInertiaEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerIsScrollInertiaEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollGestureRecognizerIsScrollInertiaEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerIsScrollInertiaEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollGestureRecognizerIsScrollInertiaEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerIsScrollInertiaEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollGestureRecognizerIsScrollInertiaEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ScrollGestureRecognizerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerScrollStartDistance(this ElementBuilder<Style> builder, System.Int32 value)
+    public static StyleBuilder SetScrollGestureRecognizerScrollStartDistance(this StyleBuilder builder, System.Int32 value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerScrollStartDistance(this ElementBuilder<KeyFrame> builder, System.Int32 value)
+    public static KeyFrameBuilder SetScrollGestureRecognizerScrollStartDistance(this KeyFrameBuilder builder, System.Int32 value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerScrollStartDistance(this ElementBuilder<Style> builder, IObservable<System.Int32> observable)
+    public static StyleBuilder SetScrollGestureRecognizerScrollStartDistance(this StyleBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerScrollStartDistance(this ElementBuilder<KeyFrame> builder, IObservable<System.Int32> observable)
+    public static KeyFrameBuilder SetScrollGestureRecognizerScrollStartDistance(this KeyFrameBuilder builder, IObservable<System.Int32> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ScrollGestureRecognizerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollGestureRecognizerScrollStartDistance(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollGestureRecognizerScrollStartDistance(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ScrollGestureRecognizerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollGestureRecognizerScrollStartDistance(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollGestureRecognizerScrollStartDistance(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ScrollGestureRecognizerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/>.
     /// </summary>

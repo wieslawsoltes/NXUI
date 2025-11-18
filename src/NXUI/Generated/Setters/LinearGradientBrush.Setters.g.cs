@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.LinearGradientBrush"/> class style setters extension methods.
 /// </summary>
 public static partial class LinearGradientBrushSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/>.
@@ -20,7 +17,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLinearGradientBrushStartPoint(this ElementBuilder<Style> builder, Avalonia.RelativePoint value)
+    public static StyleBuilder SetLinearGradientBrushStartPoint(this StyleBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLinearGradientBrushStartPoint(this ElementBuilder<KeyFrame> builder, Avalonia.RelativePoint value)
+    public static KeyFrameBuilder SetLinearGradientBrushStartPoint(this KeyFrameBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class LinearGradientBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.LinearGradientBrush.StartPointProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class LinearGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LinearGradientBrush.StartPointProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLinearGradientBrushStartPoint(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static StyleBuilder SetLinearGradientBrushStartPoint(this StyleBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLinearGradientBrushStartPoint(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static KeyFrameBuilder SetLinearGradientBrushStartPoint(this KeyFrameBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class LinearGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class LinearGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LinearGradientBrush.StartPointProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLinearGradientBrushStartPoint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLinearGradientBrushStartPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLinearGradientBrushStartPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLinearGradientBrushStartPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class LinearGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class LinearGradientBrushSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/>.
@@ -185,7 +176,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLinearGradientBrushEndPoint(this ElementBuilder<Style> builder, Avalonia.RelativePoint value)
+    public static StyleBuilder SetLinearGradientBrushEndPoint(this StyleBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLinearGradientBrushEndPoint(this ElementBuilder<KeyFrame> builder, Avalonia.RelativePoint value)
+    public static KeyFrameBuilder SetLinearGradientBrushEndPoint(this KeyFrameBuilder builder, Avalonia.RelativePoint value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class LinearGradientBrushSetters
         });
     }
 
-#endif
     // Avalonia.Media.LinearGradientBrush.EndPointProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class LinearGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LinearGradientBrush.EndPointProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLinearGradientBrushEndPoint(this ElementBuilder<Style> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static StyleBuilder SetLinearGradientBrushEndPoint(this StyleBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLinearGradientBrushEndPoint(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.RelativePoint> observable)
+    public static KeyFrameBuilder SetLinearGradientBrushEndPoint(this KeyFrameBuilder builder, IObservable<Avalonia.RelativePoint> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class LinearGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class LinearGradientBrushSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LinearGradientBrush.EndPointProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLinearGradientBrushEndPoint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLinearGradientBrushEndPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class LinearGradientBrushSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLinearGradientBrushEndPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLinearGradientBrushEndPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class LinearGradientBrushSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/>.
     /// </summary>

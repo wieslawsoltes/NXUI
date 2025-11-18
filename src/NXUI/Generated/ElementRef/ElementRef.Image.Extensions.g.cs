@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Image"/>.
 /// </summary>
 public static partial class ImageElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Image.SourceProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ImageElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Image.SourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Image.BlendModeProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ImageElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Image.BlendModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Image.StretchProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ImageElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Image.StretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class ImageElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Image.StretchDirectionProperty);
     }
 
-#endif
 }

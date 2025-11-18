@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.DrawingGroup"/>.
 /// </summary>
 public static partial class DrawingGroupElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DrawingGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DrawingGroup.OpacityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DrawingGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DrawingGroup.TransformProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DrawingGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DrawingGroup.ClipGeometryProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DrawingGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DrawingGroup.OpacityMaskProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class DrawingGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DrawingGroup.ChildrenProperty);
     }
 
-#endif
 }

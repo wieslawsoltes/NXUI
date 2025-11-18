@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ListBox"/>.
 /// </summary>
 public static partial class ListBoxElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ListBox.ScrollProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ListBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ListBox.ScrollProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ListBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ListBox.SelectedItemsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ListBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ListBox.SelectionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class ListBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ListBox.SelectionModeProperty);
     }
 
-#endif
 }

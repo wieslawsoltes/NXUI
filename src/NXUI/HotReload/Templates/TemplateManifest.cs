@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Templates;
 
 using System;
@@ -29,4 +28,3 @@ internal sealed class TemplateManifestNode
 
     public IReadOnlyList<TemplateManifestNode> Children { get; }
 }
-#endif

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.RectangleGeometry"/> class style setters extension methods.
 /// </summary>
 public static partial class RectangleGeometrySetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
@@ -20,7 +17,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRadiusX(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRectangleGeometryRadiusX(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRadiusX(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusX(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.RectangleGeometry.RadiusXProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class RectangleGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRadiusX(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRectangleGeometryRadiusX(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRadiusX(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusX(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class RectangleGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusXProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRadiusX(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRectangleGeometryRadiusX(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRadiusX(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusX(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusXProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class RectangleGeometrySetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
@@ -185,7 +176,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRadiusY(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetRectangleGeometryRadiusY(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRadiusY(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusY(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.RectangleGeometry.RadiusYProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class RectangleGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRadiusY(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetRectangleGeometryRadiusY(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRadiusY(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusY(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class RectangleGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RadiusYProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRadiusY(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRectangleGeometryRadiusY(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRadiusY(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRectangleGeometryRadiusY(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RadiusYProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class RectangleGeometrySetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
@@ -350,7 +335,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRect(this ElementBuilder<Style> builder, Avalonia.Rect value)
+    public static StyleBuilder SetRectangleGeometryRect(this StyleBuilder builder, Avalonia.Rect value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRect(this ElementBuilder<KeyFrame> builder, Avalonia.Rect value)
+    public static KeyFrameBuilder SetRectangleGeometryRect(this KeyFrameBuilder builder, Avalonia.Rect value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.RectangleGeometry.RectProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class RectangleGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRect(this ElementBuilder<Style> builder, IObservable<Avalonia.Rect> observable)
+    public static StyleBuilder SetRectangleGeometryRect(this StyleBuilder builder, IObservable<Avalonia.Rect> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRect(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Rect> observable)
+    public static KeyFrameBuilder SetRectangleGeometryRect(this KeyFrameBuilder builder, IObservable<Avalonia.Rect> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class RectangleGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.RectangleGeometry.RectProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRectangleGeometryRect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRectangleGeometryRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class RectangleGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRectangleGeometryRect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRectangleGeometryRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class RectangleGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.RectangleGeometry.RectProperty"/>.
     /// </summary>

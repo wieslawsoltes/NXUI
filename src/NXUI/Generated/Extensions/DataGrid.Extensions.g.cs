@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGrid"/> class property extension methods.
 /// </summary>
 public static partial class DataGridExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_CanUserReorderColumns, Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_CanUserResizeColumns, Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.CanUserSortColumnsProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_CanUserSortColumns, Avalonia.Controls.DataGrid.CanUserSortColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.CanUserSortColumnsProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.CanUserSortColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.CanUserSortColumnsProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_ColumnHeaderHeight, Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ColumnWidthProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_ColumnWidth, Avalonia.Controls.DataGrid.ColumnWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ColumnWidthProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.ColumnWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.ColumnWidthProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowThemeProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_RowTheme, Avalonia.Controls.DataGrid.RowThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowThemeProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.RowThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.RowThemeProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.CellThemeProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_CellTheme, Avalonia.Controls.DataGrid.CellThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.CellThemeProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.CellThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.CellThemeProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_ColumnHeaderTheme, Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty
 
     /// <summary>
@@ -1948,7 +1914,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowGroupThemeProperty"/> literal value for hot reload builds.
@@ -1995,8 +1960,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_RowGroupTheme, Avalonia.Controls.DataGrid.RowGroupThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowGroupThemeProperty"/> value on a referenced control.
@@ -2043,7 +2006,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.RowGroupThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.RowGroupThemeProperty
 
     /// <summary>
@@ -2190,7 +2152,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.FrozenColumnCountProperty"/> literal value for hot reload builds.
@@ -2237,8 +2198,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_FrozenColumnCount, Avalonia.Controls.DataGrid.FrozenColumnCountProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.FrozenColumnCountProperty"/> value on a referenced control.
@@ -2285,7 +2244,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.FrozenColumnCountProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.FrozenColumnCountProperty
 
     /// <summary>
@@ -2432,7 +2390,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> literal value for hot reload builds.
@@ -2479,8 +2436,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_GridLinesVisibility, Avalonia.Controls.DataGrid.GridLinesVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> value on a referenced control.
@@ -2527,7 +2482,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.GridLinesVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.GridLinesVisibilityProperty
 
     /// <summary>
@@ -2673,7 +2627,6 @@ public static partial class DataGridExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
@@ -2685,7 +2638,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_GridLinesVisibility, Avalonia.Controls.DataGrid.GridLinesVisibilityProperty, Avalonia.Controls.DataGridGridLinesVisibility.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridGridLinesVisibility.None"/>.
@@ -2698,7 +2650,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.GridLinesVisibilityProperty] = Avalonia.Controls.DataGridGridLinesVisibility.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
@@ -2710,7 +2661,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_GridLinesVisibility, Avalonia.Controls.DataGrid.GridLinesVisibilityProperty, Avalonia.Controls.DataGridGridLinesVisibility.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridGridLinesVisibility.Horizontal"/>.
@@ -2723,7 +2673,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.GridLinesVisibilityProperty] = Avalonia.Controls.DataGridGridLinesVisibility.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
@@ -2735,7 +2684,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_GridLinesVisibility, Avalonia.Controls.DataGrid.GridLinesVisibilityProperty, Avalonia.Controls.DataGridGridLinesVisibility.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridGridLinesVisibility.Vertical"/>.
@@ -2748,7 +2696,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.GridLinesVisibilityProperty] = Avalonia.Controls.DataGridGridLinesVisibility.Vertical;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> enum value for hot reload builds.
@@ -2760,7 +2707,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_GridLinesVisibility, Avalonia.Controls.DataGrid.GridLinesVisibilityProperty, Avalonia.Controls.DataGridGridLinesVisibility.All);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridGridLinesVisibility.All"/>.
@@ -2774,7 +2720,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> literal value for hot reload builds.
@@ -2821,8 +2766,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_HeadersVisibility, Avalonia.Controls.DataGrid.HeadersVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> value on a referenced control.
@@ -2869,7 +2812,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.HeadersVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.HeadersVisibilityProperty
 
     /// <summary>
@@ -3015,7 +2957,6 @@ public static partial class DataGridExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
@@ -3027,7 +2968,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HeadersVisibility, Avalonia.Controls.DataGrid.HeadersVisibilityProperty, Avalonia.Controls.DataGridHeadersVisibility.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridHeadersVisibility.None"/>.
@@ -3040,7 +2980,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.HeadersVisibilityProperty] = Avalonia.Controls.DataGridHeadersVisibility.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
@@ -3052,7 +2991,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HeadersVisibility, Avalonia.Controls.DataGrid.HeadersVisibilityProperty, Avalonia.Controls.DataGridHeadersVisibility.Column);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridHeadersVisibility.Column"/>.
@@ -3065,7 +3003,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.HeadersVisibilityProperty] = Avalonia.Controls.DataGridHeadersVisibility.Column;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
@@ -3077,7 +3014,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HeadersVisibility, Avalonia.Controls.DataGrid.HeadersVisibilityProperty, Avalonia.Controls.DataGridHeadersVisibility.Row);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridHeadersVisibility.Row"/>.
@@ -3090,7 +3026,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.HeadersVisibilityProperty] = Avalonia.Controls.DataGridHeadersVisibility.Row;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> enum value for hot reload builds.
@@ -3102,7 +3037,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HeadersVisibility, Avalonia.Controls.DataGrid.HeadersVisibilityProperty, Avalonia.Controls.DataGridHeadersVisibility.All);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> property value to <see cref="Avalonia.Controls.DataGridHeadersVisibility.All"/>.
@@ -3116,7 +3050,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty"/> literal value for hot reload builds.
@@ -3163,8 +3096,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_HorizontalGridLinesBrush, Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty"/> value on a referenced control.
@@ -3211,7 +3142,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty
 
     /// <summary>
@@ -3358,7 +3288,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> literal value for hot reload builds.
@@ -3405,8 +3334,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_HorizontalScrollBarVisibility, Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> value on a referenced control.
@@ -3453,7 +3380,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty
 
     /// <summary>
@@ -3599,7 +3525,6 @@ public static partial class DataGridExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -3611,7 +3536,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HorizontalScrollBarVisibility, Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
@@ -3624,7 +3548,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -3636,7 +3559,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HorizontalScrollBarVisibility, Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Auto);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Auto"/>.
@@ -3649,7 +3571,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -3661,7 +3582,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HorizontalScrollBarVisibility, Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden"/>.
@@ -3674,7 +3594,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -3686,7 +3605,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_HorizontalScrollBarVisibility, Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Visible);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Visible"/>.
@@ -3700,7 +3618,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.IsReadOnlyProperty"/> literal value for hot reload builds.
@@ -3747,8 +3664,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_IsReadOnly, Avalonia.Controls.DataGrid.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.IsReadOnlyProperty"/> value on a referenced control.
@@ -3795,7 +3710,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.IsReadOnlyProperty
 
     /// <summary>
@@ -3942,7 +3856,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty"/> literal value for hot reload builds.
@@ -3989,8 +3902,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_AreRowGroupHeadersFrozen, Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty"/> value on a referenced control.
@@ -4037,7 +3948,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty
 
     /// <summary>
@@ -4184,7 +4094,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty"/> literal value for hot reload builds.
@@ -4231,8 +4140,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_IsScrollInertiaEnabled, Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty"/> value on a referenced control.
@@ -4279,7 +4186,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty
 
     /// <summary>
@@ -4516,7 +4422,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.MaxColumnWidthProperty"/> literal value for hot reload builds.
@@ -4563,8 +4468,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_MaxColumnWidth, Avalonia.Controls.DataGrid.MaxColumnWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.MaxColumnWidthProperty"/> value on a referenced control.
@@ -4611,7 +4514,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.MaxColumnWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.MaxColumnWidthProperty
 
     /// <summary>
@@ -4758,7 +4660,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.MinColumnWidthProperty"/> literal value for hot reload builds.
@@ -4805,8 +4706,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_MinColumnWidth, Avalonia.Controls.DataGrid.MinColumnWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.MinColumnWidthProperty"/> value on a referenced control.
@@ -4853,7 +4752,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.MinColumnWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.MinColumnWidthProperty
 
     /// <summary>
@@ -5000,7 +4898,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowBackgroundProperty"/> literal value for hot reload builds.
@@ -5047,8 +4944,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_RowBackground, Avalonia.Controls.DataGrid.RowBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowBackgroundProperty"/> value on a referenced control.
@@ -5095,7 +4990,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.RowBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.RowBackgroundProperty
 
     /// <summary>
@@ -5242,7 +5136,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowHeightProperty"/> literal value for hot reload builds.
@@ -5289,8 +5182,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_RowHeight, Avalonia.Controls.DataGrid.RowHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowHeightProperty"/> value on a referenced control.
@@ -5337,7 +5228,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.RowHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.RowHeightProperty
 
     /// <summary>
@@ -5484,7 +5374,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowHeaderWidthProperty"/> literal value for hot reload builds.
@@ -5531,8 +5420,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_RowHeaderWidth, Avalonia.Controls.DataGrid.RowHeaderWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowHeaderWidthProperty"/> value on a referenced control.
@@ -5579,7 +5466,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.RowHeaderWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.RowHeaderWidthProperty
 
     /// <summary>
@@ -5726,7 +5612,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> literal value for hot reload builds.
@@ -5773,8 +5658,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_SelectionMode, Avalonia.Controls.DataGrid.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> value on a referenced control.
@@ -5821,7 +5704,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.SelectionModeProperty
 
     /// <summary>
@@ -5967,7 +5849,6 @@ public static partial class DataGridExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> enum value for hot reload builds.
@@ -5979,7 +5860,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_SelectionMode, Avalonia.Controls.DataGrid.SelectionModeProperty, Avalonia.Controls.DataGridSelectionMode.Extended);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridSelectionMode.Extended"/>.
@@ -5992,7 +5872,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.SelectionModeProperty] = Avalonia.Controls.DataGridSelectionMode.Extended;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> enum value for hot reload builds.
@@ -6004,7 +5883,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_SelectionMode, Avalonia.Controls.DataGrid.SelectionModeProperty, Avalonia.Controls.DataGridSelectionMode.Single);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridSelectionMode.Single"/>.
@@ -6018,7 +5896,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty"/> literal value for hot reload builds.
@@ -6065,8 +5942,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_VerticalGridLinesBrush, Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty"/> value on a referenced control.
@@ -6113,7 +5988,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty
 
     /// <summary>
@@ -6260,7 +6134,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> literal value for hot reload builds.
@@ -6307,8 +6180,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_VerticalScrollBarVisibility, Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> value on a referenced control.
@@ -6355,7 +6226,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty
 
     /// <summary>
@@ -6501,7 +6371,6 @@ public static partial class DataGridExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -6513,7 +6382,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_VerticalScrollBarVisibility, Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
@@ -6526,7 +6394,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -6538,7 +6405,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_VerticalScrollBarVisibility, Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Auto);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Auto"/>.
@@ -6551,7 +6417,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -6563,7 +6428,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_VerticalScrollBarVisibility, Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden"/>.
@@ -6576,7 +6440,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> enum value for hot reload builds.
@@ -6588,7 +6451,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_VerticalScrollBarVisibility, Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Visible);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Visible"/>.
@@ -6602,7 +6464,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty"/> literal value for hot reload builds.
@@ -6649,8 +6510,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_DropLocationIndicatorTemplate, Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty"/> value on a referenced control.
@@ -6697,7 +6556,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty
 
     /// <summary>
@@ -6844,7 +6702,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.SelectedIndexProperty"/> literal value for hot reload builds.
@@ -6891,8 +6748,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_SelectedIndex, Avalonia.Controls.DataGrid.SelectedIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.SelectedIndexProperty"/> value on a referenced control.
@@ -6939,7 +6794,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.SelectedIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.SelectedIndexProperty
 
     /// <summary>
@@ -7086,7 +6940,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.SelectedItemProperty"/> literal value for hot reload builds.
@@ -7133,8 +6986,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_SelectedItem, Avalonia.Controls.DataGrid.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.SelectedItemProperty"/> value on a referenced control.
@@ -7181,7 +7032,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.SelectedItemProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.SelectedItemProperty
 
     /// <summary>
@@ -7328,7 +7178,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> literal value for hot reload builds.
@@ -7375,8 +7224,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_ClipboardCopyMode, Avalonia.Controls.DataGrid.ClipboardCopyModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> value on a referenced control.
@@ -7423,7 +7270,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.ClipboardCopyModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.ClipboardCopyModeProperty
 
     /// <summary>
@@ -7569,7 +7415,6 @@ public static partial class DataGridExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> enum value for hot reload builds.
@@ -7581,7 +7426,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_ClipboardCopyMode, Avalonia.Controls.DataGrid.ClipboardCopyModeProperty, Avalonia.Controls.DataGridClipboardCopyMode.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridClipboardCopyMode.None"/>.
@@ -7594,7 +7438,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.ClipboardCopyModeProperty] = Avalonia.Controls.DataGridClipboardCopyMode.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> enum value for hot reload builds.
@@ -7606,7 +7449,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_ClipboardCopyMode, Avalonia.Controls.DataGrid.ClipboardCopyModeProperty, Avalonia.Controls.DataGridClipboardCopyMode.ExcludeHeader);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridClipboardCopyMode.ExcludeHeader"/>.
@@ -7619,7 +7461,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.ClipboardCopyModeProperty] = Avalonia.Controls.DataGridClipboardCopyMode.ExcludeHeader;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> enum value for hot reload builds.
@@ -7631,7 +7472,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_ClipboardCopyMode, Avalonia.Controls.DataGrid.ClipboardCopyModeProperty, Avalonia.Controls.DataGridClipboardCopyMode.IncludeHeader);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridClipboardCopyMode.IncludeHeader"/>.
@@ -7645,7 +7485,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty"/> literal value for hot reload builds.
@@ -7692,8 +7531,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_AutoGenerateColumns, Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty"/> value on a referenced control.
@@ -7740,7 +7577,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty
 
     /// <summary>
@@ -7887,7 +7723,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.ItemsSourceProperty"/> literal value for hot reload builds.
@@ -7934,8 +7769,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_ItemsSource, Avalonia.Controls.DataGrid.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.ItemsSourceProperty"/> value on a referenced control.
@@ -7982,7 +7815,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.ItemsSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.ItemsSourceProperty
 
     /// <summary>
@@ -8129,7 +7961,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty"/> literal value for hot reload builds.
@@ -8176,8 +8007,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_AreRowDetailsFrozen, Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty"/> value on a referenced control.
@@ -8224,7 +8053,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty
 
     /// <summary>
@@ -8371,7 +8199,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsTemplateProperty"/> literal value for hot reload builds.
@@ -8418,8 +8245,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_RowDetailsTemplate, Avalonia.Controls.DataGrid.RowDetailsTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowDetailsTemplateProperty"/> value on a referenced control.
@@ -8466,7 +8291,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.RowDetailsTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.RowDetailsTemplateProperty
 
     /// <summary>
@@ -8613,7 +8437,6 @@ public static partial class DataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> literal value for hot reload builds.
@@ -8660,8 +8483,6 @@ public static partial class DataGridExtensions
         return builder.WithBinding(PropertyMetadata.DataGrid_RowDetailsVisibilityMode, Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> value on a referenced control.
@@ -8708,7 +8529,6 @@ public static partial class DataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty
 
     /// <summary>
@@ -8854,7 +8674,6 @@ public static partial class DataGridExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> enum value for hot reload builds.
@@ -8866,7 +8685,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_RowDetailsVisibilityMode, Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty, Avalonia.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected"/>.
@@ -8879,7 +8697,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty] = Avalonia.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> enum value for hot reload builds.
@@ -8891,7 +8708,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_RowDetailsVisibilityMode, Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty, Avalonia.Controls.DataGridRowDetailsVisibilityMode.Visible);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridRowDetailsVisibilityMode.Visible"/>.
@@ -8904,7 +8720,6 @@ public static partial class DataGridExtensions
         obj[Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty] = Avalonia.Controls.DataGridRowDetailsVisibilityMode.Visible;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> enum value for hot reload builds.
@@ -8916,7 +8731,6 @@ public static partial class DataGridExtensions
         return builder.WithValue(PropertyMetadata.DataGrid_RowDetailsVisibilityMode, Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty, Avalonia.Controls.DataGridRowDetailsVisibilityMode.Collapsed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> property value to <see cref="Avalonia.Controls.DataGridRowDetailsVisibilityMode.Collapsed"/>.
@@ -9068,7 +8882,6 @@ public static partial class DataGridExtensions
     {
         return obj.GetObservable(Avalonia.Controls.DataGrid.SelectionChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -9111,7 +8924,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.HorizontalScroll
 
@@ -9146,7 +8958,6 @@ public static partial class DataGridExtensions
                 h => obj.HorizontalScroll -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9168,7 +8979,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.VerticalScroll
 
@@ -9203,7 +9013,6 @@ public static partial class DataGridExtensions
                 h => obj.VerticalScroll -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9225,7 +9034,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.AutoGeneratingColumn
 
@@ -9260,7 +9068,6 @@ public static partial class DataGridExtensions
                 h => obj.AutoGeneratingColumn -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9282,7 +9089,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.BeginningEdit
 
@@ -9317,7 +9123,6 @@ public static partial class DataGridExtensions
                 h => obj.BeginningEdit -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9339,7 +9144,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.CellEditEnded
 
@@ -9374,7 +9178,6 @@ public static partial class DataGridExtensions
                 h => obj.CellEditEnded -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9396,7 +9199,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.CellEditEnding
 
@@ -9431,7 +9233,6 @@ public static partial class DataGridExtensions
                 h => obj.CellEditEnding -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9453,7 +9254,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.CellPointerPressed
 
@@ -9488,7 +9288,6 @@ public static partial class DataGridExtensions
                 h => obj.CellPointerPressed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9510,7 +9309,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.ColumnDisplayIndexChanged
 
@@ -9545,7 +9343,6 @@ public static partial class DataGridExtensions
                 h => obj.ColumnDisplayIndexChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9567,7 +9364,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.ColumnReordered
 
@@ -9602,7 +9398,6 @@ public static partial class DataGridExtensions
                 h => obj.ColumnReordered -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9624,7 +9419,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.ColumnReordering
 
@@ -9659,7 +9453,6 @@ public static partial class DataGridExtensions
                 h => obj.ColumnReordering -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9681,7 +9474,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.CurrentCellChanged
 
@@ -9716,7 +9508,6 @@ public static partial class DataGridExtensions
                 h => obj.CurrentCellChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9738,7 +9529,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.LoadingRow
 
@@ -9773,7 +9563,6 @@ public static partial class DataGridExtensions
                 h => obj.LoadingRow -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9795,7 +9584,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.PreparingCellForEdit
 
@@ -9830,7 +9618,6 @@ public static partial class DataGridExtensions
                 h => obj.PreparingCellForEdit -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9852,7 +9639,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.RowEditEnded
 
@@ -9887,7 +9673,6 @@ public static partial class DataGridExtensions
                 h => obj.RowEditEnded -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9909,7 +9694,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.RowEditEnding
 
@@ -9944,7 +9728,6 @@ public static partial class DataGridExtensions
                 h => obj.RowEditEnding -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9966,7 +9749,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.SelectionChanged
 
@@ -10001,7 +9783,6 @@ public static partial class DataGridExtensions
                 h => obj.SelectionChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10023,7 +9804,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.Sorting
 
@@ -10058,7 +9838,6 @@ public static partial class DataGridExtensions
                 h => obj.Sorting -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10080,7 +9859,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.UnloadingRow
 
@@ -10115,7 +9893,6 @@ public static partial class DataGridExtensions
                 h => obj.UnloadingRow -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10137,7 +9914,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.LoadingRowDetails
 
@@ -10172,7 +9948,6 @@ public static partial class DataGridExtensions
                 h => obj.LoadingRowDetails -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10194,7 +9969,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.RowDetailsVisibilityChanged
 
@@ -10229,7 +10003,6 @@ public static partial class DataGridExtensions
                 h => obj.RowDetailsVisibilityChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10251,7 +10024,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.UnloadingRowDetails
 
@@ -10286,7 +10058,6 @@ public static partial class DataGridExtensions
                 h => obj.UnloadingRowDetails -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10308,7 +10079,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.LoadingRowGroup
 
@@ -10343,7 +10113,6 @@ public static partial class DataGridExtensions
                 h => obj.LoadingRowGroup -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10365,7 +10134,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.UnloadingRowGroup
 
@@ -10400,7 +10168,6 @@ public static partial class DataGridExtensions
                 h => obj.UnloadingRowGroup -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10422,7 +10189,6 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.DataGrid.CopyingRowClipboardContent
 
@@ -10457,7 +10223,6 @@ public static partial class DataGridExtensions
                 h => obj.CopyingRowClipboardContent -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -10479,5 +10244,4 @@ public static partial class DataGridExtensions
         }));
     }
 
-#endif
 }

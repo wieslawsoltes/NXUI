@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.DropShadowDirectionEffect"/>.
 /// </summary>
 public static partial class DropShadowDirectionEffectElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DropShadowDirectionEffectElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DropShadowDirectionEffect.ShadowDepthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.DropShadowDirectionEffect.DirectionProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class DropShadowDirectionEffectElementRefExtensions
         return elementRef.Observe(Avalonia.Media.DropShadowDirectionEffect.DirectionProperty);
     }
 
-#endif
 }

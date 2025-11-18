@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.TileBrush"/>.
 /// </summary>
 public static partial class TileBrushElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TileBrush.AlignmentXProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TileBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TileBrush.AlignmentXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TileBrush.AlignmentYProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TileBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TileBrush.AlignmentYProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TileBrush.DestinationRectProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TileBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TileBrush.DestinationRectProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TileBrush.SourceRectProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TileBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TileBrush.SourceRectProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TileBrush.StretchProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TileBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TileBrush.StretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TileBrush.TileModeProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class TileBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TileBrush.TileModeProperty);
     }
 
-#endif
 }

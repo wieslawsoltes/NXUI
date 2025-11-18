@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ToggleSwitch"/>.
 /// </summary>
 public static partial class ToggleSwitchElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ToggleSwitchElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToggleSwitch.OffContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ToggleSwitchElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ToggleSwitchElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToggleSwitch.OnContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ToggleSwitchElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class ToggleSwitchElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty);
     }
 
-#endif
 }

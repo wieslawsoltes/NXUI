@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Animation.TransitionBase"/> class style setters extension methods.
 /// </summary>
 public static partial class TransitionBaseSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseDuration(this ElementBuilder<Style> builder, System.TimeSpan value)
+    public static StyleBuilder SetTransitionBaseDuration(this StyleBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseDuration(this ElementBuilder<KeyFrame> builder, System.TimeSpan value)
+    public static KeyFrameBuilder SetTransitionBaseDuration(this KeyFrameBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.DurationProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DurationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseDuration(this ElementBuilder<Style> builder, IObservable<System.TimeSpan> observable)
+    public static StyleBuilder SetTransitionBaseDuration(this StyleBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseDuration(this ElementBuilder<KeyFrame> builder, IObservable<System.TimeSpan> observable)
+    public static KeyFrameBuilder SetTransitionBaseDuration(this KeyFrameBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DurationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseDuration(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseDuration(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseDuration(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseDuration(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TransitionBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseDelay(this ElementBuilder<Style> builder, System.TimeSpan value)
+    public static StyleBuilder SetTransitionBaseDelay(this StyleBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseDelay(this ElementBuilder<KeyFrame> builder, System.TimeSpan value)
+    public static KeyFrameBuilder SetTransitionBaseDelay(this KeyFrameBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.DelayProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DelayProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseDelay(this ElementBuilder<Style> builder, IObservable<System.TimeSpan> observable)
+    public static StyleBuilder SetTransitionBaseDelay(this StyleBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseDelay(this ElementBuilder<KeyFrame> builder, IObservable<System.TimeSpan> observable)
+    public static KeyFrameBuilder SetTransitionBaseDelay(this KeyFrameBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.DelayProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseDelay(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseDelay(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TransitionBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseEasing(this ElementBuilder<Style> builder, Avalonia.Animation.Easings.Easing value)
+    public static StyleBuilder SetTransitionBaseEasing(this StyleBuilder builder, Avalonia.Animation.Easings.Easing value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseEasing(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.Easings.Easing value)
+    public static KeyFrameBuilder SetTransitionBaseEasing(this KeyFrameBuilder builder, Avalonia.Animation.Easings.Easing value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.EasingProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.EasingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseEasing(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
+    public static StyleBuilder SetTransitionBaseEasing(this StyleBuilder builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseEasing(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
+    public static KeyFrameBuilder SetTransitionBaseEasing(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.EasingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseEasing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseEasing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseEasing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseEasing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TransitionBaseSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseProperty(this ElementBuilder<Style> builder, Avalonia.AvaloniaProperty value)
+    public static StyleBuilder SetTransitionBaseProperty(this StyleBuilder builder, Avalonia.AvaloniaProperty value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseProperty(this ElementBuilder<KeyFrame> builder, Avalonia.AvaloniaProperty value)
+    public static KeyFrameBuilder SetTransitionBaseProperty(this KeyFrameBuilder builder, Avalonia.AvaloniaProperty value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.PropertyProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.PropertyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseProperty(this ElementBuilder<Style> builder, IObservable<Avalonia.AvaloniaProperty> observable)
+    public static StyleBuilder SetTransitionBaseProperty(this StyleBuilder builder, IObservable<Avalonia.AvaloniaProperty> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseProperty(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.AvaloniaProperty> observable)
+    public static KeyFrameBuilder SetTransitionBaseProperty(this KeyFrameBuilder builder, IObservable<Avalonia.AvaloniaProperty> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TransitionBaseSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.TransitionBase.PropertyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitionBaseProperty(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitionBaseProperty(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TransitionBaseSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitionBaseProperty(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitionBaseProperty(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TransitionBaseSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/>.
     /// </summary>

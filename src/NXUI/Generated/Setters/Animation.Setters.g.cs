@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Animation.Animation"/> class style setters extension methods.
 /// </summary>
 public static partial class AnimationSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
@@ -20,7 +17,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDuration(this ElementBuilder<Style> builder, System.TimeSpan value)
+    public static StyleBuilder SetAnimationDuration(this StyleBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDuration(this ElementBuilder<KeyFrame> builder, System.TimeSpan value)
+    public static KeyFrameBuilder SetAnimationDuration(this KeyFrameBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.DurationProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDuration(this ElementBuilder<Style> builder, IObservable<System.TimeSpan> observable)
+    public static StyleBuilder SetAnimationDuration(this StyleBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDuration(this ElementBuilder<KeyFrame> builder, IObservable<System.TimeSpan> observable)
+    public static KeyFrameBuilder SetAnimationDuration(this KeyFrameBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DurationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDuration(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationDuration(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDuration(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationDuration(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DurationProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class AnimationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
@@ -185,7 +176,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationIterationCount(this ElementBuilder<Style> builder, Avalonia.Animation.IterationCount value)
+    public static StyleBuilder SetAnimationIterationCount(this StyleBuilder builder, Avalonia.Animation.IterationCount value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationIterationCount(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.IterationCount value)
+    public static KeyFrameBuilder SetAnimationIterationCount(this KeyFrameBuilder builder, Avalonia.Animation.IterationCount value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.IterationCountProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationIterationCount(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.IterationCount> observable)
+    public static StyleBuilder SetAnimationIterationCount(this StyleBuilder builder, IObservable<Avalonia.Animation.IterationCount> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationIterationCount(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.IterationCount> observable)
+    public static KeyFrameBuilder SetAnimationIterationCount(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.IterationCount> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.IterationCountProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationIterationCount(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationIterationCount(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationIterationCount(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationIterationCount(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.IterationCountProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class AnimationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
@@ -350,7 +335,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationPlaybackDirection(this ElementBuilder<Style> builder, Avalonia.Animation.PlaybackDirection value)
+    public static StyleBuilder SetAnimationPlaybackDirection(this StyleBuilder builder, Avalonia.Animation.PlaybackDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationPlaybackDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.PlaybackDirection value)
+    public static KeyFrameBuilder SetAnimationPlaybackDirection(this KeyFrameBuilder builder, Avalonia.Animation.PlaybackDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.PlaybackDirectionProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationPlaybackDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.PlaybackDirection> observable)
+    public static StyleBuilder SetAnimationPlaybackDirection(this StyleBuilder builder, IObservable<Avalonia.Animation.PlaybackDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationPlaybackDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.PlaybackDirection> observable)
+    public static KeyFrameBuilder SetAnimationPlaybackDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.PlaybackDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.PlaybackDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationPlaybackDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationPlaybackDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationPlaybackDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationPlaybackDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.PlaybackDirectionProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class AnimationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationFillMode(this ElementBuilder<Style> builder, Avalonia.Animation.FillMode value)
+    public static StyleBuilder SetAnimationFillMode(this StyleBuilder builder, Avalonia.Animation.FillMode value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationFillMode(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.FillMode value)
+    public static KeyFrameBuilder SetAnimationFillMode(this KeyFrameBuilder builder, Avalonia.Animation.FillMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.FillModeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationFillMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.FillMode> observable)
+    public static StyleBuilder SetAnimationFillMode(this StyleBuilder builder, IObservable<Avalonia.Animation.FillMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationFillMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.FillMode> observable)
+    public static KeyFrameBuilder SetAnimationFillMode(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.FillMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.FillModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationFillMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationFillMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationFillMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationFillMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.FillModeProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class AnimationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
@@ -680,7 +653,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationEasing(this ElementBuilder<Style> builder, Avalonia.Animation.Easings.Easing value)
+    public static StyleBuilder SetAnimationEasing(this StyleBuilder builder, Avalonia.Animation.Easings.Easing value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationEasing(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.Easings.Easing value)
+    public static KeyFrameBuilder SetAnimationEasing(this KeyFrameBuilder builder, Avalonia.Animation.Easings.Easing value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.EasingProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationEasing(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
+    public static StyleBuilder SetAnimationEasing(this StyleBuilder builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationEasing(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
+    public static KeyFrameBuilder SetAnimationEasing(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.Easings.Easing> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.EasingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationEasing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationEasing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationEasing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationEasing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.EasingProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class AnimationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
@@ -845,7 +812,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDelay(this ElementBuilder<Style> builder, System.TimeSpan value)
+    public static StyleBuilder SetAnimationDelay(this StyleBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDelay(this ElementBuilder<KeyFrame> builder, System.TimeSpan value)
+    public static KeyFrameBuilder SetAnimationDelay(this KeyFrameBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.DelayProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDelay(this ElementBuilder<Style> builder, IObservable<System.TimeSpan> observable)
+    public static StyleBuilder SetAnimationDelay(this StyleBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDelay(this ElementBuilder<KeyFrame> builder, IObservable<System.TimeSpan> observable)
+    public static KeyFrameBuilder SetAnimationDelay(this KeyFrameBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDelay(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationDelay(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDelay(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationDelay(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class AnimationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDelayBetweenIterations(this ElementBuilder<Style> builder, System.TimeSpan value)
+    public static StyleBuilder SetAnimationDelayBetweenIterations(this StyleBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDelayBetweenIterations(this ElementBuilder<KeyFrame> builder, System.TimeSpan value)
+    public static KeyFrameBuilder SetAnimationDelayBetweenIterations(this KeyFrameBuilder builder, System.TimeSpan value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.DelayBetweenIterationsProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDelayBetweenIterations(this ElementBuilder<Style> builder, IObservable<System.TimeSpan> observable)
+    public static StyleBuilder SetAnimationDelayBetweenIterations(this StyleBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDelayBetweenIterations(this ElementBuilder<KeyFrame> builder, IObservable<System.TimeSpan> observable)
+    public static KeyFrameBuilder SetAnimationDelayBetweenIterations(this KeyFrameBuilder builder, IObservable<System.TimeSpan> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.DelayBetweenIterationsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationDelayBetweenIterations(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationDelayBetweenIterations(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationDelayBetweenIterations(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationDelayBetweenIterations(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.DelayBetweenIterationsProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class AnimationSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationSpeedRatio(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetAnimationSpeedRatio(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationSpeedRatio(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetAnimationSpeedRatio(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     // Avalonia.Animation.Animation.SpeedRatioProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationSpeedRatio(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetAnimationSpeedRatio(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationSpeedRatio(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetAnimationSpeedRatio(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class AnimationSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Animation.Animation.SpeedRatioProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAnimationSpeedRatio(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAnimationSpeedRatio(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class AnimationSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAnimationSpeedRatio(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAnimationSpeedRatio(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class AnimationSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Animation.Animation.SpeedRatioProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.CombinedGeometry"/> class property extension methods.
 /// </summary>
 public static partial class CombinedGeometryExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class CombinedGeometryExtensions
         return builder.WithBinding(PropertyMetadata.CombinedGeometry_Geometry1, Avalonia.Media.CombinedGeometry.Geometry1Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class CombinedGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.Geometry1Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.CombinedGeometry.Geometry1Property
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class CombinedGeometryExtensions
         return builder.WithBinding(PropertyMetadata.CombinedGeometry_Geometry2, Avalonia.Media.CombinedGeometry.Geometry2Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class CombinedGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.Geometry2Property, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.CombinedGeometry.Geometry2Property
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class CombinedGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class CombinedGeometryExtensions
         return builder.WithBinding(PropertyMetadata.CombinedGeometry_GeometryCombineMode, Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class CombinedGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class CombinedGeometryExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class CombinedGeometryExtensions
         return builder.WithValue(PropertyMetadata.CombinedGeometry_GeometryCombineMode, Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, Avalonia.Media.GeometryCombineMode.Union);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Union"/>.
@@ -762,7 +746,6 @@ public static partial class CombinedGeometryExtensions
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Union;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class CombinedGeometryExtensions
         return builder.WithValue(PropertyMetadata.CombinedGeometry_GeometryCombineMode, Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, Avalonia.Media.GeometryCombineMode.Intersect);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Intersect"/>.
@@ -787,7 +769,6 @@ public static partial class CombinedGeometryExtensions
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Intersect;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> enum value for hot reload builds.
@@ -799,7 +780,6 @@ public static partial class CombinedGeometryExtensions
         return builder.WithValue(PropertyMetadata.CombinedGeometry_GeometryCombineMode, Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, Avalonia.Media.GeometryCombineMode.Xor);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Xor"/>.
@@ -812,7 +792,6 @@ public static partial class CombinedGeometryExtensions
         obj[Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty] = Avalonia.Media.GeometryCombineMode.Xor;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> enum value for hot reload builds.
@@ -824,7 +803,6 @@ public static partial class CombinedGeometryExtensions
         return builder.WithValue(PropertyMetadata.CombinedGeometry_GeometryCombineMode, Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty, Avalonia.Media.GeometryCombineMode.Exclude);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> property value to <see cref="Avalonia.Media.GeometryCombineMode.Exclude"/>.

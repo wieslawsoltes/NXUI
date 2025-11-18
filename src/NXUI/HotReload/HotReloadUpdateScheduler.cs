@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using System;
@@ -54,4 +53,3 @@ internal sealed class HotReloadUpdateScheduler
         });
     }
 }
-#endif

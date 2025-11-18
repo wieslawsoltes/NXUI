@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Shapes.Shape"/>.
 /// </summary>
 public static partial class ShapeElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.FillProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class ShapeElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty);
     }
 
-#endif
 }

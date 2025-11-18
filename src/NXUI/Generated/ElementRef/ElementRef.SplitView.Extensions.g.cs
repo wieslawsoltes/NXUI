@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.SplitView"/>.
 /// </summary>
 public static partial class SplitViewElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.CompactPaneLengthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.DisplayModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.IsPaneOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.OpenPaneLengthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.PaneBackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.PanePlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.PaneProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.PaneProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.PaneTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SplitView.TemplateSettingsProperty"/> value.
@@ -121,5 +100,4 @@ public static partial class SplitViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SplitView.TemplateSettingsProperty);
     }
 
-#endif
 }

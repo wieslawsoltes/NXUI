@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Presenters.ContentPresenter"/> class property extension methods.
 /// </summary>
 public static partial class ContentPresenterExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_Background, Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BackgroundProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_BackgroundSizing, Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_BackgroundSizing, Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.InnerBorderEdge);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.InnerBorderEdge"/>.
@@ -520,7 +508,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.InnerBorderEdge;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_BackgroundSizing, Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.OuterBorderEdge);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.OuterBorderEdge"/>.
@@ -545,7 +531,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty] = Avalonia.Media.BackgroundSizing.OuterBorderEdge;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_BackgroundSizing, Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty, Avalonia.Media.BackgroundSizing.CenterBorder);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BackgroundSizingProperty"/> property value to <see cref="Avalonia.Media.BackgroundSizing.CenterBorder"/>.
@@ -571,7 +555,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> literal value for hot reload builds.
@@ -618,8 +601,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_BorderBrush, Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty"/> value on a referenced control.
@@ -666,7 +647,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BorderBrushProperty
 
     /// <summary>
@@ -813,7 +793,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> literal value for hot reload builds.
@@ -860,8 +839,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_BorderThickness, Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> value on a referenced control.
@@ -908,7 +885,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty
 
     /// <summary>
@@ -1054,8 +1030,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BorderThicknessProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -1079,8 +1053,6 @@ public static partial class ContentPresenterExtensions
     {
         return builder.BorderThickness(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>
@@ -1109,7 +1081,6 @@ public static partial class ContentPresenterExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> literal value for hot reload builds.
@@ -1156,8 +1127,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_CornerRadius, Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> value on a referenced control.
@@ -1204,7 +1173,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty
 
     /// <summary>
@@ -1350,8 +1318,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.CornerRadiusProperty"/> literal value using a uniform radius for hot reload builds.
     /// </summary>
@@ -1375,8 +1341,6 @@ public static partial class ContentPresenterExtensions
     {
         return builder.CornerRadius(new Avalonia.CornerRadius(topLeft, topRight, bottomRight, bottomLeft));
     }
-
-#endif
 
 
     /// <summary>
@@ -1405,7 +1369,6 @@ public static partial class ContentPresenterExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> literal value for hot reload builds.
@@ -1452,8 +1415,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_BoxShadow, Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty"/> value on a referenced control.
@@ -1500,7 +1461,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.BoxShadowProperty
 
     /// <summary>
@@ -1647,7 +1607,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> literal value for hot reload builds.
@@ -1694,8 +1653,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_Foreground, Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty"/> value on a referenced control.
@@ -1742,7 +1699,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.ForegroundProperty
 
     /// <summary>
@@ -1889,7 +1845,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> literal value for hot reload builds.
@@ -1936,8 +1891,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_FontFamily, Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty"/> value on a referenced control.
@@ -1984,7 +1937,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontFamilyProperty
 
     /// <summary>
@@ -2131,7 +2083,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> literal value for hot reload builds.
@@ -2178,8 +2129,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_FontSize, Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty"/> value on a referenced control.
@@ -2226,7 +2175,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontSizeProperty
 
     /// <summary>
@@ -2373,7 +2321,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> literal value for hot reload builds.
@@ -2420,8 +2367,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_FontStyle, Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> value on a referenced control.
@@ -2468,7 +2413,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty
 
     /// <summary>
@@ -2614,7 +2558,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> enum value for hot reload builds.
@@ -2626,7 +2569,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStyle, Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, Avalonia.Media.FontStyle.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
@@ -2639,7 +2581,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> enum value for hot reload builds.
@@ -2651,7 +2592,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStyle, Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, Avalonia.Media.FontStyle.Italic);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
@@ -2664,7 +2604,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> enum value for hot reload builds.
@@ -2676,7 +2615,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStyle, Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty, Avalonia.Media.FontStyle.Oblique);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Oblique"/>.
@@ -2690,7 +2628,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> literal value for hot reload builds.
@@ -2737,8 +2674,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> value on a referenced control.
@@ -2785,7 +2720,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty
 
     /// <summary>
@@ -2931,7 +2865,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -2943,7 +2876,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Thin);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
@@ -2956,7 +2888,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -2968,7 +2899,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.ExtraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraLight"/>.
@@ -2981,7 +2911,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -2993,7 +2922,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.UltraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
@@ -3006,7 +2934,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3018,7 +2945,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Light);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Light"/>.
@@ -3031,7 +2957,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3043,7 +2968,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.SemiLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
@@ -3056,7 +2980,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3068,7 +2991,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Normal"/>.
@@ -3081,7 +3003,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3093,7 +3014,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Regular);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
@@ -3106,7 +3026,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3118,7 +3037,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Medium);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Medium"/>.
@@ -3131,7 +3049,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3143,7 +3060,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.DemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
@@ -3156,7 +3072,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3168,7 +3083,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.SemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiBold"/>.
@@ -3181,7 +3095,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3193,7 +3106,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Bold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
@@ -3206,7 +3118,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3218,7 +3129,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBold"/>.
@@ -3231,7 +3141,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3243,7 +3152,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.UltraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
@@ -3256,7 +3164,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3268,7 +3175,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Black);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Black"/>.
@@ -3281,7 +3187,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3293,7 +3198,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Heavy);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
@@ -3306,7 +3210,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3318,7 +3221,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.Solid);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Solid"/>.
@@ -3331,7 +3233,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.Solid;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3343,7 +3244,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
@@ -3356,7 +3256,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> enum value for hot reload builds.
@@ -3368,7 +3267,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontWeight, Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty, Avalonia.Media.FontWeight.UltraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBlack"/>.
@@ -3382,7 +3280,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> literal value for hot reload builds.
@@ -3429,8 +3326,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> value on a referenced control.
@@ -3477,7 +3372,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty
 
     /// <summary>
@@ -3623,7 +3517,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3635,7 +3528,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.UltraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
@@ -3648,7 +3540,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3660,7 +3551,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.ExtraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraCondensed"/>.
@@ -3673,7 +3563,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3685,7 +3574,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.Condensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
@@ -3698,7 +3586,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3710,7 +3597,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.SemiCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiCondensed"/>.
@@ -3723,7 +3609,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3735,7 +3620,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
@@ -3748,7 +3632,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3760,7 +3643,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.SemiExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiExpanded"/>.
@@ -3773,7 +3655,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3785,7 +3666,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.Expanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
@@ -3798,7 +3678,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3810,7 +3689,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.ExtraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
@@ -3823,7 +3701,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> enum value for hot reload builds.
@@ -3835,7 +3712,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_FontStretch, Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty, Avalonia.Media.FontStretch.UltraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraExpanded"/>.
@@ -3849,7 +3725,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> literal value for hot reload builds.
@@ -3896,8 +3771,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> value on a referenced control.
@@ -3944,7 +3817,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty
 
     /// <summary>
@@ -4090,7 +3962,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4102,7 +3973,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
@@ -4115,7 +3985,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4127,7 +3996,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
@@ -4140,7 +4008,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4152,7 +4019,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
@@ -4165,7 +4031,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4177,7 +4042,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
@@ -4190,7 +4054,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4202,7 +4065,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
@@ -4215,7 +4077,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4227,7 +4088,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.DetectFromContent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
@@ -4240,7 +4100,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4252,7 +4111,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextAlignment, Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Justify);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.
@@ -4266,7 +4124,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> literal value for hot reload builds.
@@ -4313,8 +4170,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_TextWrapping, Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> value on a referenced control.
@@ -4361,7 +4216,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty
 
     /// <summary>
@@ -4507,7 +4361,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> enum value for hot reload builds.
@@ -4519,7 +4372,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextWrapping, Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.NoWrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
@@ -4532,7 +4384,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> enum value for hot reload builds.
@@ -4544,7 +4395,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextWrapping, Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.Wrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.Wrap"/>.
@@ -4557,7 +4407,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> enum value for hot reload builds.
@@ -4569,7 +4418,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_TextWrapping, Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.WrapWithOverflow);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.WrapWithOverflow"/>.
@@ -4583,7 +4431,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> literal value for hot reload builds.
@@ -4630,8 +4477,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_TextTrimming, Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> value on a referenced control.
@@ -4678,7 +4523,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty
 
     /// <summary>
@@ -4825,7 +4669,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> literal value for hot reload builds.
@@ -4872,8 +4715,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_LineHeight, Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> value on a referenced control.
@@ -4920,7 +4761,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty
 
     /// <summary>
@@ -5067,7 +4907,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> literal value for hot reload builds.
@@ -5114,8 +4953,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_MaxLines, Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> value on a referenced control.
@@ -5162,7 +4999,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty
 
     /// <summary>
@@ -5399,7 +5235,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> literal value for hot reload builds.
@@ -5446,8 +5281,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_Content, Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentProperty"/> value on a referenced control.
@@ -5494,7 +5327,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.ContentProperty
 
     /// <summary>
@@ -5641,7 +5473,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> literal value for hot reload builds.
@@ -5688,8 +5519,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_ContentTemplate, Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty"/> value on a referenced control.
@@ -5736,7 +5565,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.ContentTemplateProperty
 
     /// <summary>
@@ -5883,7 +5711,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -5930,8 +5757,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_HorizontalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -5978,7 +5803,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -6124,7 +5948,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6136,7 +5959,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_HorizontalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -6149,7 +5971,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6161,7 +5982,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_HorizontalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -6174,7 +5994,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6186,7 +6005,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_HorizontalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -6199,7 +6017,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6211,7 +6028,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_HorizontalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -6225,7 +6041,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -6272,8 +6087,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_VerticalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -6320,7 +6133,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -6466,7 +6278,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6478,7 +6289,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_VerticalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -6491,7 +6301,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6503,7 +6312,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_VerticalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -6516,7 +6324,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6528,7 +6335,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_VerticalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -6541,7 +6347,6 @@ public static partial class ContentPresenterExtensions
         obj[Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -6553,7 +6358,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithValue(PropertyMetadata.ContentPresenter_VerticalContentAlignment, Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
@@ -6567,7 +6371,6 @@ public static partial class ContentPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> literal value for hot reload builds.
@@ -6614,8 +6417,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_Padding, Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> value on a referenced control.
@@ -6662,7 +6463,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty
 
     /// <summary>
@@ -6808,8 +6608,6 @@ public static partial class ContentPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.PaddingProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -6833,8 +6631,6 @@ public static partial class ContentPresenterExtensions
     {
         return builder.Padding(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>
@@ -6863,7 +6659,6 @@ public static partial class ContentPresenterExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> literal value for hot reload builds.
@@ -6910,8 +6705,6 @@ public static partial class ContentPresenterExtensions
         return builder.WithBinding(PropertyMetadata.ContentPresenter_RecognizesAccessKey, Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty"/> value on a referenced control.
@@ -6958,7 +6751,6 @@ public static partial class ContentPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.ContentPresenter.RecognizesAccessKeyProperty
 
     /// <summary>

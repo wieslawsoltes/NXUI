@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.Extensions;
 
 using System;
@@ -171,4 +170,3 @@ public static partial class InteractiveExtensionsEx
         }
     }
 }
-#endif

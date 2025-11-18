@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/> class property extension methods.
 /// </summary>
 public static partial class DataGridCheckBoxColumnExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataGridCheckBoxColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridCheckBoxColumn_IsThreeState, Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataGridCheckBoxColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty
 
     /// <summary>

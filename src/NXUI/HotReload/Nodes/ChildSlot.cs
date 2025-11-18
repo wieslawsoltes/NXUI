@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Nodes;
 
 /// <summary>
@@ -28,4 +27,3 @@ internal enum ChildSlot
     /// </summary>
     Template = 5,
 }
-#endif

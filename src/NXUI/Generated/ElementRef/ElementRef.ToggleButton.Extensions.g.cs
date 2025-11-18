@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.ToggleButton"/>.
 /// </summary>
 public static partial class ToggleButtonElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ToggleButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class ToggleButtonElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty);
     }
 
-#endif
 }

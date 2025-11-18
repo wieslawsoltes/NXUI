@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGridTextColumn"/>.
 /// </summary>
 public static partial class DataGridTextColumnElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataGridTextColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DataGridTextColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTextColumn.FontSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DataGridTextColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTextColumn.FontStyleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DataGridTextColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTextColumn.FontWeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class DataGridTextColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTextColumn.FontStretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class DataGridTextColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTextColumn.ForegroundProperty);
     }
 
-#endif
 }

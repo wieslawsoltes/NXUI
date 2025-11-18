@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.TreeDataGridRow"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class TreeDataGridRowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class TreeDataGridRowExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGridRow_ElementFactory, Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class TreeDataGridRowExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty
 
     /// <summary>

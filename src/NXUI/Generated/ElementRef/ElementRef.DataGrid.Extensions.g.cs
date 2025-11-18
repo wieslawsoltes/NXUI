@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGrid"/>.
 /// </summary>
 public static partial class DataGridElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.CanUserReorderColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.CanUserResizeColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.CanUserSortColumnsProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.CanUserSortColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.ColumnHeaderHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.ColumnWidthProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.ColumnWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.RowThemeProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.RowThemeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.CellThemeProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.CellThemeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.ColumnHeaderThemeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.RowGroupThemeProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.RowGroupThemeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.FrozenColumnCountProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.FrozenColumnCountProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.GridLinesVisibilityProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.GridLinesVisibilityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.HeadersVisibilityProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.HeadersVisibilityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.HorizontalGridLinesBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.HorizontalScrollBarVisibilityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.IsReadOnlyProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.IsReadOnlyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.AreRowGroupHeadersFrozenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.IsValidProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.IsValidProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.MaxColumnWidthProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.MaxColumnWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.MinColumnWidthProperty"/> value.
@@ -231,8 +190,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.MinColumnWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.RowBackgroundProperty"/> value.
@@ -242,8 +199,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.RowBackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.RowHeightProperty"/> value.
@@ -253,8 +208,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.RowHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.RowHeaderWidthProperty"/> value.
@@ -264,8 +217,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.RowHeaderWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.SelectionModeProperty"/> value.
@@ -275,8 +226,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.SelectionModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty"/> value.
@@ -286,8 +235,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.VerticalGridLinesBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty"/> value.
@@ -297,8 +244,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.VerticalScrollBarVisibilityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty"/> value.
@@ -308,8 +253,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.DropLocationIndicatorTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.SelectedIndexProperty"/> value.
@@ -319,8 +262,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.SelectedIndexProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.SelectedItemProperty"/> value.
@@ -330,8 +271,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.SelectedItemProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.ClipboardCopyModeProperty"/> value.
@@ -341,8 +280,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.ClipboardCopyModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty"/> value.
@@ -352,8 +289,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.AutoGenerateColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.ItemsSourceProperty"/> value.
@@ -363,8 +298,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.ItemsSourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty"/> value.
@@ -374,8 +307,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.AreRowDetailsFrozenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.RowDetailsTemplateProperty"/> value.
@@ -385,8 +316,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.RowDetailsTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty"/> value.
@@ -396,8 +325,6 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.RowDetailsVisibilityModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.CollectionViewProperty"/> value.
@@ -407,5 +334,4 @@ public static partial class DataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGrid.CollectionViewProperty);
     }
 
-#endif
 }

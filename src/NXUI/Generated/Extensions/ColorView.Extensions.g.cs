@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ColorView"/> class property extension methods.
 /// </summary>
 public static partial class ColorViewExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_Color, Avalonia.Controls.ColorView.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_ColorModel, Avalonia.Controls.ColorView.ColorModelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.ColorModelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorModelProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ColorViewExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorModel, Avalonia.Controls.ColorView.ColorModelProperty, Avalonia.Controls.ColorModel.Hsva);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> property value to <see cref="Avalonia.Controls.ColorModel.Hsva"/>.
@@ -520,7 +508,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.ColorModelProperty] = Avalonia.Controls.ColorModel.Hsva;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorModel, Avalonia.Controls.ColorView.ColorModelProperty, Avalonia.Controls.ColorModel.Rgba);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> property value to <see cref="Avalonia.Controls.ColorModel.Rgba"/>.
@@ -546,7 +532,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_ColorSpectrumComponents, Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty
 
     /// <summary>
@@ -787,7 +769,6 @@ public static partial class ColorViewExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
@@ -799,7 +780,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumComponents, Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.HueValue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.HueValue"/>.
@@ -812,7 +792,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.HueValue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
@@ -824,7 +803,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumComponents, Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.ValueHue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.ValueHue"/>.
@@ -837,7 +815,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.ValueHue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
@@ -849,7 +826,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumComponents, Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.HueSaturation);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.HueSaturation"/>.
@@ -862,7 +838,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.HueSaturation;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
@@ -874,7 +849,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumComponents, Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.SaturationHue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.SaturationHue"/>.
@@ -887,7 +861,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.SaturationHue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
@@ -899,7 +872,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumComponents, Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.SaturationValue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.SaturationValue"/>.
@@ -912,7 +884,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.SaturationValue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> enum value for hot reload builds.
@@ -924,7 +895,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumComponents, Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.ValueSaturation);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.ValueSaturation"/>.
@@ -938,7 +908,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> literal value for hot reload builds.
@@ -985,8 +954,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_ColorSpectrumShape, Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> value on a referenced control.
@@ -1033,7 +1000,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.ColorSpectrumShapeProperty
 
     /// <summary>
@@ -1179,7 +1145,6 @@ public static partial class ColorViewExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> enum value for hot reload builds.
@@ -1191,7 +1156,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumShape, Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, Avalonia.Controls.ColorSpectrumShape.Box);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumShape.Box"/>.
@@ -1204,7 +1168,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.ColorSpectrumShapeProperty] = Avalonia.Controls.ColorSpectrumShape.Box;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> enum value for hot reload builds.
@@ -1216,7 +1179,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_ColorSpectrumShape, Avalonia.Controls.ColorView.ColorSpectrumShapeProperty, Avalonia.Controls.ColorSpectrumShape.Ring);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumShape.Ring"/>.
@@ -1230,7 +1192,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> literal value for hot reload builds.
@@ -1277,8 +1238,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_HexInputAlphaPosition, Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> value on a referenced control.
@@ -1325,7 +1284,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.HexInputAlphaPositionProperty
 
     /// <summary>
@@ -1471,7 +1429,6 @@ public static partial class ColorViewExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> enum value for hot reload builds.
@@ -1483,7 +1440,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_HexInputAlphaPosition, Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, Avalonia.Controls.AlphaComponentPosition.Leading);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> property value to <see cref="Avalonia.Controls.AlphaComponentPosition.Leading"/>.
@@ -1496,7 +1452,6 @@ public static partial class ColorViewExtensions
         obj[Avalonia.Controls.ColorView.HexInputAlphaPositionProperty] = Avalonia.Controls.AlphaComponentPosition.Leading;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> enum value for hot reload builds.
@@ -1508,7 +1463,6 @@ public static partial class ColorViewExtensions
         return builder.WithValue(PropertyMetadata.ColorView_HexInputAlphaPosition, Avalonia.Controls.ColorView.HexInputAlphaPositionProperty, Avalonia.Controls.AlphaComponentPosition.Trailing);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> property value to <see cref="Avalonia.Controls.AlphaComponentPosition.Trailing"/>.
@@ -1522,7 +1476,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/> literal value for hot reload builds.
@@ -1569,8 +1522,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_HsvColor, Avalonia.Controls.ColorView.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/> value on a referenced control.
@@ -1617,7 +1568,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.HsvColorProperty
 
     /// <summary>
@@ -1764,7 +1714,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/> literal value for hot reload builds.
@@ -1811,8 +1760,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsAccentColorsVisible, Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/> value on a referenced control.
@@ -1859,7 +1806,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty
 
     /// <summary>
@@ -2006,7 +1952,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/> literal value for hot reload builds.
@@ -2053,8 +1998,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsAlphaEnabled, Avalonia.Controls.ColorView.IsAlphaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/> value on a referenced control.
@@ -2101,7 +2044,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsAlphaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsAlphaEnabledProperty
 
     /// <summary>
@@ -2248,7 +2190,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/> literal value for hot reload builds.
@@ -2295,8 +2236,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsAlphaVisible, Avalonia.Controls.ColorView.IsAlphaVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/> value on a referenced control.
@@ -2343,7 +2282,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsAlphaVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsAlphaVisibleProperty
 
     /// <summary>
@@ -2490,7 +2428,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/> literal value for hot reload builds.
@@ -2537,8 +2474,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsColorComponentsVisible, Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/> value on a referenced control.
@@ -2585,7 +2520,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty
 
     /// <summary>
@@ -2732,7 +2666,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/> literal value for hot reload builds.
@@ -2779,8 +2712,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsColorModelVisible, Avalonia.Controls.ColorView.IsColorModelVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/> value on a referenced control.
@@ -2827,7 +2758,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsColorModelVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorModelVisibleProperty
 
     /// <summary>
@@ -2974,7 +2904,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/> literal value for hot reload builds.
@@ -3021,8 +2950,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsColorPaletteVisible, Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/> value on a referenced control.
@@ -3069,7 +2996,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty
 
     /// <summary>
@@ -3216,7 +3142,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/> literal value for hot reload builds.
@@ -3263,8 +3188,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsColorPreviewVisible, Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/> value on a referenced control.
@@ -3311,7 +3234,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty
 
     /// <summary>
@@ -3458,7 +3380,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/> literal value for hot reload builds.
@@ -3505,8 +3426,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsColorSpectrumVisible, Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/> value on a referenced control.
@@ -3553,7 +3472,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty
 
     /// <summary>
@@ -3700,7 +3618,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/> literal value for hot reload builds.
@@ -3747,8 +3664,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsColorSpectrumSliderVisible, Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/> value on a referenced control.
@@ -3795,7 +3710,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty
 
     /// <summary>
@@ -3942,7 +3856,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/> literal value for hot reload builds.
@@ -3989,8 +3902,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsComponentSliderVisible, Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/> value on a referenced control.
@@ -4037,7 +3948,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty
 
     /// <summary>
@@ -4184,7 +4094,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/> literal value for hot reload builds.
@@ -4231,8 +4140,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsComponentTextInputVisible, Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/> value on a referenced control.
@@ -4279,7 +4186,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty
 
     /// <summary>
@@ -4426,7 +4332,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/> literal value for hot reload builds.
@@ -4473,8 +4378,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_IsHexInputVisible, Avalonia.Controls.ColorView.IsHexInputVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/> value on a referenced control.
@@ -4521,7 +4424,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.IsHexInputVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.IsHexInputVisibleProperty
 
     /// <summary>
@@ -4668,7 +4570,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/> literal value for hot reload builds.
@@ -4715,8 +4616,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_MaxHue, Avalonia.Controls.ColorView.MaxHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/> value on a referenced control.
@@ -4763,7 +4662,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.MaxHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.MaxHueProperty
 
     /// <summary>
@@ -4910,7 +4808,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/> literal value for hot reload builds.
@@ -4957,8 +4854,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_MaxSaturation, Avalonia.Controls.ColorView.MaxSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/> value on a referenced control.
@@ -5005,7 +4900,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.MaxSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.MaxSaturationProperty
 
     /// <summary>
@@ -5152,7 +5046,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/> literal value for hot reload builds.
@@ -5199,8 +5092,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_MaxValue, Avalonia.Controls.ColorView.MaxValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/> value on a referenced control.
@@ -5247,7 +5138,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.MaxValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.MaxValueProperty
 
     /// <summary>
@@ -5394,7 +5284,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.MinHueProperty"/> literal value for hot reload builds.
@@ -5441,8 +5330,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_MinHue, Avalonia.Controls.ColorView.MinHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.MinHueProperty"/> value on a referenced control.
@@ -5489,7 +5376,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.MinHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.MinHueProperty
 
     /// <summary>
@@ -5636,7 +5522,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/> literal value for hot reload builds.
@@ -5683,8 +5568,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_MinSaturation, Avalonia.Controls.ColorView.MinSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/> value on a referenced control.
@@ -5731,7 +5614,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.MinSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.MinSaturationProperty
 
     /// <summary>
@@ -5878,7 +5760,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.MinValueProperty"/> literal value for hot reload builds.
@@ -5925,8 +5806,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_MinValue, Avalonia.Controls.ColorView.MinValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.MinValueProperty"/> value on a referenced control.
@@ -5973,7 +5852,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.MinValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.MinValueProperty
 
     /// <summary>
@@ -6120,7 +5998,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/> literal value for hot reload builds.
@@ -6167,8 +6044,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_PaletteColors, Avalonia.Controls.ColorView.PaletteColorsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/> value on a referenced control.
@@ -6215,7 +6090,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.PaletteColorsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.PaletteColorsProperty
 
     /// <summary>
@@ -6362,7 +6236,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/> literal value for hot reload builds.
@@ -6409,8 +6282,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_PaletteColumnCount, Avalonia.Controls.ColorView.PaletteColumnCountProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/> value on a referenced control.
@@ -6457,7 +6328,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.PaletteColumnCountProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.PaletteColumnCountProperty
 
     /// <summary>
@@ -6604,7 +6474,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.PaletteProperty"/> literal value for hot reload builds.
@@ -6651,8 +6520,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_Palette, Avalonia.Controls.ColorView.PaletteProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.PaletteProperty"/> value on a referenced control.
@@ -6699,7 +6566,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.PaletteProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.PaletteProperty
 
     /// <summary>
@@ -6846,7 +6712,6 @@ public static partial class ColorViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/> literal value for hot reload builds.
@@ -6893,8 +6758,6 @@ public static partial class ColorViewExtensions
         return builder.WithBinding(PropertyMetadata.ColorView_SelectedIndex, Avalonia.Controls.ColorView.SelectedIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/> value on a referenced control.
@@ -6941,7 +6804,6 @@ public static partial class ColorViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorView.SelectedIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorView.SelectedIndexProperty
 
     /// <summary>

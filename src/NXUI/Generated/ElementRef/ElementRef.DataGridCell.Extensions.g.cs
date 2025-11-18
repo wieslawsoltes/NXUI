@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGridCell"/>.
 /// </summary>
 public static partial class DataGridCellElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridCell.IsValidProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class DataGridCellElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridCell.IsValidProperty);
     }
 
-#endif
 }

@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.Extensions;
 
 using System;
@@ -14,7 +13,7 @@ public static partial class InteractionExtensions
     /// <summary>
     /// Records a behavior assignment built from <typeparamref name="T"/>.
     /// </summary>
-    public static ElementBuilder<Style> SetInteractionBehavior<T>(this ElementBuilder<Style> builder)
+    public static StyleBuilder SetInteractionBehavior<T>(this StyleBuilder builder)
         where T : Behavior, new()
     {
         return builder.WithAction(style => style.SetInteractionBehavior<T>());
@@ -23,11 +22,10 @@ public static partial class InteractionExtensions
     /// <summary>
     /// Records behavior assignments created from runtime factories.
     /// </summary>
-    public static ElementBuilder<Style> SetInteractionBehavior(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder SetInteractionBehavior(
+        this StyleBuilder builder,
         params Func<Behavior>[] factories)
     {
         return builder.WithAction(style => style.SetInteractionBehavior(factories));
     }
 }
-#endif

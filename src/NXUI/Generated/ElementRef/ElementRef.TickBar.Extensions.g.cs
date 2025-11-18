@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TickBar"/>.
 /// </summary>
 public static partial class TickBarElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.FillProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.FillProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.MinimumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.MaximumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.TickFrequencyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.TicksProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.TicksProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.IsDirectionReversedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.PlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> value.
@@ -110,5 +91,4 @@ public static partial class TickBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TickBar.ReservedSpaceProperty);
     }
 
-#endif
 }

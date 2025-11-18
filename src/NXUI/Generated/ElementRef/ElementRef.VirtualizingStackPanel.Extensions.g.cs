@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.VirtualizingStackPanel"/>.
 /// </summary>
 public static partial class VirtualizingStackPanelElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.VirtualizingStackPanel.OrientationProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class VirtualizingStackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.VirtualizingStackPanel.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class VirtualizingStackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.VirtualizingStackPanel.AreHorizontalSnapPointsRegularProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class VirtualizingStackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.VirtualizingStackPanel.AreVerticalSnapPointsRegularProperty);
     }
 
-#endif
 }

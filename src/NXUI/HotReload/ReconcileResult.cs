@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using Avalonia;
@@ -26,4 +25,3 @@ public readonly record struct ReconcileResult(
         ReplaceSubtreeCount + SetPropertyCount + SetBindingCount + ClearPropertyCount +
         AddChildCount + RemoveChildCount + MoveChildCount + AttachEventCount + DetachEventCount > 0;
 }
-#endif

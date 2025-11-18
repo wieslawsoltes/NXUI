@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings"/> class property extension methods.
 /// </summary>
 public static partial class SplitViewTemplateSettingsExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class SplitViewTemplateSettingsExtensions
         return builder.WithBinding(PropertyMetadata.SplitViewTemplateSettings_ClosedPaneWidth, Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SplitViewTemplateSettingsExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SplitViewTemplateSettings.ClosedPaneWidthProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class SplitViewTemplateSettingsExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class SplitViewTemplateSettingsExtensions
         return builder.WithBinding(PropertyMetadata.SplitViewTemplateSettings_PaneColumnGridLength, Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class SplitViewTemplateSettingsExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty
 
     /// <summary>
@@ -495,8 +485,6 @@ public static partial class SplitViewTemplateSettingsExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.SplitViewTemplateSettings.PaneColumnGridLengthProperty"/> literal value using a pixel value for hot reload builds.
     /// </summary>
@@ -512,8 +500,6 @@ public static partial class SplitViewTemplateSettingsExtensions
     {
         return builder.PaneColumnGridLength(new Avalonia.Controls.GridLength(value, unitType));
     }
-
-#endif
 
 
     /// <summary>

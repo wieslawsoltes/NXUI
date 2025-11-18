@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.StyledElement"/>.
 /// </summary>
 public static partial class StyledElementElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.StyledElement.DataContextProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class StyledElementElementRefExtensions
         return elementRef.Observe(Avalonia.StyledElement.DataContextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.StyledElement.NameProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class StyledElementElementRefExtensions
         return elementRef.Observe(Avalonia.StyledElement.NameProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.StyledElement.ParentProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class StyledElementElementRefExtensions
         return elementRef.Observe(Avalonia.StyledElement.ParentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.StyledElement.TemplatedParentProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class StyledElementElementRefExtensions
         return elementRef.Observe(Avalonia.StyledElement.TemplatedParentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.StyledElement.ThemeProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class StyledElementElementRefExtensions
         return elementRef.Observe(Avalonia.StyledElement.ThemeProperty);
     }
 
-#endif
 }

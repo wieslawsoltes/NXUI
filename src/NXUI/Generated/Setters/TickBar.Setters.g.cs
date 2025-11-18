@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TickBar"/> class style setters extension methods.
 /// </summary>
 public static partial class TickBarSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.FillProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarFill(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTickBarFill(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarFill(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTickBarFill(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.FillProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.FillProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.FillProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarFill(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTickBarFill(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarFill(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTickBarFill(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.FillProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.FillProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.FillProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarFill(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarFill(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarFill(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarFill(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.FillProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.MinimumProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarMinimum(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTickBarMinimum(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarMinimum(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTickBarMinimum(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.MinimumProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.MinimumProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarMinimum(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTickBarMinimum(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarMinimum(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTickBarMinimum(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.MinimumProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.MinimumProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarMinimum(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarMinimum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarMinimum(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarMinimum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.MinimumProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.MaximumProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarMaximum(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTickBarMaximum(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarMaximum(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTickBarMaximum(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.MaximumProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.MaximumProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarMaximum(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTickBarMaximum(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarMaximum(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTickBarMaximum(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.MaximumProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.MaximumProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarMaximum(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarMaximum(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarMaximum(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarMaximum(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.MaximumProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarTickFrequency(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTickBarTickFrequency(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarTickFrequency(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTickBarTickFrequency(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.TickFrequencyProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.TickFrequencyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarTickFrequency(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTickBarTickFrequency(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarTickFrequency(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTickBarTickFrequency(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.TickFrequencyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarTickFrequency(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarTickFrequency(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarTickFrequency(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarTickFrequency(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.OrientationProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    public static StyleBuilder SetTickBarOrientation(this StyleBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    public static KeyFrameBuilder SetTickBarOrientation(this KeyFrameBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.OrientationProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.OrientationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static StyleBuilder SetTickBarOrientation(this StyleBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static KeyFrameBuilder SetTickBarOrientation(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.OrientationProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.OrientationProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.TicksProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarTicks(this ElementBuilder<Style> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static StyleBuilder SetTickBarTicks(this StyleBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarTicks(this ElementBuilder<KeyFrame> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrameBuilder SetTickBarTicks(this KeyFrameBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.TicksProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.TicksProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.TicksProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarTicks(this ElementBuilder<Style> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static StyleBuilder SetTickBarTicks(this StyleBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarTicks(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static KeyFrameBuilder SetTickBarTicks(this KeyFrameBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.TicksProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.TicksProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.TicksProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarTicks(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarTicks(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarTicks(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarTicks(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.TicksProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarIsDirectionReversed(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTickBarIsDirectionReversed(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarIsDirectionReversed(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTickBarIsDirectionReversed(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.IsDirectionReversedProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.IsDirectionReversedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarIsDirectionReversed(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTickBarIsDirectionReversed(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarIsDirectionReversed(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTickBarIsDirectionReversed(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.IsDirectionReversedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarIsDirectionReversed(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarIsDirectionReversed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarIsDirectionReversed(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarIsDirectionReversed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.PlacementProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarPlacement(this ElementBuilder<Style> builder, Avalonia.Controls.TickBarPlacement value)
+    public static StyleBuilder SetTickBarPlacement(this StyleBuilder builder, Avalonia.Controls.TickBarPlacement value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.TickBarPlacement value)
+    public static KeyFrameBuilder SetTickBarPlacement(this KeyFrameBuilder builder, Avalonia.Controls.TickBarPlacement value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.PlacementProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.PlacementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarPlacement(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.TickBarPlacement> observable)
+    public static StyleBuilder SetTickBarPlacement(this StyleBuilder builder, IObservable<Avalonia.Controls.TickBarPlacement> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarPlacement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.TickBarPlacement> observable)
+    public static KeyFrameBuilder SetTickBarPlacement(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.TickBarPlacement> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.PlacementProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.PlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarPlacement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarPlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarPlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.PlacementProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class TickBarSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarReservedSpace(this ElementBuilder<Style> builder, Avalonia.Rect value)
+    public static StyleBuilder SetTickBarReservedSpace(this StyleBuilder builder, Avalonia.Rect value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarReservedSpace(this ElementBuilder<KeyFrame> builder, Avalonia.Rect value)
+    public static KeyFrameBuilder SetTickBarReservedSpace(this KeyFrameBuilder builder, Avalonia.Rect value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TickBar.ReservedSpaceProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.ReservedSpaceProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarReservedSpace(this ElementBuilder<Style> builder, IObservable<Avalonia.Rect> observable)
+    public static StyleBuilder SetTickBarReservedSpace(this StyleBuilder builder, IObservable<Avalonia.Rect> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarReservedSpace(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Rect> observable)
+    public static KeyFrameBuilder SetTickBarReservedSpace(this KeyFrameBuilder builder, IObservable<Avalonia.Rect> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class TickBarSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TickBar.ReservedSpaceProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTickBarReservedSpace(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTickBarReservedSpace(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class TickBarSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTickBarReservedSpace(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTickBarReservedSpace(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class TickBarSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/>.
     /// </summary>

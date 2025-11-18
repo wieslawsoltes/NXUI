@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Canvas"/> class property extension methods.
 /// </summary>
 public static partial class CanvasExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Canvas.LeftProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class CanvasExtensions
         return builder.WithBinding(PropertyMetadata.Canvas_Left, Avalonia.Controls.Canvas.LeftProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.LeftProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class CanvasExtensions
         return elementRef.SetBinding(Avalonia.Controls.Canvas.LeftProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Canvas.LeftProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class CanvasExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Canvas.TopProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class CanvasExtensions
         return builder.WithBinding(PropertyMetadata.Canvas_Top, Avalonia.Controls.Canvas.TopProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.TopProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class CanvasExtensions
         return elementRef.SetBinding(Avalonia.Controls.Canvas.TopProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Canvas.TopProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class CanvasExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Canvas.RightProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class CanvasExtensions
         return builder.WithBinding(PropertyMetadata.Canvas_Right, Avalonia.Controls.Canvas.RightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.RightProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class CanvasExtensions
         return elementRef.SetBinding(Avalonia.Controls.Canvas.RightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Canvas.RightProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class CanvasExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Canvas.BottomProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class CanvasExtensions
         return builder.WithBinding(PropertyMetadata.Canvas_Bottom, Avalonia.Controls.Canvas.BottomProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Canvas.BottomProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class CanvasExtensions
         return elementRef.SetBinding(Avalonia.Controls.Canvas.BottomProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Canvas.BottomProperty
 
     /// <summary>

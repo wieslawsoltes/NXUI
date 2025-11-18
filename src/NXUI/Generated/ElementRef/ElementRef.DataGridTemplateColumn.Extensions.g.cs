@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGridTemplateColumn"/>.
 /// </summary>
 public static partial class DataGridTemplateColumnElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataGridTemplateColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTemplateColumn.CellTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class DataGridTemplateColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridTemplateColumn.CellEditingTemplateProperty);
     }
 
-#endif
 }

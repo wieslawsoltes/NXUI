@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TextBox"/> class property extension methods.
 /// </summary>
 public static partial class TextBoxExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_IsInactiveSelectionHighlightEnabled, Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_ClearSelectionOnLostFocus, Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.AcceptsReturnProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_AcceptsReturn, Avalonia.Controls.TextBox.AcceptsReturnProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.AcceptsReturnProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.AcceptsReturnProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.AcceptsReturnProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.AcceptsTabProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_AcceptsTab, Avalonia.Controls.TextBox.AcceptsTabProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.AcceptsTabProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.AcceptsTabProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.AcceptsTabProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.CaretIndexProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_CaretIndex, Avalonia.Controls.TextBox.CaretIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.CaretIndexProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.CaretIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.CaretIndexProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.IsReadOnlyProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_IsReadOnly, Avalonia.Controls.TextBox.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.IsReadOnlyProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.IsReadOnlyProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.PasswordCharProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_PasswordChar, Avalonia.Controls.TextBox.PasswordCharProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.PasswordCharProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.PasswordCharProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.PasswordCharProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.SelectionBrushProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_SelectionBrush, Avalonia.Controls.TextBox.SelectionBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionBrushProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.SelectionBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.SelectionBrushProperty
 
     /// <summary>
@@ -1948,7 +1914,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.SelectionForegroundBrushProperty"/> literal value for hot reload builds.
@@ -1995,8 +1960,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_SelectionForegroundBrush, Avalonia.Controls.TextBox.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionForegroundBrushProperty"/> value on a referenced control.
@@ -2043,7 +2006,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.SelectionForegroundBrushProperty
 
     /// <summary>
@@ -2190,7 +2152,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.CaretBrushProperty"/> literal value for hot reload builds.
@@ -2237,8 +2198,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_CaretBrush, Avalonia.Controls.TextBox.CaretBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.CaretBrushProperty"/> value on a referenced control.
@@ -2285,7 +2244,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.CaretBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.CaretBrushProperty
 
     /// <summary>
@@ -2432,7 +2390,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/> literal value for hot reload builds.
@@ -2479,8 +2436,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_CaretBlinkInterval, Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/> value on a referenced control.
@@ -2527,7 +2482,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.CaretBlinkIntervalProperty
 
     /// <summary>
@@ -2674,7 +2628,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> literal value for hot reload builds.
@@ -2721,8 +2674,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_SelectionStart, Avalonia.Controls.TextBox.SelectionStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> value on a referenced control.
@@ -2769,7 +2720,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.SelectionStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.SelectionStartProperty
 
     /// <summary>
@@ -2916,7 +2866,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.SelectionEndProperty"/> literal value for hot reload builds.
@@ -2963,8 +2912,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_SelectionEnd, Avalonia.Controls.TextBox.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.SelectionEndProperty"/> value on a referenced control.
@@ -3011,7 +2958,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.SelectionEndProperty
 
     /// <summary>
@@ -3158,7 +3104,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.MaxLengthProperty"/> literal value for hot reload builds.
@@ -3205,8 +3150,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_MaxLength, Avalonia.Controls.TextBox.MaxLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.MaxLengthProperty"/> value on a referenced control.
@@ -3253,7 +3196,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.MaxLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.MaxLengthProperty
 
     /// <summary>
@@ -3400,7 +3342,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.MaxLinesProperty"/> literal value for hot reload builds.
@@ -3447,8 +3388,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_MaxLines, Avalonia.Controls.TextBox.MaxLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.MaxLinesProperty"/> value on a referenced control.
@@ -3495,7 +3434,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.MaxLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.MaxLinesProperty
 
     /// <summary>
@@ -3642,7 +3580,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/> literal value for hot reload builds.
@@ -3689,8 +3626,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_MinLines, Avalonia.Controls.TextBox.MinLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/> value on a referenced control.
@@ -3737,7 +3672,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.MinLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.MinLinesProperty
 
     /// <summary>
@@ -3884,7 +3818,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextProperty"/> literal value for hot reload builds.
@@ -3931,8 +3864,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_Text, Avalonia.Controls.TextBox.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextProperty"/> value on a referenced control.
@@ -3979,7 +3910,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.TextProperty
 
     /// <summary>
@@ -4126,7 +4056,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> literal value for hot reload builds.
@@ -4173,8 +4102,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> value on a referenced control.
@@ -4221,7 +4148,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.TextAlignmentProperty
 
     /// <summary>
@@ -4367,7 +4293,6 @@ public static partial class TextBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4379,7 +4304,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, Avalonia.Media.TextAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
@@ -4392,7 +4316,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4404,7 +4327,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, Avalonia.Media.TextAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
@@ -4417,7 +4339,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4429,7 +4350,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, Avalonia.Media.TextAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
@@ -4442,7 +4362,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4454,7 +4373,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, Avalonia.Media.TextAlignment.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
@@ -4467,7 +4385,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4479,7 +4396,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, Avalonia.Media.TextAlignment.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
@@ -4492,7 +4408,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4504,7 +4419,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, Avalonia.Media.TextAlignment.DetectFromContent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
@@ -4517,7 +4431,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4529,7 +4442,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextAlignment, Avalonia.Controls.TextBox.TextAlignmentProperty, Avalonia.Media.TextAlignment.Justify);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.
@@ -4543,7 +4455,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -4590,8 +4501,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_HorizontalContentAlignment, Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -4638,7 +4547,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -4784,7 +4692,6 @@ public static partial class TextBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4796,7 +4703,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_HorizontalContentAlignment, Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -4809,7 +4715,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4821,7 +4726,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_HorizontalContentAlignment, Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -4834,7 +4738,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4846,7 +4749,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_HorizontalContentAlignment, Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -4859,7 +4761,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -4871,7 +4772,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_HorizontalContentAlignment, Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -4885,7 +4785,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -4932,8 +4831,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_VerticalContentAlignment, Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -4980,7 +4877,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -5126,7 +5022,6 @@ public static partial class TextBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -5138,7 +5033,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_VerticalContentAlignment, Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -5151,7 +5045,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -5163,7 +5056,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_VerticalContentAlignment, Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -5176,7 +5068,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -5188,7 +5079,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_VerticalContentAlignment, Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -5201,7 +5091,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -5213,7 +5102,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_VerticalContentAlignment, Avalonia.Controls.TextBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
@@ -5227,7 +5115,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> literal value for hot reload builds.
@@ -5274,8 +5161,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_TextWrapping, Avalonia.Controls.TextBox.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> value on a referenced control.
@@ -5322,7 +5207,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.TextWrappingProperty
 
     /// <summary>
@@ -5468,7 +5352,6 @@ public static partial class TextBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> enum value for hot reload builds.
@@ -5480,7 +5363,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextWrapping, Avalonia.Controls.TextBox.TextWrappingProperty, Avalonia.Media.TextWrapping.NoWrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
@@ -5493,7 +5375,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> enum value for hot reload builds.
@@ -5505,7 +5386,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextWrapping, Avalonia.Controls.TextBox.TextWrappingProperty, Avalonia.Media.TextWrapping.Wrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.Wrap"/>.
@@ -5518,7 +5398,6 @@ public static partial class TextBoxExtensions
         obj[Avalonia.Controls.TextBox.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> enum value for hot reload builds.
@@ -5530,7 +5409,6 @@ public static partial class TextBoxExtensions
         return builder.WithValue(PropertyMetadata.TextBox_TextWrapping, Avalonia.Controls.TextBox.TextWrappingProperty, Avalonia.Media.TextWrapping.WrapWithOverflow);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.WrapWithOverflow"/>.
@@ -5544,7 +5422,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.LineHeightProperty"/> literal value for hot reload builds.
@@ -5591,8 +5468,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_LineHeight, Avalonia.Controls.TextBox.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.LineHeightProperty"/> value on a referenced control.
@@ -5639,7 +5514,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.LineHeightProperty
 
     /// <summary>
@@ -5786,7 +5660,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> literal value for hot reload builds.
@@ -5833,8 +5706,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_LetterSpacing, Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> value on a referenced control.
@@ -5881,7 +5752,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.LetterSpacingProperty
 
     /// <summary>
@@ -6028,7 +5898,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> literal value for hot reload builds.
@@ -6075,8 +5944,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_Watermark, Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> value on a referenced control.
@@ -6123,7 +5990,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.WatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.WatermarkProperty
 
     /// <summary>
@@ -6270,7 +6136,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> literal value for hot reload builds.
@@ -6317,8 +6182,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_UseFloatingWatermark, Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> value on a referenced control.
@@ -6365,7 +6228,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.UseFloatingWatermarkProperty
 
     /// <summary>
@@ -6512,7 +6374,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> literal value for hot reload builds.
@@ -6559,8 +6420,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_NewLine, Avalonia.Controls.TextBox.NewLineProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> value on a referenced control.
@@ -6607,7 +6466,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.NewLineProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.NewLineProperty
 
     /// <summary>
@@ -6754,7 +6612,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.InnerLeftContentProperty"/> literal value for hot reload builds.
@@ -6801,8 +6658,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_InnerLeftContent, Avalonia.Controls.TextBox.InnerLeftContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.InnerLeftContentProperty"/> value on a referenced control.
@@ -6849,7 +6704,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.InnerLeftContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.InnerLeftContentProperty
 
     /// <summary>
@@ -6996,7 +6850,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.InnerRightContentProperty"/> literal value for hot reload builds.
@@ -7043,8 +6896,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_InnerRightContent, Avalonia.Controls.TextBox.InnerRightContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.InnerRightContentProperty"/> value on a referenced control.
@@ -7091,7 +6942,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.InnerRightContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.InnerRightContentProperty
 
     /// <summary>
@@ -7238,7 +7088,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.RevealPasswordProperty"/> literal value for hot reload builds.
@@ -7285,8 +7134,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_RevealPassword, Avalonia.Controls.TextBox.RevealPasswordProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.RevealPasswordProperty"/> value on a referenced control.
@@ -7333,7 +7180,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.RevealPasswordProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.RevealPasswordProperty
 
     /// <summary>
@@ -7750,7 +7596,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.IsUndoEnabledProperty"/> literal value for hot reload builds.
@@ -7797,8 +7642,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_IsUndoEnabled, Avalonia.Controls.TextBox.IsUndoEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.IsUndoEnabledProperty"/> value on a referenced control.
@@ -7845,7 +7688,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.IsUndoEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.IsUndoEnabledProperty
 
     /// <summary>
@@ -7992,7 +7834,6 @@ public static partial class TextBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBox.UndoLimitProperty"/> literal value for hot reload builds.
@@ -8039,8 +7880,6 @@ public static partial class TextBoxExtensions
         return builder.WithBinding(PropertyMetadata.TextBox_UndoLimit, Avalonia.Controls.TextBox.UndoLimitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBox.UndoLimitProperty"/> value on a referenced control.
@@ -8087,7 +7926,6 @@ public static partial class TextBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBox.UndoLimitProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBox.UndoLimitProperty
 
     /// <summary>
@@ -8462,7 +8300,6 @@ public static partial class TextBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CopyingToClipboardEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -8505,7 +8342,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.CuttingToClipboardEvent
 
@@ -8555,7 +8391,6 @@ public static partial class TextBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.CuttingToClipboardEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -8598,7 +8433,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.PastingFromClipboardEvent
 
@@ -8648,7 +8482,6 @@ public static partial class TextBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.PastingFromClipboardEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -8691,7 +8524,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.TextChangedEvent
 
@@ -8741,7 +8573,6 @@ public static partial class TextBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.TextChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -8784,7 +8615,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.TextChangingEvent
 
@@ -8834,7 +8664,6 @@ public static partial class TextBoxExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TextBox.TextChangingEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -8877,7 +8706,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.CopyingToClipboard
 
@@ -8912,7 +8740,6 @@ public static partial class TextBoxExtensions
                 h => obj.CopyingToClipboard -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -8934,7 +8761,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.CuttingToClipboard
 
@@ -8969,7 +8795,6 @@ public static partial class TextBoxExtensions
                 h => obj.CuttingToClipboard -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -8991,7 +8816,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.PastingFromClipboard
 
@@ -9026,7 +8850,6 @@ public static partial class TextBoxExtensions
                 h => obj.PastingFromClipboard -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9048,7 +8871,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.TextChanged
 
@@ -9083,7 +8905,6 @@ public static partial class TextBoxExtensions
                 h => obj.TextChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9105,7 +8926,6 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TextBox.TextChanging
 
@@ -9140,7 +8960,6 @@ public static partial class TextBoxExtensions
                 h => obj.TextChanging -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -9162,5 +8981,4 @@ public static partial class TextBoxExtensions
         }));
     }
 
-#endif
 }

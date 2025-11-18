@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.StyledElement"/> class property extension methods.
 /// </summary>
 public static partial class StyledElementExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.StyledElement.DataContextProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class StyledElementExtensions
         return builder.WithBinding(PropertyMetadata.StyledElement_DataContext, Avalonia.StyledElement.DataContextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.StyledElement.DataContextProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class StyledElementExtensions
         return elementRef.SetBinding(Avalonia.StyledElement.DataContextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.StyledElement.DataContextProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class StyledElementExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.StyledElement.NameProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class StyledElementExtensions
         return builder.WithBinding(PropertyMetadata.StyledElement_Name, Avalonia.StyledElement.NameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.StyledElement.NameProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class StyledElementExtensions
         return elementRef.SetBinding(Avalonia.StyledElement.NameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.StyledElement.NameProperty
 
     /// <summary>
@@ -676,7 +666,6 @@ public static partial class StyledElementExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.StyledElement.ThemeProperty"/> literal value for hot reload builds.
@@ -723,8 +712,6 @@ public static partial class StyledElementExtensions
         return builder.WithBinding(PropertyMetadata.StyledElement_Theme, Avalonia.StyledElement.ThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.StyledElement.ThemeProperty"/> value on a referenced control.
@@ -771,7 +758,6 @@ public static partial class StyledElementExtensions
         return elementRef.SetBinding(Avalonia.StyledElement.ThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.StyledElement.ThemeProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/>.
 /// </summary>
 public static partial class ScrollGestureRecognizerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ScrollGestureRecognizerElementRefExtensions
         return elementRef.Observe(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ScrollGestureRecognizerElementRefExtensions
         return elementRef.Observe(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ScrollGestureRecognizerElementRefExtensions
         return elementRef.Observe(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class ScrollGestureRecognizerElementRefExtensions
         return elementRef.Observe(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty);
     }
 
-#endif
 }

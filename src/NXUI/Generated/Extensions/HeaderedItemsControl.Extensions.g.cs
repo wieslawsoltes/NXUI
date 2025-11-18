@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl"/> class property extension methods.
 /// </summary>
 public static partial class HeaderedItemsControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class HeaderedItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.HeaderedItemsControl_Header, Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class HeaderedItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class HeaderedItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class HeaderedItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.HeaderedItemsControl_HeaderTemplate, Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class HeaderedItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.HeaderedItemsControl.HeaderTemplateProperty
 
     /// <summary>

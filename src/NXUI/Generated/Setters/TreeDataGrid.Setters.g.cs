@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TreeDataGrid"/> class style setters extension methods.
 /// </summary>
 public static partial class TreeDataGridSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridAutoDragDropRows(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTreeDataGridAutoDragDropRows(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridAutoDragDropRows(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTreeDataGridAutoDragDropRows(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridAutoDragDropRows(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTreeDataGridAutoDragDropRows(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridAutoDragDropRows(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTreeDataGridAutoDragDropRows(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridAutoDragDropRows(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridAutoDragDropRows(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridAutoDragDropRows(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridAutoDragDropRows(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TreeDataGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCanUserResizeColumns(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTreeDataGridCanUserResizeColumns(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCanUserResizeColumns(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTreeDataGridCanUserResizeColumns(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCanUserResizeColumns(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTreeDataGridCanUserResizeColumns(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCanUserResizeColumns(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTreeDataGridCanUserResizeColumns(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCanUserResizeColumns(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridCanUserResizeColumns(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCanUserResizeColumns(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridCanUserResizeColumns(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TreeDataGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCanUserSortColumns(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTreeDataGridCanUserSortColumns(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCanUserSortColumns(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTreeDataGridCanUserSortColumns(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCanUserSortColumns(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTreeDataGridCanUserSortColumns(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCanUserSortColumns(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTreeDataGridCanUserSortColumns(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridCanUserSortColumns(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridCanUserSortColumns(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridCanUserSortColumns(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridCanUserSortColumns(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TreeDataGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridElementFactory(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.TreeDataGridElementFactory value)
+    public static StyleBuilder SetTreeDataGridElementFactory(this StyleBuilder builder, Avalonia.Controls.Primitives.TreeDataGridElementFactory value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridElementFactory(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.TreeDataGridElementFactory value)
+    public static KeyFrameBuilder SetTreeDataGridElementFactory(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.TreeDataGridElementFactory value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.ElementFactoryProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.ElementFactoryProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridElementFactory(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.TreeDataGridElementFactory> observable)
+    public static StyleBuilder SetTreeDataGridElementFactory(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.TreeDataGridElementFactory> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridElementFactory(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.TreeDataGridElementFactory> observable)
+    public static KeyFrameBuilder SetTreeDataGridElementFactory(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.TreeDataGridElementFactory> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.ElementFactoryProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridElementFactory(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridElementFactory(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridElementFactory(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridElementFactory(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TreeDataGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridRows(this ElementBuilder<Style> builder, Avalonia.Controls.Models.TreeDataGrid.IRows value)
+    public static StyleBuilder SetTreeDataGridRows(this StyleBuilder builder, Avalonia.Controls.Models.TreeDataGrid.IRows value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridRows(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Models.TreeDataGrid.IRows value)
+    public static KeyFrameBuilder SetTreeDataGridRows(this KeyFrameBuilder builder, Avalonia.Controls.Models.TreeDataGrid.IRows value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.RowsProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.RowsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridRows(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable)
+    public static StyleBuilder SetTreeDataGridRows(this StyleBuilder builder, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridRows(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable)
+    public static KeyFrameBuilder SetTreeDataGridRows(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Models.TreeDataGrid.IRows> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.RowsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridRows(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridRows(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridRows(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridRows(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TreeDataGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridShowColumnHeaders(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTreeDataGridShowColumnHeaders(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridShowColumnHeaders(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTreeDataGridShowColumnHeaders(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridShowColumnHeaders(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTreeDataGridShowColumnHeaders(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridShowColumnHeaders(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTreeDataGridShowColumnHeaders(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridShowColumnHeaders(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridShowColumnHeaders(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridShowColumnHeaders(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridShowColumnHeaders(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class TreeDataGridSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridSource(this ElementBuilder<Style> builder, Avalonia.Controls.ITreeDataGridSource value)
+    public static StyleBuilder SetTreeDataGridSource(this StyleBuilder builder, Avalonia.Controls.ITreeDataGridSource value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridSource(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ITreeDataGridSource value)
+    public static KeyFrameBuilder SetTreeDataGridSource(this KeyFrameBuilder builder, Avalonia.Controls.ITreeDataGridSource value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.SourceProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.SourceProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridSource(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ITreeDataGridSource> observable)
+    public static StyleBuilder SetTreeDataGridSource(this StyleBuilder builder, IObservable<Avalonia.Controls.ITreeDataGridSource> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridSource(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ITreeDataGridSource> observable)
+    public static KeyFrameBuilder SetTreeDataGridSource(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ITreeDataGridSource> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class TreeDataGridSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TreeDataGrid.SourceProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTreeDataGridSource(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTreeDataGridSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class TreeDataGridSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTreeDataGridSource(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTreeDataGridSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class TreeDataGridSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.GradientStop"/> class property extension methods.
 /// </summary>
 public static partial class GradientStopExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GradientStop.OffsetProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class GradientStopExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GradientStop> Offset(this ElementBuilder<Avalonia.Media.GradientStop> builder, System.Double value)
+    public static GradientStopBuilder Offset(this GradientStopBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.GradientStop_Offset, Avalonia.Media.GradientStop.OffsetProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class GradientStopExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GradientStop> Offset(
-        this ElementBuilder<Avalonia.Media.GradientStop> builder,
+    public static GradientStopBuilder Offset(
+        this GradientStopBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class GradientStopExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GradientStop> Offset(
-        this ElementBuilder<Avalonia.Media.GradientStop> builder,
+    public static GradientStopBuilder Offset(
+        this GradientStopBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class GradientStopExtensions
         return builder.WithBinding(PropertyMetadata.GradientStop_Offset, Avalonia.Media.GradientStop.OffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientStop.OffsetProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GradientStopExtensions
         return elementRef.SetBinding(Avalonia.Media.GradientStop.OffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GradientStop.OffsetProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class GradientStopExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GradientStop.ColorProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class GradientStopExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GradientStop> Color(this ElementBuilder<Avalonia.Media.GradientStop> builder, Avalonia.Media.Color value)
+    public static GradientStopBuilder Color(this GradientStopBuilder builder, Avalonia.Media.Color value)
     {
         return builder.WithValue(PropertyMetadata.GradientStop_Color, Avalonia.Media.GradientStop.ColorProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class GradientStopExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GradientStop> Color(
-        this ElementBuilder<Avalonia.Media.GradientStop> builder,
+    public static GradientStopBuilder Color(
+        this GradientStopBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class GradientStopExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GradientStop> Color(
-        this ElementBuilder<Avalonia.Media.GradientStop> builder,
+    public static GradientStopBuilder Color(
+        this GradientStopBuilder builder,
         IObservable<Avalonia.Media.Color> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class GradientStopExtensions
         return builder.WithBinding(PropertyMetadata.GradientStop_Color, Avalonia.Media.GradientStop.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GradientStop.ColorProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class GradientStopExtensions
         return elementRef.SetBinding(Avalonia.Media.GradientStop.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GradientStop.ColorProperty
 
     /// <summary>

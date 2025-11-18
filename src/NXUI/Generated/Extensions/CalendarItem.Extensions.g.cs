@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.CalendarItem"/> class property extension methods.
 /// </summary>
 public static partial class CalendarItemExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class CalendarItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> HeaderBackground(this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder, Avalonia.Media.IBrush? value)
+    public static CalendarItemBuilder HeaderBackground(this CalendarItemBuilder builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.CalendarItem_HeaderBackground, Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class CalendarItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> HeaderBackground(
-        this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder,
+    public static CalendarItemBuilder HeaderBackground(
+        this CalendarItemBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class CalendarItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> HeaderBackground(
-        this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder,
+    public static CalendarItemBuilder HeaderBackground(
+        this CalendarItemBuilder builder,
         IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class CalendarItemExtensions
         return builder.WithBinding(PropertyMetadata.CalendarItem_HeaderBackground, Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class CalendarItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.CalendarItem.HeaderBackgroundProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class CalendarItemExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class CalendarItemExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> DayTitleTemplate(this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control>? value)
+    public static CalendarItemBuilder DayTitleTemplate(this CalendarItemBuilder builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control>? value)
     {
         return builder.WithValue(PropertyMetadata.CalendarItem_DayTitleTemplate, Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class CalendarItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> DayTitleTemplate(
-        this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder,
+    public static CalendarItemBuilder DayTitleTemplate(
+        this CalendarItemBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class CalendarItemExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> DayTitleTemplate(
-        this ElementBuilder<Avalonia.Controls.Primitives.CalendarItem> builder,
+    public static CalendarItemBuilder DayTitleTemplate(
+        this CalendarItemBuilder builder,
         IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class CalendarItemExtensions
         return builder.WithBinding(PropertyMetadata.CalendarItem_DayTitleTemplate, Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class CalendarItemExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.CalendarItem.DayTitleTemplateProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.CombinedGeometry"/>.
 /// </summary>
 public static partial class CombinedGeometryElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.CombinedGeometry.Geometry1Property"/> value.
@@ -22,8 +19,6 @@ public static partial class CombinedGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.CombinedGeometry.Geometry1Property);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.CombinedGeometry.Geometry2Property"/> value.
@@ -33,8 +28,6 @@ public static partial class CombinedGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.CombinedGeometry.Geometry2Property);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class CombinedGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.CombinedGeometry.GeometryCombineModeProperty);
     }
 
-#endif
 }

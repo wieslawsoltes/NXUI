@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DashStyle"/> class property extension methods.
 /// </summary>
 public static partial class DashStyleExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DashStyle.DashesProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class DashStyleExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(this ElementBuilder<Avalonia.Media.DashStyle> builder, Avalonia.Collections.AvaloniaList<System.Double>? value)
+    public static DashStyleBuilder Dashes(this DashStyleBuilder builder, Avalonia.Collections.AvaloniaList<System.Double>? value)
     {
         return builder.WithValue(PropertyMetadata.DashStyle_Dashes, Avalonia.Media.DashStyle.DashesProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class DashStyleExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(
-        this ElementBuilder<Avalonia.Media.DashStyle> builder,
+    public static DashStyleBuilder Dashes(
+        this DashStyleBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class DashStyleExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DashStyle> Dashes(
-        this ElementBuilder<Avalonia.Media.DashStyle> builder,
+    public static DashStyleBuilder Dashes(
+        this DashStyleBuilder builder,
         IObservable<Avalonia.Collections.AvaloniaList<System.Double>?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class DashStyleExtensions
         return builder.WithBinding(PropertyMetadata.DashStyle_Dashes, Avalonia.Media.DashStyle.DashesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DashStyle.DashesProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DashStyleExtensions
         return elementRef.SetBinding(Avalonia.Media.DashStyle.DashesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DashStyle.DashesProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class DashStyleExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class DashStyleExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DashStyle> Offset(this ElementBuilder<Avalonia.Media.DashStyle> builder, System.Double value)
+    public static DashStyleBuilder Offset(this DashStyleBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.DashStyle_Offset, Avalonia.Media.DashStyle.OffsetProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class DashStyleExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DashStyle> Offset(
-        this ElementBuilder<Avalonia.Media.DashStyle> builder,
+    public static DashStyleBuilder Offset(
+        this DashStyleBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class DashStyleExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DashStyle> Offset(
-        this ElementBuilder<Avalonia.Media.DashStyle> builder,
+    public static DashStyleBuilder Offset(
+        this DashStyleBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class DashStyleExtensions
         return builder.WithBinding(PropertyMetadata.DashStyle_Offset, Avalonia.Media.DashStyle.OffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DashStyle.OffsetProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class DashStyleExtensions
         return elementRef.SetBinding(Avalonia.Media.DashStyle.OffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DashStyle.OffsetProperty
 
     /// <summary>

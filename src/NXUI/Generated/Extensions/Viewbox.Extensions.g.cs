@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Viewbox"/> class property extension methods.
 /// </summary>
 public static partial class ViewboxExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ViewboxExtensions
         return builder.WithBinding(PropertyMetadata.Viewbox_Stretch, Avalonia.Controls.Viewbox.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ViewboxExtensions
         return elementRef.SetBinding(Avalonia.Controls.Viewbox.StretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Viewbox.StretchProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class ViewboxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class ViewboxExtensions
         return builder.WithValue(PropertyMetadata.Viewbox_Stretch, Avalonia.Controls.Viewbox.StretchProperty, Avalonia.Media.Stretch.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.None"/>.
@@ -278,7 +270,6 @@ public static partial class ViewboxExtensions
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class ViewboxExtensions
         return builder.WithValue(PropertyMetadata.Viewbox_Stretch, Avalonia.Controls.Viewbox.StretchProperty, Avalonia.Media.Stretch.Fill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Fill"/>.
@@ -303,7 +293,6 @@ public static partial class ViewboxExtensions
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.Fill;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class ViewboxExtensions
         return builder.WithValue(PropertyMetadata.Viewbox_Stretch, Avalonia.Controls.Viewbox.StretchProperty, Avalonia.Media.Stretch.Uniform);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.Uniform"/>.
@@ -328,7 +316,6 @@ public static partial class ViewboxExtensions
         obj[Avalonia.Controls.Viewbox.StretchProperty] = Avalonia.Media.Stretch.Uniform;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class ViewboxExtensions
         return builder.WithValue(PropertyMetadata.Viewbox_Stretch, Avalonia.Controls.Viewbox.StretchProperty, Avalonia.Media.Stretch.UniformToFill);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> property value to <see cref="Avalonia.Media.Stretch.UniformToFill"/>.
@@ -354,7 +340,6 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> literal value for hot reload builds.
@@ -401,8 +386,6 @@ public static partial class ViewboxExtensions
         return builder.WithBinding(PropertyMetadata.Viewbox_StretchDirection, Avalonia.Controls.Viewbox.StretchDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> value on a referenced control.
@@ -449,7 +432,6 @@ public static partial class ViewboxExtensions
         return elementRef.SetBinding(Avalonia.Controls.Viewbox.StretchDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Viewbox.StretchDirectionProperty
 
     /// <summary>
@@ -595,7 +577,6 @@ public static partial class ViewboxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class ViewboxExtensions
         return builder.WithValue(PropertyMetadata.Viewbox_StretchDirection, Avalonia.Controls.Viewbox.StretchDirectionProperty, Avalonia.Media.StretchDirection.UpOnly);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.UpOnly"/>.
@@ -620,7 +600,6 @@ public static partial class ViewboxExtensions
         obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.UpOnly;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class ViewboxExtensions
         return builder.WithValue(PropertyMetadata.Viewbox_StretchDirection, Avalonia.Controls.Viewbox.StretchDirectionProperty, Avalonia.Media.StretchDirection.DownOnly);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.DownOnly"/>.
@@ -645,7 +623,6 @@ public static partial class ViewboxExtensions
         obj[Avalonia.Controls.Viewbox.StretchDirectionProperty] = Avalonia.Media.StretchDirection.DownOnly;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> enum value for hot reload builds.
@@ -657,7 +634,6 @@ public static partial class ViewboxExtensions
         return builder.WithValue(PropertyMetadata.Viewbox_StretchDirection, Avalonia.Controls.Viewbox.StretchDirectionProperty, Avalonia.Media.StretchDirection.Both);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> property value to <see cref="Avalonia.Media.StretchDirection.Both"/>.
@@ -671,7 +647,6 @@ public static partial class ViewboxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> literal value for hot reload builds.
@@ -718,8 +693,6 @@ public static partial class ViewboxExtensions
         return builder.WithBinding(PropertyMetadata.Viewbox_Child, Avalonia.Controls.Viewbox.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> value on a referenced control.
@@ -766,7 +739,6 @@ public static partial class ViewboxExtensions
         return elementRef.SetBinding(Avalonia.Controls.Viewbox.ChildProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Viewbox.ChildProperty
 
     /// <summary>

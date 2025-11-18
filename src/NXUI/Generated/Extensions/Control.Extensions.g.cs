@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Control"/> class property extension methods.
 /// </summary>
 public static partial class ControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ControlExtensions
         return builder.WithBinding(PropertyMetadata.Control_FocusAdorner, Avalonia.Controls.Control.FocusAdornerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Control.FocusAdornerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Control.FocusAdornerProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Control.TagProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ControlExtensions
         return builder.WithBinding(PropertyMetadata.Control_Tag, Avalonia.Controls.Control.TagProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.TagProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Control.TagProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Control.TagProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Control.ContextMenuProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ControlExtensions
         return builder.WithBinding(PropertyMetadata.Control_ContextMenu, Avalonia.Controls.Control.ContextMenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.ContextMenuProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Control.ContextMenuProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Control.ContextMenuProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class ControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class ControlExtensions
         return builder.WithBinding(PropertyMetadata.Control_ContextFlyout, Avalonia.Controls.Control.ContextFlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class ControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Control.ContextFlyoutProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Control.ContextFlyoutProperty
 
     /// <summary>
@@ -1028,7 +1010,6 @@ public static partial class ControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Control.RequestBringIntoViewEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1071,7 +1052,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.ContextRequestedEvent
 
@@ -1121,7 +1101,6 @@ public static partial class ControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Control.ContextRequestedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1164,7 +1143,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.LoadedEvent
 
@@ -1214,7 +1192,6 @@ public static partial class ControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Control.LoadedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1257,7 +1234,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.UnloadedEvent
 
@@ -1307,7 +1283,6 @@ public static partial class ControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Control.UnloadedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1350,7 +1325,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.SizeChangedEvent
 
@@ -1400,7 +1374,6 @@ public static partial class ControlExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Control.SizeChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1443,7 +1416,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.ContextRequested
 
@@ -1478,7 +1450,6 @@ public static partial class ControlExtensions
                 h => obj.ContextRequested -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1500,7 +1471,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.Loaded
 
@@ -1535,7 +1505,6 @@ public static partial class ControlExtensions
                 h => obj.Loaded -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1557,7 +1526,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.Unloaded
 
@@ -1592,7 +1560,6 @@ public static partial class ControlExtensions
                 h => obj.Unloaded -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1614,7 +1581,6 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Control.SizeChanged
 
@@ -1649,7 +1615,6 @@ public static partial class ControlExtensions
                 h => obj.SizeChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1671,5 +1636,4 @@ public static partial class ControlExtensions
         }));
     }
 
-#endif
 }

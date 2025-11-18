@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.Extensions;
 
 using System;
@@ -16,8 +15,8 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records a selector assignment for a builder style.
     /// </summary>
-    public static ElementBuilder<Style> Selector(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder Selector(
+        this StyleBuilder builder,
         Func<Selector?, Selector> selector)
     {
         ArgumentNullException.ThrowIfNull(selector);
@@ -30,8 +29,8 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records setters for a builder style.
     /// </summary>
-    public static ElementBuilder<Style> Setters(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder Setters(
+        this StyleBuilder builder,
         params Setter[] setters)
     {
         ArgumentNullException.ThrowIfNull(setters);
@@ -47,8 +46,8 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records a setter constructed from the provided property/value pair.
     /// </summary>
-    public static ElementBuilder<Style> Setter(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder Setter(
+        this StyleBuilder builder,
         AvaloniaProperty property,
         object value)
     {
@@ -62,8 +61,8 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records a resource dictionary assignment for the builder style.
     /// </summary>
-    public static ElementBuilder<Style> Resources(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder Resources(
+        this StyleBuilder builder,
         IResourceDictionary resources)
     {
         ArgumentNullException.ThrowIfNull(resources);
@@ -76,9 +75,9 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records a builder-based resource dictionary assignment for the builder style.
     /// </summary>
-    public static ElementBuilder<Style> Resources(
-        this ElementBuilder<Style> builder,
-        ElementBuilder<ResourceDictionary> resources)
+    public static StyleBuilder Resources(
+        this StyleBuilder builder,
+        ResourceDictionaryBuilder resources)
     {
         return builder.WithChild(
             resources,
@@ -91,8 +90,8 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records a single resource key/value pair on the style.
     /// </summary>
-    public static ElementBuilder<Style> Resources(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder Resources(
+        this StyleBuilder builder,
         object key,
         object value)
     {
@@ -106,8 +105,8 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records animation instances for the builder style.
     /// </summary>
-    public static ElementBuilder<Style> Animations(
-        this ElementBuilder<Style> builder,
+    public static StyleBuilder Animations(
+        this StyleBuilder builder,
         params IAnimation[] animations)
     {
         ArgumentNullException.ThrowIfNull(animations);
@@ -123,9 +122,9 @@ public static partial class StyleExtensions
     /// <summary>
     /// Records builder animations for the style.
     /// </summary>
-    public static ElementBuilder<Style> Animations(
-        this ElementBuilder<Style> builder,
-        params ElementBuilder<Animation>[] animations)
+    public static StyleBuilder Animations(
+        this StyleBuilder builder,
+        params AnimationBuilder[] animations)
     {
         ArgumentNullException.ThrowIfNull(animations);
         return builder.WithChildren(
@@ -143,4 +142,3 @@ public static partial class StyleExtensions
             });
     }
 }
-#endif

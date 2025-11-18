@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Documents.InlineUIContainer"/> class style setters extension methods.
 /// </summary>
 public static partial class InlineUIContainerSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
@@ -20,7 +17,7 @@ public static partial class InlineUIContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineUIContainerChild(this ElementBuilder<Style> builder, Avalonia.Controls.Control value)
+    public static StyleBuilder SetInlineUIContainerChild(this StyleBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class InlineUIContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineUIContainerChild(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Control value)
+    public static KeyFrameBuilder SetInlineUIContainerChild(this KeyFrameBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class InlineUIContainerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Documents.InlineUIContainer.ChildProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class InlineUIContainerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class InlineUIContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineUIContainerChild(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static StyleBuilder SetInlineUIContainerChild(this StyleBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class InlineUIContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineUIContainerChild(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static KeyFrameBuilder SetInlineUIContainerChild(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class InlineUIContainerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class InlineUIContainerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.InlineUIContainer.ChildProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class InlineUIContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineUIContainerChild(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInlineUIContainerChild(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class InlineUIContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineUIContainerChild(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInlineUIContainerChild(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class InlineUIContainerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.InlineUIContainer.ChildProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/>.
 /// </summary>
 public static partial class ExperimentalAcrylicMaterialElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ExperimentalAcrylicMaterialElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ExperimentalAcrylicMaterialElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ExperimentalAcrylicMaterialElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ExperimentalAcrylicMaterialElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ExperimentalAcrylicMaterialElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class ExperimentalAcrylicMaterialElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty);
     }
 
-#endif
 }

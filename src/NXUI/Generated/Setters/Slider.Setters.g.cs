@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Slider"/> class style setters extension methods.
 /// </summary>
 public static partial class SliderSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.OrientationProperty"/>.
@@ -20,7 +17,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderOrientation(this ElementBuilder<Style> builder, Avalonia.Layout.Orientation value)
+    public static StyleBuilder SetSliderOrientation(this StyleBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.Orientation value)
+    public static KeyFrameBuilder SetSliderOrientation(this KeyFrameBuilder builder, Avalonia.Layout.Orientation value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Slider.OrientationProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.OrientationProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.OrientationProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderOrientation(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static StyleBuilder SetSliderOrientation(this StyleBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderOrientation(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.Orientation> observable)
+    public static KeyFrameBuilder SetSliderOrientation(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.Orientation> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.OrientationProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.OrientationProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.OrientationProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderOrientation(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSliderOrientation(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderOrientation(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSliderOrientation(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.OrientationProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class SliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/>.
@@ -185,7 +176,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderIsDirectionReversed(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSliderIsDirectionReversed(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderIsDirectionReversed(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSliderIsDirectionReversed(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Slider.IsDirectionReversedProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.IsDirectionReversedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderIsDirectionReversed(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSliderIsDirectionReversed(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderIsDirectionReversed(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSliderIsDirectionReversed(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.IsDirectionReversedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderIsDirectionReversed(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSliderIsDirectionReversed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderIsDirectionReversed(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSliderIsDirectionReversed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class SliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/>.
@@ -350,7 +335,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderIsSnapToTickEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSliderIsSnapToTickEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderIsSnapToTickEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSliderIsSnapToTickEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Slider.IsSnapToTickEnabledProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderIsSnapToTickEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSliderIsSnapToTickEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderIsSnapToTickEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSliderIsSnapToTickEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderIsSnapToTickEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSliderIsSnapToTickEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderIsSnapToTickEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSliderIsSnapToTickEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class SliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/>.
@@ -515,7 +494,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTickFrequency(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetSliderTickFrequency(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTickFrequency(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetSliderTickFrequency(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Slider.TickFrequencyProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.TickFrequencyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTickFrequency(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetSliderTickFrequency(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTickFrequency(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetSliderTickFrequency(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.TickFrequencyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTickFrequency(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSliderTickFrequency(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTickFrequency(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSliderTickFrequency(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class SliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/>.
@@ -680,7 +653,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTickPlacement(this ElementBuilder<Style> builder, Avalonia.Controls.TickPlacement value)
+    public static StyleBuilder SetSliderTickPlacement(this StyleBuilder builder, Avalonia.Controls.TickPlacement value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTickPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.TickPlacement value)
+    public static KeyFrameBuilder SetSliderTickPlacement(this KeyFrameBuilder builder, Avalonia.Controls.TickPlacement value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Slider.TickPlacementProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.TickPlacementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTickPlacement(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.TickPlacement> observable)
+    public static StyleBuilder SetSliderTickPlacement(this StyleBuilder builder, IObservable<Avalonia.Controls.TickPlacement> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTickPlacement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.TickPlacement> observable)
+    public static KeyFrameBuilder SetSliderTickPlacement(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.TickPlacement> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.TickPlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTickPlacement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSliderTickPlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTickPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSliderTickPlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class SliderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TicksProperty"/>.
@@ -845,7 +812,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTicks(this ElementBuilder<Style> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static StyleBuilder SetSliderTicks(this StyleBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTicks(this ElementBuilder<KeyFrame> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrameBuilder SetSliderTicks(this KeyFrameBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Slider.TicksProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.TicksProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TicksProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTicks(this ElementBuilder<Style> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static StyleBuilder SetSliderTicks(this StyleBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTicks(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static KeyFrameBuilder SetSliderTicks(this KeyFrameBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.TicksProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class SliderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Slider.TicksProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Slider.TicksProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class SliderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSliderTicks(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSliderTicks(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class SliderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSliderTicks(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSliderTicks(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class SliderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Slider.TicksProperty"/>.
     /// </summary>

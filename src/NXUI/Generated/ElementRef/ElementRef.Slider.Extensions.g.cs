@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Slider"/>.
 /// </summary>
 public static partial class SliderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Slider.OrientationProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class SliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Slider.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class SliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Slider.IsDirectionReversedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class SliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class SliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Slider.TickFrequencyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class SliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Slider.TickPlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Slider.TicksProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class SliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Slider.TicksProperty);
     }
 
-#endif
 }

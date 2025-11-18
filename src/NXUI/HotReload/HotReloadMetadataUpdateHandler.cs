@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 using System;
 using System.Reflection.Metadata;
 
@@ -21,4 +20,3 @@ internal static class HotReloadMetadataUpdateHandler
         HotReloadManager.NotifyCodeUpdates(updatedTypes, nameof(UpdateApplication));
     }
 }
-#endif

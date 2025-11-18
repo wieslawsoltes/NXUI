@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.MaskedTextBox"/>.
 /// </summary>
 public static partial class MaskedTextBoxElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.AsciiOnlyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.CultureProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.CultureProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.HidePromptOnLeaveProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.MaskCompletedProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.MaskCompletedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.MaskFullProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.MaskFullProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.MaskProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.MaskProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.PromptCharProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.PromptCharProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.ResetOnPromptProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty"/> value.
@@ -110,5 +91,4 @@ public static partial class MaskedTextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.MaskedTextBox.ResetOnSpaceProperty);
     }
 
-#endif
 }

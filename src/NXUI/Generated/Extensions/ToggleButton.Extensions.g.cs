@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.ToggleButton"/> class property extension methods.
 /// </summary>
 public static partial class ToggleButtonExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ToggleButtonExtensions
         return builder.WithBinding(PropertyMetadata.ToggleButton_IsChecked, Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ToggleButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ToggleButton.IsCheckedProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ToggleButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ToggleButtonExtensions
         return builder.WithBinding(PropertyMetadata.ToggleButton_IsThreeState, Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ToggleButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ToggleButton.IsThreeStateProperty
 
     /// <summary>
@@ -544,7 +534,6 @@ public static partial class ToggleButtonExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -587,7 +576,6 @@ public static partial class ToggleButtonExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.ToggleButton.IsCheckedChanged
 
@@ -622,7 +610,6 @@ public static partial class ToggleButtonExtensions
                 h => obj.IsCheckedChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -644,5 +631,4 @@ public static partial class ToggleButtonExtensions
         }));
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.NumericUpDown"/>.
 /// </summary>
 public static partial class NumericUpDownElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.AllowSpinProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.AllowSpinProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.ButtonSpinnerLocationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.ShowButtonSpinnerProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.ClipValueToMinMaxProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.NumberFormatProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.NumberFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.FormatStringProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.FormatStringProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.IncrementProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.IncrementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.IsReadOnlyProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.IsReadOnlyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.MaximumProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.MaximumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.MinimumProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.MinimumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.ParsingNumberStyleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.TextProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.TextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.TextConverterProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.TextConverterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.ValueProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.ValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.WatermarkProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.WatermarkProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.VerticalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.TextAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.InnerLeftContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.InnerRightContentProperty"/> value.
@@ -231,5 +190,4 @@ public static partial class NumericUpDownElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NumericUpDown.InnerRightContentProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.RotateTransform"/>.
 /// </summary>
 public static partial class RotateTransformElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RotateTransform.AngleProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class RotateTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RotateTransform.AngleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RotateTransform.CenterXProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class RotateTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RotateTransform.CenterXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.RotateTransform.CenterYProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class RotateTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.RotateTransform.CenterYProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.ImageDrawing"/>.
 /// </summary>
 public static partial class ImageDrawingElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ImageDrawingElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ImageDrawing.ImageSourceProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class ImageDrawingElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ImageDrawing.RectProperty);
     }
 
-#endif
 }

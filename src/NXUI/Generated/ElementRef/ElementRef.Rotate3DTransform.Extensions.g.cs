@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.Rotate3DTransform"/>.
 /// </summary>
 public static partial class Rotate3DTransformElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Rotate3DTransform.AngleXProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class Rotate3DTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Rotate3DTransform.AngleXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Rotate3DTransform.AngleYProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class Rotate3DTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Rotate3DTransform.AngleYProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Rotate3DTransform.AngleZProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class Rotate3DTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Rotate3DTransform.AngleZProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Rotate3DTransform.CenterXProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class Rotate3DTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Rotate3DTransform.CenterXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Rotate3DTransform.CenterYProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class Rotate3DTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Rotate3DTransform.CenterYProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Rotate3DTransform.CenterZProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class Rotate3DTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Rotate3DTransform.CenterZProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.Rotate3DTransform.DepthProperty"/> value.
@@ -88,5 +73,4 @@ public static partial class Rotate3DTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.Rotate3DTransform.DepthProperty);
     }
 
-#endif
 }

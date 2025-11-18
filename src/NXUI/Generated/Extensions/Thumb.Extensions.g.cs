@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.Thumb"/> class property extension methods.
@@ -60,7 +58,6 @@ public static partial class ThumbExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragStartedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -103,7 +100,6 @@ public static partial class ThumbExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.Thumb.DragDeltaEvent
 
@@ -153,7 +149,6 @@ public static partial class ThumbExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragDeltaEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -196,7 +191,6 @@ public static partial class ThumbExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.Thumb.DragCompletedEvent
 
@@ -246,7 +240,6 @@ public static partial class ThumbExtensions
     {
         return obj.GetObservable(Avalonia.Controls.Primitives.Thumb.DragCompletedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -289,7 +282,6 @@ public static partial class ThumbExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.Thumb.DragStarted
 
@@ -324,7 +316,6 @@ public static partial class ThumbExtensions
                 h => obj.DragStarted -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -346,7 +337,6 @@ public static partial class ThumbExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.Thumb.DragDelta
 
@@ -381,7 +371,6 @@ public static partial class ThumbExtensions
                 h => obj.DragDelta -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -403,7 +392,6 @@ public static partial class ThumbExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.Primitives.Thumb.DragCompleted
 
@@ -438,7 +426,6 @@ public static partial class ThumbExtensions
                 h => obj.DragCompleted -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -460,5 +447,4 @@ public static partial class ThumbExtensions
         }));
     }
 
-#endif
 }

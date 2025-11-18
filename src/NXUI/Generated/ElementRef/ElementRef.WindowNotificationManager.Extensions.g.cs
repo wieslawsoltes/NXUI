@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Notifications.WindowNotificationManager"/>.
 /// </summary>
 public static partial class WindowNotificationManagerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class WindowNotificationManagerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Notifications.WindowNotificationManager.PositionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class WindowNotificationManagerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Notifications.WindowNotificationManager.MaxItemsProperty);
     }
 
-#endif
 }

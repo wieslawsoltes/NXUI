@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.SplitView"/> class property extension methods.
 /// </summary>
 public static partial class SplitViewExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_CompactPaneLength, Avalonia.Controls.SplitView.CompactPaneLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.CompactPaneLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.CompactPaneLengthProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_DisplayMode, Avalonia.Controls.SplitView.DisplayModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.DisplayModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.DisplayModeProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class SplitViewExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class SplitViewExtensions
         return builder.WithValue(PropertyMetadata.SplitView_DisplayMode, Avalonia.Controls.SplitView.DisplayModeProperty, Avalonia.Controls.SplitViewDisplayMode.Inline);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.Inline"/>.
@@ -520,7 +508,6 @@ public static partial class SplitViewExtensions
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Inline;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class SplitViewExtensions
         return builder.WithValue(PropertyMetadata.SplitView_DisplayMode, Avalonia.Controls.SplitView.DisplayModeProperty, Avalonia.Controls.SplitViewDisplayMode.CompactInline);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.CompactInline"/>.
@@ -545,7 +531,6 @@ public static partial class SplitViewExtensions
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.CompactInline;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class SplitViewExtensions
         return builder.WithValue(PropertyMetadata.SplitView_DisplayMode, Avalonia.Controls.SplitView.DisplayModeProperty, Avalonia.Controls.SplitViewDisplayMode.Overlay);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.Overlay"/>.
@@ -570,7 +554,6 @@ public static partial class SplitViewExtensions
         obj[Avalonia.Controls.SplitView.DisplayModeProperty] = Avalonia.Controls.SplitViewDisplayMode.Overlay;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class SplitViewExtensions
         return builder.WithValue(PropertyMetadata.SplitView_DisplayMode, Avalonia.Controls.SplitView.DisplayModeProperty, Avalonia.Controls.SplitViewDisplayMode.CompactOverlay);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> property value to <see cref="Avalonia.Controls.SplitViewDisplayMode.CompactOverlay"/>.
@@ -596,7 +578,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_IsPaneOpen, Avalonia.Controls.SplitView.IsPaneOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.IsPaneOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.IsPaneOpenProperty
 
     /// <summary>
@@ -838,7 +816,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> literal value for hot reload builds.
@@ -885,8 +862,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_OpenPaneLength, Avalonia.Controls.SplitView.OpenPaneLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> value on a referenced control.
@@ -933,7 +908,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.OpenPaneLengthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.OpenPaneLengthProperty
 
     /// <summary>
@@ -1080,7 +1054,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> literal value for hot reload builds.
@@ -1127,8 +1100,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_PaneBackground, Avalonia.Controls.SplitView.PaneBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> value on a referenced control.
@@ -1175,7 +1146,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneBackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.PaneBackgroundProperty
 
     /// <summary>
@@ -1322,7 +1292,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> literal value for hot reload builds.
@@ -1369,8 +1338,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_PanePlacement, Avalonia.Controls.SplitView.PanePlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> value on a referenced control.
@@ -1417,7 +1384,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.PanePlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.PanePlacementProperty
 
     /// <summary>
@@ -1563,7 +1529,6 @@ public static partial class SplitViewExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> enum value for hot reload builds.
@@ -1575,7 +1540,6 @@ public static partial class SplitViewExtensions
         return builder.WithValue(PropertyMetadata.SplitView_PanePlacement, Avalonia.Controls.SplitView.PanePlacementProperty, Avalonia.Controls.SplitViewPanePlacement.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property value to <see cref="Avalonia.Controls.SplitViewPanePlacement.Left"/>.
@@ -1588,7 +1552,6 @@ public static partial class SplitViewExtensions
         obj[Avalonia.Controls.SplitView.PanePlacementProperty] = Avalonia.Controls.SplitViewPanePlacement.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> enum value for hot reload builds.
@@ -1600,7 +1563,6 @@ public static partial class SplitViewExtensions
         return builder.WithValue(PropertyMetadata.SplitView_PanePlacement, Avalonia.Controls.SplitView.PanePlacementProperty, Avalonia.Controls.SplitViewPanePlacement.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> property value to <see cref="Avalonia.Controls.SplitViewPanePlacement.Right"/>.
@@ -1614,7 +1576,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.PaneProperty"/> literal value for hot reload builds.
@@ -1661,8 +1622,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_Pane, Avalonia.Controls.SplitView.PaneProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PaneProperty"/> value on a referenced control.
@@ -1709,7 +1668,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.PaneProperty
 
     /// <summary>
@@ -1856,7 +1814,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> literal value for hot reload builds.
@@ -1903,8 +1860,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_PaneTemplate, Avalonia.Controls.SplitView.PaneTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> value on a referenced control.
@@ -1951,7 +1906,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.PaneTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.PaneTemplateProperty
 
     /// <summary>
@@ -2098,7 +2052,6 @@ public static partial class SplitViewExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> literal value for hot reload builds.
@@ -2145,8 +2098,6 @@ public static partial class SplitViewExtensions
         return builder.WithBinding(PropertyMetadata.SplitView_UseLightDismissOverlayMode, Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> value on a referenced control.
@@ -2193,7 +2144,6 @@ public static partial class SplitViewExtensions
         return elementRef.SetBinding(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty
 
     /// <summary>
@@ -2478,7 +2428,6 @@ public static partial class SplitViewExtensions
     {
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneClosedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2521,7 +2470,6 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitView.PaneClosingEvent
 
@@ -2571,7 +2519,6 @@ public static partial class SplitViewExtensions
     {
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneClosingEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2614,7 +2561,6 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitView.PaneOpenedEvent
 
@@ -2664,7 +2610,6 @@ public static partial class SplitViewExtensions
     {
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneOpenedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2707,7 +2652,6 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitView.PaneOpeningEvent
 
@@ -2757,7 +2701,6 @@ public static partial class SplitViewExtensions
     {
         return obj.GetObservable(Avalonia.Controls.SplitView.PaneOpeningEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2800,7 +2743,6 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitView.PaneClosed
 
@@ -2835,7 +2777,6 @@ public static partial class SplitViewExtensions
                 h => obj.PaneClosed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2857,7 +2798,6 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitView.PaneClosing
 
@@ -2892,7 +2832,6 @@ public static partial class SplitViewExtensions
                 h => obj.PaneClosing -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2914,7 +2853,6 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitView.PaneOpened
 
@@ -2949,7 +2887,6 @@ public static partial class SplitViewExtensions
                 h => obj.PaneOpened -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2971,7 +2908,6 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SplitView.PaneOpening
 
@@ -3006,7 +2942,6 @@ public static partial class SplitViewExtensions
                 h => obj.PaneOpening -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3028,5 +2963,4 @@ public static partial class SplitViewExtensions
         }));
     }
 
-#endif
 }

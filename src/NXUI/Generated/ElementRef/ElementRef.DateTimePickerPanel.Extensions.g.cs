@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/>.
 /// </summary>
 public static partial class DateTimePickerPanelElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DateTimePickerPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DateTimePickerPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DateTimePickerPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class DateTimePickerPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty);
     }
 
-#endif
 }

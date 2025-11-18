@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.Pen"/> class style setters extension methods.
 /// </summary>
 public static partial class PenSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
@@ -20,7 +17,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenBrush(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetPenBrush(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetPenBrush(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     // Avalonia.Media.Pen.BrushProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenBrush(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetPenBrush(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenBrush(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetPenBrush(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.BrushProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenBrush(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPenBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPenBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.BrushProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class PenSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
@@ -185,7 +176,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenThickness(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetPenThickness(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenThickness(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetPenThickness(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     // Avalonia.Media.Pen.ThicknessProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenThickness(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetPenThickness(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenThickness(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetPenThickness(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.ThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenThickness(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPenThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPenThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.ThicknessProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class PenSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
@@ -350,7 +335,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenDashStyle(this ElementBuilder<Style> builder, Avalonia.Media.IDashStyle value)
+    public static StyleBuilder SetPenDashStyle(this StyleBuilder builder, Avalonia.Media.IDashStyle value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenDashStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IDashStyle value)
+    public static KeyFrameBuilder SetPenDashStyle(this KeyFrameBuilder builder, Avalonia.Media.IDashStyle value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     // Avalonia.Media.Pen.DashStyleProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenDashStyle(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IDashStyle> observable)
+    public static StyleBuilder SetPenDashStyle(this StyleBuilder builder, IObservable<Avalonia.Media.IDashStyle> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenDashStyle(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IDashStyle> observable)
+    public static KeyFrameBuilder SetPenDashStyle(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IDashStyle> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.DashStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenDashStyle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPenDashStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenDashStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPenDashStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.DashStyleProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class PenSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
@@ -515,7 +494,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenLineCap(this ElementBuilder<Style> builder, Avalonia.Media.PenLineCap value)
+    public static StyleBuilder SetPenLineCap(this StyleBuilder builder, Avalonia.Media.PenLineCap value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenLineCap(this ElementBuilder<KeyFrame> builder, Avalonia.Media.PenLineCap value)
+    public static KeyFrameBuilder SetPenLineCap(this KeyFrameBuilder builder, Avalonia.Media.PenLineCap value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     // Avalonia.Media.Pen.LineCapProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenLineCap(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.PenLineCap> observable)
+    public static StyleBuilder SetPenLineCap(this StyleBuilder builder, IObservable<Avalonia.Media.PenLineCap> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenLineCap(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.PenLineCap> observable)
+    public static KeyFrameBuilder SetPenLineCap(this KeyFrameBuilder builder, IObservable<Avalonia.Media.PenLineCap> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineCapProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenLineCap(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPenLineCap(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenLineCap(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPenLineCap(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineCapProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class PenSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
@@ -680,7 +653,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenLineJoin(this ElementBuilder<Style> builder, Avalonia.Media.PenLineJoin value)
+    public static StyleBuilder SetPenLineJoin(this StyleBuilder builder, Avalonia.Media.PenLineJoin value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenLineJoin(this ElementBuilder<KeyFrame> builder, Avalonia.Media.PenLineJoin value)
+    public static KeyFrameBuilder SetPenLineJoin(this KeyFrameBuilder builder, Avalonia.Media.PenLineJoin value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     // Avalonia.Media.Pen.LineJoinProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenLineJoin(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.PenLineJoin> observable)
+    public static StyleBuilder SetPenLineJoin(this StyleBuilder builder, IObservable<Avalonia.Media.PenLineJoin> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenLineJoin(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.PenLineJoin> observable)
+    public static KeyFrameBuilder SetPenLineJoin(this KeyFrameBuilder builder, IObservable<Avalonia.Media.PenLineJoin> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.LineJoinProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenLineJoin(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPenLineJoin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenLineJoin(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPenLineJoin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.LineJoinProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class PenSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
@@ -845,7 +812,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenMiterLimit(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetPenMiterLimit(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenMiterLimit(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetPenMiterLimit(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     // Avalonia.Media.Pen.MiterLimitProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenMiterLimit(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetPenMiterLimit(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenMiterLimit(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetPenMiterLimit(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class PenSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Pen.MiterLimitProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class PenSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPenMiterLimit(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPenMiterLimit(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class PenSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPenMiterLimit(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPenMiterLimit(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class PenSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Pen.MiterLimitProperty"/>.
     /// </summary>

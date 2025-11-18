@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.GlyphRunDrawing"/> class style setters extension methods.
 /// </summary>
 public static partial class GlyphRunDrawingSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
@@ -20,7 +17,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGlyphRunDrawingForeground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetGlyphRunDrawingForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGlyphRunDrawingForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetGlyphRunDrawingForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class GlyphRunDrawingSetters
         });
     }
 
-#endif
     // Avalonia.Media.GlyphRunDrawing.ForegroundProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class GlyphRunDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGlyphRunDrawingForeground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetGlyphRunDrawingForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGlyphRunDrawingForeground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetGlyphRunDrawingForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class GlyphRunDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class GlyphRunDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGlyphRunDrawingForeground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGlyphRunDrawingForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGlyphRunDrawingForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGlyphRunDrawingForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class GlyphRunDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class GlyphRunDrawingSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
@@ -185,7 +176,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGlyphRunDrawingGlyphRun(this ElementBuilder<Style> builder, Avalonia.Media.GlyphRun value)
+    public static StyleBuilder SetGlyphRunDrawingGlyphRun(this StyleBuilder builder, Avalonia.Media.GlyphRun value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGlyphRunDrawingGlyphRun(this ElementBuilder<KeyFrame> builder, Avalonia.Media.GlyphRun value)
+    public static KeyFrameBuilder SetGlyphRunDrawingGlyphRun(this KeyFrameBuilder builder, Avalonia.Media.GlyphRun value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class GlyphRunDrawingSetters
         });
     }
 
-#endif
     // Avalonia.Media.GlyphRunDrawing.GlyphRunProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class GlyphRunDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGlyphRunDrawingGlyphRun(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.GlyphRun> observable)
+    public static StyleBuilder SetGlyphRunDrawingGlyphRun(this StyleBuilder builder, IObservable<Avalonia.Media.GlyphRun> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGlyphRunDrawingGlyphRun(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.GlyphRun> observable)
+    public static KeyFrameBuilder SetGlyphRunDrawingGlyphRun(this KeyFrameBuilder builder, IObservable<Avalonia.Media.GlyphRun> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class GlyphRunDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class GlyphRunDrawingSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGlyphRunDrawingGlyphRun(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGlyphRunDrawingGlyphRun(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class GlyphRunDrawingSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGlyphRunDrawingGlyphRun(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGlyphRunDrawingGlyphRun(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class GlyphRunDrawingSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/>.
     /// </summary>

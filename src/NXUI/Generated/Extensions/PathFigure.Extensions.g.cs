@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.PathFigure"/> class property extension methods.
 /// </summary>
 public static partial class PathFigureExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class PathFigureExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> IsClosed(this ElementBuilder<Avalonia.Media.PathFigure> builder, System.Boolean value)
+    public static PathFigureBuilder IsClosed(this PathFigureBuilder builder, System.Boolean value)
     {
         return builder.WithValue(PropertyMetadata.PathFigure_IsClosed, Avalonia.Media.PathFigure.IsClosedProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> IsClosed(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder IsClosed(
+        this PathFigureBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> IsClosed(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder IsClosed(
+        this PathFigureBuilder builder,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class PathFigureExtensions
         return builder.WithBinding(PropertyMetadata.PathFigure_IsClosed, Avalonia.Media.PathFigure.IsClosedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PathFigureExtensions
         return elementRef.SetBinding(Avalonia.Media.PathFigure.IsClosedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PathFigure.IsClosedProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class PathFigureExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> IsFilled(this ElementBuilder<Avalonia.Media.PathFigure> builder, System.Boolean value)
+    public static PathFigureBuilder IsFilled(this PathFigureBuilder builder, System.Boolean value)
     {
         return builder.WithValue(PropertyMetadata.PathFigure_IsFilled, Avalonia.Media.PathFigure.IsFilledProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> IsFilled(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder IsFilled(
+        this PathFigureBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> IsFilled(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder IsFilled(
+        this PathFigureBuilder builder,
         IObservable<System.Boolean> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class PathFigureExtensions
         return builder.WithBinding(PropertyMetadata.PathFigure_IsFilled, Avalonia.Media.PathFigure.IsFilledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class PathFigureExtensions
         return elementRef.SetBinding(Avalonia.Media.PathFigure.IsFilledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PathFigure.IsFilledProperty
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class PathFigureExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> Segments(this ElementBuilder<Avalonia.Media.PathFigure> builder, Avalonia.Media.PathSegments? value)
+    public static PathFigureBuilder Segments(this PathFigureBuilder builder, Avalonia.Media.PathSegments? value)
     {
         return builder.WithValue(PropertyMetadata.PathFigure_Segments, Avalonia.Media.PathFigure.SegmentsProperty, value);
     }
@@ -503,8 +492,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> Segments(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder Segments(
+        this PathFigureBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> Segments(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder Segments(
+        this PathFigureBuilder builder,
         IObservable<Avalonia.Media.PathSegments?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class PathFigureExtensions
         return builder.WithBinding(PropertyMetadata.PathFigure_Segments, Avalonia.Media.PathFigure.SegmentsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class PathFigureExtensions
         return elementRef.SetBinding(Avalonia.Media.PathFigure.SegmentsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PathFigure.SegmentsProperty
 
     /// <summary>
@@ -717,7 +703,6 @@ public static partial class PathFigureExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> literal value for hot reload builds.
@@ -725,7 +710,7 @@ public static partial class PathFigureExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> StartPoint(this ElementBuilder<Avalonia.Media.PathFigure> builder, Avalonia.Point value)
+    public static PathFigureBuilder StartPoint(this PathFigureBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.PathFigure_StartPoint, Avalonia.Media.PathFigure.StartPointProperty, value);
     }
@@ -738,8 +723,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> StartPoint(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder StartPoint(
+        this PathFigureBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -755,8 +740,8 @@ public static partial class PathFigureExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.PathFigure> StartPoint(
-        this ElementBuilder<Avalonia.Media.PathFigure> builder,
+    public static PathFigureBuilder StartPoint(
+        this PathFigureBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -764,8 +749,6 @@ public static partial class PathFigureExtensions
         return builder.WithBinding(PropertyMetadata.PathFigure_StartPoint, Avalonia.Media.PathFigure.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> value on a referenced control.
@@ -812,7 +795,6 @@ public static partial class PathFigureExtensions
         return elementRef.SetBinding(Avalonia.Media.PathFigure.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PathFigure.StartPointProperty
 
     /// <summary>

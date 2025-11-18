@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Presenters.ItemsPresenter"/>.
 /// </summary>
 public static partial class ItemsPresenterElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class ItemsPresenterElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Presenters.ItemsPresenter.ItemsPanelProperty);
     }
 
-#endif
 }

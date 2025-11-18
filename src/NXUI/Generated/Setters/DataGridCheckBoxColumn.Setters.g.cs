@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/> class style setters extension methods.
 /// </summary>
 public static partial class DataGridCheckBoxColumnSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DataGridCheckBoxColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridCheckBoxColumnIsThreeState(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDataGridCheckBoxColumnIsThreeState(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DataGridCheckBoxColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridCheckBoxColumnIsThreeState(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDataGridCheckBoxColumnIsThreeState(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DataGridCheckBoxColumnSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DataGridCheckBoxColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DataGridCheckBoxColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridCheckBoxColumnIsThreeState(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDataGridCheckBoxColumnIsThreeState(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DataGridCheckBoxColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridCheckBoxColumnIsThreeState(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDataGridCheckBoxColumnIsThreeState(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DataGridCheckBoxColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DataGridCheckBoxColumnSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DataGridCheckBoxColumnSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridCheckBoxColumnIsThreeState(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridCheckBoxColumnIsThreeState(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DataGridCheckBoxColumnSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridCheckBoxColumnIsThreeState(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridCheckBoxColumnIsThreeState(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DataGridCheckBoxColumnSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/>.
     /// </summary>

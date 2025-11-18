@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel"/> class property extension methods.
 /// </summary>
 public static partial class DateTimePickerPanelExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithBinding(PropertyMetadata.DateTimePickerPanel_ItemHeight, Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DateTimePickerPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ItemHeightProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithBinding(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DateTimePickerPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class DateTimePickerPanelExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithValue(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, Avalonia.Controls.Primitives.DateTimePickerPanelType.Year);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Year"/>.
@@ -520,7 +508,6 @@ public static partial class DateTimePickerPanelExtensions
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Year;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithValue(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, Avalonia.Controls.Primitives.DateTimePickerPanelType.Month);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Month"/>.
@@ -545,7 +531,6 @@ public static partial class DateTimePickerPanelExtensions
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Month;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithValue(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, Avalonia.Controls.Primitives.DateTimePickerPanelType.Day);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Day"/>.
@@ -570,7 +554,6 @@ public static partial class DateTimePickerPanelExtensions
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Day;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithValue(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, Avalonia.Controls.Primitives.DateTimePickerPanelType.Hour);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Hour"/>.
@@ -595,7 +577,6 @@ public static partial class DateTimePickerPanelExtensions
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Hour;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithValue(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute"/>.
@@ -620,7 +600,6 @@ public static partial class DateTimePickerPanelExtensions
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.Minute;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithValue(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, Avalonia.Controls.Primitives.DateTimePickerPanelType.TimePeriod);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.TimePeriod"/>.
@@ -645,7 +623,6 @@ public static partial class DateTimePickerPanelExtensions
         obj[Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty] = Avalonia.Controls.Primitives.DateTimePickerPanelType.TimePeriod;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> enum value for hot reload builds.
@@ -657,7 +634,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithValue(PropertyMetadata.DateTimePickerPanel_PanelType, Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty, Avalonia.Controls.Primitives.DateTimePickerPanelType.Second);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.PanelTypeProperty"/> property value to <see cref="Avalonia.Controls.Primitives.DateTimePickerPanelType.Second"/>.
@@ -671,7 +647,6 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> literal value for hot reload builds.
@@ -718,8 +693,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithBinding(PropertyMetadata.DateTimePickerPanel_ItemFormat, Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty"/> value on a referenced control.
@@ -766,7 +739,6 @@ public static partial class DateTimePickerPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ItemFormatProperty
 
     /// <summary>
@@ -913,7 +885,6 @@ public static partial class DateTimePickerPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> literal value for hot reload builds.
@@ -960,8 +931,6 @@ public static partial class DateTimePickerPanelExtensions
         return builder.WithBinding(PropertyMetadata.DateTimePickerPanel_ShouldLoop, Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty"/> value on a referenced control.
@@ -1008,7 +977,6 @@ public static partial class DateTimePickerPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.DateTimePickerPanel.ShouldLoopProperty
 
     /// <summary>

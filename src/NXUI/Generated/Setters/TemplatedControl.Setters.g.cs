@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.TemplatedControl"/> class style setters extension methods.
 /// </summary>
 public static partial class TemplatedControlSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBackground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTemplatedControlBackground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTemplatedControlBackground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBackground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTemplatedControlBackground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBackground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTemplatedControlBackground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBackground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBackgroundSizing(this ElementBuilder<Style> builder, Avalonia.Media.BackgroundSizing value)
+    public static StyleBuilder SetTemplatedControlBackgroundSizing(this StyleBuilder builder, Avalonia.Media.BackgroundSizing value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBackgroundSizing(this ElementBuilder<KeyFrame> builder, Avalonia.Media.BackgroundSizing value)
+    public static KeyFrameBuilder SetTemplatedControlBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Media.BackgroundSizing value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBackgroundSizing(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    public static StyleBuilder SetTemplatedControlBackgroundSizing(this StyleBuilder builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBackgroundSizing(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
+    public static KeyFrameBuilder SetTemplatedControlBackgroundSizing(this KeyFrameBuilder builder, IObservable<Avalonia.Media.BackgroundSizing> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBackgroundSizing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBackgroundSizing(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBackgroundSizing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBackgroundSizing(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BackgroundSizingProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
@@ -350,7 +335,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBorderBrush(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTemplatedControlBorderBrush(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBorderBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTemplatedControlBorderBrush(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBorderBrush(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTemplatedControlBorderBrush(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBorderBrush(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTemplatedControlBorderBrush(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBorderBrush(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBorderBrush(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBorderBrush(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBorderBrush(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderBrushProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
@@ -515,7 +494,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBorderThickness(this ElementBuilder<Style> builder, Avalonia.Thickness value)
+    public static StyleBuilder SetTemplatedControlBorderThickness(this StyleBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBorderThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Thickness value)
+    public static KeyFrameBuilder SetTemplatedControlBorderThickness(this KeyFrameBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBorderThickness(this ElementBuilder<Style> builder, IObservable<Avalonia.Thickness> observable)
+    public static StyleBuilder SetTemplatedControlBorderThickness(this StyleBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBorderThickness(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Thickness> observable)
+    public static KeyFrameBuilder SetTemplatedControlBorderThickness(this KeyFrameBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlBorderThickness(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlBorderThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlBorderThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlBorderThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
@@ -680,7 +653,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlCornerRadius(this ElementBuilder<Style> builder, Avalonia.CornerRadius value)
+    public static StyleBuilder SetTemplatedControlCornerRadius(this StyleBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.CornerRadius value)
+    public static KeyFrameBuilder SetTemplatedControlCornerRadius(this KeyFrameBuilder builder, Avalonia.CornerRadius value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlCornerRadius(this ElementBuilder<Style> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static StyleBuilder SetTemplatedControlCornerRadius(this StyleBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlCornerRadius(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.CornerRadius> observable)
+    public static KeyFrameBuilder SetTemplatedControlCornerRadius(this KeyFrameBuilder builder, IObservable<Avalonia.CornerRadius> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlCornerRadius(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlCornerRadius(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlCornerRadius(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlCornerRadius(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
@@ -845,7 +812,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontFamily(this ElementBuilder<Style> builder, Avalonia.Media.FontFamily value)
+    public static StyleBuilder SetTemplatedControlFontFamily(this StyleBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontFamily value)
+    public static KeyFrameBuilder SetTemplatedControlFontFamily(this KeyFrameBuilder builder, Avalonia.Media.FontFamily value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontFamily(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static StyleBuilder SetTemplatedControlFontFamily(this StyleBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontFamily(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontFamily> observable)
+    public static KeyFrameBuilder SetTemplatedControlFontFamily(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontFamily> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontFamily(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontFamily(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontFamily(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontFamily(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFamilyProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontFeatures(this ElementBuilder<Style> builder, Avalonia.Media.FontFeatureCollection value)
+    public static StyleBuilder SetTemplatedControlFontFeatures(this StyleBuilder builder, Avalonia.Media.FontFeatureCollection value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontFeatures(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontFeatureCollection value)
+    public static KeyFrameBuilder SetTemplatedControlFontFeatures(this KeyFrameBuilder builder, Avalonia.Media.FontFeatureCollection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontFeatures(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
+    public static StyleBuilder SetTemplatedControlFontFeatures(this StyleBuilder builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontFeatures(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
+    public static KeyFrameBuilder SetTemplatedControlFontFeatures(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontFeatureCollection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontFeatures(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontFeatures(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontFeatures(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontFeatures(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontFeaturesProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontSize(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetTemplatedControlFontSize(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontSize(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetTemplatedControlFontSize(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontSize(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetTemplatedControlFontSize(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontSize(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetTemplatedControlFontSize(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontSize(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontSize(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontSize(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontSize(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontSizeProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontStyle(this ElementBuilder<Style> builder, Avalonia.Media.FontStyle value)
+    public static StyleBuilder SetTemplatedControlFontStyle(this StyleBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStyle value)
+    public static KeyFrameBuilder SetTemplatedControlFontStyle(this KeyFrameBuilder builder, Avalonia.Media.FontStyle value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontStyle(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static StyleBuilder SetTemplatedControlFontStyle(this StyleBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontStyle(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStyle> observable)
+    public static KeyFrameBuilder SetTemplatedControlFontStyle(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStyle> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontStyle(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontStyle(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontStyle(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontStyle(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStyleProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontWeight(this ElementBuilder<Style> builder, Avalonia.Media.FontWeight value)
+    public static StyleBuilder SetTemplatedControlFontWeight(this StyleBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontWeight value)
+    public static KeyFrameBuilder SetTemplatedControlFontWeight(this KeyFrameBuilder builder, Avalonia.Media.FontWeight value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontWeight(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static StyleBuilder SetTemplatedControlFontWeight(this StyleBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontWeight(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontWeight> observable)
+    public static KeyFrameBuilder SetTemplatedControlFontWeight(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontWeight> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontWeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontWeight(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontWeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontWeight(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontWeightProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontStretch(this ElementBuilder<Style> builder, Avalonia.Media.FontStretch value)
+    public static StyleBuilder SetTemplatedControlFontStretch(this StyleBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.FontStretch value)
+    public static KeyFrameBuilder SetTemplatedControlFontStretch(this KeyFrameBuilder builder, Avalonia.Media.FontStretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static StyleBuilder SetTemplatedControlFontStretch(this StyleBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.FontStretch> observable)
+    public static KeyFrameBuilder SetTemplatedControlFontStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.FontStretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlFontStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlFontStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlFontStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlFontStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.FontStretchProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlForeground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetTemplatedControlForeground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetTemplatedControlForeground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlForeground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetTemplatedControlForeground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlForeground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetTemplatedControlForeground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlForeground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlForeground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlForeground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlForeground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.ForegroundProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlPadding(this ElementBuilder<Style> builder, Avalonia.Thickness value)
+    public static StyleBuilder SetTemplatedControlPadding(this StyleBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlPadding(this ElementBuilder<KeyFrame> builder, Avalonia.Thickness value)
+    public static KeyFrameBuilder SetTemplatedControlPadding(this KeyFrameBuilder builder, Avalonia.Thickness value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlPadding(this ElementBuilder<Style> builder, IObservable<Avalonia.Thickness> observable)
+    public static StyleBuilder SetTemplatedControlPadding(this StyleBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlPadding(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Thickness> observable)
+    public static KeyFrameBuilder SetTemplatedControlPadding(this KeyFrameBuilder builder, IObservable<Avalonia.Thickness> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlPadding(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlPadding(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlPadding(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlPadding(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty"/>.
     /// </summary>
@@ -2157,7 +2077,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
@@ -2165,7 +2084,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IControlTemplate value)
+    public static StyleBuilder SetTemplatedControlTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IControlTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -2179,7 +2098,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IControlTemplate value)
+    public static KeyFrameBuilder SetTemplatedControlTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IControlTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2187,7 +2106,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty
 
     /// <summary>
@@ -2213,7 +2131,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/> using an observable source.
@@ -2221,7 +2138,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IControlTemplate> observable)
+    public static StyleBuilder SetTemplatedControlTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IControlTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2235,7 +2152,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IControlTemplate> observable)
+    public static KeyFrameBuilder SetTemplatedControlTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IControlTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2243,7 +2160,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
     /// </summary>
@@ -2267,7 +2183,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/> using a binding.
@@ -2275,7 +2190,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2289,7 +2204,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2297,7 +2212,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty"/>.
     /// </summary>
@@ -2322,7 +2236,6 @@ public static partial class TemplatedControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
@@ -2330,7 +2243,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlIsTemplateFocusTarget(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTemplatedControlIsTemplateFocusTarget(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2344,7 +2257,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlIsTemplateFocusTarget(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTemplatedControlIsTemplateFocusTarget(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2352,7 +2265,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty
 
     /// <summary>
@@ -2378,7 +2290,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/> using an observable source.
@@ -2386,7 +2297,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlIsTemplateFocusTarget(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTemplatedControlIsTemplateFocusTarget(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2400,7 +2311,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlIsTemplateFocusTarget(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTemplatedControlIsTemplateFocusTarget(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2408,7 +2319,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
     /// </summary>
@@ -2432,7 +2342,6 @@ public static partial class TemplatedControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/> using a binding.
@@ -2440,7 +2349,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTemplatedControlIsTemplateFocusTarget(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTemplatedControlIsTemplateFocusTarget(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2454,7 +2363,7 @@ public static partial class TemplatedControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTemplatedControlIsTemplateFocusTarget(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTemplatedControlIsTemplateFocusTarget(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2462,7 +2371,6 @@ public static partial class TemplatedControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.TemplatedControl.IsTemplateFocusTargetProperty"/>.
     /// </summary>

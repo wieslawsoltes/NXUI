@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ToggleSwitch"/> class property extension methods.
 /// </summary>
 public static partial class ToggleSwitchExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ToggleSwitchExtensions
         return builder.WithBinding(PropertyMetadata.ToggleSwitch_OffContent, Avalonia.Controls.ToggleSwitch.OffContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OffContentProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ToggleSwitchExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToggleSwitch.OffContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OffContentProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ToggleSwitchExtensions
         return builder.WithBinding(PropertyMetadata.ToggleSwitch_OffContentTemplate, Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ToggleSwitchExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OffContentTemplateProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ToggleSwitchExtensions
         return builder.WithBinding(PropertyMetadata.ToggleSwitch_OnContent, Avalonia.Controls.ToggleSwitch.OnContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OnContentProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ToggleSwitchExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToggleSwitch.OnContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OnContentProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class ToggleSwitchExtensions
         return builder.WithBinding(PropertyMetadata.ToggleSwitch_OnContentTemplate, Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class ToggleSwitchExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.OnContentTemplateProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class ToggleSwitchExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class ToggleSwitchExtensions
         return builder.WithBinding(PropertyMetadata.ToggleSwitch_KnobTransitions, Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class ToggleSwitchExtensions
         return elementRef.SetBinding(Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ToggleSwitch.KnobTransitionsProperty
 
     /// <summary>

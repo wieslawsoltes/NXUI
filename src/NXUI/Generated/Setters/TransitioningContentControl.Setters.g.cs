@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TransitioningContentControl"/> class style setters extension methods.
 /// </summary>
 public static partial class TransitioningContentControlSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/>.
@@ -20,7 +17,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitioningContentControlPageTransition(this ElementBuilder<Style> builder, Avalonia.Animation.IPageTransition value)
+    public static StyleBuilder SetTransitioningContentControlPageTransition(this StyleBuilder builder, Avalonia.Animation.IPageTransition value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitioningContentControlPageTransition(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.IPageTransition value)
+    public static KeyFrameBuilder SetTransitioningContentControlPageTransition(this KeyFrameBuilder builder, Avalonia.Animation.IPageTransition value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class TransitioningContentControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TransitioningContentControl.PageTransitionProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class TransitioningContentControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitioningContentControlPageTransition(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.IPageTransition> observable)
+    public static StyleBuilder SetTransitioningContentControlPageTransition(this StyleBuilder builder, IObservable<Avalonia.Animation.IPageTransition> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitioningContentControlPageTransition(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.IPageTransition> observable)
+    public static KeyFrameBuilder SetTransitioningContentControlPageTransition(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.IPageTransition> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class TransitioningContentControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class TransitioningContentControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.PageTransitionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitioningContentControlPageTransition(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitioningContentControlPageTransition(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitioningContentControlPageTransition(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitioningContentControlPageTransition(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class TransitioningContentControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.PageTransitionProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class TransitioningContentControlSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/>.
@@ -185,7 +176,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitioningContentControlIsTransitionReversed(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetTransitioningContentControlIsTransitionReversed(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitioningContentControlIsTransitionReversed(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetTransitioningContentControlIsTransitionReversed(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class TransitioningContentControlSetters
         });
     }
 
-#endif
     // Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class TransitioningContentControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitioningContentControlIsTransitionReversed(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetTransitioningContentControlIsTransitionReversed(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitioningContentControlIsTransitionReversed(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetTransitioningContentControlIsTransitionReversed(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class TransitioningContentControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class TransitioningContentControlSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetTransitioningContentControlIsTransitionReversed(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetTransitioningContentControlIsTransitionReversed(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class TransitioningContentControlSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetTransitioningContentControlIsTransitionReversed(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetTransitioningContentControlIsTransitionReversed(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class TransitioningContentControlSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.TransitioningContentControl.IsTransitionReversedProperty"/>.
     /// </summary>

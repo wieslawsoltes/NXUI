@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.MenuFlyout"/> class style setters extension methods.
 /// </summary>
 public static partial class MenuFlyoutSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
@@ -20,7 +17,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemsSource(this ElementBuilder<Style> builder, System.Collections.IEnumerable value)
+    public static StyleBuilder SetMenuFlyoutItemsSource(this StyleBuilder builder, System.Collections.IEnumerable value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemsSource(this ElementBuilder<KeyFrame> builder, System.Collections.IEnumerable value)
+    public static KeyFrameBuilder SetMenuFlyoutItemsSource(this KeyFrameBuilder builder, System.Collections.IEnumerable value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.ItemsSourceProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemsSourceProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemsSource(this ElementBuilder<Style> builder, IObservable<System.Collections.IEnumerable> observable)
+    public static StyleBuilder SetMenuFlyoutItemsSource(this StyleBuilder builder, IObservable<System.Collections.IEnumerable> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemsSource(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.IEnumerable> observable)
+    public static KeyFrameBuilder SetMenuFlyoutItemsSource(this KeyFrameBuilder builder, IObservable<System.Collections.IEnumerable> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemsSourceProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemsSource(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutItemsSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemsSource(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutItemsSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemsSourceProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class MenuFlyoutSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/>.
@@ -185,7 +176,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetMenuFlyoutItemTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetMenuFlyoutItemTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.ItemTemplateProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetMenuFlyoutItemTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetMenuFlyoutItemTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutItemTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemTemplateProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class MenuFlyoutSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
@@ -350,7 +335,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemContainerTheme(this ElementBuilder<Style> builder, Avalonia.Styling.ControlTheme value)
+    public static StyleBuilder SetMenuFlyoutItemContainerTheme(this StyleBuilder builder, Avalonia.Styling.ControlTheme value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemContainerTheme(this ElementBuilder<KeyFrame> builder, Avalonia.Styling.ControlTheme value)
+    public static KeyFrameBuilder SetMenuFlyoutItemContainerTheme(this KeyFrameBuilder builder, Avalonia.Styling.ControlTheme value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemContainerTheme(this ElementBuilder<Style> builder, IObservable<Avalonia.Styling.ControlTheme> observable)
+    public static StyleBuilder SetMenuFlyoutItemContainerTheme(this StyleBuilder builder, IObservable<Avalonia.Styling.ControlTheme> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemContainerTheme(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Styling.ControlTheme> observable)
+    public static KeyFrameBuilder SetMenuFlyoutItemContainerTheme(this KeyFrameBuilder builder, IObservable<Avalonia.Styling.ControlTheme> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutItemContainerTheme(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutItemContainerTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutItemContainerTheme(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutItemContainerTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.ItemContainerThemeProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class MenuFlyoutSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutFlyoutPresenterTheme(this ElementBuilder<Style> builder, Avalonia.Styling.ControlTheme value)
+    public static StyleBuilder SetMenuFlyoutFlyoutPresenterTheme(this StyleBuilder builder, Avalonia.Styling.ControlTheme value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutFlyoutPresenterTheme(this ElementBuilder<KeyFrame> builder, Avalonia.Styling.ControlTheme value)
+    public static KeyFrameBuilder SetMenuFlyoutFlyoutPresenterTheme(this KeyFrameBuilder builder, Avalonia.Styling.ControlTheme value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     // Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutFlyoutPresenterTheme(this ElementBuilder<Style> builder, IObservable<Avalonia.Styling.ControlTheme> observable)
+    public static StyleBuilder SetMenuFlyoutFlyoutPresenterTheme(this StyleBuilder builder, IObservable<Avalonia.Styling.ControlTheme> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutFlyoutPresenterTheme(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Styling.ControlTheme> observable)
+    public static KeyFrameBuilder SetMenuFlyoutFlyoutPresenterTheme(this KeyFrameBuilder builder, IObservable<Avalonia.Styling.ControlTheme> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class MenuFlyoutSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetMenuFlyoutFlyoutPresenterTheme(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetMenuFlyoutFlyoutPresenterTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class MenuFlyoutSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetMenuFlyoutFlyoutPresenterTheme(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetMenuFlyoutFlyoutPresenterTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class MenuFlyoutSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.MenuFlyout.FlyoutPresenterThemeProperty"/>.
     /// </summary>

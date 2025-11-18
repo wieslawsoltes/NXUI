@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ProgressBar"/>.
 /// </summary>
 public static partial class ProgressBarElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ProgressBar.IsIndeterminateProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ProgressBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ProgressBar.IsIndeterminateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ProgressBar.ShowProgressTextProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ProgressBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ProgressBar.ShowProgressTextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ProgressBar.ProgressTextFormatProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ProgressBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ProgressBar.ProgressTextFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ProgressBar.OrientationProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ProgressBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ProgressBar.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ProgressBar.PercentageProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class ProgressBarElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ProgressBar.PercentageProperty);
     }
 
-#endif
 }

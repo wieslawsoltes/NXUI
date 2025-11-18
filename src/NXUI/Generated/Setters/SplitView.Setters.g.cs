@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.SplitView"/> class style setters extension methods.
 /// </summary>
 public static partial class SplitViewSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
@@ -20,7 +17,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewCompactPaneLength(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetSplitViewCompactPaneLength(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewCompactPaneLength(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetSplitViewCompactPaneLength(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.CompactPaneLengthProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewCompactPaneLength(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetSplitViewCompactPaneLength(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewCompactPaneLength(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetSplitViewCompactPaneLength(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.CompactPaneLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewCompactPaneLength(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewCompactPaneLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewCompactPaneLength(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewCompactPaneLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.CompactPaneLengthProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
@@ -185,7 +176,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewDisplayMode(this ElementBuilder<Style> builder, Avalonia.Controls.SplitViewDisplayMode value)
+    public static StyleBuilder SetSplitViewDisplayMode(this StyleBuilder builder, Avalonia.Controls.SplitViewDisplayMode value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewDisplayMode(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.SplitViewDisplayMode value)
+    public static KeyFrameBuilder SetSplitViewDisplayMode(this KeyFrameBuilder builder, Avalonia.Controls.SplitViewDisplayMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.DisplayModeProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewDisplayMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.SplitViewDisplayMode> observable)
+    public static StyleBuilder SetSplitViewDisplayMode(this StyleBuilder builder, IObservable<Avalonia.Controls.SplitViewDisplayMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewDisplayMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.SplitViewDisplayMode> observable)
+    public static KeyFrameBuilder SetSplitViewDisplayMode(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.SplitViewDisplayMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.DisplayModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewDisplayMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewDisplayMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewDisplayMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewDisplayMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.DisplayModeProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
@@ -350,7 +335,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewIsPaneOpen(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSplitViewIsPaneOpen(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewIsPaneOpen(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSplitViewIsPaneOpen(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.IsPaneOpenProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewIsPaneOpen(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSplitViewIsPaneOpen(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewIsPaneOpen(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSplitViewIsPaneOpen(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.IsPaneOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewIsPaneOpen(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewIsPaneOpen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewIsPaneOpen(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewIsPaneOpen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.IsPaneOpenProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
@@ -515,7 +494,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewOpenPaneLength(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetSplitViewOpenPaneLength(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewOpenPaneLength(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetSplitViewOpenPaneLength(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.OpenPaneLengthProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewOpenPaneLength(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetSplitViewOpenPaneLength(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewOpenPaneLength(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetSplitViewOpenPaneLength(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.OpenPaneLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewOpenPaneLength(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewOpenPaneLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewOpenPaneLength(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewOpenPaneLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.OpenPaneLengthProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
@@ -680,7 +653,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPaneBackground(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetSplitViewPaneBackground(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPaneBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetSplitViewPaneBackground(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.PaneBackgroundProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPaneBackground(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetSplitViewPaneBackground(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPaneBackground(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetSplitViewPaneBackground(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneBackgroundProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPaneBackground(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewPaneBackground(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPaneBackground(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewPaneBackground(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneBackgroundProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
@@ -845,7 +812,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPanePlacement(this ElementBuilder<Style> builder, Avalonia.Controls.SplitViewPanePlacement value)
+    public static StyleBuilder SetSplitViewPanePlacement(this StyleBuilder builder, Avalonia.Controls.SplitViewPanePlacement value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPanePlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.SplitViewPanePlacement value)
+    public static KeyFrameBuilder SetSplitViewPanePlacement(this KeyFrameBuilder builder, Avalonia.Controls.SplitViewPanePlacement value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.PanePlacementProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPanePlacement(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.SplitViewPanePlacement> observable)
+    public static StyleBuilder SetSplitViewPanePlacement(this StyleBuilder builder, IObservable<Avalonia.Controls.SplitViewPanePlacement> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPanePlacement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.SplitViewPanePlacement> observable)
+    public static KeyFrameBuilder SetSplitViewPanePlacement(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.SplitViewPanePlacement> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PanePlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPanePlacement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewPanePlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPanePlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewPanePlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PanePlacementProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPane(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetSplitViewPane(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPane(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetSplitViewPane(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.PaneProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPane(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetSplitViewPane(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPane(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetSplitViewPane(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPane(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewPane(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPane(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewPane(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPaneTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetSplitViewPaneTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPaneTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetSplitViewPaneTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.PaneTemplateProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPaneTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetSplitViewPaneTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPaneTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetSplitViewPaneTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.PaneTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewPaneTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewPaneTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewPaneTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewPaneTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.PaneTemplateProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class SplitViewSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewUseLightDismissOverlayMode(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetSplitViewUseLightDismissOverlayMode(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewUseLightDismissOverlayMode(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetSplitViewUseLightDismissOverlayMode(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     // Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewUseLightDismissOverlayMode(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetSplitViewUseLightDismissOverlayMode(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewUseLightDismissOverlayMode(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetSplitViewUseLightDismissOverlayMode(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class SplitViewSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetSplitViewUseLightDismissOverlayMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetSplitViewUseLightDismissOverlayMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class SplitViewSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetSplitViewUseLightDismissOverlayMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetSplitViewUseLightDismissOverlayMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class SplitViewSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.SplitView.UseLightDismissOverlayModeProperty"/>.
     /// </summary>

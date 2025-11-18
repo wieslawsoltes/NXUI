@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RefreshContainer"/> class style setters extension methods.
 /// </summary>
 public static partial class RefreshContainerSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/>.
@@ -20,7 +17,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRefreshContainerVisualizer(this ElementBuilder<Style> builder, Avalonia.Controls.RefreshVisualizer value)
+    public static StyleBuilder SetRefreshContainerVisualizer(this StyleBuilder builder, Avalonia.Controls.RefreshVisualizer value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRefreshContainerVisualizer(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.RefreshVisualizer value)
+    public static KeyFrameBuilder SetRefreshContainerVisualizer(this KeyFrameBuilder builder, Avalonia.Controls.RefreshVisualizer value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class RefreshContainerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RefreshContainer.VisualizerProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class RefreshContainerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RefreshContainer.VisualizerProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRefreshContainerVisualizer(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.RefreshVisualizer> observable)
+    public static StyleBuilder SetRefreshContainerVisualizer(this StyleBuilder builder, IObservable<Avalonia.Controls.RefreshVisualizer> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRefreshContainerVisualizer(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.RefreshVisualizer> observable)
+    public static KeyFrameBuilder SetRefreshContainerVisualizer(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.RefreshVisualizer> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class RefreshContainerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class RefreshContainerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RefreshContainer.VisualizerProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRefreshContainerVisualizer(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRefreshContainerVisualizer(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRefreshContainerVisualizer(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRefreshContainerVisualizer(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class RefreshContainerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class RefreshContainerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/>.
@@ -185,7 +176,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRefreshContainerPullDirection(this ElementBuilder<Style> builder, Avalonia.Input.PullDirection value)
+    public static StyleBuilder SetRefreshContainerPullDirection(this StyleBuilder builder, Avalonia.Input.PullDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRefreshContainerPullDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Input.PullDirection value)
+    public static KeyFrameBuilder SetRefreshContainerPullDirection(this KeyFrameBuilder builder, Avalonia.Input.PullDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class RefreshContainerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.RefreshContainer.PullDirectionProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class RefreshContainerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RefreshContainer.PullDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRefreshContainerPullDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.PullDirection> observable)
+    public static StyleBuilder SetRefreshContainerPullDirection(this StyleBuilder builder, IObservable<Avalonia.Input.PullDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRefreshContainerPullDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.PullDirection> observable)
+    public static KeyFrameBuilder SetRefreshContainerPullDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Input.PullDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class RefreshContainerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class RefreshContainerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.RefreshContainer.PullDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetRefreshContainerPullDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetRefreshContainerPullDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class RefreshContainerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetRefreshContainerPullDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetRefreshContainerPullDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class RefreshContainerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/>.
     /// </summary>

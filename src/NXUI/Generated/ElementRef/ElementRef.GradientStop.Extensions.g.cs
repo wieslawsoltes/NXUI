@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.GradientStop"/>.
 /// </summary>
 public static partial class GradientStopElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GradientStop.OffsetProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class GradientStopElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GradientStop.OffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GradientStop.ColorProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class GradientStopElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GradientStop.ColorProperty);
     }
 
-#endif
 }

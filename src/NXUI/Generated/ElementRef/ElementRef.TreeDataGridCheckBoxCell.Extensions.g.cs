@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell"/>.
 /// </summary>
 public static partial class TreeDataGridCheckBoxCellElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TreeDataGridCheckBoxCellElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TreeDataGridCheckBoxCellElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class TreeDataGridCheckBoxCellElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty);
     }
 
-#endif
 }

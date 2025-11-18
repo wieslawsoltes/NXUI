@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Control"/>.
 /// </summary>
 public static partial class ControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Control.FocusAdornerProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Control.FocusAdornerProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Control.TagProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Control.TagProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Control.ContextMenuProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Control.ContextMenuProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Control.ContextFlyoutProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class ControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Control.ContextFlyoutProperty);
     }
 
-#endif
 }

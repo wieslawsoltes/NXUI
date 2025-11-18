@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ExperimentalAcrylicMaterial"/> class property extension methods.
 /// </summary>
 public static partial class ExperimentalAcrylicMaterialExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_TintColor, Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintColorProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_BackgroundSource, Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithValue(PropertyMetadata.ExperimentalAcrylicMaterial_BackgroundSource, Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, Avalonia.Media.AcrylicBackgroundSource.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> property value to <see cref="Avalonia.Media.AcrylicBackgroundSource.None"/>.
@@ -520,7 +508,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         obj[Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty] = Avalonia.Media.AcrylicBackgroundSource.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithValue(PropertyMetadata.ExperimentalAcrylicMaterial_BackgroundSource, Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty, Avalonia.Media.AcrylicBackgroundSource.Digger);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.BackgroundSourceProperty"/> property value to <see cref="Avalonia.Media.AcrylicBackgroundSource.Digger"/>.
@@ -546,7 +532,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_TintOpacity, Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.TintOpacityProperty
 
     /// <summary>
@@ -788,7 +770,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> literal value for hot reload builds.
@@ -835,8 +816,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_MaterialOpacity, Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty"/> value on a referenced control.
@@ -883,7 +862,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.MaterialOpacityProperty
 
     /// <summary>
@@ -1030,7 +1008,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> literal value for hot reload builds.
@@ -1077,8 +1054,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_PlatformTransparencyCompensationLevel, Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty"/> value on a referenced control.
@@ -1125,7 +1100,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.PlatformTransparencyCompensationLevelProperty
 
     /// <summary>
@@ -1272,7 +1246,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> literal value for hot reload builds.
@@ -1319,8 +1292,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return builder.WithBinding(PropertyMetadata.ExperimentalAcrylicMaterial_FallbackColor, Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty"/> value on a referenced control.
@@ -1367,7 +1338,6 @@ public static partial class ExperimentalAcrylicMaterialExtensions
         return elementRef.SetBinding(Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ExperimentalAcrylicMaterial.FallbackColorProperty
 
     /// <summary>

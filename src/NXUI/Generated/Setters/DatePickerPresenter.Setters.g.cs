@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DatePickerPresenter"/> class style setters extension methods.
 /// </summary>
 public static partial class DatePickerPresenterSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDate(this ElementBuilder<Style> builder, System.DateTimeOffset value)
+    public static StyleBuilder SetDatePickerPresenterDate(this StyleBuilder builder, System.DateTimeOffset value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDate(this ElementBuilder<KeyFrame> builder, System.DateTimeOffset value)
+    public static KeyFrameBuilder SetDatePickerPresenterDate(this KeyFrameBuilder builder, System.DateTimeOffset value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.DateProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDate(this ElementBuilder<Style> builder, IObservable<System.DateTimeOffset> observable)
+    public static StyleBuilder SetDatePickerPresenterDate(this StyleBuilder builder, IObservable<System.DateTimeOffset> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDate(this ElementBuilder<KeyFrame> builder, IObservable<System.DateTimeOffset> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterDate(this KeyFrameBuilder builder, IObservable<System.DateTimeOffset> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterDate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterDate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DateProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDayFormat(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetDatePickerPresenterDayFormat(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDayFormat(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetDatePickerPresenterDayFormat(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.DayFormatProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDayFormat(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetDatePickerPresenterDayFormat(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDayFormat(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterDayFormat(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDayFormat(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterDayFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDayFormat(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterDayFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayFormatProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDayVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDatePickerPresenterDayVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDayVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDatePickerPresenterDayVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.DayVisibleProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDayVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDatePickerPresenterDayVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDayVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterDayVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.DayVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterDayVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterDayVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterDayVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterDayVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.DayVisibleProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/>.
@@ -515,7 +494,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMaxYear(this ElementBuilder<Style> builder, System.DateTimeOffset value)
+    public static StyleBuilder SetDatePickerPresenterMaxYear(this StyleBuilder builder, System.DateTimeOffset value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMaxYear(this ElementBuilder<KeyFrame> builder, System.DateTimeOffset value)
+    public static KeyFrameBuilder SetDatePickerPresenterMaxYear(this KeyFrameBuilder builder, System.DateTimeOffset value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MaxYearProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMaxYear(this ElementBuilder<Style> builder, IObservable<System.DateTimeOffset> observable)
+    public static StyleBuilder SetDatePickerPresenterMaxYear(this StyleBuilder builder, IObservable<System.DateTimeOffset> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMaxYear(this ElementBuilder<KeyFrame> builder, IObservable<System.DateTimeOffset> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterMaxYear(this KeyFrameBuilder builder, IObservable<System.DateTimeOffset> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MaxYearProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMaxYear(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMaxYear(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMaxYear(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMaxYear(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MaxYearProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/>.
@@ -680,7 +653,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMinYear(this ElementBuilder<Style> builder, System.DateTimeOffset value)
+    public static StyleBuilder SetDatePickerPresenterMinYear(this StyleBuilder builder, System.DateTimeOffset value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMinYear(this ElementBuilder<KeyFrame> builder, System.DateTimeOffset value)
+    public static KeyFrameBuilder SetDatePickerPresenterMinYear(this KeyFrameBuilder builder, System.DateTimeOffset value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MinYearProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MinYearProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMinYear(this ElementBuilder<Style> builder, IObservable<System.DateTimeOffset> observable)
+    public static StyleBuilder SetDatePickerPresenterMinYear(this StyleBuilder builder, IObservable<System.DateTimeOffset> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMinYear(this ElementBuilder<KeyFrame> builder, IObservable<System.DateTimeOffset> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterMinYear(this KeyFrameBuilder builder, IObservable<System.DateTimeOffset> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MinYearProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMinYear(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMinYear(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMinYear(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMinYear(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MinYearProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/>.
@@ -845,7 +812,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMonthFormat(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetDatePickerPresenterMonthFormat(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMonthFormat(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthFormat(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MonthFormatProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMonthFormat(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetDatePickerPresenterMonthFormat(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMonthFormat(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthFormat(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMonthFormat(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMonthFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMonthFormat(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthFormatProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMonthVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDatePickerPresenterMonthVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMonthVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMonthVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDatePickerPresenterMonthVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMonthVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterMonthVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterMonthVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterMonthVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterMonthVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.MonthVisibleProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterYearFormat(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetDatePickerPresenterYearFormat(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterYearFormat(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetDatePickerPresenterYearFormat(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.YearFormatProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterYearFormat(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetDatePickerPresenterYearFormat(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterYearFormat(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterYearFormat(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterYearFormat(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterYearFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterYearFormat(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterYearFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearFormatProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class DatePickerPresenterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterYearVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDatePickerPresenterYearVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterYearVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDatePickerPresenterYearVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DatePickerPresenter.YearVisibleProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterYearVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDatePickerPresenterYearVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterYearVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDatePickerPresenterYearVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class DatePickerPresenterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DatePickerPresenter.YearVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDatePickerPresenterYearVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDatePickerPresenterYearVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class DatePickerPresenterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDatePickerPresenterYearVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDatePickerPresenterYearVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class DatePickerPresenterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DatePickerPresenter.YearVisibleProperty"/>.
     /// </summary>

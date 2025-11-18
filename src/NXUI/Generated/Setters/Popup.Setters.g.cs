@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.Popup"/> class style setters extension methods.
 /// </summary>
 public static partial class PopupSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
@@ -20,7 +17,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupWindowManagerAddShadowHint(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupWindowManagerAddShadowHint(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupWindowManagerAddShadowHint(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupWindowManagerAddShadowHint(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupWindowManagerAddShadowHint(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupWindowManagerAddShadowHint(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupWindowManagerAddShadowHint(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupWindowManagerAddShadowHint(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupWindowManagerAddShadowHint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupWindowManagerAddShadowHint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupWindowManagerAddShadowHint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupWindowManagerAddShadowHint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.WindowManagerAddShadowHintProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
@@ -185,7 +176,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupChild(this ElementBuilder<Style> builder, Avalonia.Controls.Control value)
+    public static StyleBuilder SetPopupChild(this StyleBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupChild(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Control value)
+    public static KeyFrameBuilder SetPopupChild(this KeyFrameBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.ChildProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupChild(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static StyleBuilder SetPopupChild(this StyleBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupChild(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static KeyFrameBuilder SetPopupChild(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ChildProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupChild(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupChild(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupChild(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupChild(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ChildProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
@@ -350,7 +335,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupInheritsTransform(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupInheritsTransform(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupInheritsTransform(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupInheritsTransform(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.InheritsTransformProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupInheritsTransform(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupInheritsTransform(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupInheritsTransform(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupInheritsTransform(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.InheritsTransformProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupInheritsTransform(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupInheritsTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupInheritsTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupInheritsTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.InheritsTransformProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
@@ -515,7 +494,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupIsOpen(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupIsOpen(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupIsOpen(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupIsOpen(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.IsOpenProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupIsOpen(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupIsOpen(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupIsOpen(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupIsOpen(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsOpenProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupIsOpen(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupIsOpen(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupIsOpen(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupIsOpen(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsOpenProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
@@ -680,7 +653,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementAnchor(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
+    public static StyleBuilder SetPopupPlacementAnchor(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementAnchor(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
+    public static KeyFrameBuilder SetPopupPlacementAnchor(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementAnchor(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
+    public static StyleBuilder SetPopupPlacementAnchor(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementAnchor(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
+    public static KeyFrameBuilder SetPopupPlacementAnchor(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupAnchor> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementAnchor(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupPlacementAnchor(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementAnchor(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupPlacementAnchor(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementAnchorProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
@@ -845,7 +812,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementConstraintAdjustment(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
+    public static StyleBuilder SetPopupPlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementConstraintAdjustment(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
+    public static KeyFrameBuilder SetPopupPlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementConstraintAdjustment(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
+    public static StyleBuilder SetPopupPlacementConstraintAdjustment(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementConstraintAdjustment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
+    public static KeyFrameBuilder SetPopupPlacementConstraintAdjustment(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupPositionerConstraintAdjustment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementConstraintAdjustment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupPlacementConstraintAdjustment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementConstraintAdjustment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupPlacementConstraintAdjustment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementConstraintAdjustmentProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementGravity(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
+    public static StyleBuilder SetPopupPlacementGravity(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementGravity(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
+    public static KeyFrameBuilder SetPopupPlacementGravity(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.PopupGravity value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementGravityProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementGravity(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
+    public static StyleBuilder SetPopupPlacementGravity(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementGravity(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
+    public static KeyFrameBuilder SetPopupPlacementGravity(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.PopupGravity> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementGravityProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementGravity(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupPlacementGravity(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementGravity(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupPlacementGravity(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementGravityProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacement(this ElementBuilder<Style> builder, Avalonia.Controls.PlacementMode value)
+    public static StyleBuilder SetPopupPlacement(this StyleBuilder builder, Avalonia.Controls.PlacementMode value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.PlacementMode value)
+    public static KeyFrameBuilder SetPopupPlacement(this KeyFrameBuilder builder, Avalonia.Controls.PlacementMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacement(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static StyleBuilder SetPopupPlacement(this StyleBuilder builder, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.PlacementMode> observable)
+    public static KeyFrameBuilder SetPopupPlacement(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.PlacementMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupPlacement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupPlacement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementRect(this ElementBuilder<Style> builder, System.Nullable<Avalonia.Rect> value)
+    public static StyleBuilder SetPopupPlacementRect(this StyleBuilder builder, System.Nullable<Avalonia.Rect> value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementRect(this ElementBuilder<KeyFrame> builder, System.Nullable<Avalonia.Rect> value)
+    public static KeyFrameBuilder SetPopupPlacementRect(this KeyFrameBuilder builder, System.Nullable<Avalonia.Rect> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementRectProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementRect(this ElementBuilder<Style> builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
+    public static StyleBuilder SetPopupPlacementRect(this StyleBuilder builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementRect(this ElementBuilder<KeyFrame> builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
+    public static KeyFrameBuilder SetPopupPlacementRect(this KeyFrameBuilder builder, IObservable<System.Nullable<Avalonia.Rect>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementRectProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementRect(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupPlacementRect(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementRect(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupPlacementRect(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementRectProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementTarget(this ElementBuilder<Style> builder, Avalonia.Controls.Control value)
+    public static StyleBuilder SetPopupPlacementTarget(this StyleBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementTarget(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Control value)
+    public static KeyFrameBuilder SetPopupPlacementTarget(this KeyFrameBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.PlacementTargetProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementTarget(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static StyleBuilder SetPopupPlacementTarget(this StyleBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementTarget(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static KeyFrameBuilder SetPopupPlacementTarget(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.PlacementTargetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupPlacementTarget(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupPlacementTarget(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupPlacementTarget(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupPlacementTarget(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.PlacementTargetProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupCustomPopupPlacementCallback(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    public static StyleBuilder SetPopupCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupCustomPopupPlacementCallback(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
+    public static KeyFrameBuilder SetPopupCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupCustomPopupPlacementCallback(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    public static StyleBuilder SetPopupCustomPopupPlacementCallback(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupCustomPopupPlacementCallback(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
+    public static KeyFrameBuilder SetPopupCustomPopupPlacementCallback(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.PopupPositioning.CustomPopupPlacementCallback> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupCustomPopupPlacementCallback(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupCustomPopupPlacementCallback(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupCustomPopupPlacementCallback(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupCustomPopupPlacementCallback(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupOverlayDismissEventPassThrough(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupOverlayDismissEventPassThrough(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupOverlayDismissEventPassThrough(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupOverlayDismissEventPassThrough(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupOverlayDismissEventPassThrough(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupOverlayDismissEventPassThrough(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupOverlayDismissEventPassThrough(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupOverlayDismissEventPassThrough(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupOverlayDismissEventPassThrough(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupOverlayDismissEventPassThrough(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupOverlayDismissEventPassThrough(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupOverlayDismissEventPassThrough(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayDismissEventPassThroughProperty"/>.
     /// </summary>
@@ -1992,7 +1918,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
@@ -2000,7 +1925,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupOverlayInputPassThroughElement(this ElementBuilder<Style> builder, Avalonia.Input.IInputElement value)
+    public static StyleBuilder SetPopupOverlayInputPassThroughElement(this StyleBuilder builder, Avalonia.Input.IInputElement value)
     {
         return builder.WithAction(style =>
         {
@@ -2014,7 +1939,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupOverlayInputPassThroughElement(this ElementBuilder<KeyFrame> builder, Avalonia.Input.IInputElement value)
+    public static KeyFrameBuilder SetPopupOverlayInputPassThroughElement(this KeyFrameBuilder builder, Avalonia.Input.IInputElement value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2022,7 +1947,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty
 
     /// <summary>
@@ -2048,7 +1972,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> using an observable source.
@@ -2056,7 +1979,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupOverlayInputPassThroughElement(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.IInputElement> observable)
+    public static StyleBuilder SetPopupOverlayInputPassThroughElement(this StyleBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2070,7 +1993,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupOverlayInputPassThroughElement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.IInputElement> observable)
+    public static KeyFrameBuilder SetPopupOverlayInputPassThroughElement(this KeyFrameBuilder builder, IObservable<Avalonia.Input.IInputElement> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2078,7 +2001,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
@@ -2102,7 +2024,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/> using a binding.
@@ -2110,7 +2031,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupOverlayInputPassThroughElement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupOverlayInputPassThroughElement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2124,7 +2045,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupOverlayInputPassThroughElement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupOverlayInputPassThroughElement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2132,7 +2053,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.OverlayInputPassThroughElementProperty"/>.
     /// </summary>
@@ -2157,7 +2077,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
@@ -2165,7 +2084,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupHorizontalOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetPopupHorizontalOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -2179,7 +2098,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupHorizontalOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetPopupHorizontalOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2187,7 +2106,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty
 
     /// <summary>
@@ -2213,7 +2131,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> using an observable source.
@@ -2221,7 +2138,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupHorizontalOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetPopupHorizontalOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2235,7 +2152,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupHorizontalOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetPopupHorizontalOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2243,7 +2160,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
     /// </summary>
@@ -2267,7 +2183,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/> using a binding.
@@ -2275,7 +2190,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupHorizontalOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupHorizontalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2289,7 +2204,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupHorizontalOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupHorizontalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2297,7 +2212,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.HorizontalOffsetProperty"/>.
     /// </summary>
@@ -2322,7 +2236,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
@@ -2330,7 +2243,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupIsLightDismissEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupIsLightDismissEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2344,7 +2257,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupIsLightDismissEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupIsLightDismissEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2352,7 +2265,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty
 
     /// <summary>
@@ -2378,7 +2290,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/> using an observable source.
@@ -2386,7 +2297,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupIsLightDismissEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupIsLightDismissEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2400,7 +2311,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupIsLightDismissEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupIsLightDismissEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2408,7 +2319,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
     /// </summary>
@@ -2432,7 +2342,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/> using a binding.
@@ -2440,7 +2349,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupIsLightDismissEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupIsLightDismissEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2454,7 +2363,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupIsLightDismissEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupIsLightDismissEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2462,7 +2371,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.IsLightDismissEnabledProperty"/>.
     /// </summary>
@@ -2487,7 +2395,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
@@ -2495,7 +2402,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupVerticalOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetPopupVerticalOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -2509,7 +2416,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupVerticalOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetPopupVerticalOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2517,7 +2424,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty
 
     /// <summary>
@@ -2543,7 +2449,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/> using an observable source.
@@ -2551,7 +2456,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupVerticalOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetPopupVerticalOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2565,7 +2470,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupVerticalOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetPopupVerticalOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2573,7 +2478,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
     /// </summary>
@@ -2597,7 +2501,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/> using a binding.
@@ -2605,7 +2508,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupVerticalOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupVerticalOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2619,7 +2522,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupVerticalOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupVerticalOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2627,7 +2530,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.VerticalOffsetProperty"/>.
     /// </summary>
@@ -2652,7 +2554,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
@@ -2660,7 +2561,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupTopmost(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupTopmost(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2674,7 +2575,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupTopmost(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupTopmost(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2682,7 +2583,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.TopmostProperty
 
     /// <summary>
@@ -2708,7 +2608,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> using an observable source.
@@ -2716,7 +2615,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupTopmost(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupTopmost(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2730,7 +2629,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupTopmost(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupTopmost(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2738,7 +2637,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
     /// </summary>
@@ -2762,7 +2660,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TopmostProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/> using a binding.
@@ -2770,7 +2667,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupTopmost(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupTopmost(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2784,7 +2681,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupTopmost(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupTopmost(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2792,7 +2689,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TopmostProperty"/>.
     /// </summary>
@@ -2817,7 +2713,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
@@ -2825,7 +2720,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupTakesFocusFromNativeControl(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupTakesFocusFromNativeControl(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -2839,7 +2734,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupTakesFocusFromNativeControl(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupTakesFocusFromNativeControl(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2847,7 +2742,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty
 
     /// <summary>
@@ -2873,7 +2767,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> using an observable source.
@@ -2881,7 +2774,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupTakesFocusFromNativeControl(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupTakesFocusFromNativeControl(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -2895,7 +2788,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupTakesFocusFromNativeControl(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupTakesFocusFromNativeControl(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2903,7 +2796,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
     /// </summary>
@@ -2927,7 +2819,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/> using a binding.
@@ -2935,7 +2826,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupTakesFocusFromNativeControl(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupTakesFocusFromNativeControl(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -2949,7 +2840,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupTakesFocusFromNativeControl(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupTakesFocusFromNativeControl(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -2957,7 +2848,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.TakesFocusFromNativeControlProperty"/>.
     /// </summary>
@@ -2982,7 +2872,6 @@ public static partial class PopupSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/>.
@@ -2990,7 +2879,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupShouldUseOverlayLayer(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetPopupShouldUseOverlayLayer(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -3004,7 +2893,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupShouldUseOverlayLayer(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetPopupShouldUseOverlayLayer(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3012,7 +2901,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty
 
     /// <summary>
@@ -3038,7 +2926,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/> using an observable source.
@@ -3046,7 +2933,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupShouldUseOverlayLayer(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetPopupShouldUseOverlayLayer(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -3060,7 +2947,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupShouldUseOverlayLayer(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetPopupShouldUseOverlayLayer(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3068,7 +2955,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/>.
     /// </summary>
@@ -3092,7 +2978,6 @@ public static partial class PopupSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/> using a binding.
@@ -3100,7 +2985,7 @@ public static partial class PopupSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPopupShouldUseOverlayLayer(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPopupShouldUseOverlayLayer(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -3114,7 +2999,7 @@ public static partial class PopupSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPopupShouldUseOverlayLayer(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPopupShouldUseOverlayLayer(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -3122,7 +3007,6 @@ public static partial class PopupSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.Popup.ShouldUseOverlayLayerProperty"/>.
     /// </summary>

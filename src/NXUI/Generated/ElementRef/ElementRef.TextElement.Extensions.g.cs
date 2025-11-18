@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Documents.TextElement"/>.
 /// </summary>
 public static partial class TextElementElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.BackgroundProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.BackgroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.FontFamilyProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.FontFamilyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.FontFeaturesProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.FontFeaturesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.FontSizeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.FontSizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.FontStyleProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.FontStyleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.FontWeightProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.FontWeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.FontStretchProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.FontStretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Documents.TextElement.ForegroundProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class TextElementElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Documents.TextElement.ForegroundProperty);
     }
 
-#endif
 }

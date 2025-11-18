@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.LineGeometry"/> class style setters extension methods.
 /// </summary>
 public static partial class LineGeometrySetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
@@ -20,7 +17,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLineGeometryStartPoint(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetLineGeometryStartPoint(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLineGeometryStartPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetLineGeometryStartPoint(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class LineGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.LineGeometry.StartPointProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class LineGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLineGeometryStartPoint(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetLineGeometryStartPoint(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLineGeometryStartPoint(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetLineGeometryStartPoint(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class LineGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class LineGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.StartPointProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLineGeometryStartPoint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLineGeometryStartPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLineGeometryStartPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLineGeometryStartPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class LineGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.StartPointProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class LineGeometrySetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
@@ -185,7 +176,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLineGeometryEndPoint(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetLineGeometryEndPoint(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLineGeometryEndPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetLineGeometryEndPoint(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class LineGeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.LineGeometry.EndPointProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class LineGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLineGeometryEndPoint(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetLineGeometryEndPoint(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLineGeometryEndPoint(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetLineGeometryEndPoint(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class LineGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class LineGeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.LineGeometry.EndPointProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetLineGeometryEndPoint(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetLineGeometryEndPoint(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class LineGeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetLineGeometryEndPoint(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetLineGeometryEndPoint(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class LineGeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.LineGeometry.EndPointProperty"/>.
     /// </summary>

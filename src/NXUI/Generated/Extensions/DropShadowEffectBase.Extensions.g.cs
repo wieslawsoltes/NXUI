@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DropShadowEffectBase"/> class property extension methods.
 /// </summary>
 public static partial class DropShadowEffectBaseExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DropShadowEffectBaseExtensions
         return builder.WithBinding(PropertyMetadata.DropShadowEffectBase_BlurRadius, Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DropShadowEffectBaseExtensions
         return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DropShadowEffectBase.BlurRadiusProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DropShadowEffectBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DropShadowEffectBaseExtensions
         return builder.WithBinding(PropertyMetadata.DropShadowEffectBase_Color, Avalonia.Media.DropShadowEffectBase.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DropShadowEffectBase.ColorProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DropShadowEffectBaseExtensions
         return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DropShadowEffectBase.ColorProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class DropShadowEffectBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class DropShadowEffectBaseExtensions
         return builder.WithBinding(PropertyMetadata.DropShadowEffectBase_Opacity, Avalonia.Media.DropShadowEffectBase.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DropShadowEffectBase.OpacityProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class DropShadowEffectBaseExtensions
         return elementRef.SetBinding(Avalonia.Media.DropShadowEffectBase.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DropShadowEffectBase.OpacityProperty
 
     /// <summary>

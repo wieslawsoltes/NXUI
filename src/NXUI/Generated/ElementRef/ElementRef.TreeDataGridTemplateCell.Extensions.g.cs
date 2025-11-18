@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.TreeDataGridTemplateCell"/>.
 /// </summary>
 public static partial class TreeDataGridTemplateCellElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TreeDataGridTemplateCellElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentTemplateProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TreeDataGridTemplateCellElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.ContentTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridTemplateCell.EditingTemplateProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class TreeDataGridTemplateCellElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridTemplateCell.EditingTemplateProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.OverlayPopupHost"/> class property extension methods.
 /// </summary>
 public static partial class OverlayPopupHostExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class OverlayPopupHostExtensions
         return builder.WithBinding(PropertyMetadata.OverlayPopupHost_Transform, Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class OverlayPopupHostExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.OverlayPopupHost.TransformProperty
 
     /// <summary>

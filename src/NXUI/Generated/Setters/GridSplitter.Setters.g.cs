@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.GridSplitter"/> class style setters extension methods.
 /// </summary>
 public static partial class GridSplitterSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/>.
@@ -20,7 +17,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterResizeDirection(this ElementBuilder<Style> builder, Avalonia.Controls.GridResizeDirection value)
+    public static StyleBuilder SetGridSplitterResizeDirection(this StyleBuilder builder, Avalonia.Controls.GridResizeDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterResizeDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.GridResizeDirection value)
+    public static KeyFrameBuilder SetGridSplitterResizeDirection(this KeyFrameBuilder builder, Avalonia.Controls.GridResizeDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.ResizeDirectionProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.ResizeDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterResizeDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.GridResizeDirection> observable)
+    public static StyleBuilder SetGridSplitterResizeDirection(this StyleBuilder builder, IObservable<Avalonia.Controls.GridResizeDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterResizeDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.GridResizeDirection> observable)
+    public static KeyFrameBuilder SetGridSplitterResizeDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.GridResizeDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.ResizeDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterResizeDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGridSplitterResizeDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterResizeDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGridSplitterResizeDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeDirectionProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class GridSplitterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/>.
@@ -185,7 +176,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterResizeBehavior(this ElementBuilder<Style> builder, Avalonia.Controls.GridResizeBehavior value)
+    public static StyleBuilder SetGridSplitterResizeBehavior(this StyleBuilder builder, Avalonia.Controls.GridResizeBehavior value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterResizeBehavior(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.GridResizeBehavior value)
+    public static KeyFrameBuilder SetGridSplitterResizeBehavior(this KeyFrameBuilder builder, Avalonia.Controls.GridResizeBehavior value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.ResizeBehaviorProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterResizeBehavior(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.GridResizeBehavior> observable)
+    public static StyleBuilder SetGridSplitterResizeBehavior(this StyleBuilder builder, IObservable<Avalonia.Controls.GridResizeBehavior> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterResizeBehavior(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.GridResizeBehavior> observable)
+    public static KeyFrameBuilder SetGridSplitterResizeBehavior(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.GridResizeBehavior> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.ResizeBehaviorProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterResizeBehavior(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGridSplitterResizeBehavior(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterResizeBehavior(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGridSplitterResizeBehavior(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.ResizeBehaviorProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class GridSplitterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/>.
@@ -350,7 +335,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterShowsPreview(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetGridSplitterShowsPreview(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterShowsPreview(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetGridSplitterShowsPreview(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.ShowsPreviewProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.ShowsPreviewProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterShowsPreview(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetGridSplitterShowsPreview(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterShowsPreview(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetGridSplitterShowsPreview(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.ShowsPreviewProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterShowsPreview(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGridSplitterShowsPreview(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterShowsPreview(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGridSplitterShowsPreview(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.ShowsPreviewProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class GridSplitterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/>.
@@ -515,7 +494,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterKeyboardIncrement(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetGridSplitterKeyboardIncrement(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterKeyboardIncrement(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetGridSplitterKeyboardIncrement(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.KeyboardIncrementProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterKeyboardIncrement(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetGridSplitterKeyboardIncrement(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterKeyboardIncrement(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetGridSplitterKeyboardIncrement(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.KeyboardIncrementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterKeyboardIncrement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGridSplitterKeyboardIncrement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterKeyboardIncrement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGridSplitterKeyboardIncrement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.KeyboardIncrementProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class GridSplitterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/>.
@@ -680,7 +653,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterDragIncrement(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetGridSplitterDragIncrement(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterDragIncrement(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetGridSplitterDragIncrement(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.DragIncrementProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.DragIncrementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterDragIncrement(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetGridSplitterDragIncrement(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterDragIncrement(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetGridSplitterDragIncrement(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.DragIncrementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterDragIncrement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGridSplitterDragIncrement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterDragIncrement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGridSplitterDragIncrement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.DragIncrementProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class GridSplitterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/>.
@@ -845,7 +812,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterPreviewContent(this ElementBuilder<Style> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static StyleBuilder SetGridSplitterPreviewContent(this StyleBuilder builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterPreviewContent(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static KeyFrameBuilder SetGridSplitterPreviewContent(this KeyFrameBuilder builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.GridSplitter.PreviewContentProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.PreviewContentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterPreviewContent(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    public static StyleBuilder SetGridSplitterPreviewContent(this StyleBuilder builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterPreviewContent(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    public static KeyFrameBuilder SetGridSplitterPreviewContent(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class GridSplitterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.GridSplitter.PreviewContentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGridSplitterPreviewContent(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGridSplitterPreviewContent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class GridSplitterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGridSplitterPreviewContent(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGridSplitterPreviewContent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class GridSplitterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.GridSplitter.PreviewContentProperty"/>.
     /// </summary>

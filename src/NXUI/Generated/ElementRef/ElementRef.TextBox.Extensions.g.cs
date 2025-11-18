@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TextBox"/>.
 /// </summary>
 public static partial class TextBoxElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.IsInactiveSelectionHighlightEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.ClearSelectionOnLostFocusProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.AcceptsReturnProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.AcceptsReturnProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.AcceptsTabProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.AcceptsTabProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CaretIndexProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CaretIndexProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.IsReadOnlyProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.IsReadOnlyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.PasswordCharProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.PasswordCharProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.SelectionBrushProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.SelectionBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.SelectionForegroundBrushProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.SelectionForegroundBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CaretBrushProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CaretBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CaretBlinkIntervalProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CaretBlinkIntervalProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.SelectionStartProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.SelectionStartProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.SelectionEndProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.SelectionEndProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.MaxLengthProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.MaxLengthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.MaxLinesProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.MaxLinesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.MinLinesProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.MinLinesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.TextProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.TextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.TextAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.VerticalContentAlignmentProperty"/> value.
@@ -231,8 +190,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.VerticalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> value.
@@ -242,8 +199,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.TextWrappingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.LineHeightProperty"/> value.
@@ -253,8 +208,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.LineHeightProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> value.
@@ -264,8 +217,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.LetterSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.WatermarkProperty"/> value.
@@ -275,8 +226,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.WatermarkProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.UseFloatingWatermarkProperty"/> value.
@@ -286,8 +235,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.UseFloatingWatermarkProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.NewLineProperty"/> value.
@@ -297,8 +244,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.NewLineProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.InnerLeftContentProperty"/> value.
@@ -308,8 +253,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.InnerLeftContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.InnerRightContentProperty"/> value.
@@ -319,8 +262,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.InnerRightContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.RevealPasswordProperty"/> value.
@@ -330,8 +271,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.RevealPasswordProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CanCutProperty"/> value.
@@ -341,8 +280,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CanCutProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CanCopyProperty"/> value.
@@ -352,8 +289,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CanCopyProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CanPasteProperty"/> value.
@@ -363,8 +298,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CanPasteProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.IsUndoEnabledProperty"/> value.
@@ -374,8 +307,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.IsUndoEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.UndoLimitProperty"/> value.
@@ -385,8 +316,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.UndoLimitProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CanUndoProperty"/> value.
@@ -396,8 +325,6 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CanUndoProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.CanRedoProperty"/> value.
@@ -407,5 +334,4 @@ public static partial class TextBoxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TextBox.CanRedoProperty);
     }
 
-#endif
 }

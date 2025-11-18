@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Application"/>.
 /// </summary>
 public static partial class ApplicationElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Application.DataContextProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ApplicationElementRefExtensions
         return elementRef.Observe(Avalonia.Application.DataContextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Application.ActualThemeVariantProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ApplicationElementRefExtensions
         return elementRef.Observe(Avalonia.Application.ActualThemeVariantProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Application.RequestedThemeVariantProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ApplicationElementRefExtensions
         return elementRef.Observe(Avalonia.Application.RequestedThemeVariantProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Application.NameProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class ApplicationElementRefExtensions
         return elementRef.Observe(Avalonia.Application.NameProperty);
     }
 
-#endif
 }

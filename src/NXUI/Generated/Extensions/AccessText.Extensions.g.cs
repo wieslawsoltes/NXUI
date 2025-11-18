@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.AccessText"/> class property extension methods.
 /// </summary>
 public static partial class AccessTextExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class AccessTextExtensions
         return builder.WithBinding(PropertyMetadata.AccessText_ShowAccessKey, Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class AccessTextExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.AccessText.ShowAccessKeyProperty
 
     /// <summary>

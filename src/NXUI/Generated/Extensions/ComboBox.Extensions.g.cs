@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ComboBox"/> class property extension methods.
 /// </summary>
 public static partial class ComboBoxExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ComboBoxExtensions
         return builder.WithBinding(PropertyMetadata.ComboBox_IsDropDownOpen, Avalonia.Controls.ComboBox.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.IsDropDownOpenProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ComboBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ComboBox.IsDropDownOpenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ComboBox.IsDropDownOpenProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ComboBoxExtensions
         return builder.WithBinding(PropertyMetadata.ComboBox_MaxDropDownHeight, Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.MaxDropDownHeightProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ComboBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ComboBox.MaxDropDownHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ComboBox.MaxDropDownHeightProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class ComboBoxExtensions
         return builder.WithBinding(PropertyMetadata.ComboBox_PlaceholderText, Avalonia.Controls.ComboBox.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.PlaceholderTextProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class ComboBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ComboBox.PlaceholderTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ComboBox.PlaceholderTextProperty
 
     /// <summary>
@@ -828,7 +814,6 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/> literal value for hot reload builds.
@@ -875,8 +860,6 @@ public static partial class ComboBoxExtensions
         return builder.WithBinding(PropertyMetadata.ComboBox_PlaceholderForeground, Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.PlaceholderForegroundProperty"/> value on a referenced control.
@@ -923,7 +906,6 @@ public static partial class ComboBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ComboBox.PlaceholderForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ComboBox.PlaceholderForegroundProperty
 
     /// <summary>
@@ -1070,7 +1052,6 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -1117,8 +1098,6 @@ public static partial class ComboBoxExtensions
         return builder.WithBinding(PropertyMetadata.ComboBox_HorizontalContentAlignment, Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -1165,7 +1144,6 @@ public static partial class ComboBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -1311,7 +1289,6 @@ public static partial class ComboBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1323,7 +1300,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_HorizontalContentAlignment, Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -1336,7 +1312,6 @@ public static partial class ComboBoxExtensions
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1348,7 +1323,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_HorizontalContentAlignment, Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -1361,7 +1335,6 @@ public static partial class ComboBoxExtensions
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1373,7 +1346,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_HorizontalContentAlignment, Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -1386,7 +1358,6 @@ public static partial class ComboBoxExtensions
         obj[Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1398,7 +1369,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_HorizontalContentAlignment, Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -1412,7 +1382,6 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -1459,8 +1428,6 @@ public static partial class ComboBoxExtensions
         return builder.WithBinding(PropertyMetadata.ComboBox_VerticalContentAlignment, Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -1507,7 +1474,6 @@ public static partial class ComboBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -1653,7 +1619,6 @@ public static partial class ComboBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1665,7 +1630,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_VerticalContentAlignment, Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -1678,7 +1642,6 @@ public static partial class ComboBoxExtensions
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1690,7 +1653,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_VerticalContentAlignment, Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -1703,7 +1665,6 @@ public static partial class ComboBoxExtensions
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1715,7 +1676,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_VerticalContentAlignment, Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -1728,7 +1688,6 @@ public static partial class ComboBoxExtensions
         obj[Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1740,7 +1699,6 @@ public static partial class ComboBoxExtensions
         return builder.WithValue(PropertyMetadata.ComboBox_VerticalContentAlignment, Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
@@ -1754,7 +1712,6 @@ public static partial class ComboBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> literal value for hot reload builds.
@@ -1801,8 +1758,6 @@ public static partial class ComboBoxExtensions
         return builder.WithBinding(PropertyMetadata.ComboBox_SelectionBoxItemTemplate, Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty"/> value on a referenced control.
@@ -1849,7 +1804,6 @@ public static partial class ComboBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ComboBox.SelectionBoxItemTemplateProperty
 
     /// <summary>

@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Metadata;
 
 /// <summary>
@@ -8,4 +7,3 @@ namespace NXUI.HotReload.Metadata;
 /// <param name="right">The next value.</param>
 /// <returns>True when the values are considered equal.</returns>
 internal delegate bool PropertyValueComparer(object? left, object? right);
-#endif

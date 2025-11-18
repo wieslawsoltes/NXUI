@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.TransformGroup"/>.
 /// </summary>
 public static partial class TransformGroupElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TransformGroup.ChildrenProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class TransformGroupElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TransformGroup.ChildrenProperty);
     }
 
-#endif
 }

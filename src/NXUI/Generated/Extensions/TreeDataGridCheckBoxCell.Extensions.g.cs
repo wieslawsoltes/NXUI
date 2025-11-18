@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell"/> class property extension methods.
 /// </summary>
 public static partial class TreeDataGridCheckBoxCellExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGridCheckBoxCell_IsReadOnly, Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsReadOnlyProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGridCheckBoxCell_IsThreeState, Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.IsThreeStateProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGridCheckBoxCell_Value, Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TreeDataGridCheckBoxCellExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.TreeDataGridCheckBoxCell.ValueProperty
 
     /// <summary>

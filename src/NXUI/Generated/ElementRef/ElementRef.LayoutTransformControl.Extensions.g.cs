@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.LayoutTransformControl"/>.
 /// </summary>
 public static partial class LayoutTransformControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class LayoutTransformControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.LayoutTransformControl.LayoutTransformProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class LayoutTransformControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.LayoutTransformControl.UseRenderTransformProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ItemsRepeater"/> class style setters extension methods.
 /// </summary>
 public static partial class ItemsRepeaterSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterHorizontalCacheLength(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetItemsRepeaterHorizontalCacheLength(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterHorizontalCacheLength(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetItemsRepeaterHorizontalCacheLength(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterHorizontalCacheLength(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetItemsRepeaterHorizontalCacheLength(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterHorizontalCacheLength(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetItemsRepeaterHorizontalCacheLength(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterHorizontalCacheLength(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterHorizontalCacheLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterHorizontalCacheLength(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterHorizontalCacheLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.HorizontalCacheLengthProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ItemsRepeaterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterItemTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetItemsRepeaterItemTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterItemTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetItemsRepeaterItemTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.ItemTemplateProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterItemTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetItemsRepeaterItemTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterItemTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetItemsRepeaterItemTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterItemTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterItemTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterItemTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterItemTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemTemplateProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ItemsRepeaterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterItemsSource(this ElementBuilder<Style> builder, System.Collections.IEnumerable value)
+    public static StyleBuilder SetItemsRepeaterItemsSource(this StyleBuilder builder, System.Collections.IEnumerable value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterItemsSource(this ElementBuilder<KeyFrame> builder, System.Collections.IEnumerable value)
+    public static KeyFrameBuilder SetItemsRepeaterItemsSource(this KeyFrameBuilder builder, System.Collections.IEnumerable value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.ItemsSourceProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterItemsSource(this ElementBuilder<Style> builder, IObservable<System.Collections.IEnumerable> observable)
+    public static StyleBuilder SetItemsRepeaterItemsSource(this StyleBuilder builder, IObservable<System.Collections.IEnumerable> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterItemsSource(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.IEnumerable> observable)
+    public static KeyFrameBuilder SetItemsRepeaterItemsSource(this KeyFrameBuilder builder, IObservable<System.Collections.IEnumerable> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.ItemsSourceProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterItemsSource(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterItemsSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterItemsSource(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterItemsSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.ItemsSourceProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ItemsRepeaterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterLayout(this ElementBuilder<Style> builder, Avalonia.Layout.AttachedLayout value)
+    public static StyleBuilder SetItemsRepeaterLayout(this StyleBuilder builder, Avalonia.Layout.AttachedLayout value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterLayout(this ElementBuilder<KeyFrame> builder, Avalonia.Layout.AttachedLayout value)
+    public static KeyFrameBuilder SetItemsRepeaterLayout(this KeyFrameBuilder builder, Avalonia.Layout.AttachedLayout value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.LayoutProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterLayout(this ElementBuilder<Style> builder, IObservable<Avalonia.Layout.AttachedLayout> observable)
+    public static StyleBuilder SetItemsRepeaterLayout(this StyleBuilder builder, IObservable<Avalonia.Layout.AttachedLayout> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterLayout(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Layout.AttachedLayout> observable)
+    public static KeyFrameBuilder SetItemsRepeaterLayout(this KeyFrameBuilder builder, IObservable<Avalonia.Layout.AttachedLayout> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.LayoutProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterLayout(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterLayout(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterLayout(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterLayout(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.LayoutProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ItemsRepeaterSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterVerticalCacheLength(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetItemsRepeaterVerticalCacheLength(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterVerticalCacheLength(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetItemsRepeaterVerticalCacheLength(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterVerticalCacheLength(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetItemsRepeaterVerticalCacheLength(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterVerticalCacheLength(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetItemsRepeaterVerticalCacheLength(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ItemsRepeaterSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetItemsRepeaterVerticalCacheLength(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetItemsRepeaterVerticalCacheLength(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ItemsRepeaterSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetItemsRepeaterVerticalCacheLength(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetItemsRepeaterVerticalCacheLength(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ItemsRepeaterSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ItemsRepeater.VerticalCacheLengthProperty"/>.
     /// </summary>

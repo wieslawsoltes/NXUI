@@ -1,5 +1,4 @@
-﻿#if NXUI_HOTRELOAD
-namespace NXUI.HotReload;
+﻿namespace NXUI.HotReload;
 
 using System;
 using Avalonia;
@@ -61,4 +60,3 @@ internal sealed class ClassicDesktopComponentHost : IComponentHost
         _currentWindow = null;
     }
 }
-#endif

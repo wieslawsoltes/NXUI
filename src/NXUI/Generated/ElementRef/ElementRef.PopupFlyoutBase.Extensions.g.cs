@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase"/>.
 /// </summary>
 public static partial class PopupFlyoutBaseElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.HorizontalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.VerticalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementAnchorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementGravityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.CustomPopupPlacementCallbackProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.ShowModeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayDismissEventPassThroughProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.OverlayInputPassThroughElementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty"/> value.
@@ -121,5 +100,4 @@ public static partial class PopupFlyoutBaseElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.PopupFlyoutBase.PlacementConstraintAdjustmentProperty);
     }
 
-#endif
 }

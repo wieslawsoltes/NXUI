@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Templates;
 
 using System;
@@ -27,4 +26,3 @@ internal static class TemplateManifestRegistry
         return s_manifestTable.TryGetValue(template, out manifest);
     }
 }
-#endif

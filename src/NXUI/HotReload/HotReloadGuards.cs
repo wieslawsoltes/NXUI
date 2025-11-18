@@ -4,16 +4,13 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using Avalonia;
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// Internal helper that centralizes conditional hot reload behavior.
 /// </summary>
 internal static class HotReloadGuards
 {
-#if NXUI_HOTRELOAD
     private static readonly ComponentRegistry s_registry = new();
     private static readonly HotReloadUpdateScheduler s_scheduler = new(s_registry);
     private static int _initialized;
@@ -52,21 +49,4 @@ internal static class HotReloadGuards
             Environment.SetEnvironmentVariable("DOTNET_MODIFIABLE_ASSEMBLIES", "debug");
         }
     }
-#else
-    internal static bool IsHotReloadBuild => false;
-
-    [ExcludeFromCodeCoverage]
-    internal static bool TryInitialize(AppBuilder builder)
-    {
-        ArgumentNullException.ThrowIfNull(builder);
-        return false;
-    }
-
-    [ExcludeFromCodeCoverage]
-    internal static IDisposable RegisterComponent(string id, Func<object> factory)
-    {
-        ArgumentNullException.ThrowIfNull(factory);
-        return HotReloadNoOpDisposable.Instance;
-    }
-#endif
 }

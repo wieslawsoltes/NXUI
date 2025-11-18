@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ListBox"/> class style setters extension methods.
 /// </summary>
 public static partial class ListBoxSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelectedItems(this ElementBuilder<Style> builder, System.Collections.IList value)
+    public static StyleBuilder SetListBoxSelectedItems(this StyleBuilder builder, System.Collections.IList value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelectedItems(this ElementBuilder<KeyFrame> builder, System.Collections.IList value)
+    public static KeyFrameBuilder SetListBoxSelectedItems(this KeyFrameBuilder builder, System.Collections.IList value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ListBox.SelectedItemsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ListBoxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectedItemsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelectedItems(this ElementBuilder<Style> builder, IObservable<System.Collections.IList> observable)
+    public static StyleBuilder SetListBoxSelectedItems(this StyleBuilder builder, IObservable<System.Collections.IList> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelectedItems(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.IList> observable)
+    public static KeyFrameBuilder SetListBoxSelectedItems(this KeyFrameBuilder builder, IObservable<System.Collections.IList> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ListBoxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectedItemsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelectedItems(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetListBoxSelectedItems(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelectedItems(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetListBoxSelectedItems(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ListBoxSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelection(this ElementBuilder<Style> builder, Avalonia.Controls.Selection.ISelectionModel value)
+    public static StyleBuilder SetListBoxSelection(this StyleBuilder builder, Avalonia.Controls.Selection.ISelectionModel value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelection(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Selection.ISelectionModel value)
+    public static KeyFrameBuilder SetListBoxSelection(this KeyFrameBuilder builder, Avalonia.Controls.Selection.ISelectionModel value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ListBox.SelectionProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ListBoxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelection(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Selection.ISelectionModel> observable)
+    public static StyleBuilder SetListBoxSelection(this StyleBuilder builder, IObservable<Avalonia.Controls.Selection.ISelectionModel> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Selection.ISelectionModel> observable)
+    public static KeyFrameBuilder SetListBoxSelection(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Selection.ISelectionModel> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ListBoxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetListBoxSelection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetListBoxSelection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ListBoxSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelectionMode(this ElementBuilder<Style> builder, Avalonia.Controls.SelectionMode value)
+    public static StyleBuilder SetListBoxSelectionMode(this StyleBuilder builder, Avalonia.Controls.SelectionMode value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelectionMode(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.SelectionMode value)
+    public static KeyFrameBuilder SetListBoxSelectionMode(this KeyFrameBuilder builder, Avalonia.Controls.SelectionMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ListBox.SelectionModeProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ListBoxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelectionMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.SelectionMode> observable)
+    public static StyleBuilder SetListBoxSelectionMode(this StyleBuilder builder, IObservable<Avalonia.Controls.SelectionMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelectionMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.SelectionMode> observable)
+    public static KeyFrameBuilder SetListBoxSelectionMode(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.SelectionMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ListBoxSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ListBox.SelectionModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetListBoxSelectionMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetListBoxSelectionMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ListBoxSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetListBoxSelectionMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetListBoxSelectionMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ListBoxSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
     /// </summary>

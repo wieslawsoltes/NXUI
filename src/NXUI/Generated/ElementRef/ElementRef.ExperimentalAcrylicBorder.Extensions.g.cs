@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ExperimentalAcrylicBorder"/>.
 /// </summary>
 public static partial class ExperimentalAcrylicBorderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ExperimentalAcrylicBorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ExperimentalAcrylicBorder.CornerRadiusProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class ExperimentalAcrylicBorderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ExperimentalAcrylicBorder.MaterialProperty);
     }
 
-#endif
 }

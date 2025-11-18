@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.RelativePanel"/>.
 /// </summary>
 public static partial class RelativePanelElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AboveProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AboveProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignBottomWithPanelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignBottomWithProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignBottomWithProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithPanelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignLeftWithPanelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignLeftWithProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignLeftWithProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignRightWithPanelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignRightWithProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignRightWithProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignTopWithPanelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignTopWithProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignTopWithProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithPanelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignVerticalCenterWithProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.BelowProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.BelowProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.LeftOfProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.LeftOfProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.RightOfProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> value.
@@ -187,5 +154,4 @@ public static partial class RelativePanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty);
     }
 
-#endif
 }

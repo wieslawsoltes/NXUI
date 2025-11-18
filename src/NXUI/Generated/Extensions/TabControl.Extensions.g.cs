@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TabControl"/> class property extension methods.
 /// </summary>
 public static partial class TabControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TabControlExtensions
         return builder.WithBinding(PropertyMetadata.TabControl_TabStripPlacement, Avalonia.Controls.TabControl.TabStripPlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TabControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.TabControl.TabStripPlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TabControl.TabStripPlacementProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class TabControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_TabStripPlacement, Avalonia.Controls.TabControl.TabStripPlacementProperty, Avalonia.Controls.Dock.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Left"/>.
@@ -278,7 +270,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_TabStripPlacement, Avalonia.Controls.TabControl.TabStripPlacementProperty, Avalonia.Controls.Dock.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Bottom"/>.
@@ -303,7 +293,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Bottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> enum value for hot reload builds.
@@ -315,7 +304,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_TabStripPlacement, Avalonia.Controls.TabControl.TabStripPlacementProperty, Avalonia.Controls.Dock.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Right"/>.
@@ -328,7 +316,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.TabStripPlacementProperty] = Avalonia.Controls.Dock.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> enum value for hot reload builds.
@@ -340,7 +327,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_TabStripPlacement, Avalonia.Controls.TabControl.TabStripPlacementProperty, Avalonia.Controls.Dock.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> property value to <see cref="Avalonia.Controls.Dock.Top"/>.
@@ -354,7 +340,6 @@ public static partial class TabControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -401,8 +386,6 @@ public static partial class TabControlExtensions
         return builder.WithBinding(PropertyMetadata.TabControl_HorizontalContentAlignment, Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -449,7 +432,6 @@ public static partial class TabControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -595,7 +577,6 @@ public static partial class TabControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_HorizontalContentAlignment, Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -620,7 +600,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_HorizontalContentAlignment, Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -645,7 +623,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -657,7 +634,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_HorizontalContentAlignment, Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -670,7 +646,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -682,7 +657,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_HorizontalContentAlignment, Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -696,7 +670,6 @@ public static partial class TabControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -743,8 +716,6 @@ public static partial class TabControlExtensions
         return builder.WithBinding(PropertyMetadata.TabControl_VerticalContentAlignment, Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -791,7 +762,6 @@ public static partial class TabControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TabControl.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -937,7 +907,6 @@ public static partial class TabControlExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -949,7 +918,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_VerticalContentAlignment, Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -962,7 +930,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -974,7 +941,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_VerticalContentAlignment, Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -987,7 +953,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -999,7 +964,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_VerticalContentAlignment, Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -1012,7 +976,6 @@ public static partial class TabControlExtensions
         obj[Avalonia.Controls.TabControl.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1024,7 +987,6 @@ public static partial class TabControlExtensions
         return builder.WithValue(PropertyMetadata.TabControl_VerticalContentAlignment, Avalonia.Controls.TabControl.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.
@@ -1038,7 +1000,6 @@ public static partial class TabControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> literal value for hot reload builds.
@@ -1085,8 +1046,6 @@ public static partial class TabControlExtensions
         return builder.WithBinding(PropertyMetadata.TabControl_ContentTemplate, Avalonia.Controls.TabControl.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> value on a referenced control.
@@ -1133,7 +1092,6 @@ public static partial class TabControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.TabControl.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TabControl.ContentTemplateProperty
 
     /// <summary>

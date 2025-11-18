@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataGridCheckBoxColumn"/>.
 /// </summary>
 public static partial class DataGridCheckBoxColumnElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class DataGridCheckBoxColumnElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataGridCheckBoxColumn.IsThreeStateProperty);
     }
 
-#endif
 }

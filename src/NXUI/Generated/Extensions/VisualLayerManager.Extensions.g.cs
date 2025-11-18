@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.VisualLayerManager"/> class property extension methods.
 /// </summary>
 public static partial class VisualLayerManagerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class VisualLayerManagerExtensions
         return builder.WithBinding(PropertyMetadata.VisualLayerManager_ChromeOverlayLayer, Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class VisualLayerManagerExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.VisualLayerManager.ChromeOverlayLayerProperty
 
     /// <summary>

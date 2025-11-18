@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer"/> class property extension methods.
 /// </summary>
 public static partial class ScrollGestureRecognizerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollGestureRecognizer_CanHorizontallyScroll, Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return elementRef.SetBinding(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanHorizontallyScrollProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollGestureRecognizer_CanVerticallyScroll, Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return elementRef.SetBinding(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.CanVerticallyScrollProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollGestureRecognizer_IsScrollInertiaEnabled, Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return elementRef.SetBinding(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.IsScrollInertiaEnabledProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return builder.WithBinding(PropertyMetadata.ScrollGestureRecognizer_ScrollStartDistance, Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class ScrollGestureRecognizerExtensions
         return elementRef.SetBinding(Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.GestureRecognizers.ScrollGestureRecognizer.ScrollStartDistanceProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ContentControl"/>.
 /// </summary>
 public static partial class ContentControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContentControl.ContentProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ContentControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContentControl.ContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContentControl.ContentTemplateProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ContentControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContentControl.ContentTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ContentControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContentControl.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class ContentControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContentControl.VerticalContentAlignmentProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.ColorPreviewer"/>.
 /// </summary>
 public static partial class ColorPreviewerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ColorPreviewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class ColorPreviewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TickBar"/> class property extension methods.
 /// </summary>
 public static partial class TickBarExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.FillProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_Fill, Avalonia.Controls.TickBar.FillProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.FillProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.FillProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.FillProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_Minimum, Avalonia.Controls.TickBar.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.MinimumProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.MinimumProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_Maximum, Avalonia.Controls.TickBar.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.MaximumProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.MaximumProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_TickFrequency, Avalonia.Controls.TickBar.TickFrequencyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.TickFrequencyProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.TickFrequencyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.TickFrequencyProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_Orientation, Avalonia.Controls.TickBar.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.OrientationProperty
 
     /// <summary>
@@ -1221,7 +1199,6 @@ public static partial class TickBarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> enum value for hot reload builds.
@@ -1233,7 +1210,6 @@ public static partial class TickBarExtensions
         return builder.WithValue(PropertyMetadata.TickBar_Orientation, Avalonia.Controls.TickBar.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -1246,7 +1222,6 @@ public static partial class TickBarExtensions
         obj[Avalonia.Controls.TickBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> enum value for hot reload builds.
@@ -1258,7 +1233,6 @@ public static partial class TickBarExtensions
         return builder.WithValue(PropertyMetadata.TickBar_Orientation, Avalonia.Controls.TickBar.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -1272,7 +1246,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.TicksProperty"/> literal value for hot reload builds.
@@ -1319,8 +1292,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_Ticks, Avalonia.Controls.TickBar.TicksProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.TicksProperty"/> value on a referenced control.
@@ -1367,7 +1338,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.TicksProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.TicksProperty
 
     /// <summary>
@@ -1514,7 +1484,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> literal value for hot reload builds.
@@ -1561,8 +1530,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_IsDirectionReversed, Avalonia.Controls.TickBar.IsDirectionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.IsDirectionReversedProperty"/> value on a referenced control.
@@ -1609,7 +1576,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.IsDirectionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.IsDirectionReversedProperty
 
     /// <summary>
@@ -1756,7 +1722,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> literal value for hot reload builds.
@@ -1803,8 +1768,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_Placement, Avalonia.Controls.TickBar.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> value on a referenced control.
@@ -1851,7 +1814,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.PlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.PlacementProperty
 
     /// <summary>
@@ -1997,7 +1959,6 @@ public static partial class TickBarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
@@ -2009,7 +1970,6 @@ public static partial class TickBarExtensions
         return builder.WithValue(PropertyMetadata.TickBar_Placement, Avalonia.Controls.TickBar.PlacementProperty, Avalonia.Controls.TickBarPlacement.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Left"/>.
@@ -2022,7 +1982,6 @@ public static partial class TickBarExtensions
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
@@ -2034,7 +1993,6 @@ public static partial class TickBarExtensions
         return builder.WithValue(PropertyMetadata.TickBar_Placement, Avalonia.Controls.TickBar.PlacementProperty, Avalonia.Controls.TickBarPlacement.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Top"/>.
@@ -2047,7 +2005,6 @@ public static partial class TickBarExtensions
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
@@ -2059,7 +2016,6 @@ public static partial class TickBarExtensions
         return builder.WithValue(PropertyMetadata.TickBar_Placement, Avalonia.Controls.TickBar.PlacementProperty, Avalonia.Controls.TickBarPlacement.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Right"/>.
@@ -2072,7 +2028,6 @@ public static partial class TickBarExtensions
         obj[Avalonia.Controls.TickBar.PlacementProperty] = Avalonia.Controls.TickBarPlacement.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> enum value for hot reload builds.
@@ -2084,7 +2039,6 @@ public static partial class TickBarExtensions
         return builder.WithValue(PropertyMetadata.TickBar_Placement, Avalonia.Controls.TickBar.PlacementProperty, Avalonia.Controls.TickBarPlacement.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.PlacementProperty"/> property value to <see cref="Avalonia.Controls.TickBarPlacement.Bottom"/>.
@@ -2098,7 +2052,6 @@ public static partial class TickBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> literal value for hot reload builds.
@@ -2145,8 +2098,6 @@ public static partial class TickBarExtensions
         return builder.WithBinding(PropertyMetadata.TickBar_ReservedSpace, Avalonia.Controls.TickBar.ReservedSpaceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TickBar.ReservedSpaceProperty"/> value on a referenced control.
@@ -2193,7 +2144,6 @@ public static partial class TickBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.TickBar.ReservedSpaceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TickBar.ReservedSpaceProperty
 
     /// <summary>

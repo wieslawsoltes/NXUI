@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Metadata;
 
 using System;
@@ -110,4 +109,3 @@ internal static partial class PropertyMetadata
         return true;
     }
 }
-#endif

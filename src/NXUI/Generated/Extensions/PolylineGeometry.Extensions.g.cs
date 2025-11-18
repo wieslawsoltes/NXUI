@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.PolylineGeometry"/> class property extension methods.
 /// </summary>
 public static partial class PolylineGeometryExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PolylineGeometryExtensions
         return builder.WithBinding(PropertyMetadata.PolylineGeometry_Points, Avalonia.Media.PolylineGeometry.PointsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PolylineGeometry.PointsProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PolylineGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.PolylineGeometry.PointsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PolylineGeometry.PointsProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class PolylineGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class PolylineGeometryExtensions
         return builder.WithBinding(PropertyMetadata.PolylineGeometry_IsFilled, Avalonia.Media.PolylineGeometry.IsFilledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.PolylineGeometry.IsFilledProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class PolylineGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.PolylineGeometry.IsFilledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.PolylineGeometry.IsFilledProperty
 
     /// <summary>

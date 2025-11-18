@@ -11,9 +11,7 @@ public static partial class Templates
 #nullable enable
 namespace NXUI%Namespace%.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 """;
 }

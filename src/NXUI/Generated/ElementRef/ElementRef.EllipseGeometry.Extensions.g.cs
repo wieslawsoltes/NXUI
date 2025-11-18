@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.EllipseGeometry"/>.
 /// </summary>
 public static partial class EllipseGeometryElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class EllipseGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.EllipseGeometry.RectProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class EllipseGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.EllipseGeometry.RadiusXProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class EllipseGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.EllipseGeometry.RadiusYProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class EllipseGeometryElementRefExtensions
         return elementRef.Observe(Avalonia.Media.EllipseGeometry.CenterProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.SelectableTextBlock"/> class property extension methods.
 /// </summary>
 public static partial class SelectableTextBlockExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class SelectableTextBlockExtensions
         return builder.WithBinding(PropertyMetadata.SelectableTextBlock_SelectionStart, Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SelectableTextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionStartProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class SelectableTextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class SelectableTextBlockExtensions
         return builder.WithBinding(PropertyMetadata.SelectableTextBlock_SelectionEnd, Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class SelectableTextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionEndProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class SelectableTextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class SelectableTextBlockExtensions
         return builder.WithBinding(PropertyMetadata.SelectableTextBlock_SelectionBrush, Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class SelectableTextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty
 
     /// <summary>
@@ -828,7 +814,6 @@ public static partial class SelectableTextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> literal value for hot reload builds.
@@ -875,8 +860,6 @@ public static partial class SelectableTextBlockExtensions
         return builder.WithBinding(PropertyMetadata.SelectableTextBlock_SelectionForegroundBrush, Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> value on a referenced control.
@@ -923,7 +906,6 @@ public static partial class SelectableTextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty
 
     /// <summary>
@@ -1208,7 +1190,6 @@ public static partial class SelectableTextBlockExtensions
     {
         return obj.GetObservable(Avalonia.Controls.SelectableTextBlock.CopyingToClipboardEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1251,7 +1232,6 @@ public static partial class SelectableTextBlockExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.SelectableTextBlock.CopyingToClipboard
 
@@ -1286,7 +1266,6 @@ public static partial class SelectableTextBlockExtensions
                 h => obj.CopyingToClipboard -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -1308,5 +1287,4 @@ public static partial class SelectableTextBlockExtensions
         }));
     }
 
-#endif
 }

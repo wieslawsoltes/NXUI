@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RefreshContainer"/> class property extension methods.
 /// </summary>
 public static partial class RefreshContainerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class RefreshContainerExtensions
         return builder.WithBinding(PropertyMetadata.RefreshContainer_Visualizer, Avalonia.Controls.RefreshContainer.VisualizerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RefreshContainerExtensions
         return elementRef.SetBinding(Avalonia.Controls.RefreshContainer.VisualizerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RefreshContainer.VisualizerProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class RefreshContainerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class RefreshContainerExtensions
         return builder.WithBinding(PropertyMetadata.RefreshContainer_PullDirection, Avalonia.Controls.RefreshContainer.PullDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class RefreshContainerExtensions
         return elementRef.SetBinding(Avalonia.Controls.RefreshContainer.PullDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RefreshContainer.PullDirectionProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class RefreshContainerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class RefreshContainerExtensions
         return builder.WithValue(PropertyMetadata.RefreshContainer_PullDirection, Avalonia.Controls.RefreshContainer.PullDirectionProperty, Avalonia.Input.PullDirection.TopToBottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.TopToBottom"/>.
@@ -520,7 +508,6 @@ public static partial class RefreshContainerExtensions
         obj[Avalonia.Controls.RefreshContainer.PullDirectionProperty] = Avalonia.Input.PullDirection.TopToBottom;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class RefreshContainerExtensions
         return builder.WithValue(PropertyMetadata.RefreshContainer_PullDirection, Avalonia.Controls.RefreshContainer.PullDirectionProperty, Avalonia.Input.PullDirection.BottomToTop);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.BottomToTop"/>.
@@ -545,7 +531,6 @@ public static partial class RefreshContainerExtensions
         obj[Avalonia.Controls.RefreshContainer.PullDirectionProperty] = Avalonia.Input.PullDirection.BottomToTop;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class RefreshContainerExtensions
         return builder.WithValue(PropertyMetadata.RefreshContainer_PullDirection, Avalonia.Controls.RefreshContainer.PullDirectionProperty, Avalonia.Input.PullDirection.LeftToRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.LeftToRight"/>.
@@ -570,7 +554,6 @@ public static partial class RefreshContainerExtensions
         obj[Avalonia.Controls.RefreshContainer.PullDirectionProperty] = Avalonia.Input.PullDirection.LeftToRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class RefreshContainerExtensions
         return builder.WithValue(PropertyMetadata.RefreshContainer_PullDirection, Avalonia.Controls.RefreshContainer.PullDirectionProperty, Avalonia.Input.PullDirection.RightToLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> property value to <see cref="Avalonia.Input.PullDirection.RightToLeft"/>.
@@ -644,7 +626,6 @@ public static partial class RefreshContainerExtensions
     {
         return obj.GetObservable(Avalonia.Controls.RefreshContainer.RefreshRequestedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -687,7 +668,6 @@ public static partial class RefreshContainerExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.RefreshContainer.RefreshRequested
 
@@ -722,7 +702,6 @@ public static partial class RefreshContainerExtensions
                 h => obj.RefreshRequested -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -744,5 +723,4 @@ public static partial class RefreshContainerExtensions
         }));
     }
 
-#endif
 }

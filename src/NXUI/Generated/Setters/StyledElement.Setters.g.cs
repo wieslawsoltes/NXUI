@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.StyledElement"/> class style setters extension methods.
 /// </summary>
 public static partial class StyledElementSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.DataContextProperty"/>.
@@ -20,7 +17,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementDataContext(this ElementBuilder<Style> builder, System.Object value)
+    public static StyleBuilder SetStyledElementDataContext(this StyleBuilder builder, System.Object value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementDataContext(this ElementBuilder<KeyFrame> builder, System.Object value)
+    public static KeyFrameBuilder SetStyledElementDataContext(this KeyFrameBuilder builder, System.Object value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     // Avalonia.StyledElement.DataContextProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class StyledElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.DataContextProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.DataContextProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementDataContext(this ElementBuilder<Style> builder, IObservable<System.Object> observable)
+    public static StyleBuilder SetStyledElementDataContext(this StyleBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementDataContext(this ElementBuilder<KeyFrame> builder, IObservable<System.Object> observable)
+    public static KeyFrameBuilder SetStyledElementDataContext(this KeyFrameBuilder builder, IObservable<System.Object> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.StyledElement.DataContextProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class StyledElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.DataContextProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.DataContextProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementDataContext(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStyledElementDataContext(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementDataContext(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStyledElementDataContext(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.StyledElement.DataContextProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class StyledElementSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.NameProperty"/>.
@@ -185,7 +176,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementName(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetStyledElementName(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementName(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetStyledElementName(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     // Avalonia.StyledElement.NameProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class StyledElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.NameProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.NameProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementName(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetStyledElementName(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementName(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetStyledElementName(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.StyledElement.NameProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class StyledElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.NameProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.NameProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementName(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStyledElementName(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementName(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStyledElementName(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.StyledElement.NameProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class StyledElementSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.ThemeProperty"/>.
@@ -350,7 +335,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementTheme(this ElementBuilder<Style> builder, Avalonia.Styling.ControlTheme value)
+    public static StyleBuilder SetStyledElementTheme(this StyleBuilder builder, Avalonia.Styling.ControlTheme value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementTheme(this ElementBuilder<KeyFrame> builder, Avalonia.Styling.ControlTheme value)
+    public static KeyFrameBuilder SetStyledElementTheme(this KeyFrameBuilder builder, Avalonia.Styling.ControlTheme value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     // Avalonia.StyledElement.ThemeProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class StyledElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.ThemeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.ThemeProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementTheme(this ElementBuilder<Style> builder, IObservable<Avalonia.Styling.ControlTheme> observable)
+    public static StyleBuilder SetStyledElementTheme(this StyleBuilder builder, IObservable<Avalonia.Styling.ControlTheme> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementTheme(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Styling.ControlTheme> observable)
+    public static KeyFrameBuilder SetStyledElementTheme(this KeyFrameBuilder builder, IObservable<Avalonia.Styling.ControlTheme> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.StyledElement.ThemeProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class StyledElementSetters
         keyFrame.Setters.Add(new Setter(Avalonia.StyledElement.ThemeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.StyledElement.ThemeProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetStyledElementTheme(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetStyledElementTheme(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class StyledElementSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetStyledElementTheme(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetStyledElementTheme(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class StyledElementSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.StyledElement.ThemeProperty"/>.
     /// </summary>

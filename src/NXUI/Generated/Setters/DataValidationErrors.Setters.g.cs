@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataValidationErrors"/> class style setters extension methods.
 /// </summary>
 public static partial class DataValidationErrorsSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrors(this ElementBuilder<Style> builder, System.Collections.Generic.IEnumerable<System.Object> value)
+    public static StyleBuilder SetDataValidationErrorsErrors(this StyleBuilder builder, System.Collections.Generic.IEnumerable<System.Object> value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrors(this ElementBuilder<KeyFrame> builder, System.Collections.Generic.IEnumerable<System.Object> value)
+    public static KeyFrameBuilder SetDataValidationErrorsErrors(this KeyFrameBuilder builder, System.Collections.Generic.IEnumerable<System.Object> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.ErrorsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrors(this ElementBuilder<Style> builder, IObservable<System.Collections.Generic.IEnumerable<System.Object>> observable)
+    public static StyleBuilder SetDataValidationErrorsErrors(this StyleBuilder builder, IObservable<System.Collections.Generic.IEnumerable<System.Object>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrors(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.Generic.IEnumerable<System.Object>> observable)
+    public static KeyFrameBuilder SetDataValidationErrorsErrors(this KeyFrameBuilder builder, IObservable<System.Collections.Generic.IEnumerable<System.Object>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrors(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsErrors(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrors(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsErrors(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DataValidationErrorsSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsHasErrors(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDataValidationErrorsHasErrors(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsHasErrors(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDataValidationErrorsHasErrors(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.HasErrorsProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.HasErrorsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsHasErrors(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDataValidationErrorsHasErrors(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsHasErrors(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDataValidationErrorsHasErrors(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.HasErrorsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsHasErrors(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsHasErrors(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsHasErrors(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsHasErrors(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DataValidationErrorsSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrorConverter(this ElementBuilder<Style> builder, System.Func<System.Object,System.Object> value)
+    public static StyleBuilder SetDataValidationErrorsErrorConverter(this StyleBuilder builder, System.Func<System.Object,System.Object> value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrorConverter(this ElementBuilder<KeyFrame> builder, System.Func<System.Object,System.Object> value)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorConverter(this KeyFrameBuilder builder, System.Func<System.Object,System.Object> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.ErrorConverterProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrorConverter(this ElementBuilder<Style> builder, IObservable<System.Func<System.Object,System.Object>> observable)
+    public static StyleBuilder SetDataValidationErrorsErrorConverter(this StyleBuilder builder, IObservable<System.Func<System.Object,System.Object>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrorConverter(this ElementBuilder<KeyFrame> builder, IObservable<System.Func<System.Object,System.Object>> observable)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorConverter(this KeyFrameBuilder builder, IObservable<System.Func<System.Object,System.Object>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrorConverter(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsErrorConverter(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrorConverter(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorConverter(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class DataValidationErrorsSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/>.
@@ -515,7 +494,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrorTemplate(this ElementBuilder<Style> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static StyleBuilder SetDataValidationErrorsErrorTemplate(this StyleBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrorTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Templates.IDataTemplate value)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorTemplate(this KeyFrameBuilder builder, Avalonia.Controls.Templates.IDataTemplate value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrorTemplate(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static StyleBuilder SetDataValidationErrorsErrorTemplate(this StyleBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrorTemplate(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorTemplate(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Templates.IDataTemplate> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsErrorTemplate(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsErrorTemplate(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsErrorTemplate(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsErrorTemplate(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class DataValidationErrorsSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/>.
@@ -680,7 +653,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsOwner(this ElementBuilder<Style> builder, Avalonia.Controls.Control value)
+    public static StyleBuilder SetDataValidationErrorsOwner(this StyleBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsOwner(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Control value)
+    public static KeyFrameBuilder SetDataValidationErrorsOwner(this KeyFrameBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataValidationErrors.OwnerProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.OwnerProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsOwner(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static StyleBuilder SetDataValidationErrorsOwner(this StyleBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsOwner(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static KeyFrameBuilder SetDataValidationErrorsOwner(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class DataValidationErrorsSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataValidationErrors.OwnerProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataValidationErrorsOwner(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataValidationErrorsOwner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class DataValidationErrorsSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataValidationErrorsOwner(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataValidationErrorsOwner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class DataValidationErrorsSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/>.
     /// </summary>

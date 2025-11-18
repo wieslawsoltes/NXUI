@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.State;
 
 using System;
@@ -79,4 +78,3 @@ public static class HotReloadStateRegistry
         }
     }
 }
-#endif

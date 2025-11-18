@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using Avalonia;
@@ -28,4 +27,3 @@ internal interface IComponentHost
     /// </summary>
     void OnComponentDisposed(AvaloniaObject? instance);
 }
-#endif

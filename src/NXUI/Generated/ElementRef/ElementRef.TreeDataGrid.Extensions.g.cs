@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TreeDataGrid"/>.
 /// </summary>
 public static partial class TreeDataGridElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.ColumnsProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.ColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.ElementFactoryProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.RowsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.ScrollProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.ScrollProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> value.
@@ -110,5 +91,4 @@ public static partial class TreeDataGridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TreeDataGrid.SourceProperty);
     }
 
-#endif
 }

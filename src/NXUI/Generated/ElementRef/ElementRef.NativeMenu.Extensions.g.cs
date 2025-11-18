@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.NativeMenu"/>.
 /// </summary>
 public static partial class NativeMenuElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenu.ParentProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class NativeMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenu.ParentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class NativeMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenu.IsNativeMenuExportedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NativeMenu.MenuProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class NativeMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.NativeMenu.MenuProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.Track"/> class property extension methods.
 /// </summary>
 public static partial class TrackExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_Minimum, Avalonia.Controls.Primitives.Track.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.MinimumProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.MinimumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.MinimumProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_Maximum, Avalonia.Controls.Primitives.Track.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.MaximumProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.MaximumProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.MaximumProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_Value, Avalonia.Controls.Primitives.Track.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.ValueProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.ValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.ValueProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_ViewportSize, Avalonia.Controls.Primitives.Track.ViewportSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.ViewportSizeProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.ViewportSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.ViewportSizeProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_Orientation, Avalonia.Controls.Primitives.Track.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.OrientationProperty
 
     /// <summary>
@@ -1221,7 +1199,6 @@ public static partial class TrackExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> enum value for hot reload builds.
@@ -1233,7 +1210,6 @@ public static partial class TrackExtensions
         return builder.WithValue(PropertyMetadata.Track_Orientation, Avalonia.Controls.Primitives.Track.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -1246,7 +1222,6 @@ public static partial class TrackExtensions
         obj[Avalonia.Controls.Primitives.Track.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> enum value for hot reload builds.
@@ -1258,7 +1233,6 @@ public static partial class TrackExtensions
         return builder.WithValue(PropertyMetadata.Track_Orientation, Avalonia.Controls.Primitives.Track.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -1272,7 +1246,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/> literal value for hot reload builds.
@@ -1319,8 +1292,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_Thumb, Avalonia.Controls.Primitives.Track.ThumbProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.ThumbProperty"/> value on a referenced control.
@@ -1367,7 +1338,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.ThumbProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.ThumbProperty
 
     /// <summary>
@@ -1514,7 +1484,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/> literal value for hot reload builds.
@@ -1561,8 +1530,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_IncreaseButton, Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.IncreaseButtonProperty"/> value on a referenced control.
@@ -1609,7 +1576,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.IncreaseButtonProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.IncreaseButtonProperty
 
     /// <summary>
@@ -1756,7 +1722,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/> literal value for hot reload builds.
@@ -1803,8 +1768,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_DecreaseButton, Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.DecreaseButtonProperty"/> value on a referenced control.
@@ -1851,7 +1814,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.DecreaseButtonProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.DecreaseButtonProperty
 
     /// <summary>
@@ -1998,7 +1960,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/> literal value for hot reload builds.
@@ -2045,8 +2006,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_IsDirectionReversed, Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty"/> value on a referenced control.
@@ -2093,7 +2052,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.IsDirectionReversedProperty
 
     /// <summary>
@@ -2240,7 +2198,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/> literal value for hot reload builds.
@@ -2287,8 +2244,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_IgnoreThumbDrag, Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty"/> value on a referenced control.
@@ -2335,7 +2290,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.IgnoreThumbDragProperty
 
     /// <summary>
@@ -2482,7 +2436,6 @@ public static partial class TrackExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/> literal value for hot reload builds.
@@ -2529,8 +2482,6 @@ public static partial class TrackExtensions
         return builder.WithBinding(PropertyMetadata.Track_DeferThumbDrag, Avalonia.Controls.Primitives.Track.DeferThumbDragProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.Track.DeferThumbDragProperty"/> value on a referenced control.
@@ -2577,7 +2528,6 @@ public static partial class TrackExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.Track.DeferThumbDragProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.Track.DeferThumbDragProperty
 
     /// <summary>

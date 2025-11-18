@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.PathFigure"/>.
 /// </summary>
 public static partial class PathFigureElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.PathFigure.IsClosedProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class PathFigureElementRefExtensions
         return elementRef.Observe(Avalonia.Media.PathFigure.IsClosedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.PathFigure.IsFilledProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class PathFigureElementRefExtensions
         return elementRef.Observe(Avalonia.Media.PathFigure.IsFilledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.PathFigure.SegmentsProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class PathFigureElementRefExtensions
         return elementRef.Observe(Avalonia.Media.PathFigure.SegmentsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.PathFigure.StartPointProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class PathFigureElementRefExtensions
         return elementRef.Observe(Avalonia.Media.PathFigure.StartPointProperty);
     }
 
-#endif
 }

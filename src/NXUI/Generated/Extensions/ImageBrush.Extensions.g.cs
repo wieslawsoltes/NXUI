@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ImageBrush"/> class property extension methods.
 /// </summary>
 public static partial class ImageBrushExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ImageBrush.SourceProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class ImageBrushExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageBrush> Source(this ElementBuilder<Avalonia.Media.ImageBrush> builder, Avalonia.Media.IImageBrushSource? value)
+    public static ImageBrushBuilder Source(this ImageBrushBuilder builder, Avalonia.Media.IImageBrushSource? value)
     {
         return builder.WithValue(PropertyMetadata.ImageBrush_Source, Avalonia.Media.ImageBrush.SourceProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class ImageBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageBrush> Source(
-        this ElementBuilder<Avalonia.Media.ImageBrush> builder,
+    public static ImageBrushBuilder Source(
+        this ImageBrushBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class ImageBrushExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageBrush> Source(
-        this ElementBuilder<Avalonia.Media.ImageBrush> builder,
+    public static ImageBrushBuilder Source(
+        this ImageBrushBuilder builder,
         IObservable<Avalonia.Media.IImageBrushSource?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class ImageBrushExtensions
         return builder.WithBinding(PropertyMetadata.ImageBrush_Source, Avalonia.Media.ImageBrush.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ImageBrush.SourceProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ImageBrushExtensions
         return elementRef.SetBinding(Avalonia.Media.ImageBrush.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ImageBrush.SourceProperty
 
     /// <summary>

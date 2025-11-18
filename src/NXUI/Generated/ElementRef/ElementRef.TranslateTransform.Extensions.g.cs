@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.TranslateTransform"/>.
 /// </summary>
 public static partial class TranslateTransformElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TranslateTransform.XProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TranslateTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TranslateTransform.XProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TranslateTransform.YProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class TranslateTransformElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TranslateTransform.YProperty);
     }
 
-#endif
 }

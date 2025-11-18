@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.ScrollBar"/> class property extension methods.
 /// </summary>
 public static partial class ScrollBarExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ScrollBarExtensions
         return builder.WithBinding(PropertyMetadata.ScrollBar_ViewportSize, Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ScrollBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ScrollBar.ViewportSizeProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ScrollBarExtensions
         return builder.WithBinding(PropertyMetadata.ScrollBar_Visibility, Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ScrollBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ScrollBarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ScrollBarExtensions
         return builder.WithValue(PropertyMetadata.ScrollBar_Visibility, Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled"/>.
@@ -520,7 +508,6 @@ public static partial class ScrollBarExtensions
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Disabled;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ScrollBarExtensions
         return builder.WithValue(PropertyMetadata.ScrollBar_Visibility, Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Auto);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Auto"/>.
@@ -545,7 +531,6 @@ public static partial class ScrollBarExtensions
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Auto;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class ScrollBarExtensions
         return builder.WithValue(PropertyMetadata.ScrollBar_Visibility, Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden"/>.
@@ -570,7 +554,6 @@ public static partial class ScrollBarExtensions
         obj[Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty] = Avalonia.Controls.Primitives.ScrollBarVisibility.Hidden;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class ScrollBarExtensions
         return builder.WithValue(PropertyMetadata.ScrollBar_Visibility, Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty, Avalonia.Controls.Primitives.ScrollBarVisibility.Visible);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.VisibilityProperty"/> property value to <see cref="Avalonia.Controls.Primitives.ScrollBarVisibility.Visible"/>.
@@ -596,7 +578,6 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class ScrollBarExtensions
         return builder.WithBinding(PropertyMetadata.ScrollBar_Orientation, Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class ScrollBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ScrollBar.OrientationProperty
 
     /// <summary>
@@ -837,7 +815,6 @@ public static partial class ScrollBarExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> enum value for hot reload builds.
@@ -849,7 +826,6 @@ public static partial class ScrollBarExtensions
         return builder.WithValue(PropertyMetadata.ScrollBar_Orientation, Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -862,7 +838,6 @@ public static partial class ScrollBarExtensions
         obj[Avalonia.Controls.Primitives.ScrollBar.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> enum value for hot reload builds.
@@ -874,7 +849,6 @@ public static partial class ScrollBarExtensions
         return builder.WithValue(PropertyMetadata.ScrollBar_Orientation, Avalonia.Controls.Primitives.ScrollBar.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -978,7 +952,6 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/> literal value for hot reload builds.
@@ -1025,8 +998,6 @@ public static partial class ScrollBarExtensions
         return builder.WithBinding(PropertyMetadata.ScrollBar_AllowAutoHide, Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty"/> value on a referenced control.
@@ -1073,7 +1044,6 @@ public static partial class ScrollBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ScrollBar.AllowAutoHideProperty
 
     /// <summary>
@@ -1220,7 +1190,6 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/> literal value for hot reload builds.
@@ -1267,8 +1236,6 @@ public static partial class ScrollBarExtensions
         return builder.WithBinding(PropertyMetadata.ScrollBar_HideDelay, Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty"/> value on a referenced control.
@@ -1315,7 +1282,6 @@ public static partial class ScrollBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ScrollBar.HideDelayProperty
 
     /// <summary>
@@ -1462,7 +1428,6 @@ public static partial class ScrollBarExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/> literal value for hot reload builds.
@@ -1509,8 +1474,6 @@ public static partial class ScrollBarExtensions
         return builder.WithBinding(PropertyMetadata.ScrollBar_ShowDelay, Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty"/> value on a referenced control.
@@ -1557,7 +1520,6 @@ public static partial class ScrollBarExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ScrollBar.ShowDelayProperty
 
     /// <summary>

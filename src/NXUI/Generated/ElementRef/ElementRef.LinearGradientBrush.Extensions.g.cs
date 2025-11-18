@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.LinearGradientBrush"/>.
 /// </summary>
 public static partial class LinearGradientBrushElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.LinearGradientBrush.StartPointProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class LinearGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.LinearGradientBrush.StartPointProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.LinearGradientBrush.EndPointProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class LinearGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.LinearGradientBrush.EndPointProperty);
     }
 
-#endif
 }

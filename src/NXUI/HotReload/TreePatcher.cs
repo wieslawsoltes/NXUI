@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload;
 
 using System;
@@ -654,4 +653,3 @@ internal readonly record struct TreePatchResult(
         return new TreePatchResult(root, false, 0, 0, 0, 0, 0, 0, 0, 0, 0);
     }
 }
-#endif

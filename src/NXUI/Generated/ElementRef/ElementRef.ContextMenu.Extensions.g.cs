@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ContextMenu"/>.
 /// </summary>
 public static partial class ContextMenuElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.HorizontalOffsetProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.HorizontalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.VerticalOffsetProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.VerticalOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.PlacementAnchorProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.PlacementAnchorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.PlacementConstraintAdjustmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.PlacementGravityProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.PlacementGravityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.PlacementProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.PlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.PlacementRectProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.PlacementRectProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.WindowManagerAddShadowHintProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.PlacementTargetProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.PlacementTargetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty"/> value.
@@ -121,5 +100,4 @@ public static partial class ContextMenuElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ContextMenu.CustomPopupPlacementCallbackProperty);
     }
 
-#endif
 }

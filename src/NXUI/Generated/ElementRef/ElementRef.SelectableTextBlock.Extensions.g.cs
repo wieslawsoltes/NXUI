@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.SelectableTextBlock"/>.
 /// </summary>
 public static partial class SelectableTextBlockElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SelectableTextBlock.SelectionStartProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class SelectableTextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SelectableTextBlock.SelectionStartProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SelectableTextBlock.SelectionEndProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class SelectableTextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SelectableTextBlock.SelectionEndProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SelectableTextBlock.SelectedTextProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class SelectableTextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SelectableTextBlock.SelectedTextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class SelectableTextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SelectableTextBlock.SelectionBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class SelectableTextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SelectableTextBlock.SelectionForegroundBrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.SelectableTextBlock.CanCopyProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class SelectableTextBlockElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.SelectableTextBlock.CanCopyProperty);
     }
 
-#endif
 }

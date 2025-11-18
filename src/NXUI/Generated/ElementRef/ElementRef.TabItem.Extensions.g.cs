@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TabItem"/>.
 /// </summary>
 public static partial class TabItemElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabItem.TabStripPlacementProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TabItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabItem.TabStripPlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class TabItemElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabItem.IsSelectedProperty);
     }
 
-#endif
 }

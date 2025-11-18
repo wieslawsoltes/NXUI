@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.WrapPanel"/>.
 /// </summary>
 public static partial class WrapPanelElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class WrapPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WrapPanel.ItemSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class WrapPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WrapPanel.LineSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class WrapPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WrapPanel.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class WrapPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class WrapPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WrapPanel.ItemWidthProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class WrapPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.WrapPanel.ItemHeightProperty);
     }
 
-#endif
 }

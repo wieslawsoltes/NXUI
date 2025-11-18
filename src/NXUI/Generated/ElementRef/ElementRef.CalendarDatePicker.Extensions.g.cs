@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.CalendarDatePicker"/>.
 /// </summary>
 public static partial class CalendarDatePickerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.DisplayDateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.DisplayDateStartProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.DisplayDateEndProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.FirstDayOfWeekProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.IsDropDownOpenProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.IsTodayHighlightedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.SelectedDateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.SelectedDateFormatProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.CustomDateFormatStringProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.TextProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.TextProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.WatermarkProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.WatermarkProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.UseFloatingWatermarkProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty"/> value.
@@ -165,5 +136,4 @@ public static partial class CalendarDatePickerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.CalendarDatePicker.VerticalContentAlignmentProperty);
     }
 
-#endif
 }

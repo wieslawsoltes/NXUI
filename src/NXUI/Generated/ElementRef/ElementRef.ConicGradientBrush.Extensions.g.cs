@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.ConicGradientBrush"/>.
 /// </summary>
 public static partial class ConicGradientBrushElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ConicGradientBrush.CenterProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ConicGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ConicGradientBrush.CenterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.ConicGradientBrush.AngleProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class ConicGradientBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.ConicGradientBrush.AngleProperty);
     }
 
-#endif
 }

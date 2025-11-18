@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.UniformGrid"/> class property extension methods.
 /// </summary>
 public static partial class UniformGridExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class UniformGridExtensions
         return builder.WithBinding(PropertyMetadata.UniformGrid_Rows, Avalonia.Controls.Primitives.UniformGrid.RowsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.RowsProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class UniformGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.UniformGrid.RowsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.RowsProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class UniformGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class UniformGridExtensions
         return builder.WithBinding(PropertyMetadata.UniformGrid_Columns, Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class UniformGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.ColumnsProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class UniformGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class UniformGridExtensions
         return builder.WithBinding(PropertyMetadata.UniformGrid_FirstColumn, Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class UniformGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.FirstColumnProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class UniformGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class UniformGridExtensions
         return builder.WithBinding(PropertyMetadata.UniformGrid_RowSpacing, Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class UniformGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.RowSpacingProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class UniformGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class UniformGridExtensions
         return builder.WithBinding(PropertyMetadata.UniformGrid_ColumnSpacing, Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class UniformGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.UniformGrid.ColumnSpacingProperty
 
     /// <summary>

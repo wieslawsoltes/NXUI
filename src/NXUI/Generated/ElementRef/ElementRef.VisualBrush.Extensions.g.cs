@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.VisualBrush"/>.
 /// </summary>
 public static partial class VisualBrushElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.VisualBrush.VisualProperty"/> value.
@@ -22,5 +19,4 @@ public static partial class VisualBrushElementRefExtensions
         return elementRef.Observe(Avalonia.Media.VisualBrush.VisualProperty);
     }
 
-#endif
 }

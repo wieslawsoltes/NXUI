@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.ColorSlider"/> class property extension methods.
 /// </summary>
 public static partial class ColorSliderExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ColorSliderExtensions
         return builder.WithBinding(PropertyMetadata.ColorSlider_Color, Avalonia.Controls.Primitives.ColorSlider.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ColorSliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSlider.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.ColorProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ColorSliderExtensions
         return builder.WithBinding(PropertyMetadata.ColorSlider_ColorComponent, Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ColorSliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ColorSliderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ColorSliderExtensions
         return builder.WithValue(PropertyMetadata.ColorSlider_ColorComponent, Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, Avalonia.Controls.ColorComponent.Alpha);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> property value to <see cref="Avalonia.Controls.ColorComponent.Alpha"/>.
@@ -520,7 +508,6 @@ public static partial class ColorSliderExtensions
         obj[Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty] = Avalonia.Controls.ColorComponent.Alpha;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ColorSliderExtensions
         return builder.WithValue(PropertyMetadata.ColorSlider_ColorComponent, Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, Avalonia.Controls.ColorComponent.Component1);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> property value to <see cref="Avalonia.Controls.ColorComponent.Component1"/>.
@@ -545,7 +531,6 @@ public static partial class ColorSliderExtensions
         obj[Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty] = Avalonia.Controls.ColorComponent.Component1;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class ColorSliderExtensions
         return builder.WithValue(PropertyMetadata.ColorSlider_ColorComponent, Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, Avalonia.Controls.ColorComponent.Component2);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> property value to <see cref="Avalonia.Controls.ColorComponent.Component2"/>.
@@ -570,7 +554,6 @@ public static partial class ColorSliderExtensions
         obj[Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty] = Avalonia.Controls.ColorComponent.Component2;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class ColorSliderExtensions
         return builder.WithValue(PropertyMetadata.ColorSlider_ColorComponent, Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty, Avalonia.Controls.ColorComponent.Component3);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> property value to <see cref="Avalonia.Controls.ColorComponent.Component3"/>.
@@ -596,7 +578,6 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> literal value for hot reload builds.
@@ -643,8 +624,6 @@ public static partial class ColorSliderExtensions
         return builder.WithBinding(PropertyMetadata.ColorSlider_ColorModel, Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> value on a referenced control.
@@ -691,7 +670,6 @@ public static partial class ColorSliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty
 
     /// <summary>
@@ -837,7 +815,6 @@ public static partial class ColorSliderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> enum value for hot reload builds.
@@ -849,7 +826,6 @@ public static partial class ColorSliderExtensions
         return builder.WithValue(PropertyMetadata.ColorSlider_ColorModel, Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, Avalonia.Controls.ColorModel.Hsva);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> property value to <see cref="Avalonia.Controls.ColorModel.Hsva"/>.
@@ -862,7 +838,6 @@ public static partial class ColorSliderExtensions
         obj[Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty] = Avalonia.Controls.ColorModel.Hsva;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> enum value for hot reload builds.
@@ -874,7 +849,6 @@ public static partial class ColorSliderExtensions
         return builder.WithValue(PropertyMetadata.ColorSlider_ColorModel, Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty, Avalonia.Controls.ColorModel.Rgba);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> property value to <see cref="Avalonia.Controls.ColorModel.Rgba"/>.
@@ -888,7 +862,6 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/> literal value for hot reload builds.
@@ -935,8 +908,6 @@ public static partial class ColorSliderExtensions
         return builder.WithBinding(PropertyMetadata.ColorSlider_HsvColor, Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/> value on a referenced control.
@@ -983,7 +954,6 @@ public static partial class ColorSliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty
 
     /// <summary>
@@ -1130,7 +1100,6 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/> literal value for hot reload builds.
@@ -1177,8 +1146,6 @@ public static partial class ColorSliderExtensions
         return builder.WithBinding(PropertyMetadata.ColorSlider_IsAlphaVisible, Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/> value on a referenced control.
@@ -1225,7 +1192,6 @@ public static partial class ColorSliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty
 
     /// <summary>
@@ -1372,7 +1338,6 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/> literal value for hot reload builds.
@@ -1419,8 +1384,6 @@ public static partial class ColorSliderExtensions
         return builder.WithBinding(PropertyMetadata.ColorSlider_IsPerceptive, Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/> value on a referenced control.
@@ -1467,7 +1430,6 @@ public static partial class ColorSliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty
 
     /// <summary>
@@ -1614,7 +1576,6 @@ public static partial class ColorSliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/> literal value for hot reload builds.
@@ -1661,8 +1622,6 @@ public static partial class ColorSliderExtensions
         return builder.WithBinding(PropertyMetadata.ColorSlider_IsRoundingEnabled, Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/> value on a referenced control.
@@ -1709,7 +1668,6 @@ public static partial class ColorSliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty
 
     /// <summary>

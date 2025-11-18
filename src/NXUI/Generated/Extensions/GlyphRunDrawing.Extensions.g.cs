@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.GlyphRunDrawing"/> class property extension methods.
 /// </summary>
 public static partial class GlyphRunDrawingExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.IBrush? value)
+    public static GlyphRunDrawingBuilder Foreground(this GlyphRunDrawingBuilder builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.GlyphRunDrawing_Foreground, Avalonia.Media.GlyphRunDrawing.ForegroundProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(
-        this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
+    public static GlyphRunDrawingBuilder Foreground(
+        this GlyphRunDrawingBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> Foreground(
-        this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
+    public static GlyphRunDrawingBuilder Foreground(
+        this GlyphRunDrawingBuilder builder,
         IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class GlyphRunDrawingExtensions
         return builder.WithBinding(PropertyMetadata.GlyphRunDrawing_Foreground, Avalonia.Media.GlyphRunDrawing.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GlyphRunDrawingExtensions
         return elementRef.SetBinding(Avalonia.Media.GlyphRunDrawing.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GlyphRunDrawing.ForegroundProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class GlyphRunDrawingExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder, Avalonia.Media.GlyphRun? value)
+    public static GlyphRunDrawingBuilder GlyphRun(this GlyphRunDrawingBuilder builder, Avalonia.Media.GlyphRun? value)
     {
         return builder.WithValue(PropertyMetadata.GlyphRunDrawing_GlyphRun, Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(
-        this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
+    public static GlyphRunDrawingBuilder GlyphRun(
+        this GlyphRunDrawingBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class GlyphRunDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.GlyphRunDrawing> GlyphRun(
-        this ElementBuilder<Avalonia.Media.GlyphRunDrawing> builder,
+    public static GlyphRunDrawingBuilder GlyphRun(
+        this GlyphRunDrawingBuilder builder,
         IObservable<Avalonia.Media.GlyphRun?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class GlyphRunDrawingExtensions
         return builder.WithBinding(PropertyMetadata.GlyphRunDrawing_GlyphRun, Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class GlyphRunDrawingExtensions
         return elementRef.SetBinding(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GlyphRunDrawing.GlyphRunProperty
 
     /// <summary>

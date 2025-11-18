@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.StackPanel"/>.
 /// </summary>
 public static partial class StackPanelElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.StackPanel.SpacingProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class StackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.StackPanel.SpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.StackPanel.OrientationProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class StackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.StackPanel.OrientationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class StackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.StackPanel.AreHorizontalSnapPointsRegularProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class StackPanelElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.StackPanel.AreVerticalSnapPointsRegularProperty);
     }
 
-#endif
 }

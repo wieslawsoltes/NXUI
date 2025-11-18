@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Visual"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.ClipToBoundsProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_ClipToBounds, Avalonia.Visual.ClipToBoundsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.ClipToBoundsProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.ClipToBoundsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.ClipToBoundsProperty
 
     /// <summary>
@@ -344,7 +338,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.ClipProperty"/> literal value for hot reload builds.
@@ -391,8 +384,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_Clip, Avalonia.Visual.ClipProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.ClipProperty"/> value on a referenced control.
@@ -439,7 +430,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.ClipProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.ClipProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.IsVisibleProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_IsVisible, Avalonia.Visual.IsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.IsVisibleProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.IsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.IsVisibleProperty
 
     /// <summary>
@@ -828,7 +814,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.OpacityProperty"/> literal value for hot reload builds.
@@ -875,8 +860,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_Opacity, Avalonia.Visual.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.OpacityProperty"/> value on a referenced control.
@@ -923,7 +906,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.OpacityProperty
 
     /// <summary>
@@ -1070,7 +1052,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.OpacityMaskProperty"/> literal value for hot reload builds.
@@ -1117,8 +1098,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_OpacityMask, Avalonia.Visual.OpacityMaskProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.OpacityMaskProperty"/> value on a referenced control.
@@ -1165,7 +1144,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.OpacityMaskProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.OpacityMaskProperty
 
     /// <summary>
@@ -1312,7 +1290,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.EffectProperty"/> literal value for hot reload builds.
@@ -1359,8 +1336,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_Effect, Avalonia.Visual.EffectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.EffectProperty"/> value on a referenced control.
@@ -1407,7 +1382,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.EffectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.EffectProperty
 
     /// <summary>
@@ -1644,7 +1618,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.RenderTransformProperty"/> literal value for hot reload builds.
@@ -1691,8 +1664,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_RenderTransform, Avalonia.Visual.RenderTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.RenderTransformProperty"/> value on a referenced control.
@@ -1739,7 +1710,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.RenderTransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.RenderTransformProperty
 
     /// <summary>
@@ -1886,7 +1856,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> literal value for hot reload builds.
@@ -1933,8 +1902,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_RenderTransformOrigin, Avalonia.Visual.RenderTransformOriginProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.RenderTransformOriginProperty"/> value on a referenced control.
@@ -1981,7 +1948,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.RenderTransformOriginProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.RenderTransformOriginProperty
 
     /// <summary>
@@ -2128,7 +2094,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.FlowDirectionProperty"/> literal value for hot reload builds.
@@ -2175,8 +2140,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_FlowDirection, Avalonia.Visual.FlowDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> value on a referenced control.
@@ -2223,7 +2186,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.FlowDirectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.FlowDirectionProperty
 
     /// <summary>
@@ -2369,7 +2331,6 @@ public static partial class VisualExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.FlowDirectionProperty"/> enum value for hot reload builds.
@@ -2381,7 +2342,6 @@ public static partial class VisualExtensions
         return builder.WithValue(PropertyMetadata.Visual_FlowDirection, Avalonia.Visual.FlowDirectionProperty, Avalonia.Media.FlowDirection.LeftToRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.LeftToRight"/>.
@@ -2394,7 +2354,6 @@ public static partial class VisualExtensions
         obj[Avalonia.Visual.FlowDirectionProperty] = Avalonia.Media.FlowDirection.LeftToRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.FlowDirectionProperty"/> enum value for hot reload builds.
@@ -2406,7 +2365,6 @@ public static partial class VisualExtensions
         return builder.WithValue(PropertyMetadata.Visual_FlowDirection, Avalonia.Visual.FlowDirectionProperty, Avalonia.Media.FlowDirection.RightToLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.FlowDirectionProperty"/> property value to <see cref="Avalonia.Media.FlowDirection.RightToLeft"/>.
@@ -2510,7 +2468,6 @@ public static partial class VisualExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Visual.ZIndexProperty"/> literal value for hot reload builds.
@@ -2557,8 +2514,6 @@ public static partial class VisualExtensions
         return builder.WithBinding(PropertyMetadata.Visual_ZIndex, Avalonia.Visual.ZIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Visual.ZIndexProperty"/> value on a referenced control.
@@ -2605,7 +2560,6 @@ public static partial class VisualExtensions
         return elementRef.SetBinding(Avalonia.Visual.ZIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Visual.ZIndexProperty
 
     /// <summary>

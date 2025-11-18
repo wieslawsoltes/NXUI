@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Polyline"/> class property extension methods.
 /// </summary>
 public static partial class PolylineExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class PolylineExtensions
         return builder.WithBinding(PropertyMetadata.Polyline_Points, Avalonia.Controls.Shapes.Polyline.PointsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Polyline.PointsProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class PolylineExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Polyline.PointsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Polyline.PointsProperty
 
     /// <summary>

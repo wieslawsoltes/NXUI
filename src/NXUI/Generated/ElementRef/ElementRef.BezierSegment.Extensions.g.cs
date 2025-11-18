@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.BezierSegment"/>.
 /// </summary>
 public static partial class BezierSegmentElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.BezierSegment.Point1Property"/> value.
@@ -22,8 +19,6 @@ public static partial class BezierSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.BezierSegment.Point1Property);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.BezierSegment.Point2Property"/> value.
@@ -33,8 +28,6 @@ public static partial class BezierSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.BezierSegment.Point2Property);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.BezierSegment.Point3Property"/> value.
@@ -44,5 +37,4 @@ public static partial class BezierSegmentElementRefExtensions
         return elementRef.Observe(Avalonia.Media.BezierSegment.Point3Property);
     }
 
-#endif
 }

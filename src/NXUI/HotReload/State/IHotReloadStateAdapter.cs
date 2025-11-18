@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.State;
 
 using System;
@@ -28,4 +27,3 @@ public interface IHotReloadStateAdapter
     /// <param name="state">The captured state.</param>
     void RestoreState(AvaloniaObject control, object? state);
 }
-#endif

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ColorView"/>.
 /// </summary>
 public static partial class ColorViewElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.ColorProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.ColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.ColorModelProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.ColorModelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.ColorSpectrumComponentsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.ColorSpectrumShapeProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.ColorSpectrumShapeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.HexInputAlphaPositionProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.HexInputAlphaPositionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.HsvColorProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.HsvColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsAccentColorsVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsAlphaEnabledProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsAlphaEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsAlphaVisibleProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsAlphaVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsColorComponentsVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsColorModelVisibleProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsColorModelVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsColorPaletteVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsColorPreviewVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsColorSpectrumVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsColorSpectrumSliderVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsComponentSliderVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsComponentTextInputVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.IsHexInputVisibleProperty"/> value.
@@ -209,8 +172,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.IsHexInputVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.MaxHueProperty"/> value.
@@ -220,8 +181,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.MaxHueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.MaxSaturationProperty"/> value.
@@ -231,8 +190,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.MaxSaturationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.MaxValueProperty"/> value.
@@ -242,8 +199,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.MaxValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.MinHueProperty"/> value.
@@ -253,8 +208,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.MinHueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.MinSaturationProperty"/> value.
@@ -264,8 +217,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.MinSaturationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.MinValueProperty"/> value.
@@ -275,8 +226,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.MinValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.PaletteColorsProperty"/> value.
@@ -286,8 +235,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.PaletteColorsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.PaletteColumnCountProperty"/> value.
@@ -297,8 +244,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.PaletteColumnCountProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.PaletteProperty"/> value.
@@ -308,8 +253,6 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.PaletteProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ColorView.SelectedIndexProperty"/> value.
@@ -319,5 +262,4 @@ public static partial class ColorViewElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ColorView.SelectedIndexProperty);
     }
 
-#endif
 }

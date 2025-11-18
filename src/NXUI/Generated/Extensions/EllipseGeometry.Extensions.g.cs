@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.EllipseGeometry"/> class property extension methods.
 /// </summary>
 public static partial class EllipseGeometryExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class EllipseGeometryExtensions
         return builder.WithBinding(PropertyMetadata.EllipseGeometry_Rect, Avalonia.Media.EllipseGeometry.RectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.RectProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class EllipseGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.EllipseGeometry.RectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.RectProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class EllipseGeometryExtensions
         return builder.WithBinding(PropertyMetadata.EllipseGeometry_RadiusX, Avalonia.Media.EllipseGeometry.RadiusXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.RadiusXProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class EllipseGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.EllipseGeometry.RadiusXProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.RadiusXProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class EllipseGeometryExtensions
         return builder.WithBinding(PropertyMetadata.EllipseGeometry_RadiusY, Avalonia.Media.EllipseGeometry.RadiusYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.RadiusYProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class EllipseGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.EllipseGeometry.RadiusYProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.RadiusYProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class EllipseGeometryExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class EllipseGeometryExtensions
         return builder.WithBinding(PropertyMetadata.EllipseGeometry_Center, Avalonia.Media.EllipseGeometry.CenterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.EllipseGeometry.CenterProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class EllipseGeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.EllipseGeometry.CenterProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.EllipseGeometry.CenterProperty
 
     /// <summary>

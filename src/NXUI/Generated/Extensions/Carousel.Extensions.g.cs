@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Carousel"/> class property extension methods.
 /// </summary>
 public static partial class CarouselExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class CarouselExtensions
         return builder.WithBinding(PropertyMetadata.Carousel_PageTransition, Avalonia.Controls.Carousel.PageTransitionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Carousel.PageTransitionProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class CarouselExtensions
         return elementRef.SetBinding(Avalonia.Controls.Carousel.PageTransitionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Carousel.PageTransitionProperty
 
     /// <summary>

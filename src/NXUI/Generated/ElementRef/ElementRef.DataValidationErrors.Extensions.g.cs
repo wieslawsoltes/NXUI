@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.DataValidationErrors"/>.
 /// </summary>
 public static partial class DataValidationErrorsElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataValidationErrors.ErrorsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class DataValidationErrorsElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataValidationErrors.ErrorsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataValidationErrors.HasErrorsProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class DataValidationErrorsElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataValidationErrors.HasErrorsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataValidationErrors.ErrorConverterProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class DataValidationErrorsElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataValidationErrors.ErrorConverterProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class DataValidationErrorsElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataValidationErrors.ErrorTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataValidationErrors.OwnerProperty"/> value.
@@ -66,5 +55,4 @@ public static partial class DataValidationErrorsElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.DataValidationErrors.OwnerProperty);
     }
 
-#endif
 }

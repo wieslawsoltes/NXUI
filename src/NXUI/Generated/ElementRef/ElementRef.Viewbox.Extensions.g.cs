@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Viewbox"/>.
 /// </summary>
 public static partial class ViewboxElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Viewbox.StretchProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ViewboxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Viewbox.StretchProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Viewbox.StretchDirectionProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ViewboxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Viewbox.StretchDirectionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Viewbox.ChildProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class ViewboxElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Viewbox.ChildProperty);
     }
 
-#endif
 }

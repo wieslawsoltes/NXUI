@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Input.InputElement"/> class property extension methods.
 /// </summary>
 public static partial class InputElementExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.InputElement.FocusableProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class InputElementExtensions
         return builder.WithBinding(PropertyMetadata.InputElement_Focusable, Avalonia.Input.InputElement.FocusableProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.FocusableProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class InputElementExtensions
         return elementRef.SetBinding(Avalonia.Input.InputElement.FocusableProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.InputElement.FocusableProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class InputElementExtensions
         return builder.WithBinding(PropertyMetadata.InputElement_IsEnabled, Avalonia.Input.InputElement.IsEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.IsEnabledProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class InputElementExtensions
         return elementRef.SetBinding(Avalonia.Input.InputElement.IsEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.InputElement.IsEnabledProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.InputElement.CursorProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class InputElementExtensions
         return builder.WithBinding(PropertyMetadata.InputElement_Cursor, Avalonia.Input.InputElement.CursorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.CursorProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class InputElementExtensions
         return elementRef.SetBinding(Avalonia.Input.InputElement.CursorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.InputElement.CursorProperty
 
     /// <summary>
@@ -1008,7 +994,6 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/> literal value for hot reload builds.
@@ -1055,8 +1040,6 @@ public static partial class InputElementExtensions
         return builder.WithBinding(PropertyMetadata.InputElement_IsHitTestVisible, Avalonia.Input.InputElement.IsHitTestVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.IsHitTestVisibleProperty"/> value on a referenced control.
@@ -1103,7 +1086,6 @@ public static partial class InputElementExtensions
         return elementRef.SetBinding(Avalonia.Input.InputElement.IsHitTestVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.InputElement.IsHitTestVisibleProperty
 
     /// <summary>
@@ -1340,7 +1322,6 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> literal value for hot reload builds.
@@ -1387,8 +1368,6 @@ public static partial class InputElementExtensions
         return builder.WithBinding(PropertyMetadata.InputElement_IsTabStop, Avalonia.Input.InputElement.IsTabStopProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> value on a referenced control.
@@ -1435,7 +1414,6 @@ public static partial class InputElementExtensions
         return elementRef.SetBinding(Avalonia.Input.InputElement.IsTabStopProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.InputElement.IsTabStopProperty
 
     /// <summary>
@@ -1582,7 +1560,6 @@ public static partial class InputElementExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> literal value for hot reload builds.
@@ -1629,8 +1606,6 @@ public static partial class InputElementExtensions
         return builder.WithBinding(PropertyMetadata.InputElement_TabIndex, Avalonia.Input.InputElement.TabIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> value on a referenced control.
@@ -1677,7 +1652,6 @@ public static partial class InputElementExtensions
         return elementRef.SetBinding(Avalonia.Input.InputElement.TabIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Input.InputElement.TabIndexProperty
 
     /// <summary>
@@ -1872,7 +1846,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.GotFocusEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1915,7 +1888,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.LostFocusEvent
 
@@ -1965,7 +1937,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.LostFocusEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2008,7 +1979,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.KeyDownEvent
 
@@ -2058,7 +2028,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.KeyDownEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2101,7 +2070,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.KeyUpEvent
 
@@ -2151,7 +2119,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.KeyUpEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2194,7 +2161,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.TextInputEvent
 
@@ -2244,7 +2210,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.TextInputEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2287,7 +2252,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent
 
@@ -2337,7 +2301,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2380,7 +2343,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerEnteredEvent
 
@@ -2430,7 +2392,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.PointerEnteredEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2473,7 +2434,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerExitedEvent
 
@@ -2523,7 +2483,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.PointerExitedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2566,7 +2525,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerMovedEvent
 
@@ -2616,7 +2574,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.PointerMovedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2659,7 +2616,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerPressedEvent
 
@@ -2709,7 +2665,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.PointerPressedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2752,7 +2707,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerReleasedEvent
 
@@ -2802,7 +2756,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.PointerReleasedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2845,7 +2798,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerCaptureLostEvent
 
@@ -2895,7 +2847,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.PointerCaptureLostEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2938,7 +2889,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerWheelChangedEvent
 
@@ -2988,7 +2938,6 @@ public static partial class InputElementExtensions
     {
         return obj.GetObservable(Avalonia.Input.InputElement.PointerWheelChangedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -3031,7 +2980,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.GotFocus
 
@@ -3066,7 +3014,6 @@ public static partial class InputElementExtensions
                 h => obj.GotFocus -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3088,7 +3035,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.LostFocus
 
@@ -3123,7 +3069,6 @@ public static partial class InputElementExtensions
                 h => obj.LostFocus -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3145,7 +3090,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.KeyDown
 
@@ -3180,7 +3124,6 @@ public static partial class InputElementExtensions
                 h => obj.KeyDown -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3202,7 +3145,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.KeyUp
 
@@ -3237,7 +3179,6 @@ public static partial class InputElementExtensions
                 h => obj.KeyUp -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3259,7 +3200,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.TextInput
 
@@ -3294,7 +3234,6 @@ public static partial class InputElementExtensions
                 h => obj.TextInput -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3316,7 +3255,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.TextInputMethodClientRequested
 
@@ -3351,7 +3289,6 @@ public static partial class InputElementExtensions
                 h => obj.TextInputMethodClientRequested -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3373,7 +3310,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerEntered
 
@@ -3408,7 +3344,6 @@ public static partial class InputElementExtensions
                 h => obj.PointerEntered -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3430,7 +3365,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerExited
 
@@ -3465,7 +3399,6 @@ public static partial class InputElementExtensions
                 h => obj.PointerExited -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3487,7 +3420,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerMoved
 
@@ -3522,7 +3454,6 @@ public static partial class InputElementExtensions
                 h => obj.PointerMoved -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3544,7 +3475,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerPressed
 
@@ -3579,7 +3509,6 @@ public static partial class InputElementExtensions
                 h => obj.PointerPressed -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3601,7 +3530,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerReleased
 
@@ -3636,7 +3564,6 @@ public static partial class InputElementExtensions
                 h => obj.PointerReleased -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3658,7 +3585,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerCaptureLost
 
@@ -3693,7 +3619,6 @@ public static partial class InputElementExtensions
                 h => obj.PointerCaptureLost -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3715,7 +3640,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.PointerWheelChanged
 
@@ -3750,7 +3674,6 @@ public static partial class InputElementExtensions
                 h => obj.PointerWheelChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3772,7 +3695,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.Tapped
 
@@ -3807,7 +3729,6 @@ public static partial class InputElementExtensions
                 h => obj.Tapped -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3829,7 +3750,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.Holding
 
@@ -3864,7 +3784,6 @@ public static partial class InputElementExtensions
                 h => obj.Holding -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3886,7 +3805,6 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Input.InputElement.DoubleTapped
 
@@ -3921,7 +3839,6 @@ public static partial class InputElementExtensions
                 h => obj.DoubleTapped -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -3943,5 +3860,4 @@ public static partial class InputElementExtensions
         }));
     }
 
-#endif
 }

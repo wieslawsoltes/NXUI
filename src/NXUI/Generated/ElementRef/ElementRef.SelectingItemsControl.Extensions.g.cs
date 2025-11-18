@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.SelectingItemsControl"/>.
 /// </summary>
 public static partial class SelectingItemsControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.AutoScrollToSelectedItemProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedIndexProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedItemProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.SelectedValueBindingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.IsTextSearchEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class SelectingItemsControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.SelectingItemsControl.WrapSelectionProperty);
     }
 
-#endif
 }

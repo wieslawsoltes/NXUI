@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.RepeatButton"/> class property extension methods.
 /// </summary>
 public static partial class RepeatButtonExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class RepeatButtonExtensions
         return builder.WithBinding(PropertyMetadata.RepeatButton_Interval, Avalonia.Controls.RepeatButton.IntervalProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RepeatButton.IntervalProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class RepeatButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.RepeatButton.IntervalProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RepeatButton.IntervalProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class RepeatButtonExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class RepeatButtonExtensions
         return builder.WithBinding(PropertyMetadata.RepeatButton_Delay, Avalonia.Controls.RepeatButton.DelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.RepeatButton.DelayProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class RepeatButtonExtensions
         return elementRef.SetBinding(Avalonia.Controls.RepeatButton.DelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.RepeatButton.DelayProperty
 
     /// <summary>

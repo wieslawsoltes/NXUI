@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Layout.WrapLayout"/>.
 /// </summary>
 public static partial class WrapLayoutElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.WrapLayout.HorizontalSpacingProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class WrapLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.WrapLayout.HorizontalSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.WrapLayout.VerticalSpacingProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class WrapLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.WrapLayout.VerticalSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Layout.WrapLayout.OrientationProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class WrapLayoutElementRefExtensions
         return elementRef.Observe(Avalonia.Layout.WrapLayout.OrientationProperty);
     }
 
-#endif
 }

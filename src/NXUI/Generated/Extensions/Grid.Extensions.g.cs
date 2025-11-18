@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Grid"/> class property extension methods.
 /// </summary>
 public static partial class GridExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.ShowGridLinesProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_ShowGridLines, Avalonia.Controls.Grid.ShowGridLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.ShowGridLinesProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.ShowGridLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.ShowGridLinesProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class GridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.RowSpacingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_RowSpacing, Avalonia.Controls.Grid.RowSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.RowSpacingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.RowSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.RowSpacingProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class GridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.ColumnSpacingProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_ColumnSpacing, Avalonia.Controls.Grid.ColumnSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.ColumnSpacingProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.ColumnSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.ColumnSpacingProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class GridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.ColumnProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_Column, Avalonia.Controls.Grid.ColumnProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.ColumnProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.ColumnProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.ColumnProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class GridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.RowProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_Row, Avalonia.Controls.Grid.RowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.RowProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.RowProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.RowProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class GridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.ColumnSpanProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_ColumnSpan, Avalonia.Controls.Grid.ColumnSpanProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.ColumnSpanProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.ColumnSpanProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.ColumnSpanProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class GridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.RowSpanProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_RowSpan, Avalonia.Controls.Grid.RowSpanProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.RowSpanProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.RowSpanProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.RowSpanProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class GridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Grid.IsSharedSizeScopeProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class GridExtensions
         return builder.WithBinding(PropertyMetadata.Grid_IsSharedSizeScope, Avalonia.Controls.Grid.IsSharedSizeScopeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Grid.IsSharedSizeScopeProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class GridExtensions
         return elementRef.SetBinding(Avalonia.Controls.Grid.IsSharedSizeScopeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Grid.IsSharedSizeScopeProperty
 
     /// <summary>

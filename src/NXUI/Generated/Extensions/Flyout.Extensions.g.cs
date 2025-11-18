@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Flyout"/> class property extension methods.
 /// </summary>
 public static partial class FlyoutExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Flyout.ContentProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class FlyoutExtensions
         return builder.WithBinding(PropertyMetadata.Flyout_Content, Avalonia.Controls.Flyout.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Flyout.ContentProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class FlyoutExtensions
         return elementRef.SetBinding(Avalonia.Controls.Flyout.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Flyout.ContentProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class FlyoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class FlyoutExtensions
         return builder.WithBinding(PropertyMetadata.Flyout_ContentTemplate, Avalonia.Controls.Flyout.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Flyout.ContentTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class FlyoutExtensions
         return elementRef.SetBinding(Avalonia.Controls.Flyout.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Flyout.ContentTemplateProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class FlyoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class FlyoutExtensions
         return builder.WithBinding(PropertyMetadata.Flyout_FlyoutPresenterTheme, Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class FlyoutExtensions
         return elementRef.SetBinding(Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Flyout.FlyoutPresenterThemeProperty
 
     /// <summary>

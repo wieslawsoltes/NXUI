@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/>.
 /// </summary>
 public static partial class ColorSpectrumElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty"/> value.
@@ -132,5 +109,4 @@ public static partial class ColorSpectrumElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSpectrum.ThirdComponentProperty);
     }
 
-#endif
 }

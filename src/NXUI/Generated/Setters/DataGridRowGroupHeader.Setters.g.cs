@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridRowGroupHeader"/> class style setters extension methods.
 /// </summary>
 public static partial class DataGridRowGroupHeaderSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/>.
@@ -20,7 +17,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderIsItemCountVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderIsItemCountVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderIsItemCountVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderIsItemCountVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderIsItemCountVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderIsItemCountVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsItemCountVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class DataGridRowGroupHeaderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/>.
@@ -185,7 +176,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderItemCountFormat(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetDataGridRowGroupHeaderItemCountFormat(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderItemCountFormat(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderItemCountFormat(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderItemCountFormat(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetDataGridRowGroupHeaderItemCountFormat(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderItemCountFormat(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderItemCountFormat(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderItemCountFormat(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderItemCountFormat(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderItemCountFormat(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderItemCountFormat(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class DataGridRowGroupHeaderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/>.
@@ -350,7 +335,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderPropertyName(this ElementBuilder<Style> builder, System.String value)
+    public static StyleBuilder SetDataGridRowGroupHeaderPropertyName(this StyleBuilder builder, System.String value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderPropertyName(this ElementBuilder<KeyFrame> builder, System.String value)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderPropertyName(this KeyFrameBuilder builder, System.String value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderPropertyName(this ElementBuilder<Style> builder, IObservable<System.String> observable)
+    public static StyleBuilder SetDataGridRowGroupHeaderPropertyName(this StyleBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderPropertyName(this ElementBuilder<KeyFrame> builder, IObservable<System.String> observable)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderPropertyName(this KeyFrameBuilder builder, IObservable<System.String> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderPropertyName(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderPropertyName(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderPropertyName(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderPropertyName(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class DataGridRowGroupHeaderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/>.
@@ -515,7 +494,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderIsPropertyNameVisible(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderIsPropertyNameVisible(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderIsPropertyNameVisible(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderIsPropertyNameVisible(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderIsPropertyNameVisible(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderIsPropertyNameVisible(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderIsPropertyNameVisible(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class DataGridRowGroupHeaderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/>.
@@ -680,7 +653,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderSublevelIndent(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetDataGridRowGroupHeaderSublevelIndent(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderSublevelIndent(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderSublevelIndent(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderSublevelIndent(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetDataGridRowGroupHeaderSublevelIndent(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderSublevelIndent(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderSublevelIndent(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class DataGridRowGroupHeaderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetDataGridRowGroupHeaderSublevelIndent(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetDataGridRowGroupHeaderSublevelIndent(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class DataGridRowGroupHeaderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetDataGridRowGroupHeaderSublevelIndent(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetDataGridRowGroupHeaderSublevelIndent(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class DataGridRowGroupHeaderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/>.
     /// </summary>

@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Diffing;
 
 /// <summary>
@@ -51,4 +50,3 @@ public enum PatchOpKind
     /// </summary>
     DetachEvent,
 }
-#endif

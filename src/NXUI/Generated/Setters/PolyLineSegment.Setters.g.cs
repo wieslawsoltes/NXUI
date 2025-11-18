@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.PolyLineSegment"/> class style setters extension methods.
 /// </summary>
 public static partial class PolyLineSegmentSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPolyLineSegmentPoints(this ElementBuilder<Style> builder, System.Collections.Generic.IList<Avalonia.Point> value)
+    public static StyleBuilder SetPolyLineSegmentPoints(this StyleBuilder builder, System.Collections.Generic.IList<Avalonia.Point> value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPolyLineSegmentPoints(this ElementBuilder<KeyFrame> builder, System.Collections.Generic.IList<Avalonia.Point> value)
+    public static KeyFrameBuilder SetPolyLineSegmentPoints(this KeyFrameBuilder builder, System.Collections.Generic.IList<Avalonia.Point> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class PolyLineSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.PolyLineSegment.PointsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class PolyLineSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPolyLineSegmentPoints(this ElementBuilder<Style> builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
+    public static StyleBuilder SetPolyLineSegmentPoints(this StyleBuilder builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPolyLineSegmentPoints(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
+    public static KeyFrameBuilder SetPolyLineSegmentPoints(this KeyFrameBuilder builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class PolyLineSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class PolyLineSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.PolyLineSegment.PointsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPolyLineSegmentPoints(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPolyLineSegmentPoints(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class PolyLineSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPolyLineSegmentPoints(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPolyLineSegmentPoints(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class PolyLineSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.PolyLineSegment.PointsProperty"/>.
     /// </summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.GlyphRunDrawing"/>.
 /// </summary>
 public static partial class GlyphRunDrawingElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GlyphRunDrawing.ForegroundProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class GlyphRunDrawingElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GlyphRunDrawing.ForegroundProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GlyphRunDrawing.GlyphRunProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class GlyphRunDrawingElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GlyphRunDrawing.GlyphRunProperty);
     }
 
-#endif
 }

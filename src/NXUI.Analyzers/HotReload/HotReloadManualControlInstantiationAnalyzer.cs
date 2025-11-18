@@ -30,11 +30,6 @@ public sealed class HotReloadManualControlInstantiationAnalyzer : DiagnosticAnal
 
         context.RegisterCompilationStartAction(static startContext =>
         {
-            if (!DefinesHotReload(startContext.Compilation))
-            {
-                return;
-            }
-
             var controlSymbol = startContext.Compilation.GetTypeByMetadataName("Avalonia.Controls.Control");
             if (controlSymbol is null)
             {
@@ -45,19 +40,6 @@ public sealed class HotReloadManualControlInstantiationAnalyzer : DiagnosticAnal
                 nodeContext => AnalyzeObjectCreation(nodeContext, controlSymbol),
                 SyntaxKind.ObjectCreationExpression);
         });
-    }
-
-    private static bool DefinesHotReload(Compilation compilation)
-    {
-        foreach (var tree in compilation.SyntaxTrees)
-        {
-            if (tree.Options is CSharpParseOptions csharp && csharp.PreprocessorSymbolNames.Contains("NXUI_HOTRELOAD"))
-            {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     private static void AnalyzeObjectCreation(SyntaxNodeAnalysisContext context, INamedTypeSymbol controlSymbol)

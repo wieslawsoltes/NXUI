@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Expander"/>.
 /// </summary>
 public static partial class ExpanderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ExpanderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Expander.ContentTransitionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ExpanderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Expander.ExpandDirectionProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class ExpanderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Expander.IsExpandedProperty);
     }
 
-#endif
 }

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.TabControl"/>.
 /// </summary>
 public static partial class TabControlElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabControl.TabStripPlacementProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TabControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabControl.TabStripPlacementProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TabControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabControl.HorizontalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabControl.VerticalContentAlignmentProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TabControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabControl.VerticalContentAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabControl.ContentTemplateProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TabControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabControl.ContentTemplateProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabControl.SelectedContentProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TabControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabControl.SelectedContentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TabControl.SelectedContentTemplateProperty"/> value.
@@ -77,5 +64,4 @@ public static partial class TabControlElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.TabControl.SelectedContentTemplateProperty);
     }
 
-#endif
 }

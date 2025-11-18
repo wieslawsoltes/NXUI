@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.GeometryDrawing"/>.
 /// </summary>
 public static partial class GeometryDrawingElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GeometryDrawing.GeometryProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class GeometryDrawingElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GeometryDrawing.GeometryProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GeometryDrawing.BrushProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class GeometryDrawingElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GeometryDrawing.BrushProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.GeometryDrawing.PenProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class GeometryDrawingElementRefExtensions
         return elementRef.Observe(Avalonia.Media.GeometryDrawing.PenProperty);
     }
 
-#endif
 }

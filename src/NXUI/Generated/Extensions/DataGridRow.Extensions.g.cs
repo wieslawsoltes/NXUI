@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridRow"/> class property extension methods.
 /// </summary>
 public static partial class DataGridRowExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataGridRowExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRow_Header, Avalonia.Controls.DataGridRow.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRow.HeaderProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataGridRowExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRow.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.HeaderProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DataGridRowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DataGridRowExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRow_IsSelected, Avalonia.Controls.DataGridRow.IsSelectedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRow.IsSelectedProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DataGridRowExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRow.IsSelectedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.IsSelectedProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class DataGridRowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class DataGridRowExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRow_DetailsTemplate, Avalonia.Controls.DataGridRow.DetailsTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRow.DetailsTemplateProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class DataGridRowExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRow.DetailsTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.DetailsTemplateProperty
 
     /// <summary>
@@ -828,7 +814,6 @@ public static partial class DataGridRowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/> literal value for hot reload builds.
@@ -875,8 +860,6 @@ public static partial class DataGridRowExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRow_AreDetailsVisible, Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty"/> value on a referenced control.
@@ -923,7 +906,6 @@ public static partial class DataGridRowExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.AreDetailsVisibleProperty
 
     /// <summary>
@@ -1070,7 +1052,6 @@ public static partial class DataGridRowExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/> literal value for hot reload builds.
@@ -1117,8 +1098,6 @@ public static partial class DataGridRowExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRow_Index, Avalonia.Controls.DataGridRow.IndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRow.IndexProperty"/> value on a referenced control.
@@ -1165,7 +1144,6 @@ public static partial class DataGridRowExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRow.IndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRow.IndexProperty
 
     /// <summary>

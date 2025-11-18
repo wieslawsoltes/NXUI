@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.BezierSegment"/> class style setters extension methods.
 /// </summary>
 public static partial class BezierSegmentSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point1Property"/>.
@@ -20,7 +17,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint1(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetBezierSegmentPoint1(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint1(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetBezierSegmentPoint1(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.BezierSegment.Point1Property
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class BezierSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.BezierSegment.Point1Property, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point1Property"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint1(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetBezierSegmentPoint1(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint1(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetBezierSegmentPoint1(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.BezierSegment.Point1Property"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class BezierSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.BezierSegment.Point1Property, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point1Property"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint1(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBezierSegmentPoint1(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint1(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBezierSegmentPoint1(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.BezierSegment.Point1Property"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class BezierSegmentSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point2Property"/>.
@@ -185,7 +176,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint2(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetBezierSegmentPoint2(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint2(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetBezierSegmentPoint2(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.BezierSegment.Point2Property
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class BezierSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.BezierSegment.Point2Property, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point2Property"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint2(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetBezierSegmentPoint2(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint2(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetBezierSegmentPoint2(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.BezierSegment.Point2Property"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class BezierSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.BezierSegment.Point2Property, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point2Property"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint2(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBezierSegmentPoint2(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint2(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBezierSegmentPoint2(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.BezierSegment.Point2Property"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class BezierSegmentSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point3Property"/>.
@@ -350,7 +335,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint3(this ElementBuilder<Style> builder, Avalonia.Point value)
+    public static StyleBuilder SetBezierSegmentPoint3(this StyleBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint3(this ElementBuilder<KeyFrame> builder, Avalonia.Point value)
+    public static KeyFrameBuilder SetBezierSegmentPoint3(this KeyFrameBuilder builder, Avalonia.Point value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     // Avalonia.Media.BezierSegment.Point3Property
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class BezierSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.BezierSegment.Point3Property, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point3Property"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint3(this ElementBuilder<Style> builder, IObservable<Avalonia.Point> observable)
+    public static StyleBuilder SetBezierSegmentPoint3(this StyleBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint3(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Point> observable)
+    public static KeyFrameBuilder SetBezierSegmentPoint3(this KeyFrameBuilder builder, IObservable<Avalonia.Point> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.BezierSegment.Point3Property"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class BezierSegmentSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.BezierSegment.Point3Property, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.BezierSegment.Point3Property"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetBezierSegmentPoint3(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetBezierSegmentPoint3(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class BezierSegmentSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetBezierSegmentPoint3(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetBezierSegmentPoint3(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class BezierSegmentSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.BezierSegment.Point3Property"/>.
     /// </summary>

@@ -1,4 +1,3 @@
-#if NXUI_HOTRELOAD
 namespace NXUI.HotReload.Nodes;
 
 using System;
@@ -253,4 +252,3 @@ public readonly struct ElementBuilder<TControl>
         return new ElementChildBuilder(builder.Node);
     }
 }
-#endif

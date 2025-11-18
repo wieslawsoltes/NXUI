@@ -9,9 +9,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using Avalonia.Threading;
 using System.Reflection;
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Nodes;
-#endif
 
 namespace NXUI.Extensions;
 
@@ -98,7 +96,6 @@ public static class ReactiveObservableExtensions
         return new FuncDataTemplate<T>((item, _) => build(item), supportsRecycling);
     }
 
-#if NXUI_HOTRELOAD
     /// <summary>
     /// Creates a hot-reload friendly data template from an element builder.
     /// </summary>
@@ -114,7 +111,6 @@ public static class ReactiveObservableExtensions
         ArgumentNullException.ThrowIfNull(build);
         return new FuncDataTemplate<T>((item, _) => build(item).Mount(), supportsRecycling);
     }
-#endif
 
     /// <summary>
     /// Observes changes to the specified property.

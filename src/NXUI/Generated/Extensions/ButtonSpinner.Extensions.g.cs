@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ButtonSpinner"/> class property extension methods.
 /// </summary>
 public static partial class ButtonSpinnerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ButtonSpinnerExtensions
         return builder.WithBinding(PropertyMetadata.ButtonSpinner_AllowSpin, Avalonia.Controls.ButtonSpinner.AllowSpinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.AllowSpinProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ButtonSpinnerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.AllowSpinProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ButtonSpinner.AllowSpinProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ButtonSpinnerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ButtonSpinnerExtensions
         return builder.WithBinding(PropertyMetadata.ButtonSpinner_ShowButtonSpinner, Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ButtonSpinnerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ButtonSpinner.ShowButtonSpinnerProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ButtonSpinnerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ButtonSpinnerExtensions
         return builder.WithBinding(PropertyMetadata.ButtonSpinner_ButtonSpinnerLocation, Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ButtonSpinnerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class ButtonSpinnerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class ButtonSpinnerExtensions
         return builder.WithValue(PropertyMetadata.ButtonSpinner_ButtonSpinnerLocation, Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, Avalonia.Controls.Location.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Left"/>.
@@ -762,7 +746,6 @@ public static partial class ButtonSpinnerExtensions
         obj[Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty] = Avalonia.Controls.Location.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class ButtonSpinnerExtensions
         return builder.WithValue(PropertyMetadata.ButtonSpinner_ButtonSpinnerLocation, Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty, Avalonia.Controls.Location.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ButtonSpinner.ButtonSpinnerLocationProperty"/> property value to <see cref="Avalonia.Controls.Location.Right"/>.

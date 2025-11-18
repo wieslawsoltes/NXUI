@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.GeometryGroup"/> class property extension methods.
 /// </summary>
 public static partial class GeometryGroupExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class GeometryGroupExtensions
         return builder.WithBinding(PropertyMetadata.GeometryGroup_Children, Avalonia.Media.GeometryGroup.ChildrenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryGroup.ChildrenProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GeometryGroupExtensions
         return elementRef.SetBinding(Avalonia.Media.GeometryGroup.ChildrenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GeometryGroup.ChildrenProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class GeometryGroupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class GeometryGroupExtensions
         return builder.WithBinding(PropertyMetadata.GeometryGroup_FillRule, Avalonia.Media.GeometryGroup.FillRuleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class GeometryGroupExtensions
         return elementRef.SetBinding(Avalonia.Media.GeometryGroup.FillRuleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.GeometryGroup.FillRuleProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class GeometryGroupExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class GeometryGroupExtensions
         return builder.WithValue(PropertyMetadata.GeometryGroup_FillRule, Avalonia.Media.GeometryGroup.FillRuleProperty, Avalonia.Media.FillRule.EvenOdd);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.EvenOdd"/>.
@@ -520,7 +508,6 @@ public static partial class GeometryGroupExtensions
         obj[Avalonia.Media.GeometryGroup.FillRuleProperty] = Avalonia.Media.FillRule.EvenOdd;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class GeometryGroupExtensions
         return builder.WithValue(PropertyMetadata.GeometryGroup_FillRule, Avalonia.Media.GeometryGroup.FillRuleProperty, Avalonia.Media.FillRule.NonZero);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.GeometryGroup.FillRuleProperty"/> property value to <see cref="Avalonia.Media.FillRule.NonZero"/>.

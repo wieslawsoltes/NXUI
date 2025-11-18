@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TextBlock"/> class property extension methods.
 /// </summary>
 public static partial class TextBlockExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_Background, Avalonia.Controls.TextBlock.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.BackgroundProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.BackgroundProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_Padding, Avalonia.Controls.TextBlock.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.PaddingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.PaddingProperty
 
     /// <summary>
@@ -495,8 +485,6 @@ public static partial class TextBlockExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
-
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.PaddingProperty"/> literal value using a uniform length for hot reload builds.
     /// </summary>
@@ -520,8 +508,6 @@ public static partial class TextBlockExtensions
     {
         return builder.Padding(new Avalonia.Thickness(left, top, right, bottom));
     }
-
-#endif
 
 
     /// <summary>
@@ -550,7 +536,6 @@ public static partial class TextBlockExtensions
 
 
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> literal value for hot reload builds.
@@ -597,8 +582,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_FontFamily, Avalonia.Controls.TextBlock.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontFamilyProperty"/> value on a referenced control.
@@ -645,7 +628,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontFamilyProperty
 
     /// <summary>
@@ -792,7 +774,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> literal value for hot reload builds.
@@ -839,8 +820,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_FontSize, Avalonia.Controls.TextBlock.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontSizeProperty"/> value on a referenced control.
@@ -887,7 +866,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontSizeProperty
 
     /// <summary>
@@ -1034,7 +1012,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> literal value for hot reload builds.
@@ -1081,8 +1058,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_FontStyle, Avalonia.Controls.TextBlock.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> value on a referenced control.
@@ -1129,7 +1104,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontStyleProperty
 
     /// <summary>
@@ -1275,7 +1249,6 @@ public static partial class TextBlockExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> enum value for hot reload builds.
@@ -1287,7 +1260,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStyle, Avalonia.Controls.TextBlock.FontStyleProperty, Avalonia.Media.FontStyle.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
@@ -1300,7 +1272,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> enum value for hot reload builds.
@@ -1312,7 +1283,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStyle, Avalonia.Controls.TextBlock.FontStyleProperty, Avalonia.Media.FontStyle.Italic);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
@@ -1325,7 +1295,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> enum value for hot reload builds.
@@ -1337,7 +1306,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStyle, Avalonia.Controls.TextBlock.FontStyleProperty, Avalonia.Media.FontStyle.Oblique);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Oblique"/>.
@@ -1351,7 +1319,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> literal value for hot reload builds.
@@ -1398,8 +1365,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> value on a referenced control.
@@ -1446,7 +1411,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontWeightProperty
 
     /// <summary>
@@ -1592,7 +1556,6 @@ public static partial class TextBlockExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1604,7 +1567,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Thin);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
@@ -1617,7 +1579,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1629,7 +1590,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.ExtraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraLight"/>.
@@ -1642,7 +1602,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1654,7 +1613,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.UltraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
@@ -1667,7 +1625,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1679,7 +1636,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Light);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Light"/>.
@@ -1692,7 +1648,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1704,7 +1659,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.SemiLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
@@ -1717,7 +1671,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1729,7 +1682,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Normal"/>.
@@ -1742,7 +1694,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1754,7 +1705,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Regular);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
@@ -1767,7 +1717,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1779,7 +1728,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Medium);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Medium"/>.
@@ -1792,7 +1740,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1804,7 +1751,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.DemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
@@ -1817,7 +1763,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1829,7 +1774,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.SemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiBold"/>.
@@ -1842,7 +1786,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1854,7 +1797,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Bold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
@@ -1867,7 +1809,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1879,7 +1820,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBold"/>.
@@ -1892,7 +1832,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1904,7 +1843,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.UltraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
@@ -1917,7 +1855,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1929,7 +1866,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Black);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Black"/>.
@@ -1942,7 +1878,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1954,7 +1889,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Heavy);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
@@ -1967,7 +1901,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -1979,7 +1912,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.Solid);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Solid"/>.
@@ -1992,7 +1924,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.Solid;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -2004,7 +1935,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
@@ -2017,7 +1947,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> enum value for hot reload builds.
@@ -2029,7 +1958,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontWeight, Avalonia.Controls.TextBlock.FontWeightProperty, Avalonia.Media.FontWeight.UltraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBlack"/>.
@@ -2043,7 +1971,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> literal value for hot reload builds.
@@ -2090,8 +2017,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> value on a referenced control.
@@ -2138,7 +2063,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontStretchProperty
 
     /// <summary>
@@ -2284,7 +2208,6 @@ public static partial class TextBlockExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2296,7 +2219,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.UltraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
@@ -2309,7 +2231,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2321,7 +2242,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.ExtraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraCondensed"/>.
@@ -2334,7 +2254,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2346,7 +2265,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.Condensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
@@ -2359,7 +2277,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2371,7 +2288,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.SemiCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiCondensed"/>.
@@ -2384,7 +2300,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2396,7 +2311,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
@@ -2409,7 +2323,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2421,7 +2334,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.SemiExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiExpanded"/>.
@@ -2434,7 +2346,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2446,7 +2357,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.Expanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
@@ -2459,7 +2369,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2471,7 +2380,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.ExtraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
@@ -2484,7 +2392,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> enum value for hot reload builds.
@@ -2496,7 +2403,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_FontStretch, Avalonia.Controls.TextBlock.FontStretchProperty, Avalonia.Media.FontStretch.UltraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraExpanded"/>.
@@ -2510,7 +2416,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> literal value for hot reload builds.
@@ -2557,8 +2462,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_Foreground, Avalonia.Controls.TextBlock.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.ForegroundProperty"/> value on a referenced control.
@@ -2605,7 +2508,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.ForegroundProperty
 
     /// <summary>
@@ -2752,7 +2654,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> literal value for hot reload builds.
@@ -2799,8 +2700,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_BaselineOffset, Avalonia.Controls.TextBlock.BaselineOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.BaselineOffsetProperty"/> value on a referenced control.
@@ -2847,7 +2746,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.BaselineOffsetProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.BaselineOffsetProperty
 
     /// <summary>
@@ -2994,7 +2892,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> literal value for hot reload builds.
@@ -3041,8 +2938,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_LineHeight, Avalonia.Controls.TextBlock.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.LineHeightProperty"/> value on a referenced control.
@@ -3089,7 +2984,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.LineHeightProperty
 
     /// <summary>
@@ -3236,7 +3130,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> literal value for hot reload builds.
@@ -3283,8 +3176,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_LineSpacing, Avalonia.Controls.TextBlock.LineSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.LineSpacingProperty"/> value on a referenced control.
@@ -3331,7 +3222,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.LineSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.LineSpacingProperty
 
     /// <summary>
@@ -3478,7 +3368,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> literal value for hot reload builds.
@@ -3525,8 +3414,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_LetterSpacing, Avalonia.Controls.TextBlock.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.LetterSpacingProperty"/> value on a referenced control.
@@ -3573,7 +3460,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.LetterSpacingProperty
 
     /// <summary>
@@ -3720,7 +3606,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> literal value for hot reload builds.
@@ -3767,8 +3652,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_MaxLines, Avalonia.Controls.TextBlock.MaxLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.MaxLinesProperty"/> value on a referenced control.
@@ -3815,7 +3698,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.MaxLinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.MaxLinesProperty
 
     /// <summary>
@@ -3962,7 +3844,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextProperty"/> literal value for hot reload builds.
@@ -4009,8 +3890,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_Text, Avalonia.Controls.TextBlock.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextProperty"/> value on a referenced control.
@@ -4057,7 +3936,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextProperty
 
     /// <summary>
@@ -4204,7 +4082,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> literal value for hot reload builds.
@@ -4251,8 +4128,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> value on a referenced control.
@@ -4299,7 +4174,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextAlignmentProperty
 
     /// <summary>
@@ -4445,7 +4319,6 @@ public static partial class TextBlockExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4457,7 +4330,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, Avalonia.Media.TextAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
@@ -4470,7 +4342,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4482,7 +4353,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, Avalonia.Media.TextAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
@@ -4495,7 +4365,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4507,7 +4376,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, Avalonia.Media.TextAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
@@ -4520,7 +4388,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4532,7 +4399,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, Avalonia.Media.TextAlignment.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
@@ -4545,7 +4411,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4557,7 +4422,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, Avalonia.Media.TextAlignment.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
@@ -4570,7 +4434,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4582,7 +4445,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, Avalonia.Media.TextAlignment.DetectFromContent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
@@ -4595,7 +4457,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -4607,7 +4468,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextAlignment, Avalonia.Controls.TextBlock.TextAlignmentProperty, Avalonia.Media.TextAlignment.Justify);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.
@@ -4621,7 +4481,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> literal value for hot reload builds.
@@ -4668,8 +4527,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_TextWrapping, Avalonia.Controls.TextBlock.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> value on a referenced control.
@@ -4716,7 +4573,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextWrappingProperty
 
     /// <summary>
@@ -4862,7 +4718,6 @@ public static partial class TextBlockExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> enum value for hot reload builds.
@@ -4874,7 +4729,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextWrapping, Avalonia.Controls.TextBlock.TextWrappingProperty, Avalonia.Media.TextWrapping.NoWrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
@@ -4887,7 +4741,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> enum value for hot reload builds.
@@ -4899,7 +4752,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextWrapping, Avalonia.Controls.TextBlock.TextWrappingProperty, Avalonia.Media.TextWrapping.Wrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.Wrap"/>.
@@ -4912,7 +4764,6 @@ public static partial class TextBlockExtensions
         obj[Avalonia.Controls.TextBlock.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> enum value for hot reload builds.
@@ -4924,7 +4775,6 @@ public static partial class TextBlockExtensions
         return builder.WithValue(PropertyMetadata.TextBlock_TextWrapping, Avalonia.Controls.TextBlock.TextWrappingProperty, Avalonia.Media.TextWrapping.WrapWithOverflow);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.WrapWithOverflow"/>.
@@ -4938,7 +4788,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> literal value for hot reload builds.
@@ -4985,8 +4834,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_TextTrimming, Avalonia.Controls.TextBlock.TextTrimmingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextTrimmingProperty"/> value on a referenced control.
@@ -5033,7 +4880,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.TextTrimmingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextTrimmingProperty
 
     /// <summary>
@@ -5180,7 +5026,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> literal value for hot reload builds.
@@ -5227,8 +5072,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_TextDecorations, Avalonia.Controls.TextBlock.TextDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.TextDecorationsProperty"/> value on a referenced control.
@@ -5275,7 +5118,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.TextDecorationsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.TextDecorationsProperty
 
     /// <summary>
@@ -5422,7 +5264,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> literal value for hot reload builds.
@@ -5469,8 +5310,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_FontFeatures, Avalonia.Controls.TextBlock.FontFeaturesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.FontFeaturesProperty"/> value on a referenced control.
@@ -5517,7 +5356,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.FontFeaturesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.FontFeaturesProperty
 
     /// <summary>
@@ -5664,7 +5502,6 @@ public static partial class TextBlockExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> literal value for hot reload builds.
@@ -5711,8 +5548,6 @@ public static partial class TextBlockExtensions
         return builder.WithBinding(PropertyMetadata.TextBlock_Inlines, Avalonia.Controls.TextBlock.InlinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TextBlock.InlinesProperty"/> value on a referenced control.
@@ -5759,7 +5594,6 @@ public static partial class TextBlockExtensions
         return elementRef.SetBinding(Avalonia.Controls.TextBlock.InlinesProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TextBlock.InlinesProperty
 
     /// <summary>

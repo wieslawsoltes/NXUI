@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridRowGroupHeader"/> class property extension methods.
 /// </summary>
 public static partial class DataGridRowGroupHeaderExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRowGroupHeader_IsItemCountVisible, Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.IsItemCountVisibleProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRowGroupHeader_ItemCountFormat, Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.ItemCountFormatProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRowGroupHeader_PropertyName, Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.PropertyNameProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRowGroupHeader_IsPropertyNameVisible, Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.IsPropertyNameVisibleProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return builder.WithBinding(PropertyMetadata.DataGridRowGroupHeader_SublevelIndent, Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class DataGridRowGroupHeaderExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridRowGroupHeader.SublevelIndentProperty
 
     /// <summary>

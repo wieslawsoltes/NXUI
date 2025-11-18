@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.Geometry"/> class style setters extension methods.
 /// </summary>
 public static partial class GeometrySetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
@@ -20,7 +17,7 @@ public static partial class GeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryTransform(this ElementBuilder<Style> builder, Avalonia.Media.Transform value)
+    public static StyleBuilder SetGeometryTransform(this StyleBuilder builder, Avalonia.Media.Transform value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class GeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Transform value)
+    public static KeyFrameBuilder SetGeometryTransform(this KeyFrameBuilder builder, Avalonia.Media.Transform value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class GeometrySetters
         });
     }
 
-#endif
     // Avalonia.Media.Geometry.TransformProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class GeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class GeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryTransform(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Transform> observable)
+    public static StyleBuilder SetGeometryTransform(this StyleBuilder builder, IObservable<Avalonia.Media.Transform> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class GeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryTransform(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Transform> observable)
+    public static KeyFrameBuilder SetGeometryTransform(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Transform> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class GeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class GeometrySetters
         keyFrame.Setters.Add(new Setter(Avalonia.Media.Geometry.TransformProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class GeometrySetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetGeometryTransform(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetGeometryTransform(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class GeometrySetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetGeometryTransform(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetGeometryTransform(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class GeometrySetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Media.Geometry.TransformProperty"/>.
     /// </summary>

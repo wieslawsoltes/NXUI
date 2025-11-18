@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Presenters.TextPresenter"/> class property extension methods.
 /// </summary>
 public static partial class TextPresenterExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_ShowSelectionHighlight, Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.ShowSelectionHighlightProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_CaretIndex, Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.CaretIndexProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_RevealPassword, Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.RevealPasswordProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_PasswordChar, Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.PasswordCharProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_SelectionBrush, Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.SelectionBrushProperty
 
     /// <summary>
@@ -1222,7 +1200,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/> literal value for hot reload builds.
@@ -1269,8 +1246,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_SelectionForegroundBrush, Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty"/> value on a referenced control.
@@ -1317,7 +1292,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.SelectionForegroundBrushProperty
 
     /// <summary>
@@ -1464,7 +1438,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/> literal value for hot reload builds.
@@ -1511,8 +1484,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_CaretBrush, Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty"/> value on a referenced control.
@@ -1559,7 +1530,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.CaretBrushProperty
 
     /// <summary>
@@ -1706,7 +1676,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/> literal value for hot reload builds.
@@ -1753,8 +1722,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_CaretBlinkInterval, Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty"/> value on a referenced control.
@@ -1801,7 +1768,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.CaretBlinkIntervalProperty
 
     /// <summary>
@@ -1948,7 +1914,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> literal value for hot reload builds.
@@ -1995,8 +1960,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_SelectionStart, Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty"/> value on a referenced control.
@@ -2043,7 +2006,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.SelectionStartProperty
 
     /// <summary>
@@ -2190,7 +2152,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> literal value for hot reload builds.
@@ -2237,8 +2198,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_SelectionEnd, Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty"/> value on a referenced control.
@@ -2285,7 +2244,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.SelectionEndProperty
 
     /// <summary>
@@ -2432,7 +2390,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> literal value for hot reload builds.
@@ -2479,8 +2436,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_Text, Avalonia.Controls.Presenters.TextPresenter.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextProperty"/> value on a referenced control.
@@ -2527,7 +2482,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.TextProperty
 
     /// <summary>
@@ -2674,7 +2628,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> literal value for hot reload builds.
@@ -2721,8 +2674,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_PreeditText, Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty"/> value on a referenced control.
@@ -2769,7 +2720,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.PreeditTextProperty
 
     /// <summary>
@@ -2916,7 +2866,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/> literal value for hot reload builds.
@@ -2963,8 +2912,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_PreeditTextCursorPosition, Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty"/> value on a referenced control.
@@ -3011,7 +2958,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.PreeditTextCursorPositionProperty
 
     /// <summary>
@@ -3158,7 +3104,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> literal value for hot reload builds.
@@ -3205,8 +3150,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> value on a referenced control.
@@ -3253,7 +3196,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty
 
     /// <summary>
@@ -3399,7 +3341,6 @@ public static partial class TextPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -3411,7 +3352,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
@@ -3424,7 +3364,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -3436,7 +3375,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
@@ -3449,7 +3387,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -3461,7 +3398,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
@@ -3474,7 +3410,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -3486,7 +3421,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
@@ -3499,7 +3433,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -3511,7 +3444,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
@@ -3524,7 +3456,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -3536,7 +3467,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.DetectFromContent);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
@@ -3549,7 +3479,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
@@ -3561,7 +3490,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Justify);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.
@@ -3575,7 +3503,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> literal value for hot reload builds.
@@ -3622,8 +3549,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> value on a referenced control.
@@ -3670,7 +3595,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty
 
     /// <summary>
@@ -3816,7 +3740,6 @@ public static partial class TextPresenterExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> enum value for hot reload builds.
@@ -3828,7 +3751,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.NoWrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
@@ -3841,7 +3763,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> enum value for hot reload builds.
@@ -3853,7 +3774,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.Wrap);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.Wrap"/>.
@@ -3866,7 +3786,6 @@ public static partial class TextPresenterExtensions
         obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> enum value for hot reload builds.
@@ -3878,7 +3797,6 @@ public static partial class TextPresenterExtensions
         return builder.WithValue(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.WrapWithOverflow);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.WrapWithOverflow"/>.
@@ -3892,7 +3810,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> literal value for hot reload builds.
@@ -3939,8 +3856,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_LineHeight, Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> value on a referenced control.
@@ -3987,7 +3902,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty
 
     /// <summary>
@@ -4134,7 +4048,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> literal value for hot reload builds.
@@ -4181,8 +4094,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_LetterSpacing, Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> value on a referenced control.
@@ -4229,7 +4140,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty
 
     /// <summary>
@@ -4376,7 +4286,6 @@ public static partial class TextPresenterExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> literal value for hot reload builds.
@@ -4423,8 +4332,6 @@ public static partial class TextPresenterExtensions
         return builder.WithBinding(PropertyMetadata.TextPresenter_Background, Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> value on a referenced control.
@@ -4471,7 +4378,6 @@ public static partial class TextPresenterExtensions
         return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty
 
     /// <summary>

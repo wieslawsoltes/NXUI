@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.AdornerLayer"/> class style setters extension methods.
 /// </summary>
 public static partial class AdornerLayerSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
@@ -20,7 +17,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerAdornedElement(this ElementBuilder<Style> builder, Avalonia.Visual value)
+    public static StyleBuilder SetAdornerLayerAdornedElement(this StyleBuilder builder, Avalonia.Visual value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerAdornedElement(this ElementBuilder<KeyFrame> builder, Avalonia.Visual value)
+    public static KeyFrameBuilder SetAdornerLayerAdornedElement(this KeyFrameBuilder builder, Avalonia.Visual value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerAdornedElement(this ElementBuilder<Style> builder, IObservable<Avalonia.Visual> observable)
+    public static StyleBuilder SetAdornerLayerAdornedElement(this StyleBuilder builder, IObservable<Avalonia.Visual> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerAdornedElement(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Visual> observable)
+    public static KeyFrameBuilder SetAdornerLayerAdornedElement(this KeyFrameBuilder builder, IObservable<Avalonia.Visual> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerAdornedElement(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerAdornedElement(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerAdornedElement(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerAdornedElement(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornedElementProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class AdornerLayerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
@@ -185,7 +176,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerIsClipEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetAdornerLayerIsClipEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerIsClipEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetAdornerLayerIsClipEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerIsClipEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetAdornerLayerIsClipEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerIsClipEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetAdornerLayerIsClipEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerIsClipEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerIsClipEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerIsClipEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerIsClipEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.IsClipEnabledProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class AdornerLayerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
@@ -350,7 +335,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerAdorner(this ElementBuilder<Style> builder, Avalonia.Controls.Control value)
+    public static StyleBuilder SetAdornerLayerAdorner(this StyleBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerAdorner(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Control value)
+    public static KeyFrameBuilder SetAdornerLayerAdorner(this KeyFrameBuilder builder, Avalonia.Controls.Control value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerAdorner(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static StyleBuilder SetAdornerLayerAdorner(this StyleBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerAdorner(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Control> observable)
+    public static KeyFrameBuilder SetAdornerLayerAdorner(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Control> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerAdorner(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerAdorner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerAdorner(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerAdorner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.AdornerProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class AdornerLayerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
@@ -515,7 +494,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerDefaultFocusAdorner(this ElementBuilder<Style> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static StyleBuilder SetAdornerLayerDefaultFocusAdorner(this StyleBuilder builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerDefaultFocusAdorner(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
+    public static KeyFrameBuilder SetAdornerLayerDefaultFocusAdorner(this KeyFrameBuilder builder, Avalonia.Controls.ITemplate<Avalonia.Controls.Control> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerDefaultFocusAdorner(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    public static StyleBuilder SetAdornerLayerDefaultFocusAdorner(this StyleBuilder builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerDefaultFocusAdorner(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
+    public static KeyFrameBuilder SetAdornerLayerDefaultFocusAdorner(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ITemplate<Avalonia.Controls.Control>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class AdornerLayerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetAdornerLayerDefaultFocusAdorner(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetAdornerLayerDefaultFocusAdorner(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class AdornerLayerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetAdornerLayerDefaultFocusAdorner(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetAdornerLayerDefaultFocusAdorner(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class AdornerLayerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Primitives.AdornerLayer.DefaultFocusAdornerProperty"/>.
     /// </summary>

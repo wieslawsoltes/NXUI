@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.ColorPreviewer"/> class property extension methods.
 /// </summary>
 public static partial class ColorPreviewerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ColorPreviewerExtensions
         return builder.WithBinding(PropertyMetadata.ColorPreviewer_HsvColor, Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ColorPreviewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorPreviewer.HsvColorProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ColorPreviewerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ColorPreviewerExtensions
         return builder.WithBinding(PropertyMetadata.ColorPreviewer_IsAccentColorsVisible, Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ColorPreviewerExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorPreviewer.IsAccentColorsVisibleProperty
 
     /// <summary>

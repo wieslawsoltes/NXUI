@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.RefreshContainer"/>.
 /// </summary>
 public static partial class RefreshContainerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RefreshContainer.VisualizerProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class RefreshContainerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RefreshContainer.VisualizerProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.RefreshContainer.PullDirectionProperty"/> value.
@@ -33,5 +28,4 @@ public static partial class RefreshContainerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.RefreshContainer.PullDirectionProperty);
     }
 
-#endif
 }

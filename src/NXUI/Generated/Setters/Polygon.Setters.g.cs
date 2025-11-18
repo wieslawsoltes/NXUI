@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Polygon"/> class style setters extension methods.
 /// </summary>
 public static partial class PolygonSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class PolygonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPolygonPoints(this ElementBuilder<Style> builder, System.Collections.Generic.IList<Avalonia.Point> value)
+    public static StyleBuilder SetPolygonPoints(this StyleBuilder builder, System.Collections.Generic.IList<Avalonia.Point> value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class PolygonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPolygonPoints(this ElementBuilder<KeyFrame> builder, System.Collections.Generic.IList<Avalonia.Point> value)
+    public static KeyFrameBuilder SetPolygonPoints(this KeyFrameBuilder builder, System.Collections.Generic.IList<Avalonia.Point> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class PolygonSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Polygon.PointsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class PolygonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polygon.PointsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class PolygonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPolygonPoints(this ElementBuilder<Style> builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
+    public static StyleBuilder SetPolygonPoints(this StyleBuilder builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class PolygonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPolygonPoints(this ElementBuilder<KeyFrame> builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
+    public static KeyFrameBuilder SetPolygonPoints(this KeyFrameBuilder builder, IObservable<System.Collections.Generic.IList<Avalonia.Point>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class PolygonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class PolygonSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Polygon.PointsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class PolygonSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetPolygonPoints(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetPolygonPoints(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class PolygonSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetPolygonPoints(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetPolygonPoints(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class PolygonSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Polygon.PointsProperty"/>.
     /// </summary>

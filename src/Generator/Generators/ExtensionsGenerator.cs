@@ -51,7 +51,10 @@ public partial class ExtensionsGenerator
 
                 if (ownerType.IsSealed)
                 {
-                    return ($"ElementBuilder<{ownerTypeName}>", string.Empty, string.Empty, ownerTypeName, "typed");
+                    var builderType = BuilderAliasRegistry.TryGetAlias(ownerType, out var alias)
+                        ? alias
+                        : $"ElementBuilder<{ownerTypeName}>";
+                    return (builderType, string.Empty, string.Empty, ownerTypeName, "typed");
                 }
 
                 return ($"ElementBuilder<T>", "<T>", $" where T : {ownerTypeName}", "T", "(T)typed");

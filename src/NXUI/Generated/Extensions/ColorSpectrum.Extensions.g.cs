@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.ColorSpectrum"/> class property extension methods.
 /// </summary>
 public static partial class ColorSpectrumExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_Color, Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.ColorProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_Components, Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class ColorSpectrumExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Components, Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.HueValue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.HueValue"/>.
@@ -520,7 +508,6 @@ public static partial class ColorSpectrumExtensions
         obj[Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.HueValue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Components, Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.ValueHue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.ValueHue"/>.
@@ -545,7 +531,6 @@ public static partial class ColorSpectrumExtensions
         obj[Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.ValueHue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> enum value for hot reload builds.
@@ -557,7 +542,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Components, Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.HueSaturation);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.HueSaturation"/>.
@@ -570,7 +554,6 @@ public static partial class ColorSpectrumExtensions
         obj[Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.HueSaturation;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> enum value for hot reload builds.
@@ -582,7 +565,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Components, Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.SaturationHue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.SaturationHue"/>.
@@ -595,7 +577,6 @@ public static partial class ColorSpectrumExtensions
         obj[Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.SaturationHue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> enum value for hot reload builds.
@@ -607,7 +588,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Components, Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.SaturationValue);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.SaturationValue"/>.
@@ -620,7 +600,6 @@ public static partial class ColorSpectrumExtensions
         obj[Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty] = Avalonia.Controls.ColorSpectrumComponents.SaturationValue;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> enum value for hot reload builds.
@@ -632,7 +611,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Components, Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty, Avalonia.Controls.ColorSpectrumComponents.ValueSaturation);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ComponentsProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumComponents.ValueSaturation"/>.
@@ -646,7 +624,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/> literal value for hot reload builds.
@@ -693,8 +670,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_HsvColor, Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty"/> value on a referenced control.
@@ -741,7 +716,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.HsvColorProperty
 
     /// <summary>
@@ -888,7 +862,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/> literal value for hot reload builds.
@@ -935,8 +908,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_MaxHue, Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty"/> value on a referenced control.
@@ -983,7 +954,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxHueProperty
 
     /// <summary>
@@ -1130,7 +1100,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/> literal value for hot reload builds.
@@ -1177,8 +1146,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_MaxSaturation, Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty"/> value on a referenced control.
@@ -1225,7 +1192,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxSaturationProperty
 
     /// <summary>
@@ -1372,7 +1338,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/> literal value for hot reload builds.
@@ -1419,8 +1384,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_MaxValue, Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty"/> value on a referenced control.
@@ -1467,7 +1430,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MaxValueProperty
 
     /// <summary>
@@ -1614,7 +1576,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/> literal value for hot reload builds.
@@ -1661,8 +1622,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_MinHue, Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty"/> value on a referenced control.
@@ -1709,7 +1668,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MinHueProperty
 
     /// <summary>
@@ -1856,7 +1814,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/> literal value for hot reload builds.
@@ -1903,8 +1860,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_MinSaturation, Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty"/> value on a referenced control.
@@ -1951,7 +1906,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MinSaturationProperty
 
     /// <summary>
@@ -2098,7 +2052,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/> literal value for hot reload builds.
@@ -2145,8 +2098,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_MinValue, Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty"/> value on a referenced control.
@@ -2193,7 +2144,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.MinValueProperty
 
     /// <summary>
@@ -2340,7 +2290,6 @@ public static partial class ColorSpectrumExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> literal value for hot reload builds.
@@ -2387,8 +2336,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithBinding(PropertyMetadata.ColorSpectrum_Shape, Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> value on a referenced control.
@@ -2435,7 +2382,6 @@ public static partial class ColorSpectrumExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty
 
     /// <summary>
@@ -2581,7 +2527,6 @@ public static partial class ColorSpectrumExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> enum value for hot reload builds.
@@ -2593,7 +2538,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Shape, Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty, Avalonia.Controls.ColorSpectrumShape.Box);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumShape.Box"/>.
@@ -2606,7 +2550,6 @@ public static partial class ColorSpectrumExtensions
         obj[Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty] = Avalonia.Controls.ColorSpectrumShape.Box;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> enum value for hot reload builds.
@@ -2618,7 +2561,6 @@ public static partial class ColorSpectrumExtensions
         return builder.WithValue(PropertyMetadata.ColorSpectrum_Shape, Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty, Avalonia.Controls.ColorSpectrumShape.Ring);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.ColorSpectrum.ShapeProperty"/> property value to <see cref="Avalonia.Controls.ColorSpectrumShape.Ring"/>.

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Expander"/> class style setters extension methods.
 /// </summary>
 public static partial class ExpanderSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderContentTransition(this ElementBuilder<Style> builder, Avalonia.Animation.IPageTransition value)
+    public static StyleBuilder SetExpanderContentTransition(this StyleBuilder builder, Avalonia.Animation.IPageTransition value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderContentTransition(this ElementBuilder<KeyFrame> builder, Avalonia.Animation.IPageTransition value)
+    public static KeyFrameBuilder SetExpanderContentTransition(this KeyFrameBuilder builder, Avalonia.Animation.IPageTransition value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Expander.ContentTransitionProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ExpanderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderContentTransition(this ElementBuilder<Style> builder, IObservable<Avalonia.Animation.IPageTransition> observable)
+    public static StyleBuilder SetExpanderContentTransition(this StyleBuilder builder, IObservable<Avalonia.Animation.IPageTransition> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderContentTransition(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Animation.IPageTransition> observable)
+    public static KeyFrameBuilder SetExpanderContentTransition(this KeyFrameBuilder builder, IObservable<Avalonia.Animation.IPageTransition> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ExpanderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ContentTransitionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderContentTransition(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetExpanderContentTransition(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderContentTransition(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetExpanderContentTransition(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ContentTransitionProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ExpanderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderExpandDirection(this ElementBuilder<Style> builder, Avalonia.Controls.ExpandDirection value)
+    public static StyleBuilder SetExpanderExpandDirection(this StyleBuilder builder, Avalonia.Controls.ExpandDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderExpandDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.ExpandDirection value)
+    public static KeyFrameBuilder SetExpanderExpandDirection(this KeyFrameBuilder builder, Avalonia.Controls.ExpandDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Expander.ExpandDirectionProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ExpanderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderExpandDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.ExpandDirection> observable)
+    public static StyleBuilder SetExpanderExpandDirection(this StyleBuilder builder, IObservable<Avalonia.Controls.ExpandDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderExpandDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.ExpandDirection> observable)
+    public static KeyFrameBuilder SetExpanderExpandDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.ExpandDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ExpanderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.ExpandDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderExpandDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetExpanderExpandDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderExpandDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetExpanderExpandDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.ExpandDirectionProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ExpanderSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderIsExpanded(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetExpanderIsExpanded(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderIsExpanded(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetExpanderIsExpanded(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Expander.IsExpandedProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ExpanderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderIsExpanded(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetExpanderIsExpanded(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderIsExpanded(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetExpanderIsExpanded(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ExpanderSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Expander.IsExpandedProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetExpanderIsExpanded(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetExpanderIsExpanded(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ExpanderSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetExpanderIsExpanded(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetExpanderIsExpanded(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ExpanderSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Expander.IsExpandedProperty"/>.
     /// </summary>

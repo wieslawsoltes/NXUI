@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ColorPicker"/> class property extension methods.
 /// </summary>
 public static partial class ColorPickerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.ContentProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class ColorPickerExtensions
         return builder.WithBinding(PropertyMetadata.ColorPicker_Content, Avalonia.Controls.ColorPicker.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.ContentProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ColorPickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorPicker.ContentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorPicker.ContentProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class ColorPickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.ContentTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class ColorPickerExtensions
         return builder.WithBinding(PropertyMetadata.ColorPicker_ContentTemplate, Avalonia.Controls.ColorPicker.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.ContentTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class ColorPickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorPicker.ContentTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorPicker.ContentTemplateProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class ColorPickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class ColorPickerExtensions
         return builder.WithBinding(PropertyMetadata.ColorPicker_HorizontalContentAlignment, Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class ColorPickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class ColorPickerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_HorizontalContentAlignment, Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Stretch"/>.
@@ -762,7 +746,6 @@ public static partial class ColorPickerExtensions
         obj[Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_HorizontalContentAlignment, Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Left);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Left"/>.
@@ -787,7 +769,6 @@ public static partial class ColorPickerExtensions
         obj[Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Left;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -799,7 +780,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_HorizontalContentAlignment, Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Center"/>.
@@ -812,7 +792,6 @@ public static partial class ColorPickerExtensions
         obj[Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty] = Avalonia.Layout.HorizontalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -824,7 +803,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_HorizontalContentAlignment, Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty, Avalonia.Layout.HorizontalAlignment.Right);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.HorizontalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.HorizontalAlignment.Right"/>.
@@ -838,7 +816,6 @@ public static partial class ColorPickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> literal value for hot reload builds.
@@ -885,8 +862,6 @@ public static partial class ColorPickerExtensions
         return builder.WithBinding(PropertyMetadata.ColorPicker_VerticalContentAlignment, Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> value on a referenced control.
@@ -933,7 +908,6 @@ public static partial class ColorPickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty
 
     /// <summary>
@@ -1079,7 +1053,6 @@ public static partial class ColorPickerExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1091,7 +1064,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_VerticalContentAlignment, Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Stretch);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Stretch"/>.
@@ -1104,7 +1076,6 @@ public static partial class ColorPickerExtensions
         obj[Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Stretch;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1116,7 +1087,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_VerticalContentAlignment, Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Top);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Top"/>.
@@ -1129,7 +1099,6 @@ public static partial class ColorPickerExtensions
         obj[Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Top;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1141,7 +1110,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_VerticalContentAlignment, Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Center"/>.
@@ -1154,7 +1122,6 @@ public static partial class ColorPickerExtensions
         obj[Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty] = Avalonia.Layout.VerticalAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> enum value for hot reload builds.
@@ -1166,7 +1133,6 @@ public static partial class ColorPickerExtensions
         return builder.WithValue(PropertyMetadata.ColorPicker_VerticalContentAlignment, Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty, Avalonia.Layout.VerticalAlignment.Bottom);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ColorPicker.VerticalContentAlignmentProperty"/> property value to <see cref="Avalonia.Layout.VerticalAlignment.Bottom"/>.

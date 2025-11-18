@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Image"/> class style setters extension methods.
 /// </summary>
 public static partial class ImageSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageSource(this ElementBuilder<Style> builder, Avalonia.Media.IImage value)
+    public static StyleBuilder SetImageSource(this StyleBuilder builder, Avalonia.Media.IImage value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageSource(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IImage value)
+    public static KeyFrameBuilder SetImageSource(this KeyFrameBuilder builder, Avalonia.Media.IImage value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Image.SourceProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageSource(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IImage> observable)
+    public static StyleBuilder SetImageSource(this StyleBuilder builder, IObservable<Avalonia.Media.IImage> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageSource(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IImage> observable)
+    public static KeyFrameBuilder SetImageSource(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IImage> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.SourceProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageSource(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetImageSource(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageSource(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetImageSource(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.SourceProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ImageSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageBlendMode(this ElementBuilder<Style> builder, Avalonia.Media.Imaging.BitmapBlendingMode value)
+    public static StyleBuilder SetImageBlendMode(this StyleBuilder builder, Avalonia.Media.Imaging.BitmapBlendingMode value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageBlendMode(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Imaging.BitmapBlendingMode value)
+    public static KeyFrameBuilder SetImageBlendMode(this KeyFrameBuilder builder, Avalonia.Media.Imaging.BitmapBlendingMode value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Image.BlendModeProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageBlendMode(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> observable)
+    public static StyleBuilder SetImageBlendMode(this StyleBuilder builder, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageBlendMode(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> observable)
+    public static KeyFrameBuilder SetImageBlendMode(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Imaging.BitmapBlendingMode> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.BlendModeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageBlendMode(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetImageBlendMode(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageBlendMode(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetImageBlendMode(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.BlendModeProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ImageSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageStretch(this ElementBuilder<Style> builder, Avalonia.Media.Stretch value)
+    public static StyleBuilder SetImageStretch(this StyleBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Stretch value)
+    public static KeyFrameBuilder SetImageStretch(this KeyFrameBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Image.StretchProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static StyleBuilder SetImageStretch(this StyleBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static KeyFrameBuilder SetImageStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetImageStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetImageStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ImageSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageStretchDirection(this ElementBuilder<Style> builder, Avalonia.Media.StretchDirection value)
+    public static StyleBuilder SetImageStretchDirection(this StyleBuilder builder, Avalonia.Media.StretchDirection value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageStretchDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Media.StretchDirection value)
+    public static KeyFrameBuilder SetImageStretchDirection(this KeyFrameBuilder builder, Avalonia.Media.StretchDirection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Image.StretchDirectionProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageStretchDirection(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.StretchDirection> observable)
+    public static StyleBuilder SetImageStretchDirection(this StyleBuilder builder, IObservable<Avalonia.Media.StretchDirection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageStretchDirection(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.StretchDirection> observable)
+    public static KeyFrameBuilder SetImageStretchDirection(this KeyFrameBuilder builder, IObservable<Avalonia.Media.StretchDirection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ImageSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Image.StretchDirectionProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ImageSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetImageStretchDirection(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetImageStretchDirection(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ImageSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetImageStretchDirection(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetImageStretchDirection(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ImageSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Image.StretchDirectionProperty"/>.
     /// </summary>

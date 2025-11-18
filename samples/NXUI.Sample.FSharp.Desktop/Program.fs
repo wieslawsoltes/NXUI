@@ -1,7 +1,6 @@
 ﻿open System.Reactive.Subjects
 open Avalonia
 open Avalonia.Controls
-open Avalonia.Media
 open Avalonia.Styling
 open NXUI.Extensions
 open NXUI.HotReload
@@ -45,10 +44,6 @@ let counter() =
         .HorizontalAlignmentCenter()
         .VerticalAlignmentCenter()
         .Children(
-            TextBlock()
-                .TextWrapping(TextWrapping.Wrap)
-                .Text("Run `dotnet watch --project samples/NXUI.Sample.FSharp.Desktop` to see hot reload in action. Missing updates typically mean the project was built without EnableNXUIHotReload set to true.")
-                .DockTop(),
             TextBlock()
                 .Text(counterText |> _.ToBinding())
                 .DockTop(),

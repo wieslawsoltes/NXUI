@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.WrapPanel"/> class property extension methods.
 /// </summary>
 public static partial class WrapPanelExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class WrapPanelExtensions
         return builder.WithBinding(PropertyMetadata.WrapPanel_ItemSpacing, Avalonia.Controls.WrapPanel.ItemSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemSpacingProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class WrapPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.WrapPanel.ItemSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemSpacingProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class WrapPanelExtensions
         return builder.WithBinding(PropertyMetadata.WrapPanel_LineSpacing, Avalonia.Controls.WrapPanel.LineSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.LineSpacingProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class WrapPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.WrapPanel.LineSpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.LineSpacingProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class WrapPanelExtensions
         return builder.WithBinding(PropertyMetadata.WrapPanel_Orientation, Avalonia.Controls.WrapPanel.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class WrapPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.WrapPanel.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.OrientationProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class WrapPanelExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class WrapPanelExtensions
         return builder.WithValue(PropertyMetadata.WrapPanel_Orientation, Avalonia.Controls.WrapPanel.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -762,7 +746,6 @@ public static partial class WrapPanelExtensions
         obj[Avalonia.Controls.WrapPanel.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class WrapPanelExtensions
         return builder.WithValue(PropertyMetadata.WrapPanel_Orientation, Avalonia.Controls.WrapPanel.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -788,7 +770,6 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> literal value for hot reload builds.
@@ -835,8 +816,6 @@ public static partial class WrapPanelExtensions
         return builder.WithBinding(PropertyMetadata.WrapPanel_ItemsAlignment, Avalonia.Controls.WrapPanel.ItemsAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> value on a referenced control.
@@ -883,7 +862,6 @@ public static partial class WrapPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.WrapPanel.ItemsAlignmentProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemsAlignmentProperty
 
     /// <summary>
@@ -1029,7 +1007,6 @@ public static partial class WrapPanelExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> enum value for hot reload builds.
@@ -1041,7 +1018,6 @@ public static partial class WrapPanelExtensions
         return builder.WithValue(PropertyMetadata.WrapPanel_ItemsAlignment, Avalonia.Controls.WrapPanel.ItemsAlignmentProperty, Avalonia.Controls.WrapPanelItemsAlignment.Start);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.WrapPanelItemsAlignment.Start"/>.
@@ -1054,7 +1030,6 @@ public static partial class WrapPanelExtensions
         obj[Avalonia.Controls.WrapPanel.ItemsAlignmentProperty] = Avalonia.Controls.WrapPanelItemsAlignment.Start;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> enum value for hot reload builds.
@@ -1066,7 +1041,6 @@ public static partial class WrapPanelExtensions
         return builder.WithValue(PropertyMetadata.WrapPanel_ItemsAlignment, Avalonia.Controls.WrapPanel.ItemsAlignmentProperty, Avalonia.Controls.WrapPanelItemsAlignment.Center);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.WrapPanelItemsAlignment.Center"/>.
@@ -1079,7 +1053,6 @@ public static partial class WrapPanelExtensions
         obj[Avalonia.Controls.WrapPanel.ItemsAlignmentProperty] = Avalonia.Controls.WrapPanelItemsAlignment.Center;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> enum value for hot reload builds.
@@ -1091,7 +1064,6 @@ public static partial class WrapPanelExtensions
         return builder.WithValue(PropertyMetadata.WrapPanel_ItemsAlignment, Avalonia.Controls.WrapPanel.ItemsAlignmentProperty, Avalonia.Controls.WrapPanelItemsAlignment.End);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemsAlignmentProperty"/> property value to <see cref="Avalonia.Controls.WrapPanelItemsAlignment.End"/>.
@@ -1105,7 +1077,6 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> literal value for hot reload builds.
@@ -1152,8 +1123,6 @@ public static partial class WrapPanelExtensions
         return builder.WithBinding(PropertyMetadata.WrapPanel_ItemWidth, Avalonia.Controls.WrapPanel.ItemWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemWidthProperty"/> value on a referenced control.
@@ -1200,7 +1169,6 @@ public static partial class WrapPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.WrapPanel.ItemWidthProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemWidthProperty
 
     /// <summary>
@@ -1347,7 +1315,6 @@ public static partial class WrapPanelExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> literal value for hot reload builds.
@@ -1394,8 +1361,6 @@ public static partial class WrapPanelExtensions
         return builder.WithBinding(PropertyMetadata.WrapPanel_ItemHeight, Avalonia.Controls.WrapPanel.ItemHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.WrapPanel.ItemHeightProperty"/> value on a referenced control.
@@ -1442,7 +1407,6 @@ public static partial class WrapPanelExtensions
         return elementRef.SetBinding(Avalonia.Controls.WrapPanel.ItemHeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.WrapPanel.ItemHeightProperty
 
     /// <summary>

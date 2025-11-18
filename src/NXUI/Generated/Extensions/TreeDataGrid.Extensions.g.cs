@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TreeDataGrid"/> class property extension methods.
 /// </summary>
 public static partial class TreeDataGridExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TreeDataGridExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_AutoDragDropRows, Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TreeDataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.AutoDragDropRowsProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TreeDataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TreeDataGridExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_CanUserResizeColumns, Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TreeDataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.CanUserResizeColumnsProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TreeDataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TreeDataGridExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_CanUserSortColumns, Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TreeDataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.CanUserSortColumnsProperty
 
     /// <summary>
@@ -828,7 +814,6 @@ public static partial class TreeDataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> literal value for hot reload builds.
@@ -875,8 +860,6 @@ public static partial class TreeDataGridExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_ElementFactory, Avalonia.Controls.TreeDataGrid.ElementFactoryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.ElementFactoryProperty"/> value on a referenced control.
@@ -923,7 +906,6 @@ public static partial class TreeDataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.ElementFactoryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.ElementFactoryProperty
 
     /// <summary>
@@ -1070,7 +1052,6 @@ public static partial class TreeDataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> literal value for hot reload builds.
@@ -1117,8 +1098,6 @@ public static partial class TreeDataGridExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_Rows, Avalonia.Controls.TreeDataGrid.RowsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.RowsProperty"/> value on a referenced control.
@@ -1165,7 +1144,6 @@ public static partial class TreeDataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.RowsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.RowsProperty
 
     /// <summary>
@@ -1402,7 +1380,6 @@ public static partial class TreeDataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> literal value for hot reload builds.
@@ -1449,8 +1426,6 @@ public static partial class TreeDataGridExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_ShowColumnHeaders, Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty"/> value on a referenced control.
@@ -1497,7 +1472,6 @@ public static partial class TreeDataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.ShowColumnHeadersProperty
 
     /// <summary>
@@ -1644,7 +1618,6 @@ public static partial class TreeDataGridExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> literal value for hot reload builds.
@@ -1691,8 +1664,6 @@ public static partial class TreeDataGridExtensions
         return builder.WithBinding(PropertyMetadata.TreeDataGrid_Source, Avalonia.Controls.TreeDataGrid.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TreeDataGrid.SourceProperty"/> value on a referenced control.
@@ -1739,7 +1710,6 @@ public static partial class TreeDataGridExtensions
         return elementRef.SetBinding(Avalonia.Controls.TreeDataGrid.SourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TreeDataGrid.SourceProperty
 
     /// <summary>
@@ -1934,7 +1904,6 @@ public static partial class TreeDataGridExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TreeDataGrid.RowDragStartedEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -1977,7 +1946,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.RowDragOverEvent
 
@@ -2027,7 +1995,6 @@ public static partial class TreeDataGridExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TreeDataGrid.RowDragOverEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2070,7 +2037,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.RowDropEvent
 
@@ -2120,7 +2086,6 @@ public static partial class TreeDataGridExtensions
     {
         return obj.GetObservable(Avalonia.Controls.TreeDataGrid.RowDropEvent, routes);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a routed event handler for hot reload builds.
@@ -2163,7 +2128,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.CellClearing
 
@@ -2198,7 +2162,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.CellClearing -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2220,7 +2183,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.CellPrepared
 
@@ -2255,7 +2217,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.CellPrepared -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2277,7 +2238,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.CellValueChanged
 
@@ -2312,7 +2272,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.CellValueChanged -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2334,7 +2293,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.RowClearing
 
@@ -2369,7 +2327,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.RowClearing -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2391,7 +2348,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.RowPrepared
 
@@ -2426,7 +2382,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.RowPrepared -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2448,7 +2403,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.RowDragStarted
 
@@ -2483,7 +2437,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.RowDragStarted -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2505,7 +2458,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.RowDragOver
 
@@ -2540,7 +2492,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.RowDragOver -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2562,7 +2513,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.RowDrop
 
@@ -2597,7 +2547,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.RowDrop -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2619,7 +2568,6 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 
     // Avalonia.Controls.TreeDataGrid.SelectionChanging
 
@@ -2654,7 +2602,6 @@ public static partial class TreeDataGridExtensions
                 h => obj.SelectionChanging -= h)
             .Select(x => x.EventArgs);
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a CLR event handler for hot reload builds.
@@ -2676,5 +2623,4 @@ public static partial class TreeDataGridExtensions
         }));
     }
 
-#endif
 }

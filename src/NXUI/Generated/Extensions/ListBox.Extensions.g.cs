@@ -2,10 +2,8 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ListBox"/> class property extension methods.
@@ -102,7 +100,6 @@ public static partial class ListBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> literal value for hot reload builds.
@@ -149,8 +146,6 @@ public static partial class ListBoxExtensions
         return builder.WithBinding(PropertyMetadata.ListBox_SelectedItems, Avalonia.Controls.ListBox.SelectedItemsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> value on a referenced control.
@@ -197,7 +192,6 @@ public static partial class ListBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectedItemsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ListBox.SelectedItemsProperty
 
     /// <summary>
@@ -344,7 +338,6 @@ public static partial class ListBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> literal value for hot reload builds.
@@ -391,8 +384,6 @@ public static partial class ListBoxExtensions
         return builder.WithBinding(PropertyMetadata.ListBox_Selection, Avalonia.Controls.ListBox.SelectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> value on a referenced control.
@@ -439,7 +430,6 @@ public static partial class ListBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectionProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ListBox.SelectionProperty
 
     /// <summary>
@@ -586,7 +576,6 @@ public static partial class ListBoxExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> literal value for hot reload builds.
@@ -633,8 +622,6 @@ public static partial class ListBoxExtensions
         return builder.WithBinding(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> value on a referenced control.
@@ -681,7 +668,6 @@ public static partial class ListBoxExtensions
         return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectionModeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.ListBox.SelectionModeProperty
 
     /// <summary>
@@ -827,7 +813,6 @@ public static partial class ListBoxExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
@@ -839,7 +824,6 @@ public static partial class ListBoxExtensions
         return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.Single);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Single"/>.
@@ -852,7 +836,6 @@ public static partial class ListBoxExtensions
         obj[Avalonia.Controls.ListBox.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Single;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
@@ -864,7 +847,6 @@ public static partial class ListBoxExtensions
         return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.Multiple);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Multiple"/>.
@@ -877,7 +859,6 @@ public static partial class ListBoxExtensions
         obj[Avalonia.Controls.ListBox.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Multiple;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
@@ -889,7 +870,6 @@ public static partial class ListBoxExtensions
         return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.Toggle);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Toggle"/>.
@@ -902,7 +882,6 @@ public static partial class ListBoxExtensions
         obj[Avalonia.Controls.ListBox.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Toggle;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
@@ -914,7 +893,6 @@ public static partial class ListBoxExtensions
         return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.AlwaysSelected);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.AlwaysSelected"/>.

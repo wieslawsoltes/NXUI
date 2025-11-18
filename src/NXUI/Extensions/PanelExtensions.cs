@@ -2,9 +2,7 @@
 
 using System;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// 
@@ -13,7 +11,6 @@ public static partial class PanelExtensions
 {
     // Children
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds an existing control instance as a child for hot reload builds.
@@ -75,7 +72,6 @@ public static partial class PanelExtensions
             ChildSlot.Visual);
     }
 
-#endif
 
     /// <summary>
     /// 

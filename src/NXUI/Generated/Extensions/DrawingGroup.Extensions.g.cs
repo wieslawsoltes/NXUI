@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.DrawingGroup"/> class property extension methods.
 /// </summary>
 public static partial class DrawingGroupExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Opacity(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, System.Double value)
+    public static DrawingGroupBuilder Opacity(this DrawingGroupBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_Opacity, Avalonia.Media.DrawingGroup.OpacityProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Opacity(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder Opacity(
+        this DrawingGroupBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Opacity(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder Opacity(
+        this DrawingGroupBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class DrawingGroupExtensions
         return builder.WithBinding(PropertyMetadata.DrawingGroup_Opacity, Avalonia.Media.DrawingGroup.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DrawingGroupExtensions
         return elementRef.SetBinding(Avalonia.Media.DrawingGroup.OpacityProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.OpacityProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Transform? value)
+    public static DrawingGroupBuilder Transform(this DrawingGroupBuilder builder, Avalonia.Media.Transform? value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_Transform, Avalonia.Media.DrawingGroup.TransformProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder Transform(
+        this DrawingGroupBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Transform(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder Transform(
+        this DrawingGroupBuilder builder,
         IObservable<Avalonia.Media.Transform?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class DrawingGroupExtensions
         return builder.WithBinding(PropertyMetadata.DrawingGroup_Transform, Avalonia.Media.DrawingGroup.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.TransformProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class DrawingGroupExtensions
         return elementRef.SetBinding(Avalonia.Media.DrawingGroup.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.TransformProperty
 
     /// <summary>
@@ -482,7 +472,6 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> literal value for hot reload builds.
@@ -490,7 +479,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.Geometry? value)
+    public static DrawingGroupBuilder ClipGeometry(this DrawingGroupBuilder builder, Avalonia.Media.Geometry? value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_ClipGeometry, Avalonia.Media.DrawingGroup.ClipGeometryProperty, value);
     }
@@ -503,8 +492,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder ClipGeometry(
+        this DrawingGroupBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -520,8 +509,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> ClipGeometry(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder ClipGeometry(
+        this DrawingGroupBuilder builder,
         IObservable<Avalonia.Media.Geometry?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -529,8 +518,6 @@ public static partial class DrawingGroupExtensions
         return builder.WithBinding(PropertyMetadata.DrawingGroup_ClipGeometry, Avalonia.Media.DrawingGroup.ClipGeometryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.ClipGeometryProperty"/> value on a referenced control.
@@ -577,7 +564,6 @@ public static partial class DrawingGroupExtensions
         return elementRef.SetBinding(Avalonia.Media.DrawingGroup.ClipGeometryProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.ClipGeometryProperty
 
     /// <summary>
@@ -717,7 +703,6 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> literal value for hot reload builds.
@@ -725,7 +710,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.IBrush? value)
+    public static DrawingGroupBuilder OpacityMask(this DrawingGroupBuilder builder, Avalonia.Media.IBrush? value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_OpacityMask, Avalonia.Media.DrawingGroup.OpacityMaskProperty, value);
     }
@@ -738,8 +723,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder OpacityMask(
+        this DrawingGroupBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -755,8 +740,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> OpacityMask(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder OpacityMask(
+        this DrawingGroupBuilder builder,
         IObservable<Avalonia.Media.IBrush?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -764,8 +749,6 @@ public static partial class DrawingGroupExtensions
         return builder.WithBinding(PropertyMetadata.DrawingGroup_OpacityMask, Avalonia.Media.DrawingGroup.OpacityMaskProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.OpacityMaskProperty"/> value on a referenced control.
@@ -812,7 +795,6 @@ public static partial class DrawingGroupExtensions
         return elementRef.SetBinding(Avalonia.Media.DrawingGroup.OpacityMaskProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.OpacityMaskProperty
 
     /// <summary>
@@ -952,7 +934,6 @@ public static partial class DrawingGroupExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> literal value for hot reload builds.
@@ -960,7 +941,7 @@ public static partial class DrawingGroupExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Children(this ElementBuilder<Avalonia.Media.DrawingGroup> builder, Avalonia.Media.DrawingCollection value)
+    public static DrawingGroupBuilder Children(this DrawingGroupBuilder builder, Avalonia.Media.DrawingCollection value)
     {
         return builder.WithValue(PropertyMetadata.DrawingGroup_Children, Avalonia.Media.DrawingGroup.ChildrenProperty, value);
     }
@@ -973,8 +954,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Children(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder Children(
+        this DrawingGroupBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -990,8 +971,8 @@ public static partial class DrawingGroupExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.DrawingGroup> Children(
-        this ElementBuilder<Avalonia.Media.DrawingGroup> builder,
+    public static DrawingGroupBuilder Children(
+        this DrawingGroupBuilder builder,
         IObservable<Avalonia.Media.DrawingCollection> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -999,8 +980,6 @@ public static partial class DrawingGroupExtensions
         return builder.WithBinding(PropertyMetadata.DrawingGroup_Children, Avalonia.Media.DrawingGroup.ChildrenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.DrawingGroup.ChildrenProperty"/> value on a referenced control.
@@ -1047,7 +1026,6 @@ public static partial class DrawingGroupExtensions
         return elementRef.SetBinding(Avalonia.Media.DrawingGroup.ChildrenProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.DrawingGroup.ChildrenProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.BlurEffect"/> class property extension methods.
 /// </summary>
 public static partial class BlurEffectExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class BlurEffectExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BlurEffect> Radius(this ElementBuilder<Avalonia.Media.BlurEffect> builder, System.Double value)
+    public static BlurEffectBuilder Radius(this BlurEffectBuilder builder, System.Double value)
     {
         return builder.WithValue(PropertyMetadata.BlurEffect_Radius, Avalonia.Media.BlurEffect.RadiusProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class BlurEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BlurEffect> Radius(
-        this ElementBuilder<Avalonia.Media.BlurEffect> builder,
+    public static BlurEffectBuilder Radius(
+        this BlurEffectBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class BlurEffectExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.BlurEffect> Radius(
-        this ElementBuilder<Avalonia.Media.BlurEffect> builder,
+    public static BlurEffectBuilder Radius(
+        this BlurEffectBuilder builder,
         IObservable<System.Double> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class BlurEffectExtensions
         return builder.WithBinding(PropertyMetadata.BlurEffect_Radius, Avalonia.Media.BlurEffect.RadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.BlurEffect.RadiusProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class BlurEffectExtensions
         return elementRef.SetBinding(Avalonia.Media.BlurEffect.RadiusProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.BlurEffect.RadiusProperty
 
     /// <summary>

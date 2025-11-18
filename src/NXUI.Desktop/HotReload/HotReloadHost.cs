@@ -7,9 +7,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Styling;
 using NXUI.Extensions;
 using DesktopBootstrap = NXUI.Desktop.NXUI;
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// Helper that wires NXUI hot reload into classic desktop lifetimes.
@@ -35,7 +33,6 @@ public static class HotReloadHost
         ArgumentNullException.ThrowIfNull(build);
         args ??= Array.Empty<string>();
 
-#if NXUI_HOTRELOAD
         if (HotReloadManager.IsHotReloadBuild)
         {
             return AppBuilder.Configure<Application>()
@@ -48,12 +45,10 @@ public static class HotReloadHost
                     args,
                     shutdownMode);
         }
-#endif
 
         return DesktopBootstrap.Run(() => EnsureWindow(build()), applicationName, args, themeVariant, shutdownMode);
     }
 
-#if NXUI_HOTRELOAD
     private static void ConfigureLifetime(
         Func<object> build,
         string applicationName,
@@ -71,7 +66,7 @@ public static class HotReloadHost
         IClassicDesktopStyleApplicationLifetime lifetime)
     {
         var initial = build() ?? throw new InvalidOperationException("Hot reload build delegate returned null.");
-        if (initial is not ElementBuilder<Window> initialBuilder)
+        if (initial is not WindowBuilder initialBuilder)
         {
             HotReloadDiagnostics.Trace("Build delegate returned an instantiated Window. Falling back to cold path.");
             return false;
@@ -80,7 +75,7 @@ public static class HotReloadHost
         ElementNode CreateNode()
         {
             var snapshot = build() ?? throw new InvalidOperationException("Hot reload build delegate returned null.");
-            if (snapshot is ElementBuilder<Window> builder)
+            if (snapshot is WindowBuilder builder)
             {
                 return builder.Node;
             }
@@ -103,7 +98,6 @@ public static class HotReloadHost
         window.Closed += (_, _) => handle.Dispose();
         return true;
     }
-#endif
 
     private static Window EnsureWindow(object? value)
     {
@@ -112,12 +106,10 @@ public static class HotReloadHost
             return window;
         }
 
-#if NXUI_HOTRELOAD
-        if (value is ElementBuilder<Window> builder)
+        if (value is WindowBuilder builder)
         {
             return builder.Mount();
         }
-#endif
 
         throw new InvalidOperationException(value is null
             ? "Build delegate returned null. Expected a Window."

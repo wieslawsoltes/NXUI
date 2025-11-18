@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ColumnDefinition"/> class style setters extension methods.
 /// </summary>
 public static partial class ColumnDefinitionSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionMaxWidth(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetColumnDefinitionMaxWidth(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionMaxWidth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetColumnDefinitionMaxWidth(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColumnDefinition.MaxWidthProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ColumnDefinitionSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionMaxWidth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetColumnDefinitionMaxWidth(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionMaxWidth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetColumnDefinitionMaxWidth(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ColumnDefinitionSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MaxWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionMaxWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColumnDefinitionMaxWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionMaxWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColumnDefinitionMaxWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MaxWidthProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ColumnDefinitionSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionMinWidth(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetColumnDefinitionMinWidth(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionMinWidth(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetColumnDefinitionMinWidth(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColumnDefinition.MinWidthProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ColumnDefinitionSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionMinWidth(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetColumnDefinitionMinWidth(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionMinWidth(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetColumnDefinitionMinWidth(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ColumnDefinitionSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.MinWidthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionMinWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColumnDefinitionMinWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionMinWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColumnDefinitionMinWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.MinWidthProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ColumnDefinitionSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionWidth(this ElementBuilder<Style> builder, Avalonia.Controls.GridLength value)
+    public static StyleBuilder SetColumnDefinitionWidth(this StyleBuilder builder, Avalonia.Controls.GridLength value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.GridLength value)
+    public static KeyFrameBuilder SetColumnDefinitionWidth(this KeyFrameBuilder builder, Avalonia.Controls.GridLength value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ColumnDefinition.WidthProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ColumnDefinitionSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionWidth(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.GridLength> observable)
+    public static StyleBuilder SetColumnDefinitionWidth(this StyleBuilder builder, IObservable<Avalonia.Controls.GridLength> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionWidth(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.GridLength> observable)
+    public static KeyFrameBuilder SetColumnDefinitionWidth(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.GridLength> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ColumnDefinitionSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ColumnDefinition.WidthProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetColumnDefinitionWidth(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetColumnDefinitionWidth(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ColumnDefinitionSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetColumnDefinitionWidth(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetColumnDefinitionWidth(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ColumnDefinitionSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ColumnDefinition.WidthProperty"/>.
     /// </summary>

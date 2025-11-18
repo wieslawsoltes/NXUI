@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Shape"/> class style setters extension methods.
 /// </summary>
 public static partial class ShapeSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeFill(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetShapeFill(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeFill(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetShapeFill(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.FillProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeFill(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetShapeFill(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeFill(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetShapeFill(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.FillProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeFill(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeFill(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeFill(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeFill(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.FillProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ShapeSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStretch(this ElementBuilder<Style> builder, Avalonia.Media.Stretch value)
+    public static StyleBuilder SetShapeStretch(this StyleBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Media.Stretch value)
+    public static KeyFrameBuilder SetShapeStretch(this KeyFrameBuilder builder, Avalonia.Media.Stretch value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StretchProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStretch(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static StyleBuilder SetShapeStretch(this StyleBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStretch(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.Stretch> observable)
+    public static KeyFrameBuilder SetShapeStretch(this KeyFrameBuilder builder, IObservable<Avalonia.Media.Stretch> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StretchProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStretch(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeStretch(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStretch(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeStretch(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StretchProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ShapeSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStroke(this ElementBuilder<Style> builder, Avalonia.Media.IBrush value)
+    public static StyleBuilder SetShapeStroke(this StyleBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStroke(this ElementBuilder<KeyFrame> builder, Avalonia.Media.IBrush value)
+    public static KeyFrameBuilder SetShapeStroke(this KeyFrameBuilder builder, Avalonia.Media.IBrush value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStroke(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static StyleBuilder SetShapeStroke(this StyleBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStroke(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.IBrush> observable)
+    public static KeyFrameBuilder SetShapeStroke(this KeyFrameBuilder builder, IObservable<Avalonia.Media.IBrush> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStroke(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeStroke(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStroke(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeStroke(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ShapeSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeDashArray(this ElementBuilder<Style> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static StyleBuilder SetShapeStrokeDashArray(this StyleBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeDashArray(this ElementBuilder<KeyFrame> builder, Avalonia.Collections.AvaloniaList<System.Double> value)
+    public static KeyFrameBuilder SetShapeStrokeDashArray(this KeyFrameBuilder builder, Avalonia.Collections.AvaloniaList<System.Double> value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeDashArray(this ElementBuilder<Style> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static StyleBuilder SetShapeStrokeDashArray(this StyleBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeDashArray(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
+    public static KeyFrameBuilder SetShapeStrokeDashArray(this KeyFrameBuilder builder, IObservable<Avalonia.Collections.AvaloniaList<System.Double>> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeDashArray(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeStrokeDashArray(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeDashArray(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeStrokeDashArray(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashArrayProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ShapeSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeDashOffset(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetShapeStrokeDashOffset(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeDashOffset(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetShapeStrokeDashOffset(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeDashOffset(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetShapeStrokeDashOffset(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeDashOffset(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetShapeStrokeDashOffset(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeDashOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeStrokeDashOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeDashOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeStrokeDashOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeDashOffsetProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ShapeSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeThickness(this ElementBuilder<Style> builder, System.Double value)
+    public static StyleBuilder SetShapeStrokeThickness(this StyleBuilder builder, System.Double value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeThickness(this ElementBuilder<KeyFrame> builder, System.Double value)
+    public static KeyFrameBuilder SetShapeStrokeThickness(this KeyFrameBuilder builder, System.Double value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeThickness(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    public static StyleBuilder SetShapeStrokeThickness(this StyleBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeThickness(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    public static KeyFrameBuilder SetShapeStrokeThickness(this KeyFrameBuilder builder, IObservable<System.Double> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeThickness(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeStrokeThickness(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeThickness(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeStrokeThickness(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeThicknessProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ShapeSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeLineCap(this ElementBuilder<Style> builder, Avalonia.Media.PenLineCap value)
+    public static StyleBuilder SetShapeStrokeLineCap(this StyleBuilder builder, Avalonia.Media.PenLineCap value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeLineCap(this ElementBuilder<KeyFrame> builder, Avalonia.Media.PenLineCap value)
+    public static KeyFrameBuilder SetShapeStrokeLineCap(this KeyFrameBuilder builder, Avalonia.Media.PenLineCap value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeLineCap(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.PenLineCap> observable)
+    public static StyleBuilder SetShapeStrokeLineCap(this StyleBuilder builder, IObservable<Avalonia.Media.PenLineCap> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeLineCap(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.PenLineCap> observable)
+    public static KeyFrameBuilder SetShapeStrokeLineCap(this KeyFrameBuilder builder, IObservable<Avalonia.Media.PenLineCap> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeLineCap(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeStrokeLineCap(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeLineCap(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeStrokeLineCap(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeLineCapProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class ShapeSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeJoin(this ElementBuilder<Style> builder, Avalonia.Media.PenLineJoin value)
+    public static StyleBuilder SetShapeStrokeJoin(this StyleBuilder builder, Avalonia.Media.PenLineJoin value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeJoin(this ElementBuilder<KeyFrame> builder, Avalonia.Media.PenLineJoin value)
+    public static KeyFrameBuilder SetShapeStrokeJoin(this KeyFrameBuilder builder, Avalonia.Media.PenLineJoin value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Shapes.Shape.StrokeJoinProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeJoin(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.PenLineJoin> observable)
+    public static StyleBuilder SetShapeStrokeJoin(this StyleBuilder builder, IObservable<Avalonia.Media.PenLineJoin> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeJoin(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.PenLineJoin> observable)
+    public static KeyFrameBuilder SetShapeStrokeJoin(this KeyFrameBuilder builder, IObservable<Avalonia.Media.PenLineJoin> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class ShapeSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Shapes.Shape.StrokeJoinProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetShapeStrokeJoin(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetShapeStrokeJoin(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class ShapeSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetShapeStrokeJoin(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetShapeStrokeJoin(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class ShapeSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Shapes.Shape.StrokeJoinProperty"/>.
     /// </summary>

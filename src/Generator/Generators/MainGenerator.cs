@@ -18,6 +18,7 @@ public class MainGenerator
         ElementRefExtensionsGenerator = new ElementRefExtensionsGenerator(reflectoniaFactory, log);
         SettersGenerator = new SettersGenerator(reflectoniaFactory, log);
         MetadataGenerator = new MetadataGenerator(reflectoniaFactory, log);
+        BuilderAliasesGenerator = new BuilderAliasesGenerator(reflectoniaFactory, log);
     }
 
     private ReflectoniaFactory ReflectoniaFactory { get; }
@@ -36,6 +37,8 @@ public class MainGenerator
 
     public MetadataGenerator MetadataGenerator { get; }
 
+    public BuilderAliasesGenerator BuilderAliasesGenerator { get; }
+
     public void Generate(string outputPath, Predicate<Assembly> assemblyFilter, Predicate<Type> typeFilter)
     {
         var buildersPath = Path.Combine(outputPath, "Builders");
@@ -52,6 +55,8 @@ public class MainGenerator
         {
             return;
         }
+
+        BuilderAliasRegistry.Initialize(classes, ReflectoniaFactory);
 
         if (!Directory.Exists(buildersPath))
         {
@@ -90,5 +95,9 @@ public class MainGenerator
         SettersGenerator.Generate(settersPath, classes);
 
         MetadataGenerator.Generate(hotReloadPath, classes);
+
+        var projectRoot = Path.GetFullPath(Path.Combine(outputPath, ".."));
+        var builderAliasesProps = Path.Combine(projectRoot, "ElementBuilderAliases.props");
+        BuilderAliasesGenerator.Generate(builderAliasesProps, classes);
     }
 }

@@ -1,8 +1,13 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildThisFileDirectory)\ImplicitUsings.props"/>
+  <Import Project="$(MSBuildThisFileDirectory)\ElementBuilderAliases.props" Condition="Exists('$(MSBuildThisFileDirectory)ElementBuilderAliases.props') and '$(NXUIElementBuilderAliasesImported)' != 'true'"/>
+
+  <PropertyGroup>
+    <NXUIElementBuilderAliasesImported>true</NXUIElementBuilderAliasesImported>
+  </PropertyGroup>
 
   <ItemGroup Condition="'$(NXUIHotReloadOptionConfigured)' != 'true'">
-    <RuntimeHostConfigurationOption Include="NXUI.HotReload.Enabled" Value="$(EnableNXUIHotReload)" Trim="true" />
+    <RuntimeHostConfigurationOption Include="NXUI.HotReload.Enabled" Value="true" Trim="true" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(NXUIHotReloadOptionConfigured)' != 'true'">

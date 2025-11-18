@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader"/>.
 /// </summary>
 public static partial class TreeDataGridColumnHeaderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TreeDataGridColumnHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.CanUserResizeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TreeDataGridColumnHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.HeaderProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty"/> value.
@@ -44,5 +37,4 @@ public static partial class TreeDataGridColumnHeaderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridColumnHeader.SortDirectionProperty);
     }
 
-#endif
 }

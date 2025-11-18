@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Slider"/> class property extension methods.
 /// </summary>
 public static partial class SliderExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class SliderExtensions
         return builder.WithBinding(PropertyMetadata.Slider_Orientation, Avalonia.Controls.Slider.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class SliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Slider.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Slider.OrientationProperty
 
     /// <summary>
@@ -253,7 +247,6 @@ public static partial class SliderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> enum value for hot reload builds.
@@ -265,7 +258,6 @@ public static partial class SliderExtensions
         return builder.WithValue(PropertyMetadata.Slider_Orientation, Avalonia.Controls.Slider.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -278,7 +270,6 @@ public static partial class SliderExtensions
         obj[Avalonia.Controls.Slider.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> enum value for hot reload builds.
@@ -290,7 +281,6 @@ public static partial class SliderExtensions
         return builder.WithValue(PropertyMetadata.Slider_Orientation, Avalonia.Controls.Slider.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -304,7 +294,6 @@ public static partial class SliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/> literal value for hot reload builds.
@@ -351,8 +340,6 @@ public static partial class SliderExtensions
         return builder.WithBinding(PropertyMetadata.Slider_IsDirectionReversed, Avalonia.Controls.Slider.IsDirectionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.IsDirectionReversedProperty"/> value on a referenced control.
@@ -399,7 +386,6 @@ public static partial class SliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Slider.IsDirectionReversedProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Slider.IsDirectionReversedProperty
 
     /// <summary>
@@ -546,7 +532,6 @@ public static partial class SliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class SliderExtensions
         return builder.WithBinding(PropertyMetadata.Slider_IsSnapToTickEnabled, Avalonia.Controls.Slider.IsSnapToTickEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.IsSnapToTickEnabledProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class SliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Slider.IsSnapToTickEnabledProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Slider.IsSnapToTickEnabledProperty
 
     /// <summary>
@@ -788,7 +770,6 @@ public static partial class SliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/> literal value for hot reload builds.
@@ -835,8 +816,6 @@ public static partial class SliderExtensions
         return builder.WithBinding(PropertyMetadata.Slider_TickFrequency, Avalonia.Controls.Slider.TickFrequencyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickFrequencyProperty"/> value on a referenced control.
@@ -883,7 +862,6 @@ public static partial class SliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Slider.TickFrequencyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Slider.TickFrequencyProperty
 
     /// <summary>
@@ -1030,7 +1008,6 @@ public static partial class SliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> literal value for hot reload builds.
@@ -1077,8 +1054,6 @@ public static partial class SliderExtensions
         return builder.WithBinding(PropertyMetadata.Slider_TickPlacement, Avalonia.Controls.Slider.TickPlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> value on a referenced control.
@@ -1125,7 +1100,6 @@ public static partial class SliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Slider.TickPlacementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Slider.TickPlacementProperty
 
     /// <summary>
@@ -1271,7 +1245,6 @@ public static partial class SliderExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
@@ -1283,7 +1256,6 @@ public static partial class SliderExtensions
         return builder.WithValue(PropertyMetadata.Slider_TickPlacement, Avalonia.Controls.Slider.TickPlacementProperty, Avalonia.Controls.TickPlacement.None);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.None"/>.
@@ -1296,7 +1268,6 @@ public static partial class SliderExtensions
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.None;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
@@ -1308,7 +1279,6 @@ public static partial class SliderExtensions
         return builder.WithValue(PropertyMetadata.Slider_TickPlacement, Avalonia.Controls.Slider.TickPlacementProperty, Avalonia.Controls.TickPlacement.TopLeft);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.TopLeft"/>.
@@ -1321,7 +1291,6 @@ public static partial class SliderExtensions
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.TopLeft;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
@@ -1333,7 +1302,6 @@ public static partial class SliderExtensions
         return builder.WithValue(PropertyMetadata.Slider_TickPlacement, Avalonia.Controls.Slider.TickPlacementProperty, Avalonia.Controls.TickPlacement.BottomRight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.BottomRight"/>.
@@ -1346,7 +1314,6 @@ public static partial class SliderExtensions
         obj[Avalonia.Controls.Slider.TickPlacementProperty] = Avalonia.Controls.TickPlacement.BottomRight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> enum value for hot reload builds.
@@ -1358,7 +1325,6 @@ public static partial class SliderExtensions
         return builder.WithValue(PropertyMetadata.Slider_TickPlacement, Avalonia.Controls.Slider.TickPlacementProperty, Avalonia.Controls.TickPlacement.Outside);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TickPlacementProperty"/> property value to <see cref="Avalonia.Controls.TickPlacement.Outside"/>.
@@ -1372,7 +1338,6 @@ public static partial class SliderExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Slider.TicksProperty"/> literal value for hot reload builds.
@@ -1419,8 +1384,6 @@ public static partial class SliderExtensions
         return builder.WithBinding(PropertyMetadata.Slider_Ticks, Avalonia.Controls.Slider.TicksProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Slider.TicksProperty"/> value on a referenced control.
@@ -1467,7 +1430,6 @@ public static partial class SliderExtensions
         return elementRef.SetBinding(Avalonia.Controls.Slider.TicksProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Slider.TicksProperty
 
     /// <summary>

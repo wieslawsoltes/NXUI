@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl"/> class property extension methods.
 /// </summary>
 public static partial class HeaderedSelectingItemsControlExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class HeaderedSelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.HeaderedSelectingItemsControl_Header, Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class HeaderedSelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class HeaderedSelectingItemsControlExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class HeaderedSelectingItemsControlExtensions
         return builder.WithBinding(PropertyMetadata.HeaderedSelectingItemsControl_HeaderTemplate, Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class HeaderedSelectingItemsControlExtensions
         return elementRef.SetBinding(Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Primitives.HeaderedSelectingItemsControl.HeaderTemplateProperty
 
     /// <summary>

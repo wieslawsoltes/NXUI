@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Shapes.Line"/> class property extension methods.
 /// </summary>
 public static partial class LineExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Line.StartPointProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class LineExtensions
         return builder.WithBinding(PropertyMetadata.Line_StartPoint, Avalonia.Controls.Shapes.Line.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Line.StartPointProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class LineExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Line.StartPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Line.StartPointProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class LineExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.Shapes.Line.EndPointProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class LineExtensions
         return builder.WithBinding(PropertyMetadata.Line_EndPoint, Avalonia.Controls.Shapes.Line.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.Shapes.Line.EndPointProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class LineExtensions
         return elementRef.SetBinding(Avalonia.Controls.Shapes.Line.EndPointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.Shapes.Line.EndPointProperty
 
     /// <summary>

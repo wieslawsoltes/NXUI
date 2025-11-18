@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.Geometry"/> class property extension methods.
 /// </summary>
 public static partial class GeometryExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.Geometry.TransformProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class GeometryExtensions
         return builder.WithBinding(PropertyMetadata.Geometry_Transform, Avalonia.Media.Geometry.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.Geometry.TransformProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class GeometryExtensions
         return elementRef.SetBinding(Avalonia.Media.Geometry.TransformProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.Geometry.TransformProperty
 
     /// <summary>

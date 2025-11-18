@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.ScrollViewer"/>.
 /// </summary>
 public static partial class ScrollViewerElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.ExtentProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.ExtentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.OffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.ViewportProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.ViewportProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.LargeChangeProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.LargeChangeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.SmallChangeProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.SmallChangeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.ScrollBarMaximumProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> value.
@@ -110,8 +91,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> value.
@@ -121,8 +100,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> value.
@@ -132,8 +109,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> value.
@@ -143,8 +118,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> value.
@@ -154,8 +127,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.IsExpandedProperty"/> value.
@@ -165,8 +136,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.IsExpandedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/> value.
@@ -176,8 +145,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/> value.
@@ -187,8 +154,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> value.
@@ -198,8 +163,6 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/> value.
@@ -209,5 +172,4 @@ public static partial class ScrollViewerElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty);
     }
 
-#endif
 }

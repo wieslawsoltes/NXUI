@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.DataGridTextColumn"/> class property extension methods.
 /// </summary>
 public static partial class DataGridTextColumnExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_FontFamily, Avalonia.Controls.DataGridTextColumn.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontFamilyProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class DataGridTextColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontFamilyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontFamilyProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class DataGridTextColumnExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_FontSize, Avalonia.Controls.DataGridTextColumn.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontSizeProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class DataGridTextColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontSizeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontSizeProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class DataGridTextColumnExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_FontStyle, Avalonia.Controls.DataGridTextColumn.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class DataGridTextColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontStyleProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontStyleProperty
 
     /// <summary>
@@ -737,7 +723,6 @@ public static partial class DataGridTextColumnExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> enum value for hot reload builds.
@@ -749,7 +734,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStyle, Avalonia.Controls.DataGridTextColumn.FontStyleProperty, Avalonia.Media.FontStyle.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Normal"/>.
@@ -762,7 +746,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStyleProperty] = Avalonia.Media.FontStyle.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> enum value for hot reload builds.
@@ -774,7 +757,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStyle, Avalonia.Controls.DataGridTextColumn.FontStyleProperty, Avalonia.Media.FontStyle.Italic);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Italic"/>.
@@ -787,7 +769,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStyleProperty] = Avalonia.Media.FontStyle.Italic;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> enum value for hot reload builds.
@@ -799,7 +780,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStyle, Avalonia.Controls.DataGridTextColumn.FontStyleProperty, Avalonia.Media.FontStyle.Oblique);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStyleProperty"/> property value to <see cref="Avalonia.Media.FontStyle.Oblique"/>.
@@ -813,7 +793,6 @@ public static partial class DataGridTextColumnExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> literal value for hot reload builds.
@@ -860,8 +839,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> value on a referenced control.
@@ -908,7 +885,6 @@ public static partial class DataGridTextColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontWeightProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontWeightProperty
 
     /// <summary>
@@ -1054,7 +1030,6 @@ public static partial class DataGridTextColumnExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1066,7 +1041,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Thin);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Thin"/>.
@@ -1079,7 +1053,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Thin;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1091,7 +1064,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.ExtraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraLight"/>.
@@ -1104,7 +1076,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1116,7 +1087,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.UltraLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraLight"/>.
@@ -1129,7 +1099,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.UltraLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1141,7 +1110,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Light);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Light"/>.
@@ -1154,7 +1122,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Light;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1166,7 +1133,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.SemiLight);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiLight"/>.
@@ -1179,7 +1145,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.SemiLight;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1191,7 +1156,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Normal"/>.
@@ -1204,7 +1168,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1216,7 +1179,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Regular);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Regular"/>.
@@ -1229,7 +1191,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Regular;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1241,7 +1202,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Medium);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Medium"/>.
@@ -1254,7 +1214,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Medium;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1266,7 +1225,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.DemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.DemiBold"/>.
@@ -1279,7 +1237,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.DemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1291,7 +1248,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.SemiBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.SemiBold"/>.
@@ -1304,7 +1260,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.SemiBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1316,7 +1271,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Bold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Bold"/>.
@@ -1329,7 +1283,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Bold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1341,7 +1294,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBold"/>.
@@ -1354,7 +1306,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1366,7 +1317,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.UltraBold);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBold"/>.
@@ -1379,7 +1329,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.UltraBold;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1391,7 +1340,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Black);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Black"/>.
@@ -1404,7 +1352,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Black;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1416,7 +1363,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Heavy);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Heavy"/>.
@@ -1429,7 +1375,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Heavy;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1441,7 +1386,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.Solid);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.Solid"/>.
@@ -1454,7 +1398,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.Solid;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1466,7 +1409,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.ExtraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.ExtraBlack"/>.
@@ -1479,7 +1421,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontWeightProperty] = Avalonia.Media.FontWeight.ExtraBlack;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> enum value for hot reload builds.
@@ -1491,7 +1432,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontWeight, Avalonia.Controls.DataGridTextColumn.FontWeightProperty, Avalonia.Media.FontWeight.UltraBlack);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontWeightProperty"/> property value to <see cref="Avalonia.Media.FontWeight.UltraBlack"/>.
@@ -1505,7 +1445,6 @@ public static partial class DataGridTextColumnExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> literal value for hot reload builds.
@@ -1552,8 +1491,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> value on a referenced control.
@@ -1600,7 +1537,6 @@ public static partial class DataGridTextColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.FontStretchProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.FontStretchProperty
 
     /// <summary>
@@ -1746,7 +1682,6 @@ public static partial class DataGridTextColumnExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1758,7 +1693,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.UltraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraCondensed"/>.
@@ -1771,7 +1705,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.UltraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1783,7 +1716,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.ExtraCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraCondensed"/>.
@@ -1796,7 +1728,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1808,7 +1739,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.Condensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Condensed"/>.
@@ -1821,7 +1751,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.Condensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1833,7 +1762,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.SemiCondensed);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiCondensed"/>.
@@ -1846,7 +1774,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.SemiCondensed;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1858,7 +1785,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.Normal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Normal"/>.
@@ -1871,7 +1797,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.Normal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1883,7 +1808,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.SemiExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.SemiExpanded"/>.
@@ -1896,7 +1820,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.SemiExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1908,7 +1831,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.Expanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.Expanded"/>.
@@ -1921,7 +1843,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.Expanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1933,7 +1854,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.ExtraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.ExtraExpanded"/>.
@@ -1946,7 +1866,6 @@ public static partial class DataGridTextColumnExtensions
         obj[Avalonia.Controls.DataGridTextColumn.FontStretchProperty] = Avalonia.Media.FontStretch.ExtraExpanded;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> enum value for hot reload builds.
@@ -1958,7 +1877,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithValue(PropertyMetadata.DataGridTextColumn_FontStretch, Avalonia.Controls.DataGridTextColumn.FontStretchProperty, Avalonia.Media.FontStretch.UltraExpanded);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.FontStretchProperty"/> property value to <see cref="Avalonia.Media.FontStretch.UltraExpanded"/>.
@@ -1972,7 +1890,6 @@ public static partial class DataGridTextColumnExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> literal value for hot reload builds.
@@ -2019,8 +1936,6 @@ public static partial class DataGridTextColumnExtensions
         return builder.WithBinding(PropertyMetadata.DataGridTextColumn_Foreground, Avalonia.Controls.DataGridTextColumn.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.DataGridTextColumn.ForegroundProperty"/> value on a referenced control.
@@ -2067,7 +1982,6 @@ public static partial class DataGridTextColumnExtensions
         return elementRef.SetBinding(Avalonia.Controls.DataGridTextColumn.ForegroundProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.DataGridTextColumn.ForegroundProperty
 
     /// <summary>

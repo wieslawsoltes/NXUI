@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Animation.TransitionBase"/> class property extension methods.
 /// </summary>
 public static partial class TransitionBaseExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TransitionBaseExtensions
         return builder.WithBinding(PropertyMetadata.TransitionBase_Duration, Avalonia.Animation.TransitionBase.DurationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.TransitionBase.DurationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TransitionBaseExtensions
         return elementRef.SetBinding(Avalonia.Animation.TransitionBase.DurationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.DurationProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TransitionBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TransitionBaseExtensions
         return builder.WithBinding(PropertyMetadata.TransitionBase_Delay, Avalonia.Animation.TransitionBase.DelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.TransitionBase.DelayProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TransitionBaseExtensions
         return elementRef.SetBinding(Avalonia.Animation.TransitionBase.DelayProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.DelayProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TransitionBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TransitionBaseExtensions
         return builder.WithBinding(PropertyMetadata.TransitionBase_Easing, Avalonia.Animation.TransitionBase.EasingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.TransitionBase.EasingProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TransitionBaseExtensions
         return elementRef.SetBinding(Avalonia.Animation.TransitionBase.EasingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.EasingProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TransitionBaseExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TransitionBaseExtensions
         return builder.WithBinding(PropertyMetadata.TransitionBase_Property, Avalonia.Animation.TransitionBase.PropertyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Animation.TransitionBase.PropertyProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TransitionBaseExtensions
         return elementRef.SetBinding(Avalonia.Animation.TransitionBase.PropertyProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Animation.TransitionBase.PropertyProperty
 
     /// <summary>

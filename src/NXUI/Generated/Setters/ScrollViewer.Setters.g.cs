@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.ScrollViewer"/> class style setters extension methods.
 /// </summary>
 public static partial class ScrollViewerSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
@@ -20,7 +17,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerBringIntoViewOnFocusChange(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollViewerBringIntoViewOnFocusChange(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerBringIntoViewOnFocusChange(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollViewerBringIntoViewOnFocusChange(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerBringIntoViewOnFocusChange(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollViewerBringIntoViewOnFocusChange(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerBringIntoViewOnFocusChange(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollViewerBringIntoViewOnFocusChange(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerBringIntoViewOnFocusChange(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerBringIntoViewOnFocusChange(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerBringIntoViewOnFocusChange(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerBringIntoViewOnFocusChange(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.BringIntoViewOnFocusChangeProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
@@ -185,7 +176,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerOffset(this ElementBuilder<Style> builder, Avalonia.Vector value)
+    public static StyleBuilder SetScrollViewerOffset(this StyleBuilder builder, Avalonia.Vector value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Vector value)
+    public static KeyFrameBuilder SetScrollViewerOffset(this KeyFrameBuilder builder, Avalonia.Vector value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.OffsetProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerOffset(this ElementBuilder<Style> builder, IObservable<Avalonia.Vector> observable)
+    public static StyleBuilder SetScrollViewerOffset(this StyleBuilder builder, IObservable<Avalonia.Vector> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerOffset(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Vector> observable)
+    public static KeyFrameBuilder SetScrollViewerOffset(this KeyFrameBuilder builder, IObservable<Avalonia.Vector> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.OffsetProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerOffset(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerOffset(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerOffset(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerOffset(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.OffsetProperty"/>.
     /// </summary>
@@ -342,7 +328,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
@@ -350,7 +335,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalScrollBarVisibility(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
+    public static StyleBuilder SetScrollViewerHorizontalScrollBarVisibility(this StyleBuilder builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
     {
         return builder.WithAction(style =>
         {
@@ -364,7 +349,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalScrollBarVisibility(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
+    public static KeyFrameBuilder SetScrollViewerHorizontalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -372,7 +357,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty
 
     /// <summary>
@@ -398,7 +382,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> using an observable source.
@@ -406,7 +389,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalScrollBarVisibility(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
+    public static StyleBuilder SetScrollViewerHorizontalScrollBarVisibility(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
     {
         return builder.WithAction(style =>
         {
@@ -420,7 +403,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalScrollBarVisibility(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
+    public static KeyFrameBuilder SetScrollViewerHorizontalScrollBarVisibility(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -428,7 +411,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
     /// </summary>
@@ -452,7 +434,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/> using a binding.
@@ -460,7 +441,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalScrollBarVisibility(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerHorizontalScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -474,7 +455,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalScrollBarVisibility(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerHorizontalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -482,7 +463,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalScrollBarVisibilityProperty"/>.
     /// </summary>
@@ -507,7 +487,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
@@ -515,7 +494,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsType(this StyleBuilder builder, Avalonia.Controls.Primitives.SnapPointsType value)
     {
         return builder.WithAction(style =>
         {
@@ -529,7 +508,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.SnapPointsType value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -537,7 +516,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty
 
     /// <summary>
@@ -563,7 +541,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> using an observable source.
@@ -571,7 +548,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalSnapPointsType(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsType(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
     {
         return builder.WithAction(style =>
         {
@@ -585,7 +562,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalSnapPointsType(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsType(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -593,7 +570,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
     /// </summary>
@@ -617,7 +593,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/> using a binding.
@@ -625,7 +600,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -639,7 +614,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -647,7 +622,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsTypeProperty"/>.
     /// </summary>
@@ -672,7 +646,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
@@ -680,7 +653,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsType(this StyleBuilder builder, Avalonia.Controls.Primitives.SnapPointsType value)
     {
         return builder.WithAction(style =>
         {
@@ -694,7 +667,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.SnapPointsType value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -702,7 +675,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty
 
     /// <summary>
@@ -728,7 +700,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> using an observable source.
@@ -736,7 +707,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalSnapPointsType(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsType(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
     {
         return builder.WithAction(style =>
         {
@@ -750,7 +721,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalSnapPointsType(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsType(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -758,7 +729,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
     /// </summary>
@@ -782,7 +752,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/> using a binding.
@@ -790,7 +759,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsType(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -804,7 +773,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsType(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -812,7 +781,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsTypeProperty"/>.
     /// </summary>
@@ -837,7 +805,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
@@ -845,7 +812,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -859,7 +826,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -867,7 +834,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty
 
     /// <summary>
@@ -893,7 +859,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> using an observable source.
@@ -901,7 +866,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalSnapPointsAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsAlignment(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -915,7 +880,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -923,7 +888,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
     /// </summary>
@@ -947,7 +911,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/> using a binding.
@@ -955,7 +918,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerHorizontalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerHorizontalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -969,7 +932,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerHorizontalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerHorizontalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -977,7 +940,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.HorizontalSnapPointsAlignmentProperty"/>.
     /// </summary>
@@ -1002,7 +964,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
@@ -1010,7 +971,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -1024,7 +985,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1032,7 +993,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty
 
     /// <summary>
@@ -1058,7 +1018,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> using an observable source.
@@ -1066,7 +1025,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalSnapPointsAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsAlignment(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1080,7 +1039,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1088,7 +1047,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
     /// </summary>
@@ -1112,7 +1070,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/> using a binding.
@@ -1120,7 +1077,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerVerticalSnapPointsAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1134,7 +1091,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerVerticalSnapPointsAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1142,7 +1099,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalSnapPointsAlignmentProperty"/>.
     /// </summary>
@@ -1167,7 +1123,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
@@ -1175,7 +1130,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalScrollBarVisibility(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
+    public static StyleBuilder SetScrollViewerVerticalScrollBarVisibility(this StyleBuilder builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
     {
         return builder.WithAction(style =>
         {
@@ -1189,7 +1144,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalScrollBarVisibility(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
+    public static KeyFrameBuilder SetScrollViewerVerticalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Controls.Primitives.ScrollBarVisibility value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1197,7 +1152,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty
 
     /// <summary>
@@ -1223,7 +1177,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> using an observable source.
@@ -1231,7 +1184,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalScrollBarVisibility(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
+    public static StyleBuilder SetScrollViewerVerticalScrollBarVisibility(this StyleBuilder builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1245,7 +1198,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalScrollBarVisibility(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
+    public static KeyFrameBuilder SetScrollViewerVerticalScrollBarVisibility(this KeyFrameBuilder builder, IObservable<Avalonia.Controls.Primitives.ScrollBarVisibility> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1253,7 +1206,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
     /// </summary>
@@ -1277,7 +1229,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/> using a binding.
@@ -1285,7 +1236,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerVerticalScrollBarVisibility(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerVerticalScrollBarVisibility(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1299,7 +1250,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerVerticalScrollBarVisibility(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerVerticalScrollBarVisibility(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1307,7 +1258,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.VerticalScrollBarVisibilityProperty"/>.
     /// </summary>
@@ -1332,7 +1282,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
@@ -1340,7 +1289,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerAllowAutoHide(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollViewerAllowAutoHide(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1354,7 +1303,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerAllowAutoHide(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollViewerAllowAutoHide(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1362,7 +1311,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.AllowAutoHideProperty
 
     /// <summary>
@@ -1388,7 +1336,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/> using an observable source.
@@ -1396,7 +1343,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerAllowAutoHide(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollViewerAllowAutoHide(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1410,7 +1357,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerAllowAutoHide(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollViewerAllowAutoHide(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1418,7 +1365,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
     /// </summary>
@@ -1442,7 +1388,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.AllowAutoHideProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/> using a binding.
@@ -1450,7 +1395,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerAllowAutoHide(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerAllowAutoHide(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1464,7 +1409,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerAllowAutoHide(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerAllowAutoHide(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1472,7 +1417,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.AllowAutoHideProperty"/>.
     /// </summary>
@@ -1497,7 +1441,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
@@ -1505,7 +1448,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsScrollChainingEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollViewerIsScrollChainingEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1519,7 +1462,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsScrollChainingEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollViewerIsScrollChainingEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1527,7 +1470,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty
 
     /// <summary>
@@ -1553,7 +1495,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/> using an observable source.
@@ -1561,7 +1502,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsScrollChainingEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollViewerIsScrollChainingEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1575,7 +1516,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsScrollChainingEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollViewerIsScrollChainingEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1583,7 +1524,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
     /// </summary>
@@ -1607,7 +1547,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/> using a binding.
@@ -1615,7 +1554,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsScrollChainingEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerIsScrollChainingEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1629,7 +1568,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsScrollChainingEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerIsScrollChainingEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1637,7 +1576,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollChainingEnabledProperty"/>.
     /// </summary>
@@ -1662,7 +1600,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
@@ -1670,7 +1607,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsScrollInertiaEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollViewerIsScrollInertiaEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1684,7 +1621,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsScrollInertiaEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollViewerIsScrollInertiaEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1692,7 +1629,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty
 
     /// <summary>
@@ -1718,7 +1654,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> using an observable source.
@@ -1726,7 +1661,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsScrollInertiaEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollViewerIsScrollInertiaEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1740,7 +1675,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsScrollInertiaEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollViewerIsScrollInertiaEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1748,7 +1683,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
     /// </summary>
@@ -1772,7 +1706,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/> using a binding.
@@ -1780,7 +1713,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsScrollInertiaEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerIsScrollInertiaEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1794,7 +1727,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsScrollInertiaEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerIsScrollInertiaEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1802,7 +1735,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsScrollInertiaEnabledProperty"/>.
     /// </summary>
@@ -1827,7 +1759,6 @@ public static partial class ScrollViewerSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/>.
@@ -1835,7 +1766,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsDeferredScrollingEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    public static StyleBuilder SetScrollViewerIsDeferredScrollingEnabled(this StyleBuilder builder, System.Boolean value)
     {
         return builder.WithAction(style =>
         {
@@ -1849,7 +1780,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsDeferredScrollingEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    public static KeyFrameBuilder SetScrollViewerIsDeferredScrollingEnabled(this KeyFrameBuilder builder, System.Boolean value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1857,7 +1788,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     // Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty
 
     /// <summary>
@@ -1883,7 +1813,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/> using an observable source.
@@ -1891,7 +1820,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsDeferredScrollingEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    public static StyleBuilder SetScrollViewerIsDeferredScrollingEnabled(this StyleBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(style =>
         {
@@ -1905,7 +1834,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsDeferredScrollingEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    public static KeyFrameBuilder SetScrollViewerIsDeferredScrollingEnabled(this KeyFrameBuilder builder, IObservable<System.Boolean> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1913,7 +1842,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/>.
     /// </summary>
@@ -1937,7 +1865,6 @@ public static partial class ScrollViewerSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/> using a binding.
@@ -1945,7 +1872,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetScrollViewerIsDeferredScrollingEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetScrollViewerIsDeferredScrollingEnabled(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -1959,7 +1886,7 @@ public static partial class ScrollViewerSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetScrollViewerIsDeferredScrollingEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetScrollViewerIsDeferredScrollingEnabled(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -1967,7 +1894,6 @@ public static partial class ScrollViewerSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.ScrollViewer.IsDeferredScrollingEnabledProperty"/>.
     /// </summary>

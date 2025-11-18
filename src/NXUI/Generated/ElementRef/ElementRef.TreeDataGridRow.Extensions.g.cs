@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.TreeDataGridRow"/>.
 /// </summary>
 public static partial class TreeDataGridRowElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TreeDataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridRow.ColumnsProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TreeDataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridRow.ElementFactoryProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TreeDataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridRow.IsSelectedProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty"/> value.
@@ -55,5 +46,4 @@ public static partial class TreeDataGridRowElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.TreeDataGridRow.RowsProperty);
     }
 
-#endif
 }

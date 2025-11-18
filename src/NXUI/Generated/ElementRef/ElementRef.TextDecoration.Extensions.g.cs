@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Media.TextDecoration"/>.
 /// </summary>
 public static partial class TextDecorationElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.LocationProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.LocationProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeThicknessUnitProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeDashArrayProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeDashArrayProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeDashOffsetProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeDashOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeThicknessProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeThicknessProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeLineCapProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeLineCapProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeOffsetProperty"/> value.
@@ -99,8 +82,6 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeOffsetProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty"/> value.
@@ -110,5 +91,4 @@ public static partial class TextDecorationElementRefExtensions
         return elementRef.Observe(Avalonia.Media.TextDecoration.StrokeOffsetUnitProperty);
     }
 
-#endif
 }

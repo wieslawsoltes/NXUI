@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Grid"/>.
 /// </summary>
 public static partial class GridElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.ShowGridLinesProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.ShowGridLinesProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.RowSpacingProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.RowSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.ColumnSpacingProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.ColumnSpacingProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.ColumnProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.ColumnProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.RowProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.RowProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.ColumnSpanProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.ColumnSpanProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.RowSpanProperty"/> value.
@@ -88,8 +73,6 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.RowSpanProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Grid.IsSharedSizeScopeProperty"/> value.
@@ -99,5 +82,4 @@ public static partial class GridElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Grid.IsSharedSizeScopeProperty);
     }
 
-#endif
 }

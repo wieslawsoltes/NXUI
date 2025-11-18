@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Layout.StackLayout"/> class property extension methods.
 /// </summary>
 public static partial class StackLayoutExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class StackLayoutExtensions
         return builder.WithBinding(PropertyMetadata.StackLayout_DisableVirtualization, Avalonia.Layout.StackLayout.DisableVirtualizationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.DisableVirtualizationProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class StackLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.StackLayout.DisableVirtualizationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.StackLayout.DisableVirtualizationProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class StackLayoutExtensions
         return builder.WithBinding(PropertyMetadata.StackLayout_Orientation, Avalonia.Layout.StackLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class StackLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.StackLayout.OrientationProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.StackLayout.OrientationProperty
 
     /// <summary>
@@ -495,7 +485,6 @@ public static partial class StackLayoutExtensions
         handler(obj, observable);
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -507,7 +496,6 @@ public static partial class StackLayoutExtensions
         return builder.WithValue(PropertyMetadata.StackLayout_Orientation, Avalonia.Layout.StackLayout.OrientationProperty, Avalonia.Layout.Orientation.Horizontal);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Horizontal"/>.
@@ -520,7 +508,6 @@ public static partial class StackLayoutExtensions
         obj[Avalonia.Layout.StackLayout.OrientationProperty] = Avalonia.Layout.Orientation.Horizontal;
         return obj;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> enum value for hot reload builds.
@@ -532,7 +519,6 @@ public static partial class StackLayoutExtensions
         return builder.WithValue(PropertyMetadata.StackLayout_Orientation, Avalonia.Layout.StackLayout.OrientationProperty, Avalonia.Layout.Orientation.Vertical);
     }
 
-#endif
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.OrientationProperty"/> property value to <see cref="Avalonia.Layout.Orientation.Vertical"/>.
@@ -546,7 +532,6 @@ public static partial class StackLayoutExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/> literal value for hot reload builds.
@@ -593,8 +578,6 @@ public static partial class StackLayoutExtensions
         return builder.WithBinding(PropertyMetadata.StackLayout_Spacing, Avalonia.Layout.StackLayout.SpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Layout.StackLayout.SpacingProperty"/> value on a referenced control.
@@ -641,7 +624,6 @@ public static partial class StackLayoutExtensions
         return elementRef.SetBinding(Avalonia.Layout.StackLayout.SpacingProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Layout.StackLayout.SpacingProperty
 
     /// <summary>

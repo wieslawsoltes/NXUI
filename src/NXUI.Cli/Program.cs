@@ -518,7 +518,7 @@ public static class {className}
         return HotReloadHost.Run(Build, ""{className}"", args);
     }}
 
-    private static ElementBuilder<Window> Build()
+    private static WindowBuilder Build()
         => Window()
             .Title(""{className}"")
             .Width(480)

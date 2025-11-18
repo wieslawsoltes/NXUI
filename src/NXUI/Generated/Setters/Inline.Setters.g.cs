@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.Documents.Inline"/> class style setters extension methods.
 /// </summary>
 public static partial class InlineSetters
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
@@ -20,7 +17,7 @@ public static partial class InlineSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineTextDecorations(this ElementBuilder<Style> builder, Avalonia.Media.TextDecorationCollection value)
+    public static StyleBuilder SetInlineTextDecorations(this StyleBuilder builder, Avalonia.Media.TextDecorationCollection value)
     {
         return builder.WithAction(style =>
         {
@@ -34,7 +31,7 @@ public static partial class InlineSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineTextDecorations(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextDecorationCollection value)
+    public static KeyFrameBuilder SetInlineTextDecorations(this KeyFrameBuilder builder, Avalonia.Media.TextDecorationCollection value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -42,7 +39,6 @@ public static partial class InlineSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Documents.Inline.TextDecorationsProperty
 
     /// <summary>
@@ -68,7 +64,6 @@ public static partial class InlineSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> using an observable source.
@@ -76,7 +71,7 @@ public static partial class InlineSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineTextDecorations(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
+    public static StyleBuilder SetInlineTextDecorations(this StyleBuilder builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
     {
         return builder.WithAction(style =>
         {
@@ -90,7 +85,7 @@ public static partial class InlineSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineTextDecorations(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
+    public static KeyFrameBuilder SetInlineTextDecorations(this KeyFrameBuilder builder, IObservable<Avalonia.Media.TextDecorationCollection> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -98,7 +93,6 @@ public static partial class InlineSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
     /// </summary>
@@ -122,7 +116,6 @@ public static partial class InlineSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.TextDecorationsProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/> using a binding.
@@ -130,7 +123,7 @@ public static partial class InlineSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineTextDecorations(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInlineTextDecorations(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -144,7 +137,7 @@ public static partial class InlineSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineTextDecorations(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInlineTextDecorations(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -152,7 +145,6 @@ public static partial class InlineSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.TextDecorationsProperty"/>.
     /// </summary>
@@ -177,7 +169,6 @@ public static partial class InlineSetters
         return keyFrame;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
@@ -185,7 +176,7 @@ public static partial class InlineSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineBaselineAlignment(this ElementBuilder<Style> builder, Avalonia.Media.BaselineAlignment value)
+    public static StyleBuilder SetInlineBaselineAlignment(this StyleBuilder builder, Avalonia.Media.BaselineAlignment value)
     {
         return builder.WithAction(style =>
         {
@@ -199,7 +190,7 @@ public static partial class InlineSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="value">The property value.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineBaselineAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Media.BaselineAlignment value)
+    public static KeyFrameBuilder SetInlineBaselineAlignment(this KeyFrameBuilder builder, Avalonia.Media.BaselineAlignment value)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -207,7 +198,6 @@ public static partial class InlineSetters
         });
     }
 
-#endif
     // Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty
 
     /// <summary>
@@ -233,7 +223,6 @@ public static partial class InlineSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, value));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> using an observable source.
@@ -241,7 +230,7 @@ public static partial class InlineSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineBaselineAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.BaselineAlignment> observable)
+    public static StyleBuilder SetInlineBaselineAlignment(this StyleBuilder builder, IObservable<Avalonia.Media.BaselineAlignment> observable)
     {
         return builder.WithAction(style =>
         {
@@ -255,7 +244,7 @@ public static partial class InlineSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="observable">The property observable.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineBaselineAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.BaselineAlignment> observable)
+    public static KeyFrameBuilder SetInlineBaselineAlignment(this KeyFrameBuilder builder, IObservable<Avalonia.Media.BaselineAlignment> observable)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -263,7 +252,6 @@ public static partial class InlineSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
     /// </summary>
@@ -287,7 +275,6 @@ public static partial class InlineSetters
         keyFrame.Setters.Add(new Setter(Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty, observable.ToBinding()));
         return keyFrame;
     }
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/> using a binding.
@@ -295,7 +282,7 @@ public static partial class InlineSetters
     /// <param name="builder">The style builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The style builder.</returns>
-    public static ElementBuilder<Style> SetInlineBaselineAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    public static StyleBuilder SetInlineBaselineAlignment(this StyleBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(style =>
         {
@@ -309,7 +296,7 @@ public static partial class InlineSetters
     /// <param name="builder">The keyframe builder.</param>
     /// <param name="binding">The property binding.</param>
     /// <returns>The keyframe builder.</returns>
-    public static ElementBuilder<KeyFrame> SetInlineBaselineAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    public static KeyFrameBuilder SetInlineBaselineAlignment(this KeyFrameBuilder builder, Avalonia.Data.IBinding binding)
     {
         return builder.WithAction(keyFrame =>
         {
@@ -317,7 +304,6 @@ public static partial class InlineSetters
         });
     }
 
-#endif
     /// <summary>
     /// Adds a style setter for an <see cref="Avalonia.Controls.Documents.Inline.BaselineAlignmentProperty"/>.
     /// </summary>

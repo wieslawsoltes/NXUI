@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.ImageDrawing"/> class property extension methods.
 /// </summary>
 public static partial class ImageDrawingExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class ImageDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(this ElementBuilder<Avalonia.Media.ImageDrawing> builder, Avalonia.Media.IImage? value)
+    public static ImageDrawingBuilder ImageSource(this ImageDrawingBuilder builder, Avalonia.Media.IImage? value)
     {
         return builder.WithValue(PropertyMetadata.ImageDrawing_ImageSource, Avalonia.Media.ImageDrawing.ImageSourceProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class ImageDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(
-        this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
+    public static ImageDrawingBuilder ImageSource(
+        this ImageDrawingBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class ImageDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageDrawing> ImageSource(
-        this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
+    public static ImageDrawingBuilder ImageSource(
+        this ImageDrawingBuilder builder,
         IObservable<Avalonia.Media.IImage?> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class ImageDrawingExtensions
         return builder.WithBinding(PropertyMetadata.ImageDrawing_ImageSource, Avalonia.Media.ImageDrawing.ImageSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ImageDrawing.ImageSourceProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class ImageDrawingExtensions
         return elementRef.SetBinding(Avalonia.Media.ImageDrawing.ImageSourceProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ImageDrawing.ImageSourceProperty
 
     /// <summary>
@@ -247,7 +241,6 @@ public static partial class ImageDrawingExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> literal value for hot reload builds.
@@ -255,7 +248,7 @@ public static partial class ImageDrawingExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageDrawing> Rect(this ElementBuilder<Avalonia.Media.ImageDrawing> builder, Avalonia.Rect value)
+    public static ImageDrawingBuilder Rect(this ImageDrawingBuilder builder, Avalonia.Rect value)
     {
         return builder.WithValue(PropertyMetadata.ImageDrawing_Rect, Avalonia.Media.ImageDrawing.RectProperty, value);
     }
@@ -268,8 +261,8 @@ public static partial class ImageDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageDrawing> Rect(
-        this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
+    public static ImageDrawingBuilder Rect(
+        this ImageDrawingBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -285,8 +278,8 @@ public static partial class ImageDrawingExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.ImageDrawing> Rect(
-        this ElementBuilder<Avalonia.Media.ImageDrawing> builder,
+    public static ImageDrawingBuilder Rect(
+        this ImageDrawingBuilder builder,
         IObservable<Avalonia.Rect> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -294,8 +287,6 @@ public static partial class ImageDrawingExtensions
         return builder.WithBinding(PropertyMetadata.ImageDrawing_Rect, Avalonia.Media.ImageDrawing.RectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.ImageDrawing.RectProperty"/> value on a referenced control.
@@ -342,7 +333,6 @@ public static partial class ImageDrawingExtensions
         return elementRef.SetBinding(Avalonia.Media.ImageDrawing.RectProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.ImageDrawing.RectProperty
 
     /// <summary>

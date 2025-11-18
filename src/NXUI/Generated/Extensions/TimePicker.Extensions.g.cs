@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Controls.TimePicker"/> class property extension methods.
 /// </summary>
 public static partial class TimePickerExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/> literal value for hot reload builds.
@@ -59,8 +56,6 @@ public static partial class TimePickerExtensions
         return builder.WithBinding(PropertyMetadata.TimePicker_MinuteIncrement, Avalonia.Controls.TimePicker.MinuteIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.MinuteIncrementProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class TimePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.TimePicker.MinuteIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TimePicker.MinuteIncrementProperty
 
     /// <summary>
@@ -254,7 +248,6 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/> literal value for hot reload builds.
@@ -301,8 +294,6 @@ public static partial class TimePickerExtensions
         return builder.WithBinding(PropertyMetadata.TimePicker_SecondIncrement, Avalonia.Controls.TimePicker.SecondIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.SecondIncrementProperty"/> value on a referenced control.
@@ -349,7 +340,6 @@ public static partial class TimePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.TimePicker.SecondIncrementProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TimePicker.SecondIncrementProperty
 
     /// <summary>
@@ -496,7 +486,6 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/> literal value for hot reload builds.
@@ -543,8 +532,6 @@ public static partial class TimePickerExtensions
         return builder.WithBinding(PropertyMetadata.TimePicker_ClockIdentifier, Avalonia.Controls.TimePicker.ClockIdentifierProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.ClockIdentifierProperty"/> value on a referenced control.
@@ -591,7 +578,6 @@ public static partial class TimePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.TimePicker.ClockIdentifierProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TimePicker.ClockIdentifierProperty
 
     /// <summary>
@@ -738,7 +724,6 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/> literal value for hot reload builds.
@@ -785,8 +770,6 @@ public static partial class TimePickerExtensions
         return builder.WithBinding(PropertyMetadata.TimePicker_UseSeconds, Avalonia.Controls.TimePicker.UseSecondsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.UseSecondsProperty"/> value on a referenced control.
@@ -833,7 +816,6 @@ public static partial class TimePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.TimePicker.UseSecondsProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TimePicker.UseSecondsProperty
 
     /// <summary>
@@ -980,7 +962,6 @@ public static partial class TimePickerExtensions
         return obj;
     }
 
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/> literal value for hot reload builds.
@@ -1027,8 +1008,6 @@ public static partial class TimePickerExtensions
         return builder.WithBinding(PropertyMetadata.TimePicker_SelectedTime, Avalonia.Controls.TimePicker.SelectedTimeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Controls.TimePicker.SelectedTimeProperty"/> value on a referenced control.
@@ -1075,7 +1054,6 @@ public static partial class TimePickerExtensions
         return elementRef.SetBinding(Avalonia.Controls.TimePicker.SelectedTimeProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Controls.TimePicker.SelectedTimeProperty
 
     /// <summary>

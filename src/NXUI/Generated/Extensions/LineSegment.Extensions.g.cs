@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// The avalonia <see cref="Avalonia.Media.LineSegment"/> class property extension methods.
 /// </summary>
 public static partial class LineSegmentExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Records a <see cref="Avalonia.Media.LineSegment.PointProperty"/> literal value for hot reload builds.
@@ -20,7 +17,7 @@ public static partial class LineSegmentExtensions
     /// <param name="builder">The target builder.</param>
     /// <param name="value">The value.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LineSegment> Point(this ElementBuilder<Avalonia.Media.LineSegment> builder, Avalonia.Point value)
+    public static LineSegmentBuilder Point(this LineSegmentBuilder builder, Avalonia.Point value)
     {
         return builder.WithValue(PropertyMetadata.LineSegment_Point, Avalonia.Media.LineSegment.PointProperty, value);
     }
@@ -33,8 +30,8 @@ public static partial class LineSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LineSegment> Point(
-        this ElementBuilder<Avalonia.Media.LineSegment> builder,
+    public static LineSegmentBuilder Point(
+        this LineSegmentBuilder builder,
         Avalonia.Data.IBinding binding,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -50,8 +47,8 @@ public static partial class LineSegmentExtensions
     /// <param name="mode">The target binding mode.</param>
     /// <param name="priority">The target binding priority.</param>
     /// <returns>The builder instance.</returns>
-    public static ElementBuilder<Avalonia.Media.LineSegment> Point(
-        this ElementBuilder<Avalonia.Media.LineSegment> builder,
+    public static LineSegmentBuilder Point(
+        this LineSegmentBuilder builder,
         IObservable<Avalonia.Point> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
@@ -59,8 +56,6 @@ public static partial class LineSegmentExtensions
         return builder.WithBinding(PropertyMetadata.LineSegment_Point, Avalonia.Media.LineSegment.PointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Sets a <see cref="Avalonia.Media.LineSegment.PointProperty"/> value on a referenced control.
@@ -107,7 +102,6 @@ public static partial class LineSegmentExtensions
         return elementRef.SetBinding(Avalonia.Media.LineSegment.PointProperty, observable.ToBinding(), mode, priority);
     }
 
-#endif
     // Avalonia.Media.LineSegment.PointProperty
 
     /// <summary>

@@ -2,17 +2,14 @@
 #nullable enable
 namespace NXUI.Extensions;
 
-#if NXUI_HOTRELOAD
 using System;
 using NXUI.HotReload.Nodes;
-#endif
 
 /// <summary>
 /// ElementRef helpers for <see cref="Avalonia.Controls.Primitives.ColorSlider"/>.
 /// </summary>
 public static partial class ColorSliderElementRefExtensions
 {
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorProperty"/> value.
@@ -22,8 +19,6 @@ public static partial class ColorSliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSlider.ColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty"/> value.
@@ -33,8 +28,6 @@ public static partial class ColorSliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSlider.ColorComponentProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty"/> value.
@@ -44,8 +37,6 @@ public static partial class ColorSliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSlider.ColorModelProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty"/> value.
@@ -55,8 +46,6 @@ public static partial class ColorSliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSlider.HsvColorProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty"/> value.
@@ -66,8 +55,6 @@ public static partial class ColorSliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSlider.IsAlphaVisibleProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty"/> value.
@@ -77,8 +64,6 @@ public static partial class ColorSliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSlider.IsPerceptiveProperty);
     }
 
-#endif
-#if NXUI_HOTRELOAD
 
     /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty"/> value.
@@ -88,5 +73,4 @@ public static partial class ColorSliderElementRefExtensions
         return elementRef.Observe(Avalonia.Controls.Primitives.ColorSlider.IsRoundingEnabledProperty);
     }
 
-#endif
 }
