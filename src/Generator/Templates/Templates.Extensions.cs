@@ -501,7 +501,9 @@ public static partial class Templates
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (%OwnerType%)target;
-            typed.AddHandler(%OwnerType%.%Name%Event, (_, args) => action(%HandlerInvocation%, args), routes);
+            void Handler(object? _, %ArgsType% args) => action(%HandlerInvocation%, args);
+            typed.AddHandler(%OwnerType%.%Name%Event, Handler, routes);
+            return () => typed.RemoveHandler(%OwnerType%.%Name%Event, Handler);
         }));
     }
 
@@ -597,7 +599,9 @@ public static partial class Templates
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (%OwnerType%)target;
-            typed.AddHandler(%OwnerType%.%Name%Event, (object _, %ArgsType% args) => action(%HandlerInvocation%, args), routes);
+            void Handler(object? _, %ArgsType% args) => action(%HandlerInvocation%, args);
+            typed.AddHandler(%OwnerType%.%Name%Event, Handler, routes);
+            return () => typed.RemoveHandler(%OwnerType%.%Name%Event, Handler);
         }));
     }
 

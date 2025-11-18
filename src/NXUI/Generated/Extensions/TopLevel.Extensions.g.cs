@@ -1316,7 +1316,9 @@ public static partial class TopLevelExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TopLevel)target;
-            typed.AddHandler(Avalonia.Controls.TopLevel.BackRequestedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TopLevel.BackRequestedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TopLevel.BackRequestedEvent, Handler);
         }));
     }
 

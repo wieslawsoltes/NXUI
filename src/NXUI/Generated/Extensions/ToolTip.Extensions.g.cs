@@ -2416,7 +2416,9 @@ public static partial class ToolTipExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.ToolTip)target;
-            typed.AddHandler(Avalonia.Controls.ToolTip.ToolTipOpeningEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.CancelRoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.ToolTip.ToolTipOpeningEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.ToolTip.ToolTipOpeningEvent, Handler);
         }));
     }
 
@@ -2507,7 +2509,9 @@ public static partial class ToolTipExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.ToolTip)target;
-            typed.AddHandler(Avalonia.Controls.ToolTip.ToolTipClosingEvent, (object _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.ToolTip.ToolTipClosingEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.ToolTip.ToolTipClosingEvent, Handler);
         }));
     }
 

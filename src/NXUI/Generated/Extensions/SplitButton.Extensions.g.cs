@@ -658,7 +658,9 @@ public static partial class SplitButtonExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.SplitButton)target;
-            typed.AddHandler(Avalonia.Controls.SplitButton.ClickEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.SplitButton.ClickEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.SplitButton.ClickEvent, Handler);
         }));
     }
 

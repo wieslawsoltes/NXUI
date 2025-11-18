@@ -848,7 +848,9 @@ public static partial class NotificationCardExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Notifications.NotificationCard)target;
-            typed.AddHandler(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Notifications.NotificationCard.NotificationClosedEvent, Handler);
         }));
     }
 

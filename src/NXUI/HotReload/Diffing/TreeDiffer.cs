@@ -4,6 +4,7 @@ namespace NXUI.HotReload.Diffing;
 using System;
 using System.Collections.Generic;
 using NXUI.HotReload.Metadata;
+using NXUI.HotReload;
 using NXUI.HotReload.Nodes;
 
 /// <summary>
@@ -35,6 +36,17 @@ internal static class TreeDiffer
         }
 
         next.AdoptInstanceFrom(previous);
+
+        if (previous.IsBoundary && next.IsBoundary)
+        {
+            var implicitBoundary = HotReloadBoundaryMetadata.IsBoundary(previous.ControlType)
+                || HotReloadBoundaryMetadata.IsBoundary(next.ControlType);
+            HotReloadDiagnostics.TraceBoundaryShortCircuit(
+                next,
+                path,
+                implicitBoundary ? "Implicit" : "Explicit");
+            return;
+        }
 
         DiffProperties(previous, next, path, buffer);
         DiffEvents(previous, next, path, buffer);
@@ -142,6 +154,14 @@ internal static class TreeDiffer
             }
 
             return Equals(left.Value, right.Value);
+        }
+
+        if (left.Kind == PropertyMutationKind.SetValue
+            && right.Kind == PropertyMutationKind.SetValue
+            && left.PropertyId > PropertyMetadata.InvalidPropertyId
+            && PropertyMetadata.TryGetComparer(left.PropertyId, out var comparer))
+        {
+            return comparer(left.Value, right.Value);
         }
 
         return Equals(left.Value, right.Value);

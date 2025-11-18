@@ -16,6 +16,8 @@ public sealed class ElementNode
     private readonly List<EventMutation> _events = new();
     private readonly List<ElementNode> _children = new();
     private AvaloniaObject? _materializedInstance;
+    private ChildSlot _parentSlot = ChildSlot.Unknown;
+    private bool _isBoundary;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="ElementNode"/> class.
@@ -33,6 +35,7 @@ public sealed class ElementNode
 
         TypeId = typeId;
         _factory = factory ?? throw new ArgumentNullException(nameof(factory));
+        _isBoundary = HotReloadBoundaryMetadata.IsBoundary(controlType);
     }
 
     /// <summary>
@@ -66,9 +69,19 @@ public sealed class ElementNode
     public IReadOnlyList<ElementNode> Children => _children;
 
     /// <summary>
+    /// Gets the slot describing how this node attaches to its parent.
+    /// </summary>
+    internal ChildSlot ParentSlot => _parentSlot;
+
+    /// <summary>
     /// Gets the currently adopted control instance, if any.
     /// </summary>
     internal AvaloniaObject? AdoptedInstance => _materializedInstance;
+
+    /// <summary>
+    /// Gets a value indicating whether this node marks a hot reload boundary.
+    /// </summary>
+    internal bool IsBoundary => _isBoundary;
 
     /// <summary>
     /// Builds the control represented by this node.
@@ -109,6 +122,22 @@ public sealed class ElementNode
     {
         ArgumentNullException.ThrowIfNull(children);
         _children.AddRange(children);
+    }
+
+    /// <summary>
+    /// Records how this node should attach to its parent surface.
+    /// </summary>
+    internal void SetParentSlot(ChildSlot slot)
+    {
+        if (slot != ChildSlot.Unknown)
+        {
+            _parentSlot = slot;
+        }
+    }
+
+    internal void MarkBoundary()
+    {
+        _isBoundary = true;
     }
 
     internal void AdoptInstanceFrom(ElementNode previous)

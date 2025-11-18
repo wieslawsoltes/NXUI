@@ -852,7 +852,9 @@ public static partial class ControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Control)target;
-            typed.AddHandler(Avalonia.Controls.Control.RequestBringIntoViewEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.RequestBringIntoViewEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Control.RequestBringIntoViewEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Control.RequestBringIntoViewEvent, Handler);
         }));
     }
 
@@ -943,7 +945,9 @@ public static partial class ControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Control)target;
-            typed.AddHandler(Avalonia.Controls.Control.ContextRequestedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.ContextRequestedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Control.ContextRequestedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Control.ContextRequestedEvent, Handler);
         }));
     }
 
@@ -1034,7 +1038,9 @@ public static partial class ControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Control)target;
-            typed.AddHandler(Avalonia.Controls.Control.LoadedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Control.LoadedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Control.LoadedEvent, Handler);
         }));
     }
 
@@ -1125,7 +1131,9 @@ public static partial class ControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Control)target;
-            typed.AddHandler(Avalonia.Controls.Control.UnloadedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Control.UnloadedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Control.UnloadedEvent, Handler);
         }));
     }
 
@@ -1216,7 +1224,9 @@ public static partial class ControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Control)target;
-            typed.AddHandler(Avalonia.Controls.Control.SizeChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.SizeChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Control.SizeChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Control.SizeChangedEvent, Handler);
         }));
     }
 

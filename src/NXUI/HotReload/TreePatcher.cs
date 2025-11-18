@@ -158,9 +158,10 @@ internal static class TreePatcher
             var (parentNode, segment) = ResolveParent(_root, path);
             var parentInstance = RequireInstance(parentNode);
 
-            RemoveChildCore(parentInstance, segment.Index);
-            var replacement = NodeRenderer.Instance.Build(node);
-            AttachChildCore(parentInstance, segment.Index, replacement);
+            var slot = node.ParentSlot;
+            RemoveChildCore(parentInstance, segment.Index, slot);
+            var replacement = EnsureNodeInstance(node);
+            AttachChildCore(parentInstance, segment.Index, replacement, slot);
         }
 
         private void ApplyProperty(PatchOp op, bool isBinding)
@@ -196,22 +197,25 @@ internal static class TreePatcher
 
             var parentNode = ResolveNode(_root, op.Path);
             var parentInstance = RequireInstance(parentNode);
-            var childInstance = NodeRenderer.Instance.Build(op.Node);
-            AttachChildCore(parentInstance, op.Index, childInstance);
+            var childInstance = EnsureNodeInstance(op.Node);
+            var slot = op.Node.ParentSlot;
+            AttachChildCore(parentInstance, op.Index, childInstance, slot);
         }
 
         private void RemoveChild(PatchOp op)
         {
             var parentNode = ResolveNode(_root, op.Path);
             var parentInstance = RequireInstance(parentNode);
-            RemoveChildCore(parentInstance, op.Index);
+            var childSlot = TryGetChildSlot(parentNode, op.Index);
+            RemoveChildCore(parentInstance, op.Index, childSlot);
         }
 
         private void MoveChild(PatchOp op)
         {
             var parentNode = ResolveNode(_root, op.Path);
             var parentInstance = RequireInstance(parentNode);
-            MoveChildCore(parentInstance, op.Index, op.ToIndex);
+            var childSlot = TryGetChildSlot(parentNode, op.Index);
+            MoveChildCore(parentInstance, op.Index, op.ToIndex, childSlot);
         }
 
         private void AttachEvent(PatchOp op)
@@ -228,10 +232,14 @@ internal static class TreePatcher
 
         private void DetachEvent(PatchOp op)
         {
-            // Event metadata currently only records attach semantics. For now emit a diagnostic so we can
-            // track when detach support becomes necessary.
-            HotReloadDiagnostics.Trace(
-                $"[HotReload] DetachEvent not yet implemented for path {op.Path}. Event will remain attached.");
+            if (op.Event is null)
+            {
+                return;
+            }
+
+            var targetNode = ResolveNode(_root, op.Path);
+            var instance = RequireInstance(targetNode);
+            op.Event.Detach(instance);
         }
 
         private static ElementNode ResolveNode(ElementNode root, NodePath path)
@@ -281,8 +289,24 @@ internal static class TreePatcher
             return instance ?? throw new InvalidOperationException($"Node '{node.ControlType}' has not been materialized yet.");
         }
 
-        private static void AttachChildCore(AvaloniaObject parent, int index, AvaloniaObject child)
+        private static AvaloniaObject EnsureNodeInstance(ElementNode node)
         {
+            if (node.AdoptedInstance is { } existing)
+            {
+                node.SetMaterializedInstance(existing);
+                return existing;
+            }
+
+            return NodeRenderer.Instance.Build(node);
+        }
+
+        private static void AttachChildCore(AvaloniaObject parent, int index, AvaloniaObject child, ChildSlot slot)
+        {
+            if (TryAttachBySlot(parent, index, child, slot))
+            {
+                return;
+            }
+
             switch (parent)
             {
                 case ContentControl contentControl:
@@ -309,8 +333,13 @@ internal static class TreePatcher
             }
         }
 
-        private static void RemoveChildCore(AvaloniaObject parent, int index)
+        private static void RemoveChildCore(AvaloniaObject parent, int index, ChildSlot slot)
         {
+            if (TryRemoveBySlot(parent, index, slot))
+            {
+                return;
+            }
+
             switch (parent)
             {
                 case ContentControl contentControl:
@@ -347,8 +376,13 @@ internal static class TreePatcher
             }
         }
 
-        private static void MoveChildCore(AvaloniaObject parent, int fromIndex, int toIndex)
+        private static void MoveChildCore(AvaloniaObject parent, int fromIndex, int toIndex, ChildSlot slot)
         {
+            if (TryMoveBySlot(parent, fromIndex, toIndex, slot))
+            {
+                return;
+            }
+
             switch (parent)
             {
                 case Panel panel:
@@ -393,6 +427,191 @@ internal static class TreePatcher
                 default:
                     throw new InvalidOperationException($"Child move for parent type '{parent.GetType().FullName}' is not supported yet.");
             }
+        }
+
+        private static ChildSlot TryGetChildSlot(ElementNode parent, int index)
+        {
+            var children = parent.Children;
+            if ((uint)index >= (uint)children.Count)
+            {
+                return ChildSlot.Unknown;
+            }
+
+            return children[index].ParentSlot;
+        }
+
+        private static bool TryAttachBySlot(AvaloniaObject parent, int index, AvaloniaObject child, ChildSlot slot)
+        {
+            switch (slot)
+            {
+                case ChildSlot.Content:
+                    if (parent is ContentControl contentControl)
+                    {
+                        contentControl.Content = child;
+                        return true;
+                    }
+
+                    if (parent is ContentPresenter contentPresenter)
+                    {
+                        contentPresenter.Content = child;
+                        return true;
+                    }
+
+                    if (parent is Decorator decorator && child is Control controlChild)
+                    {
+                        decorator.Child = controlChild;
+                        return true;
+                    }
+
+                    break;
+
+                case ChildSlot.Visual:
+                    if (parent is Panel panel && child is Control control)
+                    {
+                        index = Math.Clamp(index, 0, panel.Children.Count);
+                        panel.Children.Insert(index, control);
+                        return true;
+                    }
+
+                    break;
+
+                case ChildSlot.Items:
+                    if (parent is ItemsControl itemsControl)
+                    {
+                        var items = EnsureItemList(itemsControl);
+                        index = Math.Clamp(index, 0, items.Count);
+                        items.Insert(index, child);
+                        return true;
+                    }
+
+                    break;
+
+                case ChildSlot.Template:
+                    // Future template hosts can hook in here.
+                    break;
+            }
+
+            return false;
+        }
+
+        private static bool TryRemoveBySlot(AvaloniaObject parent, int index, ChildSlot slot)
+        {
+            switch (slot)
+            {
+                case ChildSlot.Content:
+                    if (parent is ContentControl contentControl)
+                    {
+                        contentControl.Content = null;
+                        return true;
+                    }
+
+                    if (parent is ContentPresenter contentPresenter)
+                    {
+                        contentPresenter.Content = null;
+                        return true;
+                    }
+
+                    if (parent is Decorator decorator)
+                    {
+                        decorator.Child = null;
+                        return true;
+                    }
+
+                    break;
+
+                case ChildSlot.Visual:
+                    if (parent is Panel panel)
+                    {
+                        if (panel.Children.Count == 0)
+                        {
+                            return true;
+                        }
+
+                        index = Math.Clamp(index, 0, panel.Children.Count - 1);
+                        panel.Children.RemoveAt(index);
+                        return true;
+                    }
+
+                    break;
+
+                case ChildSlot.Items:
+                    if (parent is ItemsControl itemsControl)
+                    {
+                        var items = EnsureItemList(itemsControl);
+                        if (items.Count == 0)
+                        {
+                            return true;
+                        }
+
+                        index = Math.Clamp(index, 0, items.Count - 1);
+                        items.RemoveAt(index);
+                        return true;
+                    }
+
+                    break;
+
+                case ChildSlot.Template:
+                    break;
+            }
+
+            return false;
+        }
+
+        private static bool TryMoveBySlot(AvaloniaObject parent, int fromIndex, int toIndex, ChildSlot slot)
+        {
+            switch (slot)
+            {
+                case ChildSlot.Visual:
+                    if (parent is Panel panel)
+                    {
+                        if (panel.Children.Count == 0)
+                        {
+                            return true;
+                        }
+
+                        fromIndex = Math.Clamp(fromIndex, 0, panel.Children.Count - 1);
+                        toIndex = Math.Clamp(toIndex, 0, panel.Children.Count - 1);
+
+                        if (fromIndex == toIndex)
+                        {
+                            return true;
+                        }
+
+                        var child = panel.Children[fromIndex];
+                        panel.Children.RemoveAt(fromIndex);
+                        panel.Children.Insert(toIndex, child);
+                        return true;
+                    }
+
+                    break;
+
+                case ChildSlot.Items:
+                    if (parent is ItemsControl itemsControl)
+                    {
+                        var items = EnsureItemList(itemsControl);
+                        if (items.Count == 0)
+                        {
+                            return true;
+                        }
+
+                        fromIndex = Math.Clamp(fromIndex, 0, items.Count - 1);
+                        toIndex = Math.Clamp(toIndex, 0, items.Count - 1);
+
+                        if (fromIndex == toIndex)
+                        {
+                            return true;
+                        }
+
+                        var value = items[fromIndex];
+                        items.RemoveAt(fromIndex);
+                        items.Insert(toIndex, value);
+                        return true;
+                    }
+
+                    break;
+            }
+
+            return false;
         }
 
         private static IList EnsureItemList(ItemsControl itemsControl)

@@ -4396,7 +4396,9 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.AutoCompleteBox)target;
-            typed.AddHandler(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.SelectionChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.AutoCompleteBox.SelectionChangedEvent, Handler);
         }));
     }
 
@@ -4487,7 +4489,9 @@ public static partial class AutoCompleteBoxExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.AutoCompleteBox)target;
-            typed.AddHandler(Avalonia.Controls.AutoCompleteBox.TextChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.TextChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.AutoCompleteBox.TextChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.AutoCompleteBox.TextChangedEvent, Handler);
         }));
     }
 

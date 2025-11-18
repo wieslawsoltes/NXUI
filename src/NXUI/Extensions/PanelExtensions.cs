@@ -71,7 +71,8 @@ public static partial class PanelExtensions
 
         return panel.WithChild(
             node,
-            static (parent, builtChild) => parent.Children.Add((Control)builtChild));
+            static (parent, builtChild) => parent.Children.Add((Control)builtChild),
+            ChildSlot.Visual);
     }
 
 #endif

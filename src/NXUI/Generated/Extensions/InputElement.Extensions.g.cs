@@ -1212,7 +1212,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.GotFocusEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.GotFocusEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.GotFocusEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.GotFocusEvent, Handler);
         }));
     }
 
@@ -1303,7 +1305,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.LostFocusEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.LostFocusEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.LostFocusEvent, Handler);
         }));
     }
 
@@ -1394,7 +1398,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.KeyDownEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.KeyEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.KeyDownEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.KeyDownEvent, Handler);
         }));
     }
 
@@ -1485,7 +1491,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.KeyUpEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.KeyEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.KeyUpEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.KeyUpEvent, Handler);
         }));
     }
 
@@ -1576,7 +1584,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.TextInputEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.TextInputEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.TextInputEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.TextInputEvent, Handler);
         }));
     }
 
@@ -1667,7 +1677,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.TextInput.TextInputMethodClientRequestedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.TextInputMethodClientRequestedEvent, Handler);
         }));
     }
 
@@ -1758,7 +1770,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.PointerEnteredEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.PointerEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerEnteredEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerEnteredEvent, Handler);
         }));
     }
 
@@ -1849,7 +1863,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.PointerExitedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.PointerEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerExitedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerExitedEvent, Handler);
         }));
     }
 
@@ -1940,7 +1956,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.PointerMovedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.PointerEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerMovedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerMovedEvent, Handler);
         }));
     }
 
@@ -2031,7 +2049,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.PointerPressedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.PointerPressedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerPressedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerPressedEvent, Handler);
         }));
     }
 
@@ -2122,7 +2142,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.PointerReleasedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.PointerReleasedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerReleasedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerReleasedEvent, Handler);
         }));
     }
 
@@ -2213,7 +2235,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.PointerCaptureLostEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.PointerCaptureLostEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerCaptureLostEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerCaptureLostEvent, Handler);
         }));
     }
 
@@ -2304,7 +2328,9 @@ public static partial class InputElementExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Input.InputElement)target;
-            typed.AddHandler(Avalonia.Input.InputElement.PointerWheelChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.PointerWheelEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Input.InputElement.PointerWheelChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Input.InputElement.PointerWheelChangedEvent, Handler);
         }));
     }
 

@@ -27,6 +27,46 @@ plans granular.
   through the parent reconciliation cycle.
 - When diagnostics are enabled, NXUI identifies boundary scopes in the patch summary, so be
   intentional about where you place them to make logs actionable.
+- If you enable `<EnableNXUIHotReloadBoundaries>true</EnableNXUIHotReloadBoundaries>` the
+  `NXUI.Fody` add-in automatically stamps `[HotReloadBoundary]` onto the controls listed in
+  `build/HotReloadBoundaries.json`. Add or remove fully-qualified type names in that manifest
+  to customize the implicit coverage for your solution.
+- Annotate custom controls with `[HotReloadCandidateBoundary]` when you want them to opt into
+  automatic weaving. The candidate attribute also doubles as a runtime fallback: if weaving
+  is disabled, `HotReloadBoundaryMetadata` still treats the control as a boundary.
+- Run `nxui hotreload boundaries [--manifest build/HotReloadBoundaries.json] [--assembly path]`
+  to inspect the current manifest and verify which compiled controls are treated as implicit
+  boundaries (manifest hits, attributes, markers, or state-adapter skips).
+- Metadata update handlers are injected automatically when `<EnableNXUIHotReloadBoundaries>` is
+  true (Phase 4.2.2). You no longer need to place `[assembly: MetadataUpdateHandler(...)]` in
+  every app; the `NXUI.Fody` add-in weaves the attribute so `dotnet watch`/IDE updates always
+  reach `HotReloadManager`.
+
+## State adapters
+
+- NXUI ships a new `HotReloadStateRegistry` (Phase 4.2) that records `IHotReloadStateAdapter`
+  instances for controls whose state should survive forced replacements. `TextBox` now retains
+  user-edited text, caret index, and selection if the diff engine replaces the control during
+  hot reload.
+- Register custom adapters via `HotReloadStateRegistry.RegisterAdapter(typeof(MyControl), new MyControlStateAdapter())`.
+  Future weavers will auto-inject adapters into Avalonia controls so you do not need to write
+  boilerplate for caret/scroll state.
+- Adapters run only when NXUI detects a true control replacement (e.g., key change, hard diff).
+  Combine them with boundaries and keys to minimize the number of times replacements occur.
+- With `NXUI_HOTRELOAD_DIAGNOSTICS=1` enabled you will see `[HotReload] state transfer ...`
+  entries whenever an adapter runs, making it easy to confirm that caret/selection state is
+  propagating after hot reload.
+
+## Template manifests
+
+- Template builders (`SetTemplatedControlTemplate` hot reload overloads) now capture template
+  manifests automatically. When the template is first instantiated NXUI records the control
+  types and named parts (`.Name("PART_X", scope)`) via `TemplateManifestRegistry`.
+- Future weaving work can use these manifests to diff template children the same way regular
+  builder trees are diffed. Until then, you can query the registry in diagnostics/tests to
+  verify that named parts are present.
+- Continue to name template parts explicitly using `.Name("PART_Header", scope)` so manifests
+  include the same data the Avalonia templated control runtime expects.
 
 ## Builder Guidelines
 

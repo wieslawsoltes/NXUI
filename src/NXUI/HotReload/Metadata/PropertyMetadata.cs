@@ -8,7 +8,12 @@ using Avalonia;
 /// <summary>
 /// Represents an Avalonia property participating in the hot reload pipeline.
 /// </summary>
-internal readonly record struct PropertyMetadataEntry(int Id, int OwnerTypeId, string Name, AvaloniaProperty Property);
+internal readonly record struct PropertyMetadataEntry(
+    int Id,
+    int OwnerTypeId,
+    string Name,
+    AvaloniaProperty Property,
+    PropertyValueComparer? Comparer = null);
 
 /// <summary>
 /// Lookup table for generated property metadata.
@@ -58,6 +63,12 @@ internal static partial class PropertyMetadata
         for (var i = 0; i < rawEntries.Length; i++)
         {
             var entry = rawEntries[i];
+            var comparer = PropertyComparerRegistry.Resolve(entry.Property);
+            if (comparer is not null)
+            {
+                entry = entry with { Comparer = comparer };
+            }
+
             table[entry.Id] = entry;
         }
 
@@ -77,5 +88,26 @@ internal static partial class PropertyMetadata
     }
 
     private static partial PropertyMetadataEntry[] CreateEntries();
+
+    /// <summary>
+    /// Attempts to retrieve a comparer for the provided property identifier.
+    /// </summary>
+    internal static bool TryGetComparer(int propertyId, out PropertyValueComparer comparer)
+    {
+        comparer = null!;
+        if ((uint)propertyId >= (uint)s_entries.Length)
+        {
+            return false;
+        }
+
+        var entry = s_entries[propertyId];
+        if (entry.Comparer is null)
+        {
+            return false;
+        }
+
+        comparer = entry.Comparer;
+        return true;
+    }
 }
 #endif

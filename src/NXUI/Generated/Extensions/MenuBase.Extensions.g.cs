@@ -166,7 +166,9 @@ public static partial class MenuBaseExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.MenuBase)target;
-            typed.AddHandler(Avalonia.Controls.MenuBase.OpenedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.MenuBase.OpenedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.MenuBase.OpenedEvent, Handler);
         }));
     }
 
@@ -257,7 +259,9 @@ public static partial class MenuBaseExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.MenuBase)target;
-            typed.AddHandler(Avalonia.Controls.MenuBase.ClosedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.MenuBase.ClosedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.MenuBase.ClosedEvent, Handler);
         }));
     }
 

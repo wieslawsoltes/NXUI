@@ -758,7 +758,9 @@ public static partial class ExpanderExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Expander)target;
-            typed.AddHandler(Avalonia.Controls.Expander.CollapsedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Expander.CollapsedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Expander.CollapsedEvent, Handler);
         }));
     }
 
@@ -849,7 +851,9 @@ public static partial class ExpanderExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Expander)target;
-            typed.AddHandler(Avalonia.Controls.Expander.CollapsingEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.CancelRoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Expander.CollapsingEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Expander.CollapsingEvent, Handler);
         }));
     }
 
@@ -940,7 +944,9 @@ public static partial class ExpanderExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Expander)target;
-            typed.AddHandler(Avalonia.Controls.Expander.ExpandedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Expander.ExpandedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Expander.ExpandedEvent, Handler);
         }));
     }
 
@@ -1031,7 +1037,9 @@ public static partial class ExpanderExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Expander)target;
-            typed.AddHandler(Avalonia.Controls.Expander.ExpandingEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.CancelRoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Expander.ExpandingEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Expander.ExpandingEvent, Handler);
         }));
     }
 

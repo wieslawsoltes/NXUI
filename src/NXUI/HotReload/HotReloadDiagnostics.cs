@@ -15,10 +15,13 @@ internal static class HotReloadDiagnostics
 {
     private const string Category = "NXUI.HotReload";
     private const string DiagnosticsEnvVariable = "NXUI_HOTRELOAD_DIAGNOSTICS";
+    private const string SnapshotEnvVariable = "NXUI_HOTRELOAD_SNAPSHOT";
 #if NXUI_HOTRELOAD
-    private static readonly bool s_enabled = IsDiagnosticsEnabled();
+    private static readonly bool s_enabled = IsFlagEnabled(DiagnosticsEnvVariable);
+    private static readonly bool s_emitSnapshots = IsFlagEnabled(SnapshotEnvVariable);
 #else
     private const bool s_enabled = false;
+    private const bool s_emitSnapshots = false;
 #endif
 
     internal static bool IsEnabled => s_enabled;
@@ -78,6 +81,12 @@ internal static class HotReloadDiagnostics
 
     internal static void TracePatchSummary(ReconcileResult result, ElementNode rootNode)
     {
+        HotReloadEventSource.Log.PatchSummary(result, DescribeNode(rootNode));
+        if (s_emitSnapshots)
+        {
+            EmitSnapshot(rootNode);
+        }
+
         if (!s_enabled)
         {
             return;
@@ -87,6 +96,28 @@ internal static class HotReloadDiagnostics
             $"[HotReload] reconcile summary ({DescribeNode(rootNode)}): replace={result.ReplaceSubtreeCount}, set={result.SetPropertyCount}, bind={result.SetBindingCount}, clear={result.ClearPropertyCount}, add={result.AddChildCount}, remove={result.RemoveChildCount}, move={result.MoveChildCount}, attachEvt={result.AttachEventCount}, detachEvt={result.DetachEventCount}, rootReplaced={result.ReplacedRoot}";
 
         WriteDebug(summary);
+    }
+
+    internal static void TraceBoundaryShortCircuit(ElementNode node, NodePath path, string reason)
+    {
+        var pathText = path.ToString();
+        var nodeDescription = DescribeNode(node);
+        HotReloadEventSource.Log.BoundaryShortCircuit(pathText, nodeDescription, reason ?? string.Empty);
+
+        if (!s_enabled)
+        {
+            return;
+        }
+
+        var builder = new StringBuilder();
+        builder.Append("[HotReload] boundary short-circuit path=")
+            .Append(pathText)
+            .Append(" node=")
+            .Append(nodeDescription)
+            .Append(" reason=")
+            .Append(string.IsNullOrWhiteSpace(reason) ? "Unknown" : reason);
+
+        WriteDebug(builder.ToString());
     }
 
     private static string DescribePatchPayload(in PatchOp op)
@@ -162,15 +193,35 @@ internal static class HotReloadDiagnostics
         return $"{owner}.{eventName} -> {handler}";
     }
 
+    private static void EmitSnapshot(ElementNode rootNode)
+    {
+        var json = ElementNodeSerializer.Serialize(rootNode);
+        HotReloadEventSource.Log.NodeSnapshot(json);
+    }
+
     private static void WriteDebug(string message)
     {
         Debug.WriteLine(message, Category);
         Console.WriteLine(message);
     }
 
-    private static bool IsDiagnosticsEnabled()
+    internal static void TraceStateTransfer(Type adapterType, Type sourceType, Type targetType)
     {
-        var value = Environment.GetEnvironmentVariable(DiagnosticsEnvVariable);
+        if (!s_enabled)
+        {
+            return;
+        }
+
+        var adapterName = adapterType?.Name ?? adapterType?.FullName ?? "UnknownAdapter";
+        var sourceName = sourceType?.Name ?? sourceType?.FullName ?? "UnknownSource";
+        var targetName = targetType?.Name ?? targetType?.FullName ?? "UnknownTarget";
+
+        WriteDebug($"[HotReload] state transfer adapter={adapterName} source={sourceName} target={targetName}");
+    }
+
+    private static bool IsFlagEnabled(string variable)
+    {
+        var value = Environment.GetEnvironmentVariable(variable);
         if (string.IsNullOrWhiteSpace(value))
         {
             return false;

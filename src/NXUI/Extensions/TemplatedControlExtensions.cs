@@ -1,7 +1,9 @@
 namespace NXUI.Extensions;
 
+using System;
 #if NXUI_HOTRELOAD
 using NXUI.HotReload.Nodes;
+using NXUI.HotReload.Templates;
 #endif
 
 /// <summary>
@@ -48,7 +50,13 @@ public static partial class TemplatedControlExtensions
         ArgumentNullException.ThrowIfNull(style);
         ArgumentNullException.ThrowIfNull(build);
 
+#if NXUI_HOTRELOAD
+        var value = CreateTemplate(build);
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
+        return style;
+#else
         return style.SetTemplatedControlTemplate<TControl>((parent, scope) => build(parent, scope).Mount());
+#endif
     }
 
     /// <summary>
@@ -61,8 +69,46 @@ public static partial class TemplatedControlExtensions
         where TContent : Control
     {
         ArgumentNullException.ThrowIfNull(build);
+#if NXUI_HOTRELOAD
         return builder.WithAction(style =>
-            style.SetTemplatedControlTemplate<TControl, TContent>(build));
+        {
+            var value = CreateTemplate(build);
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
+        });
+#else
+        return builder.WithAction(style =>
+            style.SetTemplatedControlTemplate<TControl>((parent, scope) => build(parent, scope).Mount()));
+#endif
+    }
+
+    private static FuncControlTemplate CreateTemplate<TControl, TContent>(
+        Func<TControl, INameScope, ElementBuilder<TContent>> build)
+        where TControl : TemplatedControl
+        where TContent : Control
+    {
+        FuncControlTemplate? templateRef = null;
+        var manifestRecorded = false;
+
+        var value = new FuncControlTemplate((parent, scope) =>
+        {
+            if (parent is not TControl typed)
+            {
+                throw new InvalidCastException();
+            }
+
+            var contentBuilder = build(typed, scope);
+            if (!manifestRecorded && templateRef is not null)
+            {
+                var manifest = TemplateManifestCollector.Create(contentBuilder.Node);
+                TemplateManifestRegistry.Register(templateRef, manifest);
+                manifestRecorded = true;
+            }
+
+            return contentBuilder.Mount();
+        });
+
+        templateRef = value;
+        return value;
     }
 #endif
 }

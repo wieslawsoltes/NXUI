@@ -1897,7 +1897,9 @@ public static partial class MenuItemExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.MenuItem)target;
-            typed.AddHandler(Avalonia.Controls.MenuItem.ClickEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.MenuItem.ClickEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.MenuItem.ClickEvent, Handler);
         }));
     }
 
@@ -1988,7 +1990,9 @@ public static partial class MenuItemExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.MenuItem)target;
-            typed.AddHandler(Avalonia.Controls.MenuItem.PointerEnteredItemEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.MenuItem.PointerEnteredItemEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.MenuItem.PointerEnteredItemEvent, Handler);
         }));
     }
 
@@ -2079,7 +2083,9 @@ public static partial class MenuItemExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.MenuItem)target;
-            typed.AddHandler(Avalonia.Controls.MenuItem.PointerExitedItemEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.MenuItem.PointerExitedItemEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.MenuItem.PointerExitedItemEvent, Handler);
         }));
     }
 
@@ -2170,7 +2176,9 @@ public static partial class MenuItemExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.MenuItem)target;
-            typed.AddHandler(Avalonia.Controls.MenuItem.SubmenuOpenedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.MenuItem.SubmenuOpenedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.MenuItem.SubmenuOpenedEvent, Handler);
         }));
     }
 

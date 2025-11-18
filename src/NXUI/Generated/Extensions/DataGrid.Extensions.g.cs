@@ -7258,7 +7258,9 @@ public static partial class DataGridExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.DataGrid)target;
-            typed.AddHandler(Avalonia.Controls.DataGrid.SelectionChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.SelectionChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.DataGrid.SelectionChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.DataGrid.SelectionChangedEvent, Handler);
         }));
     }
 

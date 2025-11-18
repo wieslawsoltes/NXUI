@@ -4487,7 +4487,9 @@ public static partial class NumericUpDownExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.NumericUpDown)target;
-            typed.AddHandler(Avalonia.Controls.NumericUpDown.ValueChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.NumericUpDownValueChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.NumericUpDown.ValueChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.NumericUpDown.ValueChangedEvent, Handler);
         }));
     }
 

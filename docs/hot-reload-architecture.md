@@ -112,8 +112,15 @@ Implementation shares `ComponentRegistry` and `TreeDiffer`. Only the transport c
 ## Developer Experience
 - Opt-in flag via `PropertyGroup` `&lt;EnableNXUIHotReload&gt;true&lt;/EnableNXUIHotReload&gt;` or `#define NXUI_HOTRELOAD`.
 - Template updates: NXUI project templates updated to call `AppBuilder.Configure().UseNXUIHotReload().StartWithClassicDesktopLifetime(...)` when in Debug.
-- Logging: `HotReloadDiagnostics` logger (wraps `ILogger`) prints patch summaries and warnings about replaced nodes.
+- Logging: `HotReloadDiagnostics` logger (wraps `ILogger`) prints patch summaries and warnings about replaced nodes. When richer insights are needed, enable `NXUI_HOTRELOAD_DIAGNOSTICS` and attach the `nxui hotreload trace` CLI (`dotnet run --project src/NXUI.Cli -- hotreload trace --pid <processId>`) to stream the `NXUI-HotReload` EventSource and visualize per-subtree counts.
+- Snapshots: set `NXUI_HOTRELOAD_SNAPSHOT=1` to emit serialized `ElementNode` trees. Collect them via `nxui hotreload snapshot --pid <processId> [--output tree.json] [--watch]` for inspection or automated regressions.
+- Boundaries: run `nxui hotreload boundaries [--manifest build/HotReloadBoundaries.json] [--assembly path]` to list manifest seeds and inspect compiled assemblies for `[HotReloadBoundary]`, `[HotReloadCandidateBoundary]`, or manifest-derived matches. Entries flagged as “state-adapter” indicate controls the weaver intentionally skips because they expose `IHotReloadStateAdapter`.
+- State adapters: Phase 4.2 introduces `IHotReloadStateAdapter` + `HotReloadStateRegistry`. Controls such as `TextBox` keep caret/text selection even when the diff engine must recreate them. Future weavers will auto-register adapters for common controls, and projects can register their own via `HotReloadStateRegistry.RegisterAdapter`.
+- Metadata handlers: the Fody add-in also injects `[assembly: MetadataUpdateHandler(typeof(NXUI.HotReload.HotReloadMetadataUpdateHandler))]` so IDEs/`dotnet watch` notify NXUI automatically—no need to copy the attribute into every app project.
+- Diagnostics: when `NXUI_HOTRELOAD_DIAGNOSTICS` is enabled, state transfers emit trace lines identifying the adapter/control pair so developers can verify the preservation path is exercised during IL deltas.
+- Template manifests: control template builders now register manifest graphs (control types + named parts) through `TemplateManifestRegistry`. This gives the diff/patch pipeline visibility into template content even before IL weaving starts recording manifests for compiled XAML resources.
 - Analyzer warns when builder uses features unsupported by diff (e.g., raw `Control` instantiation outside NXUI DSL), offering code fix to wrap in `FluentHost.FromControl`.
+- CLI support: `dotnet run --project src/NXUI.Cli -- gen component SampleComponent --output src/Sample` scaffolds a hot reload-ready entry point (keys, boundaries, diagnostics) so new apps start with best practices baked in.
 
 ## Risks & Mitigations
 - **Risk:** Diff algorithm corrupts tree when developers mutate controls manually. *Mitigation:* Provide `HotReloadBoundary.SuppressDiff(Action<AvaloniaObject>)` to let devs perform imperative mutations safely; analyzer warns on manual property sets in fluent pipelines.

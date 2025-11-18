@@ -360,7 +360,9 @@ public static partial class TreeViewItemExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TreeViewItem)target;
-            typed.AddHandler(Avalonia.Controls.TreeViewItem.ExpandedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TreeViewItem.ExpandedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TreeViewItem.ExpandedEvent, Handler);
         }));
     }
 
@@ -451,7 +453,9 @@ public static partial class TreeViewItemExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TreeViewItem)target;
-            typed.AddHandler(Avalonia.Controls.TreeViewItem.CollapsedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TreeViewItem.CollapsedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TreeViewItem.CollapsedEvent, Handler);
         }));
     }
 

@@ -345,7 +345,9 @@ public static partial class SpinnerExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Spinner)target;
-            typed.AddHandler(Avalonia.Controls.Spinner.SpinEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.SpinEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Spinner.SpinEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Spinner.SpinEvent, Handler);
         }));
     }
 

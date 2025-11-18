@@ -297,6 +297,7 @@ while managing resources with minimal overhead.
 
 3. **Use `dotnet watch` or IDE hot reload** – the runtime listens for metadata updates and calls `NodeRenderer.Reconcile` with the previous node snapshot. The window stays mounted and control state (e.g., `TextBox.Text`) survives.
 4. **Turn on diagnostics when needed** – set `NXUI_HOTRELOAD_DIAGNOSTICS=1` to see per-reconciliation summaries, including counts for property sets, child add/remove/move operations, and replacements.
+5. **Implicit boundaries (optional)** – set `<EnableNXUIHotReloadBoundaries>true</EnableNXUIHotReloadBoundaries>` to weave `[HotReloadBoundary]` onto controls listed in `build/HotReloadBoundaries.json`. Samples do this automatically for Debug builds via `samples/Directory.Build.props`. Use `dotnet run --project src/NXUI.Cli -- hotreload boundaries --manifest build/HotReloadBoundaries.json --assembly path/to/MyApp.dll` to inspect which controls were annotated (manifest hits, explicit attributes, or state-adapter skips). The same Fody pass also injects `[assembly: MetadataUpdateHandler(typeof(NXUI.HotReload.HotReloadMetadataUpdateHandler))]`, so IDE / `dotnet watch` notifications reach NXUI without manual attributes.
 
 ### Troubleshooting
 

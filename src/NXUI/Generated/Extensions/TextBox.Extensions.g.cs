@@ -5964,7 +5964,9 @@ public static partial class TextBoxExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TextBox)target;
-            typed.AddHandler(Avalonia.Controls.TextBox.CopyingToClipboardEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TextBox.CopyingToClipboardEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TextBox.CopyingToClipboardEvent, Handler);
         }));
     }
 
@@ -6055,7 +6057,9 @@ public static partial class TextBoxExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TextBox)target;
-            typed.AddHandler(Avalonia.Controls.TextBox.CuttingToClipboardEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TextBox.CuttingToClipboardEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TextBox.CuttingToClipboardEvent, Handler);
         }));
     }
 
@@ -6146,7 +6150,9 @@ public static partial class TextBoxExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TextBox)target;
-            typed.AddHandler(Avalonia.Controls.TextBox.PastingFromClipboardEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TextBox.PastingFromClipboardEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TextBox.PastingFromClipboardEvent, Handler);
         }));
     }
 
@@ -6237,7 +6243,9 @@ public static partial class TextBoxExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TextBox)target;
-            typed.AddHandler(Avalonia.Controls.TextBox.TextChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.TextChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TextBox.TextChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TextBox.TextChangedEvent, Handler);
         }));
     }
 
@@ -6328,7 +6336,9 @@ public static partial class TextBoxExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TextBox)target;
-            typed.AddHandler(Avalonia.Controls.TextBox.TextChangingEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.TextChangingEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TextBox.TextChangingEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TextBox.TextChangingEvent, Handler);
         }));
     }
 

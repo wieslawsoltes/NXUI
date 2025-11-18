@@ -1,0 +1,19 @@
+{
+  "controls": [
+    "Avalonia.Controls.AutoCompleteBox",
+    "Avalonia.Controls.ComboBox",
+    "Avalonia.Controls.DataGrid",
+    "Avalonia.Controls.ItemsControl",
+    "Avalonia.Controls.ListBox",
+    "Avalonia.Controls.ListView",
+    "Avalonia.Controls.PasswordBox",
+    "Avalonia.Controls.ScrollViewer",
+    "Avalonia.Controls.SelectableTextBlock",
+    "Avalonia.Controls.TabControl",
+    "Avalonia.Controls.TextBox",
+    "Avalonia.Controls.TreeView",
+    "Avalonia.Controls.TreeViewItem",
+    "Avalonia.Controls.Primitives.ScrollBar",
+    "Avalonia.Controls.Primitives.SelectingItemsControl"
+  ]
+}

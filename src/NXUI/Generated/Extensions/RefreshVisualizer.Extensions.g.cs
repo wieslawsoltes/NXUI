@@ -460,7 +460,9 @@ public static partial class RefreshVisualizerExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.RefreshVisualizer)target;
-            typed.AddHandler(Avalonia.Controls.RefreshVisualizer.RefreshRequestedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.RefreshRequestedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.RefreshVisualizer.RefreshRequestedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.RefreshVisualizer.RefreshRequestedEvent, Handler);
         }));
     }
 

@@ -1380,7 +1380,9 @@ public static partial class ButtonExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Button)target;
-            typed.AddHandler(Avalonia.Controls.Button.ClickEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Button.ClickEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Button.ClickEvent, Handler);
         }));
     }
 

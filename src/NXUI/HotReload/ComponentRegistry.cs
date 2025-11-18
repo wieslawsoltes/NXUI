@@ -5,6 +5,8 @@ using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
 
 /// <summary>
@@ -43,9 +45,9 @@ internal sealed class ComponentRegistry
     }
 
     /// <summary>
-    /// Refreshes all registered components.
+    /// Refreshes registered components that match the provided updates.
     /// </summary>
-    internal void RefreshAll(Type[]? updatedTypes, string source)
+    internal void RefreshMatching(Type[]? updatedTypes, string source)
     {
         var handles = Snapshot();
         if (handles.Count == 0)
@@ -53,9 +55,26 @@ internal sealed class ComponentRegistry
             return;
         }
 
-        HotReloadDiagnostics.Trace($"Applying hot reload updates (source={source}, types={DescribeTypes(updatedTypes)}) to {handles.Count} component(s).");
+        IReadOnlyList<ComponentHandle> targets = handles;
 
-        foreach (var handle in handles)
+        if (updatedTypes is { Length: > 0 })
+        {
+            var assemblySet = BuildAssemblySet(updatedTypes);
+            var typeIdSet = BuildTypeIdSet(updatedTypes);
+            var filtered = handles
+                .Where(handle => handle.MatchesUpdate(updatedTypes, assemblySet, typeIdSet))
+                .ToArray();
+
+            if (filtered.Length > 0 && filtered.Length < handles.Count)
+            {
+                targets = filtered;
+            }
+        }
+
+        HotReloadDiagnostics.Trace(
+            $"Applying hot reload updates (source={source}, types={DescribeTypes(updatedTypes)}) to {targets.Count} of {handles.Count} component(s).");
+
+        foreach (var handle in targets)
         {
             try
             {
@@ -71,6 +90,36 @@ internal sealed class ComponentRegistry
     private void Remove(string id)
     {
         _components.TryRemove(id, out _);
+    }
+
+    private static HashSet<Assembly> BuildAssemblySet(Type[] updatedTypes)
+    {
+        var set = new HashSet<Assembly>();
+        for (var i = 0; i < updatedTypes.Length; i++)
+        {
+            var assembly = updatedTypes[i]?.Assembly;
+            if (assembly is not null)
+            {
+                set.Add(assembly);
+            }
+        }
+
+        return set;
+    }
+
+    private static HashSet<int> BuildTypeIdSet(Type[] updatedTypes)
+    {
+        var set = new HashSet<int>();
+        for (var i = 0; i < updatedTypes.Length; i++)
+        {
+            var type = updatedTypes[i];
+            if (type is not null && TypeMetadata.TryGetId(type, out var typeId))
+            {
+                set.Add(typeId);
+            }
+        }
+
+        return set;
     }
 
     private static string DescribeTypes(Type[]? types)

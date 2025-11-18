@@ -56,9 +56,19 @@ object Build() =>
                                 .Text("Welcome to Avalonia + NXUI"),
                             TextBox()
                                 .Text("Edit me and save to trigger hot reload."),
+                            TextBox()
+                                .Text("Edit me and save to trigger hot reload."),
+                            TextBox()
+                                .Text("123")
+                                .Foreground(Brushes.Red),
+                            TextBox()
+                                .Text("124"),
                             Button()
-                                .Content("Click me")
+                                .Content("+")
                                 .OnClickHandler((_, _) => clickCount.OnNext(clickCount.Value + 1)),
+                            Button()
+                                .Content("-")
+                                .OnClickHandler((_, _) => clickCount.OnNext(clickCount.Value - 1)),
                             TextBlock()
                                 .FontSize(16)
                                 .Text(clickCount.Select(count => $"You clicked {count} times.")))));

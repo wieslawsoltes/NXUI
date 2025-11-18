@@ -1628,7 +1628,9 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.SelectingItemsControl)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.SelectingItemsControl.IsSelectedChangedEvent, Handler);
         }));
     }
 
@@ -1719,7 +1721,9 @@ public static partial class SelectingItemsControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.SelectingItemsControl)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.SelectionChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.SelectingItemsControl.SelectionChangedEvent, Handler);
         }));
     }
 

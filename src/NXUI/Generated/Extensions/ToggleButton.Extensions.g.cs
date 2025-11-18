@@ -464,7 +464,9 @@ public static partial class ToggleButtonExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.ToggleButton)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.ToggleButton.IsCheckedChangedEvent, Handler);
         }));
     }
 

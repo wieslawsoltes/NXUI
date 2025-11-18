@@ -708,7 +708,9 @@ public static partial class VirtualizingStackPanelExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.VirtualizingStackPanel)target;
-            typed.AddHandler(Avalonia.Controls.VirtualizingStackPanel.HorizontalSnapPointsChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.VirtualizingStackPanel.HorizontalSnapPointsChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.VirtualizingStackPanel.HorizontalSnapPointsChangedEvent, Handler);
         }));
     }
 
@@ -799,7 +801,9 @@ public static partial class VirtualizingStackPanelExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.VirtualizingStackPanel)target;
-            typed.AddHandler(Avalonia.Controls.VirtualizingStackPanel.VerticalSnapPointsChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.VirtualizingStackPanel.VerticalSnapPointsChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.VirtualizingStackPanel.VerticalSnapPointsChangedEvent, Handler);
         }));
     }
 

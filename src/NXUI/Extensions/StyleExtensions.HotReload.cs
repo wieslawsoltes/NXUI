@@ -4,6 +4,7 @@ namespace NXUI.Extensions;
 using System;
 using Avalonia;
 using Avalonia.Animation;
+using Avalonia.Controls;
 using Avalonia.Styling;
 using NXUI.HotReload.Nodes;
 
@@ -70,6 +71,22 @@ public static partial class StyleExtensions
         {
             style.Resources = resources;
         });
+    }
+
+    /// <summary>
+    /// Records a builder-based resource dictionary assignment for the builder style.
+    /// </summary>
+    public static ElementBuilder<Style> Resources(
+        this ElementBuilder<Style> builder,
+        ElementBuilder<ResourceDictionary> resources)
+    {
+        ArgumentNullException.ThrowIfNull(resources);
+        return builder.WithChild(
+            resources,
+            static (parentObj, builtResources) =>
+            {
+                ((Style)parentObj).Resources = (IResourceDictionary)builtResources;
+            });
     }
 
     /// <summary>

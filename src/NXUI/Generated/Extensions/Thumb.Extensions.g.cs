@@ -76,7 +76,9 @@ public static partial class ThumbExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.Thumb)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.Thumb.DragStartedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.VectorEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.Thumb.DragStartedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.Thumb.DragStartedEvent, Handler);
         }));
     }
 
@@ -167,7 +169,9 @@ public static partial class ThumbExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.Thumb)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.Thumb.DragDeltaEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.VectorEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.Thumb.DragDeltaEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.Thumb.DragDeltaEvent, Handler);
         }));
     }
 
@@ -258,7 +262,9 @@ public static partial class ThumbExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.Thumb)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.Thumb.DragCompletedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Input.VectorEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.Thumb.DragCompletedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.Thumb.DragCompletedEvent, Handler);
         }));
     }
 

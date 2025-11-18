@@ -96,10 +96,12 @@ public readonly struct ElementBuilder<TControl>
     /// </summary>
     internal ElementBuilder<TControl> WithChild<TChild>(
         ElementBuilder<TChild> child,
-        Action<TControl, TChild> attach)
+        Action<TControl, TChild> attach,
+        ChildSlot slot = ChildSlot.Unknown)
         where TChild : AvaloniaObject
     {
         ArgumentNullException.ThrowIfNull(attach);
+        child.Node.SetParentSlot(slot);
         Node.AddChild(child.Node);
         Node.AddProperty(PropertyMutation.ForChild(
             child.Node,
@@ -114,7 +116,8 @@ public readonly struct ElementBuilder<TControl>
     /// </summary>
     internal ElementBuilder<TControl> WithChildren<TChild>(
         IReadOnlyList<ElementBuilder<TChild>> children,
-        Action<TControl, IReadOnlyList<TChild>> attach)
+        Action<TControl, IReadOnlyList<TChild>> attach,
+        ChildSlot slot = ChildSlot.Unknown)
         where TChild : AvaloniaObject
     {
         ArgumentNullException.ThrowIfNull(children);
@@ -124,6 +127,7 @@ public readonly struct ElementBuilder<TControl>
         foreach (var child in children)
         {
             var node = child.Node;
+            node.SetParentSlot(slot);
             childNodes.Add(node);
         }
 
@@ -147,11 +151,12 @@ public readonly struct ElementBuilder<TControl>
     /// <summary>
     /// Adds a mutation that attaches an untyped child node.
     /// </summary>
-    internal ElementBuilder<TControl> WithChild(ElementNode childNode, Action<TControl, AvaloniaObject> attach)
+    internal ElementBuilder<TControl> WithChild(ElementNode childNode, Action<TControl, AvaloniaObject> attach, ChildSlot slot = ChildSlot.Unknown)
     {
         ArgumentNullException.ThrowIfNull(childNode);
         ArgumentNullException.ThrowIfNull(attach);
 
+        childNode.SetParentSlot(slot);
         Node.AddChild(childNode);
         Node.AddProperty(
             PropertyMutation.ForChild(
@@ -176,6 +181,24 @@ public readonly struct ElementBuilder<TControl>
     {
         ArgumentNullException.ThrowIfNull(action);
         Node.AddProperty(PropertyMutation.ForAction(target => action((TControl)target)));
+        return this;
+    }
+
+    /// <summary>
+    /// Marks the builder node as a hot reload boundary.
+    /// </summary>
+    internal ElementBuilder<TControl> MarkBoundary()
+    {
+        Node.MarkBoundary();
+        return this;
+    }
+
+    /// <summary>
+    /// Assigns a stable key to the builder node.
+    /// </summary>
+    public ElementBuilder<TControl> Key(string key)
+    {
+        Node.SetKey(key);
         return this;
     }
 

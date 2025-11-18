@@ -1,6 +1,7 @@
 namespace NXUI.Extensions;
 
 #if NXUI_HOTRELOAD
+using NXUI.HotReload.Metadata;
 using NXUI.HotReload.Nodes;
 #endif
 
@@ -20,11 +21,17 @@ public static partial class StyledElementExtensions
         where TElement : StyledElement
     {
         ArgumentNullException.ThrowIfNull(scope);
-        return builder.WithAction(styledElement =>
+        if (!PropertyMetadata.TryGetId(Avalonia.StyledElement.NameProperty, out var propertyId))
         {
-            styledElement[Avalonia.StyledElement.NameProperty] = value;
-            scope.Register(value, styledElement);
-        });
+            throw new InvalidOperationException("StyledElement.NameProperty is missing from PropertyMetadata.");
+        }
+
+        return builder
+            .WithValue(propertyId, Avalonia.StyledElement.NameProperty, value)
+            .WithAction(styledElement =>
+            {
+                scope.Register(value, styledElement);
+            });
     }
 
     /// <summary>

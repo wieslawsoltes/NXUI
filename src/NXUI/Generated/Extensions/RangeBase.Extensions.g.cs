@@ -1046,7 +1046,9 @@ public static partial class RangeBaseExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.RangeBase)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.Primitives.RangeBaseValueChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.RangeBase.ValueChangedEvent, Handler);
         }));
     }
 

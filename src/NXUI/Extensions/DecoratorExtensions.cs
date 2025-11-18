@@ -24,7 +24,8 @@ public static partial class DecoratorExtensions
             static (parent, builtChild) =>
             {
                 ((Decorator)parent).Child = builtChild;
-            });
+            },
+            ChildSlot.Content);
     }
 #endif
 }

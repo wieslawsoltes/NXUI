@@ -36,11 +36,11 @@ internal sealed class HotReloadUpdateScheduler
 
                 if (Dispatcher.UIThread.CheckAccess())
                 {
-                    _registry.RefreshAll(updatedTypes, source);
+                    _registry.RefreshMatching(updatedTypes, source);
                 }
                 else
                 {
-                    await Dispatcher.UIThread.InvokeAsync(() => _registry.RefreshAll(updatedTypes, source));
+                    await Dispatcher.UIThread.InvokeAsync(() => _registry.RefreshMatching(updatedTypes, source));
                 }
             }
             catch (Exception ex)

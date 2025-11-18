@@ -3973,7 +3973,9 @@ public static partial class TemplatedControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Primitives.TemplatedControl)target;
-            typed.AddHandler(Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.Primitives.TemplateAppliedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Primitives.TemplatedControl.TemplateAppliedEvent, Handler);
         }));
     }
 

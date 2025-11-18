@@ -24,7 +24,8 @@ public static partial class ContentControlExtensions
             static (parent, builtChild) =>
             {
                 ((ContentControl)parent).Content = builtChild;
-            });
+            },
+            ChildSlot.Content);
     }
 }
 #endif

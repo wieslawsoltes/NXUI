@@ -32,7 +32,8 @@ public static partial class ItemsControlExtensions
                     values.Add(builtChildren[i]!);
                 }
                 itemsControl.ItemsSource = values;
-            });
+            },
+            ChildSlot.Items);
     }
 }
 #endif

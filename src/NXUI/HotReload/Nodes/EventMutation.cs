@@ -2,6 +2,7 @@
 namespace NXUI.HotReload.Nodes;
 
 using System;
+using System.Runtime.CompilerServices;
 using System.Reflection;
 using Avalonia;
 
@@ -10,7 +11,10 @@ using Avalonia;
 /// </summary>
 public sealed class EventMutation
 {
-    private readonly Action<AvaloniaObject> _attach;
+    private readonly Action<AvaloniaObject>? _attach;
+    private readonly Action<AvaloniaObject>? _detach;
+    private readonly Func<AvaloniaObject, Action?>? _attachWithScopedDetach;
+    private readonly ConditionalWeakTable<AvaloniaObject, Action>? _detachLookup;
     private readonly EventFingerprint _fingerprint;
 
     /// <summary>
@@ -34,12 +38,72 @@ public sealed class EventMutation
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="EventMutation"/> class with explicit detach support.
+    /// </summary>
+    /// <param name="attach">Delegate that attaches the handler.</param>
+    /// <param name="detach">Delegate that detaches the handler.</param>
+    /// <param name="fingerprint">Fingerprint describing the handler.</param>
+    public EventMutation(Action<AvaloniaObject> attach, Action<AvaloniaObject> detach, EventFingerprint fingerprint = default)
+        : this(attach, fingerprint)
+    {
+        _detach = detach ?? throw new ArgumentNullException(nameof(detach));
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="EventMutation"/> class that captures a detach action per target instance.
+    /// </summary>
+    /// <param name="attach">Delegate that attaches the handler and returns a detach callback for the provided target.</param>
+    /// <param name="fingerprint">Fingerprint describing the handler.</param>
+    public EventMutation(Func<AvaloniaObject, Action?> attach, EventFingerprint fingerprint = default)
+    {
+        _attachWithScopedDetach = attach ?? throw new ArgumentNullException(nameof(attach));
+        _detachLookup = new ConditionalWeakTable<AvaloniaObject, Action>();
+        _fingerprint = fingerprint;
+    }
+
+    /// <summary>
     /// Attaches the recorded handler to the provided control instance.
     /// </summary>
     /// <param name="target">The control instance.</param>
     public void Attach(AvaloniaObject target)
     {
-        _attach(target);
+        ArgumentNullException.ThrowIfNull(target);
+
+        if (_attachWithScopedDetach is { } scopedAttach)
+        {
+            var detach = scopedAttach(target);
+            if (detach is not null && _detachLookup is not null)
+            {
+                _detachLookup.Remove(target);
+                _detachLookup.Add(target, detach);
+            }
+
+            return;
+        }
+
+        _attach!(target);
+    }
+
+    /// <summary>
+    /// Detaches the recorded handler from the provided control instance, if supported.
+    /// </summary>
+    /// <param name="target">The control instance.</param>
+    public void Detach(AvaloniaObject target)
+    {
+        ArgumentNullException.ThrowIfNull(target);
+
+        if (_attachWithScopedDetach is not null && _detachLookup is not null)
+        {
+            if (_detachLookup.TryGetValue(target, out var detach))
+            {
+                detach();
+                _detachLookup.Remove(target);
+            }
+
+            return;
+        }
+
+        _detach?.Invoke(target);
     }
 
     /// <summary>

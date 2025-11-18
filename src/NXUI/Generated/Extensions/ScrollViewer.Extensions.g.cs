@@ -3444,7 +3444,9 @@ public static partial class ScrollViewerExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.ScrollViewer)target;
-            typed.AddHandler(Avalonia.Controls.ScrollViewer.ScrollChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.ScrollChangedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.ScrollViewer.ScrollChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.ScrollViewer.ScrollChangedEvent, Handler);
         }));
     }
 

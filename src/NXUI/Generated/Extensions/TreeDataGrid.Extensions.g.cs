@@ -1614,7 +1614,9 @@ public static partial class TreeDataGridExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TreeDataGrid)target;
-            typed.AddHandler(Avalonia.Controls.TreeDataGrid.RowDragStartedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.TreeDataGridRowDragStartedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TreeDataGrid.RowDragStartedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TreeDataGrid.RowDragStartedEvent, Handler);
         }));
     }
 
@@ -1705,7 +1707,9 @@ public static partial class TreeDataGridExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TreeDataGrid)target;
-            typed.AddHandler(Avalonia.Controls.TreeDataGrid.RowDragOverEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.TreeDataGridRowDragEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TreeDataGrid.RowDragOverEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TreeDataGrid.RowDragOverEvent, Handler);
         }));
     }
 
@@ -1796,7 +1800,9 @@ public static partial class TreeDataGridExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TreeDataGrid)target;
-            typed.AddHandler(Avalonia.Controls.TreeDataGrid.RowDropEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.TreeDataGridRowDragEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TreeDataGrid.RowDropEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TreeDataGrid.RowDropEvent, Handler);
         }));
     }
 

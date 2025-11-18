@@ -2062,7 +2062,9 @@ public static partial class SplitViewExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.SplitView)target;
-            typed.AddHandler(Avalonia.Controls.SplitView.PaneClosedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.SplitView.PaneClosedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.SplitView.PaneClosedEvent, Handler);
         }));
     }
 
@@ -2153,7 +2155,9 @@ public static partial class SplitViewExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.SplitView)target;
-            typed.AddHandler(Avalonia.Controls.SplitView.PaneClosingEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.CancelRoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.SplitView.PaneClosingEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.SplitView.PaneClosingEvent, Handler);
         }));
     }
 
@@ -2244,7 +2248,9 @@ public static partial class SplitViewExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.SplitView)target;
-            typed.AddHandler(Avalonia.Controls.SplitView.PaneOpenedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.SplitView.PaneOpenedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.SplitView.PaneOpenedEvent, Handler);
         }));
     }
 
@@ -2335,7 +2341,9 @@ public static partial class SplitViewExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.SplitView)target;
-            typed.AddHandler(Avalonia.Controls.SplitView.PaneOpeningEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.CancelRoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.SplitView.PaneOpeningEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.SplitView.PaneOpeningEvent, Handler);
         }));
     }
 

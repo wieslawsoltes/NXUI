@@ -464,7 +464,9 @@ public static partial class TransitioningContentControlExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.TransitioningContentControl)target;
-            typed.AddHandler(Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.TransitionCompletedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.TransitioningContentControl.TransitionCompletedEvent, Handler);
         }));
     }
 

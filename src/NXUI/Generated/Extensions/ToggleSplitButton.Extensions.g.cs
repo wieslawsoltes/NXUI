@@ -270,7 +270,9 @@ public static partial class ToggleSplitButtonExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.ToggleSplitButton)target;
-            typed.AddHandler(Avalonia.Controls.ToggleSplitButton.IsCheckedChangedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.ToggleSplitButton.IsCheckedChangedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.ToggleSplitButton.IsCheckedChangedEvent, Handler);
         }));
     }
 

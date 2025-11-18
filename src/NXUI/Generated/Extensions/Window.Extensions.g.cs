@@ -3393,7 +3393,9 @@ public static partial class WindowExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Window)target;
-            typed.AddHandler(Avalonia.Controls.Window.WindowClosedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Window.WindowClosedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Window.WindowClosedEvent, Handler);
         }));
     }
 
@@ -3484,7 +3486,9 @@ public static partial class WindowExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.Window)target;
-            typed.AddHandler(Avalonia.Controls.Window.WindowOpenedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.Window.WindowOpenedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.Window.WindowOpenedEvent, Handler);
         }));
     }
 

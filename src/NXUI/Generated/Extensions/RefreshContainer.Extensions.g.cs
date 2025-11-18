@@ -564,7 +564,9 @@ public static partial class RefreshContainerExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.RefreshContainer)target;
-            typed.AddHandler(Avalonia.Controls.RefreshContainer.RefreshRequestedEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Controls.RefreshRequestedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.RefreshContainer.RefreshRequestedEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.RefreshContainer.RefreshRequestedEvent, Handler);
         }));
     }
 

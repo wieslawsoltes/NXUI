@@ -1032,7 +1032,9 @@ public static partial class SelectableTextBlockExtensions
         return builder.WithEvent(new EventMutation(target =>
         {
             var typed = (Avalonia.Controls.SelectableTextBlock)target;
-            typed.AddHandler(Avalonia.Controls.SelectableTextBlock.CopyingToClipboardEvent, (_, args) => action((T)typed, args), routes);
+            void Handler(object? _, Avalonia.Interactivity.RoutedEventArgs args) => action((T)typed, args);
+            typed.AddHandler(Avalonia.Controls.SelectableTextBlock.CopyingToClipboardEvent, Handler, routes);
+            return () => typed.RemoveHandler(Avalonia.Controls.SelectableTextBlock.CopyingToClipboardEvent, Handler);
         }));
     }
 
