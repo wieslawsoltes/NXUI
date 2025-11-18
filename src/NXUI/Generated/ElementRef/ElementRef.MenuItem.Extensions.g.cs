@@ -26,6 +26,17 @@ public static partial class MenuItemElementRefExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Input.KeyGesture?> ObserveHotKey<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.MenuItem
+    {
+        return elementRef.Observe(Avalonia.Controls.MenuItem.HotKeyProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/> value.
     /// </summary>
     public static IObservable<System.Object?> ObserveCommandParameter<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.MenuItem

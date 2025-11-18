@@ -23,4 +23,37 @@ public static partial class ListBoxElementRefExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Collections.IList?> ObserveSelectedItems<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ListBox
+    {
+        return elementRef.Observe(Avalonia.Controls.ListBox.SelectedItemsProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Selection.ISelectionModel> ObserveSelection<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ListBox
+    {
+        return elementRef.Observe(Avalonia.Controls.ListBox.SelectionProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.SelectionMode> ObserveSelectionMode<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ListBox
+    {
+        return elementRef.Observe(Avalonia.Controls.ListBox.SelectionModeProperty);
+    }
+
+#endif
 }

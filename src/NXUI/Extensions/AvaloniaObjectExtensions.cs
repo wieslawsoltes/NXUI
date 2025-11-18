@@ -3,7 +3,7 @@
 /// <summary>
 /// 
 /// </summary>
-public static class AvaloniaObjectExtensions
+public static partial class AvaloniaObjectExtensions
 {
     /// <summary>
     /// 

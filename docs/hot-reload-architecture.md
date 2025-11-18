@@ -42,6 +42,12 @@ Each node carries:
 - Optional `.Key("MyButton")` and `.HotReloadBoundary()` fluent extensions are generated for every builder to aid diff alignment.
 - Property/child extension methods append mutations to the node rather than immediately mutating a live control.
 
+### Builder Extension Coverage
+- Several fluent helpers are authored manually instead of coming from the generator (e.g., animations, control collections, binding shims, `ObjectExtensions`, and routed event helpers). Each of these now exposes a `*.HotReload.cs` partial that mirrors the runtime behavior on `ElementBuilder<T>` using `WithAction`, `WithRef`, or `ElementNode.RegisterAttachment`.
+- This guarantees that DSL calls such as `.Transitions(...)`, `.DataTemplates(...)`, `.ItemsSource(object[])`, `.BindOneWay(...)`, `.Self(...)`, and `.AddDisposableHandler(...)` behave identically when `NXUI_HOTRELOAD` is defined.
+- Regression coverage for these helpers lives in `tests/NXUI.HotReload.Tests/BuilderExtensionIntegrationTests.cs`. New helpers must add both a hot reload partial and an integration test before landing; otherwise hot reload builds regress silently when codegen changes.
+- Prefer augmenting the generator for property/event helpers when possible. Manual partials are reserved for higher-level behaviors (collection manipulation, event bridge wiring, `ElementRef` plumbing) that the generator cannot infer automatically.
+
 ### Source Generator Changes
 - `src/Generator` is extended to emit:
   - `ElementBuilder<TControl>` partial structs per control with method-chaining returning `ref readonly ElementBuilder<TControl>` (for minimal allocations).

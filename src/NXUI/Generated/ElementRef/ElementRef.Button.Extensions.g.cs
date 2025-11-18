@@ -37,6 +37,17 @@ public static partial class ButtonElementRefExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Button.HotKeyProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Input.KeyGesture?> ObserveHotKey<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Button
+    {
+        return elementRef.Observe(Avalonia.Controls.Button.HotKeyProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Button.CommandParameterProperty"/> value.
     /// </summary>
     public static IObservable<System.Object?> ObserveCommandParameter<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Button

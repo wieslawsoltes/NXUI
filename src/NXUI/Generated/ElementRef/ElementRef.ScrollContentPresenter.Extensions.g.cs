@@ -67,4 +67,59 @@ public static partial class ScrollContentPresenterElementRefExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsType> ObserveHorizontalSnapPointsType<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsType> ObserveVerticalSnapPointsType<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> ObserveHorizontalSnapPointsAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> ObserveVerticalSnapPointsAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsScrollChainingEnabled<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ScrollContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty);
+    }
+
+#endif
 }

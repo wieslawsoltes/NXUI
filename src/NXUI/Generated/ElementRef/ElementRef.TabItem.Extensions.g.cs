@@ -23,4 +23,15 @@ public static partial class TabItemElementRefExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsSelected<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TabItem
+    {
+        return elementRef.Observe(Avalonia.Controls.TabItem.IsSelectedProperty);
+    }
+
+#endif
 }

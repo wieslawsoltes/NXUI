@@ -507,4 +507,828 @@ public static partial class ScrollContentPresenterSetters
         return keyFrame;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterHorizontalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterHorizontalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterHorizontalSnapPointsType(this Style style, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterHorizontalSnapPointsType(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterHorizontalSnapPointsType(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterHorizontalSnapPointsType(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsType(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterHorizontalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterHorizontalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterHorizontalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsTypeProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterVerticalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterVerticalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterVerticalSnapPointsType(this Style style, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsType value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterVerticalSnapPointsType(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterVerticalSnapPointsType(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterVerticalSnapPointsType(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsType(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsType> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterVerticalSnapPointsType(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterVerticalSnapPointsType(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterVerticalSnapPointsType(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsType(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsTypeProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterHorizontalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterHorizontalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterHorizontalSnapPointsAlignment(this Style style, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterHorizontalSnapPointsAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterHorizontalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterHorizontalSnapPointsAlignment(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterHorizontalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterHorizontalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterHorizontalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterHorizontalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.HorizontalSnapPointsAlignmentProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterVerticalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterVerticalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterVerticalSnapPointsAlignment(this Style style, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Controls.Primitives.SnapPointsAlignment value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterVerticalSnapPointsAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterVerticalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterVerticalSnapPointsAlignment(this Style style, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Controls.Primitives.SnapPointsAlignment> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterVerticalSnapPointsAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterVerticalSnapPointsAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterVerticalSnapPointsAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterVerticalSnapPointsAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.VerticalSnapPointsAlignmentProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterIsScrollChainingEnabled(this ElementBuilder<Style> builder, System.Boolean value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterIsScrollChainingEnabled(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterIsScrollChainingEnabled(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterIsScrollChainingEnabled(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterIsScrollChainingEnabled(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterIsScrollChainingEnabled(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterIsScrollChainingEnabled(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterIsScrollChainingEnabled(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetScrollContentPresenterIsScrollChainingEnabled(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetScrollContentPresenterIsScrollChainingEnabled(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetScrollContentPresenterIsScrollChainingEnabled(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetScrollContentPresenterIsScrollChainingEnabled(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.ScrollContentPresenter.IsScrollChainingEnabledProperty, binding));
+        return keyFrame;
+    }
 }

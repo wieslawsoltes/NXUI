@@ -3,7 +3,7 @@ namespace NXUI.Extensions;
 /// <summary>
 /// 
 /// </summary>
-public static class ObjectExtensions
+public static partial class ObjectExtensions
 {
     /// <summary>
     /// 

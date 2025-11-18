@@ -101,4 +101,830 @@ public static partial class ListBoxExtensions
         handler(obj, observable);
         return obj;
     }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectedItems<T>(this ElementBuilder<T> builder, System.Collections.IList? value) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithValue(PropertyMetadata.ListBox_SelectedItems, Avalonia.Controls.ListBox.SelectedItemsProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectedItems<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithBinding(PropertyMetadata.ListBox_SelectedItems, Avalonia.Controls.ListBox.SelectedItemsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectedItems<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Collections.IList?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithBinding(PropertyMetadata.ListBox_SelectedItems, Avalonia.Controls.ListBox.SelectedItemsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectedItems<T>(this ElementRef<T> elementRef, System.Collections.IList? value) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.ListBox.SelectedItemsProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectedItems<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectedItemsProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectedItems<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Collections.IList?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectedItemsProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Controls.ListBox.SelectedItemsProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedItems<T>(this T obj, System.Collections.IList? value) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.SelectedItemsProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedItems<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectedItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectedItems<T>(
+        this T obj,
+        IObservable<System.Collections.IList?> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectedItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindSelectedItems(
+        this Avalonia.Controls.ListBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectedItemsProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Collections.IList?> ObserveSelectedItems(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ListBox.SelectedItemsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedItems<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<System.Collections.IList?>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ListBox.SelectedItemsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Collections.IList?>> ObserveBindingSelectedItems(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ListBox.SelectedItemsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectedItems<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<BindingValue<System.Collections.IList?>>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ListBox.SelectedItemsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectedItemsChanged(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.SelectedItemsProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectedItemsChanged<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.SelectedItemsProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> Selection<T>(this ElementBuilder<T> builder, Avalonia.Controls.Selection.ISelectionModel value) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithValue(PropertyMetadata.ListBox_Selection, Avalonia.Controls.ListBox.SelectionProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> Selection<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithBinding(PropertyMetadata.ListBox_Selection, Avalonia.Controls.ListBox.SelectionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> Selection<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Controls.Selection.ISelectionModel> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithBinding(PropertyMetadata.ListBox_Selection, Avalonia.Controls.ListBox.SelectionProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Selection<T>(this ElementRef<T> elementRef, Avalonia.Controls.Selection.ISelectionModel value) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.ListBox.SelectionProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Selection<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectionProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> Selection<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.Selection.ISelectionModel> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectionProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Controls.ListBox.SelectionProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Selection<T>(this T obj, Avalonia.Controls.Selection.ISelectionModel value) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.SelectionProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Selection<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T Selection<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.Selection.ISelectionModel> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindSelection(
+        this Avalonia.Controls.ListBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectionProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.Selection.ISelectionModel> ObserveSelection(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ListBox.SelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelection<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<Avalonia.Controls.Selection.ISelectionModel>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ListBox.SelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.Selection.ISelectionModel>> ObserveBindingSelection(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ListBox.SelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelection<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<BindingValue<Avalonia.Controls.Selection.ISelectionModel>>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ListBox.SelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionChanged(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.SelectionProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ListBox.SelectionProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionChanged<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.SelectionProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectionMode<T>(this ElementBuilder<T> builder, Avalonia.Controls.SelectionMode value) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectionMode<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithBinding(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectionMode<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Controls.SelectionMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithBinding(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionMode<T>(this ElementRef<T> elementRef, Avalonia.Controls.SelectionMode value) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetValue(Avalonia.Controls.ListBox.SelectionModeProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionMode<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectionModeProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> SelectionMode<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Controls.SelectionMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        return elementRef.SetBinding(Avalonia.Controls.ListBox.SelectionModeProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Controls.ListBox.SelectionModeProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectionMode<T>(this T obj, Avalonia.Controls.SelectionMode value) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.SelectionModeProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectionMode<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectionModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectionMode<T>(
+        this T obj,
+        IObservable<Avalonia.Controls.SelectionMode> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.ListBox
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectionModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindSelectionMode(
+        this Avalonia.Controls.ListBox obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.ListBox.SelectionModeProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Controls.SelectionMode> ObserveSelectionMode(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.ListBox.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionMode<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<Avalonia.Controls.SelectionMode>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.ListBox.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Controls.SelectionMode>> ObserveBindingSelectionMode(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.ListBox.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingSelectionMode<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<BindingValue<Avalonia.Controls.SelectionMode>>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.ListBox.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveSelectionModeChanged(this Avalonia.Controls.ListBox obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.SelectionModeProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnSelectionModeChanged<T>(this T obj, Action<Avalonia.Controls.ListBox, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.ListBox
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.ListBox.SelectionModeProperty);
+        handler(obj, observable);
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectionModeSingle<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.Single);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Single"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectionModeSingle<T>(this T obj) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Single;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectionModeMultiple<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.Multiple);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Multiple"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectionModeMultiple<T>(this T obj) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Multiple;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectionModeToggle<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.Toggle);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.Toggle"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectionModeToggle<T>(this T obj) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.SelectionModeProperty] = Avalonia.Controls.SelectionMode.Toggle;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> SelectionModeAlwaysSelected<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.ListBox
+    {
+        return builder.WithValue(PropertyMetadata.ListBox_SelectionMode, Avalonia.Controls.ListBox.SelectionModeProperty, Avalonia.Controls.SelectionMode.AlwaysSelected);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property value to <see cref="Avalonia.Controls.SelectionMode.AlwaysSelected"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T SelectionModeAlwaysSelected<T>(this T obj) where T : Avalonia.Controls.ListBox
+    {
+        obj[Avalonia.Controls.ListBox.SelectionModeProperty] = Avalonia.Controls.SelectionMode.AlwaysSelected;
+        return obj;
+    }
 }

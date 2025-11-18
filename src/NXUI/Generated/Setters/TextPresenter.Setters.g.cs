@@ -2160,6 +2160,666 @@ public static partial class TextPresenterSetters
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterTextAlignment(this ElementBuilder<Style> builder, Avalonia.Media.TextAlignment value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextAlignment value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterTextAlignment(this Style style, Avalonia.Media.TextAlignment value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterTextAlignment(this KeyFrame keyFrame, Avalonia.Media.TextAlignment value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterTextAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterTextAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterTextAlignment(this Style style, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterTextAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterTextAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterTextAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterTextWrapping(this ElementBuilder<Style> builder, Avalonia.Media.TextWrapping value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterTextWrapping(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextWrapping value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterTextWrapping(this Style style, Avalonia.Media.TextWrapping value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterTextWrapping(this KeyFrame keyFrame, Avalonia.Media.TextWrapping value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterTextWrapping(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextWrapping> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterTextWrapping(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextWrapping> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterTextWrapping(this Style style, IObservable<Avalonia.Media.TextWrapping> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterTextWrapping(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextWrapping> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterTextWrapping(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterTextWrapping(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterTextWrapping(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterTextWrapping(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterLineHeight(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterLineHeight(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterLineHeight(this Style style, System.Double value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterLineHeight(this KeyFrame keyFrame, System.Double value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterLineHeight(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterLineHeight(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterLineHeight(this Style style, IObservable<System.Double> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterLineHeight(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterLineHeight(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterLineHeight(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterLineHeight(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterLineHeight(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterLetterSpacing(this ElementBuilder<Style> builder, System.Double value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterLetterSpacing(this ElementBuilder<KeyFrame> builder, System.Double value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterLetterSpacing(this Style style, System.Double value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterLetterSpacing(this KeyFrame keyFrame, System.Double value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterLetterSpacing(this ElementBuilder<Style> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterLetterSpacing(this ElementBuilder<KeyFrame> builder, IObservable<System.Double> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterLetterSpacing(this Style style, IObservable<System.Double> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterLetterSpacing(this KeyFrame keyFrame, IObservable<System.Double> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTextPresenterLetterSpacing(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTextPresenterLetterSpacing(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTextPresenterLetterSpacing(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTextPresenterLetterSpacing(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>

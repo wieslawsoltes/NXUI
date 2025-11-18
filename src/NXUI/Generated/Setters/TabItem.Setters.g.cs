@@ -12,4 +12,168 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class TabItemSetters
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTabItemIsSelected(this ElementBuilder<Style> builder, System.Boolean value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTabItemIsSelected(this ElementBuilder<KeyFrame> builder, System.Boolean value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.TabItem.IsSelectedProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabItemIsSelected(this Style style, System.Boolean value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, System.Boolean value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTabItemIsSelected(this ElementBuilder<Style> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTabItemIsSelected(this ElementBuilder<KeyFrame> builder, IObservable<System.Boolean> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabItemIsSelected(this Style style, IObservable<System.Boolean> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, IObservable<System.Boolean> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetTabItemIsSelected(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetTabItemIsSelected(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetTabItemIsSelected(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.TabItem.IsSelectedProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetTabItemIsSelected(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.TabItem.IsSelectedProperty, binding));
+        return keyFrame;
+    }
 }

@@ -2820,6 +2820,171 @@ public static partial class NumericUpDownSetters
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetNumericUpDownTextAlignment(this ElementBuilder<Style> builder, Avalonia.Media.TextAlignment value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetNumericUpDownTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Media.TextAlignment value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.NumericUpDown.TextAlignmentProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownTextAlignment(this Style style, Avalonia.Media.TextAlignment value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownTextAlignment(this KeyFrame keyFrame, Avalonia.Media.TextAlignment value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetNumericUpDownTextAlignment(this ElementBuilder<Style> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetNumericUpDownTextAlignment(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownTextAlignment(this Style style, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownTextAlignment(this KeyFrame keyFrame, IObservable<Avalonia.Media.TextAlignment> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetNumericUpDownTextAlignment(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetNumericUpDownTextAlignment(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetNumericUpDownTextAlignment(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetNumericUpDownTextAlignment(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.NumericUpDown.TextAlignmentProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>

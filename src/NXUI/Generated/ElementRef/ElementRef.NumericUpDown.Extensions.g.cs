@@ -202,6 +202,17 @@ public static partial class NumericUpDownElementRefExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.NumericUpDown.TextAlignmentProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.NumericUpDown
+    {
+        return elementRef.Observe(Avalonia.Controls.NumericUpDown.TextAlignmentProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.NumericUpDown.InnerLeftContentProperty"/> value.
     /// </summary>
     public static IObservable<System.Object?> ObserveInnerLeftContent<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.NumericUpDown

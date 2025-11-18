@@ -12,4 +12,15 @@ using NXUI.HotReload.Nodes;
 /// </summary>
 public static partial class ListBoxItemElementRefExtensions
 {
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.ListBoxItem.IsSelectedProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsSelected<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.ListBoxItem
+    {
+        return elementRef.Observe(Avalonia.Controls.ListBoxItem.IsSelectedProperty);
+    }
+
+#endif
 }

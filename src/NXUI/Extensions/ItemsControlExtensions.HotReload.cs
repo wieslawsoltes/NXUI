@@ -35,5 +35,51 @@ public static partial class ItemsControlExtensions
             },
             ChildSlot.Items);
     }
+
+    /// <summary>
+    /// Records raw objects for <see cref="ItemsControl.ItemsSource"/>.
+    /// </summary>
+    public static ElementBuilder<TControl> ItemsSource<TControl>(
+        this ElementBuilder<TControl> builder,
+        params object[] items)
+        where TControl : ItemsControl
+    {
+        ArgumentNullException.ThrowIfNull(items);
+
+        return builder.WithAction(itemsControl =>
+        {
+            switch (itemsControl.ItemsSource)
+            {
+                case AvaloniaList<object> list:
+                    list.AddRange(items);
+                    break;
+                default:
+                    itemsControl.ItemsSource = new AvaloniaList<object>(items);
+                    break;
+            }
+        });
+    }
+
+    /// <summary>
+    /// Records a single object for <see cref="ItemsControl.ItemsSource"/>.
+    /// </summary>
+    public static ElementBuilder<TControl> ItemsSource<TControl>(
+        this ElementBuilder<TControl> builder,
+        object item)
+        where TControl : ItemsControl
+    {
+        return builder.WithAction(itemsControl =>
+        {
+            switch (itemsControl.ItemsSource)
+            {
+                case AvaloniaList<object> list:
+                    list.Add(item);
+                    break;
+                default:
+                    itemsControl.ItemsSource = new AvaloniaList<object>(item);
+                    break;
+            }
+        });
+    }
 }
 #endif

@@ -45,4 +45,15 @@ public static partial class SplitButtonElementRefExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.SplitButton.HotKeyProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Input.KeyGesture?> ObserveHotKey<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.SplitButton
+    {
+        return elementRef.Observe(Avalonia.Controls.SplitButton.HotKeyProperty);
+    }
+
+#endif
 }

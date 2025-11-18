@@ -180,6 +180,171 @@ public static partial class MenuItemSetters
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetMenuItemHotKey(this ElementBuilder<Style> builder, Avalonia.Input.KeyGesture value)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, value));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetMenuItemHotKey(this ElementBuilder<KeyFrame> builder, Avalonia.Input.KeyGesture value)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, value));
+        });
+    }
+
+#endif
+    // Avalonia.Controls.MenuItem.HotKeyProperty
+
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemHotKey(this Style style, Avalonia.Input.KeyGesture value)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, value));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="value">The property value.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemHotKey(this KeyFrame keyFrame, Avalonia.Input.KeyGesture value)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, value));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetMenuItemHotKey(this ElementBuilder<Style> builder, IObservable<Avalonia.Input.KeyGesture> observable)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, observable.ToBinding()));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> using an observable source.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetMenuItemHotKey(this ElementBuilder<KeyFrame> builder, IObservable<Avalonia.Input.KeyGesture> observable)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, observable.ToBinding()));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="observable">The property observable.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemHotKey(this Style style, IObservable<Avalonia.Input.KeyGesture> observable)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, observable.ToBinding()));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="observable">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemHotKey(this KeyFrame keyFrame, IObservable<Avalonia.Input.KeyGesture> observable)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, observable.ToBinding()));
+        return keyFrame;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The style builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The style builder.</returns>
+    public static ElementBuilder<Style> SetMenuItemHotKey(this ElementBuilder<Style> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(style =>
+        {
+            style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, binding));
+        });
+    }
+
+    /// <summary>
+    /// Adds a builder-recorded keyframe setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/> using a binding.
+    /// </summary>
+    /// <param name="builder">The keyframe builder.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The keyframe builder.</returns>
+    public static ElementBuilder<KeyFrame> SetMenuItemHotKey(this ElementBuilder<KeyFrame> builder, Avalonia.Data.IBinding binding)
+    {
+        return builder.WithAction(keyFrame =>
+        {
+            keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, binding));
+        });
+    }
+
+#endif
+    /// <summary>
+    /// Adds a style setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="style">The target style.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target style object reference.</returns>
+    public static Style SetMenuItemHotKey(this Style style, Avalonia.Data.IBinding binding)
+    {
+        style.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, binding));
+        return style;
+    }
+
+    /// <summary>
+    /// Adds a keyframe setter for an <see cref="Avalonia.Controls.MenuItem.HotKeyProperty"/>.
+    /// </summary>
+    /// <param name="keyFrame">The target keyframe.</param>
+    /// <param name="binding">The property binding.</param>
+    /// <returns>The target keyframe object reference.</returns>
+    public static KeyFrame SetMenuItemHotKey(this KeyFrame keyFrame, Avalonia.Data.IBinding binding)
+    {
+        keyFrame.Setters.Add(new Setter(Avalonia.Controls.MenuItem.HotKeyProperty, binding));
+        return keyFrame;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Adds a builder-recorded style setter for an <see cref="Avalonia.Controls.MenuItem.CommandParameterProperty"/>.
     /// </summary>
     /// <param name="builder">The style builder.</param>

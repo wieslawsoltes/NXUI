@@ -202,6 +202,17 @@ public static partial class TextBoxElementRefExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TextBox.TextAlignmentProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
+    {
+        return elementRef.Observe(Avalonia.Controls.TextBox.TextAlignmentProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TextBox.HorizontalContentAlignmentProperty"/> value.
     /// </summary>
     public static IObservable<Avalonia.Layout.HorizontalAlignment> ObserveHorizontalContentAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
@@ -218,6 +229,39 @@ public static partial class TextBoxElementRefExtensions
     public static IObservable<Avalonia.Layout.VerticalAlignment> ObserveVerticalContentAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
     {
         return elementRef.Observe(Avalonia.Controls.TextBox.VerticalContentAlignmentProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TextBox.TextWrappingProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.TextWrapping> ObserveTextWrapping<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
+    {
+        return elementRef.Observe(Avalonia.Controls.TextBox.TextWrappingProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TextBox.LineHeightProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveLineHeight<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
+    {
+        return elementRef.Observe(Avalonia.Controls.TextBox.LineHeightProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TextBox.LetterSpacingProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveLetterSpacing<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TextBox
+    {
+        return elementRef.Observe(Avalonia.Controls.TextBox.LetterSpacingProperty);
     }
 
 #endif

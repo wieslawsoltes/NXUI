@@ -177,4 +177,15 @@ public static partial class RelativePanelElementRefExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Object> ObserveAlignHorizontalCenterWith<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.RelativePanel
+    {
+        return elementRef.Observe(Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty);
+    }
+
+#endif
 }

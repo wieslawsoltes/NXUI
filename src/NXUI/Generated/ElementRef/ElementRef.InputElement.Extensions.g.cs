@@ -100,4 +100,26 @@ public static partial class InputElementElementRefExtensions
     }
 
 #endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsTabStop<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Input.InputElement
+    {
+        return elementRef.Observe(Avalonia.Input.InputElement.IsTabStopProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Int32> ObserveTabIndex<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Input.InputElement
+    {
+        return elementRef.Observe(Avalonia.Input.InputElement.TabIndexProperty);
+    }
+
+#endif
 }

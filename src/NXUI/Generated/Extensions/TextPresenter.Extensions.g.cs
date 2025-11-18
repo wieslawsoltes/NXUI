@@ -3161,6 +3161,1224 @@ public static partial class TextPresenterExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignment<T>(this ElementBuilder<T> builder, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignment<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignment<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Media.TextAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextAlignment<T>(this ElementRef<T> elementRef, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextAlignment<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextAlignment<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.TextAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignment<T>(this T obj, Avalonia.Media.TextAlignment value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignment<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignment<T>(
+        this T obj,
+        IObservable<Avalonia.Media.TextAlignment> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindTextAlignment(
+        this Avalonia.Controls.Presenters.TextPresenter obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.TextAlignment>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextAlignment>> ObserveBindingTextAlignment(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextAlignment<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.TextAlignment>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextAlignmentChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextAlignmentChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty);
+        handler(obj, observable);
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignmentLeft<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Left);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Left"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignmentLeft<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Left;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignmentCenter<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Center);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Center"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignmentCenter<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Center;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignmentRight<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Right);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Right"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignmentRight<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Right;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignmentStart<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Start);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Start"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignmentStart<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Start;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignmentEnd<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.End);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.End"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignmentEnd<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.End;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignmentDetectFromContent<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.DetectFromContent);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.DetectFromContent"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignmentDetectFromContent<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.DetectFromContent;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextAlignmentJustify<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextAlignment, Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty, Avalonia.Media.TextAlignment.Justify);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty"/> property value to <see cref="Avalonia.Media.TextAlignment.Justify"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextAlignmentJustify<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextAlignmentProperty] = Avalonia.Media.TextAlignment.Justify;
+        return obj;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextWrapping<T>(this ElementBuilder<T> builder, Avalonia.Media.TextWrapping value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextWrapping<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextWrapping<T>(
+        this ElementBuilder<T> builder,
+        IObservable<Avalonia.Media.TextWrapping> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextWrapping<T>(this ElementRef<T> elementRef, Avalonia.Media.TextWrapping value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextWrapping<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TextWrapping<T>(
+        this ElementRef<T> elementRef,
+        IObservable<Avalonia.Media.TextWrapping> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextWrapping<T>(this T obj, Avalonia.Media.TextWrapping value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextWrapping<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextWrapping<T>(
+        this T obj,
+        IObservable<Avalonia.Media.TextWrapping> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindTextWrapping(
+        this Avalonia.Controls.Presenters.TextPresenter obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<Avalonia.Media.TextWrapping> ObserveTextWrapping(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextWrapping<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<Avalonia.Media.TextWrapping>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<Avalonia.Media.TextWrapping>> ObserveBindingTextWrapping(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTextWrapping<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<Avalonia.Media.TextWrapping>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTextWrappingChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTextWrappingChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextWrappingNoWrap<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.NoWrap);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.NoWrap"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextWrappingNoWrap<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.NoWrap;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextWrappingWrap<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.Wrap);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.Wrap"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextWrappingWrap<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.Wrap;
+        return obj;
+    }
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TextWrappingWrapWithOverflow<T>(this ElementBuilder<T> builder) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_TextWrapping, Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty, Avalonia.Media.TextWrapping.WrapWithOverflow);
+    }
+
+#endif
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty"/> property value to <see cref="Avalonia.Media.TextWrapping.WrapWithOverflow"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TextWrappingWrapWithOverflow<T>(this T obj) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.TextWrappingProperty] = Avalonia.Media.TextWrapping.WrapWithOverflow;
+        return obj;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LineHeight<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_LineHeight, Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LineHeight<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_LineHeight, Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LineHeight<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_LineHeight, Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LineHeight<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LineHeight<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LineHeight<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LineHeight<T>(this T obj, System.Double value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LineHeight<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LineHeight<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindLineHeight(
+        this Avalonia.Controls.Presenters.TextPresenter obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveLineHeight(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLineHeight<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.Double>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLineHeight(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLineHeight<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLineHeightChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLineHeightChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.LineHeightProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(this ElementBuilder<T> builder, System.Double value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithValue(PropertyMetadata.TextPresenter_LetterSpacing, Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_LetterSpacing, Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> LetterSpacing<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return builder.WithBinding(PropertyMetadata.TextPresenter_LetterSpacing, Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(this ElementRef<T> elementRef, System.Double value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetValue(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> LetterSpacing<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        return elementRef.SetBinding(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(this T obj, System.Double value) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        obj[Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T LetterSpacing<T>(
+        this T obj,
+        IObservable<System.Double> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindLetterSpacing(
+        this Avalonia.Controls.Presenters.TextPresenter obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Double> ObserveLetterSpacing(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<System.Double>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetObservable(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Double>> ObserveBindingLetterSpacing(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingLetterSpacing<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<BindingValue<System.Double>>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveLetterSpacingChanged(this Avalonia.Controls.Presenters.TextPresenter obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnLetterSpacingChanged<T>(this T obj, Action<Avalonia.Controls.Presenters.TextPresenter, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Controls.Presenters.TextPresenter
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Controls.Presenters.TextPresenter.LetterSpacingProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Records a <see cref="Avalonia.Controls.Presenters.TextPresenter.BackgroundProperty"/> literal value for hot reload builds.
     /// </summary>
     /// <param name="builder">The target builder.</param>

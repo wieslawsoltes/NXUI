@@ -26,6 +26,17 @@ public static partial class TreeViewItemElementRefExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.TreeViewItem.IsSelectedProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsSelected<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TreeViewItem
+    {
+        return elementRef.Observe(Avalonia.Controls.TreeViewItem.IsSelectedProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.TreeViewItem.LevelProperty"/> value.
     /// </summary>
     public static IObservable<System.Int32> ObserveLevel<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.TreeViewItem

@@ -147,6 +147,61 @@ public static partial class ContentPresenterElementRefExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.TextAlignment> ObserveTextAlignment<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.TextAlignmentProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.TextWrapping> ObserveTextWrapping<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.TextWrappingProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty"/> value.
+    /// </summary>
+    public static IObservable<Avalonia.Media.TextTrimming> ObserveTextTrimming<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.TextTrimmingProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Double> ObserveLineHeight<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.LineHeightProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Int32> ObserveMaxLines<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter
+    {
+        return elementRef.Observe(Avalonia.Controls.Presenters.ContentPresenter.MaxLinesProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.Presenters.ContentPresenter.ChildProperty"/> value.
     /// </summary>
     public static IObservable<Avalonia.Controls.Control?> ObserveChild<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.Presenters.ContentPresenter

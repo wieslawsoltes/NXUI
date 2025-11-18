@@ -82,4 +82,9 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.RelativePanel.RightOfProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
     /// </summary>
     public static Avalonia.AttachedProperty<System.Object> RelativePanel_RightOf => Avalonia.Controls.RelativePanel.RightOfProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty"/> property defined in <see cref="Avalonia.Controls.RelativePanel"/> class.
+    /// </summary>
+    public static Avalonia.AttachedProperty<System.Object> RelativePanel_AlignHorizontalCenterWith => Avalonia.Controls.RelativePanel.AlignHorizontalCenterWithProperty;
 }

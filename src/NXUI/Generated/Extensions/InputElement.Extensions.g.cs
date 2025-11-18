@@ -1340,6 +1340,490 @@ public static partial class InputElementExtensions
         return obj;
     }
 
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsTabStop<T>(this ElementBuilder<T> builder, System.Boolean value) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithValue(PropertyMetadata.InputElement_IsTabStop, Avalonia.Input.InputElement.IsTabStopProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsTabStop<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_IsTabStop, Avalonia.Input.InputElement.IsTabStopProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> IsTabStop<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_IsTabStop, Avalonia.Input.InputElement.IsTabStopProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsTabStop<T>(this ElementRef<T> elementRef, System.Boolean value) where T : Avalonia.Input.InputElement
+    {
+        return elementRef.SetValue(Avalonia.Input.InputElement.IsTabStopProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsTabStop<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.IsTabStopProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> IsTabStop<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.IsTabStopProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Input.InputElement.IsTabStopProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsTabStop<T>(this T obj, System.Boolean value) where T : Avalonia.Input.InputElement
+    {
+        obj[Avalonia.Input.InputElement.IsTabStopProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsTabStop<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        var descriptor = Avalonia.Input.InputElement.IsTabStopProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T IsTabStop<T>(
+        this T obj,
+        IObservable<System.Boolean> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        var descriptor = Avalonia.Input.InputElement.IsTabStopProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindIsTabStop(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Input.InputElement.IsTabStopProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Boolean> ObserveIsTabStop(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.IsTabStopProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsTabStop<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<System.Boolean>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.IsTabStopProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Boolean>> ObserveBindingIsTabStop(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.IsTabStopProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingIsTabStop<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Boolean>>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.IsTabStopProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveIsTabStopChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsTabStopProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.IsTabStopProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnIsTabStopChanged<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.IsTabStopProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Records a <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TabIndex<T>(this ElementBuilder<T> builder, System.Int32 value) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithValue(PropertyMetadata.InputElement_TabIndex, Avalonia.Input.InputElement.TabIndexProperty, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TabIndex<T>(
+        this ElementBuilder<T> builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_TabIndex, Avalonia.Input.InputElement.TabIndexProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static ElementBuilder<T> TabIndex<T>(
+        this ElementBuilder<T> builder,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return builder.WithBinding(PropertyMetadata.InputElement_TabIndex, Avalonia.Input.InputElement.TabIndexProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TabIndex<T>(this ElementRef<T> elementRef, System.Int32 value) where T : Avalonia.Input.InputElement
+    {
+        return elementRef.SetValue(Avalonia.Input.InputElement.TabIndexProperty, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TabIndex<T>(
+        this ElementRef<T> elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.TabIndexProperty, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static ElementRef<T> TabIndex<T>(
+        this ElementRef<T> elementRef,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        return elementRef.SetBinding(Avalonia.Input.InputElement.TabIndexProperty, observable.ToBinding(), mode, priority);
+    }
+
+#endif
+    // Avalonia.Input.InputElement.TabIndexProperty
+
+    /// <summary>
+    /// Sets a <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="value">The value.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TabIndex<T>(this T obj, System.Int32 value) where T : Avalonia.Input.InputElement
+    {
+        obj[Avalonia.Input.InputElement.TabIndexProperty] = value;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> with binding source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TabIndex<T>(
+        this T obj,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        var descriptor = Avalonia.Input.InputElement.TabIndexProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = binding;
+        return obj;
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> with observable source value.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T TabIndex<T>(
+        this T obj,
+        IObservable<System.Int32> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : Avalonia.Input.InputElement
+    {
+        var descriptor = Avalonia.Input.InputElement.TabIndexProperty.Bind().WithMode(mode).WithPriority(priority);
+        obj[descriptor] = observable.ToBinding();
+        return obj;
+    }
+
+    /// <summary>
+    /// Makes a <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> binding.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>A <see cref="Avalonia.Input.InputElement.TabIndexProperty"/> binding.</returns>
+    public static Avalonia.Data.IBinding BindTabIndex(
+        this Avalonia.Input.InputElement obj,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
+    {
+        var descriptor = Avalonia.Input.InputElement.TabIndexProperty.Bind().WithMode(mode).WithPriority(priority);
+        return obj[descriptor];
+    }
+
+    /// <summary>
+    /// Gets an observable for an <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>
+    /// An observable which fires immediately with the current value of the property on the
+    /// object and subsequently each time the property value changes.
+    /// </returns>
+    public static IObservable<System.Int32> ObserveTabIndex(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetObservable(Avalonia.Input.InputElement.TabIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with an observable for an <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTabIndex<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<System.Int32>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetObservable(Avalonia.Input.InputElement.TabIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a binding observable for <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable including binding errors.</returns>
+    public static IObservable<BindingValue<System.Int32>> ObserveBindingTabIndex(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetBindingObservable(Avalonia.Input.InputElement.TabIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with a binding observable for <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and binding observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnBindingTabIndex<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<BindingValue<System.Int32>>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetBindingObservable(Avalonia.Input.InputElement.TabIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
+    /// <summary>
+    /// Gets a property change observable for <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <returns>An observable with property change details.</returns>
+    public static IObservable<AvaloniaPropertyChangedEventArgs> ObserveTabIndexChanged(this Avalonia.Input.InputElement obj)
+    {
+        return obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.TabIndexProperty);
+    }
+
+    /// <summary>
+    /// Sets a handler with property change observable for <see cref="Avalonia.Input.InputElement.TabIndexProperty"/>.
+    /// </summary>
+    /// <param name="obj">The target object.</param>
+    /// <param name="handler">The handler with target object and property change observable.</param>
+    /// <typeparam name="T">The type of the target object.</typeparam>
+    /// <returns>The target object reference.</returns>
+    public static T OnTabIndexChanged<T>(this T obj, Action<Avalonia.Input.InputElement, IObservable<AvaloniaPropertyChangedEventArgs>> handler) where T : Avalonia.Input.InputElement
+    {
+        var observable = obj.GetPropertyChangedObservable(Avalonia.Input.InputElement.TabIndexProperty);
+        handler(obj, observable);
+        return obj;
+    }
+
     // Avalonia.Input.InputElement.GotFocusEvent
 
     /// <summary>

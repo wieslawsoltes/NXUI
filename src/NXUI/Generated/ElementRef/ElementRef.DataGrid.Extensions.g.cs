@@ -191,6 +191,17 @@ public static partial class DataGridElementRefExtensions
 #if NXUI_HOTRELOAD
 
     /// <summary>
+    /// Observes the <see cref="Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty"/> value.
+    /// </summary>
+    public static IObservable<System.Boolean> ObserveIsScrollInertiaEnabled<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.DataGrid
+    {
+        return elementRef.Observe(Avalonia.Controls.DataGrid.IsScrollInertiaEnabledProperty);
+    }
+
+#endif
+#if NXUI_HOTRELOAD
+
+    /// <summary>
     /// Observes the <see cref="Avalonia.Controls.DataGrid.IsValidProperty"/> value.
     /// </summary>
     public static IObservable<System.Boolean> ObserveIsValid<TControl>(this ElementRef<TControl> elementRef) where TControl : Avalonia.Controls.DataGrid
