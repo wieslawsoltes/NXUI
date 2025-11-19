@@ -40,19 +40,23 @@ dotnet workload install wasm-tools
 
 # Usage
 
-```csharp
-Window Build() => Window().Content(Label().Content("NXUI"));
+NXUI builders now capture the full UI tree so hot reload can diff it. Return the builder
+from your entry point and run the app through `HotReloadHost.Run` (shipped with
+`NXUI.Desktop`) so NXUI can attach the component and reconcile live updates:
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .StartWithClassicDesktopLifetime(Build, args);
+```csharp
+object Build() =>
+  Window()
+    .Title("NXUI")
+    .Content(Label().Content("NXUI"));
+
+return HotReloadHost.Run(Build, "NXUI", args);
 ```
 
 ```csharp
 var count = 0;
 
-Window Build()
+object Build()
   => Window(out var window)
     .Title("NXUI").Width(400).Height(300)
     .Content(
@@ -68,16 +72,33 @@ Window Build()
             .Content(button.ObserveOnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
     .Title(tb1.ObserveText().Select(x => x?.ToUpper()));
 
+return HotReloadHost.Run(Build, "NXUI", args);
+```
+
+`HotReloadHost` automatically falls back to materializing the window when hot reload is
+disabled, so the same entry point works for Release builds without extra flags.
+
+### Running without Hot Reload
+
+If you need to pass a concrete window to Avalonia (for example when integrating into a
+custom lifetime), call `.Mount()` on the builder before returning it:
+
+```csharp
+Window Build()
+  => Window()
+    .Title("NXUI")
+    .Content(Label().Content("NXUI"))
+    .Mount();
+
 AppBuilder.Configure<Application>()
   .UsePlatformDetect()
   .UseFluentTheme()
-  .WithApplicationName("NXUI")
   .StartWithClassicDesktopLifetime(Build, args);
 ```
 
 Minimalistic Desktop app:
 ```csharp
-Run(
+return HotReloadHost.Run(
   () => Window().Content(Label().Content("NXUI")), 
   "NXUI", 
   args, 
@@ -108,10 +129,15 @@ App.cs
 ```csharp
 #!/usr/local/share/dotnet/dotnet run
 #:package NXUI.Desktop@11.3.0
-NXUI.Desktop.NXUI.Run(
-    () => Window().Content(Label().Content("NXUI")), 
-    "NXUI", 
-    args, 
+using Avalonia.Controls;
+using Avalonia.Styling;
+using NXUI.HotReload;
+using static NXUI.Builders;
+
+return HotReloadHost.Run(
+    () => Window().Content(Label().Content("NXUI")),
+    "NXUI",
+    args,
     ThemeVariant.Dark,
     ShutdownMode.OnLastWindowClose);
 ```
@@ -128,10 +154,12 @@ More complex app:
 ```csharp
 #!/usr/local/share/dotnet/dotnet run
 #:package NXUI.Desktop@11.3.0
+using NXUI.HotReload;
+using static NXUI.Builders;
 
 var count = 0;
 
-Window Build()
+object Build()
     => Window(out var window)
         .Title("NXUI").Width(400).Height(300)
         .Content(
@@ -147,11 +175,7 @@ Window Build()
                         .Content(button.ObserveOnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
         .Title(tb1.ObserveText().Select(x => x?.ToUpper()));
 
-AppBuilder.Configure<Application>()
-    .UsePlatformDetect()
-    .UseFluentTheme()
-    .WithApplicationName("NXUI")
-    .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "NXUI", args);
 ```
 
 ![image](https://github.com/user-attachments/assets/6dfea182-9725-4904-a201-b9c48aea2915)
@@ -167,10 +191,10 @@ open Avalonia
 open Avalonia.Controls
 
 open NXUI.Extensions
-open NXUI.Desktop
+open NXUI.HotReload
 open type NXUI.Builders
 
-let Build () =
+let Build () : obj =
     let mutable count = 0
     let mutable window = Unchecked.defaultof<Window>
     let mutable button = Unchecked.defaultof<Button>
@@ -198,9 +222,10 @@ let Build () =
                 )
         )
         .Title(tb1.ObserveText())
+    |> box
 
 [<EntryPoint>]
-let Main argv = NXUI.Run(Build, "NXUI", argv)
+let Main argv = HotReloadHost.Run(Build, "NXUI", argv)
 ```
 
 > ### F# 8.0 Support
