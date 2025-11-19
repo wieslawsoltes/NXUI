@@ -14,11 +14,14 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Avalonia.Headless" Version="$(AvaloniaVersion)" />
+    <PackageReference Include="Avalonia.Headless.Xunit" Version="$(AvaloniaVersion)" />
     <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\NXUI\NXUI.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\NXUI.Desktop\NXUI.Desktop.csproj">
     </ProjectReference>
   </ItemGroup>
 </Project>

@@ -95,7 +95,13 @@ public static class HotReloadHost
         }
 
         lifetime.MainWindow = window;
-        window.Closed += (_, _) => handle.Dispose();
+        void OnExit(object? sender, ControlledApplicationLifetimeExitEventArgs e)
+        {
+            handle.Dispose();
+            lifetime.Exit -= OnExit;
+        }
+
+        lifetime.Exit += OnExit;
         return true;
     }
 
