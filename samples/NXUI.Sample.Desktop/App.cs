@@ -1,23 +1,35 @@
-var count = 0;
+var clickCount = new BehaviorSubject<int>(0);
 
-Window Build()
-  => Window(out var window)
-    .Title("NXUI").Width(400).Height(300)
-    .Content(
-      StackPanel()
-        .Children(
-          Button(out var button)
-            .Content("Welcome to Avalonia, please click me!"),
-          TextBox(out var tb1)
-            .Text("NXUI"),
-          TextBox()
-            .Text(window.BindTitle()),
-          Label()
-            .Content(button.ObserveOnClick().Select(_ => ++count).Select(x => $"You clicked {x} times."))))
-    .Title(tb1.ObserveText().Select(x => x?.ToUpper()));
+return HotReloadHost.Run(BuildWindow, "NXUI", args);
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("NXUI")
-  .StartWithClassicDesktopLifetime(Build, args);
+object BuildWindow() =>
+  Window()
+    .Title("NXUI Hot Reload").Width(400).Height(340).Content(BuildView());
+
+object BuildView() =>
+  Border().Padding(24).Child(
+    StackPanel().Spacing(12)
+      .Children(
+        TextBlock()
+          .FontSize(18)
+          .Text("Welcome to Avalonia + NXUI"),
+        TextBox()
+          .Text("Edit me and save to trigger hot reload."),
+        Slider(out var slider)
+          .Minimum(0)
+          .Maximum(100)
+          .Value(50),
+        TextBox()
+          .Text(slider.ObserveEvent(RangeBase.ValueChangedEvent).Select(args => $"Current value (event): {args.NewValue:F0}")),
+        TextBox()
+          .Text(slider.ObserveValue().Select(value => $"Current value (property): {value:F0}")),
+        ProgressBar()
+          .Minimum(0)
+          .Maximum(100)
+          .Value(slider.Bind(RangeBase.ValueProperty), BindingMode.OneWay),
+        Button()
+          .Content("Click Me")
+          .OnClickHandler((_, _) => clickCount.OnNext(clickCount.Value + 1)),
+        TextBlock()
+          .FontSize(16)
+          .Text(clickCount.Select(count => $"You clicked {count} times."))));

@@ -9,6 +9,10 @@
     <RootNamespace>NXUI</RootNamespace>
     <PackageId>NXUI</PackageId>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- Reference assemblies trigger file locks on Linux CI when generator executes in parallel. -->
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
@@ -22,6 +26,13 @@
     <Content Include="*.props">
       <Pack>true</Pack>
       <PackagePath>build\;buildTransitive\</PackagePath>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HotReload\NXUI.HotReload.trim.xml">
+      <Pack>true</Pack>
+      <PackagePath>build\HotReload\;buildTransitive\HotReload\</PackagePath>
+      <Visible>false</Visible>
     </Content>
   </ItemGroup>
   <Import Project="NXUI.props" />

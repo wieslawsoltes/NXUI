@@ -1,6 +1,3 @@
-Window Build() => Window().Content(Label().Content("NXUI"));
+object Build() => Window().Content(Label().Content("NXUI"));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme(ThemeVariant.Dark)
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "NXUI Integration Test", args, ThemeVariant.Dark);

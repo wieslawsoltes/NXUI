@@ -9,6 +9,11 @@
     <RootNamespace>NXUI.Desktop</RootNamespace>
     <PackageId>NXUI.Desktop</PackageId>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- Avoid reference assembly and deps.json file locks when multiple targets build concurrently on CI. -->
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
   </ItemGroup>
@@ -19,7 +24,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NXUI\NXUI.csproj" />
+    <Content Include="HotReload\NXUI.Desktop.trim.xml">
+      <Pack>true</Pack>
+      <PackagePath>build\HotReload\;buildTransitive\HotReload\</PackagePath>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NXUI\NXUI.csproj">
+    </ProjectReference>
   </ItemGroup>
   <Import Project="NXUI.props" />
 </Project>

@@ -3,7 +3,7 @@ namespace NXUI.Extensions;
 /// <summary>
 /// 
 /// </summary>
-public static class InteractiveExtensionsEx
+public static partial class InteractiveExtensionsEx
 {
     /// <summary>
     /// 

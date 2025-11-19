@@ -1,7 +1,13 @@
-﻿var celsius = new Subject<double?>();
+﻿using System;
+using System.Linq;
+using System.Reactive.Linq;
+using System.Reactive.Subjects;
+using NXUI.HotReload;
+
+var celsius = new Subject<double?>();
 var fahrenheit = new Subject<double?>();
 
-Window Build()
+object Build()
   => Window()
     .Title("TempConv").Padding(12).Width(450).Height(200)
     .Content(
@@ -10,22 +16,22 @@ Window Build()
         .Children(
           TextBox()
             .Text(celsius.Select(x => x.ToString()))
-            .OnText((tc, o) => o.Subscribe(x => OnNextValue(tc, x, fahrenheit, ToFahrenheit))),
+            .OnTextChanged((tc, o) => o
+              .Select(_ => tc.Text ?? string.Empty)
+              .Subscribe(x => OnNextValue(tc, x, fahrenheit, ToFahrenheit))),
           Label()
             .HorizontalAlignmentCenter().VerticalAlignmentCenter()
             .Content("Celsius = "),
           TextBox()
             .Text(fahrenheit.Select(x => x.ToString()))
-            .OnText((tf, o) => o.Subscribe(x => OnNextValue(tf, x, celsius, ToCelsius))),
+            .OnTextChanged((tf, o) => o
+              .Select(_ => tf.Text ?? string.Empty)
+              .Subscribe(x => OnNextValue(tf, x, celsius, ToCelsius))),
           Label()
             .HorizontalAlignmentCenter().VerticalAlignmentCenter()
             .Content("Fahrenheit")));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("TempConv")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "TempConv", args);
 
 static void OnNextValue(TextBox textBox, string s, IObserver<double?> subject, Func<double, double> conv)
 {

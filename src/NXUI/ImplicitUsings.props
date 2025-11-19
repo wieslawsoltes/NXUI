@@ -44,6 +44,8 @@
     <Using Include="Avalonia.Threading" />
     <Using Include="Avalonia.VisualTree" />
     <Using Include="NXUI" />
+    <Using Include="NXUI.HotReload" />
+    <Using Include="NXUI.HotReload.Nodes" />
     <Using Include="NXUI.Interactivity" />
     <Using Include="NXUI.Extensions" />
     <Using Include="NXUI.Builders" Static="true" />

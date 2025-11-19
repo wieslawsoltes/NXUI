@@ -89,14 +89,57 @@ public class BuildersGenerator
     private void AddBuilder(Type type, ConstructorInfo constructor, bool includeRefParam, StringBuilder sb)
     {
         var parameters = constructor.GetParameters();
+        var controlTypeName = ReflectoniaFactory.FixType(type.ToString());
+        var methodName = ReflectoniaFactory.FixClassNameType(type.Name);
+        var typeConstName = MetadataNameUtility.GetTypeConstName(controlTypeName);
 
+        var builderTypeName = BuilderAliasRegistry.FormatBuilderType(type);
+
+        if (!includeRefParam)
+        {
+            AppendDocComment(sb, controlTypeName, parameters, includeRefParam: false);
+            AppendMethodSignature(
+                sb,
+                builderTypeName,
+                methodName,
+                parameters,
+                includeRefParam: false,
+                controlTypeName);
+            sb.AppendLine();
+            sb.AppendLine($"        => ElementBuilder.Create<{controlTypeName}>(TypeMetadata.{typeConstName}, () => {BuildConstructorExpression(controlTypeName, parameters)});");
+            return;
+        }
+
+        AppendDocComment(sb, controlTypeName, parameters, includeRefParam: true);
+        AppendMethodSignature(
+            sb,
+            builderTypeName,
+            methodName,
+            parameters,
+            includeRefParam: true,
+            $"ElementRef<{controlTypeName}>");
+        sb.AppendLine();
+        sb.AppendLine("    {");
+        sb.Append("        return ElementBuilder.Create<");
+        sb.Append(controlTypeName);
+        sb.Append(">(TypeMetadata.");
+        sb.Append(typeConstName);
+        sb.Append(", () => ");
+        sb.Append(BuildConstructorExpression(controlTypeName, parameters));
+        sb.AppendLine(")");
+        sb.AppendLine("            .WithRef(out @ref);");
+        sb.AppendLine("    }");
+    }
+
+    private static void AppendDocComment(StringBuilder sb, string controlTypeName, ParameterInfo[] parameters, bool includeRefParam)
+    {
         sb.AppendLine("    /// <summary>");
-        sb.AppendLine($"    /// Creates a new instance of the <see cref=\"{ReflectoniaFactory.FixType(type.ToString())}\"/> class.");
+        sb.AppendLine($"    /// Creates a new instance of the <see cref=\"{controlTypeName}\"/> class.");
         sb.AppendLine("    /// </summary>");
 
         if (includeRefParam)
         {
-            sb.AppendLine($"    /// <param name=\"ref\">The reference of the <see cref=\"{ReflectoniaFactory.FixType(type.ToString())}\"/> instantiated class.</param>");
+            sb.AppendLine($"    /// <param name=\"ref\">The reference of the <see cref=\"{controlTypeName}\"/> instantiated class.</param>");
         }
 
         for (var j = 0; j < parameters.Length; j++)
@@ -104,12 +147,22 @@ public class BuildersGenerator
             sb.AppendLine($"    /// <param name=\"{parameters[j].Name}\">The {parameters[j].Name} value.</param>");
         }
 
-        sb.AppendLine($"    /// <returns>The new instance of the <see cref=\"{ReflectoniaFactory.FixType(type.ToString())}\"/> class.</returns>");
-        sb.Append($"    public static {ReflectoniaFactory.FixType(type.ToString())} {ReflectoniaFactory.FixClassNameType(type.Name)}(");
+        sb.AppendLine($"    /// <returns>The new instance of the <see cref=\"{controlTypeName}\"/> class.</returns>");
+    }
+
+    private void AppendMethodSignature(
+        StringBuilder sb,
+        string returnType,
+        string methodName,
+        ParameterInfo[] parameters,
+        bool includeRefParam,
+        string refTypeName)
+    {
+        sb.Append($"    public static {returnType} {methodName}(");
 
         if (includeRefParam)
         {
-            sb.Append($"out {ReflectoniaFactory.FixType(type.ToString())} @ref");
+            sb.Append($"out {refTypeName} @ref");
 
             if (parameters.Length > 0)
             {
@@ -119,7 +172,6 @@ public class BuildersGenerator
 
         for (var j = 0; j < parameters.Length; j++)
         {
-            // TODO: Nullable annotations?
             sb.Append($"{ReflectoniaFactory.FixType(parameters[j].ParameterType.ToString())} {parameters[j].Name}");
 
             if (parameters[j].HasDefaultValue)
@@ -137,7 +189,7 @@ public class BuildersGenerator
                 }
                 else
                 {
-                    sb.Append($" = default");
+                    sb.Append(" = default");
                 }
             }
 
@@ -148,25 +200,23 @@ public class BuildersGenerator
         }
 
         sb.Append(")");
-        sb.AppendLine();
-        sb.Append("        => ");
+    }
 
-        if (includeRefParam)
-        {
-            sb.Append($"@ref = ");
-        }
-
-        sb.Append($"new(");
+    private static string BuildConstructorExpression(string controlTypeName, ParameterInfo[] parameters)
+    {
+        var sb = new StringBuilder();
+        sb.Append($"new {controlTypeName}(");
 
         for (var j = 0; j < parameters.Length; j++)
         {
-            sb.Append($"{parameters[j].Name}");
+            sb.Append(parameters[j].Name);
             if (j < parameters.Length - 1)
             {
                 sb.Append(", ");
             }
         }
 
-        sb.Append(");");
+        sb.Append(")");
+        return sb.ToString();
     }
 }

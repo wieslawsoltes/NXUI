@@ -6,6 +6,118 @@ namespace Generator;
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public static partial class Templates
 {
+    public static string PropertyMethodsHotReloadTemplate = """
+
+    /// <summary>
+    /// Records a <see cref="%ClassType%.%Name%Property"/> literal value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %MethodName%%BuilderGeneric%(this %BuilderType% builder, %ValueTypeSignature% value)%BuilderConstraint%
+    {
+        return builder.WithValue(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, value);
+    }
+
+    /// <summary>
+    /// Records a binding to <see cref="%ClassType%.%Name%Property"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %MethodName%%BuilderGeneric%(
+        this %BuilderType% builder,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%BuilderConstraint%
+    {
+        return builder.WithBinding(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Records an observable binding to <see cref="%ClassType%.%Name%Property"/> for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %MethodName%%BuilderGeneric%(
+        this %BuilderType% builder,
+        IObservable<%ValueTypeSignature%> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%BuilderConstraint%
+    {
+        return builder.WithBinding(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, observable.ToBinding(), mode, priority);
+    }
+
+""";
+
+    public static string PropertyMethodsElementRefTemplate = """
+
+    /// <summary>
+    /// Sets a <see cref="%ClassType%.%Name%Property"/> value on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="value">The value.</param>
+    /// <returns>The element reference.</returns>
+    public static %ElementRefType% %MethodName%%ElementRefGeneric%(this %ElementRefType% elementRef, %ValueTypeSignature% value)%ElementRefConstraint%
+    {
+        return elementRef.SetValue(%ClassType%.%Name%Property, value);
+    }
+
+    /// <summary>
+    /// Sets a binding to <see cref="%ClassType%.%Name%Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="binding">The source binding.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static %ElementRefType% %MethodName%%ElementRefGeneric%(
+        this %ElementRefType% elementRef,
+        Avalonia.Data.IBinding binding,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%ElementRefConstraint%
+    {
+        return elementRef.SetBinding(%ClassType%.%Name%Property, binding, mode, priority);
+    }
+
+    /// <summary>
+    /// Sets an observable binding to <see cref="%ClassType%.%Name%Property"/> on a referenced control.
+    /// </summary>
+    /// <param name="elementRef">The target element reference.</param>
+    /// <param name="observable">The source observable.</param>
+    /// <param name="mode">The target binding mode.</param>
+    /// <param name="priority">The target binding priority.</param>
+    /// <returns>The element reference.</returns>
+    public static %ElementRefType% %MethodName%%ElementRefGeneric%(
+        this %ElementRefType% elementRef,
+        IObservable<%ValueTypeSignature%> observable,
+        Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
+        Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)%ElementRefConstraint%
+    {
+        return elementRef.SetBinding(%ClassType%.%Name%Property, observable.ToBinding(), mode, priority);
+    }
+
+""";
+
+    public static string PropertyMethodEnumHotReloadTemplate = """
+
+    /// <summary>
+    /// Records a <see cref="%ClassType%.%Name%Property"/> enum value for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% %Name%%EnumValue%%BuilderGeneric%(this %BuilderType% builder)%BuilderConstraint%
+    {
+        return builder.WithValue(PropertyMetadata.%PropertyId%, %ClassType%.%Name%Property, %ValueType%.%EnumValue%);
+    }
+
+""";
+
     public static string PropertyMethodEnumTemplate = """
 
     /// <summary>
@@ -45,7 +157,7 @@ public static partial class Templates
     /// <param name="value">The value.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T %MethodName%<T>(this T obj, %ValueType% value) where T : %OwnerType%
+    public static T %MethodName%<T>(this T obj, %ValueTypeSignature% value) where T : %OwnerType%
     {
         obj[%ClassType%.%Name%Property] = value;
         return obj;
@@ -82,7 +194,7 @@ public static partial class Templates
     /// <returns>The target object reference.</returns>
     public static T %MethodName%<T>(
         this T obj,
-        IObservable<%ValueType%> observable,
+        IObservable<%ValueTypeSignature%> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue) where T : %OwnerType%
     {
@@ -115,7 +227,7 @@ public static partial class Templates
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
+    public static IObservable<%ValueTypeSignature%> Observe%Name%(this %OwnerType% obj)
     {
         return obj.GetObservable(%ClassType%.%Name%Property);
     }
@@ -127,7 +239,7 @@ public static partial class Templates
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T On%Name%<T>(this T obj, Action<%OwnerType%, IObservable<%ValueType%>> handler) where T : %OwnerType%
+    public static T On%Name%<T>(this T obj, Action<%OwnerType%, IObservable<%ValueTypeSignature%>> handler) where T : %OwnerType%
     {
         var observable = obj.GetObservable(%ClassType%.%Name%Property);
         handler(obj, observable);
@@ -139,7 +251,7 @@ public static partial class Templates
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<%ValueType%>> ObserveBinding%Name%(this %OwnerType% obj)
+    public static IObservable<BindingValue<%ValueTypeSignature%>> ObserveBinding%Name%(this %OwnerType% obj)
     {
         return obj.GetBindingObservable(%ClassType%.%Name%Property);
     }
@@ -151,7 +263,7 @@ public static partial class Templates
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <typeparam name="T">The type of the target object.</typeparam>
     /// <returns>The target object reference.</returns>
-    public static T OnBinding%Name%<T>(this T obj, Action<%OwnerType%, IObservable<BindingValue<%ValueType%>>> handler) where T : %OwnerType%
+    public static T OnBinding%Name%<T>(this T obj, Action<%OwnerType%, IObservable<BindingValue<%ValueTypeSignature%>>> handler) where T : %OwnerType%
     {
         var observable = obj.GetBindingObservable(%ClassType%.%Name%Property);
         handler(obj, observable);
@@ -192,7 +304,7 @@ public static partial class Templates
     /// <param name="obj">The target object.</param>
     /// <param name="value">The value to set for the property.</param>
     /// <returns>The target object reference.</returns>
-    public static %OwnerType% %MethodName%(this %OwnerType% obj, %ValueType% value)
+    public static %OwnerType% %MethodName%(this %OwnerType% obj, %ValueTypeSignature% value)
     {
         obj[%ClassType%.%Name%Property] = value;
         return obj;
@@ -227,7 +339,7 @@ public static partial class Templates
     /// <returns>The target object reference.</returns>
     public static %OwnerType% %MethodName%(
         this %OwnerType% obj,
-        IObservable<%ValueType%> observable,
+        IObservable<%ValueTypeSignature%> observable,
         Avalonia.Data.BindingMode mode = Avalonia.Data.BindingMode.TwoWay,
         Avalonia.Data.BindingPriority priority = Avalonia.Data.BindingPriority.LocalValue)
     {
@@ -259,7 +371,7 @@ public static partial class Templates
     /// <returns>
     /// An observable which fires immediately with the current value of the property on the object, and thereafter whenever the property changes.
     /// </returns>
-    public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
+    public static IObservable<%ValueTypeSignature%> Observe%Name%(this %OwnerType% obj)
     {
         return obj.GetObservable(%OwnerType%.%Name%Property);
     }
@@ -270,7 +382,7 @@ public static partial class Templates
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler to be called when the property changes.</param>
     /// <returns>The target object.</returns>
-    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ValueType%>> handler)
+    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ValueTypeSignature%>> handler)
     {
         var observable = obj.GetObservable(%ClassType%.%Name%Property);
         handler(obj, observable);
@@ -282,7 +394,7 @@ public static partial class Templates
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<%ValueType%>> ObserveBinding%Name%(this %OwnerType% obj)
+    public static IObservable<BindingValue<%ValueTypeSignature%>> ObserveBinding%Name%(this %OwnerType% obj)
     {
         return obj.GetBindingObservable(%ClassType%.%Name%Property);
     }
@@ -293,7 +405,7 @@ public static partial class Templates
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object.</returns>
-    public static %OwnerType% OnBinding%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<BindingValue<%ValueType%>>> handler)
+    public static %OwnerType% OnBinding%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<BindingValue<%ValueTypeSignature%>>> handler)
     {
         var observable = obj.GetBindingObservable(%ClassType%.%Name%Property);
         handler(obj, observable);
@@ -351,7 +463,7 @@ public static partial class Templates
     /// An observable which fires immediately with the current value of the property on the
     /// object and subsequently each time the property value changes.
     /// </returns>
-    public static IObservable<%ValueType%> Observe%Name%(this %OwnerType% obj)
+    public static IObservable<%ValueTypeSignature%> Observe%Name%(this %OwnerType% obj)
     {
         return obj.GetObservable(%ClassType%.%Name%Property);
     }
@@ -362,7 +474,7 @@ public static partial class Templates
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and observable with the current value of the property.</param>
     /// <returns>The target object reference.</returns>
-    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ValueType%>> handler)
+    public static %OwnerType% On%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<%ValueTypeSignature%>> handler)
     {
         var observable = obj.GetObservable(%ClassType%.%Name%Property);
         handler(obj, observable);
@@ -374,7 +486,7 @@ public static partial class Templates
     /// </summary>
     /// <param name="obj">The target object.</param>
     /// <returns>An observable including binding errors.</returns>
-    public static IObservable<BindingValue<%ValueType%>> ObserveBinding%Name%(this %OwnerType% obj)
+    public static IObservable<BindingValue<%ValueTypeSignature%>> ObserveBinding%Name%(this %OwnerType% obj)
     {
         return obj.GetBindingObservable(%ClassType%.%Name%Property);
     }
@@ -385,7 +497,7 @@ public static partial class Templates
     /// <param name="obj">The target object.</param>
     /// <param name="handler">The handler with target object and binding observable.</param>
     /// <returns>The target object reference.</returns>
-    public static %OwnerType% OnBinding%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<BindingValue<%ValueType%>>> handler)
+    public static %OwnerType% OnBinding%Name%(this %OwnerType% obj, Action<%OwnerType%, IObservable<BindingValue<%ValueTypeSignature%>>> handler)
     {
         var observable = obj.GetBindingObservable(%ClassType%.%Name%Property);
         handler(obj, observable);
@@ -414,6 +526,51 @@ public static partial class Templates
         handler(obj, observable);
         return obj;
     }
+""";
+
+    public static string RoutedEventMethodsHotReloadTemplate = """
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action to run when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%Handler%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, %ArgsType%> action,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            void Handler(object? _, %ArgsType% args) => action(%HandlerInvocation%, args);
+            typed.AddHandler(%OwnerType%.%Name%Event, Handler, routes);
+            return () => typed.RemoveHandler(%OwnerType%.%Name%Event, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, IObservable<%ArgsType%>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            var observable = typed.GetObservable(%OwnerType%.%Name%Event, routes);
+            handler(%HandlerInvocation%, observable);
+        }));
+    }
+
 """;
 
     public static string RoutedEventMethodsTemplate = """
@@ -465,6 +622,51 @@ public static partial class Templates
     {
         return obj.GetObservable(%OwnerType%.%Name%Event, routes);
     }
+""";
+
+    public static string RoutedEventMethodsHotReloadTemplateNonGeneric = """
+
+    /// <summary>
+    /// Records a routed event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="action">The action executed when the event fires.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%Handler%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, %ArgsType%> action,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            void Handler(object? _, %ArgsType% args) => action(%HandlerInvocation%, args);
+            typed.AddHandler(%OwnerType%.%Name%Event, Handler, routes);
+            return () => typed.RemoveHandler(%OwnerType%.%Name%Event, Handler);
+        }));
+    }
+
+    /// <summary>
+    /// Records a routed event observable handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving the observable.</param>
+    /// <param name="routes">The routing strategies for the event.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%%BuilderGeneric%(
+        this %BuilderType% builder,
+        Action<%HandlerType%, IObservable<%ArgsType%>> handler,
+        Avalonia.Interactivity.RoutingStrategies routes = %RoutingStrategies%)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            var observable = typed.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
+            handler(%HandlerInvocation%, observable);
+        }));
+    }
+
 """;
 
     public static string RoutedEventMethodsTemplateNonGeneric = """
@@ -612,6 +814,30 @@ public static partial class Templates
     {
         return obj.GetObservable<%ArgsType%>(%OwnerType%.%Name%Event, routes);
     }
+""";
+
+    public static string EventMethodsHotReloadTemplate = """
+
+    /// <summary>
+    /// Records a CLR event handler for hot reload builds.
+    /// </summary>
+    /// <param name="builder">The target builder.</param>
+    /// <param name="handler">The handler receiving an observable.</param>
+    /// <returns>The builder instance.</returns>
+    public static %BuilderType% On%Name%Event%BuilderGeneric%(this %BuilderType% builder, Action<%HandlerType%, IObservable<%ArgsType%>> handler)%BuilderConstraint%
+    {
+        return builder.WithEvent(new EventMutation(target =>
+        {
+            var typed = (%OwnerType%)target;
+            var observable = Observable
+                .FromEventPattern<%EventHandler%, %ArgsType%>(
+                    h => typed.%Name% += h,
+                    h => typed.%Name% -= h)
+                .Select(x => x.EventArgs);
+            handler(%HandlerInvocation%, observable);
+        }));
+    }
+
 """;
 
     public static string EventMethodsTemplate = """

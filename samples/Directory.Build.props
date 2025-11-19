@@ -1,0 +1,6 @@
+<Project>
+  <Import Project="$(MSBuildThisFileDirectory)..\Directory.Build.props" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug' and '$(EnableNXUIHotReloadBoundaries)' == ''">
+    <EnableNXUIHotReloadBoundaries>true</EnableNXUIHotReloadBoundaries>
+  </PropertyGroup>
+</Project>

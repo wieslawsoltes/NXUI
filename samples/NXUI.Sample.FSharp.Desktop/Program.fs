@@ -1,9 +1,9 @@
 ﻿open System.Reactive.Subjects
 open Avalonia
 open Avalonia.Controls
-open Avalonia.Data
 open Avalonia.Styling
 open NXUI.Extensions
+open NXUI.HotReload
 
 let buttons(counter: BehaviorSubject<int>) =
     
@@ -52,18 +52,15 @@ let counter() =
             increment.DockBottom()
         )
 
-let Build () =
+let Build () : obj =
     Window()
         .Title("Hello NXUI From F#")
         .Height(400)
         .Width(400)
         .FontFamily("Fira Code,Cascadia Code,Consolas,Monospace")
         .Content(counter())
+    |> box
 
 [<EntryPoint>]
-let main argv = 
-    AppBuilder.Configure<Application>()
-      .UsePlatformDetect()
-      .UseFluentTheme(ThemeVariant.Dark)
-      .WithApplicationName("NXUI F# Demo")
-      .StartWithClassicDesktopLifetime(Build, argv);
+let main argv =
+    HotReloadHost.Run(Build, "NXUI F# Demo", argv, ThemeVariant.Dark)

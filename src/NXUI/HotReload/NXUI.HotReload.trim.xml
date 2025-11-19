@@ -1,0 +1,8 @@
+<linker>
+  <assembly fullname="NXUI" feature="NXUI.HotReload.Enabled" featurevalue="true">
+    <namespace fullname="NXUI.HotReload" />
+    <namespace fullname="NXUI.HotReload.Nodes" />
+    <namespace fullname="NXUI.HotReload.Diffing" />
+    <namespace fullname="NXUI.HotReload.Metadata" />
+  </assembly>
+</linker>

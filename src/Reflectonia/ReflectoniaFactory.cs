@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using Avalonia;
 using Reflectonia.Model;
 
@@ -6,6 +7,8 @@ namespace Reflectonia;
 
 public class ReflectoniaFactory
 {
+    private static readonly NullabilityInfoContext NullabilityContext = new();
+
     public ReflectoniaFactory(IReflectoniaLog log)
     {
         Log = log;
@@ -105,9 +108,11 @@ public class ReflectoniaFactory
         }
 
         registry.RegisteredProperties.TryGetValue(classType, out var registeredPropertiesDict);
+        var propertyNames = new HashSet<string>(StringComparer.Ordinal);
         if (registeredPropertiesDict is null)
         {
             Log.Info($"No registered properties for `{classType.Name}`.");
+            AddDeclaredProperties(classType, properties, propertyNames);
             return properties;
         }
 
@@ -164,12 +169,17 @@ public class ReflectoniaFactory
             if (property.OwnerType != classType)
             {
                 var t = classType;
+                var matchesBase = false;
 
                 while (t != null)
                 {
                     if (ownerType == t)
                     {
-                        alreadyExists = true;
+                        matchesBase = true;
+                        if (!property.IsAttached)
+                        {
+                            alreadyExists = true;
+                        }
                         break;
                     }
 
@@ -178,6 +188,10 @@ public class ReflectoniaFactory
 
                 Log.Info($"Attached property `{classType.Name}.{propertyName}Property` registered owner type changed from `{ownerType.Name}` to `{classType.Name}`.");
                 ownerType = classType;
+                if (!matchesBase)
+                {
+                    alreadyExists = false;
+                }
             }
 
             var isEnum = false;
@@ -190,6 +204,8 @@ public class ReflectoniaFactory
                 isEnum = true;
             }
 
+            var valueNullability = GetValueNullability(fieldInfo);
+
             var p = new Property(
                 propertyName,
                 ownerType,
@@ -198,12 +214,107 @@ public class ReflectoniaFactory
                 alreadyExists,
                 property.IsReadOnly,
                 isEnum,
-                isEnum ? enumNames.ToArray() : null);
+                isEnum ? enumNames.ToArray() : null,
+                valueNullability);
             properties.Add(p);
             Log.Info($"Added `{classType.Name}.{propertyName}Property` property.");
+
+            propertyNames.Add(propertyName);
         }
 
+        AddDeclaredProperties(classType, properties, propertyNames);
+
         return properties;
+    }
+
+    private void AddDeclaredProperties(Type classType, List<Property> properties, HashSet<string> existingNames)
+    {
+        var fields = classType.GetFields(BindingFlags.Public | BindingFlags.Static | BindingFlags.DeclaredOnly);
+        foreach (var fieldInfo in fields)
+        {
+            if (!fieldInfo.Name.EndsWith("Property", StringComparison.Ordinal))
+            {
+                continue;
+            }
+
+            if (fieldInfo.GetCustomAttributes().Any(x => x.GetType().Name == "ObsoleteAttribute"))
+            {
+                continue;
+            }
+
+            if (!typeof(AvaloniaProperty).IsAssignableFrom(fieldInfo.FieldType))
+            {
+                continue;
+            }
+
+            if (fieldInfo.FieldType.ContainsGenericParameters)
+            {
+                continue;
+            }
+
+            var propertyName = fieldInfo.Name[..^"Property".Length];
+            if (!existingNames.Add(propertyName))
+            {
+                continue;
+            }
+
+            if (fieldInfo.GetValue(null) is not AvaloniaProperty avaloniaProperty)
+            {
+                continue;
+            }
+
+            if (!fieldInfo.IsPublic)
+            {
+                continue;
+            }
+
+            var valueType = avaloniaProperty.PropertyType;
+            var propertyType = fieldInfo.FieldType;
+            var ownerType = classType;
+            var alreadyExists = false;
+            var isEnum = valueType.IsEnum;
+            var enumNames = isEnum ? Enum.GetNames(valueType) : null;
+            var valueNullability = GetValueNullability(fieldInfo);
+
+            var p = new Property(
+                propertyName,
+                ownerType,
+                valueType,
+                propertyType,
+                alreadyExists,
+                avaloniaProperty.IsReadOnly,
+                isEnum,
+                enumNames,
+                valueNullability);
+            properties.Add(p);
+            Log.Info($"Added declared `{classType.Name}.{propertyName}Property` property.");
+        }
+    }
+
+    private static NullabilityInfo? GetValueNullability(FieldInfo fieldInfo)
+    {
+        if (!fieldInfo.FieldType.IsGenericType)
+        {
+            return null;
+        }
+
+        NullabilityInfo info;
+        try
+        {
+            info = NullabilityContext.Create(fieldInfo);
+        }
+        catch (NotSupportedException)
+        {
+            return null;
+        }
+
+        var arguments = info.GenericTypeArguments;
+        if (arguments.Length == 0)
+        {
+            return null;
+        }
+
+        return arguments[^1];
     }
 
     private List<Event> GetEvents(Type classType, ReflectoniaRegistry registry)

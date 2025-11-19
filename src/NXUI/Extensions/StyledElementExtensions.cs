@@ -1,10 +1,154 @@
 namespace NXUI.Extensions;
 
+using NXUI.HotReload.Metadata;
+using NXUI.HotReload.Nodes;
+
 /// <summary>
 /// 
 /// </summary>
 public static partial class StyledElementExtensions
 {
+    /// <summary>
+    /// Records a name assignment and scope registration for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<TElement> Name<TElement>(
+        this ElementBuilder<TElement> builder,
+        string value,
+        INameScope scope)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(scope);
+        if (!PropertyMetadata.TryGetId(Avalonia.StyledElement.NameProperty, out var propertyId))
+        {
+            throw new InvalidOperationException("StyledElement.NameProperty is missing from PropertyMetadata.");
+        }
+
+        return builder
+            .WithValue(propertyId, Avalonia.StyledElement.NameProperty, value)
+            .WithAction(styledElement =>
+            {
+                scope.Register(value, styledElement);
+            });
+    }
+
+    /// <summary>
+    /// Records class additions for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<TElement> Classes<TElement>(
+        this ElementBuilder<TElement> builder,
+        params string[] items)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(items);
+        return builder.WithAction(styledElement =>
+        {
+            styledElement.Classes.AddRange(items);
+        });
+    }
+
+    /// <summary>
+    /// Records pseudo class additions for hot reload builds.
+    /// </summary>
+    public static ElementBuilder<TElement> PseudoClasses<TElement>(
+        this ElementBuilder<TElement> builder,
+        params string[] items)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(items);
+        return builder.WithAction(styledElement =>
+        {
+            if (styledElement.Classes is IPseudoClasses pseudoClasses)
+            {
+                foreach (var item in items)
+                {
+                    pseudoClasses.Add(item);
+                }
+            }
+        });
+    }
+
+    /// <summary>
+    /// Records builder styles for a styled element.
+    /// </summary>
+    public static ElementBuilder<TElement> Styles<TElement, TStyle>(
+        this ElementBuilder<TElement> styledElement,
+        params ElementBuilder<TStyle>[] styles)
+        where TElement : StyledElement
+        where TStyle : AvaloniaObject, IStyle
+    {
+        return styledElement.WithChildren(
+            styles,
+            static (parentObj, builtStyles) =>
+            {
+                var target = (StyledElement)parentObj;
+                var targetStyles = target.Styles ?? throw new InvalidOperationException("StyledElement.Styles collection is not initialized.");
+
+                for (var i = 0; i < builtStyles.Count; i++)
+                {
+                    if (builtStyles[i] is IStyle builtStyle)
+                    {
+                        targetStyles.Add(builtStyle);
+                    }
+                }
+            });
+    }
+
+    /// <summary>
+    /// Records style instances for a styled element.
+    /// </summary>
+    public static ElementBuilder<TElement> Styles<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        params IStyle[] styles)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(styles);
+        return styledElement.WithAction(target =>
+        {
+            var collection = target.Styles ?? throw new InvalidOperationException("StyledElement.Styles collection is not initialized.");
+            collection.AddRange(styles);
+        });
+    }
+
+    /// <summary>
+    /// Records a builder resource dictionary for a styled element.
+    /// </summary>
+    public static ElementBuilder<TElement> Resources<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        ResourceDictionaryBuilder resources)
+        where TElement : StyledElement
+    {
+        return styledElement.WithChild(
+            resources,
+            static (parentObj, builtResources) =>
+            {
+                ((StyledElement)parentObj).Resources = (IResourceDictionary)builtResources;
+            });
+    }
+
+    /// <summary>
+    /// Records a resource dictionary assignment.
+    /// </summary>
+    public static ElementBuilder<TElement> Resources<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        IResourceDictionary resources)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(resources);
+        return styledElement.WithAction(target => target.Resources = resources);
+    }
+
+    /// <summary>
+    /// Records a single resource entry.
+    /// </summary>
+    public static ElementBuilder<TElement> Resource<TElement>(
+        this ElementBuilder<TElement> styledElement,
+        object key,
+        object value)
+        where TElement : StyledElement
+    {
+        ArgumentNullException.ThrowIfNull(key);
+        return styledElement.WithAction(target => target.Resources[key] = value);
+    }
     // Name
 
     /// <summary>

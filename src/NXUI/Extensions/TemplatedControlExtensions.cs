@@ -1,28 +1,31 @@
 namespace NXUI.Extensions;
 
+using System;
+using NXUI.HotReload.Nodes;
+using NXUI.HotReload.Templates;
+
 /// <summary>
-/// 
+/// Control template helpers.
 /// </summary>
 public static partial class TemplatedControlExtensions
 {
-    // ControlTemplate
-
     /// <summary>
-    /// 
+    /// Adds a <see cref="FuncControlTemplate"/> created from a delegate returning a live control.
     /// </summary>
-    /// <param name="style"></param>
-    /// <param name="build"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    /// <exception cref="InvalidCastException"></exception>
-    public static Style SetTemplatedControlTemplate<T>(this Style style, Func<T, INameScope, Control> build) 
-        where T : TemplatedControl
+    /// <exception cref="InvalidCastException">Thrown when the style target does not match <typeparamref name="TControl"/>.</exception>
+    public static Style SetTemplatedControlTemplate<TControl>(
+        this Style style,
+        Func<TControl, INameScope, Control> build)
+        where TControl : TemplatedControl
     {
+        ArgumentNullException.ThrowIfNull(style);
+        ArgumentNullException.ThrowIfNull(build);
+
         var value = new FuncControlTemplate((parent, scope) =>
         {
-            if (parent is T t)
+            if (parent is TControl typed)
             {
-                return build(t, scope);
+                return build(typed, scope);
             }
 
             throw new InvalidCastException();
@@ -30,139 +33,69 @@ public static partial class TemplatedControlExtensions
         style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
         return style;
     }
-    
-    // BorderThicknessProperty
 
     /// <summary>
-    /// 
+    /// Adds a <see cref="FuncControlTemplate"/> created from a fluent builder delegate to keep hot reload working.
     /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="uniformLength"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T BorderThickness<T>(this T templatedControl, double uniformLength) where T : TemplatedControl
+    /// <exception cref="InvalidCastException">Thrown when the style target does not match <typeparamref name="TControl"/>.</exception>
+    public static Style SetTemplatedControlTemplate<TControl, TContent>(
+        this Style style,
+        Func<TControl, INameScope, ElementBuilder<TContent>> build)
+        where TControl : TemplatedControl
+        where TContent : Control
     {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty] = new Thickness(uniformLength);
-        return templatedControl;
+        ArgumentNullException.ThrowIfNull(style);
+        ArgumentNullException.ThrowIfNull(build);
+
+        var value = CreateTemplate(build);
+        style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
+        return style;
     }
 
     /// <summary>
-    /// 
+    /// Builder-compatible overload that records the template assignment for hot reload.
     /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="horizontal"></param>
-    /// <param name="vertical"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T BorderThickness<T>(this T templatedControl, double horizontal, double vertical) where T : TemplatedControl
+    public static StyleBuilder SetTemplatedControlTemplate<TControl, TContent>(
+        this StyleBuilder builder,
+        Func<TControl, INameScope, ElementBuilder<TContent>> build)
+        where TControl : TemplatedControl
+        where TContent : Control
     {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty] = new Thickness(horizontal, vertical);
-        return templatedControl;
+        ArgumentNullException.ThrowIfNull(build);
+        return builder.WithAction(style =>
+        {
+            var value = CreateTemplate(build);
+            style.Setters.Add(new Setter(Avalonia.Controls.Primitives.TemplatedControl.TemplateProperty, value));
+        });
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="left"></param>
-    /// <param name="top"></param>
-    /// <param name="right"></param>
-    /// <param name="bottom"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T BorderThickness<T>(this T templatedControl, double left, double top, double right, double bottom) where T : TemplatedControl
+    private static FuncControlTemplate CreateTemplate<TControl, TContent>(
+        Func<TControl, INameScope, ElementBuilder<TContent>> build)
+        where TControl : TemplatedControl
+        where TContent : Control
     {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.BorderThicknessProperty] = new Thickness(left, top, right, bottom);
-        return templatedControl;
-    }
+        FuncControlTemplate? templateRef = null;
+        var manifestRecorded = false;
 
-    // CornerRadiusProperty
+        var value = new FuncControlTemplate((parent, scope) =>
+        {
+            if (parent is not TControl typed)
+            {
+                throw new InvalidCastException();
+            }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="uniformRadius"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T CornerRadius<T>(this T templatedControl, double uniformRadius) where T : TemplatedControl
-    {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty] = new CornerRadius(uniformRadius);
-        return templatedControl;
-    }
+            var contentBuilder = build(typed, scope);
+            if (!manifestRecorded && templateRef is not null)
+            {
+                var manifest = TemplateManifestCollector.Create(contentBuilder.Node);
+                TemplateManifestRegistry.Register(templateRef, manifest);
+                manifestRecorded = true;
+            }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="top"></param>
-    /// <param name="bottom"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T CornerRadius<T>(this T templatedControl, double top, double bottom) where T : TemplatedControl
-    {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty] = new CornerRadius(top, bottom);
-        return templatedControl;
-    }
+            return contentBuilder.Mount();
+        });
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="topLeft"></param>
-    /// <param name="topRight"></param>
-    /// <param name="bottomRight"></param>
-    /// <param name="bottomLeft"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T CornerRadius<T>(this T templatedControl, double topLeft, double topRight, double bottomRight, double bottomLeft) where T : TemplatedControl
-    {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.CornerRadiusProperty] = new CornerRadius(topLeft, topRight, bottomRight, bottomLeft);
-        return templatedControl;
-    }
-
-    // PaddingProperty
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="uniformLength"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T Padding<T>(this T templatedControl, double uniformLength) where T : TemplatedControl
-    {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty] = new Thickness(uniformLength);
-        return templatedControl;
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="horizontal"></param>
-    /// <param name="vertical"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T Padding<T>(this T templatedControl, double horizontal, double vertical) where T : TemplatedControl
-    {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty] = new Thickness(horizontal, vertical);
-        return templatedControl;
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="templatedControl"></param>
-    /// <param name="left"></param>
-    /// <param name="top"></param>
-    /// <param name="right"></param>
-    /// <param name="bottom"></param>
-    /// <typeparam name="T"></typeparam>
-    /// <returns></returns>
-    public static T Padding<T>(this T templatedControl, double left, double top, double right, double bottom) where T : TemplatedControl
-    {
-        templatedControl[Avalonia.Controls.Primitives.TemplatedControl.PaddingProperty] = new Thickness(left, top, right, bottom);
-        return templatedControl;
+        templateRef = value;
+        return value;
     }
 }

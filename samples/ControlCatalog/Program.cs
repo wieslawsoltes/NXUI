@@ -1,49 +1,46 @@
-﻿Window Build()
+object Build()
 {
-  Border(out var border)
+  var border = Border()
     .Background(Brushes.WhiteSmoke)
     .BorderBrush(Brushes.Black)
     .BorderThickness(2)
     .CornerRadius(4);
 
-  Button(out var button)
+  var button = Button()
     .OnClick((_, o) => o.Subscribe(_ => Debug.WriteLine("Click")))
     .Content("Button");
 
-  Canvas(out var canvas)
+  var canvas = Canvas()
     .Background(Brushes.WhiteSmoke)
     .Children(
       Rectangle().Fill(Brushes.Blue).Width(50).Height(50).Left(50).Top(50),
       Ellipse().Fill(Brushes.Red).Width(50).Height(50).Left(150).Top(50));
 
-  ContentControl(out var contentControl)
+  var contentControl = ContentControl()
     .Content("Content");
 
-  Decorator(out var decorator)
+  var decorator = Decorator()
     .Child(
       TextBox().Text("Child"))
     .Padding(4);
 
-  HeaderedContentControl()
-    .Ref(out var headeredContentControl);
+  var headeredContentControl = HeaderedContentControl();
 
-  ItemsControl()
-    .Ref(out var itemsControl);
+  var itemsControl = ItemsControl();
 
-  Label(out var label)
+  var label = Label()
     .Classes("animation")
     .HorizontalAlignmentCenter().VerticalAlignmentCenter()
     .Content("Label");
 
-  Layoutable()
-    .Ref(out var layoutable);
+  var layoutable = Layoutable();
 
-  Panel(out var panel)
+  var panel = Panel()
     .Styles(RotateAnimation(TimeSpan.FromSeconds(5), 180d, 360d))
     .Width(200).Height(200)
     .Background(Brushes.WhiteSmoke);
 
-  StackPanel(out var stackPanel)
+  var stackPanel = StackPanel()
     .Spacing(4)
     .OrientationVertical()
     .Children(
@@ -51,16 +48,15 @@
       TextBlock().Text("Child 2"),
       TextBlock().Text("Child 3"));
 
-  TabControl(out var tabControl)
+  var tabControl = TabControl()
     .ItemsSource(
       TabItem().Header("TabItem1").Content("TabItem1"),
       TabItem().Header("TabItem2").Content("TabItem2"),
       TabItem().Header("TabItem3").Content("TabItem3"));
 
-  TemplatedControl()
-    .Ref(out var templatedControl);
+  var templatedControl = TemplatedControl();
 
-  TextBlock(out var textBlock)
+  var textBlock = TextBlock()
     .Background(Brushes.WhiteSmoke)
     .Padding(4)
     .FontFamily(FontFamily.Default)
@@ -76,7 +72,7 @@
     .TextTrimming(TextTrimming.None)
     .TextDecorations(new TextDecorationCollection());
 
-  TextBox(out var textBox)
+  var textBox = TextBox()
     .AcceptsReturn(true)
     .AcceptsTab(true)
     .CaretIndex(0)
@@ -88,8 +84,8 @@
     .Foreground(Brushes.Black)
     .Text("TextBox");
 
-  TabControl(out var controls)
-    .ItemsPanel(new FuncTemplate<Panel>(StackPanel))
+  var controls = TabControl()
+    .ItemsPanel(FuncTemplate<Panel, StackPanel>(StackPanel))
     .TabStripPlacementLeft()
     .Classes("tabControl")
     .ItemsSource(
@@ -109,18 +105,18 @@
       TabItem().Header("TextBlock").Content(textBlock),
       TabItem().Header("TextBox").Content(textBox));
 
-  Window(out var window)
+  var window = Window()
     .SizeToContentManual()
     .Title("ControlCatalog")
     .Width(800).Height(700)
     .Content(controls);
 
-  Style(out var buttonStyle)
+  var buttonStyle = Style()
     .Selector(x => x.OfType<Button>().Class(":pointerover").Template().OfType<ContentPresenter>()
       .Name("PART_ContentPresenter"))
     .SetTemplatedControlBackground(Brushes.Red);
 
-  Style(out var labelStyle)
+  var labelStyle = Style()
     .Selector(x => x.OfType<Label>().Class("animation"))
     .Animations(
       Animation()
@@ -133,12 +129,13 @@
   window.Styles(TabControlStyle(), buttonStyle, labelStyle, InteractionStyle());
 
 #if DEBUG
-  window.AttachDevTools();
+  window = window.WithAction(w => w.AttachDevTools());
 #endif
+
   return window;
 }
 
-Style InteractionStyle()
+StyleBuilder InteractionStyle()
 {
   return Style()
     .Selector(x => x.Is<Control>())
@@ -149,31 +146,43 @@ Style InteractionStyle()
 #endif
 }
 
-Style TabControlStyle()
-  => Style()
-    .Selector(x => x.OfType<TabControl>().Class("tabControl"))
-    .SetTemplatedControlTemplate<TabControl>((x, ns) =>
-      Border()
-        .BorderBrush(x.BindBorderBrush())
-        .BorderThickness(x.BindBorderThickness())
-        .CornerRadius(x.BindCornerRadius())
-        .Background(x.BindBackground())
-        .HorizontalAlignment(x.BindHorizontalAlignment())
-        .VerticalAlignment(x.BindVerticalAlignment())
-        .Child(
-          DockPanel().Children(
-            ScrollViewer().Content(
-              ItemsPresenter().Name("PART_ItemsPresenter", ns)
-                .ItemsPanel(x.BindItemsPanel())
-                .Dock(x.BindTabStripPlacement())),
-            ContentPresenter().Name("PART_SelectedContentHost", ns)
-              .Margin(x.BindPadding())
-              .HorizontalContentAlignment(x.BindHorizontalContentAlignment())
-              .VerticalContentAlignment(x.BindVerticalContentAlignment())
-              .Content(x.BindSelectedContent())
-              .ContentTemplate(x.BindSelectedContentTemplate()))));
+StyleBuilder TabControlStyle()
+{
+  var style = Style()
+    .Selector(x => x.OfType<TabControl>().Class("tabControl"));
 
-Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle)
+  style = style.WithAction(s =>
+    s.SetTemplatedControlTemplate<TabControl>((x, ns) => BuildTabControlTemplate(x, ns).Mount()));
+
+  return style;
+}
+
+BorderBuilder BuildTabControlTemplate(TabControl x, INameScope ns)
+{
+  return Border()
+    .BorderBrush(x.BindBorderBrush())
+    .BorderThickness(x.BindBorderThickness())
+    .CornerRadius(x.BindCornerRadius())
+    .Background(x.BindBackground())
+    .HorizontalAlignment(x.BindHorizontalAlignment())
+    .VerticalAlignment(x.BindVerticalAlignment())
+    .Child(
+      DockPanel().Children(
+        ScrollViewer().Content(
+          ItemsPresenter().Name("PART_ItemsPresenter", ns)
+            .ItemsPanel(x.BindItemsPanel())
+            .Dock(x.BindTabStripPlacement())),
+        ContentPresenter().Name("PART_SelectedContentHost", ns)
+          .Margin(x.BindPadding())
+          .HorizontalContentAlignment(x.BindHorizontalContentAlignment())
+          .VerticalContentAlignment(x.BindVerticalContentAlignment())
+          .Content(x.BindSelectedContent())
+          .ContentTemplate(x.BindSelectedContentTemplate())
+      )
+    );
+}
+
+StyleBuilder RotateAnimation(TimeSpan duration, double startAngle, double endAngle)
   => Style()
     .Selector(x => x.Is<Control>())
     .SetVisualClipToBounds(false)
@@ -186,11 +195,7 @@ Style RotateAnimation(TimeSpan duration, double startAngle, double endAngle)
           KeyFrame().Cue(0.0).SetRotateTransformAngle(startAngle),
           KeyFrame().Cue(1.0).SetRotateTransformAngle(endAngle)));
 
-AppBuilder.Configure<Application>()
-  .UsePlatformDetect()
-  .UseFluentTheme()
-  .WithApplicationName("ControlCatalog")
-  .StartWithClassicDesktopLifetime(Build, args);
+return HotReloadHost.Run(Build, "ControlCatalog", args);
 
 internal class CustomBehavior : Behavior
 {

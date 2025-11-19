@@ -18,4 +18,10 @@
     <AvaloniaControlsItemsRepeaterVersion>11.1.5</AvaloniaControlsItemsRepeaterVersion>
     <SystemReactiveVersion>6.0.1</SystemReactiveVersion>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(EnableNXUIHotReloadBoundaries)' == ''">
+    <EnableNXUIHotReloadBoundaries>false</EnableNXUIHotReloadBoundaries>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(EnableNXUIHotReloadBoundaries)' == 'true'">
+    <PackageReference Include="NXUI.Fody" Version="$(VersionPrefix)" PrivateAssets="all" />
+  </ItemGroup>
 </Project>

@@ -12,4 +12,19 @@ public static partial class Properties
     /// The <see cref="Avalonia.Controls.ListBox.ScrollProperty"/> property defined in <see cref="Avalonia.Controls.ListBox"/> class.
     /// </summary>
     public static Avalonia.DirectProperty<Avalonia.Controls.ListBox,Avalonia.Controls.Primitives.IScrollable> ListBox_Scroll => Avalonia.Controls.ListBox.ScrollProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ListBox.SelectedItemsProperty"/> property defined in <see cref="Avalonia.Controls.ListBox"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,System.Collections.IList> ListBox_SelectedItems => Avalonia.Controls.ListBox.SelectedItemsProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ListBox.SelectionProperty"/> property defined in <see cref="Avalonia.Controls.ListBox"/> class.
+    /// </summary>
+    public static Avalonia.DirectProperty<Avalonia.Controls.Primitives.SelectingItemsControl,Avalonia.Controls.Selection.ISelectionModel> ListBox_Selection => Avalonia.Controls.ListBox.SelectionProperty;
+
+    /// <summary>
+    /// The <see cref="Avalonia.Controls.ListBox.SelectionModeProperty"/> property defined in <see cref="Avalonia.Controls.ListBox"/> class.
+    /// </summary>
+    public static Avalonia.StyledProperty<Avalonia.Controls.SelectionMode> ListBox_SelectionMode => Avalonia.Controls.ListBox.SelectionModeProperty;
 }

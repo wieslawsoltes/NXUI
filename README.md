@@ -276,3 +276,43 @@ workflows:
 
 Together these extensions enable complex, reactive UIs built entirely in code
 while managing resources with minimal overhead.
+
+## Hot Reload
+
+### Using NXUI Hot Reload
+
+1. **Hot reload is always on** – every NXUI project now emits builder-based controls and ships the hot reload runtime by default. No MSBuild properties or preprocessor symbols are required.
+2. **Run through the host** – wrap your entry point with `HotReloadHost.Run` so NXUI can register the component and reconcile live instances:
+
+   ```csharp
+   using NXUI.HotReload;
+
+   object Build() =>
+       Window()
+           .Title("NXUI Hot Reload")
+           .Content(Label().Content("Edit a file and save to trigger hot reload."));
+
+   return HotReloadHost.Run(Build, "SampleApp", args);
+   ```
+
+3. **Use `dotnet watch` or IDE hot reload** – the runtime listens for metadata updates and calls `NodeRenderer.Reconcile` with the previous node snapshot. The window stays mounted and control state (e.g., `TextBox.Text`) survives.
+4. **Turn on diagnostics when needed** – set `NXUI_HOTRELOAD_DIAGNOSTICS=1` to see per-reconciliation summaries, including counts for property sets, child add/remove/move operations, and replacements.
+5. **Implicit boundaries (optional)** – set `<EnableNXUIHotReloadBoundaries>true</EnableNXUIHotReloadBoundaries>` to weave `[HotReloadBoundary]` onto controls listed in `build/HotReloadBoundaries.json`. Samples do this automatically for Debug builds via `samples/Directory.Build.props`. Use `dotnet run --project src/NXUI.Cli -- hotreload boundaries --manifest build/HotReloadBoundaries.json --assembly path/to/MyApp.dll` to inspect which controls were annotated (manifest hits, explicit attributes, or state-adapter skips). The same Fody pass also injects `[assembly: MetadataUpdateHandler(typeof(NXUI.HotReload.HotReloadMetadataUpdateHandler))]`, so IDE / `dotnet watch` notifications reach NXUI without manual attributes.
+
+### Troubleshooting
+
+- **No updates apply** – ensure your builder delegate returns an `ElementNode` tree (not `.Mount()`ed controls) and that it is hosted by `HotReloadHost.Run`.
+- **State resets on list changes** – provide explicit `.Key("stable-id")` for repeating builders or wrap complex containers with `.HotReloadBoundary()` so the diff engine can reason about reuse. See `docs/hot-reload-best-practices.md` for patterns.
+- **Bindings/events stop firing** – check analyzer warnings (see `NXUI.Analyzers`) and confirm you are not instantiating Avalonia controls manually; the builder pipeline must remain in control for hot reload to succeed.
+- **Layout thrash during updates** – enable diagnostics to ensure excessive replacements are not happening; large replace counts often mean missing keys or boundaries.
+
+### Release Builds
+
+- The hot reload runtime now ships in every build configuration. `NXUI.props` injects the required `RuntimeHostConfigurationOption` automatically so metadata updates flow without extra project tweaks.
+- When trimming, keep `NXUI.HotReload.*` rooted (the shipped linker descriptors already do this) if you want hot reload support in the published app.
+
+### Further Reading
+
+- `docs/hot-reload-architecture.md` – end-to-end design.
+- `docs/hot-reload-implementation-plan.md` – milestone tracking.
+- `docs/hot-reload-best-practices.md` – guidance for `Key()` and `HotReloadBoundary()` usage.
