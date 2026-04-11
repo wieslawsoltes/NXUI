@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/2297442/132313187-32f18c4b-e894-46db-9
 ### NXUI
 
 ```xml
-<PackageReference Include="NXUI" Version="11.3.0" />
+<PackageReference Include="NXUI" Version="12.0.0" />
 ```
 
 Additionally, depending on the application type:
@@ -21,17 +21,17 @@ Additionally, depending on the application type:
 
 For Desktop extensions:
 ```xml
-<PackageReference Include="NXUI.Desktop" Version="11.3.0" />
+<PackageReference Include="NXUI.Desktop" Version="12.0.0" />
 ```
 or using plain Avalonia:
 ```xml
-<PackageReference Include="Avalonia.Desktop" Version="11.3.0" />
+<PackageReference Include="Avalonia.Desktop" Version="12.0.0" />
 ```
 
 ### Browser
 
 ```xml
-<PackageReference Include="Avalonia.Browser" Version="11.3.0" />
+<PackageReference Include="Avalonia.Browser" Version="12.0.0" />
 ```
 
 ```
@@ -128,7 +128,7 @@ Note: You might need to adjust shebang line to `#!/usr/bin/dotnet run`
 App.cs
 ```csharp
 #!/usr/local/share/dotnet/dotnet run
-#:package NXUI.Desktop@11.3.0
+#:package NXUI.Desktop@12.0.0
 using Avalonia.Controls;
 using Avalonia.Styling;
 using NXUI.HotReload;
@@ -153,7 +153,7 @@ More complex app:
 
 ```csharp
 #!/usr/local/share/dotnet/dotnet run
-#:package NXUI.Desktop@11.3.0
+#:package NXUI.Desktop@12.0.0
 using NXUI.HotReload;
 using static NXUI.Builders;
 
